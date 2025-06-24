@@ -1128,6 +1128,7 @@ class AdministrativeHistory():
             if len(data_table_metadata_list) == 0:
                 raise ValueError(f"No data table with the given id exists.")
             data_table_metadata = data_table_metadata_list[0]
+            adm_level = data_table_metadata.adm_level
             adm_state_date = data_table_metadata.adm_state_date
             folder = self.data_harmonization_input_folder
             path = os.path.join(folder, f"{data_table_id}.csv")

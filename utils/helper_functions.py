@@ -268,13 +268,14 @@ def save_plot_to_html(fig, html_path, title, description, append=False):
 
     print(f"Plot {'appended to' if append else 'saved to'} {html_path}")
 
-def read_economic_csv_input(adm_level: Union[Literal['District'], Literal['Region']], input_csv_path: str):
+def read_economic_csv_input(adm_level: Union[Literal['District'], Literal['Region']], input_csv_path: str, verbose = False):
     """
     Reads in and standardizes csv file with economic data for data harmonization from path passed in input_csv_path.
     """
     if adm_level not in ['District', 'Region']:
         raise ValueError(f"Argument adm_level must be 'District' or 'Region'. Passsed: {adm_level}.")
-    print(f"Attempting to read: {input_csv_path}")
+    if verbose:
+        print(f"Attempting to read: {input_csv_path}")
     
     if not os.path.exists(input_csv_path):
         print(f"File does not exist: {input_csv_path}")
@@ -300,20 +301,24 @@ def read_economic_csv_input(adm_level: Union[Literal['District'], Literal['Regio
             encoding = enc
             break  # success
         except UnicodeDecodeError:
-            print(...)
+            if verbose:
+                print(...)
             continue
         except pd.errors.ParserError as e:
-            print(...)
+            if verbose:
+                print(...)
             continue
         except Exception as e:
-            print(...)
+            if verbose:
+                print(...)
             continue
 
 
     if df is None:
         raise ValueError(f"Failed to read CSV with tried encodings: {encodings_to_try}")
     
-    print(f"Successfully read CSV using encoding: {encoding}")
+    if verbose:
+        print(f"Successfully read CSV using encoding: {encoding}")
 
     # Check for parse failure: all content lumped into one column
     if len(df.columns) == 1 and ';' in df.columns[0]:

@@ -14,3 +14,8 @@ streamlit==1.45.0
 # Needed for AdministrativeHistory initiated with load_geometries=True
 # Install with: pip install fiona
 # fiona>=1.9.0
+
+# Optional: required for the example GDP estimations in the jupyter notebook
+# libpysal
+# esda
+# adjustText # For nice plotting of labels in a map
