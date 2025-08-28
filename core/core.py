@@ -23,6 +23,26 @@ from data_models.harmonization_config import *
 from utils.helper_functions import load_config, standardize_df, read_economic_csv_input
 from utils.exceptions import TerritoryNotLoadedError
 
+"""
+This is the core component of the toolkit.
+
+When an instance of AdministrativeHistory is created, the object reads in the input data
+and creates the data model of the administrative history.
+
+The method 'harmonize_data' automatically creates all necessary harmonization matrices
+and harmonizes all the input data.
+
+Example usage:
+    # Load the configuration.
+    config = load_config("config.json")
+
+    # Create an AdministrativeHistory instance.
+    administrative_history = AdministrativeHistory(config, load_geometries=True)
+
+    # Harmonize input data stored in the folder defined in the config.
+    administrative_history.harmonize_data()
+"""
+
 class AdministrativeHistory():
     def __init__(self, config, load_geometries=True):
         # Load the configuration
@@ -215,11 +235,17 @@ class AdministrativeHistory():
             print(e.json(indent=2))
 
     def _create_changes_dates_list(self):
+        """
+        Creates the list of all changes' dates.
+        """
         self.changes_dates = [change.date for change in self.changes_list]
         self.changes_dates = list(set(self.changes_dates))
         self.changes_dates.sort()
 
     def _create_changes_chronology(self):
+        """
+        Creates the dict self.changes_chron_dict of the form {date_t: list_of_changes_occuring_on_date_t}
+        """
         self.changes_chron_dict = {}
         for change in self.changes_list:
             if change.date in self.changes_chron_dict.keys():
@@ -227,7 +253,7 @@ class AdministrativeHistory():
             else:
                 self.changes_chron_dict[change.date] = [change]
 
-        for date, change_list in self.changes_chron_dict.items():
+        for change_list in self.changes_chron_dict.values():
             # Sort changes for every date according to the order.
             # change.order = None puts the changes at the end of the list.
             change_list.sort(key=lambda change: (change.order is None, change.order))
@@ -242,6 +268,9 @@ class AdministrativeHistory():
         #         change.echo()
 
     def _create_history(self):
+        """
+        Creates the data model of administrative history through the sequential application of administrative changes.
+        """
         print(f"Creating administrative history (sequentially applying changes)...")
         start_time = time.time()
 
@@ -253,7 +282,7 @@ class AdministrativeHistory():
         for i, date in enumerate(self.changes_dates):
             changes_list = self.changes_chron_dict[date]
             old_state = self.states_list[-1]
-            new_state, all_units_affected = old_state.apply_changes(changes_list, self.region_registry, self.dist_registry, verbose = False)
+            new_state = old_state.apply_changes(changes_list, self.region_registry, self.dist_registry, verbose = False)
             self.states_list.append(new_state)
 
             csv_filename = "/state" + new_state.timespan.start.strftime("%Y-%m-%d")
@@ -1360,6 +1389,9 @@ class AdministrativeHistory():
         return fig
     
     def generate_adm_state_plots(self):
+        """
+        Creates and saves plots of all the administrative states in the administrative history.
+        """
         import matplotlib.pyplot as plt
 
         start_time = time.time()

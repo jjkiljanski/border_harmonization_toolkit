@@ -18,7 +18,7 @@ administrative_history = AdministrativeHistory(config, load_geometries=True)
 
 ########## Example uses of the implemented methods ##########
 
-administrative_history.harmonize_data()
+#administrative_history.harmonize_data()
 
 
 """ Print all adm. states in the adm. history

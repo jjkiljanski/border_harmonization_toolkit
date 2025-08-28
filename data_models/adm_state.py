@@ -18,13 +18,19 @@ import io
 import pandas as pd
 
 #############################################################################################
-# Models to store information about current region-districts relations.
-# AdministrativeState is a list of (region name, list of districts) pairs.
-# Every timespan between two consecutive changes has a different adm. state,
-# i.e. NO REGION OR DISTRICT should have a state timespan that ends in the middle
-# of an administrative states timespans.
-# EVERY EXISTENT DISTRICT in timepoint t must be present in the hierarchy of adm_state
-# with a timespan encompassing t.
+
+"""
+An instance adm_state of the AdministrativeState model describes all the relations of administrative
+appartenance in the form:    "country -> region -> district."
+
+Every two consecutive administrative changes at times t_1 and t_2 define a timespan of existence
+of a distinct administrative state.
+In other words, no Region or District should have a state timespan that ends or begins between t_1 and t_2.
+
+Every Region and District that exist at the timepoint t (t_1 <= t < t_2) must be present somewhere
+in the hierarchy of the administrative state with the timespan [t_1, t_2).
+
+"""
 
 RegionAddress = Tuple[Literal["HOMELAND", "ABROAD"], str]              # For regions"
 DistAddress = Tuple[Literal["HOMELAND", "ABROAD"], str, str]         # For districts
@@ -183,6 +189,9 @@ class AdministrativeState(BaseModel):
         3. Verifies that such standardized address exists.
 
         If check_date passed, uses check_date for checks. If not, uses check_date = self.timespan.middle.
+
+        Returns:
+            - the standardized address (tuple).
         """
         if check_date is None:
             check_date = self.timespan.middle # Set check_date if not passed
@@ -421,6 +430,9 @@ class AdministrativeState(BaseModel):
         return r_list_comparison, d_list_comparison, state_comparison
     
     def _district_plot_layer(self, dist_registry: DistrictRegistry, date: datetime, test=False):
+        """
+        Returns a districts GeoDataFrame for downstream plotting task (gdf columns definie the plotting styles).
+        """
         gdf = dist_registry._plot_layer(date)
 
         if test:
@@ -436,6 +448,10 @@ class AdministrativeState(BaseModel):
         return gdf
     
     def _region_plot_layer(self, region_registry, dist_registry: DistrictRegistry, date: datetime, test=False):
+        """
+        Returns a regions GeoDataFrame for downstream plotting task (gdf columns definie the plotting styles).
+        Each Region geometry is created through the union of districts that belong to the region.
+        """
         records = []
         for area_type, regions in self.unit_hierarchy.items():
             for region_name, districts in regions.items():
@@ -468,7 +484,11 @@ class AdministrativeState(BaseModel):
             columns=["name_id", "geometry", "color", "edgecolor", "linewidth", "shownames"]
         )
     
-    def _country_plot_layer(self, dist_registry: DistrictRegistry, date: datetime, test = False):
+    def _country_plot_layer(self, dist_registry: DistrictRegistry, date: datetime, test = False, plot_abroad = False):
+        """
+        Returns a country GeoDataFrame for downstream plotting task (gdf columns definie the plotting styles).
+        Each country geometry is created through the union of districts that belong to ithe country
+        """
         country_geoms = {}
         for country_name in self.unit_hierarchy.keys():
             country_geoms[country_name] = []
@@ -510,6 +530,9 @@ class AdministrativeState(BaseModel):
         )
     
     def _whole_map_plot_layer(self, whole_map):
+        """
+        Takes a geometry with the shape of the whole map and adds styles for downstream plotting tasks.
+        """
         whole_map_gpd = gpd.GeoDataFrame({
             "name_id": ["WHOLE_MAP"],
             "geometry": [whole_map],
@@ -522,6 +545,9 @@ class AdministrativeState(BaseModel):
         return whole_map_gpd
     
     def plot(self, region_registry, dist_registry, whole_map, date, plot_abroad = False):
+        """
+        Creates a plot of the administrative state and returns the figure with the plot.
+        """
         from utils.helper_functions import build_plot_from_layers
 
         start_time = time.time()
@@ -555,7 +581,18 @@ class AdministrativeState(BaseModel):
         return fig
     
     def apply_changes(self, changes_list, region_registry, dist_registry, verbose = True):
-        # Creates a copy of itself, applies all changes to the copy and returns it as a new state.
+        """
+        Creates a copy of itself, applies all changes to the copy and returns it as a new state.
+
+        Arguments:
+            - changes_list (list): A list of data_models.adm_change.Change instances.
+                All changes are assumed to occur on the same date ending the timespan of the adm_state.
+            - region_registry (adm_unit.RegionRegistry): Region registry.
+            - dist_registry (adm_unit.DistrictRegistry): District registry.
+
+        Returns:
+            - new_state (AdministrativeState): New state - the outcome of the application of all changes.
+        """
 
         # Take the date of the change and ensure that all changes have the same date.
         change_date = changes_list[0].date
@@ -567,21 +604,17 @@ class AdministrativeState(BaseModel):
 
         # Create a new state such that change_date marks the transition between the old and the new one.
         new_state = self.create_new(change_date)
-        
-        all_units_affected = {"Region": [], "District": []}
             
         for change in changes_list:
             try:
                 # Apply change and store information on the affected districts
                 change.apply(new_state, region_registry, dist_registry, plot_change = False, verbose = verbose)
-                all_units_affected["Region"] += change.units_affected["Region"]
-                all_units_affected["District"] += change.units_affected["District"]
             except Exception as e:
                 raise RuntimeError(f"Error during the application of change {str(change)}: {str(e)}") from e
         
         new_state.verify_consistency(region_registry, dist_registry)
         
-        return new_state, all_units_affected
+        return new_state
     
     def __str__(self):
         regions_len = len(self.all_region_names())

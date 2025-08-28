@@ -1,9 +1,7 @@
 from pydantic import BaseModel, model_validator, field_validator, Field
-from typing import Union, Optional, Literal, List, Dict, Annotated, Any
+from typing import Union, Optional, Literal, List, Dict, Annotated, Any, Tuple
 from abc import ABC, abstractmethod
 from datetime import datetime, timedelta
-
-import sys
 
 
 
@@ -20,14 +18,51 @@ config = load_config("config.json")
 #                            Data models for changes                                #
 #####################################################################################
 
+"""
+Change dicts stored in a list in the input file changes_list describe the history of
+all administrative changes. The data models in this module describe the structure of
+those dicts.
+___________________________________
+
+The change base class (change base data model) is defined as follows:
+
+class Change(BaseModel):
+    matter: ChangeMatter
+    ...
+
+The matter is defined as the discriminated union of different matter models:
+
+ChangeMatter = Annotated[
+    Union[UnitReform, OneToMany, ManyToOne, ChangeAdmState],
+    Field(discriminator="change_type")
+]
+
+Finally, the each matter is defined in the following way:
+
+class UnitReform(BaseChangeMatter):
+    change_type: Literal["UnitReform"]          <- The discriminator field.
+    ...
+
+    def apply(...):
+        ...
+___________________________________
+
+There are four types of change matters:
+ - UnitReform: represents the reform of some attributes of a District or Region (e.g. changed unit name or seat).
+ - OneToMany: represents the reform where the territory of one District is transfered to many districts.
+ - ManyToOne: represents the reform where the territory of many Districts is transfered to one district.
+ - ChangeAdmState: represents the reform where a District is transfered to another region or a region to another country.
+
+Each matter type has its own "apply" method that "enacts" the change through:
+ 1. creation of a new administrative state,
+ 2. addition of newly created units to the region and district registries,
+ 3. changes of states of the affected units in the registries.
+"""
+
 class BaseChangeMatter(BaseModel, ABC):
 
     @abstractmethod
     def echo(self, date, sources) -> str:
-        pass
-
-    @abstractmethod
-    def districts_involved(self) -> list[str]:
         pass
 
     @abstractmethod
@@ -41,6 +76,10 @@ class BaseChangeMatter(BaseModel, ABC):
 # Definition of the data model for the matter of UnitReform change.
 
 class UnitReform(BaseChangeMatter):
+    """
+    This BaseChangeMatter subclass defines a change where some attributes
+    of a unit (Region of District) (e.g. unit name) are changed.
+    """
     change_type: Literal["UnitReform"]
     unit_type: Literal["Region", "District"]
     current_name: str
@@ -50,6 +89,10 @@ class UnitReform(BaseChangeMatter):
     @model_validator(mode="before")
     @classmethod
     def ensure_keys_and_name(cls, values):
+        """
+        Data model validator.
+        Ensure that both to_reform and after_reform attributes are dicts with the same keys
+        """
         to_reform = values.get("to_reform", {})
         after_reform = values.get("after_reform", {})
 
@@ -64,6 +107,9 @@ class UnitReform(BaseChangeMatter):
         return values
         
     def fill_units_affected_current_names(self) -> Dict[Literal["Region", "District"], Dict[Literal["before", "after"], List[str]]]:
+        """
+        Returns a dict with lists of names of units affected by the reform.
+        """
         if "current_name" in self.after_reform.keys():
             after = self.after_reform["current_name"]
         else:
@@ -80,6 +126,9 @@ class UnitReform(BaseChangeMatter):
         return
     
     def verify_att_to_reform(self, change, adm_state, region_registry, dist_registry):
+        """
+        Verify that the reform is applied to existing unit attributes.
+        """
         if self.unit_type == "Region":
             _, unit_state, _ = region_registry.find_unit_state_by_date(self.current_name, change.date)
         else:
@@ -94,6 +143,9 @@ class UnitReform(BaseChangeMatter):
                 )
     
     def echo(self, date, sources, lang = "pol"):
+        """
+        Print reform description.
+        """
         if lang == "pol":
             if self.unit_type == "Region": jednostka = "województwa"
             else: jednostka = "powiatu"
@@ -104,6 +156,9 @@ class UnitReform(BaseChangeMatter):
             raise ValueError("Wrong value for the lang parameter.")
         
     def apply(self, change, adm_state, region_registry, dist_registry):
+        """
+        Apply the unit reform.
+        """
         if(self.unit_type=="Region"):
             unit = region_registry.find_unit(self.current_name)
         else:
@@ -137,9 +192,6 @@ class UnitReform(BaseChangeMatter):
     def __repr__(self):
         return f"<UnitReform ({self.unit_type}:{self.current_name}) attributes {', '.join(self.to_reform.keys())}>"
     
-    def districts_involved(self) -> list[str]:
-        pass
-    
 # Definition of the data model for the matter of OneToMany change.
     
 class OneToManyTakeFrom(BaseModel):
@@ -156,6 +208,11 @@ class OneToManyTakeTo(BaseModel):
 
     @model_validator(mode="after")
     def validate_create_fields(self):
+        """
+        Ensure that the data model is properly defined:
+        1. If 'create' attrib. is true, the data of the unit to create must be passed.
+        2. If 'create' attrib. is false, a name of a unit must be passed. The territory is transferred to this unit.
+        """
         if self.create:
             if not self.district:
                 raise ValueError(f"A dict coherent with District data model must be passed as 'district' attribute when 'create' is True.")
@@ -170,6 +227,10 @@ class OneToManyTakeTo(BaseModel):
         return self
     
 class OneToMany(BaseChangeMatter):
+    """
+    This BaseChangeMatter subclass defines a change where the territory of the unit u_0 is transefered to the units u_1, u_2, ..., u_n.
+    Unit u_0 can be abolished, and the each of the units u_1, u_2, ..., u_n can be created as a result of this administrative change.
+    """
     change_type: Literal["OneToMany"]
     unit_attribute: str # Defines what is transfered between units. In the toolkit, only "territory" on the district level is implemented.
     unit_type: Literal["Region", "District"] # The change happens on one "level" i.e. can be only an exchange between regions OR between districts, not between regions AND districts.
@@ -177,6 +238,9 @@ class OneToMany(BaseChangeMatter):
     take_to: List[OneToManyTakeTo]
 
     def fill_units_affected_current_names(self) -> Dict[Literal["Region", "District"], Dict[Literal["before", "after"], List[str]]]:
+        """
+        Returns a dict with lists of names of units affected by the reform.
+        """
         unit_type = self.unit_type  # "District" or "Region"
         before_current_names = [self.take_from.current_name]
         after_current_names = []
@@ -196,6 +260,11 @@ class OneToMany(BaseChangeMatter):
         }
     
     def verify_and_standardize_all_addresses(self, change, adm_state, region_registry, dist_registry):
+        """
+        Ensure that the address of each of the created units is correctly defined
+        (i.e. if address is (new_u_country, new_u_region, new_u), then the new_u_region must indeed exist in new_u_country
+        at the moment of the creation).
+        """
         for take_to_dict in self.take_to:
             if take_to_dict.create:
                 # Correct only country and region names, the new district is not yet created.
@@ -209,6 +278,9 @@ class OneToMany(BaseChangeMatter):
         return
 
     def echo(self, date, sources, lang = "pol"):
+        """
+        Print reform description.
+        """
         destination_districts = ", ".join([f"{destination.current_name}" for destination in self.take_to])
         if lang == "pol":
             if self.take_from.delete_unit:
@@ -232,8 +304,11 @@ class OneToMany(BaseChangeMatter):
             raise ValueError("Wrong value for the lang parameter.")
         
     def apply(self, change, adm_state, region_registry, dist_registry):
+        """
+        Apply the unit reform.
+        """
         # In the current version of the toolkit it is assumed that the OneToMany change
-        # describes ONLY exchange of territories between administrative units.
+        # describes ONLY exchange of TERRITORIES between administrative units.
         # It is however very easy to extend the toolkit to work with exchange of other
         # administrative unit stock variables - above all this method has to be rewritten.
         if(self.unit_type=="Region"):
@@ -285,9 +360,6 @@ class OneToMany(BaseChangeMatter):
             change.dist_ter_to.append((unit, unit.states[-1]))
         return
     
-    def districts_involved(self) -> list[str]:
-        pass
-    
     def __repr__(self):
         names_to = ', '.join(
                                 d.current_name if hasattr(d, 'current_name') else d.district.states[0].current_name
@@ -324,6 +396,10 @@ class ManyToOneTakeTo(BaseModel):
         return self
 
 class ManyToOne(BaseModel):
+    """
+    This BaseChangeMatter subclass defines a change where the territory of units u_1, u_2, ..., u_n is transefered to the unit u_0.
+    Each of the units u_1, u_2, ..., u_n can be abolished, and the unit u_0 can be created as a result of this administrative change.
+    """
     change_type: Literal["ManyToOne"]
     unit_attribute: str # Defines what is transfered between units. In the toolkit, only "territory" on the district level is implemented.
     unit_type: Literal["Region", "District"]
@@ -331,6 +407,9 @@ class ManyToOne(BaseModel):
     take_to: ManyToOneTakeTo
 
     def fill_units_affected_current_names(self) -> Dict[Literal["Region", "District"], Dict[Literal["before", "after"], List[str]]]:
+        """
+        Returns a dict with lists of names of units affected by the reform.
+        """
         unit_type = self.unit_type  # Should be "District" or "Region"
         before_current_names = [take_from_dict.current_name for take_from_dict in self.take_from]
         if not self.take_to.create:
@@ -349,6 +428,11 @@ class ManyToOne(BaseModel):
         }
     
     def verify_and_standardize_all_addresses(self, change, adm_state, region_registry, dist_registry):
+        """
+        Ensure that the address of the created unit is correctly defined
+        (i.e. if address is (new_u_country, new_u_region, new_u), then the new_u_region must indeed exist in new_u_country
+        at the moment of the creation).
+        """
         if self.take_to.create:
             # Correct only country and region names, the new district is not yet created.
             c_name, r_name, d_name = self.take_to.new_district_address # Assuming address is of length 3
@@ -360,6 +444,9 @@ class ManyToOne(BaseModel):
         return
 
     def echo(self, date, sources, lang = "pol"):
+        """
+        Print reform description.
+        """
         origin_districts_partial = ", ".join([f"{origin.current_name}" for origin in self.take_from if not origin.delete_unit])
         origin_districts_whole = ", ".join([f"{origin.current_name}" for origin in self.take_from if origin.delete_unit])
         if lang == "pol":
@@ -440,8 +527,11 @@ class ManyToOne(BaseModel):
             raise ValueError("Wrong value for the lang parameter.")
 
     def apply(self, change, adm_state, region_registry, dist_registry):
+        """
+        Apply the unit reform.
+        """
         # In the current version of the toolkit it is assumed that the OneToMany change
-        # describes ONLY exchange of territories between administrative units.
+        # describes ONLY exchange of TERRITORIES between administrative units.
         # It is however very easy to extend the toolkit to work with exchange of other
         # administrative unit stock variables - above all this method has to be rewritten.
         if(self.unit_type=="Region"):
@@ -468,8 +558,9 @@ class ManyToOne(BaseModel):
             if unit is not None:
                 if unit_state is not None:
                     raise ValueError(f"ManyToOne change attempted to create unit {unit.name_id} on {change.date}, but the unit already exists on the date.")
-                unit_to_state = DistState(**self.take_to.district.states[0])
-                unit_to.states.append(unit_to_state)
+                else:
+                    unit_to_state = DistState(**self.take_to.district.states[0])
+                    unit_to.states.append(unit_to_state)
             else:
                 unit_to = dist_registry.add_unit(self.take_to.district)
                 unit_to_state = unit_to.states[0]
@@ -488,9 +579,6 @@ class ManyToOne(BaseModel):
         change.dist_ter_to.append((unit_to, unit_to.states[-1]))
 
         return
-    
-    def districts_involved(self) -> list[str]:
-        pass
         
     def __repr__(self):
         return f"<ManyToOne: {', '.join(d.current_name for d in self.take_from)} → {self.take_to.current_name}>"
@@ -519,6 +607,9 @@ class ChangeAdmState(BaseChangeMatter):
         return self
 
     def fill_units_affected_current_names(self) -> Dict[Literal["Region", "District"], Dict[Literal["before", "after"], List[str]]]:
+        """
+        Returns a dict with lists of names of units affected by the reform.
+        """
         affected: Dict[Literal["Region", "District"], Dict[Literal["before", "after"], List[str]]] = {
             "Region": {
                 "before": [self.take_from[1]],
@@ -535,6 +626,9 @@ class ChangeAdmState(BaseChangeMatter):
         return affected
     
     def verify_and_standardize_all_addresses(self, change, adm_state, region_registry, dist_registry):
+        """
+        Verifies that the passed new addresses of units are standardized (i.e. using units' name_ids).
+        """
         self.take_from = adm_state.verify_and_standardize_address(self.take_from, region_registry, dist_registry, change.date)
         if len(self.take_to) == 3:
             c_name, r_name, d_name = self.take_to
@@ -546,6 +640,9 @@ class ChangeAdmState(BaseChangeMatter):
         return
     
     def echo(self, date, sources, lang = "pol"):
+        """
+        Print reform description.
+        """
         if lang == "pol":
             if len(self.take_from) == 2:
                 z_kraj, z_woj = self.take_from
@@ -570,6 +667,9 @@ class ChangeAdmState(BaseChangeMatter):
             raise ValueError("Wrong value for the lang parameter.")
         
     def apply(self, change, adm_state, region_registry, dist_registry):
+        """
+        Apply the unit reform.
+        """
         # In the current version of the toolkit it is assumed that the OneToMany change
         # describes ONLY exchange of territories between administrative units.
         # It is however very easy to extend the toolkit to work with exchange of other
@@ -598,25 +698,17 @@ class ChangeAdmState(BaseChangeMatter):
             change.dist_ter_to = []
         return
     
-    def districts_involved(self) -> list[str]:
-        pass
-    
-###############################################################
-# Definition of the base Change data model
+#######################################################################################################
+########################       Definition of the base Change data model       #########################
+#######################################################################################################
 
-# Create combined change entry using a discriminated union.
+# Create ChangeMatter model as a discriminated union.
 ChangeMatter = Annotated[
     Union[UnitReform, OneToMany, ManyToOne, ChangeAdmState],
     Field(discriminator="change_type")
 ]
 
-from pydantic import BaseModel, model_validator
-from typing import List, Optional, Dict, Literal, Tuple
-
-def normalize_spaces(text: str) -> str:
-    # Replace non-breaking spaces (U+00A0) with normal spaces and strip
-    return text.replace("\u00A0", " ").strip()
-
+# Define base Change model
 class Change(BaseModel):
     date: datetime
     sources: List[str]
@@ -634,6 +726,9 @@ class Change(BaseModel):
 
     @model_validator(mode='before')
     def clean_sources_links_and_normalize_matter(cls, values):
+        """
+        Clean and normalize sources and links attributes
+        """
         sources = values.get("sources", [])
         links = values.get("links", [])
 
@@ -663,10 +758,10 @@ class Change(BaseModel):
 
 
     def echo(self) -> str:
+        """
+        Print reform description. Function defined in the change matter.
+        """
         return self.matter.echo(self.date, self.sources)
-
-    def districts_involved(self) -> list[str]:
-        return self.matter.districts_involved()
     
     def create_next_state(self, unit: Unit) -> UnitState:
         """
@@ -691,14 +786,19 @@ class Change(BaseModel):
 
     def abolish(self, unit: Unit) -> None:
         """
-        Abolished the given unit and links its state before abolishmend
-        to itself."""
+        Abolishes the given unit and links its state before abolishment
+        to self (the Change instance).
+        """
         old_state = unit.abolish(self.date)
         old_state.next_change = self
         self.previous_states.append(old_state)
 
 
     def verify_consistency(self, adm_state, region_registry, dist_registry):
+        """
+        Ensures that the change can be correctly applied.
+        """
+
         # First, verify the consistency between administrative state, region registry and district registry.
         try:
             adm_state.verify_consistency(region_registry, dist_registry, check_date = self.date)
@@ -753,6 +853,9 @@ class Change(BaseModel):
     @field_validator("date", mode="before")
     @classmethod
     def parse_non_iso_date(cls, value):
+        """
+        Parse DD.MM.YYYY to datetime.datetime format.
+        """
         if isinstance(value, str):
             try:
                 return datetime.strptime(value, "%d.%m.%Y")
