@@ -2971,6 +2971,27 @@
     }
   },
   {
+    "date": "12.02.1931",
+    "sources": ["Dz.U. 1931 nr 17 poz. 94"],
+    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19310170094"],
+    "description": "12 lutego 1931 z powiatu wrzesińskiego wyłączono gminy Mierzejewo i Jarząbkowo oraz obszary dworskie Mierzewo i Czeluścin i włączono je do powiatu gnieźnieńskiego.",
+    "matter": {
+      "change_type": "OneToMany",
+      "take_from": {
+        "delete_unit": false,
+        "current_name": "WRZESIŃSKI"
+      },
+      "take_to": [
+        {
+          "create": false,
+          "current_name": "GNIEŹNIEŃSKI"
+        }
+      ],
+      "unit_attribute": "territory",
+      "unit_type": "District"
+    }
+  },
+  {
     "date": "04.03.1931",
     "sources": ["M.P. z 1931 r. nr 51, poz. 86"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP19310510086"],
@@ -6103,7 +6124,7 @@
       "take_to": [
         {
           "create": false,
-          "current_name": "KALISKI"
+          "current_name": "INOWROCŁAWSKI"
         }
       ],
       "unit_attribute": "territory",

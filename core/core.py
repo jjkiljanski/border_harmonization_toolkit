@@ -44,7 +44,7 @@ Example usage:
 """
 
 class AdministrativeHistory():
-    def __init__(self, config, load_geometries=True):
+    def __init__(self, config, load_geometries=True, populate_fallback = True):
         # Load the configuration
         config = load_config("config.json")
         
@@ -112,7 +112,8 @@ class AdministrativeHistory():
         self._deduce_territories(verbose = False)
 
         # Populate missing territories with fallback values
-        self._populate_territories_fallback()
+        if populate_fallback:
+            self._populate_territories_fallback()
 
         self._load_harmonization_metadata()
 
