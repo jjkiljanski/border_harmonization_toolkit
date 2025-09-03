@@ -3103,7 +3103,7 @@
     "date": "01.05.1931",
     "sources": ["Dz.U. 1931 nr 41 poz. 359"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19310410359"],
-    "description": "1.05.1931 wyłączono z gminy Berszty powiatu grodzieńskiego miejscowości  Motyle, Kropiwnica, Dudki, Zamościany, Romanowo, Pogorzelec, Horodyszcze, Bieńki, Ryski, Kucy Las, Ugły, Jakubowicze, Szczeniec, Ciemne Błoto, Siniaciówka, Nowiszcze, Horaczy Bór, Zubrowo, Las Kobyli, Grug, Razłuka, Kurgany, Dziwicza Mogiła, Daszki, Krasna, Dołga Łoza, Mchy, Puste Błoto i włączono je do powiatu szczuczyńskiego: do gminy Sobakińce (Motyle, Dudki, Zamościany, Komanowo, Bieńki, Ryski, Kropiwnica, Pogorzelec, Horodyszcze, Horaczy Bór, Zubrowo, Las Kobyli, Krug, Razłuka, Kurgany, Dziwicza Mogiła, Daszki), do gminy Nowy Dwór ( Krasna, Kucy Las, Jaku- bowicze, Ugly, Dolga Łoza, Mchy, Puste Bloto), do gminy Ostryna (Szczeniec, Ciemne Błoto, Siniaciówka, Nowiszcz)",
+    "description": "1.05.1931 wyłączono z gminy Berszty powiatu grodzieńskiego miejscowości Motyle, Kropiwnica, Dudki, Zamościany, Romanowo, Pogorzelec, Horodyszcze, Bieńki, Ryski, Kucy Las, Ugły, Jakubowicze, Szczeniec, Ciemne Błoto, Siniaciówka, Nowiszcze, Horaczy Bór, Zubrowo, Las Kobyli, Grug, Razłuka, Kurgany, Dziwicza Mogiła, Daszki, Krasna, Dołga Łoza, Mchy, Puste Błoto i włączono je do powiatu szczuczyńskiego: do gminy Sobakińce (Motyle, Dudki, Zamościany, Komanowo, Bieńki, Ryski, Kropiwnica, Pogorzelec, Horodyszcze, Horaczy Bór, Zubrowo, Las Kobyli, Krug, Razłuka, Kurgany, Dziwicza Mogiła, Daszki), do gminy Nowy Dwór ( Krasna, Kucy Las, Jaku- bowicze, Ugly, Dolga Łoza, Mchy, Puste Bloto), do gminy Ostryna (Szczeniec, Ciemne Błoto, Siniaciówka, Nowiszcz)",
     "matter": {
       "change_type": "OneToMany",
       "take_from": {
@@ -3655,7 +3655,7 @@
     "date": "01.04.1932",
     "sources": ["Dz.U. z 1932 r. nr 6, poz. 36"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19320060036"],
-    "description": "01.04.1932 powiat starosamborski został zniesiony, a jego terytorium włączono do powiatu samborskiego.",
+    "description": "01.04.1932 powiat starosamborski został zniesiony, a jego terytorium rozdzielono między powiaty samborski i turczański.",
     "matter": {
       "change_type": "OneToMany",
       "take_from": {
@@ -3666,6 +3666,10 @@
         {
           "create": false,
           "current_name": "SAMBORSKI"
+        },
+        {
+          "create": false,
+          "current_name": "TURCZAŃSKI"
         }
       ],
       "unit_attribute": "territory",
@@ -3841,12 +3845,12 @@
       "change_type": "OneToMany",
       "take_from": {
         "delete_unit": false,
-        "current_name": "KOŚCIAŃSKI"
+        "current_name": "PUŁTUSKI"
       },
       "take_to": [
         {
           "create": false,
-          "current_name": "LESZCZYŃSKI"
+          "current_name": "RADZYMIŃSKI"
         }
       ],
       "unit_attribute": "territory",
@@ -3862,7 +3866,7 @@
       "change_type": "OneToMany",
       "take_from": {
         "delete_unit": false,
-        "current_name": "STANISŁAWOWSKI"
+        "current_name": "ROHATYŃSKI"
       },
       "take_to": [
         {
@@ -4244,7 +4248,7 @@
     "order": 0,
     "sources": ["Dz.U. 1934 nr 47 poz. 408"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19340470408"],
-    "description": "15.06.1934 z powiatu skałackiego w województwie tarnopclskiem wyłącza się pming wiejską Sorocko i włącza się ją do powiatu trembowelskiego w temże województwie.",
+    "description": "15.06.1934 z powiatu skałackiego w województwie tarnopclskiem wyłącza się gminę wiejską Sorocko i włącza się ją do powiatu trembowelskiego w temże województwie.",
     "matter": {
       "change_type": "OneToMany",
       "take_from": {
