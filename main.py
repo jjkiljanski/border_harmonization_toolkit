@@ -17,10 +17,10 @@ config = load_config("config.json")
 administrative_history = AdministrativeHistory(config, load_geometries=True, populate_fallback=False)
 
 # Recover the gdf generated for 1.10.1934
-deduced_gdf = administrative_history.dist_registry._plot_layer(datetime(1934,10,1))
+deduced_gdf = administrative_history.dist_registry._plot_layer(datetime(1939,4,1))
 
 # Save GeoDataFrame to a shapefile
-deduced_gdf.to_file(r"E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\mapy\mapa 1.10.1934\districts_1934_10_1.shp", driver="ESRI Shapefile")
+deduced_gdf.to_file(r"E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\mapy\mapa 1.04.1939\districts_1939_04_1.shp", driver="ESRI Shapefile")
 
 ########## Example uses of the implemented methods ##########
 

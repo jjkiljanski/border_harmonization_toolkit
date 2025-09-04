@@ -6911,7 +6911,7 @@
     "date": "01.04.1939",
     "sources": ["Dz.U. z 1938 r. nr 27, poz. 240"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19380270240"],
-    "description": "01.04.1939 przeniesiono powiat konecki, woj. kieleckie, do woj. łódzkiego",
+    "description": "01.04.1939 przeniesiono powiat konecki, woj. kieleckie, do woj. łódzkiego - z wyjątkiem gmin miejskich Skarżysko Kamienna i Szydłowiec oraz gmin wiejskich Bliżyn i Szydłowiec",
     "matter": {
       "change_type": "ChangeAdmState",
       "take_from": [
@@ -6924,6 +6924,35 @@
         "ŁÓDZKIE",
         "KONECKI"
       ]
+    }
+  },
+  {
+    "date": "01.04.1939",
+    "sources": ["Dz.U. z 1938 r. nr 27, poz. 240", "Dz.U. 1939 nr 14 poz. 83"],
+    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19380270240", "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19390140083"],
+    "description": "01.04.1939 przeniesiono powiat konecki, woj. kieleckie, do woj. łódzkiego - z wyjątkiem gmin miejskich Skarżysko Kamienna (włączona do powiatu kieleckiego) i Szydłowiec (pow. radomski) oraz gmin wiejskich Bliżyn (pow. kielecki) i Szydłowiec (radomski, bez gromady Skarżysko Książęce, którą włączono do gminy wiejskiej Skarżysko Kościelne w powiecie iłżeckim).",
+    "matter": {
+      "change_type": "OneToMany",
+      "take_from": {
+        "delete_unit": false,
+        "current_name": "KONECKI"
+      },
+      "take_to": [
+        {
+          "create": false,
+          "current_name": "RADOMSKI"
+        },
+        {
+          "create": false,
+          "current_name": "IŁŻECKI"
+        },
+        {
+          "create": false,
+          "current_name": "KIELECKI"
+        }
+      ],
+      "unit_attribute": "territory",
+      "unit_type": "District"
     }
   },
   {
@@ -6949,7 +6978,7 @@
     "date": "01.04.1939",
     "sources": ["Dz.U. z 1938 r. nr 27, poz. 240"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19380270240"],
-    "description": "01.04.1939 przeniesiono powiat garwoliński, woj. lubelskie, do województwa warszawskiego.",
+    "description": "01.04.1939 przeniesiono powiat garwoliński, woj. lubelskie, do województwa warszawskiego. Przyłączono do niego gminę Irena powiatu puławskiego",
     "matter": {
       "change_type": "ChangeAdmState",
       "take_from": [
@@ -6962,6 +6991,27 @@
         "WARSZAWSKIE",
         "GARWOLIŃSKI"
       ]
+    }
+  },
+  {
+    "date": "01.04.1939",
+    "sources": ["Dz.U. z 1938 r. nr 27, poz. 240"],
+    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19380270240"],
+    "description": "01.04.1939 przeniesiono powiat garwoliński, woj. lubelskie, do województwa warszawskiego. Przyłączono do niego gminę Irena powiatu puławskiego.",
+    "matter": {
+      "change_type": "OneToMany",
+      "take_from": {
+        "delete_unit": false,
+        "current_name": "PUŁAWSKI"
+      },
+      "take_to": [
+        {
+          "create": false,
+          "current_name": "GARWOLIŃSKI"
+        }
+      ],
+      "unit_attribute": "territory",
+      "unit_type": "District"
     }
   },
   {
@@ -7076,31 +7126,6 @@
         "ŁÓDZKIE",
         "SKIERNIEWICKI"
       ]
-    }
-  },
-  {
-    "date": "01.04.1939",
-    "sources": ["Dz.U. 1939 nr 14 poz. 83"],
-    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19390140083"],
-    "description": "01.04.1939 gminę miejską Skarżysko-Kamienna i gminę wiejską Bliżyn włączono do powiatu kieleckiego, gminę miejską Szydłowiec i gminę wiejską Szydłowiec bez gromady Skarżysko Książęce do powiatu radomskiego, zaś gromadę Skarżysko Książęce gminy wiejskiej Szydłowiec - do gminy wiejskiej Skarżysko Kościelne w powiecie iłżeckim.",
-    "matter": {
-      "change_type": "OneToMany",
-      "take_from": {
-        "delete_unit": false,
-        "current_name": "KIELECKI"
-      },
-      "take_to": [
-        {
-          "create": false,
-          "current_name": "RADOMSKI"
-        },
-        {
-          "create": false,
-          "current_name": "IŁŻECKI"
-        }
-      ],
-      "unit_attribute": "territory",
-      "unit_type": "District"
     }
   },
   {
