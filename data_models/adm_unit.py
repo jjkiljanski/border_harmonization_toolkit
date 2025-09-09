@@ -276,6 +276,12 @@ class UnitRegistry(BaseModel):
                 all_existent.append((unit, unit.find_state_by_date(date)))
         return all_existent
     
+    def all_unit_states(self):
+        all_existent = []
+        for unit in self.unit_list:
+            all_existent += unit.states
+        return all_existent
+    
     def assure_consistency_and_append_new_unit(self,new_unit: Unit, verbose = False):
         """
         This method verifies:
@@ -377,7 +383,7 @@ class DistState(UnitState):
         else:
             raise ValueError(f"DistState._ter_difference method expects a pair of BaseGeometry or str type elements. The elements passed are of type ({type(ter_1)}, {type(ter_2)}).")
 
-    def spread_territory_info(self, compute_geometries=True, verbose = False):
+    def spread_territory_info(self, compute_geometries=True, verbose = False, iteration = 'not defined'):
         """
         This method searches recursively through the graph of all links between district states
         and fills all district territories that can be deduced on the basis of type of district
@@ -388,7 +394,7 @@ class DistState(UnitState):
         1. If the state was created by a district attribute reform, the territory is same as of the state before.
         2. If the state was created by the change of unit address, the territory is the same as of the state before.
         3. If the state was created by a OneToMany or ManyToOne change involving n districts (including itself), then
-            the state's territory can be deduced if the territories of the n-1 others are knowned.
+            the state's territory can be deduced if the territories of the n-1 others are known.
         
         The method reaches to the states before and afterwards (in case of OneToMany and ManyToOne it reaches also to the
         states of other units involved in the change), and:
@@ -397,8 +403,15 @@ class DistState(UnitState):
             a. Verifies that they haven't been checked yet - if yes, it returns None,
             b. if no, it calls the 'get_territory' method
         """
+        if verbose:
+            print(f"Iteration \'{iteration}\' Spreading territory info for district {self.current_name} {self.timespan} state.")
+
+        was_something_deduced = False
+        
         # This function should be called only for states that have the current_territory attribute defined
         if self.next_change:
+            if verbose:
+                print (f"The next change is {self.next_change}.")
             if len(self.next_change.next_states) == 1 and len(self.next_change.previous_states)==1:
                 next_state = self.next_change.next_states[0]
                 if next_state.current_territory_info is None:
@@ -407,7 +420,8 @@ class DistState(UnitState):
                     if compute_geometries:
                         next_state.current_territory = self.current_territory
                     next_state.territory_is_fallback = False
-                    next_state.spread_territory_info(compute_geometries=compute_geometries)
+                    was_something_deduced = True
+                    next_state.spread_territory_info(compute_geometries=compute_geometries, verbose=verbose, iteration=iteration)
             else:
                 num_ter_unknown = 0
                 state_with_ter_unknown = None # Holder for state with an unknown territory
@@ -431,13 +445,11 @@ class DistState(UnitState):
                     dists_to = "(" + ", ".join([dist.name_id for dist, _ in self.next_change.dist_ter_to]) + ")"
                     change_str = "DATE: " + self.next_change.date.strftime("%Y-%m-%d") + ", CHANGE TYPE: " + self.next_change.matter.change_type + ", TER. FLOW: " + dists_from + "->" + dists_to
                     if not (num_ter_unknown == 1):
-                        print(f"Unable to share territory farther. Change:")
+                        print(f"Unable to share territory farther. Change {self.next_change.index}:")
                     else:
-                        print(f"Sharing territory farther. Change:")
+                        print(f"Sharing territory farther. Change {self.next_change.index}:")
                     print(f"{change_str}\nKnown territories before:\n{territory_before_info}\nKnown territories after:\n{territory_after_info}")
-                if not (num_ter_unknown == 1):
-                    return
-                else:
+                if num_ter_unknown == 1:
                     ############## Deduction of the n-th territory on the basis of n-1 territories involved in the change. ######################
                     # Create lists with all territory INFO immediately after and before the next administrative change
                     all_territory_info_before = [unit_state.current_territory_info for unit_state in self.next_change.previous_states if unit_state.current_territory_info is not None]
@@ -476,10 +488,17 @@ class DistState(UnitState):
                     if verbose:
                         print(f"Deduced territory: {state_with_ter_unknown.current_name}: {state_with_ter_unknown.current_territory_info}.")
                     # Run the spread_territory for the state for which territory was deduced
-                    state_with_ter_unknown.spread_territory_info(compute_geometries=compute_geometries)
-                    return
+                    was_something_deduced = True
+                    state_with_ter_unknown.spread_territory_info(compute_geometries=compute_geometries, verbose=verbose, iteration=iteration)
+        else:
+            if verbose:
+                print (f"No next change defined.")
         # The logic for backward info share mirrors the forward info share logic.
         if self.previous_change:
+            if verbose:
+                print (f"The previous change is {self.previous_change}.")
+                print("DEBUG: type=", type(self.previous_change))
+
             if len(self.previous_change.previous_states) == 1 and len(self.previous_change.next_states) == 1:
                 previous_state = self.previous_change.previous_states[0]
                 if previous_state.current_territory_info is None:
@@ -488,7 +507,8 @@ class DistState(UnitState):
                         previous_state.current_territory = self.current_territory
                     previous_state.territory_is_deduced = True
                     previous_state.territory_is_fallback = False
-                    previous_state.spread_territory_info(compute_geometries=compute_geometries)
+                    was_something_deduced = True
+                    previous_state.spread_territory_info(compute_geometries=compute_geometries, verbose=verbose, iteration = iteration)
             else:
                 num_ter_unknown = 0
                 state_with_ter_unknown = None # Holder for state with an unknown territory
@@ -504,6 +524,7 @@ class DistState(UnitState):
 
                 territory_after_info = []
                 for unit_state in self.previous_change.next_states:
+                    territory_after_info.append((unit_state.current_name, unit_state.current_territory_info))
                     if unit_state.current_territory_info is None:
                         state_with_ter_unknown = unit_state
                         ter_unknown_after_or_before = 'after'
@@ -514,15 +535,12 @@ class DistState(UnitState):
                     dists_to = "(" + ", ".join([dist.name_id for dist, _ in self.previous_change.dist_ter_to]) + ")"
                     change_str = "DATE: " + self.previous_change.date.strftime("%Y-%m-%d") + ", CHANGE TYPE: " + self.previous_change.matter.change_type + ", TER. FLOW: " + dists_from + "->" + dists_to
                     if not (num_ter_unknown == 1):
-                        print(f"Unable to share territory farther. Change:")
+                        print(f"Unable to share territory farther. Change {self.previous_change.index}:")
                     else:
-                        print(f"Sharing territory farther. Change:")
+                        print(f"Sharing territory farther. Change {self.previous_change.index}:")
                     print(f"{change_str}\nKnown territories before:\n{territory_before_info}\nKnown territories after:\n{territory_after_info}")
 
-                if not (num_ter_unknown == 1):
-                    return
-                else:
-                    
+                if num_ter_unknown == 1:
                     ################## Deduction of the n-th territory on the basis of n-1 territories involved in the change. #####################
                     all_territory_info_before = [unit_state.current_territory_info for unit_state in self.previous_change.previous_states if unit_state.current_territory_info is not None]
                     all_territory_info_after = [unit_state.current_territory_info for unit_state in self.previous_change.next_states if unit_state.current_territory_info is not None]
@@ -561,8 +579,13 @@ class DistState(UnitState):
                         print(f"Deduced territory: {state_with_ter_unknown.current_name}: {state_with_ter_unknown.current_territory_info}.")
 
                     # Run the spread_territory for the state for which territory was deduced
-                    state_with_ter_unknown.spread_territory_info(compute_geometries=compute_geometries)
-                    return
+                    was_something_deduced = True
+                    state_with_ter_unknown.spread_territory_info(compute_geometries=compute_geometries, verbose=verbose, iteration=iteration)
+        else:
+            if verbose:
+                print (f"No previous change defined.")
+
+        return was_something_deduced
 
     def get_states_related_by_ter(self, parent_name, search_date, verbose = True):
         """

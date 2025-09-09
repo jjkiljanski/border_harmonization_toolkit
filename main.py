@@ -16,7 +16,7 @@ config = load_config("config.json")
 
 administrative_history = AdministrativeHistory(config, load_geometries=True)
 
-administrative_history.generate_adm_state_plots()
+#administrative_history.generate_adm_state_plots()
 
 ########## Example uses of the implemented methods ##########
 

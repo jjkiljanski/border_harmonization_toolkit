@@ -109,7 +109,7 @@ class AdministrativeHistory():
         self._load_territories()
 
         # Deduce information about district territories where possible
-        self._deduce_territories(verbose = False)
+        self._deduce_territories(verbose = True)
 
         # Populate missing territories with fallback values
         if populate_fallback:
@@ -280,10 +280,13 @@ class AdministrativeHistory():
             shutil.rmtree(self.adm_states_output_path)
         os.makedirs(self.adm_states_output_path)
 
+        current_change_index = 0
+
         for i, date in enumerate(self.changes_dates):
             changes_list = self.changes_chron_dict[date]
             old_state = self.states_list[-1]
-            new_state = old_state.apply_changes(changes_list, self.region_registry, self.dist_registry, verbose = False)
+            new_state = old_state.apply_changes(changes_list, self.region_registry, self.dist_registry, start_index=current_change_index, verbose = False)
+            current_change_index += len(changes_list)
             self.states_list.append(new_state)
 
             csv_filename = "/state" + new_state.timespan.start.strftime("%Y-%m-%d")
@@ -425,11 +428,26 @@ class AdministrativeHistory():
         """
         print("Deducing all possible dist territories on the basis of the loaded ones.")
         start_time = time.time()
+
+        was_anything_deduced = False
+
         for unit_state in self.states_with_loaded_territory:
             # Spread territory info for every state.
             # If self.load_geometries is True (and so the geometries were loaded), share geometries and territory info.
             # If self.load_geometries is False, share ONLY territory info.
-            unit_state.spread_territory_info(compute_geometries=self.load_geometries, verbose = verbose)
+            was_something_deduced = unit_state.spread_territory_info(compute_geometries=self.load_geometries, verbose = verbose, iteration='initial')
+            if was_something_deduced: was_anything_deduced = True
+
+        # If anything was deduced, rerun the territory spreading as long as something at all is being deduced.
+        i = 0
+        while was_anything_deduced:
+            print(f"Iteration {i} of territory deduction.")
+            was_anything_deduced = False
+            all_states = self.dist_registry.all_unit_states()
+            for unit_state in all_states:
+                if unit_state.current_territory_info:
+                    was_something_deduced = unit_state.spread_territory_info(compute_geometries=self.load_geometries, verbose = verbose, iteration = 'additional' + str(i))
+                    if was_something_deduced: was_anything_deduced = True
 
         # Update information: the territory info (and territories themselves) were loaded.
         self.territories_info_deduced = True

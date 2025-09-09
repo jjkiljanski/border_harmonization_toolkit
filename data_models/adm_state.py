@@ -572,6 +572,7 @@ class AdministrativeState(BaseModel):
             mpatches.Patch(color="orange", label="Fallback territory"),
             mpatches.Patch(color="lightgreen", label="Deduced territory"),
             mpatches.Patch(color="green", label="Loaded territory"),
+            mpatches.Patch(color="lightblue", label="Abroad"),
         ]
         ax.legend(handles=legend_patches, loc="lower left", fontsize="medium", frameon=True)
 
@@ -580,7 +581,7 @@ class AdministrativeState(BaseModel):
         print(f"Successfully created plot for administrative state {str(self)} in {execution_time:.2f} seconds.")
         return fig
     
-    def apply_changes(self, changes_list, region_registry, dist_registry, verbose = True):
+    def apply_changes(self, changes_list, region_registry, dist_registry, start_index, verbose = True):
         """
         Creates a copy of itself, applies all changes to the copy and returns it as a new state.
 
@@ -593,6 +594,8 @@ class AdministrativeState(BaseModel):
         Returns:
             - new_state (AdministrativeState): New state - the outcome of the application of all changes.
         """
+
+        current_change_index = start_index
 
         # Take the date of the change and ensure that all changes have the same date.
         change_date = changes_list[0].date
@@ -607,6 +610,10 @@ class AdministrativeState(BaseModel):
             
         for change in changes_list:
             try:
+                # Ascribe an index to the change
+                change.index = current_change_index
+                current_change_index += 1
+                
                 # Apply change and store information on the affected districts
                 change.apply(new_state, region_registry, dist_registry, plot_change = False, verbose = verbose)
             except Exception as e:

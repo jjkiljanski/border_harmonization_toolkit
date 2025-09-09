@@ -710,6 +710,7 @@ ChangeMatter = Annotated[
 
 # Define base Change model
 class Change(BaseModel):
+    index: Optional[int] = -1
     date: datetime
     sources: List[str]
     links: List[Optional[str]]
@@ -928,10 +929,10 @@ class Change(BaseModel):
     
     def __str__(self):
         if self.matter.change_type == "UnitReform":
-            return f"<Change type={self.matter.change_type}, ({self.units_affected_current_names[self.matter.unit_type]['before']}), date={self.date.date()}>"
+            return f"<Change no. {self.index} type={self.matter.change_type}, ({self.units_affected_current_names[self.matter.unit_type]['before']}), date={self.date.date()}>"
         if self.matter.change_type == "ManyToOne":
-            return f"<Change type={self.matter.change_type}, (... -> {self.units_affected_current_names['District']['after']}), date={self.date.date()}>"
+            return f"<Change no. {self.index} type={self.matter.change_type}, (... -> {self.units_affected_current_names['District']['after']}), date={self.date.date()}>"
         if self.matter.change_type == "OneToMany":
-            return f"<Change type={self.matter.change_type}, ({self.units_affected_current_names['District']['before']} -> ...), date={self.date.date()}>"
+            return f"<Change no. {self.index} type={self.matter.change_type}, ({self.units_affected_current_names['District']['before']} -> ...), date={self.date.date()}>"
         if self.matter.change_type == "ChangeAdmState":
-            return f"<Change type={self.matter.change_type}, ({self.matter.take_from} -> ...), date={self.date.date()}>"
+            return f"<Change no. {self.index} type={self.matter.change_type}, ({self.matter.take_from} -> ...), date={self.date.date()}>"
