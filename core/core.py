@@ -143,7 +143,7 @@ class AdministrativeHistory():
             n_districts = len(self.dist_registry.unit_list)
             end_time = time.time()
             execution_time = end_time - start_time
-            print(f"✅ Loaded {n_districts} validated districts in {execution_time:.2f} seconds. Set their initial state timespands to {TimeSpan(start = self.timespan.start, end = self.timespan.end)}.")
+            print(f"✅ Loaded {n_districts} validated districts in {execution_time:.2f} seconds. Set their initial state timespans to {TimeSpan(start = self.timespan.start, end = self.timespan.end)}.")
         except ValidationError as e:
             print(e.json(indent=2))
 
@@ -173,7 +173,7 @@ class AdministrativeHistory():
 
             end_time = time.time()
             execution_time = end_time - start_time
-            print(f"✅ Loaded {n_regions} validated regions in {execution_time:.2f} seconds. Set their initial state timespands to {TimeSpan(start = self.timespan.start, end = self.timespan.end)}")
+            print(f"✅ Loaded {n_regions} validated regions in {execution_time:.2f} seconds. Set their initial state timespans to {TimeSpan(start = self.timespan.start, end = self.timespan.end)}")
         except ValidationError as e:
             print(e.json(indent=2))
 
@@ -347,6 +347,19 @@ class AdministrativeHistory():
                             gdf = gdf.to_crs("EPSG:4326")
                             if verbose:
                                 print(f"CRS of the geometry loaded from file '{file_path}' converted. Original: {original_crs}. New: 'EPSG:4326'.")
+                            
+                    # Standardize district and region names to name_ids in the registries
+                    try:
+                        unit_suggestions = standardize_df(gdf, self.region_registry, self.dist_registry, columns = ["District"], verbose = False)
+                        if unit_suggestions['District'] != {}:
+                            print(f"Some names in the 'District' column of shapefile {filename} have more than one suggested name and were skipped.")
+                            print(f"The suggestions:")
+                            for key, value in unit_suggestions['District'].items():
+                                _, dist_name = key
+                                print(f"{dist_name}: {value}.")
+                    except ValueError as e:
+                        print(f"❌ Failed during names standardization of the shapefile {filename}: {e}")
+                        raise  # Do NOT assign the error to territories_gdf!
 
                     gdf_list.append(gdf)
 
@@ -366,13 +379,6 @@ class AdministrativeHistory():
         else:
             territories_gdf = territories_df
 
-        # Standardize district and region names to name_ids in the registries
-        try:
-            unit_suggestions = standardize_df(territories_gdf, self.region_registry, self.dist_registry, columns = ["District"], verbose = False)
-        except ValueError as e:
-            print("❌ Failed during names standardization of the loaded geometry dataframes:", e)
-            raise  # Do NOT assign the error to territories_gdf!
-
         # Set the territories of the appropriate states
         for idx, row in territories_gdf.iterrows():
             # Retrieve the district name and territory date
@@ -382,9 +388,12 @@ class AdministrativeHistory():
 
             # Find the appropriate unit state in the registry
             unit, unit_state, _ = self.dist_registry.find_unit_state_by_date(district_name_id, ter_date)
-            if unit_state is None:
-                print(f"No match found for district '{district_name_id}' on {ter_date.date()}")
+            if unit_state is None and unit is not None:
+                print(f"No match found for district '{district_name_id}' (standardized name: {unit.name_id}) on {ter_date.date()}")
                 continue
+            
+            if unit is None:
+                continue # This happens if there were more than one suggested names.
             
             # Always set the territory info
             unit_state.current_territory_info = unit.name_id+str(ter_date.date())
