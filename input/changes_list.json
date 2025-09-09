@@ -292,7 +292,7 @@
     "date": "22.06.1922",
     "sources": ["Dz.U. Śl. Nr 1 poz. 3", "załącznik: Dz.U. Śl. Nr 13 poz. 43"],
     "links": ["https://sbc.org.pl/dlibra/publication/5345", "https://sbc.org.pl/dlibra/publication/5357"],
-    "description": "22.06.1922 powstał z części powiatów Bytom wieś i Bytom miasto (Bytom pozostał po stronie niemieckiej) pozyskanych od Niemiec",
+    "description": "22.06.1922 powiat świętochłowicki powstał z części powiatów Bytom wieś i Bytom miasto (Bytom pozostał po stronie niemieckiej) pozyskanych od Niemiec",
     "matter": {
       "change_type": "ManyToOne",
       "take_from": [
@@ -519,6 +519,52 @@
           "POLESKIE",
           "STOLIŃSKI"
         ]
+      },
+      "unit_attribute": "territory",
+      "unit_type": "District"
+    }
+  },
+  {
+    "date": "01.01.1923",
+    "sources": ["Dz.U. z 1922 r. nr 116, poz. 1051"],
+    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19221161051"],
+    "description": "1.01.1923 wyłączono gminy dobrosławską i pohostską z powiatu łuninieckiego i włączono je do powiatu pińskiego.",
+    "matter": {
+      "change_type": "ManyToOne",
+      "take_from": [
+        {
+          "current_name": "ŁUNINIECKI",
+          "weight_from": null,
+          "weight_to": null,
+          "delete_unit": false
+        }
+      ],
+      "take_to": {
+        "create": false,
+        "current_name": "PIŃSKI"
+      },
+      "unit_attribute": "territory",
+      "unit_type": "District"
+    }
+  },
+  {
+    "date": "01.04.1923",
+    "sources": ["Dz.U. 1923 nr 25 poz. 155"],
+    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19230250155"],
+    "description": "10.07.1923 wyłączono gminę Bitków i obszar dworski Bitków z powiatu bohorodczańskiego i wcielono je do powiatu nadwórniańskiego",
+    "matter": {
+      "change_type": "ManyToOne",
+      "take_from": [
+        {
+          "current_name": "BOHORODCZAŃSKI",
+          "weight_from": null,
+          "weight_to": null,
+          "delete_unit": false
+        }
+      ],
+      "take_to": {
+        "create": false,
+        "current_name": "NADWÓRNIAŃSKI"
       },
       "unit_attribute": "territory",
       "unit_type": "District"
@@ -800,7 +846,7 @@
             {
               "current_name": "POZNAŃSKI",
               "current_seat_name": "POZNAŃ",
-              "current_dist_type": "w"
+              "current_dist_type": "m"
             }
           ]
         },
@@ -818,7 +864,7 @@
     "date": "01.01.1925",
     "sources": ["Dz.U. z 1924 r. nr 117, poz. 1044"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19241171044"],
-    "description": "1.01.1925 wyłączono z powiatu śremskiego gminy Puszczykowo Stare i Puszczykowo i włączono je do powiatu Poznań.",
+    "description": "1.01.1925 wyłączono z powiatu śremskiego gminy Puszczykowo Stare i Puszczykowo i włączono je do powiatu poznańskiego.",
     "matter": {
       "change_type": "OneToMany",
       "take_from": {
@@ -828,7 +874,7 @@
       "take_to": [
         {
           "create": false,
-          "current_name": "POZNAŃ (MIASTO)"
+          "current_name": "POZNAŃSKI"
         }
       ],
       "unit_attribute": "territory",
@@ -1087,6 +1133,27 @@
   },
   {
     "date": "01.07.1925",
+    "sources": ["Dz.U. 1925 nr 64 poz. 450"],
+    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19250640450"],
+    "description": "01.07.1925 z powiatu bohorodczańskiego wyłączono gminę Mołotków i wcielono ją do powiatu nadwórniańskiego.",
+    "matter": {
+      "change_type": "OneToMany",
+      "take_from": {
+        "delete_unit": false,
+        "current_name": "BOHORODCZAŃSKI"
+      },
+      "take_to": [
+        {
+          "create": false,
+          "current_name": "NADWÓRNIAŃSKI"
+        }
+      ],
+      "unit_attribute": "territory",
+      "unit_type": "District"
+    }
+  },
+  {
+    "date": "01.07.1925",
     "sources": ["Dz.U. z 1925 r. nr 59, poz. 416"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19250590416"],
     "description": "1.07.1925 roku wyodrębniono z powiatu gnieźnieńskiego powiat miejski w Gnieźnie",
@@ -1176,7 +1243,7 @@
     "order": 1,
     "sources": ["Dz.U. z 1925 r. nr 67, poz. 472"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19250670472"],
-    "description": "1.01.1926 utworzono z powiatu duniłowickiego powiat postawski z siedzibą w Postawach",
+    "description": "1.01.1926 zniesiono powiat duniłowicki, a na jego miejsce utworzono powiat postawski z siedzibą w Postawach",
     "matter": {
       "change_type": "OneToMany",
       "take_from": {
@@ -1495,6 +1562,10 @@
         {
           "create": false,
           "current_name": "STOŁPECKI"
+        },
+        {
+          "create": false,
+          "current_name": "BARANOWICKI"
         }
       ],
       "unit_attribute": "territory",
@@ -1982,7 +2053,7 @@
     "order": 1,
     "sources": ["Dz.U. 1928 nr 25 poz. 221"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19280250221"],
-    "description": "21.03.1928 zniesiono powiat wejherowski, a jego terytorium włączono do powiatu morskiego.",
+    "description": "21.03.1928 zniesiono powiat wejherowski, a jego terytorium włączono do powiatu morskiego z wyjątkiem gmin Linja, Tłuczewo, Niepoczołowice, Zakrzewo i Kętrzyno, które włączono do powiatu kartuskiego.",
     "matter": {
       "change_type": "OneToMany",
       "take_from": {
@@ -1993,6 +2064,10 @@
         {
           "create": false,
           "current_name": "MORSKI"
+        },
+        {
+          "create": false,
+          "current_name": "KARTUSKI"
         }
       ],
       "unit_attribute": "territory",
@@ -2646,7 +2721,7 @@
     "date": "25.05.1929",
     "sources": ["Dz.U. 1929 nr 35 poz. 316"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19290350316"],
-    "description": "31.05.1929 wyłączono fragment gminy Tłuchowo, w powiecie lipnowskim, województwie warszawskiem, i włączono go do gminy Lisewo w powiecie sierpeckim w temże województwie.",
+    "description": "25.05.1929 wyłączono fragment gminy Tłuchowo, w powiecie lipnowskim, województwie warszawskiem, i włączono go do gminy Lisewo w powiecie sierpeckim w temże województwie.",
     "matter": {
       "change_type": "ManyToOne",
       "take_from": [
@@ -2865,28 +2940,6 @@
     }
   },
   {
-    "date": "26.08.1930",
-    "order": 1,
-    "sources": ["Dz.U. 1930 nr 59 poz. 474"],
-    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19300590474"],
-    "description": "26.08.1930 wyłączono z powiatu częstochowskiego fragmenty gmin Grabówka i Huta-Stara i włączono je do miasta Częstochowy.",
-    "matter": {
-      "change_type": "OneToMany",
-      "take_from": {
-        "delete_unit": false,
-        "current_name": "CZĘSTOCHOWSKI"
-      },
-      "take_to": [
-        {
-          "create": false,
-          "current_name": "CZĘSTOCHOWA (MIASTO)"
-        }
-      ],
-      "unit_attribute": "territory",
-      "unit_type": "District"
-    }
-  },
-  {
     "date": "23.07.1930",
     "order": 1,
     "sources": ["Dz.U. 1930 nr 51 poz. 429"],
@@ -2909,6 +2962,28 @@
     }
   },
   {
+    "date": "26.08.1930",
+    "order": 1,
+    "sources": ["Dz.U. 1930 nr 59 poz. 474"],
+    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19300590474"],
+    "description": "26.08.1930 wyłączono z powiatu częstochowskiego fragmenty gmin Grabówka i Huta-Stara i włączono je do miasta Częstochowy.",
+    "matter": {
+      "change_type": "OneToMany",
+      "take_from": {
+        "delete_unit": false,
+        "current_name": "CZĘSTOCHOWSKI"
+      },
+      "take_to": [
+        {
+          "create": false,
+          "current_name": "CZĘSTOCHOWA (MIASTO)"
+        }
+      ],
+      "unit_attribute": "territory",
+      "unit_type": "District"
+    }
+  },
+  {
     "date": "30.09.1930",
     "order": 1,
     "sources": ["Dz.U. 1930 nr 68 poz. 540"],
@@ -2924,6 +2999,28 @@
         {
           "create": false,
           "current_name": "PÓŁNOCNO-WARSZAWSKI"
+        }
+      ],
+      "unit_attribute": "territory",
+      "unit_type": "District"
+    }
+  },
+  {
+    "date": "01.10.1930",
+    "order": 1,
+    "sources": ["Dz.U. 1930 nr 45 poz. 381"],
+    "links": ["https://dziennikustaw.gov.pl/DU/1930/s/45/381"],
+    "description": "1.10.1930 wyłączono gminę Naliboki z powiatu wołożyńskiego w województwie nowogródzkiem i włączono ją do powiatu stołpeckiego w temże województwie.",
+    "matter": {
+      "change_type": "OneToMany",
+      "take_from": {
+        "delete_unit": false,
+        "current_name": "WOŁOŻYŃSKI"
+      },
+      "take_to": [
+        {
+          "create": false,
+          "current_name": "STOŁPECKI"
         }
       ],
       "unit_attribute": "territory",

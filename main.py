@@ -14,17 +14,18 @@ import pandas as pd
 # Load the configuration
 config = load_config("config.json")
 
-administrative_history = AdministrativeHistory(config, load_geometries=True, populate_fallback=False)
+administrative_history = AdministrativeHistory(config, load_geometries=True)
 
-# Recover the gdf generated for 1.10.1934
-deduced_gdf = administrative_history.dist_registry._plot_layer(datetime(1939,4,1))
-
-# Save GeoDataFrame to a shapefile
-deduced_gdf.to_file(r"E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\mapy\mapa 1.04.1939\districts_1939_04_1.shp", driver="ESRI Shapefile")
+administrative_history.generate_adm_state_plots()
 
 ########## Example uses of the implemented methods ##########
 
 #administrative_history.harmonize_data()
+
+""" Recover and export the gdf generated for a date (e.g. 1.10.1934)
+deduced_gdf = administrative_history.dist_registry._plot_layer(datetime(1921,2,19))
+deduced_gdf.to_file(r"E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\mapy\mapa 1922\districts_1921_02_19.shp", driver="ESRI Shapefile", encoding="utf-8")
+"""
 
 
 """ Print all adm. states in the adm. history
