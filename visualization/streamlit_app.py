@@ -23,7 +23,8 @@ from visualization.adm_state_database_views import (
     display_adm_state_maps,
     display_changes_history
 )
-from visualization.standardize_data_view import standardize_data_view
+from visualization.standardize_dist_region_data_view import standardize_dist_region_data_view
+from visualization.standardize_city_data_view import standardize_city_data_view
 from visualization.economic_database_views import display_data_map
 
 # Set layout and title
@@ -54,7 +55,8 @@ if selected_database == "Administrative States Database":
         "District History Plot",
         "Territorial State Information Plot",
         "Administrative State Maps",
-        "Standardize Data",
+        "Standardize District and Region Data",
+        "Standardize City Data",
         "View Change History"
     ])
 
@@ -68,8 +70,11 @@ if selected_database == "Administrative States Database":
     elif adm_database_view == "Administrative State Maps":
         display_adm_state_maps(administrative_history)
 
-    elif adm_database_view == "Standardize Data":
-        standardize_data_view(administrative_history)
+    elif adm_database_view == "Standardize District and Region Data":
+        standardize_dist_region_data_view(administrative_history)
+
+    elif adm_database_view == "Standardize City Data":
+        standardize_city_data_view(administrative_history)
 
     elif adm_database_view == "View Change History":
         display_changes_history(administrative_history)

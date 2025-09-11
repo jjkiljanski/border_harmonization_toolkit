@@ -5,7 +5,7 @@ from core.core import AdministrativeHistory
 from utils.helper_functions import standardize_df, load_uploaded_csv
 import os
 
-def standardize_data_view(administrative_history: AdministrativeHistory):
+def standardize_dist_region_data_view(administrative_history: AdministrativeHistory):
     ################# Create containers #################
     upload_container = st.container()
     slider_container = st.container()
@@ -19,7 +19,7 @@ def standardize_data_view(administrative_history: AdministrativeHistory):
         upload_column, comparison_type_column, treat_duplicates_as_same_col = st.columns(3)
     with comparison_type_column:
         st.markdown("")
-        comparison = st.radio(label = "Compare against:", options = ["Region vs District table", "Region list", "District list"])
+        comparison = st.radio(label = "Compare against:", options = ["Region vs District table", "Region list", "District list", "City name"])
         if comparison == "Region vs District table":
             comparison_cols = ["Region", "District"]
         elif comparison == "Region list":

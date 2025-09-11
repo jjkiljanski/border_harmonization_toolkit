@@ -4,6 +4,7 @@ from datetime import datetime
 from pydantic import parse_obj_as, ValidationError
 from typing import List
 import shutil
+from shapely.geometry import Point
 import geopandas as gpd
 import pandas as pd
 import numpy as np
@@ -62,6 +63,7 @@ class AdministrativeHistory():
         self.harmonization_errors_output_path = config["harmonization_errors_output_path"]
         self.post_processing_errors_output_path = config["post_processing_errors_output_path"]
         self.harmonization_metadata_output_path = config["harmonization_metadata_output_path"]
+        self.cities_path = config["cities_path"]
 
         self.load_geometries = load_geometries
 
@@ -109,13 +111,15 @@ class AdministrativeHistory():
         self._load_territories()
 
         # Deduce information about district territories where possible
-        self._deduce_territories(verbose = True)
+        self._deduce_territories(verbose = False)
 
         # Populate missing territories with fallback values
         if populate_fallback:
             self._populate_territories_fallback()
 
         self._load_harmonization_metadata()
+
+        self._load_cities()
 
     def _load_dist_registry(self):
         """
@@ -569,6 +573,23 @@ class AdministrativeHistory():
         end_time = time.time()
         execution_time = end_time - start_time
         print(f"✅ Successfully loaded harmonized data metadata in {execution_time:.2f} seconds.")
+
+    def _load_cities(self):
+        """
+        Loads the geojson with cities from path defined in self.cities_path and stores it in the
+        self.cities_df attribute.
+        """
+        if not os.path.exists(self.cities_path):
+            print(f"❌ File not found: {self.cities_path}")
+            self.cities_df = None
+            return
+
+        try:
+            self.cities_df = gpd.read_file(self.cities_path)
+            print(f"✅ Successfully loaded {len(self.cities_df)} cities from {self.cities_path}")
+        except Exception as e:
+            print(f"⚠️ Error while loading cities from {self.cities_path}: {e}")
+            self.cities_df = None
 
     def _construct_conversion_dict(self, date_from: datetime, date_to: datetime, verbose: bool = False):
         """
@@ -1307,6 +1328,100 @@ class AdministrativeHistory():
         for i, (distance, diff, state) in enumerate(state_distances[:3]):
             diff_1, diff_2 = diff
             print(f"{i}. State {state} (distance: {distance}).\n Absent in list to identify: {diff_1}.\n Absent in state: {diff_2}.")
+
+    def coords_to_dist_address(self, lat: float, lon: float, date: datetime):
+        """
+        This method identifies the district that the point of the given coordinates at a given date
+        belongs to, and returns its address.
+        """
+        # Recover the gdf layer and the adm. state for the given date
+        gdf_layer = self.dist_registry._plot_layer(date)
+        adm_state = self.find_adm_state_by_date(date)
+
+        # Create a point in the same CRS as gdf_layer (assuming EPSG:4326 WGS84)
+        point = Point(lon, lat)
+
+        # Spatial join or manual check
+        match = gdf_layer[gdf_layer.contains(point)]
+
+        if match.empty:
+            return None  # point not inside any district
+    
+        # Recover the unit name
+        dist_name = match.iloc[0]["name_id"]
+
+        address = adm_state.find_address(dist_name, 'District')
+
+        # Return the name_id of the first matching district
+        return address
+
+    def map_city_data_to_dists(self, df: pd.DataFrame, date):
+        """
+        This function takes a dataframe with column 'City' containing city names and maps all rows
+        with recognized city names to districts. It returns a df with 'District' and 'Region'
+        columns, data summed for all cities within the districts, and column 'Cities in district'
+        with a list of all city names in the district.
+        """
+
+        if self.cities_df is None:
+            raise ValueError("self.cities_df is not loaded. Please run load_cities() first.")
+
+        # ✅ Step 1: Drop unrecognized cities
+        valid_city_names = set(self.cities_df["City"])
+        df_valid = df[df["City"].isin(valid_city_names)].copy()
+        df_dropped = df[~df["City"].isin(valid_city_names)]
+
+        if not df_dropped.empty:
+            dropped_list = df_dropped["City"].unique().tolist()
+            print(f"⚠️ Dropped {len(dropped_list)} cities due to name mismatch: {dropped_list}")
+
+        # ✅ Step 2: Drop rows with NaNs
+        df_nans = df_valid[df_valid.isna().any(axis=1)]
+        if not df_nans.empty:
+            dropped_nans_list = df_nans["City"].tolist()
+            print(f"⚠️ Dropped {len(dropped_nans_list)} rows due to NaN values: {dropped_nans_list}")
+            df_valid = df_valid.dropna()
+
+        if df_valid.empty:
+            print("❌ No valid cities remain after filtering. Returning empty DataFrame.")
+            return pd.DataFrame(columns=["Region", "District", "Cities in district"])
+
+        # ✅ Step 3: Map each city to a district
+        district_records = []
+        for _, row in df_valid.iterrows():
+            city_name = row["City"]
+            city_geom = self.cities_df.loc[self.cities_df["City"] == city_name, "geometry"].iloc[0]
+            lat, lon = city_geom.y, city_geom.x  # Point(y=lat, x=lon)
+
+            try:
+                country, region, district = self.coords_to_dist_address(lat, lon, date)
+                district_records.append({
+                    "Region": region,
+                    "District": district,
+                    "City": city_name,
+                    **row.drop("City").to_dict()
+                })
+            except Exception as e:
+                print(f"⚠️ Could not map city '{city_name}' to district: {e}")
+
+        if not district_records:
+            print("❌ No cities could be mapped to districts.")
+            return pd.DataFrame(columns=["Region", "District", "Cities in district"])
+
+        mapped_df = pd.DataFrame(district_records)
+
+        # ✅ Step 4: Aggregate by Region + District
+        agg_dict = {col: "sum" for col in mapped_df.columns if col not in ["Region", "District", "City"]}
+        grouped = mapped_df.groupby(["Region", "District"]).agg(agg_dict).reset_index()
+
+        # ✅ Step 5: Collect city names
+        city_groups = mapped_df.groupby(["Region", "District"])["City"].apply(list).reset_index()
+        grouped = grouped.merge(city_groups, on=["Region", "District"], how="left")
+
+        # Rename for clarity
+        grouped = grouped.rename(columns={"City": "Cities in district"})
+
+        return grouped
 
     def plot_dist_changes_by_year(self, homeland_only = True, black_and_white=False):
         """

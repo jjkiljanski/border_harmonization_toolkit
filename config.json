@@ -12,11 +12,12 @@
     "harmonization_errors_output_path": "output/harmonized_data/harmonization_errors.txt",
     "post_processing_errors_output_path": "output/harmonized_data/post_processing_errors.txt",
     "harmonization_metadata_output_path": "output/harmonized_data/harmonization_metadata.json",
+    "cities_path": "input/cities_coords/cities_coords.geojson",
     "global_timespan": {
         "start": "19-02-1921",
         "end": "01-09-1939"
     },
     "territories_crs": "EPSG:4326",
     "language": "eng",
-    "harmonize_to_date": "01.04.1938"
+    "harmonize_to_date": "01.10.1934"
 }

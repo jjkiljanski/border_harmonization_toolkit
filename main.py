@@ -10,11 +10,41 @@ import pandas as pd
 
 ########## Load and initiate administrative changes list ###########
 # Load config
-
-# Load the configuration
 config = load_config("config.json")
 
+input_path = "input/cities_data/population.csv"
+output_path = "output/harmonized_data/dist_population_from_cities.csv"
+
+try:
+    # ✅ Load the data
+    df = pd.read_csv(input_path, sep=";", encoding="utf-8")
+    print(f"📂 Loaded input data: {df.shape[0]} rows, {df.shape[1]} columns")
+
+    # ✅ Replace non-numeric values with NaN in all non-City columns
+    for col in df.columns:
+        if col != "City":
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    # ✅ Define the mapping date
+    mapping_date = datetime(1934, 10, 1)
+
+except FileNotFoundError:
+    print(f"❌ Input file not found at: {input_path}")
+except Exception as e:
+    print(f"⚠️ Error during processing: {e}")
+
 administrative_history = AdministrativeHistory(config, load_geometries=True)
+
+# ✅ Map to districts
+dist_df = administrative_history.map_city_data_to_dists(df, mapping_date)
+
+# ✅ Save result
+dist_df.to_csv(output_path, sep=";", encoding="utf-8", index=False)
+print(f"✅ Saved harmonized district population data to: {output_path}")
+
+print(f"The city Pelplin belonged to the district {administrative_history.coords_to_dist_address(53.926111, 18.701111, datetime(1934,10,1))} on 1.10.1934")
+print(f"The city Piaseczno belonged to the district {administrative_history.coords_to_dist_address(52.075556, 21.026389, datetime(1934,10,1))} on 1.10.1934")
+print(f"The city Piaski belonged to the district {administrative_history.coords_to_dist_address(51.884722, 17.074444, datetime(1934,10,1))} on 1.10.1934")
 
 #administrative_history.generate_adm_state_plots()
 
