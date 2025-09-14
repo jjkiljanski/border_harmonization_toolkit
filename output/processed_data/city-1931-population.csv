@@ -1,0 +1,646 @@
+City,Population
+Warszawa,1178211.0
+Łódź,605467.0
+Lwów,316177.0
+Poznań,246698.0
+Kraków,221260.0
+Wilno,196383.0
+Katowice,127044.0
+Częstochowa,117588.0
+Bydgoszcz,117528.0
+Lublin,112539.0
+Sosnowiec,109454.0
+Białystok,91335.0
+Chorzów,80734.0
+Radom,78073.0
+Stanisławów (dziś Iwano-Frankiwsk),60256.0
+Kielce,58397.0
+Włocławek,56277.0
+Kalisz,55215.0
+Toruń,54280.0
+Przemyśl,51379.0
+Piotrków (Trybunalski),51294.0
+Grudziądz,50405.0
+Grodno,49332.0
+Brześć nad Bugiem,48431.0
+Będzin,47835.0
+Pabianice,45614.0
+Tarnów,45235.0
+Borysław,41683.0
+Równe,40788.0
+Tomaszów Mazowiecki,38088.0
+Siemianowice Śląskie,37888.0
+Dąbrowa Górnicza,36987.0
+Siedlce,36927.0
+Tarnopol,35831.0
+Łuck,35737.0
+Kołomyja,33391.0
+Płock,32777.0
+Zawiercie,32713.0
+Drohobycz,32622.0
+Pińsk,31913.0
+Inowrocław,30862.0
+Stryj,30682.0
+Nowy Sącz,30278.0
+Gdynia,30210.0
+Gniezno,29924.0
+Świętochłowice,29717.0
+Chełm,29222.0
+Hajduki Wielkie,28385.0
+Kowel,27653.0
+Rzeszów,27499.0
+Zgierz,26646.0
+Ostrowiec (Świętokrzyski),25983.0
+Żyrardów,25081.0
+Łomża,25065.0
+Włodzimierz (dziś Ukraina),24609.0
+Zamość,24273.0
+Pruszków,23703.0
+Kutno,23451.0
+Rybnik,23046.0
+Radomsko,22980.0
+Mysłowice,22943.0
+Zduńska Wola,22904.0
+Baranowicze,22893.0
+Biała Krakowska (dziś część Bielska-Białej),22891.0
+Tczew,22728.0
+Bielsko (dziś część Bielska-Białej),22573.0
+Jarosław (nad Sanem),22330.0
+Ruda Śląska,22201.0
+Sambor,22111.0
+Suwałki,21957.0
+Czeladź,21035.0
+Skierniewice,20191.0
+Krzemieniec,19997.0
+Mława,19584.0
+Ostrów Wielkopolski,19555.0
+Lida,19490.0
+Leszno,19258.0
+Czortków,19215.0
+Jaworzno,19055.0
+Lipiny,17934.0
+Chrzanów,17833.0
+Cieszyn,17791.0
+Zakopane,17703.0
+Łowicz,17613.0
+Ostrów Mazowiecka,17611.0
+Biała Podlaska,17549.0
+Międzyrzec (nad Krzną),16837.0
+Kamień Koszyrski,16636.0
+Słonim,16284.0
+Tarnowskie Góry,15773.0
+Grodzisk Mazowiecki,15678.0
+Pułtusk,15487.0
+Wołkowysk,15163.0
+Otwock,14996.0
+Ozorków,14979.0
+Skarżysko-Kamienna,14320.0
+Sanok,14262.0
+Chojnice,14255.0
+Łuków,13971.0
+Ciechanów,13954.0
+Koło,13771.0
+Ostrołęka,13438.0
+Hrubieszów,13359.0
+Starogard (Gdański),13356.0
+Złoczów,13265.0
+Wieluń,13220.0
+Wołomin,13114.0
+Brzeziny,13045.0
+Mińsk Mazowiecki,13015.0
+Krotoszyn,12969.0
+Ostróg,12955.0
+Gródek Jagielloński,12942.0
+Jędrzejów,12853.0
+Dubno,12696.0
+Wejherowo,12559.0
+Chełmno,12531.0
+Brody,12401.0
+Horodenka,12303.0
+Bochnia,12274.0
+Ruda Pabianicka,12164.0
+Augustów,12147.0
+Sokal,12135.0
+Kałusz,12131.0
+Krosno,12125.0
+Oświęcim,11949.0
+Brzeżany,11721.0
+Dawidgródek,11701.0
+Kraśnik,11615.0
+Aleksandrów (Łódzki),11554.0
+Mikołów,11463.0
+Rawa Ruska,11146.0
+Końskie,11102.0
+Chełmża,11098.0
+Śniatyn,10915.0
+Rawicz,10827.0
+Sochaczew,10822.0
+Wyszków,10772.0
+Bolechów,10744.0
+Jaworów,10690.0
+Szydłowiec,10590.0
+Łęczyca,10553.0
+Sieradz,10537.0
+Krasnystaw,10435.0
+Tomaszów Lubelski,10433.0
+Lipno,10415.0
+Nowy Targ,10406.0
+Płońsk,10393.0
+Konin,10390.0
+Żółkiew,10348.0
+Nakło (nad Notecią),10303.0
+Kościan,10275.0
+Buczacz,10274.0
+Zdołbunów,10228.0
+Turka,10145.0
+Jasło,10112.0
+Kobryń,10101.0
+Sierpc,10051.0
+Parczew,9943.0
+Olkusz,9916.0
+Sokołów Podlaski,9901.0
+Dolina,9616.0
+Nowogródek,9567.0
+Aleksandrów Kujawski,9565.0
+Opatów,9519.0
+Grójec,9518.0
+Turek,9421.0
+Węgrów,9416.0
+Nowy Dwór (Mazowiecki),9386.0
+Dębica,9276.0
+Rawa Mazowiecka,9200.0
+Puławy,9093.0
+Grajewo,9036.0
+Wolbrom,8930.0
+Opoczno,8921.0
+Kałuszyn,8827.0
+Delatyn,8815.0
+Zwoleń,8757.0
+Kopyczyńce,8609.0
+Świecie,8729.0
+Łuniniec,8715.0
+Nadwórna,8716.0
+Jarocin,8688.0
+Wieliczka,8668.0
+Pleszew,8591.0
+Wąbrzeźno,8591.0
+Bełchatów,8587.0
+Kłobuck,8542.0
+Brodnica,8521.0
+Włodawa,8519.0
+Lubliniec,8512.0
+Żelechów,8503.0
+Wadowice,8400.0
+Rypin,8348.0
+Szamotuły,8307.0
+Żychlin,8285.0
+Biłgoraj,8177.0
+Konstantynów (Łódzki),8167.0
+Września,8148.0
+Środa (Wielkopolska),8087.0
+Chmielnik,8051.0
+Prużana,8013.0
+Kamionka Strumiłowa (Kamionka Bużańska),7935.0
+Sandomierz,7894.0
+Trembowla,7840.0
+Przasnysz,7838.0
+Kozienice,7793.0
+Gostynin,7783.0
+Czersk,7757.0
+Zbaraż,7673.0
+Śrem,7652.0
+Chodorów,7646.0
+Błonie,7642.0
+Lubartów,7638.0
+Sarny,7508.0
+Wągrowiec,7555.0
+Głębokie,7544.0
+Skole,7543.0
+Łańcut,7535.0
+Rohatyn,7513.0
+Chodzież,7511.0
+Pińczów,7423.0
+Kościerzyna,7379.0
+Wierzbnik (dziś Starachowice),7379.0
+Nieśwież,7357.0
+Zambrów,7343.0
+Oszmiana,7334.0
+Tyśmienica,7257.0
+Pszczyna,7240.0
+Monasterzyska,7238.0
+Skałat,6949.0
+Kępno,7182.0
+Góra Kalwaria,7097.0
+Janów Lubelski,7067.0
+Piaseczno,7074.0
+Mielec,7057.0
+Bielsk Podlaski,7028.0
+Busk,7010.0
+Nowa Wilejka,6958.0
+Włoszczowa,6900.0
+Peczeniżyn,6839.0
+Tłumacz,6836.0
+Siemiatycze,6816.0
+Gostyń,6815.0
+Przedbórz,6787.0
+Radzymin,6780.0
+Kęty,6767.0
+Gorlice,6730.0
+Łapy,6674.0
+Maków Mazowiecki,6645.0
+Żywiec,6571.0
+Stołpce,6278.0
+Zabłotów,6541.0
+Kostopol,6523.0
+Łask,6502.0
+Mogielnica,6423.0
+Sulejów,6387.0
+Sokółka,6376.0
+Miechów,6360.0
+Stolin,6328.0
+Beresteczko,6314.0
+Myślenice,6277.0
+Garwolin,6262.0
+Lubaczów,6245.0
+Działoszyce,6238.0
+Słupca,6204.0
+Grodzisk (Wielkopolski),6161.0
+Szczekociny,6142.0
+Zakroczym,6114.0
+Kozowa,6064.0
+Trzebinia,6084.0
+Borszczów,6073.0
+Rogoźno,6040.0
+Dąbrowa (Tarnowska),6017.0
+Sucha (Beskidzka),6005.0
+Nasielsk,6001.0
+Horochów,5991.0
+Mołodeczno,5964.0
+Kleck,5930.0
+Przeworsk,5941.0
+Święciany,5893.0
+Załoźce,5891.0
+Krzepice,5881.0
+Żory,5869.0
+Wilejka,5595.0
+Strzelno,5846.0
+Brześć Kujawski,5837.0
+Ostrzeszów,5833.0
+Krynki,5789.0
+Ołyka,5785.0
+Podhajce,5743.0
+Andrychów,5698.0
+Gąbin,5690.0
+Kosów Huculski,5663.0
+Wołożyn,5609.0
+Barysz,5606.0
+Leżajsk,5599.0
+Komarno (dziś Ukraina),5598.0
+Koronowo,5553.0
+Dobromil,5531.0
+Mszczonów,5523.0
+Lubawa,5518.0
+Wieruszów,5484.0
+Tuchola,5477.0
+Nisko,5479.0
+Koźmin (dziś Koźmin Wielkopolski),5450.0
+Bóbrka (Ukraina),5441.0
+Radziechów,5440.0
+Stary Sącz,5432.0
+Zbąszyń,5432.0
+Chęciny,5429.0
+Serock,5413.0
+Radziwiłłów,5409.0
+Kuty,5393.0
+Przemyślany,5391.0
+Radzyń (Podlaski),5291.0
+Kolno,5285.0
+Wronki,5245.0
+Oborniki,5244.0
+Trzemeszno,5218.0
+Mogilno,5200.0
+Zborów,5182.0
+Dobrzyń nad Drwęcą,5176.0
+Skała (Podolska),5130.0
+Międzychód,5126.0
+Szczuczyn (Białostocki),5107.0
+Działdowo,5103.0
+Iłża,5099.0
+Żnin,5090.0
+Złoczew,5069.0
+Kartuzy,5055.0
+Busko (dziś Busko-Zdrój),5026.0
+Łosice,5026.0
+Słomniki,4988.0
+Solec Kujawski,4987.0
+Błaszki,4969.0
+Wodzisław,4942.0
+Bełz,4900.0
+Stary Sambor,4867.0
+Stryków,4821.0
+Dzisna,4806.0
+Wasilków,4801.0
+Budzanów,4798.0
+Raciąż,4789.0
+Ottynia,4777.0
+Uściług,4771.0
+Mościska,4770.0
+Sądowa Wisznia,4765.0
+Warka,4763.0
+Ostrów (Lubelski),4753.0
+Czarnków,4737.0
+Ciechocinek,4711.0
+Niepołomice,4689.0
+Nowe,4671.0
+Podgórz (dziś część Torunia),4658.0
+Błażowa,4631.0
+Kłodawa,4627.0
+Krynica-Zdrój,4626.0
+Kazimierz Dolny,4614.0
+Wolsztyn,4580.0
+Szczakowa,4558.0
+Wyszogród,4553.0
+Lachowicze,4547.0
+Bereza Kartuska,4521.0
+Żydaczów,4514.0
+Rożyszcze,4512.0
+Pyzdry,4494.0
+Praszka,4486.0
+Kowal,4482.0
+Nowemiasto (Nowe Miasto Lubawskie),4473.0
+Kock,4462.0
+Winniki,4414.0
+Gliniany (dziś Ukraina),4391.0
+Kcynia,4391.0
+Halicz,4386.0
+Skoczów,4374.0
+Warta,4360.0
+Mosty Wielkie,4348.0
+Opalenica,4332.0
+Bursztyn,4326.0
+Piwniczna (Piwniczna-Zdrój),4315.0
+Pomorzany (dziś Ukraina),4304.0
+Rozdół,4300.0
+Różan,4268.0
+Brzozów,4242.0
+Brańsk,4204.0
+Tuszyn,4202.0
+Swarzędz,4196.0
+Pelplin,4185.0
+Żuromin,4165.0
+Knyszyn,4123.0
+Zaleszczyki,4114.0
+Luboml,4111.0
+Maków Podhalański,4111.0
+Smorgonie,4090.0
+Grzymałów (dziś Ukraina),4084.0
+Biecz,4055.0
+Lidzbark,4032.0
+Łęczna,4030.0
+Ciechanowiec,4029.0
+Radziejów,4025.0
+Korzec,4015.0
+Rokitno,4004.0
+Sępolno,3992.0
+Różana (dziś Białoruś),3986.0
+Wysokie Mazowieckie,3977.0
+Ustrzyki Dolne,3964.0
+Żurawno,3948.0
+Podwołoczyska,3945.0
+Zagórów,3945.0
+Lesko,3943.0
+Rudnik (nad Sanem),3930.0
+Janów Podlaski,3900.0
+Nowe Miasto (nad Pilicą),3877.0
+Gniewkowo,3873.0
+Chyrów,3864.0
+Puck,3848.0
+Nowo-Święciany (Nowe Święciany),3838.0
+Dąbie,3825.0
+Dubienka,3825.0
+Olesko,3824.0
+Skidel,3814.0
+Poddębice,3800.0
+Pakość,3797.0
+Śmigiel,3761.0
+Zdzięcioł,3746.0
+Pobiedziska,3745.0
+Fordon (dziś część Bydgoszczy),3733.0
+Świsłocz (Swisłocz),3731.0
+Bołszowce,3697.0
+Brzesko,3672.0
+Pilzno,3671.0
+Kowalewo (Pomorskie),3654.0
+Rudki (dziś Ukraina),3649.0
+Tarnobrzeg,3643.0
+Gniew,3639.0
+Uhnów,3639.0
+Rożniatów (dziś Ukraina),3638.0
+Buk,3637.0
+Sokołów (dziś Sokołów Małopolski),3637.0
+Mikołajów (dziś Ukraina),3625.0
+Rymanów,3617.0
+Stoczek (Łukowski),3589.0
+Szereszów,3554.0
+Proszowice,3531.0
+Kruszwica,3515.0
+Krośniewice,3506.0
+Uniejów,3484.0
+Dąbrowa Grodzieńska (dziś Dąbrowa Białostocka),3482.0
+Raków (Mołodecki),3481.0
+Skarszewy,3456.0
+Goniądz,3449.0
+Skawina,3434.0
+Więcbork,3433.0
+Łopatyn,3427.0
+Wieleń nad Notecią,3403.0
+Zduny,3403.0
+Kulików (rejon żółkiewski),3390.0
+Ropczyce,3382.0
+Pniewy,3371.0
+Kostrzyn,3370.0
+Krzeszowice,3366.0
+Starosielce,3364.0
+Zawichost,3340.0
+Przedecz,3322.0
+Grybów,3311.0
+Rozwadów (dziś część Stalowej-Woli),3311.0
+Tykocin,3290.0
+Mordy,3287.0
+Szubin,3271.0
+Dokszyce,3262.0
+Kosów Poleski (dziś Białoruś),3256.0
+Brasław,3205.0
+Zabłudów,3158.0
+Głowno,3154.0
+Bohorodczany,3151.0
+Mikulińce,3136.0
+Jordanów,3115.0
+Szadek,3113.0
+Dobczyce,3112.0
+Kolbuszowa,3112.0
+Sassów,3112.0
+Golub,3097.0
+Sejny,3091.0
+Strzyżów,3060.0
+Bieruń Stary,3059.0
+Tyczyn,3039.0
+Chorzele,3032.0
+Janowiec (Wielkopolski),3029.0
+Sieraków,3017.0
+Niemirów (dziś Ukraina),3016.0
+Kamieniec Litewski (dziś Białoruś),3001.0
+Ratno (dziś Ukraina),2990.0
+Muszyna,2979.0
+Supraśl,2965.0
+Kleczew,2946.0
+Mosina,2924.0
+Dąbrowica,2914.0
+Skaryszew,2913.0
+Stawiski,2912.0
+Choroszcz,2905.0
+Biała Rawska,2903.0
+Brok,2895.0
+Dobra,2871.0
+Postawy,2866.0
+Bereźne,2857.0
+Dobrzyń nad Wisłą,2838.0
+Suchowola,2836.0
+Drohiczyn Poleski,2803.0
+Jagielnica (dziś Ukraina),2795.0
+Czarny Dunajec,2783.0
+Tuchów,2750.0
+Wysokie Litewskie,2739.0
+Cieszanów,2661.0
+Indura,2650.0
+Miejska Górka,2644.0
+Szczuczyn (Nowogródzki),2641.0
+Husiatyn,2639.0
+Łohiszyn,2638.0
+Troki,2637.0
+Wiśnicz Nowy,2628.0
+Poniec,2626.0
+Janów (dziś Iwano-Frankowe),2597.0
+Podbrodzie,2588.0
+Golina,2578.0
+Radoszkowice (Radoszkowicze),2574.0
+Stawiszyn,2562.0
+Lubraniec,2559.0
+Tuliszków,2559.0
+Jaryczów Nowy,2555.0
+Głogów (Małopolski),2550.0
+Nowy Tomyśl,2550.0
+Lwówek,2542.0
+Koniecpol,2518.0
+Łasin,2510.0
+Ulanów,2504.0
+Ślesin,2495.0
+Stęszew,2487.0
+Sulmierzyce,2476.0
+Nieszawa,2474.0
+Odolanów,2472.0
+Łabiszyn,2464.0
+Miłosław,2452.0
+Żabno,2437.0
+Rajgród,2432.0
+Miasteczko (Śląskie),2408.0
+Radomyśl Wielki,2400.0
+Krobia,2384.0
+Mrocza,2383.0
+Kańczuga,2382.0
+Kórnik,2379.0
+Kobylin,2359.0
+Murowana Goślina,2351.0
+Nowogród,2350.0
+Jazłowiec,2335.0
+Bojanowo,2333.0
+Drohiczyn nad Bugiem,2309.0
+Terespol,2308.0
+Łobżenica,2294.0
+Woźniki,2264.0
+Skalbmierz,2245.0
+Lubień (Kujawski),2241.0
+Limanowa,2216.0
+Radymno,2213.0
+Zator,2179.0
+Jedwabne,2167.0
+Boćki,2165.0
+Dukla,2157.0
+Ujście,2144.0
+Sędziszów,2142.0
+Margonin,2135.0
+Kalwaria Zebrzydowska,2116.0
+Czempiń,2103.0
+Barcin,2098.0
+Druskieniki,2098.0
+Ciężkowice,2079.0
+Wojnicz,2062.0
+Borek,2052.0
+Kleszczele,2029.0
+Sokoły,2028.0
+Rakoniewice,2015.0
+Niżankowice (dziś Ukraina),2014.0
+Rychwał,2011.0
+Radzyń Chełmiński,1987.0
+Strumień,1984.0
+Wilamowice,1969.0
+Budzyń,1951.0
+Sieniawa,1950.0
+Szamocin,1937.0
+Piaski,1881.0
+Kamień Pomorski (dziś Kamień Krajeński),1827.0
+Chodecz,1824.0
+Witkowo,1824.0
+Baranów (Sandomierski),1815.0
+Górzno,1806.0
+Skoki,1788.0
+Obrzycko,1776.0
+Krzywiń,1732.0
+Krakowiec,1706.0
+Kłecko,1698.0
+Lanckorona,1697.0
+Raszków,1692.0
+Sarnowa (dziś część Rawicza),1690.0
+Grabów (nad Prosną),1682.0
+Jutrosin,1677.0
+Wyrzysk,1642.0
+Wielichowo,1630.0
+Osieczna,1597.0
+Pogorzela,1592.0
+Nowy Dwór (nad Biebrzą),1588.0
+Dolsk,1578.0
+Żerków,1569.0
+Gołańcz,1471.0
+Wysoka,1463.0
+Wyśmierzyce,1434.0
+Brzostek,1396.0
+Czerniejewo,1392.0
+Mielnik (nad Bugiem),1389.0
+Ryczywół,1381.0
+Suraż,1379.0
+Odelsk,1373.0
+Rydzyna,1370.0
+Zaniemyśl,1335.0
+Święciechowa,1333.0
+Uście Solne,1333.0
+Mikstat,1316.0
+Narew,1301.0
+Bnin (Kórnik),1297.0
+Ostroróg,1289.0
+Powidz,1255.0
+Gębice,1250.0
+Mieścisko,1241.0
+Miasteczko (Krajeńskie),1218.0
+Szczerzec,1210.0
+Stara Sól,1152.0
+Rogowo (nad jez. Rogowskim),1140.0
+Rychtal,1126.0
+Nowe Miasto nad Wartą,1071.0
+Rostarzewo,989.0
+Książ (Wielkopolski),928.0
+Władysławów,906.0
+Gąsawa,893.0
+Jaraczew (Jaraczewo),833.0
+Rynarzewo,688.0
+Kopanica,640.0
+Huta Laura,0.0

@@ -1,0 +1,487 @@
+City;Population
+Parczew;8291
+Olkusz;7589
+Soko³ów Podlaski;8055
+Dolina;8766
+Nowogródek;6367
+Aleksandrów Kujawski;8193
+Opatów;8827
+Grójec;8418
+Turek;9948
+Wêgrów;8522
+Nowy Dwór (Mazowiecki);7829
+Dêbica;6846
+Rawa Mazowiecka;8185
+Staszów ;8357
+Pu³awy;7205
+Grajewo;7346
+Wolbrom;7392
+Opoczno;8252
+Ka³uszyn;7694
+Delatyn;5973
+Zwoleñ;7817
+Kopyczyñce;8146
+Œwiecie;6600
+£uniniec;8267
+Nadwórna;6062
+Jarocin;7005
+Wieliczka;7235
+Pleszew;7638
+W¹brzeŸno;7118
+Be³chatów;7200
+K³obuck;6582
+Brodnica;6913
+W³odawa;6263
+Lubliniec;6400
+¯elechów;7682
+Wadowice;6862
+Rypin;7234
+Szamotu³y;6772
+¯ychlin;7098
+Bi³goraj;6602
+Konstantynów (£ódzki);5728
+Wrzeœnia;6627
+Œroda (Wielkopolska);7231
+Chmielnik;7730
+Pru¿ana;6332
+Kamionka Strumi³owa (Kamionka Bu¿añska);6518
+Sandomierz;6763
+Trembowla;7015
+Przasnysz;6340
+Kozienice;6878
+Gostynin;7001
+Czersk;6700
+Zbara¿;7728
+Œrem;6650
+Chodorów;4513
+B³onie;5337
+Lubartów;6511
+Sarny;5931
+Szczebrzeszyn;6350
+W¹growiec;6867
+G³êbokie;4514
+Skole;5989
+£añcut;7056
+Rohatyn;5790
+Chodzie¿;5646
+Piñczów;7749
+Koœcierzyna;5849
+Wierzbnik (dziœ Starachowice);5459
+Nieœwie¿;7033
+Zambrów;6160
+Oszmiana;5876
+Tyœmienica;7047
+Pszczyna;6043
+Monasterzyska;5769
+Ska³at;5937
+Kêpno;7182
+Góra Kalwaria;5496
+Janów Lubelski;6426
+Piaseczno;5604
+Mielec;5599
+Bielsk Podlaski;4759
+Busk;6440
+Nowa Wilejka;10182
+W³oszczowa;6022
+Peczeni¿yn;5984
+T³umacz;5908
+Siemiatycze;5694
+Gostyñ;5816
+Przedbórz;5885
+Radzymin;5036
+Kêty;5751
+Gorlice;5611
+£apy;4107
+Maków Mazowiecki;6198
+¯ywiec;5774
+Sto³pce;2956
+Zab³otów;5777
+Kostopol;2990
+£ask;4890
+Mogielnica;6043
+Sulejów;5718
+Sokó³ka;6086
+Miechów;6223
+Stolin;4763
+Beresteczko;5633
+Myœlenice;5491
+Garwolin;5336
+Lubaczów;5344
+Dzia³oszyce;6755
+S³upca;5534
+Grodzisk (Wielkopolski);5604
+Szczekociny;5611
+Zakroczym;5898
+Kozowa;4993
+Trzebinia;4801
+Borszczów;5122
+RogoŸno;5528
+D¹browa (Tarnowska);5498
+Sucha (Beskidzka);5151
+Nasielsk;5470
+Horochów;4421
+Mo³odeczno;3957
+Kleck;5554
+Przeworsk;5554
+Œwiêciany;3981
+Za³oŸce;4819
+Krzepice;5138
+¯ory;4936
+Wilejka;3417
+Strzelno;4927
+Brzeœæ Kujawski;4634
+Ostrzeszów;5413
+Krynki;5206
+O³yka;4333
+Podhajce;4814
+Andrychów;4171
+G¹bin;5777
+Kosów Huculski;4797
+Wo³o¿yn;4070
+Barysz;4795
+Le¿ajsk;5063
+Komarno (dziœ Ukraina);5009
+Koronowo;4689
+Dobromil;5386
+Mszczonów;5014
+Lubawa;4635
+Wieruszów;4799
+Tuchola;5583
+Nisko;5103
+KoŸmin (dziœ KoŸmin Wielkopolski);4999
+Bóbrka (Ukraina);4391
+Radziechów;4739
+Stary S¹cz;4770
+Zb¹szyñ;4770
+Chêciny;5046
+Serock;4694
+Radziwi³³ów;4240
+Kuty;5504
+Przemyœlany;4206
+Radzyñ (Podlaski);4833
+Kolno;4494
+Wronki;4621
+Oborniki;4147
+Trzemeszno;5093
+Mogilno;4171
+Zborów;3761
+Dobrzyñ nad Drwêc¹;4085
+Ska³a (Podolska);4248
+Miêdzychód;4017
+Szczuczyn (Bia³ostocki);4502
+Dzia³dowo;3568
+I³¿a;4554
+¯nin;4436
+Z³oczew;4913
+Kartuzy;3717
+Busko (dziœ Busko-Zdrój);3949
+£osice;3888
+S³omniki;4797
+Solec Kujawski;3380
+B³aszki;4736
+Wodzis³aw;3561
+Be³z;4148
+Stary Sambor;4314
+Stryków;4127
+Dzisna;4413
+Wasilków;3903
+Budzanów;4548
+Raci¹¿;4513
+Ottynia;4455
+Uœci³ug;3728
+Moœciska;4751
+S¹dowa Wisznia;4309
+Warka;4666
+Ostrów (Lubelski);3813
+Czarnków;3970
+Ciechocinek;4358
+Niepo³omice;4071
+Nowe;4011
+Podgórz (dziœ czêœæ Torunia);3232
+B³a¿owa;5123
+K³odawa;4298
+Krynica-Zdrój;2341
+Kazimierz Dolny;3857
+Wolsztyn;4124
+Szczakowa;3723
+Wyszogród;4297
+Lachowicze;3400
+Bereza Kartuska;3526
+¯ydaczów;3996
+Ro¿yszcze;3263
+Pyzdry;4614
+Praszka;4478
+Kowal;4063
+Nowemiasto (Nowe Miasto Lubawskie);3721
+Kock;3903
+Winniki;3635
+Gliniany (dziœ Ukraina);4355
+Kcynia;3369
+Halicz;3442
+Skoczów;3494
+Warta;4108
+Mosty Wielkie;3795
+Opalenica;3058
+Bursztyn;3720
+Piwniczna (Piwniczna-Zdrój);3632
+Pomorzany (dziœ Ukraina);3445
+Rozdó³;3861
+Ró¿an;3285
+Brzozów;4160
+Brañsk;3739
+Tuszyn;3451
+Swarzêdz;3364
+Pelplin;3612
+¯uromin;3962
+Knyszyn;3579
+Zaleszczyki;4014
+Luboml;3328
+Maków Podhalañski;3226
+Smorgonie;2952
+Grzyma³ów (dziœ Ukraina);3422
+Biecz;3673
+Lidzbark;3325
+£êczna;3590
+Ciechanowiec;3291
+Radziejów;3164
+Korzec;4946
+Rokitno;1491
+Sêpolno;3318
+Ró¿ana (dziœ Bia³oruœ);3622
+Wysokie Mazowieckie;3525
+Ustrzyki Dolne;3242
+¯urawno;3362
+Podwo³oczyska;3670
+Zagórów;3715
+Lesko;3870
+Rudnik (nad Sanem);2959
+Janów Podlaski;3360
+Nowe Miasto (nad Pilic¹);3761
+Gniewkowo;3330
+Chyrów;3490
+Puck;2792
+Nowo-Œwiêciany (Nowe Œwiêciany);3196
+D¹bie;3765
+Dubienka;2964
+Olesko;3698
+Skidel;2907
+Poddêbice;3122
+Pakoœæ;3336
+Œmigiel;3754
+Zdziêcio³;3080
+Pobiedziska;3363
+Fordon (dziœ czêœæ Bydgoszczy);2314
+Œwis³ocz (Swis³ocz);2935
+Bo³szowce;2915
+Brzesko;3144
+Pilzno;3546
+Kowalewo (Pomorskie);3207
+Rudki (dziœ Ukraina);3462
+Tarnobrzeg;3169
+Gniew;3131
+Uhnów;3575
+Ro¿niatów (dziœ Ukraina);3266
+Buk;3480
+Soko³ów (dziœ Soko³ów Ma³opolski);3515
+Miko³ajów (dziœ Ukraina);3156
+Rymanów;3546
+Stoczek (£ukowski);2951
+Szereszów;2951
+Proszowice;3297
+Kruszwica;3021
+Kroœniewice;3509
+Uniejów;3657
+D¹browa Grodzieñska (dziœ D¹browa Bia³ostocka);3014
+Raków (Mo³odecki);3323
+Skarszewy;3009
+Goni¹dz;2981
+Skawina;2444
+Wiêcbork;2588
+£opatyn;3399
+Wieleñ nad Noteci¹;2870
+Zduny;2825
+Kulików (rejon ¿ó³kiewski);2886
+Ropczyce;3002
+Pniewy;3089
+Kostrzyn;3077
+Krzeszowice;2933
+Starosielce;2422
+Zawichost;3014
+Przedecz;3040
+Grybów;2931
+Rozwadów (dziœ czêœæ Stalowej-Woli);2700
+Tykocin;2993
+Mordy;3268
+Szubin;2744
+Dokszyce;3004
+Kosów Poleski (dziœ Bia³oruœ);2433
+Zab³udów;2861
+G³owno;2422
+Bohorodczany;2721
+Mikuliñce;3217
+Jordanów;2456
+Szadek;3058
+Dobczyce;2920
+Kolbuszowa;2900
+Sassów;3099
+Golub;2565
+Sejny;2254
+Strzy¿ów;2905
+Bieruñ Stary;2221
+Tyczyn;3095
+Chorzele;2587
+Janowiec (Wielkopolski);2993
+Sieraków;2791
+Niemirów (dziœ Ukraina);2463
+Kamieniec Litewski (dziœ Bia³oruœ);2348
+Ratno (dziœ Ukraina);2410
+Muszyna;2516
+Supraœl;2322
+Kleczew;2848
+Mosina;1957
+D¹browica;2694
+Skaryszew;2072
+Stawiski;3017
+Choroszcz;2405
+Bia³a Rawska;2692
+Brok;2712
+Dobra;3055
+BereŸne;2494
+Dobrzyñ nad Wis³¹;2693
+Suchowola;2457
+Jagielnica (dziœ Ukraina);2702
+Czarny Dunajec;2399
+Tuchów;2443
+Wysokie Litewskie;2100
+Cieszanów;2282
+Indura;2323
+Miejska Górka;2600
+Husiatyn;2133
+£ohiszyn;1984
+Troki;1886
+Wiœnicz Nowy;2691
+Poniec;2471
+Janów (dziœ Iwano-Frankowe);2155
+Podbrodzie;1435
+Golina;2418
+Radoszkowice (Radoszkowicze);2459
+Stawiszyn;2560
+Lubraniec;2196
+Tuliszków;2358
+Jaryczów Nowy;2148
+G³ogów (Ma³opolski);2291
+Nowy Tomyœl;2083
+Lwówek;2552
+Koniecpol;2422
+£asin;2197
+Ulanów;2192
+Œlesin;2078
+Stêszew;2225
+Sulmierzyce;2526
+Nieszawa;2381
+Odolanów;2437
+£abiszyn;1834
+Mi³os³aw;2499
+¯abno;2009
+Rajgród;2291
+Miasteczko (Œl¹skie);2212
+Radomyœl Wielki;2468
+Krobia;2285
+Mrocza;2016
+Kañczuga;2396
+Kórnik;2233
+Kobylin;2172
+Murowana Goœlina;1938
+Nowogród;1856
+Jaz³owiec;1982
+Bojanowo;1862
+Drohiczyn nad Bugiem;1972
+Terespol;1919
+£ob¿enica;1904
+WoŸniki;1800
+Skalbmierz;2262
+Lubieñ (Kujawski);2120
+Limanowa;2143
+Radymno;1907
+Zator;1995
+Jedwabne;1428
+Boæki;1719
+Dukla;2082
+Ujœcie;1872
+Sêdziszów;1935
+Margonin;1855
+Kalwaria Zebrzydowska;1692
+Czempiñ;2054
+Barcin;1628
+Druskieniki;1071
+Ciê¿kowice;1934
+Wojnicz;1910
+Borek;2097
+Kleszczele;1452
+Soko³y;2207
+Rakoniewice;2013
+Ni¿ankowice (dziœ Ukraina);1865
+Rychwa³;1891
+Radzyñ Che³miñski;1626
+Strumieñ;1566
+Wilamowice;1774
+Budzyñ;1889
+Sieniawa;1987
+Szamocin;1548
+Piaski;1638
+Kamieñ Pomorski (dziœ Kamieñ Krajeñski);1705
+Chodecz;1685
+Witkowo;1605
+Baranów (Sandomierski);1794
+Górzno;1665
+Skoki;1431
+Obrzycko;1503
+Krzywiñ;1874
+Krakowiec;1389
+K³ecko;1685
+Lanckorona;1617
+Raszków;1672
+Sarnowa (dziœ czêœæ Rawicza);1247
+Grabów (nad Prosn¹);1730
+Jutrosin;1725
+Wyrzysk;1305
+Wielichowo;1815
+Osieczna;1559
+Pogorzela;1662
+Nowy Dwór (nad Biebrz¹);1222
+Dolsk;1558
+¯erków;1549
+Go³añcz;1380
+Wysoka;1328
+Wyœmierzyce;1424
+Brzostek;1303
+Czerniejewo;1343
+Mielnik (nad Bugiem);1091
+Ryczywó³;1228
+Sura¿;1223
+Odelsk;1333
+Rydzyna;1175
+Zaniemyœl;1291
+Œwiêciechowa;1333
+Uœcie Solne;1376
+Mikstat;1423
+Narew;963
+Bnin (Kórnik);1242
+Ostroróg;1273
+Powidz;1210
+Gêbice;1268
+Mieœcisko;1317
+Miasteczko (Krajeñskie);1154
+Szczerzec;936
+Stara Sól;1170
+Rogowo (nad jez. Rogowskim);938
+Rychtal;928
+Nowe Miasto nad Wart¹;1044
+Rostarzewo;1019
+Ksi¹¿ (Wielkopolski);913
+W³adys³awów;960
+G¹sawa;835
+Jaraczew (Jaraczewo);855
+Rynarzewo;698
+Kopanica;645
+Huta Laura;16120

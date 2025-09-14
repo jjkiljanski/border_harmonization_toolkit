@@ -1,0 +1,113 @@
+{
+    "post_processing_reorganize_data_tables": [
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "sum",
+                "data_tables_list": [
+                    "9.12.1931-occupation_central_eastern_voivodships_ready_clean",
+                    "9.12.1931-occupation_southern_western_voivodships_ready_clean"
+                ],
+                "new_data_table_name": "1931_occupation_ready_clean"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "sum",
+                "data_tables_list": [
+                    "1931-total_population_central_eastern_voivodships",
+                    "1931-total_population_southern_western_voivodships"
+                ],
+                "new_data_table_name": "1931-total_population"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "sum",
+                "data_tables_list": [
+                    "1931-ethnicity_central_eastern_voivodships",
+                    "1931-ethnicity_southern_western_voivodships"
+                ],
+                "new_data_table_name": "1931-ethnicity"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "sum",
+                "data_tables_list": [
+                    "1931-indirect_occupation_central_eastern_voivodships",
+                    "1931-indirect_occupation_southern_western_voivodships"
+                ],
+                "new_data_table_name": "1931-indirect_occupation"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "sum",
+                "data_tables_list": [
+                    "1931-religion_central_eastern_voivodships",
+                    "1931-religion_southern_western_voivodships"
+                ],
+                "new_data_table_name": "1931-religion"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "concatenate",
+                "data_tables_list": [
+                    "1921-population-more-than-10000",
+                    "1921-population-less-than-10000",
+                    "1921-population-minor-cities"
+                ],
+                "new_data_table_name": "city-1921-population"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "concatenate",
+                "data_tables_list": [
+                    "1931-population-more-than-10000",
+                    "1931-population-less-than-10000"
+                ],
+                "new_data_table_name": "city-1931-population"
+            }
+        },
+        {
+            "method_name": "create_dist_area_dataset",
+            "arguments": {
+                "data_table_metadata": {
+                    "data_table_id": "dist_area_baseline_adm_state",
+                    "adm_level": "District",
+                    "category": "Dist - Area",
+                    "source": "Own computation",
+                    "link": "",
+                    "table": "",
+                    "page": null,
+                    "pdf_page": null,
+                    "description": {
+                        "pol": "Powierzchnia powiatów.",
+                        "eng": "District area."
+                    },
+                    "date": "01.04.1938",
+                    "orig_adm_state_date": "01.04.1938",
+                    "standardization_comments": "",
+                    "harmonization_method": "proportional_to_territory",
+                    "imputation_method": null,
+                    "columns": {
+                        "Area": {
+                            "unit": "ha",
+                            "subcategory": "Area",
+                            "data_type": "float"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -268,12 +268,12 @@ def save_plot_to_html(fig, html_path, title, description, append=False):
 
     print(f"Plot {'appended to' if append else 'saved to'} {html_path}")
 
-def read_economic_csv_input(adm_level: Union[Literal['District'], Literal['Region']], input_csv_path: str, verbose = False):
+def read_economic_csv_input(adm_level: Union[Literal['District'], Literal['Region']], input_csv_path: str, verbose = False, sep=";"):
     """
     Reads in and standardizes csv file with economic data for data harmonization from path passed in input_csv_path.
     """
-    if adm_level not in ['District', 'Region']:
-        raise ValueError(f"Argument adm_level must be 'District' or 'Region'. Passsed: {adm_level}.")
+    if adm_level not in ['District', 'Region', 'City']:
+        raise ValueError(f"Argument adm_level must be 'District', 'Region' or 'City'. Passsed: {adm_level}.")
     if verbose:
         print(f"Attempting to read: {input_csv_path}")
     
@@ -289,7 +289,7 @@ def read_economic_csv_input(adm_level: Union[Literal['District'], Literal['Regio
         try:
             df = pd.read_csv(
                 input_csv_path,
-                sep=';',
+                sep=sep,
                 encoding=enc,
                 dtype=str,
                 on_bad_lines='warn'

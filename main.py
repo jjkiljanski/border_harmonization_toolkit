@@ -12,8 +12,8 @@ import pandas as pd
 # Load config
 config = load_config("config.json")
 
-input_path = "input/cities_data/population.csv"
-output_path = "output/harmonized_data/dist_population_from_cities.csv"
+input_path = "input/cities_raw_data/population.csv"
+output_path = "output/processed_data/dist_population_from_cities.csv"
 
 try:
     # ✅ Load the data
@@ -36,21 +36,17 @@ except Exception as e:
 administrative_history = AdministrativeHistory(config, load_geometries=True)
 
 # ✅ Map to districts
-dist_df = administrative_history.map_city_data_to_dists(df, mapping_date)
+dist_df = administrative_history.map_city_data_to_dists(df, mapping_date, geojson_path="output/cities_used_for_population_estimates.geojson")
 
 # ✅ Save result
 dist_df.to_csv(output_path, sep=";", encoding="utf-8", index=False)
 print(f"✅ Saved harmonized district population data to: {output_path}")
 
-print(f"The city Pelplin belonged to the district {administrative_history.coords_to_dist_address(53.926111, 18.701111, datetime(1934,10,1))} on 1.10.1934")
-print(f"The city Piaseczno belonged to the district {administrative_history.coords_to_dist_address(52.075556, 21.026389, datetime(1934,10,1))} on 1.10.1934")
-print(f"The city Piaski belonged to the district {administrative_history.coords_to_dist_address(51.884722, 17.074444, datetime(1934,10,1))} on 1.10.1934")
-
 #administrative_history.generate_adm_state_plots()
 
 ########## Example uses of the implemented methods ##########
 
-#administrative_history.harmonize_data()
+#administrative_history.process_raw_data()
 
 """ Recover and export the gdf generated for a date (e.g. 1.10.1934)
 deduced_gdf = administrative_history.dist_registry._plot_layer(datetime(1921,2,19))

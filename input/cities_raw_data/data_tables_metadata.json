@@ -1,0 +1,152 @@
+[
+    {
+        "data_table_id": "1921-population-less-than-10000",
+        "adm_level": "City",
+        "category": "Census 1921 - Population",
+        "source": "Drugi spis powszechny Ludności z dnia 9 grudnia 1931 r.: miasta liczące poniżej 10 000 mieszkańców według spisów 1931 i 1921 r.: wyniki tymczasowe.",
+        "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/U1A3CJNPG56ESE3IQFVA48SIVN1G98.pdf",
+        "table": "1",
+        "page": 1,
+        "pdf_page": 1,
+        "description": {
+            "pol": "Populacja miast poniżej 10000 mieszkańców wg. spisu powszechnego 1921 (stan na 30.09.1921).",
+            "eng": "Population of cities below 10000 inhabitants according to the 1921 national census (as of September 30, 1921)."
+        },
+        "date": "30.09.1921",
+        "orig_adm_state_date": "05.04.1932",
+        "standardization_comments": "Dane podane dla granic miast z 1931 roku. Oryginalne dane dla miast Oszmiana i Smorgonie zostały zastąpione esktrapolacją danych z 1931 i 1939 roku ze względu na znaczące odstępstwa od trendu.",
+        "imputation_method": null,
+        "columns": {
+            "Population": {
+                "unit": "",
+                "subcategory": "Total",
+                "data_type": "int"
+            }
+        }
+    },
+    {
+        "data_table_id": "1931-population-less-than-10000",
+        "adm_level": "City",
+        "category": "Census 1931 - Population",
+        "source": "Drugi spis powszechny Ludności z dnia 9 grudnia 1931 r.: miasta liczące poniżej 10 000 mieszkańców według spisów 1931 i 1921 r.: wyniki tymczasowe.",
+        "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/U1A3CJNPG56ESE3IQFVA48SIVN1G98.pdf",
+        "table": "1",
+        "page": 1,
+        "pdf_page": 1,
+        "description": {
+            "pol": "Populacja miast poniżej 10000 mieszkańców wg. spisu powszechnego 1931 (stan na 09.12.1931).",
+            "eng": "Population of cities below 10000 inhabitants according to the 1931 national census (as of December 09, 1931)."
+        },
+        "date": "09.12.1931",
+        "orig_adm_state_date": "05.04.1932",
+        "standardization_comments": "Dane dla miast Brasław, Drohiczyn Poleski, Postawy, Szczuczyn są wynikiem ekstrapolacji i założeń na podstawie danych z lat 1921 i 1939.",
+        "imputation_method": null,
+        "columns": {
+            "Population": {
+                "unit": "",
+                "subcategory": "Total",
+                "data_type": "int"
+            }
+        }
+    },
+    {
+        "data_table_id": "1921-population-more-than-10000",
+        "adm_level": "City",
+        "category": "Census 1921 - Population",
+        "source": "Drugi spis powszechny Ludności z dnia 9 grudnia 1931 r.: miasta liczące powyżej 10 000 mieszkańców według spisów 1931 i 1921 r.: wyniki tymczasowe.",
+        "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/VCFLIP7QTUQFYVR69SGQQGB1Q9XIKP.pdf",
+        "table": "1",
+        "page": 1,
+        "pdf_page": 1,
+        "description": {
+            "pol": "Populacja miast powyżej 10000 mieszkańców wg. spisu powszechnego 1921 (stan na 30.09.1921).",
+            "eng": "Population of cities of more than 10000 inhabitants according to the 1921 national census (as of September 30, 1921)."
+        },
+        "date": "30.09.1921",
+        "orig_adm_state_date": "05.04.1932",
+        "standardization_comments": "Dane podane dla granic miast z 1931 roku.",
+        "imputation_method": null,
+        "columns": {
+            "Population": {
+                "unit": "",
+                "subcategory": "Total",
+                "data_type": "int"
+            }
+        }
+    },
+    {
+        "data_table_id": "1931-population-more-than-10000",
+        "adm_level": "City",
+        "category": "Census 1931 - Population",
+        "source": "Drugi spis powszechny Ludności z dnia 9 grudnia 1931 r.: miasta liczące powyżej 10 000 mieszkańców według spisów 1931 i 1921 r.: wyniki tymczasowe.",
+        "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/VCFLIP7QTUQFYVR69SGQQGB1Q9XIKP.pdf",
+        "table": "1",
+        "page": 1,
+        "pdf_page": 1,
+        "description": {
+            "pol": "Populacja miast powyżej 10000 mieszkańców wg. spisu powszechnego 1931 (stan na 09.12.1931).",
+            "eng": "Population of cities of more than 10000 inhabitants according to the 1931 national census (as of December 9, 1931)."
+        },
+        "date": "30.09.1921",
+        "orig_adm_state_date": "05.04.1932",
+        "standardization_comments": "Dane podane dla granic miast z 1931 roku.",
+        "imputation_method": null,
+        "columns": {
+            "Population": {
+                "unit": "",
+                "subcategory": "Total",
+                "data_type": "int"
+            }
+        }
+    },
+    {
+        "data_table_id": "1921-population-minor-cities",
+        "adm_level": "City",
+        "category": "Census 1921 - Population",
+        "source": "Spis powszechny 1921 - publikacje wojewódzkie.",
+        "link": "",
+        "table": null,
+        "page": null,
+        "pdf_page": null,
+        "description": {
+            "pol": "Populacja miasteczek znaczących na tle powiatu, ale bez statusu miejskiego.",
+            "eng": "Population of cities important in their districts, but without the city status."
+        },
+        "date": "30.09.1921",
+        "orig_adm_state_date": "30.09.1921",
+        "standardization_comments": "",
+        "imputation_method": null,
+        "columns": {
+            "Population": {
+                "unit": "",
+                "subcategory": "Total",
+                "data_type": "int"
+            }
+        }
+    },
+    {
+        "data_table_id": "city-1939-population",
+        "adm_level": "City",
+        "category": "Population",
+        "source": "Rocznik Polityczny i Gospodarczy 1939. Polska Agencja Telegraficzna. Warszawa 1939.",
+        "link": "https://bcul.lib.uni.lodz.pl/dlibra/publication/2855/edition/1931?language=pl",
+        "table": null,
+        "page": 328,
+        "pdf_page": 310,
+        "description": {
+            "pol": "Populacja miast w 1939 r.",
+            "eng": "Population of cities in 1939."
+        },
+        "date": "1.01.1939",
+        "orig_adm_state_date": "1.04.1939",
+        "standardization_comments": "Niektóre dane zostały uzupełnione lub zmienione według danych z publikacji Adama Jelonka \"Ludność Miast i Osiedli Typu Miejskiego na Ziemiach Polski od 1810 do 1960 roku.\" (https://rcin.org.pl/dlibra/show-content/publication/edition/29117). W szczególności miasta Błaszki, Bydgoszcz, Chodecz, Częstochowa, Dukla, Działoszyce, Gdynia, Gostyń, Kleszczele, Kłobuck, Kock, Kraków, Krynica Zdrój, Krynki, Lublin, Lubliniec, Łęczna, Łowicz, Łódź, Maków Mazowiecki, Ostrów Lubelski, Ostrów Mazowiecka, Piwniczna (Piwnicznia-Zdrój), Pniewy, Pobiedziska, Poznań, Praszka, Radom, Rozwadów, Sieraków, Solec Kujawski, Sosnowiec, Strzyżów, Suchowola, Śrem, Wadowice, Warszawa, Wilamowice, Włodawa, Włoszczowa, Wyśmierzyce, Żelechów, Żory. Dla miast Brody, Kamień Koszyrski, Myślenice, Olesko, Radoszkowice (Radoszkowicze), Zbąszyń dane z roku 1939 zostały wyekstrapolowane po prostu jako kontynuacja trendów populacyjnych dla miast z 1921 i 1931 roku.",
+        "imputation_method": null,
+        "columns": {
+            "Population": {
+                "unit": "",
+                "subcategory": "Total",
+                "data_type": "int"
+            }
+        }
+    }
+]
