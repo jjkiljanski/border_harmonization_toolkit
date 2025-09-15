@@ -4564,6 +4564,58 @@
         }
     },
     {
+        "data_table_id": "1921-total_population_from_1931_census_publications_1933_borders",
+        "adm_level": "District",
+        "category": "Census 1921 - Total Population",
+        "source": "",
+        "link": "",
+        "table": "",
+        "page": null,
+        "pdf_page": null,
+        "description": {
+            "pol": "Całkowita liczba ludności wg. spisu powszechnego 1921 (stan na 30.09.1921) - z publikacji spisu powszechnego 1931, podane w nowych granicach.",
+            "eng": "Total population according to the 1921 national census (as of September 30, 1921) - from 1931 census publications, given in new borders."
+        },
+        "date": "30.09.1921",
+        "orig_adm_state_date": "01.01.1933",
+        "standardization_comments": "Dane zebrane z wszystkich publikacji dla województw centralnych i wschodnich.",
+        "harmonization_method": "proportional_to_territory",
+        "imputation_method": null,
+        "columns": {
+            "Total population": {
+                "unit": "",
+                "subcategory": "Data from 1931 census publications",
+                "data_type": "int"
+            }
+        }
+    },
+    {
+        "data_table_id": "1921-total_population_from_1931_census_publications_1934_borders",
+        "adm_level": "District",
+        "category": "Census 1921 - Total Population",
+        "source": "",
+        "link": "",
+        "table": "",
+        "page": null,
+        "pdf_page": null,
+        "description": {
+            "pol": "Całkowita liczba ludności wg. spisu powszechnego 1921 (stan na 30.09.1921) - z publikacji spisu powszechnego 1931, podane w nowych granicach.",
+            "eng": "Total population according to the 1921 national census (as of September 30, 1921) - from 1931 census publications, given in new borders."
+        },
+        "date": "30.09.1921",
+        "orig_adm_state_date": "01.08.1934",
+        "standardization_comments": "Dane zebrane z wszystkich publikacji dla województw zachodnich i południowych.",
+        "harmonization_method": "proportional_to_territory",
+        "imputation_method": null,
+        "columns": {
+            "Total population": {
+                "unit": "",
+                "subcategory": "Data from 1931 census publications",
+                "data_type": "int"
+            }
+        }
+    },
+    {
         "data_table_id": "1931-ethnicity_central_eastern_voivodships",
         "adm_level": "District",
         "category": "Census 1931 - Ethnicity",

@@ -18662,6 +18662,40 @@
         }
     },
     {
+        "data_table_id": "1921-total_population_from_1931_census_publications",
+        "adm_level": "District",
+        "category": "Census 1921 - Total Population",
+        "source": "",
+        "link": "",
+        "table": "",
+        "page": null,
+        "pdf_page": null,
+        "description": {
+            "pol": "1921-total_population_from_1931_census_publications_1934_borders: Całkowita liczba ludności wg. spisu powszechnego 1921 (stan na 30.09.1921) - z publikacji spisu powszechnego 1931, podane w nowych granicach.",
+            "eng": "1921-total_population_from_1931_census_publications_1934_borders: Total population according to the 1921 national census (as of September 30, 1921) - from 1931 census publications, given in new borders."
+        },
+        "date": "30.09.1921",
+        "orig_adm_state_date": "1934-10-01T00:00:00",
+        "adm_state_date": "1934-10-01T00:00:00",
+        "standardization_comments": "Summed up from the datasets: 1921-total_population_from_1931_census_publications_1934_borders (orig_adm_state_date: 1934-08-01 00:00:00)\nDane zebrane z wszystkich publikacji dla województw zachodnich i południowych.",
+        "harmonization_method": "proportional_to_territory",
+        "imputation_method": null,
+        "columns": {
+            "Total population": {
+                "unit": "",
+                "subcategory": "Data from 1931 census publications",
+                "subsubcategory": "Together",
+                "data_type": "int",
+                "completeness": 1.0,
+                "n_na": 0,
+                "n_not_na": 264,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            }
+        }
+    },
+    {
         "data_table_id": "city-1921-population",
         "adm_level": "City",
         "category": "Census 1921 - Population",

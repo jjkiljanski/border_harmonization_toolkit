@@ -58,6 +58,17 @@
         {
             "method_name": "combine_data_tables",
             "arguments": {
+                "method": "sum",
+                "data_tables_list": [
+                    "1921-total_population_from_1931_census_publications_1933_borders",
+                    "1921-total_population_from_1931_census_publications_1934_borders"
+                ],
+                "new_data_table_name": "1921-total_population_from_1931_census_publications"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
                 "method": "concatenate",
                 "data_tables_list": [
                     "1921-population-more-than-10000",
