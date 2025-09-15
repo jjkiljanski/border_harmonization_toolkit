@@ -1,17 +1,9 @@
 import json
-from pathlib import Path
 from datetime import datetime
-from pydantic import parse_obj_as, ValidationError
 from typing import List
-import shutil
 from shapely.geometry import Point
 import geopandas as gpd
 import pandas as pd
-import numpy as np
-import os
-import sys
-from collections import defaultdict
-import plotly.express as px
 import time
 import traceback
 
