@@ -27,23 +27,25 @@ from utils.helper_functions import read_economic_csv_input
 from utils.exceptions import TerritoryNotLoadedError
 
 """
-This is the core component of the toolkit.
-
-When an instance of AdministrativeHistory is created, the object reads in the input data
-and creates the data model of the administrative history.
+This component can be viewed as the 'injection layer' of the economic database.
+Its task is to prepare the raw input data through cleaning, standardization, and
+harmonziation for the usage of economic analysis. I uses the underlying model
+of administrative history stored in an AdministrativeHistory instance.
 
 The method 'process_raw_data' automatically creates all necessary harmonization matrices
 and harmonizes all the input data.
 
 Example usage:
     # Load the configuration.
-    config = load_config("config.json")
+    config = load_adm_history_config("config.json")
+    processing_config = load_processing_config("input/initial_region_state_list.json")
 
     # Create an AdministrativeHistory instance.
-    administrative_history = AdministrativeHistory(config, load_geometries=True)
+    adm_history = AdministrativeHistory(config, load_geometries=True)
+    adm_history_processor = AdministrativeHistoryProcessor(processing_config, adm_history)
 
-    # Harmonize input data stored in the folder defined in the config.
-    administrative_history.process_raw_data()
+    # Harmonize all input data stored in the folder defined in the config.
+    adm_history_processor.process_raw_data()
 """
 
 class AdministrativeHistoryProcessor():

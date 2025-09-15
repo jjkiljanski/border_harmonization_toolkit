@@ -1,19 +1,7 @@
-import json
-from pathlib import Path
 from datetime import datetime
-from pydantic import parse_obj_as, ValidationError
-from typing import List
-import shutil
-from shapely.geometry import Point
-import geopandas as gpd
 import pandas as pd
-import numpy as np
-import os
-import sys
-from collections import defaultdict
 import plotly.express as px
 import time
-import traceback
 
 from core.core import AdministrativeHistory
 from data_models.adm_timespan import *
@@ -24,23 +12,20 @@ from data_models.econ_data_metadata import *
 from data_models.processing_config import *
 
 """
-This is the core component of the toolkit.
-
-When an instance of AdministrativeHistory is created, the object reads in the input data
-and creates the data model of the administrative history.
-
-The method 'process_raw_data' automatically creates all necessary harmonization matrices
-and harmonizes all the input data.
+This component holds built-in function summarizing administrative history
+in plots.
+It is constructed using AdministrativeHistoryProcessor object.
 
 Example usage:
     # Load the configuration.
     config = load_config("config.json")
 
     # Create an AdministrativeHistory instance.
-    administrative_history = AdministrativeHistory(config, load_geometries=True)
+    adm_history = AdministrativeHistory(config, load_geometries=True)
+    adm_history_plotter = AdministartiveHistoryPlotter(adm_history)
 
-    # Harmonize input data stored in the folder defined in the config.
-    administrative_history.process_raw_data()
+    # Generate plots of all adm states.
+    adm_history_plotter.generate_adm_state_plots(output_folder_path='output/adm_states_maps/')
 """
 
 class AdministartiveHistoryPlotter():
@@ -156,7 +141,7 @@ class AdministartiveHistoryPlotter():
 
         return fig
     
-    def generate_adm_state_plots(self):
+    def generate_adm_state_plots(self, output_folder_path: str):
         """
         Creates and saves plots of all the administrative states in the administrative history.
         """
@@ -178,7 +163,7 @@ class AdministartiveHistoryPlotter():
             region_registry = self.administrative_history.region_registry
             dist_registry = self.administrative_history.dist_registry
             fig = adm_state.plot(region_registry, dist_registry, self.administrative_history.whole_map, adm_state.timespan.middle)
-            fig.savefig(f"output/adm_states_maps/"+adm_state.to_label() + ".png", bbox_inches=None)
+            fig.savefig(output_folder_path+adm_state.to_label() + ".png", bbox_inches=None)
             plt.close(fig)  # prevent memory buildup
             print(f"Saved adm_state_{adm_state.timespan.start.date()}.png.")
 

@@ -1,5 +1,4 @@
 import json
-from pathlib import Path
 from datetime import datetime
 from pydantic import parse_obj_as, ValidationError
 from typing import List
@@ -7,13 +6,8 @@ import shutil
 from shapely.geometry import Point
 import geopandas as gpd
 import pandas as pd
-import numpy as np
 import os
-import sys
-from collections import defaultdict
-import plotly.express as px
 import time
-import traceback
 
 from data_models.adm_timespan import *
 from data_models.adm_unit import *
@@ -23,26 +17,23 @@ from data_models.econ_data_metadata import *
 from data_models.processing_config import *
 
 from utils.helper_functions import standardize_df
-from utils.exceptions import TerritoryNotLoadedError
 
 """
 This is the core component of the toolkit.
 
 When an instance of AdministrativeHistory is created, the object reads in the input data
-and creates the data model of the administrative history.
-
-The method 'process_raw_data' automatically creates all necessary harmonization matrices
-and harmonizes all the input data.
+and creates the data model of the administrative history. It loads the district maps from
+GeoJSONs or ESRI shapefiles and reconstructs the territories of the districts on the basis
+of the maps where possible.
 
 Example usage:
     # Load the configuration.
-    config = load_config("config.json")
+    config = load_adm_history_config("config.json")
 
     # Create an AdministrativeHistory instance.
     administrative_history = AdministrativeHistory(config, load_geometries=True)
 
-    # Harmonize input data stored in the folder defined in the config.
-    administrative_history.process_raw_data()
+    
 """
 
 class AdministrativeHistory():
@@ -519,11 +510,6 @@ class AdministrativeHistory():
         except Exception as e:
             print(f"⚠️ Error while loading cities from {self.cities_path}: {e}")
             self.cities_df = None
-
-    def standardize_address(self):
-        """
-        To implement later. Every address should be standardized before any use."""
-        pass
 
     def list_change_dates(self, lang = "pol"):
         # Lists all the dates of administrative changes.

@@ -1,49 +1,25 @@
-import json
-from pathlib import Path
-from datetime import datetime
-from pydantic import parse_obj_as, ValidationError
-from typing import List
-import shutil
-from shapely.geometry import Point
-import geopandas as gpd
 import pandas as pd
-import numpy as np
 import os
-import sys
-from collections import defaultdict
-import plotly.express as px
-import time
-import traceback
 
 from core.processor import AdministrativeHistoryProcessor
-from data_models.adm_timespan import *
-from data_models.adm_unit import *
-from data_models.adm_state import *
-from data_models.adm_change import *
-from data_models.econ_data_metadata import *
-from data_models.processing_config import *
-
 from utils.helper_functions import read_economic_csv_input
-from utils.exceptions import TerritoryNotLoadedError
 
 """
-This is the core component of the toolkit.
-
-When an instance of AdministrativeHistory is created, the object reads in the input data
-and creates the data model of the administrative history.
-
-The method 'process_raw_data' automatically creates all necessary harmonization matrices
-and harmonizes all the input data.
+This component serves as the user api for the access to the data stored in the database.
+It is constructed using AdministrativeHistoryProcessor object.
 
 Example usage:
     # Load the configuration.
-    config = load_config("config.json")
+    config = load_adm_history_config("config.json")
+    processing_config = load_processing_config("input/initial_region_state_list.json")
 
     # Create an AdministrativeHistory instance.
-    administrative_history = AdministrativeHistory(config, load_geometries=True)
+    adm_history = AdministrativeHistory(config, load_geometries=True)
+    adm_history_processor = AdministrativeHistoryProcessor(processing_config, adm_history)
+    adm_history_api = AdministativeHistoryApi(adm_history_processor)
 
-    # Harmonize input data stored in the folder defined in the config.
-    administrative_history.process_raw_data()
+    # Load the needed data table.
+    population_1931, population_1931_data_table_metadata, population_1931_adm_state_date = adm_history_api.load_data_table(data_table_id = '1931-total_population', version='harmonized')
 """
 
 class AdministrativeHistoryAPI():

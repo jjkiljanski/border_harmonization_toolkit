@@ -12,7 +12,7 @@ import pandas as pd
 ########## Load and initiate administrative changes list ###########
 # Load configs
 config = load_adm_history_config("config.json")
-processing_config = load_processing_config
+processing_config = load_processing_config("input/initial_region_state_list.json")
 
 input_path = "input/cities_raw_data/population.csv"
 output_path = "output/processed_data/dist_population_from_cities.csv"
