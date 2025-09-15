@@ -1,5 +1,6 @@
 from data_models import *
 from core.core import AdministrativeHistory
+from core.processor import AdministrativeHistoryProcessor
 from utils.helper_functions import *
 
 from visualization.adm_unit_plots import plot_district_map
@@ -9,8 +10,9 @@ import csv
 import pandas as pd
 
 ########## Load and initiate administrative changes list ###########
-# Load config
-config = load_config("config.json")
+# Load configs
+config = load_adm_history_config("config.json")
+processing_config = load_processing_config
 
 input_path = "input/cities_raw_data/population.csv"
 output_path = "output/processed_data/dist_population_from_cities.csv"
@@ -34,9 +36,10 @@ except Exception as e:
     print(f"⚠️ Error during processing: {e}")
 
 administrative_history = AdministrativeHistory(config, load_geometries=True)
+adm_history_processor = AdministrativeHistoryProcessor(processing_config, administrative_history)
 
 # ✅ Map to districts
-dist_df = administrative_history.map_city_data_to_dists(df, mapping_date, geojson_path="output/cities_used_for_population_estimates.geojson")
+dist_df = adm_history_processor.map_city_data_to_dists(df, mapping_date, geojson_path="output/cities_used_for_population_estimates.geojson")
 
 # ✅ Save result
 dist_df.to_csv(output_path, sep=";", encoding="utf-8", index=False)
@@ -86,7 +89,7 @@ fig_matplotlib.savefig("output/district_map_1931_matplotlib.png", bbox_inches="t
 ############# Create an example conversion dict and conversion matrix and save them to CSV #############
 date_from = datetime(1924,1,1)
 date_to = datetime(1938,4,1)
-conversion_dict = administrative_history._construct_conversion_dict(date_from, date_to, verbose = True)
+conversion_dict = adm_history_processor._construct_conversion_dict(date_from, date_to, verbose = True)
 
 # Ensure output directory for matrices exists
 os.makedirs("output/conversion_matrices", exist_ok=True)
@@ -100,7 +103,7 @@ with open('output/conversion_matrices/example_dict.csv', mode='w', newline='', e
             writer.writerow([from_dist, to_dist, proportion])
 
 # Create an example conversion matrix
-conversion_matrix = administrative_history.construct_conversion_matrix(date_from, date_to, verbose = True)
+conversion_matrix = adm_history_processor.construct_conversion_matrix(date_from, date_to, verbose = True)
 
 # Save to CSV
 conversion_matrix.to_csv('output/conversion_matrices/example_matrix.csv', index=True)

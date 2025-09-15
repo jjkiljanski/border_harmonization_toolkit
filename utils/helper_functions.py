@@ -176,7 +176,7 @@ def load_uploaded_csv(uploaded_file):
         st.error(f"Could not parse CSV file. Encoding: {encoding}. Error: {e}")
         return None
 
-def load_config(config_path="config.json"):
+def load_adm_history_config(config_path="config.json"):
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"Configuration file {config_path} not found.")
     
@@ -189,6 +189,15 @@ def load_config(config_path="config.json"):
         global_timespan["start"] = datetime.strptime(global_timespan["start"], "%d-%m-%Y")
     if "end" in global_timespan:
         global_timespan["end"] = datetime.strptime(global_timespan["end"], "%d-%m-%Y")
+    
+    return config_data
+
+def load_processing_config(config_path="input/processing_config.json"):
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f"Configuration file {config_path} not found.")
+    
+    with open(config_path, "r") as config_file:
+        config_data = json.load(config_file)
     
     return config_data
 

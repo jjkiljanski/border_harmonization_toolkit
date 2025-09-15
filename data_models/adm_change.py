@@ -8,11 +8,11 @@ from datetime import datetime, timedelta
 from data_models.adm_timespan import *
 from data_models.adm_unit import *
 from data_models.adm_state import *
-from utils.helper_functions import load_config, normalize_spaces
+from utils.helper_functions import load_adm_history_config, normalize_spaces
 from utils.exceptions import ConsistencyError
 
 # Load the configuration
-config = load_config("config.json")
+config = load_adm_history_config("config.json")
 
 #####################################################################################
 #                            Data models for changes                                #
