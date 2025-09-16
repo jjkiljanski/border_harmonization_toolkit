@@ -1,6 +1,7 @@
 # Install administrative_history as editable package locally
 -e .
 
+fuzzywuzzy
 geopandas
 matplotlib
 numpy
