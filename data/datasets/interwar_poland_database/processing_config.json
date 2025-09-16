@@ -1,12 +1,12 @@
 {
-    "adm_units_raw_data_metadata_path": "input/adm_units_raw_data/data_tables_metadata.json",
-    "cities_raw_data_metadata_path": "input/cities_raw_data/data_tables_metadata.json",
-    "adm_units_raw_data_folder": "input/adm_units_raw_data/data/",
-    "cities_raw_data_folder": "input/cities_raw_data/data/",
-    "processed_data_output_folder": "output/processed_data/",
-    "harmonization_errors_output_path": "output/processed_data/harmonization_errors.txt",
-    "post_processing_errors_output_path": "output/processed_data/post_processing_errors.txt",
-    "processed_data_metadata_output_path": "output/processed_data/processed_data_metadata.json",
+    "adm_units_raw_data_metadata_path": "data/datasets/interwar_poland_database/adm_units_raw_data/data_tables_metadata.json",
+    "cities_raw_data_metadata_path": "data/datasets/interwar_poland_database/cities_raw_data/data_tables_metadata.json",
+    "adm_units_raw_data_folder": "data/datasets/interwar_poland_database/adm_units_raw_data/data/",
+    "cities_raw_data_folder": "data/datasets/interwar_poland_database/cities_raw_data/data/",
+    "processed_data_output_folder": "data/datasets/interwar_poland_database/processed_data/",
+    "harmonization_errors_output_path": "data/datasets/interwar_poland_database/processed_data/harmonization_errors.txt",
+    "post_processing_errors_output_path": "data/datasets/interwar_poland_database/processed_data/post_processing_errors.txt",
+    "processed_data_metadata_output_path": "data/datasets/interwar_poland_database/processed_data/processed_data_metadata.json",
     "harmonize_to_date": "01.10.1934",
     "post_processing_config": [
         {

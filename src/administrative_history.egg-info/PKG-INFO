@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: administrative-history
+Version: 0.1.0
+Summary: Toolkit for creating administrative history data model and using it to standardize and harmonize district-level socio-economic data.
+Author-email: Jan Kiljański <jan.jozef.kiljanski@gmail.com>
+License-File: LICENSE
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: plotly
+Requires-Dist: Shapely
+Requires-Dist: streamlit
+Dynamic: license-file

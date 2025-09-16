@@ -2,15 +2,15 @@ import pandas as pd
 import os
 from collections import defaultdict
 
-from core.core import AdministrativeHistory
-from data_models.processing_config import CombineDataTablesArgs, CreateDistAreaDatasetArgs
-from data_models.econ_data_metadata import DataTableMetadata, ColumnMetadata
+from administrative_history.core.processor import AdministrativeHistoryProcessor
+from administrative_history.data_models.processing_config import CombineDataTablesArgs, CreateDistAreaDatasetArgs
+from administrative_history.data_models.econ_data_metadata import DataTableMetadata, ColumnMetadata
 
 from collections import defaultdict
-from typing import List, Optional
+from typing import List
 
 def collapse_metadata_dicts(
-    administrative_history: AdministrativeHistory,
+    adm_history_processor: AdministrativeHistoryProcessor,
     metadata_list: List[DataTableMetadata],
     new_data_table_id: str
 ) -> DataTableMetadata:
@@ -71,8 +71,8 @@ def collapse_metadata_dicts(
                     f"with subcategory '{subcategory}' and subsubcategory '{subsubcategory}': {data_types}"
                 )
 
-            go_to_adm_state = administrative_history.find_adm_state_by_date(
-                administrative_history.harmonize_to_date
+            go_to_adm_state = adm_history_processor.adm_history.find_adm_state_by_date(
+                adm_history_processor.harmonize_to_date
             )
             total_all = len(go_to_adm_state.all_district_names(homeland_only=True))
             
@@ -239,7 +239,7 @@ def load_and_validate_data_tables_for_summing(folder, arguments):
     return dfs, index_column
 
 
-def combine_data_tables(administrative_history: AdministrativeHistory, arguments: CombineDataTablesArgs) -> None:
+def combine_data_tables(adm_history_processor: AdministrativeHistoryProcessor, arguments: CombineDataTablesArgs) -> None:
     """
     This method loads multiple tables from CSV files, sums them up to a new data table,
     saves it, and deletes the old data tables.
@@ -247,7 +247,7 @@ def combine_data_tables(administrative_history: AdministrativeHistory, arguments
 
     This method should be applied only to already processed datasets!
     """
-    folder = administrative_history.processed_data_output_folder
+    folder = adm_history_processor.processed_data_output_folder
     print(f"🟡 Starting combine_data_tables with '{arguments.method}' method: {arguments.data_tables_list} -> {arguments.new_data_table_name}.csv")
 
     dfs = []
@@ -297,33 +297,33 @@ def combine_data_tables(administrative_history: AdministrativeHistory, arguments
     result_df.to_csv(output_path, index=False)
 
     # Find metadata dicts of the datasets
-    metadata_dicts = [metadata_dict for metadata_dict in administrative_history.processed_data_metadata if metadata_dict.data_table_id in arguments.data_tables_list]
+    metadata_dicts = [metadata_dict for metadata_dict in adm_history_processor.processed_data_metadata if metadata_dict.data_table_id in arguments.data_tables_list]
 
     # Collapse metadata and update the processed_data_metadata list
-    collapsed_metadata = collapse_metadata_dicts(administrative_history, metadata_dicts, arguments.new_data_table_name)
-    administrative_history.processed_data_metadata = [
-        md for md in administrative_history.processed_data_metadata
+    collapsed_metadata = collapse_metadata_dicts(adm_history_processor, metadata_dicts, arguments.new_data_table_name)
+    adm_history_processor.processed_data_metadata = [
+        md for md in adm_history_processor.processed_data_metadata
         if md.data_table_id not in arguments.data_tables_list
     ] + [collapsed_metadata]
 
     print(f"✅ Finished combine_data_tables: Output written to {output_path}")
 
-def create_dist_area_dataset(administrative_history: AdministrativeHistory, arguments: CreateDistAreaDatasetArgs):
+def create_dist_area_dataset(adm_history_processor: AdministrativeHistoryProcessor, arguments: CreateDistAreaDatasetArgs):
     """
-    This method creates a data table with district areas for the administrative_history.harmonize_to_date.
+    This method creates a data table with district areas for the adm_history_processor.harmonize_to_date.
     Table metadata is created on the basis of the info passed in arguments.
     
     Returns:
     - df (pd.DataFrame): DataFrame with 'District' and 'Area' columns. Area is in hectares.
     """
-    print(f"🟡 Starting create_dist_area_dataset (adm. state for {administrative_history.harmonize_to_date.date()})")
+    print(f"🟡 Starting create_dist_area_dataset (adm. state for {adm_history_processor.harmonize_to_date.date()})")
     data_table_metadata = arguments.data_table_metadata
-    output_path = administrative_history.processed_data_output_folder + data_table_metadata.data_table_id + ".csv"
+    output_path = adm_history_processor.processed_data_output_folder + data_table_metadata.data_table_id + ".csv"
     # Get the GeoDataFrame of districts
-    dist_gdf = administrative_history.dist_registry._plot_layer(administrative_history.harmonize_to_date)
+    dist_gdf = adm_history_processor.adm_history.dist_registry._plot_layer(adm_history_processor.harmonize_to_date)
 
     # Select only homeland values
-    homeland_dist_names = administrative_history.find_adm_state_by_date(administrative_history.harmonize_to_date).all_district_names(homeland_only=True)
+    homeland_dist_names = adm_history_processor.adm_history.find_adm_state_by_date(adm_history_processor.harmonize_to_date).all_district_names(homeland_only=True)
     dist_gdf = dist_gdf[dist_gdf["name_id"].isin(homeland_dist_names)]
 
     # Project to a metric CRS (e.g., EPSG:3857 or any equal-area projection)
@@ -339,8 +339,8 @@ def create_dist_area_dataset(administrative_history: AdministrativeHistory, argu
     df.to_csv(output_path, index = False)
 
     # Update processed_data_metadata
-    data_table_metadata.date = administrative_history.harmonize_to_date.strftime("%d.%m.%Y")
-    data_table_metadata.adm_state_date = administrative_history.harmonize_to_date
-    administrative_history.processed_data_metadata.append(data_table_metadata)
+    data_table_metadata.date = adm_history_processor.harmonize_to_date.strftime("%d.%m.%Y")
+    data_table_metadata.adm_state_date = adm_history_processor.harmonize_to_date
+    adm_history_processor.processed_data_metadata.append(data_table_metadata)
 
     print(f"✅ Finished create_dist_area_dataset: Metadata and output added to the database.")

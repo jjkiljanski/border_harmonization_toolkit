@@ -1,43 +1,59 @@
 # streamlit_app.py
 import streamlit as st
-import plotly.express as px
-import plotly.graph_objects as go
-import pandas as pd
-from datetime import datetime
-import json
 import os
 import sys
-
-from typing import List
+import pandas as pd
 
 # Add the project root directory to sys.path to ensure that imports work
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from data_models.econ_data_metadata import DataTableMetadata
-from core.core import AdministrativeHistory
-from utils.helper_functions import load_config, standardize_df, load_uploaded_csv
+from administrative_history.core.core import AdministrativeHistory
+from administrative_history.core.processor import AdministrativeHistoryProcessor
+from administrative_history.core.api import AdministrativeHistoryAPI
+from administrative_history.core.plotter import AdministrativeHistoryPlotter
+from administrative_history.utils.helper_functions import load_adm_history_config, load_processing_config
 
-from visualization.adm_state_database_views import (
+from administrative_history.visualization.adm_state_database_views import (
     display_district_registry,
     display_territorial_state_info,
     display_adm_state_maps,
     display_changes_history
 )
-from visualization.standardize_dist_region_data_view import standardize_dist_region_data_view
-from visualization.standardize_city_data_view import standardize_city_data_view
-from visualization.economic_database_views import display_data_map
+from administrative_history.visualization.standardize_dist_region_data_view import standardize_dist_region_data_view
+from administrative_history.visualization.standardize_city_data_view import standardize_city_data_view
+from administrative_history.visualization.economic_database_views import display_data_map
+
+# Set working directory and config paths
+import os
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.."))
+CONFIG_PATH = os.path.join(REPO_ROOT, "data", "adm_histories", "interwar_poland", "adm_history_config.json")
+PROCESSING_CONFIG_PATH = os.path.join(REPO_ROOT, "data", "datasets", "interwar_poland_database", "processing_config.json")
 
 # Set layout and title
 st.set_page_config(page_title="District Timeline Viewer", layout="wide")
 st.title("Interwar Poland Database")
 
-# Load data
-@st.cache_resource
-def load_history():
-    config = load_config("config.json")
-    return AdministrativeHistory(config, load_geometries=False)
+# Check if administrative_history is already created
+if "administrative_history" not in st.session_state:
+    # Create if it doesn't exist yet
+    config = load_adm_history_config(CONFIG_PATH)
+    processing_config = load_processing_config(PROCESSING_CONFIG_PATH)
 
-administrative_history = load_history()
+    st.session_state.administrative_history = AdministrativeHistory(config, load_geometries=True)
+    st.session_state.adm_history_processor = AdministrativeHistoryProcessor(
+        processing_config, st.session_state.administrative_history
+    )
+    st.session_state.adm_history_api = AdministrativeHistoryAPI(st.session_state.adm_history_processor)
+    st.session_state.adm_history_plotter = AdministrativeHistoryPlotter(
+        st.session_state.administrative_history
+    )
+
+# Use the objects from session_state
+administrative_history = st.session_state.administrative_history
+adm_history_processor = st.session_state.adm_history_processor
+adm_history_api = st.session_state.adm_history_api
+adm_history_plotter = st.session_state.adm_history_plotter
+
 dist_registry = administrative_history.dist_registry
 
 # Top-level database selector
@@ -77,7 +93,7 @@ if selected_database == "Administrative States Database":
         standardize_city_data_view(administrative_history)
 
     elif adm_database_view == "View Change History":
-        display_changes_history(administrative_history)
+        display_changes_history(adm_history_plotter)
 
     else:
         st.warning("Unsupported plot type selected.")
@@ -86,15 +102,15 @@ if selected_database == "Administrative States Database":
 elif selected_database == "Economic Database":
 
     # Directory containing CSVs
-    harmonized_data_dir = 'output/harmonized_data'
+    processed_data_dir = adm_history_processor.processed_data_output_folder
 
     # Collect and prefix all dataframes
     all_data_df = None
     n_loaded_data_tables = 0
     harmonized_dataframe_cols = {}
-    for filename in os.listdir(harmonized_data_dir):
+    for filename in os.listdir(processed_data_dir):
         if filename.endswith(".csv"):
-            filepath = os.path.join(harmonized_data_dir, filename)
+            filepath = os.path.join(processed_data_dir, filename)
             key = filename[:-4]  # filename without .csv
 
             try:
@@ -120,7 +136,7 @@ elif selected_database == "Economic Database":
                 print(f"Failed to load {filename}: {e}")
 
     # # Load harmonization metadata
-    # with open(harmonized_data_dir+'/harmonized_data_metadata.json', 'r', encoding='utf-8') as f:
+    # with open(processed_data_dir+'/processed_data_dir_data_metadata.json', 'r', encoding='utf-8') as f:
     #     harmonized_data_metadata_raw = json.load(f)
     #     # Convert each dict to a DataTableMetadata instance
     #     harmonized_data_data_metadata: List[DataTableMetadata] = [
@@ -128,7 +144,7 @@ elif selected_database == "Economic Database":
     #     ]
 
     # Get base GeoDataFrame (with geometries and name_id)
-    gdf = administrative_history.dist_registry._plot_layer(administrative_history.harmonize_to_date)
+    gdf = administrative_history.dist_registry._plot_layer(adm_history_processor.harmonize_to_date)
 
     # Rename 'name_id' to 'District' so it matches with the column in your data
     gdf = gdf.rename(columns={'name_id': 'id'})
@@ -143,18 +159,18 @@ elif selected_database == "Economic Database":
     # Create sorted list of unique categories
     categories = sorted(set([
         data_table_metadata.category
-        for data_table_metadata in administrative_history.harmonized_data_metadata
+        for data_table_metadata in adm_history_processor.processed_data_metadata
     ]))
 
     # Create a dict with all data tables
     data_tables_dict = {
         category: {
 meta.data_table_id: sorted([f'{c_name} (completeness: Undefined)' if c_dict.completeness is None else f'{c_name} (completeness: {c_dict.completeness*100:.2f}%)' for c_name, c_dict in meta.columns.items()])
-            for meta in administrative_history.harmonized_data_metadata
+            for meta in adm_history_processor.processed_data_metadata
             if meta.category == category
         }
         for category in {
-            meta.category for meta in administrative_history.harmonization_metadata
+            meta.category for meta in adm_history_processor.raw_data_metadata
         }
     }
 
@@ -174,7 +190,7 @@ meta.data_table_id: sorted([f'{c_name} (completeness: Undefined)' if c_dict.comp
         # Filter and sort data table IDs for the selected category
         filtered_ids = sorted([
             data_table_metadata.data_table_id
-            for data_table_metadata in administrative_history.harmonized_data_metadata
+            for data_table_metadata in adm_history_processor.processed_data_metadata
             if data_table_metadata.category == selected_category
         ])
 
@@ -183,8 +199,8 @@ meta.data_table_id: sorted([f'{c_name} (completeness: Undefined)' if c_dict.comp
         if selected_data_table_id is None:
             st.write(f"### Select dataset.")
         else:
-            data_table_description = [data_table_metadata.description["eng"] for data_table_metadata in administrative_history.harmonized_data_metadata if data_table_metadata.data_table_id == selected_data_table_id][0]
-            data_table_date = [data_table_metadata.date for data_table_metadata in administrative_history.harmonized_data_metadata if data_table_metadata.data_table_id == selected_data_table_id][0]
+            data_table_description = [data_table_metadata.description["eng"] for data_table_metadata in adm_history_processor.processed_data_metadata if data_table_metadata.data_table_id == selected_data_table_id][0]
+            data_table_date = [data_table_metadata.date for data_table_metadata in adm_history_processor.processed_data_metadata if data_table_metadata.data_table_id == selected_data_table_id][0]
 
             st.write(f"### {data_table_description} ({data_table_date})")
 

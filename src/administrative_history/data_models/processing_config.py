@@ -14,7 +14,7 @@ from typing import Union, List, Annotated, Literal
 from pydantic import BaseModel, Field
 from typing_extensions import Annotated  # redundant import kept for compatibility
 
-from data_models.econ_data_metadata import DataTableMetadata
+from administrative_history.data_models.econ_data_metadata import DataTableMetadata
 
 
 # ======================================================================

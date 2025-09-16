@@ -7,16 +7,16 @@ import pandas as pd
 import time
 import traceback
 
-from core.core import AdministrativeHistory
-from data_models.adm_timespan import *
-from data_models.adm_unit import *
-from data_models.adm_state import *
-from data_models.adm_change import *
-from data_models.econ_data_metadata import *
-from data_models.processing_config import *
+from administrative_history.core.core import AdministrativeHistory
+from administrative_history.data_models.adm_timespan import *
+from administrative_history.data_models.adm_unit import *
+from administrative_history.data_models.adm_state import *
+from administrative_history.data_models.adm_change import *
+from administrative_history.data_models.econ_data_metadata import *
+from administrative_history.data_models.processing_config import *
 
-from utils.helper_functions import read_economic_csv_input
-from utils.exceptions import TerritoryNotLoadedError
+from administrative_history.utils.helper_functions import read_economic_csv_input
+from administrative_history.utils.exceptions import TerritoryNotLoadedError
 
 """
 This component can be viewed as the 'injection layer' of the economic database.
@@ -58,6 +58,8 @@ class AdministrativeHistoryProcessor():
         self.harmonization_errors_output_path = self.processing_config.harmonization_errors_output_path
         self.post_processing_errors_output_path = self.processing_config.post_processing_errors_output_path
         self.processed_data_metadata_output_path = self.processing_config.processed_data_metadata_output_path
+
+        self._load_processed_data_metadata()
     
     def _load_processed_data_metadata(self):
         """
@@ -359,9 +361,9 @@ class AdministrativeHistoryProcessor():
         """
         if not self.adm_history.territories_loaded:
             raise TerritoryNotLoadedError(f"Attempted to harmonize data in the '{self.adm_units_raw_data_folder}' folder, but territories were not loaded to the administrative history.")
-        if not self.territories_deduced:
+        if not self.adm_history.territories_deduced:
             raise TerritoryNotLoadedError(f"Attempted to harmonize data in the '{self.adm_units_raw_data_folder}' folder, but the territories were not deduced yet in the administrative history.")
-        if not self.fallback_territories_created:
+        if not self.adm_history.fallback_territories_created:
             raise TerritoryNotLoadedError(f"Attempted to harmonize data in the '{self.adm_units_raw_data_folder}' folder, but the fallback territories were not created yet in the administrative history.")
 
         start_time = time.time()
@@ -631,7 +633,7 @@ class AdministrativeHistoryProcessor():
         elif method == "mode":
             return df.fillna(df.mode().iloc[0])
         elif method == "take_from_closest_centroid":
-            from data_processing.imputation import take_from_closest_centroid
+            from administrative_history.data_processing.imputation import take_from_closest_centroid
             return take_from_closest_centroid(administrative_history=self.adm_history, df=df, numeric_cols=numeric_cols, adm_state_date=adm_state_date)
         else:
             raise ValueError(f"Unknown imputation method: {method}")
@@ -648,17 +650,17 @@ class AdministrativeHistoryProcessor():
         """
         failed_methods = []
 
-        print(f"Beginning post-processing. Total number of methods to apply: {len(self.processing_config.post_processing_reorganize_data_tables)}")
+        print(f"Beginning post-processing. Total number of methods to apply: {len(self.processing_config.post_processing_config)}")
 
         for i, method_dict in enumerate(self.post_processing_config):
             try:
                 if method_dict.method_name == "combine_data_tables":
                     print("Calling combine_data_tables method...")
-                    from data_processing.post_processing import combine_data_tables
+                    from administrative_history.data_processing.post_processing import combine_data_tables
                     combine_data_tables(self, method_dict.arguments)
                 elif method_dict.method_name == "create_dist_area_dataset":
                     print("Calling create_dist_area_dataset method...")
-                    from data_processing.post_processing import create_dist_area_dataset
+                    from administrative_history.data_processing.post_processing import create_dist_area_dataset
                     create_dist_area_dataset(self, method_dict.arguments)
                 else:
                     raise ValueError(f"The method {method_dict.method_name} is not supported.")

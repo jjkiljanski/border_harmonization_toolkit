@@ -4,9 +4,9 @@ from datetime import datetime
 import sys
 
 
-from data_models.adm_timespan import TimeSpan
-from data_models.adm_unit import *
-from utils.exceptions import ConsistencyError
+from administrative_history.data_models.adm_timespan import TimeSpan
+from administrative_history.data_models.adm_unit import *
+from administrative_history.utils.exceptions import ConsistencyError
 
 import matplotlib
 import matplotlib.patches as mpatches
@@ -595,6 +595,9 @@ class AdministrativeState(BaseModel):
             - new_state (AdministrativeState): New state - the outcome of the application of all changes.
         """
 
+        if self.timespan is None:
+            raise ValueError(f"Method 'apply_changes' applied to the state {str(self)} which has no defined timespan.")
+
         current_change_index = start_index
 
         # Take the date of the change and ensure that all changes have the same date.
@@ -615,7 +618,7 @@ class AdministrativeState(BaseModel):
                 current_change_index += 1
                 
                 # Apply change and store information on the affected districts
-                change.apply(new_state, region_registry, dist_registry, plot_change = False, verbose = verbose)
+                change.apply(new_state, region_registry, dist_registry, adm_history_end_date = new_state.timespan.end, plot_change = False, verbose = verbose)
             except Exception as e:
                 raise RuntimeError(f"Error during the application of change {str(change)}: {str(e)}") from e
         

@@ -5,8 +5,9 @@ from PIL import Image
 
 from collections import defaultdict
 
-from core.core import AdministrativeHistory
-from visualization.adm_unit_plots import (
+from administrative_history.core.core import AdministrativeHistory
+from administrative_history.core.plotter import AdministrativeHistoryPlotter
+from administrative_history.visualization.adm_unit_plots import (
     plot_dist_history,
     plot_dist_ter_info_history,
     plot_district_map
@@ -68,7 +69,7 @@ def display_adm_state_maps(administrative_history: AdministrativeHistory):
     st.subheader("Administrative State Maps")
 
     # Load all PNGs and map them to labels (without file extension)
-    map_folder = "output/adm_states_maps"
+    map_folder = administrative_history.adm_states_maps_output_path
     available_map_files = {
         filename[:-4]: os.path.join(map_folder, filename)
         for filename in os.listdir(map_folder)
@@ -106,9 +107,9 @@ def display_adm_state_maps(administrative_history: AdministrativeHistory):
         image = Image.open(image_path)
         st.image(image, caption=current_label, width=800)
     else:
-        st.warning(f"No map image found for: {current_label}")
+        st.warning(f"No map image found for: {current_label} (available_map_files: {available_map_files})")
 
-def display_changes_history(administrative_history: AdministrativeHistory):
+def display_changes_history(adm_history_plotter: AdministrativeHistoryPlotter):
     st.subheader("Administrative Change History")
 
     change_plot_container = st.container()
@@ -117,11 +118,11 @@ def display_changes_history(administrative_history: AdministrativeHistory):
 
     with change_plot_container:
         # Plot changes by year
-        dist_changes_hist_plot = administrative_history.plot_dist_changes_by_year(black_and_white=False)
+        dist_changes_hist_plot = adm_history_plotter.plot_dist_changes_by_year(black_and_white=False)
         st.plotly_chart(dist_changes_hist_plot, use_container_width=True)
 
     change_data = []
-    for change in administrative_history.changes_list:
+    for change in adm_history_plotter.adm_history.changes_list:
         date = change.date
         change_type = getattr(change.matter, "change_type", "Unknown")
 
@@ -167,7 +168,7 @@ def display_changes_history(administrative_history: AdministrativeHistory):
     # Temporary dictionary keyed by (date, legal_act_name, legal_act_link)
     grouped_changes = defaultdict(set)
 
-    for change in administrative_history.changes_list:
+    for change in adm_history_plotter.adm_history.changes_list:
         change_date = change.date
         legal_act_name = change.sources[0] if change.sources else "Unknown"
         legal_act_link = change.links[0] if (change.links and change.links[0] and change.links[0] != "X") else ""

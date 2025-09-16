@@ -3,8 +3,6 @@ from pydantic import BaseModel, model_validator
 from typing import Optional, Literal, List, Tuple, Any, Union, TYPE_CHECKING
 
 from datetime import datetime
-import time
-import sys
 
 import matplotlib
 matplotlib.use("Agg")
@@ -16,7 +14,7 @@ from shapely.geometry.base import BaseGeometry
 from collections import Counter
 
 
-from data_models.adm_timespan import TimeSpan
+from administrative_history.data_models.adm_timespan import TimeSpan
 
 if TYPE_CHECKING: # Using TYPE_CHECKING to postpone Change import and avoid circular imports
     from data_models.adm_change import Change

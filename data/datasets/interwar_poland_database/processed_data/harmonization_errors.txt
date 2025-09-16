@@ -1,16 +1,13 @@
 Harmonization Errors:
 
 ❌ 1921-total_population_from_1931_census_publications_1933_borders failed.
-Exception: The input file 'input/adm_units_raw_data/data/1921-total_population_from_1931_census_publications_1933_borders.csv' must contain a District column. Columns found: ['Column1', 'Column2']
+Exception: Districts in conversion matrix but not in input: {'KRÓLEWSKA HUTA'}
 Traceback:
 Traceback (most recent call last):
-  File "e:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\core\core.py", line 896, in process_raw_data
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 408, in process_raw_data
     processed_data_table_dict = self.process_raw_csv_file(
                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\core\core.py", line 985, in process_raw_csv_file
-    df_input = read_economic_csv_input(adm_level=adm_level, input_csv_path=input_csv_path)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\utils\helper_functions.py", line 329, in read_economic_csv_input
-    raise ValueError(
-ValueError: The input file 'input/adm_units_raw_data/data/1921-total_population_from_1931_census_publications_1933_borders.csv' must contain a District column. Columns found: ['Column1', 'Column2']
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 533, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'KRÓLEWSKA HUTA'}
 

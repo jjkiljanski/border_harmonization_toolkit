@@ -9,14 +9,14 @@ import pandas as pd
 import os
 import time
 
-from data_models.adm_timespan import *
-from data_models.adm_unit import *
-from data_models.adm_state import *
-from data_models.adm_change import *
-from data_models.econ_data_metadata import *
-from data_models.processing_config import *
+from administrative_history.data_models.adm_timespan import *
+from administrative_history.data_models.adm_unit import *
+from administrative_history.data_models.adm_state import *
+from administrative_history.data_models.adm_change import *
+from administrative_history.data_models.econ_data_metadata import *
+from administrative_history.data_models.processing_config import *
 
-from utils.helper_functions import standardize_df
+from administrative_history.utils.helper_functions import standardize_df
 
 """
 This is the core component of the toolkit.
@@ -58,6 +58,7 @@ class AdministrativeHistory():
 
         # Output files' paths
         self.adm_states_output_path = config["adm_states_output_path"]
+        self.adm_states_maps_output_path = config["adm_states_maps_output_path"]
 
         # Define the administrative history timespan
         self.timespan = TimeSpan(start = config["global_timespan"]["start"], end = config["global_timespan"]["end"])

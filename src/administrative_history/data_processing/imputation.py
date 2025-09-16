@@ -1,12 +1,10 @@
 import pandas as pd
 from datetime import datetime
 import geopandas as gpd
-from shapely.ops import nearest_points
-from shapely.geometry import Point
 from typing import List
 
-from core.core import AdministrativeHistory
-from data_models.adm_unit import DistrictRegistry
+from administrative_history.core.core import AdministrativeHistory
+from administrative_history.data_models.adm_unit import DistrictRegistry
 
 def take_from_closest_centroid(
         administrative_history: AdministrativeHistory,

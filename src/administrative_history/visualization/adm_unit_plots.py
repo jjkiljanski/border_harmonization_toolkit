@@ -2,12 +2,10 @@ import pandas as pd
 import plotly.express as px
 import json
 from datetime import datetime
-import geopandas as gpd
-from shapely.geometry import MultiPolygon, Polygon
 
-from data_models.adm_unit import DistrictRegistry
+from administrative_history.data_models.adm_unit import DistrictRegistry
 
-def plot_dist_history(dist_registry, start_date, end_date):
+def plot_dist_history(dist_registry: DistrictRegistry, start_date, end_date):
 
     districts = dist_registry.unit_list
     districts.sort(key=lambda d: d.name_id)

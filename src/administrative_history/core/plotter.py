@@ -3,13 +3,13 @@ import pandas as pd
 import plotly.express as px
 import time
 
-from core.core import AdministrativeHistory
-from data_models.adm_timespan import *
-from data_models.adm_unit import *
-from data_models.adm_state import *
-from data_models.adm_change import *
-from data_models.econ_data_metadata import *
-from data_models.processing_config import *
+from administrative_history.core.core import AdministrativeHistory
+from administrative_history.data_models.adm_timespan import *
+from administrative_history.data_models.adm_unit import *
+from administrative_history.data_models.adm_state import *
+from administrative_history.data_models.adm_change import *
+from administrative_history.data_models.econ_data_metadata import *
+from administrative_history.data_models.processing_config import *
 
 """
 This component holds built-in function summarizing administrative history
@@ -28,10 +28,10 @@ Example usage:
     adm_history_plotter.generate_adm_state_plots(output_folder_path='output/adm_states_maps/')
 """
 
-class AdministartiveHistoryPlotter():
+class AdministrativeHistoryPlotter():
     def __init__(self, administrative_history: AdministrativeHistory):
         # Add administrative history as attribute
-        self.administrative_history = administrative_history
+        self.adm_history = administrative_history
 
     def plot_dist_changes_by_year(self, homeland_only = True, black_and_white=False):
         """
@@ -39,7 +39,7 @@ class AdministartiveHistoryPlotter():
         Plots the number of districts with borders changed by year and returns the plot.
 
         If homeland_only is True, counts only districts that were ever in 'HOMELAND'
-        during self.administrative_history.timespan.
+        during self.adm_history.timespan.
 
         If black_and_white is True, plots in black and white.
         """
@@ -47,17 +47,17 @@ class AdministartiveHistoryPlotter():
         n_districts = 0
 
         # List of (datetime(year,1,1), datetime(year+1,1,1)) pairs
-        year_timespans = [TimeSpan(start = datetime(year, 1, 1), end = datetime(year + 1, 1, 1)) for year in range(self.administrative_history.timespan.start.year, self.administrative_history.timespan.end.year+1)]
+        year_timespans = [TimeSpan(start = datetime(year, 1, 1), end = datetime(year + 1, 1, 1)) for year in range(self.adm_history.timespan.start.year, self.adm_history.timespan.end.year+1)]
         # List to store change type, number of changes and districts affected per year.
         change_records = []
         # Convert each timespan to a label like "1921–1922" (for plotting)
         timespan_labels = [str(year_timespan.start.year) for year_timespan in year_timespans]
 
-        for district in self.administrative_history.dist_registry.unit_list:
+        for district in self.adm_history.dist_registry.unit_list:
             # Check if district was ever homeland:
             was_homeland = False
             for year_timespan in year_timespans:
-                current_dist_address = self.administrative_history.find_adm_state_by_date(year_timespan.middle).find_address(district.name_id, 'District')
+                current_dist_address = self.adm_history.find_adm_state_by_date(year_timespan.middle).find_address(district.name_id, 'District')
                 if current_dist_address:
                     if current_dist_address[0] == 'HOMELAND':
                         was_homeland = True
@@ -65,12 +65,12 @@ class AdministartiveHistoryPlotter():
             if not homeland_only or was_homeland:
                 n_districts += 1
                 print(f"District {district.name_id} belonged to homeland. Num changes: {len(district.changes)}")
-                # Count changes per year. We use the 'district.changes', not the 'self.administrative_history.changes_list' list, because we want to count only districts that were ever in 'homeland'.
+                # Count changes per year. We use the 'district.changes', not the 'self.adm_history.changes_list' list, because we want to count only districts that were ever in 'homeland'.
                 # Start with assuring that district changes are sorted. Every element in the district.changes is a pair (change_type, change). We sort first by 'date', then by 'order' attribute.
                 district.changes.sort(key=lambda change_pair: (change_pair[1].date, change_pair[1].order is None, change_pair[1].order))
                 for i, year_timespan in enumerate(year_timespans):
                     for j, (change_type, change) in enumerate(district.changes):
-                        if max(year_timespan.start, self.administrative_history.timespan.start)<change.date<year_timespan.end:
+                        if max(year_timespan.start, self.adm_history.timespan.start)<change.date<year_timespan.end:
                             # Omit changes if another change followed on the same day (this is simply an artefact of how we describe changes in the toolkit)
                             if j<len(district.changes)-1:
                                 if change.date!=district.changes[j+1]:
@@ -151,7 +151,7 @@ class AdministartiveHistoryPlotter():
         print("Computing the unary union of all district territories in the registry ('whole_map' geometry).")
 
         # Create a territory representing the unary union of all territories (the "whole map" shape)
-        self.administrative_history.whole_map = unary_union([state.current_territory for state in self.administrative_history.states_with_loaded_territory])
+        self.adm_history.whole_map = unary_union([state.current_territory for state in self.adm_history.states_with_loaded_territory])
 
         end_time = time.time()
         execution_time = end_time - start_time
@@ -159,10 +159,10 @@ class AdministartiveHistoryPlotter():
         
         print("Creating map plots for every administrative state...")
         start_time = time.time()
-        for adm_state in self.administrative_history.states_list:
-            region_registry = self.administrative_history.region_registry
-            dist_registry = self.administrative_history.dist_registry
-            fig = adm_state.plot(region_registry, dist_registry, self.administrative_history.whole_map, adm_state.timespan.middle)
+        for adm_state in self.adm_history.states_list:
+            region_registry = self.adm_history.region_registry
+            dist_registry = self.adm_history.dist_registry
+            fig = adm_state.plot(region_registry, dist_registry, self.adm_history.whole_map, adm_state.timespan.middle)
             fig.savefig(output_folder_path+adm_state.to_label() + ".png", bbox_inches=None)
             plt.close(fig)  # prevent memory buildup
             print(f"Saved adm_state_{adm_state.timespan.start.date()}.png.")
@@ -204,9 +204,9 @@ class AdministartiveHistoryPlotter():
         ##################################### Check proper input df form #######################################
 
         if adm_level == 'Region':
-            adm_state_units = self.administrative_history.find_adm_state_by_date(adm_state_date).all_region_names(homeland_only=True)
+            adm_state_units = self.adm_history.find_adm_state_by_date(adm_state_date).all_region_names(homeland_only=True)
         elif adm_level == 'District':
-            adm_state_units = self.administrative_history.find_adm_state_by_date(adm_state_date).all_district_names(homeland_only=True)
+            adm_state_units = self.adm_history.find_adm_state_by_date(adm_state_date).all_district_names(homeland_only=True)
         else:
             raise ValueError(f"adm_level must be 'Region' or 'District', but '{adm_level}' was passed.")
 
@@ -230,7 +230,7 @@ class AdministartiveHistoryPlotter():
         if adm_level == 'Region':
             raise ValueError(f"Method 'AdministrativeHistory.plot_dataset' for adm_level='Region' not implemented yet.")
         else:
-            dist_plot_layer = self.administrative_history.dist_registry._plot_layer(adm_state_date)
+            dist_plot_layer = self.adm_history.dist_registry._plot_layer(adm_state_date)
             dist_plot_layer.rename(columns={'name_id': 'District'}, inplace = True)
             dist_plot_layer.set_index('District', inplace = True)
 

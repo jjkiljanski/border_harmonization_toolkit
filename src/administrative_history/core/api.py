@@ -1,8 +1,9 @@
 import pandas as pd
 import os
+from typing import Union, Literal, Dict
 
-from core.processor import AdministrativeHistoryProcessor
-from utils.helper_functions import read_economic_csv_input
+from administrative_history.core.processor import AdministrativeHistoryProcessor
+from administrative_history.utils.helper_functions import read_economic_csv_input
 
 """
 This component serves as the user api for the access to the data stored in the database.

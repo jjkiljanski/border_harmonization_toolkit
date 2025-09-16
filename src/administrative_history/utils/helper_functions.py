@@ -176,7 +176,7 @@ def load_uploaded_csv(uploaded_file):
         st.error(f"Could not parse CSV file. Encoding: {encoding}. Error: {e}")
         return None
 
-def load_adm_history_config(config_path="config.json"):
+def load_adm_history_config(config_path):
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"Configuration file {config_path} not found.")
     

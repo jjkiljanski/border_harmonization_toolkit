@@ -5,14 +5,11 @@ from datetime import datetime, timedelta
 
 
 
-from data_models.adm_timespan import *
-from data_models.adm_unit import *
-from data_models.adm_state import *
-from utils.helper_functions import load_adm_history_config, normalize_spaces
-from utils.exceptions import ConsistencyError
-
-# Load the configuration
-config = load_adm_history_config("config.json")
+from administrative_history.data_models.adm_timespan import *
+from administrative_history.data_models.adm_unit import *
+from administrative_history.data_models.adm_state import *
+from administrative_history.utils.helper_functions import normalize_spaces
+from administrative_history.utils.exceptions import ConsistencyError
 
 #####################################################################################
 #                            Data models for changes                                #
@@ -66,7 +63,7 @@ class BaseChangeMatter(BaseModel, ABC):
         pass
 
     @abstractmethod
-    def apply(self, adm_state: AdministrativeState, region_registry: RegionRegistry, dist_registry: DistrictRegistry) -> None:
+    def apply(self, adm_state: AdministrativeState, region_registry: RegionRegistry, dist_registry: DistrictRegistry, adm_history_end_date: datetime) -> None:
         pass
 
     @abstractmethod
@@ -155,7 +152,7 @@ class UnitReform(BaseChangeMatter):
         else:
             raise ValueError("Wrong value for the lang parameter.")
         
-    def apply(self, change, adm_state, region_registry, dist_registry):
+    def apply(self, change, adm_state, region_registry, dist_registry, adm_history_end_date):
         """
         Apply the unit reform.
         """
@@ -303,7 +300,7 @@ class OneToMany(BaseChangeMatter):
         else:
             raise ValueError("Wrong value for the lang parameter.")
         
-    def apply(self, change, adm_state, region_registry, dist_registry):
+    def apply(self, change, adm_state, region_registry, dist_registry, adm_history_end_date):
         """
         Apply the unit reform.
         """
@@ -346,7 +343,7 @@ class OneToMany(BaseChangeMatter):
                 unit_state.previous_change = change
                 change.next_states.append(unit_state)
                 adm_state.add_address(take_to_dict.new_district_address, {})
-                unit_state.timespan = TimeSpan(**{"start": change.date, "end": config["global_timespan"]["end"]})
+                unit_state.timespan = TimeSpan(**{"start": change.date, "end": adm_history_end_date})
                 unit.changes.append(("created", change)) # 'created' changed is always a 'territory' change - districts can only be created by giving them some territory.
                 change.units_affected[self.unit_type].append(("created", unit))
             else:
@@ -526,7 +523,7 @@ class ManyToOne(BaseModel):
         else:
             raise ValueError("Wrong value for the lang parameter.")
 
-    def apply(self, change, adm_state, region_registry, dist_registry):
+    def apply(self, change, adm_state, region_registry, dist_registry, adm_history_end_date):
         """
         Apply the unit reform.
         """
@@ -567,7 +564,7 @@ class ManyToOne(BaseModel):
             unit_to_state.previous_change = change
             change.next_states.append(unit_to_state)
             adm_state.add_address(self.take_to.new_district_address, {})
-            unit_to_state.timespan = TimeSpan(**{"start": change.date, "end": config["global_timespan"]["end"]})
+            unit_to_state.timespan = TimeSpan(**{"start": change.date, "end": adm_history_end_date})
             unit_to.changes.append(("created", change)) # 'created' changed is always a 'territory' change - districts can only be created by giving them some territory.
             change.units_affected[self.unit_type].append(("created", unit_to))
         else:
@@ -666,7 +663,7 @@ class ChangeAdmState(BaseChangeMatter):
         else:
             raise ValueError("Wrong value for the lang parameter.")
         
-    def apply(self, change, adm_state, region_registry, dist_registry):
+    def apply(self, change, adm_state, region_registry, dist_registry, adm_history_end_date):
         """
         Apply the unit reform.
         """
@@ -826,7 +823,7 @@ class Change(BaseModel):
         self.matter.verify_att_to_reform(self, adm_state, region_registry, dist_registry)
 
 
-    def apply(self, adm_state: AdministrativeState, region_registry: RegionRegistry, dist_registry: DistrictRegistry, plot_change: bool = False, verbose: bool = True) -> None:
+    def apply(self, adm_state: AdministrativeState, region_registry: RegionRegistry, dist_registry: DistrictRegistry, adm_history_end_date: datetime, plot_change: bool = False, verbose: bool = True) -> None:
         self.verify_consistency(adm_state, region_registry, dist_registry)
         if verbose:
             print(f"Applying change {str(self)}.")
@@ -841,7 +838,7 @@ class Change(BaseModel):
             print(f"Change {self.matter.change_type} before plot created.")
         
         # Apply change
-        self.matter.apply(self, adm_state, region_registry, dist_registry)
+        self.matter.apply(self, adm_state, region_registry, dist_registry, adm_history_end_date)
         
         # If plot_change is True, prepare plot after the application.
         if plot_change:
