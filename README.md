@@ -22,7 +22,7 @@ The historic Poland-specific data is stored in two folders:
 The file `examples/interwar_poland_gdp/gdp_computation.ipynb` contains the full code used to compute Interwar Poland's district-level GDP timeseries on the basis of the harmonized inputs.
 
 ## Detailed Tool Descriptions
-Please, refer to the detailed descriptions of the specific tools and of the data inputs' formats in the relevant subfolders.
+Please, refer to the detailed descriptions of the specific tools and of the data inputs' formats in `src/administrative_history/README.md`.
 
 ## Acknowledgements
 This toolkit was developed for my master Thesis "Economic Geography of Interwar Poland" at the Humboldt University of Berlin and later for the creation of analysis within the grant "Długookresowe zmiana nierówności ekonomicznych i mobilności międzypokoleniowej w Polsce. [Long-term changes in economic inequality and inter-generational mobility in Poland]" at the Warsaw School of Economics. I extend special thanks to my master prof. Marcin Wroński (Warsaw School Economics) for the idea of district-level GDP estimates, his guidance and support during the preparation of all local GDP estimates, and to prof. Nikolaus Wolf (Humboldt University of Berlin) for igniting my interest in economic history and for his support as my master thesis supervisor.
