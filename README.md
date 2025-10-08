@@ -4,7 +4,12 @@
 
 This toolkit allows for the creation of an administrative history of an area on the Country-Region-District level. It creates a data model of the adm. history on the basis of standardized inputs, and allows to use it for history-summaries generation, data standardization, imputation, and harmonization (between different borders).
 
-The toolkit was written for the purpose of the creation of the **biggest existent quantitative database on the history of Poland** summarizing district-level economic and social data from the interwar period (1921-1939). The district-level datasets from interwar Poland as well as inputs allowing to reconstruct the full administrative history of Poland between 1921 and 1939, and harmonize all the datasets to chosen borders are stored in the `data` folder. An example use of the data for the sake of computation of historic district-level GDP is stored in the `examples` folder.
+The toolkit was written for the purpose of the creation of the **biggest existent quantitative database on the history of Poland** summarizing district-level economic and social data from the interwar period (1921-1939). The `data` folder stores:
+1. Inputs allowing to reconstruct the full administrative history of Poland between 1921 and 1939 in the `data/adm_histories/interwar_poland` folder;
+2. Standardized district-level datasets from interwar Poland together with the datasets' metadata in the `data/datasets/interwar_poland_database` folder;
+3.  Config allowing to harmonize all the raw data files digitized from original sources to chosen borders in the `data/datasets/interwar_poland_database/processing_config.json` file.
+
+The file `examples/interwar_poland_gdp/gdp_computation.ipynb` uses the collected data for the **computation of historic district-level 1924-1938 GDP series for Poland**. The estimates constitute **one of the earliest district-level GDP estimates for the early 20th century**.
 
 ## The Toolkit's Structure
 
