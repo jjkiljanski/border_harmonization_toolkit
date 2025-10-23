@@ -2,7 +2,6 @@
     {
         "data_table_id": "1921-population-less-than-10000",
         "adm_level": "City",
-        "category": "Census 1921 - Population",
         "source": "Drugi spis powszechny Ludności z dnia 9 grudnia 1931 r.: miasta liczące poniżej 10 000 mieszkańców według spisów 1931 i 1921 r.: wyniki tymczasowe.",
         "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/U1A3CJNPG56ESE3IQFVA48SIVN1G98.pdf",
         "table": "1",
@@ -19,7 +18,8 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "subcategory": "Total",
+                "category": "Census 1921/Population/Total",
+                "category_pl": "Spis Powszechny 1921/Ludność/Ogółem",
                 "data_type": "int"
             }
         }
@@ -27,7 +27,6 @@
     {
         "data_table_id": "1931-population-less-than-10000",
         "adm_level": "City",
-        "category": "Census 1931 - Population",
         "source": "Drugi spis powszechny Ludności z dnia 9 grudnia 1931 r.: miasta liczące poniżej 10 000 mieszkańców według spisów 1931 i 1921 r.: wyniki tymczasowe.",
         "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/U1A3CJNPG56ESE3IQFVA48SIVN1G98.pdf",
         "table": "1",
@@ -44,7 +43,8 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "subcategory": "Total",
+                "category": "Census 1931/Population/Total",
+                "category_pl": "Spis Powszechny 1931/Ludność/Ogółem",
                 "data_type": "int"
             }
         }
@@ -52,7 +52,6 @@
     {
         "data_table_id": "1921-population-more-than-10000",
         "adm_level": "City",
-        "category": "Census 1921 - Population",
         "source": "Drugi spis powszechny Ludności z dnia 9 grudnia 1931 r.: miasta liczące powyżej 10 000 mieszkańców według spisów 1931 i 1921 r.: wyniki tymczasowe.",
         "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/VCFLIP7QTUQFYVR69SGQQGB1Q9XIKP.pdf",
         "table": "1",
@@ -69,7 +68,8 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "subcategory": "Total",
+                "category": "Census 1921/Population/Total",
+                "category_pl": "Spis Powszechny 1921/Ludność/Ogółem",
                 "data_type": "int"
             }
         }
@@ -77,7 +77,6 @@
     {
         "data_table_id": "1931-population-more-than-10000",
         "adm_level": "City",
-        "category": "Census 1931 - Population",
         "source": "Drugi spis powszechny Ludności z dnia 9 grudnia 1931 r.: miasta liczące powyżej 10 000 mieszkańców według spisów 1931 i 1921 r.: wyniki tymczasowe.",
         "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/VCFLIP7QTUQFYVR69SGQQGB1Q9XIKP.pdf",
         "table": "1",
@@ -94,7 +93,8 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "subcategory": "Total",
+                "category": "Census 1931/Population/Total",
+                "category_pl": "Spis Powszechny 1931/Ludność/Ogółem",
                 "data_type": "int"
             }
         }
@@ -102,7 +102,6 @@
     {
         "data_table_id": "1921-population-minor-cities",
         "adm_level": "City",
-        "category": "Census 1921 - Population",
         "source": "Spis powszechny 1921 - publikacje wojewódzkie.",
         "link": "",
         "table": null,
@@ -119,7 +118,8 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "subcategory": "Total",
+                "category": "Census 1921/Population/Total",
+                "category_pl": "Spis Powszechny 1921/Ludność/Ogółem",
                 "data_type": "int"
             }
         }
@@ -127,7 +127,6 @@
     {
         "data_table_id": "city-1939-population",
         "adm_level": "City",
-        "category": "Population",
         "source": "Rocznik Polityczny i Gospodarczy 1939. Polska Agencja Telegraficzna. Warszawa 1939.",
         "link": "https://bcul.lib.uni.lodz.pl/dlibra/publication/2855/edition/1931?language=pl",
         "table": null,
@@ -144,7 +143,8 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "subcategory": "Total",
+                "category": "Yearbook 1939/Population/Total",
+                "category_pl": "Ludność/Ogółem",
                 "data_type": "int"
             }
         }

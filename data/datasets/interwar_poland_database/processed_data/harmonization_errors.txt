@@ -1,13 +1,2 @@
 Harmonization Errors:
 
-❌ 1921-total_population_from_1931_census_publications_1933_borders failed.
-Exception: Districts in conversion matrix but not in input: {'KRÓLEWSKA HUTA'}
-Traceback:
-Traceback (most recent call last):
-  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 408, in process_raw_data
-    processed_data_table_dict = self.process_raw_csv_file(
-                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 533, in process_raw_csv_file
-    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
-ValueError: Districts in conversion matrix but not in input: {'KRÓLEWSKA HUTA'}
-

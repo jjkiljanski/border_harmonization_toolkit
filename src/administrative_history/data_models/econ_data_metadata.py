@@ -4,8 +4,7 @@ from datetime import datetime
 
 class ColumnMetadata(BaseModel):
     unit: str
-    subcategory: str
-    subsubcategory: Optional[str] = "Together"
+    category: str
     data_type: str
     completeness: Optional[float] = None
     n_na: Optional[int] = None
@@ -22,7 +21,6 @@ class DataTableMetadata(BaseModel):
 
     data_table_id: str
     adm_level: Union[Literal['District'], Literal['Region'], Literal['City']]
-    category: str
 
     # Source and link can be single strings or lists of strings
     source: Optional[Union[str, List[str]]] = ""

@@ -104,7 +104,6 @@
                 "data_table_metadata": {
                     "data_table_id": "dist_area_baseline_adm_state",
                     "adm_level": "District",
-                    "category": "Dist - Area",
                     "source": "Own computation",
                     "link": "",
                     "table": "",
@@ -122,7 +121,7 @@
                     "columns": {
                         "Area": {
                             "unit": "ha",
-                            "subcategory": "Area",
+                            "category": "Dist - Area",
                             "data_type": "float"
                         }
                     }

@@ -78,7 +78,7 @@ class AdministrativeHistoryAPI():
             df = read_economic_csv_input(adm_level=adm_level, input_csv_path=path)
             
         col_rename_dict = {
-            col_name: f"{data_table_metadata.columns[col_name].subcategory}: {data_table_metadata.columns[col_name].subsubcategory}"
+            col_name: data_table_metadata.columns[col_name].category
             for col_name in df.columns
             if col_name in data_table_metadata.columns
         }

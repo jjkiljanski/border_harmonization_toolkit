@@ -51,24 +51,21 @@ def collapse_metadata_dicts(
         grouped_columns = defaultdict(list)
         for md in metadata_list:
             for col_name, col_meta in md.columns.items():
-                key = (col_meta.subcategory, col_meta.subsubcategory)
+                key = col_meta.category
                 grouped_columns[key].append((col_name, col_meta))
 
         merged_columns = {}
-        for key, col_entries in grouped_columns.items():
-            subcategory, subsubcategory = key
+        for category, col_entries in grouped_columns.items():
             # Check consistency of unit and data_type
             units = {col_meta.unit for _, col_meta in col_entries}
             if len(units) != 1:
                 raise ValueError(
-                    f"Data tables have inconsistent 'unit' attribute for column "
-                    f"with subcategory '{subcategory}' and subsubcategory '{subsubcategory}': {units}"
+                    f"Data tables have inconsistent 'unit' attribute for column '{category}': {units}"
                 )
             data_types = {col_meta.data_type for _, col_meta in col_entries}
             if len(data_types) != 1:
                 raise ValueError(
-                    f"Data tables have inconsistent 'data_type' attribute for column "
-                    f"with subcategory '{subcategory}' and subsubcategory '{subsubcategory}': {data_types}"
+                    f"Data tables have inconsistent 'data_type' attribute for column '{category}': {data_types}"
                 )
 
             go_to_adm_state = adm_history_processor.adm_history.find_adm_state_by_date(
@@ -107,8 +104,7 @@ def collapse_metadata_dicts(
             representative_name = col_entries[0][0]  # Use the first name found
             merged_columns[representative_name] = ColumnMetadata(
                 unit=units.pop(),
-                subcategory=subcategory,
-                subsubcategory=subsubcategory,
+                category=category,
                 data_type=data_types.pop(),
                 n_na=total_na,
                 n_not_na=total_not_na,
@@ -159,7 +155,6 @@ def collapse_metadata_dicts(
     return DataTableMetadata(
         data_table_id=new_data_table_id,
         adm_level=unique_or_error([md.adm_level for md in metadata_list]),
-        category=unique_or_error([md.category for md in metadata_list]),
         source=source_out,
         link=link_out,
         table=table_out,
