@@ -873,8 +873,7 @@
   - Indirect Occupation
     - Agriculture
     - Domestic service
-    - Indirect Occupation
-      - Horticulture
+    - Horticulture
     - Mining and industry
     - Other
     - Outside Agriculture
@@ -982,7 +981,7 @@
     - Wheat
   - Yields (q per ha)
     - Buraki Cukrowe
-- Dist - Area
+- District Area
 - Employment
   - Chemical
   - Clothing and Toymaking

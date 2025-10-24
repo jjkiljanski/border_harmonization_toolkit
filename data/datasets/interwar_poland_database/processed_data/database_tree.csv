@@ -3,7 +3,7 @@
 1,Census 1921,Census 1921,,False
 1,Census 1931,Census 1931,,False
 1,Crops,Crops,,False
-1,Dist - Area,Dist - Area,,True
+1,District Area,District Area,,True
 1,Employment,Employment,,False
 1,Forests,Forests,,False
 1,Livestock,Livestock,,False
@@ -596,7 +596,7 @@
 3,x1 Capitalists and rentiers,Census 1931/Economically Active Population/x1 Capitalists and rentiers,Census 1931/Economically Active Population,True
 3,Agriculture,Census 1931/Indirect Occupation/Agriculture,Census 1931/Indirect Occupation,True
 3,Domestic service,Census 1931/Indirect Occupation/Domestic service,Census 1931/Indirect Occupation,True
-3,Indirect Occupation,Census 1931/Indirect Occupation/Indirect Occupation,Census 1931/Indirect Occupation,False
+3,Horticulture,Census 1931/Indirect Occupation/Horticulture,Census 1931/Indirect Occupation,True
 3,Mining and industry,Census 1931/Indirect Occupation/Mining and industry,Census 1931/Indirect Occupation,True
 3,Other,Census 1931/Indirect Occupation/Other,Census 1931/Indirect Occupation,True
 3,Outside Agriculture,Census 1931/Indirect Occupation/Outside Agriculture,Census 1931/Indirect Occupation,True
@@ -1032,7 +1032,6 @@
 4,Category VaR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category VaR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
 4,Category VbR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category VbR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
 4,Total,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Total,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
-4,Horticulture,Census 1931/Indirect Occupation/Indirect Occupation/Horticulture,Census 1931/Indirect Occupation/Indirect Occupation,True
 4,All Types,Crops/Area/Barley/All Types,Crops/Area/Barley,True
 4,Barley,Crops/Area/Mixtures for Grain/Barley,Crops/Area/Mixtures for Grain,True
 4,Other mixtures,Crops/Area/Mixtures for Grain/Other mixtures,Crops/Area/Mixtures for Grain,True

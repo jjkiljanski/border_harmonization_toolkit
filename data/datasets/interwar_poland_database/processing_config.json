@@ -122,7 +122,10 @@
                     "columns": {
                         "Area": {
                             "unit": "ha",
-                            "category": "Dist - Area",
+                            "category": {
+                                "eng": "District Area",
+                                "pol": "Powierzchnia powiatów"
+                            },
                             "data_type": "float"
                         }
                     }

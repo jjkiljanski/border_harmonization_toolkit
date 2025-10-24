@@ -1,0 +1,1105 @@
+﻿level,name,path,parent,is_leaf
+1,Census 1921,Census 1921,,False
+1,Ceny,Ceny,,False
+1,Forests,Forests,,False
+1,Inwentarz żywy,Inwentarz żywy,,False
+1,Powierzchnia powiatów,Powierzchnia powiatów,,True
+1,Rocznik 1939,Rocznik 1939,,False
+1,Spis Powszechny 1921,Spis Powszechny 1921,,False
+1,Spis Powszechny 1931,Spis Powszechny 1931,,False
+1,Uprawy rolne,Uprawy rolne,,False
+1,Zatrudnienie,Zatrudnienie,,False
+1,Zezwolenia dla przedsiębiorstw,Zezwolenia dla przedsiębiorstw,,False
+2,Ludność,Census 1921/Ludność,Census 1921,False
+2,Lokalne płacone producentom,Ceny/Lokalne płacone producentom,Ceny,False
+2,Powierzchnia,Forests/Powierzchnia,Forests,True
+2,Bydło rogate,Inwentarz żywy/Bydło rogate,Inwentarz żywy,True
+2,Konie,Inwentarz żywy/Konie,Inwentarz żywy,True
+2,Kozy,Inwentarz żywy/Kozy,Inwentarz żywy,True
+2,Owce,Inwentarz żywy/Owce,Inwentarz żywy,True
+2,Owce i kozy,Inwentarz żywy/Owce i kozy,Inwentarz żywy,True
+2,Trzoda chlewna,Inwentarz żywy/Trzoda chlewna,Inwentarz żywy,True
+2,Ludność,Rocznik 1939/Ludność,Rocznik 1939,False
+2,Ludność,Spis Powszechny 1921/Ludność,Spis Powszechny 1921,False
+2,Narodowość,Spis Powszechny 1921/Narodowość,Spis Powszechny 1921,False
+2,Religia,Spis Powszechny 1921/Religia,Spis Powszechny 1921,False
+2,Zawód Główny,Spis Powszechny 1921/Zawód Główny,Spis Powszechny 1921,False
+2,Język ojczysty,Spis Powszechny 1931/Język ojczysty,Spis Powszechny 1931,False
+2,Ludność,Spis Powszechny 1931/Ludność,Spis Powszechny 1931,False
+2,Ludność aktywna zawodowo,Spis Powszechny 1931/Ludność aktywna zawodowo,Spis Powszechny 1931,False
+2,Wyznanie,Spis Powszechny 1931/Wyznanie,Spis Powszechny 1931,False
+2,Zawód Główny,Spis Powszechny 1931/Zawód Główny,Spis Powszechny 1931,False
+2,Plony (q na ha),Uprawy rolne/Plony (q na ha),Uprawy rolne,False
+2,Powierzchnia,Uprawy rolne/Powierzchnia,Uprawy rolne,False
+2,Przeciętny zbiór z ha,Uprawy rolne/Przeciętny zbiór z ha,Uprawy rolne,False
+2,Zbiory,Uprawy rolne/Zbiory,Uprawy rolne,False
+2,Chemical,Zatrudnienie/Chemical,Zatrudnienie,True
+2,Clothing and Toymaking,Zatrudnienie/Clothing and Toymaking,Zatrudnienie,True
+2,Construction,Zatrudnienie/Construction,Zatrudnienie,True
+2,Food,Zatrudnienie/Food,Zatrudnienie,True
+2,Leather,Zatrudnienie/Leather,Zatrudnienie,True
+2,Metal and electrotechnical,Zatrudnienie/Metal and electrotechnical,Zatrudnienie,True
+2,Mineral,Zatrudnienie/Mineral,Zatrudnienie,True
+2,Mining,Zatrudnienie/Mining,Zatrudnienie,True
+2,Mining and Industry - Total,Zatrudnienie/Mining and Industry - Total,Zatrudnienie,True
+2,Paper,Zatrudnienie/Paper,Zatrudnienie,True
+2,Power plants and waterworks,Zatrudnienie/Power plants and waterworks,Zatrudnienie,True
+2,Printing,Zatrudnienie/Printing,Zatrudnienie,True
+2,Public works,Zatrudnienie/Public works,Zatrudnienie,True
+2,Razem,Zatrudnienie/Razem,Zatrudnienie,True
+2,Textile,Zatrudnienie/Textile,Zatrudnienie,True
+2,Udział w całkowitym zatrudnieniu,Zatrudnienie/Udział w całkowitym zatrudnieniu,Zatrudnienie,False
+2,Wood,Zatrudnienie/Wood,Zatrudnienie,True
+2,Handel,Zezwolenia dla przedsiębiorstw/Handel,Zezwolenia dla przedsiębiorstw,False
+2,Przemysł,Zezwolenia dla przedsiębiorstw/Przemysł,Zezwolenia dla przedsiębiorstw,False
+2,Zajęcia przemysłowe,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,Zezwolenia dla przedsiębiorstw,False
+3,Ogółem (dane z publikacji o spisie 1931),Census 1921/Ludność/Ogółem (dane z publikacji o spisie 1931),Census 1921/Ludność,True
+3,Groch,Ceny/Lokalne płacone producentom/Groch,Ceny/Lokalne płacone producentom,True
+3,Gryka,Ceny/Lokalne płacone producentom/Gryka,Ceny/Lokalne płacone producentom,True
+3,Jęczmień,Ceny/Lokalne płacone producentom/Jęczmień,Ceny/Lokalne płacone producentom,False
+3,Koń roboczy (cena maksymalna),Ceny/Lokalne płacone producentom/Koń roboczy (cena maksymalna),Ceny/Lokalne płacone producentom,True
+3,Koń roboczy (cena minimalna),Ceny/Lokalne płacone producentom/Koń roboczy (cena minimalna),Ceny/Lokalne płacone producentom,True
+3,Krowa dojna (cena maksymalna),Ceny/Lokalne płacone producentom/Krowa dojna (cena maksymalna),Ceny/Lokalne płacone producentom,True
+3,Krowa dojna (cena minimalna),Ceny/Lokalne płacone producentom/Krowa dojna (cena minimalna),Ceny/Lokalne płacone producentom,True
+3,Owies,Ceny/Lokalne płacone producentom/Owies,Ceny/Lokalne płacone producentom,True
+3,Pszenica,Ceny/Lokalne płacone producentom/Pszenica,Ceny/Lokalne płacone producentom,True
+3,Siano,Ceny/Lokalne płacone producentom/Siano,Ceny/Lokalne płacone producentom,False
+3,Słoma,Ceny/Lokalne płacone producentom/Słoma,Ceny/Lokalne płacone producentom,True
+3,Wieprz (za kg),Ceny/Lokalne płacone producentom/Wieprz (za kg),Ceny/Lokalne płacone producentom,True
+3,Ziemniaki,Ceny/Lokalne płacone producentom/Ziemniaki,Ceny/Lokalne płacone producentom,False
+3,Żyto,Ceny/Lokalne płacone producentom/Żyto,Ceny/Lokalne płacone producentom,True
+3,Ogółem,Rocznik 1939/Ludność/Ogółem,Rocznik 1939/Ludność,True
+3,Ogółem,Spis Powszechny 1921/Ludność/Ogółem,Spis Powszechny 1921/Ludność,True
+3,% Białorusińska,Spis Powszechny 1921/Narodowość/% Białorusińska,Spis Powszechny 1921/Narodowość,True
+3,% Inna i niewiadoma: ogółem,Spis Powszechny 1921/Narodowość/% Inna i niewiadoma: ogółem,Spis Powszechny 1921/Narodowość,True
+3,% Mniejszości razem,Spis Powszechny 1921/Narodowość/% Mniejszości razem,Spis Powszechny 1921/Narodowość,True
+3,% Niemiecka,Spis Powszechny 1921/Narodowość/% Niemiecka,Spis Powszechny 1921/Narodowość,True
+3,% Polska,Spis Powszechny 1921/Narodowość/% Polska,Spis Powszechny 1921/Narodowość,True
+3,% Rusińska,Spis Powszechny 1921/Narodowość/% Rusińska,Spis Powszechny 1921/Narodowość,True
+3,% Tutejsza,Spis Powszechny 1921/Narodowość/% Tutejsza,Spis Powszechny 1921/Narodowość,True
+3,% Żydowska,Spis Powszechny 1921/Narodowość/% Żydowska,Spis Powszechny 1921/Narodowość,True
+3,Białorusińska,Spis Powszechny 1921/Narodowość/Białorusińska,Spis Powszechny 1921/Narodowość,True
+3,Inna i niewiadoma: ogółem,Spis Powszechny 1921/Narodowość/Inna i niewiadoma: ogółem,Spis Powszechny 1921/Narodowość,True
+3,Mniejszości razem (bez narodowości polskiej),Spis Powszechny 1921/Narodowość/Mniejszości razem (bez narodowości polskiej),Spis Powszechny 1921/Narodowość,True
+3,Niemiecka,Spis Powszechny 1921/Narodowość/Niemiecka,Spis Powszechny 1921/Narodowość,True
+3,Polska,Spis Powszechny 1921/Narodowość/Polska,Spis Powszechny 1921/Narodowość,True
+3,Rusińska,Spis Powszechny 1921/Narodowość/Rusińska,Spis Powszechny 1921/Narodowość,True
+3,Tutejsza,Spis Powszechny 1921/Narodowość/Tutejsza,Spis Powszechny 1921/Narodowość,True
+3,Żydowska,Spis Powszechny 1921/Narodowość/Żydowska,Spis Powszechny 1921/Narodowość,True
+3,% Ewangelickie,Spis Powszechny 1921/Religia/% Ewangelickie,Spis Powszechny 1921/Religia,True
+3,% Grecko-katolickie,Spis Powszechny 1921/Religia/% Grecko-katolickie,Spis Powszechny 1921/Religia,True
+3,% Inne,Spis Powszechny 1921/Religia/% Inne,Spis Powszechny 1921/Religia,True
+3,% Mojżeszowe,Spis Powszechny 1921/Religia/% Mojżeszowe,Spis Powszechny 1921/Religia,True
+3,% Pozostałe wyznania chrześcijańskie,Spis Powszechny 1921/Religia/% Pozostałe wyznania chrześcijańskie,Spis Powszechny 1921/Religia,True
+3,% Prawosławne,Spis Powszechny 1921/Religia/% Prawosławne,Spis Powszechny 1921/Religia,True
+3,% Rzymskokatolickie,Spis Powszechny 1921/Religia/% Rzymskokatolickie,Spis Powszechny 1921/Religia,True
+3,Ewangelickie,Spis Powszechny 1921/Religia/Ewangelickie,Spis Powszechny 1921/Religia,True
+3,Grecko-katolickie,Spis Powszechny 1921/Religia/Grecko-katolickie,Spis Powszechny 1921/Religia,True
+3,Inne lub niewiadome,Spis Powszechny 1921/Religia/Inne lub niewiadome,Spis Powszechny 1921/Religia,True
+3,Mojżeszowe,Spis Powszechny 1921/Religia/Mojżeszowe,Spis Powszechny 1921/Religia,True
+3,Pozostałe wyznania chrześcijańskie,Spis Powszechny 1921/Religia/Pozostałe wyznania chrześcijańskie,Spis Powszechny 1921/Religia,True
+3,Prawosławne,Spis Powszechny 1921/Religia/Prawosławne,Spis Powszechny 1921/Religia,True
+3,Rzymskokatolickie,Spis Powszechny 1921/Religia/Rzymskokatolickie,Spis Powszechny 1921/Religia,True
+3,A. Rolnictwo i leśnictwo,Spis Powszechny 1921/Zawód Główny/A. Rolnictwo i leśnictwo,Spis Powszechny 1921/Zawód Główny,True
+3,B. Górnictwo i przemysł,Spis Powszechny 1921/Zawód Główny/B. Górnictwo i przemysł,Spis Powszechny 1921/Zawód Główny,True
+3,C. Handel i ubezpieczenia,Spis Powszechny 1921/Zawód Główny/C. Handel i ubezpieczenia,Spis Powszechny 1921/Zawód Główny,True
+3,D. Komunikacja i transport,Spis Powszechny 1921/Zawód Główny/D. Komunikacja i transport,Spis Powszechny 1921/Zawód Główny,True
+3,"E. Służba publiczna, wolne zawody","Spis Powszechny 1921/Zawód Główny/E. Służba publiczna, wolne zawody",Spis Powszechny 1921/Zawód Główny,True
+3,F. Armia,Spis Powszechny 1921/Zawód Główny/F. Armia,Spis Powszechny 1921/Zawód Główny,True
+3,G. Służba domowa,Spis Powszechny 1921/Zawód Główny/G. Służba domowa,Spis Powszechny 1921/Zawód Główny,True
+3,H. Bezrobotni,Spis Powszechny 1921/Zawód Główny/H. Bezrobotni,Spis Powszechny 1921/Zawód Główny,True
+3,N. Bez bliższego określenia,Spis Powszechny 1921/Zawód Główny/N. Bez bliższego określenia,Spis Powszechny 1921/Zawód Główny,True
+3,Razem,Spis Powszechny 1921/Zawód Główny/Razem,Spis Powszechny 1921/Zawód Główny,True
+3,% Białoruski,Spis Powszechny 1931/Język ojczysty/% Białoruski,Spis Powszechny 1931/Język ojczysty,True
+3,% Hebrajski,Spis Powszechny 1931/Język ojczysty/% Hebrajski,Spis Powszechny 1931/Język ojczysty,True
+3,% Języki mniejszości razem (poza polskim),Spis Powszechny 1931/Język ojczysty/% Języki mniejszości razem (poza polskim),Spis Powszechny 1931/Język ojczysty,True
+3,% Niemiecki,Spis Powszechny 1931/Język ojczysty/% Niemiecki,Spis Powszechny 1931/Język ojczysty,True
+3,% Polski,Spis Powszechny 1931/Język ojczysty/% Polski,Spis Powszechny 1931/Język ojczysty,True
+3,% Pozostałe,Spis Powszechny 1931/Język ojczysty/% Pozostałe,Spis Powszechny 1931/Język ojczysty,True
+3,% Rosyjski,Spis Powszechny 1931/Język ojczysty/% Rosyjski,Spis Powszechny 1931/Język ojczysty,True
+3,% Rusiński,Spis Powszechny 1931/Język ojczysty/% Rusiński,Spis Powszechny 1931/Język ojczysty,True
+3,% Ukraiński,Spis Powszechny 1931/Język ojczysty/% Ukraiński,Spis Powszechny 1931/Język ojczysty,True
+3,% Żydowski,Spis Powszechny 1931/Język ojczysty/% Żydowski,Spis Powszechny 1931/Język ojczysty,True
+3,Białoruski,Spis Powszechny 1931/Język ojczysty/Białoruski,Spis Powszechny 1931/Język ojczysty,True
+3,Hebrajski,Spis Powszechny 1931/Język ojczysty/Hebrajski,Spis Powszechny 1931/Język ojczysty,True
+3,Języki mniejszości razem (poza polskim),Spis Powszechny 1931/Język ojczysty/Języki mniejszości razem (poza polskim),Spis Powszechny 1931/Język ojczysty,True
+3,Niemiecki,Spis Powszechny 1931/Język ojczysty/Niemiecki,Spis Powszechny 1931/Język ojczysty,True
+3,Polski,Spis Powszechny 1931/Język ojczysty/Polski,Spis Powszechny 1931/Język ojczysty,True
+3,Pozostałe,Spis Powszechny 1931/Język ojczysty/Pozostałe,Spis Powszechny 1931/Język ojczysty,True
+3,Rosyjski,Spis Powszechny 1931/Język ojczysty/Rosyjski,Spis Powszechny 1931/Język ojczysty,True
+3,Rusiński,Spis Powszechny 1931/Język ojczysty/Rusiński,Spis Powszechny 1931/Język ojczysty,True
+3,Ukraiński,Spis Powszechny 1931/Język ojczysty/Ukraiński,Spis Powszechny 1931/Język ojczysty,True
+3,Żydowski,Spis Powszechny 1931/Język ojczysty/Żydowski,Spis Powszechny 1931/Język ojczysty,True
+3,Ogółem,Spis Powszechny 1931/Ludność/Ogółem,Spis Powszechny 1931/Ludność,True
+3,00 Leśnictwo i łowiectwo,Spis Powszechny 1931/Ludność aktywna zawodowo/00 Leśnictwo i łowiectwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,08 Ogrodnictwo i pszczelarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/08 Ogrodnictwo i pszczelarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"08-00 Dział B. Ogrodnictwo, rybactwo, leśnictwo - k","Spis Powszechny 1931/Ludność aktywna zawodowo/08-00 Dział B. Ogrodnictwo, rybactwo, leśnictwo - k",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"08-00 Dział B. Ogrodnictwo, rybactwo, leśnictwo - m","Spis Powszechny 1931/Ludność aktywna zawodowo/08-00 Dział B. Ogrodnictwo, rybactwo, leśnictwo - m",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"08-00 Dział B. Ogrodnictwo, rybactwo, leśnictwo - r","Spis Powszechny 1931/Ludność aktywna zawodowo/08-00 Dział B. Ogrodnictwo, rybactwo, leśnictwo - r",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,09 Rybactwo,Spis Powszechny 1931/Ludność aktywna zawodowo/09 Rybactwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Dział C. Górnictwo i przemysł - k,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Dział C. Górnictwo i przemysł - k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Dział C. Górnictwo i przemysł - m,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Dział C. Górnictwo i przemysł - m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Dział C. Górnictwo i przemysł - r,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Dział C. Górnictwo i przemysł - r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: I-V kategorii k,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: I-V kategorii k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: I-V kategorii m,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: I-V kategorii m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: I-V kategorii r,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: I-V kategorii r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: niewiadomej kategorii k,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: niewiadomej kategorii k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: niewiadomej kategorii m,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: niewiadomej kategorii m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: niewiadomej kategorii r,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: niewiadomej kategorii r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: VI-VII kategorii k,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: VI-VII kategorii k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: VI-VII kategorii m,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: VI-VII kategorii m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: VI-VII kategorii r,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: VI-VII kategorii r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: VIII kategorii k,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: VIII kategorii k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: VIII kategorii m,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: VIII kategorii m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,1-2 Zakłady przemysłowe: VIII kategorii r,Spis Powszechny 1931/Ludność aktywna zawodowo/1-2 Zakłady przemysłowe: VIII kategorii r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,10 Górnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/10 Górnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,101 Górnictwo nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo/101 Górnictwo nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,102 Kopalnie węgla kamiennego,Spis Powszechny 1931/Ludność aktywna zawodowo/102 Kopalnie węgla kamiennego,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,103 Kopalnie rudy żelaznej,Spis Powszechny 1931/Ludność aktywna zawodowo/103 Kopalnie rudy żelaznej,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,104 Kopalnie rudy cynkowej i ołowianej,Spis Powszechny 1931/Ludność aktywna zawodowo/104 Kopalnie rudy cynkowej i ołowianej,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,105 Kopalnie soli kamiennej i warzelnie soli,Spis Powszechny 1931/Ludność aktywna zawodowo/105 Kopalnie soli kamiennej i warzelnie soli,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,106 Kopalnie ropy naftowej i gazu ziemnego,Spis Powszechny 1931/Ludność aktywna zawodowo/106 Kopalnie ropy naftowej i gazu ziemnego,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,11-13 Hutnictwo oraz przemysł metalowy i maszynowy,Spis Powszechny 1931/Ludność aktywna zawodowo/11-13 Hutnictwo oraz przemysł metalowy i maszynowy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,111 Hutnictwo i przemysł metalowy nie wydzielone — bez produkcji maszyn,Spis Powszechny 1931/Ludność aktywna zawodowo/111 Hutnictwo i przemysł metalowy nie wydzielone — bez produkcji maszyn,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,112 Huty żelaza,Spis Powszechny 1931/Ludność aktywna zawodowo/112 Huty żelaza,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,113 Huty żelaza połączone z działami dalszej obróbki,Spis Powszechny 1931/Ludność aktywna zawodowo/113 Huty żelaza połączone z działami dalszej obróbki,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,114 Huty cynku i ołowiu,Spis Powszechny 1931/Ludność aktywna zawodowo/114 Huty cynku i ołowiu,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,115 Odlewnie,Spis Powszechny 1931/Ludność aktywna zawodowo/115 Odlewnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,116 Produkcja kotłów i armatury oraz konstrukcji,Spis Powszechny 1931/Ludność aktywna zawodowo/116 Produkcja kotłów i armatury oraz konstrukcji,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"117 Produkcja mebli i sprzętów metalowych oraz okuć, zamków i kłódek","Spis Powszechny 1931/Ludność aktywna zawodowo/117 Produkcja mebli i sprzętów metalowych oraz okuć, zamków i kłódek",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,118 Produkcja naczyń blaszanych i innych wyrobów z blachy,Spis Powszechny 1931/Ludność aktywna zawodowo/118 Produkcja naczyń blaszanych i innych wyrobów z blachy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,119 Produkcja wyrobów z miedzi i jej stopów,Spis Powszechny 1931/Ludność aktywna zawodowo/119 Produkcja wyrobów z miedzi i jej stopów,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,121 Przemysł metalowy nie wydzielony połączony z produkcją maszyn,Spis Powszechny 1931/Ludność aktywna zawodowo/121 Przemysł metalowy nie wydzielony połączony z produkcją maszyn,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"122 Produkcja drutu, gwoździ, śrub i łańcuchów","Spis Powszechny 1931/Ludność aktywna zawodowo/122 Produkcja drutu, gwoździ, śrub i łańcuchów",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,123 Kowalstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/123 Kowalstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,124 Ślusarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/124 Ślusarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,125 Blacharstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/125 Blacharstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,127 Produkcja maszyn przemysłowych,Spis Powszechny 1931/Ludność aktywna zawodowo/127 Produkcja maszyn przemysłowych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,128 Produkcja maszyn rolniczych,Spis Powszechny 1931/Ludność aktywna zawodowo/128 Produkcja maszyn rolniczych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,129 Produkcja silników,Spis Powszechny 1931/Ludność aktywna zawodowo/129 Produkcja silników,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,132 Produkcja Wagonów,Spis Powszechny 1931/Ludność aktywna zawodowo/132 Produkcja Wagonów,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"133 Produkcja rowerów, motocykli i samochodów","Spis Powszechny 1931/Ludność aktywna zawodowo/133 Produkcja rowerów, motocykli i samochodów",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,134 Przemysł elektrotechniczny,Spis Powszechny 1931/Ludność aktywna zawodowo/134 Przemysł elektrotechniczny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"135 Produkcja wag, przyrządów i instrumentów precyzyjnych","Spis Powszechny 1931/Ludność aktywna zawodowo/135 Produkcja wag, przyrządów i instrumentów precyzyjnych",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,136 Produkcja instrumentów muzycznych,Spis Powszechny 1931/Ludność aktywna zawodowo/136 Produkcja instrumentów muzycznych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,137 Zegarmistrzostwo i jubilerstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/137 Zegarmistrzostwo i jubilerstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,14-15 Przemysł chemiczny,Spis Powszechny 1931/Ludność aktywna zawodowo/14-15 Przemysł chemiczny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,141 Przemysł chemiczny nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/141 Przemysł chemiczny nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,142 Smolarnie i terpentyniarnie,Spis Powszechny 1931/Ludność aktywna zawodowo/142 Smolarnie i terpentyniarnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,143 Koksownie,Spis Powszechny 1931/Ludność aktywna zawodowo/143 Koksownie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,144 Rafinerie ropy naftowej i gazoliniarnie,Spis Powszechny 1931/Ludność aktywna zawodowo/144 Rafinerie ropy naftowej i gazoliniarnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,146 Produkcja zapałek,Spis Powszechny 1931/Ludność aktywna zawodowo/146 Produkcja zapałek,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,147 Produkcja jedwabiu sztucznego,Spis Powszechny 1931/Ludność aktywna zawodowo/147 Produkcja jedwabiu sztucznego,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,148 Produkcja wyrobów gumowych,Spis Powszechny 1931/Ludność aktywna zawodowo/148 Produkcja wyrobów gumowych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,149 Wielki przemysł nieorganiczny,Spis Powszechny 1931/Ludność aktywna zawodowo/149 Wielki przemysł nieorganiczny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,152 Produkcja przetworów tłuszczowych,Spis Powszechny 1931/Ludność aktywna zawodowo/152 Produkcja przetworów tłuszczowych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,153 Produkcja mydła,Spis Powszechny 1931/Ludność aktywna zawodowo/153 Produkcja mydła,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,154 Olejarnie,Spis Powszechny 1931/Ludność aktywna zawodowo/154 Olejarnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,155 Produkcja wyrobów kosmetycznych i fermaceutycznych,Spis Powszechny 1931/Ludność aktywna zawodowo/155 Produkcja wyrobów kosmetycznych i fermaceutycznych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,16 Przemysł mineralny,Spis Powszechny 1931/Ludność aktywna zawodowo/16 Przemysł mineralny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,161 Przemysł mineralny nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/161 Przemysł mineralny nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,162 Kamieniołomy,Spis Powszechny 1931/Ludność aktywna zawodowo/162 Kamieniołomy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,163 Wapienniki i kopalnie gipsu,Spis Powszechny 1931/Ludność aktywna zawodowo/163 Wapienniki i kopalnie gipsu,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,164 Cementownie,Spis Powszechny 1931/Ludność aktywna zawodowo/164 Cementownie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,165 Betoniarnie,Spis Powszechny 1931/Ludność aktywna zawodowo/165 Betoniarnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,166 Cegielnie,Spis Powszechny 1931/Ludność aktywna zawodowo/166 Cegielnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,167 Przemysł ceramiczny i garncarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/167 Przemysł ceramiczny i garncarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,168 Huty szkła,Spis Powszechny 1931/Ludność aktywna zawodowo/168 Huty szkła,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,169 Kamieniarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/169 Kamieniarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,17-18 Przemysł drzewny,Spis Powszechny 1931/Ludność aktywna zawodowo/17-18 Przemysł drzewny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,171 Przemysł drzewny nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/171 Przemysł drzewny nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,172 Eksploatacja lasów,Spis Powszechny 1931/Ludność aktywna zawodowo/172 Eksploatacja lasów,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,173 Eksploatacja lasów w połączeniu z tartakami,Spis Powszechny 1931/Ludność aktywna zawodowo/173 Eksploatacja lasów w połączeniu z tartakami,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,174 Tartaki,Spis Powszechny 1931/Ludność aktywna zawodowo/174 Tartaki,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,175 Stolarstwo i wyrób mebli zwykłych,Spis Powszechny 1931/Ludność aktywna zawodowo/175 Stolarstwo i wyrób mebli zwykłych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,176 Produkcja mebli giętych,Spis Powszechny 1931/Ludność aktywna zawodowo/176 Produkcja mebli giętych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,177 Bednarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/177 Bednarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,178 Kołodziejstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/178 Kołodziejstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,179 Koszykarstwo i wikliniarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/179 Koszykarstwo i wikliniarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,182 Tapicerstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/182 Tapicerstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,19 Przemysł papierniczy,Spis Powszechny 1931/Ludność aktywna zawodowo/19 Przemysł papierniczy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,192 Papiernie i tekturownie,Spis Powszechny 1931/Ludność aktywna zawodowo/192 Papiernie i tekturownie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,193 Produkcja wyrobów z papieru,Spis Powszechny 1931/Ludność aktywna zawodowo/193 Produkcja wyrobów z papieru,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,20-21 Przemysł włókienniczy,Spis Powszechny 1931/Ludność aktywna zawodowo/20-21 Przemysł włókienniczy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,201 Przemysł włókienniczy nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/201 Przemysł włókienniczy nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,202 Międlarnie lnu,Spis Powszechny 1931/Ludność aktywna zawodowo/202 Międlarnie lnu,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,203 Przędzalnie nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo/203 Przędzalnie nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,204 Przędzalnie bawełniane,Spis Powszechny 1931/Ludność aktywna zawodowo/204 Przędzalnie bawełniane,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,205 Przędzalnie wełniane,Spis Powszechny 1931/Ludność aktywna zawodowo/205 Przędzalnie wełniane,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,206 Tkalnie nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo/206 Tkalnie nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,207 Tkalnie bawełniane,Spis Powszechny 1931/Ludność aktywna zawodowo/207 Tkalnie bawełniane,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,208 Tkalnie wełniane,Spis Powszechny 1931/Ludność aktywna zawodowo/208 Tkalnie wełniane,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,209 Przędzalnie w połączeniu z tkalniami - nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo/209 Przędzalnie w połączeniu z tkalniami - nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,212 Przędzalnie w połączeniu z tkalniami - bawełniane,Spis Powszechny 1931/Ludność aktywna zawodowo/212 Przędzalnie w połączeniu z tkalniami - bawełniane,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,213 Przędzalnie w połączeniu z tkalniami - wełniane,Spis Powszechny 1931/Ludność aktywna zawodowo/213 Przędzalnie w połączeniu z tkalniami - wełniane,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,214 Wykończalnie,Spis Powszechny 1931/Ludność aktywna zawodowo/214 Wykończalnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,215 Produkcja dywanów,Spis Powszechny 1931/Ludność aktywna zawodowo/215 Produkcja dywanów,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,216 Powroźnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/216 Powroźnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,217 Produkcja pończoch i wyrobów dzianych,Spis Powszechny 1931/Ludność aktywna zawodowo/217 Produkcja pończoch i wyrobów dzianych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,22 Przemysł skórzany,Spis Powszechny 1931/Ludność aktywna zawodowo/22 Przemysł skórzany,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,221 Przemysł skórzany nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/221 Przemysł skórzany nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,222 Garbarnie,Spis Powszechny 1931/Ludność aktywna zawodowo/222 Garbarnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"223 Rymarstwo, siodlarstwo i produkcja galanterii skórzanej","Spis Powszechny 1931/Ludność aktywna zawodowo/223 Rymarstwo, siodlarstwo i produkcja galanterii skórzanej",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,224 Szczotkarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/224 Szczotkarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,23 Przemysł odzieżowy,Spis Powszechny 1931/Ludność aktywna zawodowo/23 Przemysł odzieżowy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,231 Przemysł odzieżowy nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/231 Przemysł odzieżowy nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,232 Krawiectwo,Spis Powszechny 1931/Ludność aktywna zawodowo/232 Krawiectwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,233 Bieliźniarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/233 Bieliźniarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,234 Kuśnierstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/234 Kuśnierstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,235 Szewstwo i produkcja obuwia mechanicznego,Spis Powszechny 1931/Ludność aktywna zawodowo/235 Szewstwo i produkcja obuwia mechanicznego,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"236 Kapelusznictwo, czapnictwo oraz modniarstwo","Spis Powszechny 1931/Ludność aktywna zawodowo/236 Kapelusznictwo, czapnictwo oraz modniarstwo",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,24-25 Przemysł spożywczy,Spis Powszechny 1931/Ludność aktywna zawodowo/24-25 Przemysł spożywczy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,241 Przemysł spożywczy nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/241 Przemysł spożywczy nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,242 Młyny,Spis Powszechny 1931/Ludność aktywna zawodowo/242 Młyny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,243 Piekarnie,Spis Powszechny 1931/Ludność aktywna zawodowo/243 Piekarnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,244 Produkcja przetworów cukrowniczych,Spis Powszechny 1931/Ludność aktywna zawodowo/244 Produkcja przetworów cukrowniczych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,245 Cukrownie,Spis Powszechny 1931/Ludność aktywna zawodowo/245 Cukrownie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,246 Gorzelnie,Spis Powszechny 1931/Ludność aktywna zawodowo/246 Gorzelnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,247 Browary i słodownie,Spis Powszechny 1931/Ludność aktywna zawodowo/247 Browary i słodownie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"248 Produkcja wódek, wina, miodów i soków","Spis Powszechny 1931/Ludność aktywna zawodowo/248 Produkcja wódek, wina, miodów i soków",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,249 Produkcja wód mineralnych i gazowych,Spis Powszechny 1931/Ludność aktywna zawodowo/249 Produkcja wód mineralnych i gazowych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,252 Krochmalnie,Spis Powszechny 1931/Ludność aktywna zawodowo/252 Krochmalnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,253 Produkcja przetworów mlecznych,Spis Powszechny 1931/Ludność aktywna zawodowo/253 Produkcja przetworów mlecznych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,254 Rzeźnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/254 Rzeźnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,255 Produkcja wyrobów tytoniowych,Spis Powszechny 1931/Ludność aktywna zawodowo/255 Produkcja wyrobów tytoniowych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,26 Przemysł poligraficzny,Spis Powszechny 1931/Ludność aktywna zawodowo/26 Przemysł poligraficzny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,261 Przemysł poligraficzny nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/261 Przemysł poligraficzny nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,262 Drukarnie i litografie,Spis Powszechny 1931/Ludność aktywna zawodowo/262 Drukarnie i litografie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,263 Introligatorstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/263 Introligatorstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,264 Zakłady fotograficzne,Spis Powszechny 1931/Ludność aktywna zawodowo/264 Zakłady fotograficzne,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,27 Przemysł budowlany,Spis Powszechny 1931/Ludność aktywna zawodowo/27 Przemysł budowlany,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,271 Przemysł budowlany nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/271 Przemysł budowlany nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,272 Budownictwo ziemne w połączeniu z budownictwem domów,Spis Powszechny 1931/Ludność aktywna zawodowo/272 Budownictwo ziemne w połączeniu z budownictwem domów,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,273 Budownictwo ziemne,Spis Powszechny 1931/Ludność aktywna zawodowo/273 Budownictwo ziemne,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,274 Budownictwo domów,Spis Powszechny 1931/Ludność aktywna zawodowo/274 Budownictwo domów,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,275 Przeprowadzanie instalacji budowlanych,Spis Powszechny 1931/Ludność aktywna zawodowo/275 Przeprowadzanie instalacji budowlanych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,276 Szklarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/276 Szklarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,277 Malarstwo i tapeciarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/277 Malarstwo i tapeciarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,278 Zduństwo,Spis Powszechny 1931/Ludność aktywna zawodowo/278 Zduństwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,279 Miernictwo i prowadzenie robór melioracyjnych,Spis Powszechny 1931/Ludność aktywna zawodowo/279 Miernictwo i prowadzenie robór melioracyjnych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"28 Elektrownie, gazownie i wodociągi","Spis Powszechny 1931/Ludność aktywna zawodowo/28 Elektrownie, gazownie i wodociągi",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"281 Elektrownie, gazownie i wodociągi nie wydzielone","Spis Powszechny 1931/Ludność aktywna zawodowo/281 Elektrownie, gazownie i wodociągi nie wydzielone",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,282 Elektrownie,Spis Powszechny 1931/Ludność aktywna zawodowo/282 Elektrownie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,283 Gazownie,Spis Powszechny 1931/Ludność aktywna zawodowo/283 Gazownie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,284 Wodociągi i kanalizacja,Spis Powszechny 1931/Ludność aktywna zawodowo/284 Wodociągi i kanalizacja,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,29 Górnictwo i przemysł bez określenia gałęzi,Spis Powszechny 1931/Ludność aktywna zawodowo/29 Górnictwo i przemysł bez określenia gałęzi,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,292 Przemysł niewiadomy,Spis Powszechny 1931/Ludność aktywna zawodowo/292 Przemysł niewiadomy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,293 Górnictwo i hutnictwo - osoby bez podanej gałęzi zawodu,Spis Powszechny 1931/Ludność aktywna zawodowo/293 Górnictwo i hutnictwo - osoby bez podanej gałęzi zawodu,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,2x Robotnicy bliżej nie określeni - k,Spis Powszechny 1931/Ludność aktywna zawodowo/2x Robotnicy bliżej nie określeni - k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,2x Robotnicy bliżej nie określeni - m,Spis Powszechny 1931/Ludność aktywna zawodowo/2x Robotnicy bliżej nie określeni - m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,2x Robotnicy bliżej nie określeni - r,Spis Powszechny 1931/Ludność aktywna zawodowo/2x Robotnicy bliżej nie określeni - r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,3 Handel i ubezpieczenia k,Spis Powszechny 1931/Ludność aktywna zawodowo/3 Handel i ubezpieczenia k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,3 Handel i ubezpieczenia m,Spis Powszechny 1931/Ludność aktywna zawodowo/3 Handel i ubezpieczenia m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,3 Handel i ubezpieczenia r,Spis Powszechny 1931/Ludność aktywna zawodowo/3 Handel i ubezpieczenia r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,30 Handel nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/30 Handel nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,31 Handel towarowy,Spis Powszechny 1931/Ludność aktywna zawodowo/31 Handel towarowy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,311 Handel towarowy nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/311 Handel towarowy nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,312 Handel hurtowy,Spis Powszechny 1931/Ludność aktywna zawodowo/312 Handel hurtowy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,313 Handel wędrowny i domokrążny,Spis Powszechny 1931/Ludność aktywna zawodowo/313 Handel wędrowny i domokrążny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,314 Spółdzielnie handlowe,Spis Powszechny 1931/Ludność aktywna zawodowo/314 Spółdzielnie handlowe,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,32 Wynajem pomieszczeń i zakłady gastronomiczne,Spis Powszechny 1931/Ludność aktywna zawodowo/32 Wynajem pomieszczeń i zakłady gastronomiczne,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,321 Wynajem pomieszczeń nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo/321 Wynajem pomieszczeń nie wydzielony,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,322 Domy czynszowe (właściciele i dozór),Spis Powszechny 1931/Ludność aktywna zawodowo/322 Domy czynszowe (właściciele i dozór),Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,323 Hotele i pensjonaty,Spis Powszechny 1931/Ludność aktywna zawodowo/323 Hotele i pensjonaty,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,324 Prywatny wynajem pokojów i prywatne wydawanie posiłków,Spis Powszechny 1931/Ludność aktywna zawodowo/324 Prywatny wynajem pokojów i prywatne wydawanie posiłków,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,325 Zakłady gastronomiczne,Spis Powszechny 1931/Ludność aktywna zawodowo/325 Zakłady gastronomiczne,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,33 Obrót pieniężny,Spis Powszechny 1931/Ludność aktywna zawodowo/33 Obrót pieniężny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,34 Prywatne zakłady ubezpieczeń,Spis Powszechny 1931/Ludność aktywna zawodowo/34 Prywatne zakłady ubezpieczeń,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,35 Pośrednictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/35 Pośrednictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,4 Komunikacja i transport - k,Spis Powszechny 1931/Ludność aktywna zawodowo/4 Komunikacja i transport - k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,4 Komunikacja i transport - m,Spis Powszechny 1931/Ludność aktywna zawodowo/4 Komunikacja i transport - m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,4 Komunikacja i transport - r,Spis Powszechny 1931/Ludność aktywna zawodowo/4 Komunikacja i transport - r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"40 Poczta, telefon, telegraf, radiotelegraf","Spis Powszechny 1931/Ludność aktywna zawodowo/40 Poczta, telefon, telegraf, radiotelegraf",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"41 Żegluga morska, śródlądowa i powietrzna","Spis Powszechny 1931/Ludność aktywna zawodowo/41 Żegluga morska, śródlądowa i powietrzna",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,412 Żegluga morska,Spis Powszechny 1931/Ludność aktywna zawodowo/412 Żegluga morska,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,413 Żegluga śródlądowa,Spis Powszechny 1931/Ludność aktywna zawodowo/413 Żegluga śródlądowa,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,414 Lotwnictwo cywilne,Spis Powszechny 1931/Ludność aktywna zawodowo/414 Lotwnictwo cywilne,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,42 Koleje,Spis Powszechny 1931/Ludność aktywna zawodowo/42 Koleje,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,43 Tramwaje i autobusy na terenie miast,Spis Powszechny 1931/Ludność aktywna zawodowo/43 Tramwaje i autobusy na terenie miast,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,44 Inne rodzaje komunikacji i transportu,Spis Powszechny 1931/Ludność aktywna zawodowo/44 Inne rodzaje komunikacji i transportu,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,441 Nie wydzielone rodzaje komunikacji i transportu,Spis Powszechny 1931/Ludność aktywna zawodowo/441 Nie wydzielone rodzaje komunikacji i transportu,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,442 Taksówki,Spis Powszechny 1931/Ludność aktywna zawodowo/442 Taksówki,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,443 Dorożki konne,Spis Powszechny 1931/Ludność aktywna zawodowo/443 Dorożki konne,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,444 Komunikacja i transport samochodowy,Spis Powszechny 1931/Ludność aktywna zawodowo/444 Komunikacja i transport samochodowy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,445 Komunikacja i transport konny,Spis Powszechny 1931/Ludność aktywna zawodowo/445 Komunikacja i transport konny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,446 Posłańcy i tragarze,Spis Powszechny 1931/Ludność aktywna zawodowo/446 Posłańcy i tragarze,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,45 Dozór drogowy i wodny,Spis Powszechny 1931/Ludność aktywna zawodowo/45 Dozór drogowy i wodny,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"5 Służba publiczna, kościół, organizacje i instytucje społeczne","Spis Powszechny 1931/Ludność aktywna zawodowo/5 Służba publiczna, kościół, organizacje i instytucje społeczne",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,5-n Pozostałe działy razem - k,Spis Powszechny 1931/Ludność aktywna zawodowo/5-n Pozostałe działy razem - k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,5-n Pozostałe działy razem - m,Spis Powszechny 1931/Ludność aktywna zawodowo/5-n Pozostałe działy razem - m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,5-n Pozostałe działy razem - r,Spis Powszechny 1931/Ludność aktywna zawodowo/5-n Pozostałe działy razem - r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,50 Urzędy dyplomatyczne i konsulartne państw obcych,Spis Powszechny 1931/Ludność aktywna zawodowo/50 Urzędy dyplomatyczne i konsulartne państw obcych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"51 Administracja państwowa, samorządowa i innych związków publicznoprawnych","Spis Powszechny 1931/Ludność aktywna zawodowo/51 Administracja państwowa, samorządowa i innych związków publicznoprawnych",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,512 Administracja państwowa,Spis Powszechny 1931/Ludność aktywna zawodowo/512 Administracja państwowa,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,513 Administracja samorządu terytorialnego,Spis Powszechny 1931/Ludność aktywna zawodowo/513 Administracja samorządu terytorialnego,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,514 Administracja innych związków publicznoprawnych,Spis Powszechny 1931/Ludność aktywna zawodowo/514 Administracja innych związków publicznoprawnych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"52 Sądownictwo, adwokatura i notariat","Spis Powszechny 1931/Ludność aktywna zawodowo/52 Sądownictwo, adwokatura i notariat",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,522 Sądownictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/522 Sądownictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,523 Adwokatura i notariat,Spis Powszechny 1931/Ludność aktywna zawodowo/523 Adwokatura i notariat,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,524 Obrońcy sądowi oraz biura porad prawnych i próśb,Spis Powszechny 1931/Ludność aktywna zawodowo/524 Obrońcy sądowi oraz biura porad prawnych i próśb,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,53 Służba bezpieczeństwa publicznego i więziennictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/53 Służba bezpieczeństwa publicznego i więziennictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,531 Służba bezpieczeństwa publicznego nie wydzielona,Spis Powszechny 1931/Ludność aktywna zawodowo/531 Służba bezpieczeństwa publicznego nie wydzielona,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,532 Policja państwowa,Spis Powszechny 1931/Ludność aktywna zawodowo/532 Policja państwowa,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,533 Straż graniczna,Spis Powszechny 1931/Ludność aktywna zawodowo/533 Straż graniczna,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,535 Więziennictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/535 Więziennictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,536 Straż pożarna,Spis Powszechny 1931/Ludność aktywna zawodowo/536 Straż pożarna,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,54 Kościół i związki wyznaniowe,Spis Powszechny 1931/Ludność aktywna zawodowo/54 Kościół i związki wyznaniowe,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,542 Duchowieństwo,Spis Powszechny 1931/Ludność aktywna zawodowo/542 Duchowieństwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,543 Osoby świeckie w kościele i związkach wyznaniowych,Spis Powszechny 1931/Ludność aktywna zawodowo/543 Osoby świeckie w kościele i związkach wyznaniowych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,55 Administracja organizacji i instytucji społecznych,Spis Powszechny 1931/Ludność aktywna zawodowo/55 Administracja organizacji i instytucji społecznych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"7 Szkolnictwo, oświata i kultura","Spis Powszechny 1931/Ludność aktywna zawodowo/7 Szkolnictwo, oświata i kultura",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,70 Szkolnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/70 Szkolnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,701 Szkolnictwo o niewiadomym charakterze,Spis Powszechny 1931/Ludność aktywna zawodowo/701 Szkolnictwo o niewiadomym charakterze,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,702 Szkolnictwo powszechne,Spis Powszechny 1931/Ludność aktywna zawodowo/702 Szkolnictwo powszechne,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,703 Szkolnictwo średnie ogólnokształcące,Spis Powszechny 1931/Ludność aktywna zawodowo/703 Szkolnictwo średnie ogólnokształcące,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,704 Szkolnictwo wyższe,Spis Powszechny 1931/Ludność aktywna zawodowo/704 Szkolnictwo wyższe,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,705 Chedery,Spis Powszechny 1931/Ludność aktywna zawodowo/705 Chedery,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,706 Inne szkolnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo/706 Inne szkolnictwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,71 Wychowanie i oświata pozaszkolna,Spis Powszechny 1931/Ludność aktywna zawodowo/71 Wychowanie i oświata pozaszkolna,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,712 Nauczyciele prywatni,Spis Powszechny 1931/Ludność aktywna zawodowo/712 Nauczyciele prywatni,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,713 Wychowanie przedszkolne,Spis Powszechny 1931/Ludność aktywna zawodowo/713 Wychowanie przedszkolne,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,714 Oświata pozaszkolna,Spis Powszechny 1931/Ludność aktywna zawodowo/714 Oświata pozaszkolna,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,715 Wychowanie fizyczne i sport,Spis Powszechny 1931/Ludność aktywna zawodowo/715 Wychowanie fizyczne i sport,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"72 Nauka, literatura i sztuka","Spis Powszechny 1931/Ludność aktywna zawodowo/72 Nauka, literatura i sztuka",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,722 Instytucje naukowe,Spis Powszechny 1931/Ludność aktywna zawodowo/722 Instytucje naukowe,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,723 Literatura i sztuka,Spis Powszechny 1931/Ludność aktywna zawodowo/723 Literatura i sztuka,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"73 Praca, wydawnictwa i czytelnie","Spis Powszechny 1931/Ludność aktywna zawodowo/73 Praca, wydawnictwa i czytelnie",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,731 Prasa poza codzienną i inne wydawnictwa,Spis Powszechny 1931/Ludność aktywna zawodowo/731 Prasa poza codzienną i inne wydawnictwa,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,732 Prasa codzienna,Spis Powszechny 1931/Ludność aktywna zawodowo/732 Prasa codzienna,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,733 Czytelnie,Spis Powszechny 1931/Ludność aktywna zawodowo/733 Czytelnie,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,74 Widowiska,Spis Powszechny 1931/Ludność aktywna zawodowo/74 Widowiska,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,741 Widowiska nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo/741 Widowiska nie wydzielone,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,742 Teatr i muzyka,Spis Powszechny 1931/Ludność aktywna zawodowo/742 Teatr i muzyka,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,743 Kinematografy,Spis Powszechny 1931/Ludność aktywna zawodowo/743 Kinematografy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,744 Cyrki i wędrowni artyści,Spis Powszechny 1931/Ludność aktywna zawodowo/744 Cyrki i wędrowni artyści,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"8 Lecznictwo i higiena, utrzymywanie czystości oraz zakłady opieki społecznej","Spis Powszechny 1931/Ludność aktywna zawodowo/8 Lecznictwo i higiena, utrzymywanie czystości oraz zakłady opieki społecznej",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,80 Lecznictwo i profilaktyka,Spis Powszechny 1931/Ludność aktywna zawodowo/80 Lecznictwo i profilaktyka,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,801 Profilaktyka nie wydzielona,Spis Powszechny 1931/Ludność aktywna zawodowo/801 Profilaktyka nie wydzielona,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,802 Zakłady lecznicze i służba sanitarna wszelkich instytucji,Spis Powszechny 1931/Ludność aktywna zawodowo/802 Zakłady lecznicze i służba sanitarna wszelkich instytucji,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,803 Apteki i pracownie analiz lekarskich,Spis Powszechny 1931/Ludność aktywna zawodowo/803 Apteki i pracownie analiz lekarskich,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,804 Lekarze wolnopraktykujący,Spis Powszechny 1931/Ludność aktywna zawodowo/804 Lekarze wolnopraktykujący,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"805 Felczerzy, pielęgniarki i masażyści wolnopraktykujący","Spis Powszechny 1931/Ludność aktywna zawodowo/805 Felczerzy, pielęgniarki i masażyści wolnopraktykujący",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,806 Położne wolnopraktykujące,Spis Powszechny 1931/Ludność aktywna zawodowo/806 Położne wolnopraktykujące,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,807 Weterynaria,Spis Powszechny 1931/Ludność aktywna zawodowo/807 Weterynaria,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,81 Higiena osobista i lokali. Utrzymywanie w porządku placów i ulic. Grzebanie zmarłych,Spis Powszechny 1931/Ludność aktywna zawodowo/81 Higiena osobista i lokali. Utrzymywanie w porządku placów i ulic. Grzebanie zmarłych,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,811 Higiena osobista i lokali nie wydzielona,Spis Powszechny 1931/Ludność aktywna zawodowo/811 Higiena osobista i lokali nie wydzielona,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,812 Zakłady kąpielowe,Spis Powszechny 1931/Ludność aktywna zawodowo/812 Zakłady kąpielowe,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,813 Fryzjerstwo i kosmetyka,Spis Powszechny 1931/Ludność aktywna zawodowo/813 Fryzjerstwo i kosmetyka,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"814 Pralnie, prasowalnie i magle","Spis Powszechny 1931/Ludność aktywna zawodowo/814 Pralnie, prasowalnie i magle",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,815 Utrzymywanie w porządku placów i ulic,Spis Powszechny 1931/Ludność aktywna zawodowo/815 Utrzymywanie w porządku placów i ulic,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,816 Cmentarze i zakłady pogrzebowe,Spis Powszechny 1931/Ludność aktywna zawodowo/816 Cmentarze i zakłady pogrzebowe,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,82 Zakłady opieki społecznej,Spis Powszechny 1931/Ludność aktywna zawodowo/82 Zakłady opieki społecznej,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,9 Służba domowa,Spis Powszechny 1931/Ludność aktywna zawodowo/9 Służba domowa,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,"n Dział N. Osoby o zawodzie nie określonym, osoby wykolejone oraz osoby o zawodzie niewiadomym","Spis Powszechny 1931/Ludność aktywna zawodowo/n Dział N. Osoby o zawodzie nie określonym, osoby wykolejone oraz osoby o zawodzie niewiadomym",Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,Ogółem k,Spis Powszechny 1931/Ludność aktywna zawodowo/Ogółem k,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,Ogółem m,Spis Powszechny 1931/Ludność aktywna zawodowo/Ogółem m,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,Ogółem r,Spis Powszechny 1931/Ludność aktywna zawodowo/Ogółem r,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,R08-00 Pozostałe gałęzie działu B,Spis Powszechny 1931/Ludność aktywna zawodowo/R08-00 Pozostałe gałęzie działu B,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,R1-2 Pozostałe gałęzie działu C,Spis Powszechny 1931/Ludność aktywna zawodowo/R1-2 Pozostałe gałęzie działu C,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,R11-13 Pozostałe rodzaje gałęzi 11-13,Spis Powszechny 1931/Ludność aktywna zawodowo/R11-13 Pozostałe rodzaje gałęzi 11-13,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,R3 Pozostałe gałęzie działu D,Spis Powszechny 1931/Ludność aktywna zawodowo/R3 Pozostałe gałęzie działu D,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,R4 Pozostałe gałęzie działu 4,Spis Powszechny 1931/Ludność aktywna zawodowo/R4 Pozostałe gałęzie działu 4,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,R5 Pozostałe gałęzie działu 5,Spis Powszechny 1931/Ludność aktywna zawodowo/R5 Pozostałe gałęzie działu 5,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,R7 Pozostałe gałęzie działu 7,Spis Powszechny 1931/Ludność aktywna zawodowo/R7 Pozostałe gałęzie działu 7,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,R8 pozostałe gałęzie działu I,Spis Powszechny 1931/Ludność aktywna zawodowo/R8 pozostałe gałęzie działu I,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,x Utrzymujący się bez pracy zarobkowej,Spis Powszechny 1931/Ludność aktywna zawodowo/x Utrzymujący się bez pracy zarobkowej,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,x1 Kapitaliści i rentierzy,Spis Powszechny 1931/Ludność aktywna zawodowo/x1 Kapitaliści i rentierzy,Spis Powszechny 1931/Ludność aktywna zawodowo,True
+3,% Ewangelickie,Spis Powszechny 1931/Wyznanie/% Ewangelickie,Spis Powszechny 1931/Wyznanie,True
+3,% Grekokatolickie,Spis Powszechny 1931/Wyznanie/% Grekokatolickie,Spis Powszechny 1931/Wyznanie,True
+3,% Inne chrześcijańskie,Spis Powszechny 1931/Wyznanie/% Inne chrześcijańskie,Spis Powszechny 1931/Wyznanie,True
+3,% Mojżeszowe,Spis Powszechny 1931/Wyznanie/% Mojżeszowe,Spis Powszechny 1931/Wyznanie,True
+3,% Pozostałe,Spis Powszechny 1931/Wyznanie/% Pozostałe,Spis Powszechny 1931/Wyznanie,True
+3,% Prawosławne,Spis Powszechny 1931/Wyznanie/% Prawosławne,Spis Powszechny 1931/Wyznanie,True
+3,% Rzymskokatolickie,Spis Powszechny 1931/Wyznanie/% Rzymskokatolickie,Spis Powszechny 1931/Wyznanie,True
+3,Ewangelickie,Spis Powszechny 1931/Wyznanie/Ewangelickie,Spis Powszechny 1931/Wyznanie,True
+3,Grekokatolickie,Spis Powszechny 1931/Wyznanie/Grekokatolickie,Spis Powszechny 1931/Wyznanie,True
+3,Inne wyznania chrześcijańskie,Spis Powszechny 1931/Wyznanie/Inne wyznania chrześcijańskie,Spis Powszechny 1931/Wyznanie,True
+3,Mojżeszowe,Spis Powszechny 1931/Wyznanie/Mojżeszowe,Spis Powszechny 1931/Wyznanie,True
+3,Pozostałe,Spis Powszechny 1931/Wyznanie/Pozostałe,Spis Powszechny 1931/Wyznanie,True
+3,Prawosławne,Spis Powszechny 1931/Wyznanie/Prawosławne,Spis Powszechny 1931/Wyznanie,True
+3,Rzymskokatolickie,Spis Powszechny 1931/Wyznanie/Rzymskokatolickie,Spis Powszechny 1931/Wyznanie,True
+3,Górnictwo i przemysł,Spis Powszechny 1931/Zawód Główny/Górnictwo i przemysł,Spis Powszechny 1931/Zawód Główny,True
+3,Handel i ubezpieczenia,Spis Powszechny 1931/Zawód Główny/Handel i ubezpieczenia,Spis Powszechny 1931/Zawód Główny,True
+3,Komunikacja i transport,Spis Powszechny 1931/Zawód Główny/Komunikacja i transport,Spis Powszechny 1931/Zawód Główny,True
+3,Lecznictwo i higiena,Spis Powszechny 1931/Zawód Główny/Lecznictwo i higiena,Spis Powszechny 1931/Zawód Główny,True
+3,Ogrodnictwo,Spis Powszechny 1931/Zawód Główny/Ogrodnictwo,Spis Powszechny 1931/Zawód Główny,True
+3,Poza rolnictwem,Spis Powszechny 1931/Zawód Główny/Poza rolnictwem,Spis Powszechny 1931/Zawód Główny,True
+3,Pozostałe,Spis Powszechny 1931/Zawód Główny/Pozostałe,Spis Powszechny 1931/Zawód Główny,True
+3,Razem,Spis Powszechny 1931/Zawód Główny/Razem,Spis Powszechny 1931/Zawód Główny,True
+3,Rolnictwo,Spis Powszechny 1931/Zawód Główny/Rolnictwo,Spis Powszechny 1931/Zawód Główny,True
+3,"Szkolnictwo, oświata i kultura","Spis Powszechny 1931/Zawód Główny/Szkolnictwo, oświata i kultura",Spis Powszechny 1931/Zawód Główny,True
+3,Służba domowa,Spis Powszechny 1931/Zawód Główny/Służba domowa,Spis Powszechny 1931/Zawód Główny,True
+3,Służba publiczna,Spis Powszechny 1931/Zawód Główny/Służba publiczna,Spis Powszechny 1931/Zawód Główny,True
+3,Buraki Cukrowe,Uprawy rolne/Plony (q na ha)/Buraki Cukrowe,Uprawy rolne/Plony (q na ha),True
+3,Buraki Cukrowe,Uprawy rolne/Powierzchnia/Buraki Cukrowe,Uprawy rolne/Powierzchnia,True
+3,Chmiel,Uprawy rolne/Powierzchnia/Chmiel,Uprawy rolne/Powierzchnia,True
+3,Cykoria,Uprawy rolne/Powierzchnia/Cykoria,Uprawy rolne/Powierzchnia,True
+3,"Fasola, bób, soczewica","Uprawy rolne/Powierzchnia/Fasola, bób, soczewica",Uprawy rolne/Powierzchnia,True
+3,"Fasola, Bób, Soczewica","Uprawy rolne/Powierzchnia/Fasola, Bób, Soczewica",Uprawy rolne/Powierzchnia,True
+3,Groch,Uprawy rolne/Powierzchnia/Groch,Uprawy rolne/Powierzchnia,True
+3,Gryka,Uprawy rolne/Powierzchnia/Gryka,Uprawy rolne/Powierzchnia,True
+3,Jęczmień,Uprawy rolne/Powierzchnia/Jęczmień,Uprawy rolne/Powierzchnia,True
+3,Koniczyna,Uprawy rolne/Powierzchnia/Koniczyna,Uprawy rolne/Powierzchnia,True
+3,Konopie,Uprawy rolne/Powierzchnia/Konopie,Uprawy rolne/Powierzchnia,True
+3,Kukurydza,Uprawy rolne/Powierzchnia/Kukurydza,Uprawy rolne/Powierzchnia,True
+3,Len,Uprawy rolne/Powierzchnia/Len,Uprawy rolne/Powierzchnia,True
+3,Mieszanki na ziarno,Uprawy rolne/Powierzchnia/Mieszanki na ziarno,Uprawy rolne/Powierzchnia,False
+3,Mieszanki zbóż na ziarno (inne),Uprawy rolne/Powierzchnia/Mieszanki zbóż na ziarno (inne),Uprawy rolne/Powierzchnia,True
+3,Mieszanki zbóż na ziarno (jęczmień i owies),Uprawy rolne/Powierzchnia/Mieszanki zbóż na ziarno (jęczmień i owies),Uprawy rolne/Powierzchnia,True
+3,Owies,Uprawy rolne/Powierzchnia/Owies,Uprawy rolne/Powierzchnia,True
+3,"Peluszka, wyka, bobik","Uprawy rolne/Powierzchnia/Peluszka, wyka, bobik",Uprawy rolne/Powierzchnia,True
+3,Pozostałe pastawne oraz mieszanki,Uprawy rolne/Powierzchnia/Pozostałe pastawne oraz mieszanki,Uprawy rolne/Powierzchnia,True
+3,Proso,Uprawy rolne/Powierzchnia/Proso,Uprawy rolne/Powierzchnia,True
+3,Pszenica,Uprawy rolne/Powierzchnia/Pszenica,Uprawy rolne/Powierzchnia,True
+3,Rzepak i rzepik,Uprawy rolne/Powierzchnia/Rzepak i rzepik,Uprawy rolne/Powierzchnia,True
+3,Rzepak i rzepik ozimy i jary,Uprawy rolne/Powierzchnia/Rzepak i rzepik ozimy i jary,Uprawy rolne/Powierzchnia,True
+3,Seradela,Uprawy rolne/Powierzchnia/Seradela,Uprawy rolne/Powierzchnia,True
+3,Tytoń,Uprawy rolne/Powierzchnia/Tytoń,Uprawy rolne/Powierzchnia,True
+3,Ziemniaki,Uprawy rolne/Powierzchnia/Ziemniaki,Uprawy rolne/Powierzchnia,True
+3,Łubin,Uprawy rolne/Powierzchnia/Łubin,Uprawy rolne/Powierzchnia,True
+3,Żyto,Uprawy rolne/Powierzchnia/Żyto,Uprawy rolne/Powierzchnia,True
+3,Buraki cukrowe,Uprawy rolne/Przeciętny zbiór z ha/Buraki cukrowe,Uprawy rolne/Przeciętny zbiór z ha,True
+3,Buraki Cukrowe,Uprawy rolne/Zbiory/Buraki Cukrowe,Uprawy rolne/Zbiory,True
+3,Buraki cukrowe,Uprawy rolne/Zbiory/Buraki cukrowe,Uprawy rolne/Zbiory,True
+3,Chmiel,Uprawy rolne/Zbiory/Chmiel,Uprawy rolne/Zbiory,True
+3,"Fasola, bób, soczewica","Uprawy rolne/Zbiory/Fasola, bób, soczewica",Uprawy rolne/Zbiory,True
+3,Groch,Uprawy rolne/Zbiory/Groch,Uprawy rolne/Zbiory,True
+3,Gryka,Uprawy rolne/Zbiory/Gryka,Uprawy rolne/Zbiory,True
+3,Jęczmień,Uprawy rolne/Zbiory/Jęczmień,Uprawy rolne/Zbiory,True
+3,Konopie,Uprawy rolne/Zbiory/Konopie,Uprawy rolne/Zbiory,False
+3,Kukurydza,Uprawy rolne/Zbiory/Kukurydza,Uprawy rolne/Zbiory,True
+3,Len,Uprawy rolne/Zbiory/Len,Uprawy rolne/Zbiory,False
+3,Mieszanki na ziarno,Uprawy rolne/Zbiory/Mieszanki na ziarno,Uprawy rolne/Zbiory,False
+3,Owies,Uprawy rolne/Zbiory/Owies,Uprawy rolne/Zbiory,True
+3,Proso,Uprawy rolne/Zbiory/Proso,Uprawy rolne/Zbiory,True
+3,Pszenica,Uprawy rolne/Zbiory/Pszenica,Uprawy rolne/Zbiory,True
+3,Rzepak i rzepik,Uprawy rolne/Zbiory/Rzepak i rzepik,Uprawy rolne/Zbiory,True
+3,Tytoń,Uprawy rolne/Zbiory/Tytoń,Uprawy rolne/Zbiory,True
+3,Ziemniaki,Uprawy rolne/Zbiory/Ziemniaki,Uprawy rolne/Zbiory,True
+3,Żyto,Uprawy rolne/Zbiory/Żyto,Uprawy rolne/Zbiory,True
+3,Budowlany,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Budownictwo,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budownictwo,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Chemiczny,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,COdzieżowy i zabawkarski,Zatrudnienie/Udział w całkowitym zatrudnieniu/COdzieżowy i zabawkarski,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Drzewny,Zatrudnienie/Udział w całkowitym zatrudnieniu/Drzewny,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Elektrotechniczny,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrotechniczny,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Elektrownie i wodociągi,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrownie i wodociągi,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Górnictwo,Zatrudnienie/Udział w całkowitym zatrudnieniu/Górnictwo,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Metalowy,Zatrudnienie/Udział w całkowitym zatrudnieniu/Metalowy,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Mineralny,Zatrudnienie/Udział w całkowitym zatrudnieniu/Mineralny,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Odzieżowy i zabawkarski,Zatrudnienie/Udział w całkowitym zatrudnieniu/Odzieżowy i zabawkarski,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Papierniczy,Zatrudnienie/Udział w całkowitym zatrudnieniu/Papierniczy,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Poligraficzny,Zatrudnienie/Udział w całkowitym zatrudnieniu/Poligraficzny,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Razem,Zatrudnienie/Udział w całkowitym zatrudnieniu/Razem,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Skórzany,Zatrudnienie/Udział w całkowitym zatrudnieniu/Skórzany,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Spożywczy,Zatrudnienie/Udział w całkowitym zatrudnieniu/Spożywczy,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,Włókienniczy,Zatrudnienie/Udział w całkowitym zatrudnieniu/Włókienniczy,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
+3,1. Skup zawodowy wszelkiego rodzaju (ogółem),Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem),Zezwolenia dla przedsiębiorstw/Handel,False
+3,10. Konfekcja i galanterja,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja,Zezwolenia dla przedsiębiorstw/Handel,False
+3,"11. Ubrania, części ubrań, futra i wyroby futrzane","Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane",Zezwolenia dla przedsiębiorstw/Handel,False
+3,12. Obuwie,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie,Zezwolenia dla przedsiębiorstw/Handel,False
+3,13. Obuwie łącznie ze skórami i przyborami szewskiemi,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi,Zezwolenia dla przedsiębiorstw/Handel,False
+3,14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),Zezwolenia dla przedsiębiorstw/Handel,False
+3,"15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)","Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)",Zezwolenia dla przedsiębiorstw/Handel,False
+3,16. Artykuły budowlane i opałowe,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe,Zezwolenia dla przedsiębiorstw/Handel,False
+3,17. Meble i wszelkie wyroby z drzewa,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa,Zezwolenia dla przedsiębiorstw/Handel,False
+3,"18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)","Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra","Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra",Zezwolenia dla przedsiębiorstw/Handel,False
+3,2. Artykuły spożywcze i kolonjalne (wyłącznie),Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie),Zezwolenia dla przedsiębiorstw/Handel,False
+3,"20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)","Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne","Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"22. Wyroby zegarmistrzowskie, jubilerskie i platerowane","Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe","Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe",Zezwolenia dla przedsiębiorstw/Handel,False
+3,24. Apteki,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki,Zezwolenia dla przedsiębiorstw/Handel,False
+3,"25. Składy apteczne, sklepy perfumeryjne i kosmetyczne","Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.","Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)","Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"28. Maszyny, narzędzia i artykuły rolnicze","Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze",Zezwolenia dla przedsiębiorstw/Handel,False
+3,29. Syndykaty i spółdzielnie rolniczo-handlowe,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe,Zezwolenia dla przedsiębiorstw/Handel,False
+3,3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),Zezwolenia dla przedsiębiorstw/Handel,False
+3,"30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego","Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne","Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)","Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe","Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe",Zezwolenia dla przedsiębiorstw/Handel,False
+3,"34. Teatry, kina i inne widowiska","Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska",Zezwolenia dla przedsiębiorstw/Handel,False
+3,35. Towarzystwa ubezpieczeniowe,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe,Zezwolenia dla przedsiębiorstw/Handel,False
+3,"36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.","Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.",Zezwolenia dla przedsiębiorstw/Handel,False
+3,37. Pozostałe przedsiębiorstwa wyżej niewymienione,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione,Zezwolenia dla przedsiębiorstw/Handel,False
+3,38. Karty niewypełnione co do branży,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży,Zezwolenia dla przedsiębiorstw/Handel,False
+3,"4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)","Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)",Zezwolenia dla przedsiębiorstw/Handel,False
+3,5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,Zezwolenia dla przedsiębiorstw/Handel,False
+3,"6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)","Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)",Zezwolenia dla przedsiębiorstw/Handel,False
+3,7. Wyroby monopolu tytoniowego,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego,Zezwolenia dla przedsiębiorstw/Handel,False
+3,8. Manufaktura,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura,Zezwolenia dla przedsiębiorstw/Handel,False
+3,"9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem","Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem",Zezwolenia dla przedsiębiorstw/Handel,False
+3,A 3011-3059. Skup towarowy ogółem,Zezwolenia dla przedsiębiorstw/Handel/A 3011-3059. Skup towarowy ogółem,Zezwolenia dla przedsiębiorstw/Handel,True
+3,A 3011. Skup towarowy (skup zboża),Zezwolenia dla przedsiębiorstw/Handel/A 3011. Skup towarowy (skup zboża),Zezwolenia dla przedsiębiorstw/Handel,True
+3,A 3012. Skup towarowy (skup owoców),Zezwolenia dla przedsiębiorstw/Handel/A 3012. Skup towarowy (skup owoców),Zezwolenia dla przedsiębiorstw/Handel,True
+3,A 3016. Skup towarowy (skup materiałów drzewnych),Zezwolenia dla przedsiębiorstw/Handel/A 3016. Skup towarowy (skup materiałów drzewnych),Zezwolenia dla przedsiębiorstw/Handel,True
+3,A 3021-3029. Skup towarowy (skup zwierząt żywych),Zezwolenia dla przedsiębiorstw/Handel/A 3021-3029. Skup towarowy (skup zwierząt żywych),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"A 3031-3032, 3034-3039. Skup towarowy (skup innych prod. hodowlanych)","Zezwolenia dla przedsiębiorstw/Handel/A 3031-3032, 3034-3039. Skup towarowy (skup innych prod. hodowlanych)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,A 3033. Skup towarowy (skup skór surowych),Zezwolenia dla przedsiębiorstw/Handel/A 3033. Skup towarowy (skup skór surowych),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"A 3051, 3053-3059. Skup towarowy (skup starzyzny wszelkiej)","Zezwolenia dla przedsiębiorstw/Handel/A 3051, 3053-3059. Skup towarowy (skup starzyzny wszelkiej)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,A 3052. Skup towarowy (skup szmat),Zezwolenia dla przedsiębiorstw/Handel/A 3052. Skup towarowy (skup szmat),Zezwolenia dla przedsiębiorstw/Handel,True
+3,A i B (tylko I i II kat.). Handel towarowy (I i II kategorii),Zezwolenia dla przedsiębiorstw/Handel/A i B (tylko I i II kat.). Handel towarowy (I i II kategorii),Zezwolenia dla przedsiębiorstw/Handel,True
+3,A i B. Handel towarowy ogółem,Zezwolenia dla przedsiębiorstw/Handel/A i B. Handel towarowy ogółem,Zezwolenia dla przedsiębiorstw/Handel,True
+3,A-K I-II cat. Commercial establishments (categories I and II),Zezwolenia dla przedsiębiorstw/Handel/A-K I-II cat. Commercial establishments (categories I and II),Zezwolenia dla przedsiębiorstw/Handel,True
+3,A-K. Zakłady handlowe ogółem,Zezwolenia dla przedsiębiorstw/Handel/A-K. Zakłady handlowe ogółem,Zezwolenia dla przedsiębiorstw/Handel,True
+3,a. Skup zawodowy (produkty rolne),Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne),Zezwolenia dla przedsiębiorstw/Handel,False
+3,B (I-X). Sprzedaż towarów ogółem,Zezwolenia dla przedsiębiorstw/Handel/B (I-X). Sprzedaż towarów ogółem,Zezwolenia dla przedsiębiorstw/Handel,True
+3,B I. 3061-3062. Sprzedaż towarów (syndykaty i spółdz. rolnicze),Zezwolenia dla przedsiębiorstw/Handel/B I. 3061-3062. Sprzedaż towarów (syndykaty i spółdz. rolnicze),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B I. 3061-3089. Sprzedaż towarów (surowce rolne, art. dla rolnictwa)","Zezwolenia dla przedsiębiorstw/Handel/B I. 3061-3089. Sprzedaż towarów (surowce rolne, art. dla rolnictwa)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B I. 3071-3072. Sprzedaż towarów (zboże),Zezwolenia dla przedsiębiorstw/Handel/B I. 3071-3072. Sprzedaż towarów (zboże),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B I. 3081-3085. Sprzedaż towarów (zwierzęta żywe),Zezwolenia dla przedsiębiorstw/Handel/B I. 3081-3085. Sprzedaż towarów (zwierzęta żywe),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B II. 3101-3179. Sprzedaż towarów (artykuły żywnościowe),Zezwolenia dla przedsiębiorstw/Handel/B II. 3101-3179. Sprzedaż towarów (artykuły żywnościowe),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B II. 3101. Sprzedaż towarów (mąka, kasza, ryż)","Zezwolenia dla przedsiębiorstw/Handel/B II. 3101. Sprzedaż towarów (mąka, kasza, ryż)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B II. 3103. Sprzedaż towarów (pieczywo),Zezwolenia dla przedsiębiorstw/Handel/B II. 3103. Sprzedaż towarów (pieczywo),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B II. 3119. Sprzedaż towarów (nabiał),Zezwolenia dla przedsiębiorstw/Handel/B II. 3119. Sprzedaż towarów (nabiał),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B II. 3121-3123. Sprzedaż towarów (mięso),Zezwolenia dla przedsiębiorstw/Handel/B II. 3121-3123. Sprzedaż towarów (mięso),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B II. 3124-3126. Sprzedaż towarów (ryby, śledzie)","Zezwolenia dla przedsiębiorstw/Handel/B II. 3124-3126. Sprzedaż towarów (ryby, śledzie)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B II. 3131-3133. Sprzedaż towarów (owoce, warzywa)","Zezwolenia dla przedsiębiorstw/Handel/B II. 3131-3133. Sprzedaż towarów (owoce, warzywa)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B II. 3134. Sprzedaż towarów (słodycze),Zezwolenia dla przedsiębiorstw/Handel/B II. 3134. Sprzedaż towarów (słodycze),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B II. 3141-3146, 3171-3173. Sprzedaż towarów (różne artykuły żywnościowe)","Zezwolenia dla przedsiębiorstw/Handel/B II. 3141-3146, 3171-3173. Sprzedaż towarów (różne artykuły żywnościowe)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B II. 3151. Sprzedaż towarów (piwo),Zezwolenia dla przedsiębiorstw/Handel/B II. 3151. Sprzedaż towarów (piwo),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B II. 3159. Sprzedaż towarów (napoje alkoholowe),Zezwolenia dla przedsiębiorstw/Handel/B II. 3159. Sprzedaż towarów (napoje alkoholowe),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B II. 3161. Sprzedaż towarów (wyroby tytoniowe),Zezwolenia dla przedsiębiorstw/Handel/B II. 3161. Sprzedaż towarów (wyroby tytoniowe),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B III. 3201-3257. Sprzedaż towarów (artykuły odzieżowe),Zezwolenia dla przedsiębiorstw/Handel/B III. 3201-3257. Sprzedaż towarów (artykuły odzieżowe),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B III. 3211-3213. Sprzedaż towarów (tkaniny),Zezwolenia dla przedsiębiorstw/Handel/B III. 3211-3213. Sprzedaż towarów (tkaniny),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B III. 3221-3227, 3257. Sprzedaż towarów (odzież, futra)","Zezwolenia dla przedsiębiorstw/Handel/B III. 3221-3227, 3257. Sprzedaż towarów (odzież, futra)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B III. 3231-3239. Sprzedaż towarów (bielizna, galanteria)","Zezwolenia dla przedsiębiorstw/Handel/B III. 3231-3239. Sprzedaż towarów (bielizna, galanteria)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B III. 3241-3249. Sprzedaż towarów (kapelusze, czapki)","Zezwolenia dla przedsiębiorstw/Handel/B III. 3241-3249. Sprzedaż towarów (kapelusze, czapki)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B III. 3251-3254, 3256. Sprzedaż towarów (skóry, wyroby ze skóry)","Zezwolenia dla przedsiębiorstw/Handel/B III. 3251-3254, 3256. Sprzedaż towarów (skóry, wyroby ze skóry)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B III. 3255. Sprzedaż towarów (obuwie),Zezwolenia dla przedsiębiorstw/Handel/B III. 3255. Sprzedaż towarów (obuwie),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B IV. 3261, 3267. Sprzedaż towarów (meble)","Zezwolenia dla przedsiębiorstw/Handel/B IV. 3261, 3267. Sprzedaż towarów (meble)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B IV. 3261, 3281. Sprzedaż towarów (Meble, sprzęty, naczynia)","Zezwolenia dla przedsiębiorstw/Handel/B IV. 3261, 3281. Sprzedaż towarów (Meble, sprzęty, naczynia)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B IV. 3271. Sprzedaż towarów (sprzęty domowe),Zezwolenia dla przedsiębiorstw/Handel/B IV. 3271. Sprzedaż towarów (sprzęty domowe),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B IV. 3272-3273. Sprzedaż towarów (szkło, ceramika)","Zezwolenia dla przedsiębiorstw/Handel/B IV. 3272-3273. Sprzedaż towarów (szkło, ceramika)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B IX. 3461-3462, 3469. Sprzedaż towarów (materiały budowlane)","Zezwolenia dla przedsiębiorstw/Handel/B IX. 3461-3462, 3469. Sprzedaż towarów (materiały budowlane)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B IX. 3461-3485. Sprzedaż towarów (materiały budowlane, opałowe)","Zezwolenia dla przedsiębiorstw/Handel/B IX. 3461-3485. Sprzedaż towarów (materiały budowlane, opałowe)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B IX. 3481, 3483-3485. Sprzedaż towarów (węgiel, więgiel i inne artykuły)","Zezwolenia dla przedsiębiorstw/Handel/B IX. 3481, 3483-3485. Sprzedaż towarów (węgiel, więgiel i inne artykuły)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B V. 3301-3319. Sprzedaż towarów (artykuły chemiczne),Zezwolenia dla przedsiębiorstw/Handel/B V. 3301-3319. Sprzedaż towarów (artykuły chemiczne),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B V. 3301. Sprzedaż towarów (apteki),Zezwolenia dla przedsiębiorstw/Handel/B V. 3301. Sprzedaż towarów (apteki),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B V. 3302. Sprzedaż towarów (składy apteczne),Zezwolenia dla przedsiębiorstw/Handel/B V. 3302. Sprzedaż towarów (składy apteczne),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B V. 3311-3315. Sprzedaż towarów (mydlarnie),Zezwolenia dla przedsiębiorstw/Handel/B V. 3311-3315. Sprzedaż towarów (mydlarnie),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B V. 3312, 3318. Sprzedaż towarów (przetwory naftowe)","Zezwolenia dla przedsiębiorstw/Handel/B V. 3312, 3318. Sprzedaż towarów (przetwory naftowe)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B VI. 3321-3329. Sprzedaż towarów (papier, wyroby z papieru)","Zezwolenia dla przedsiębiorstw/Handel/B VI. 3321-3329. Sprzedaż towarów (papier, wyroby z papieru)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B VII. 3331-3332. Sprzedaż towarów (księgarnie),Zezwolenia dla przedsiębiorstw/Handel/B VII. 3331-3332. Sprzedaż towarów (księgarnie),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B VII. 3331-3335. Sprzedaż towarów (książki, czasopisma, dzieła sztuki)","Zezwolenia dla przedsiębiorstw/Handel/B VII. 3331-3335. Sprzedaż towarów (książki, czasopisma, dzieła sztuki)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B VII. 3333. Sprzedaż towarów (czasopisma),Zezwolenia dla przedsiębiorstw/Handel/B VII. 3333. Sprzedaż towarów (czasopisma),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B VIII. 3401-3441. Sprzedaż towarów (żelazo, metale, wyroby)","Zezwolenia dla przedsiębiorstw/Handel/B VIII. 3401-3441. Sprzedaż towarów (żelazo, metale, wyroby)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B VIII. 3411-3414. Sprzedaż towarów (środki komunikacji),Zezwolenia dla przedsiębiorstw/Handel/B VIII. 3411-3414. Sprzedaż towarów (środki komunikacji),Zezwolenia dla przedsiębiorstw/Handel,True
+3,B VIII. 3415-3419. Sprzedaż towarów (maszyny),Zezwolenia dla przedsiębiorstw/Handel/B VIII. 3415-3419. Sprzedaż towarów (maszyny),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B VIII. 3421-3429, 3433-3439. Sprzedaż towarów (przybory, instrumenty)","Zezwolenia dla przedsiębiorstw/Handel/B VIII. 3421-3429, 3433-3439. Sprzedaż towarów (przybory, instrumenty)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B VIII. 3431-3432. Sprzedaż towarów (wyroby zegarmistrz., jubilerskie)","Zezwolenia dla przedsiębiorstw/Handel/B VIII. 3431-3432. Sprzedaż towarów (wyroby zegarmistrz., jubilerskie)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,B VIII. 3441. Sprzedaż towarów (wyroby elektrotechniczne),Zezwolenia dla przedsiębiorstw/Handel/B VIII. 3441. Sprzedaż towarów (wyroby elektrotechniczne),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Sprzedaż towarów (artykuły różne i bliżej nie określone)","Zezwolenia dla przedsiębiorstw/Handel/B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Sprzedaż towarów (artykuły różne i bliżej nie określone)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,b. Skup zawodowy (zwierzęta gospodarcze),Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze),Zezwolenia dla przedsiębiorstw/Handel,False
+3,bread exchange),Zezwolenia dla przedsiębiorstw/Handel/bread exchange),Zezwolenia dla przedsiębiorstw/Handel,False
+3,"C 3501-3509. Zakłady gastronomiczne, wynajem pomieszczeń (zakłady gastronomiczne)","Zezwolenia dla przedsiębiorstw/Handel/C 3501-3509. Zakłady gastronomiczne, wynajem pomieszczeń (zakłady gastronomiczne)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"C 3501-3539. Zakłady gastronomiczne, wynajem pomieszczeń","Zezwolenia dla przedsiębiorstw/Handel/C 3501-3539. Zakłady gastronomiczne, wynajem pomieszczeń",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"C 3511. Zakłady gastronomiczne, wynajem pomieszczeń (pensjonaty, schroniska)","Zezwolenia dla przedsiębiorstw/Handel/C 3511. Zakłady gastronomiczne, wynajem pomieszczeń (pensjonaty, schroniska)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"C 3521-3529. Zakłady gastronomiczne, wynajem pomieszczeń (wynajem pomieszczeń mieszkalnych)","Zezwolenia dla przedsiębiorstw/Handel/C 3521-3529. Zakłady gastronomiczne, wynajem pomieszczeń (wynajem pomieszczeń mieszkalnych)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),Zezwolenia dla przedsiębiorstw/Handel,False
+3,"D 3601-3611. Handel pieniężny, ubezpieczenia","Zezwolenia dla przedsiębiorstw/Handel/D 3601-3611. Handel pieniężny, ubezpieczenia",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"E 3612, 3651-3655. Biura wszelkie (pośrednictwo, bez biur podróży)","Zezwolenia dla przedsiębiorstw/Handel/E 3612, 3651-3655. Biura wszelkie (pośrednictwo, bez biur podróży)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,F 3701 (3702). Wypożyczalnie (maszyny rolnicze),Zezwolenia dla przedsiębiorstw/Handel/F 3701 (3702). Wypożyczalnie (maszyny rolnicze),Zezwolenia dla przedsiębiorstw/Handel,True
+3,F 3701-3729. Wypożyczalnie,Zezwolenia dla przedsiębiorstw/Handel/F 3701-3729. Wypożyczalnie,Zezwolenia dla przedsiębiorstw/Handel,True
+3,F 3704. Wypożyczalnie (magle),Zezwolenia dla przedsiębiorstw/Handel/F 3704. Wypożyczalnie (magle),Zezwolenia dla przedsiębiorstw/Handel,True
+3,F 3722. Wypożyczalnie (książki),Zezwolenia dla przedsiębiorstw/Handel/F 3722. Wypożyczalnie (książki),Zezwolenia dla przedsiębiorstw/Handel,True
+3,"G 3811-3844 (bez 3833). Transport, komunikacja, ekspedycja","Zezwolenia dla przedsiębiorstw/Handel/G 3811-3844 (bez 3833). Transport, komunikacja, ekspedycja",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"G 3841-3843, 3832. Transport, komunikacja, ekspedycja (komunikacja zbiorowa)","Zezwolenia dla przedsiębiorstw/Handel/G 3841-3843, 3832. Transport, komunikacja, ekspedycja (komunikacja zbiorowa)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,H 3861. Przedsiębiorstwa rozrywkowe (kinematografy),Zezwolenia dla przedsiębiorstw/Handel/H 3861. Przedsiębiorstwa rozrywkowe (kinematografy),Zezwolenia dla przedsiębiorstw/Handel,True
+3,H 3961-3879. Przedsiębiorstwa rozrywkowe,Zezwolenia dla przedsiębiorstw/Handel/H 3961-3879. Przedsiębiorstwa rozrywkowe,Zezwolenia dla przedsiębiorstw/Handel,True
+3,"I 3881-3887. Lecznictwo, higiena","Zezwolenia dla przedsiębiorstw/Handel/I 3881-3887. Lecznictwo, higiena",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"I 3881. Lecznictwo, higiena (lecznice)","Zezwolenia dla przedsiębiorstw/Handel/I 3881. Lecznictwo, higiena (lecznice)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,"I 3883-3885. Lecznictwo, higiena (łaźnie, kąpieliska, uzdrowiska)","Zezwolenia dla przedsiębiorstw/Handel/I 3883-3885. Lecznictwo, higiena (łaźnie, kąpieliska, uzdrowiska)",Zezwolenia dla przedsiębiorstw/Handel,True
+3,K 3891-3999. Inne i bliżej nieokreślone,Zezwolenia dla przedsiębiorstw/Handel/K 3891-3999. Inne i bliżej nieokreślone,Zezwolenia dla przedsiębiorstw/Handel,True
+3,Wszystkie typy przedsiębiorstw,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,Zezwolenia dla przedsiębiorstw/Handel,False
+3,Z 3661-3669. Zajęcia przemysłowe,Zezwolenia dla przedsiębiorstw/Handel/Z 3661-3669. Zajęcia przemysłowe,Zezwolenia dla przedsiębiorstw/Handel,True
+3,ZP. Zajęcia przemysłowe,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,Zezwolenia dla przedsiębiorstw/Handel,False
+3,"Ż 3833. Promy, barki, siatki wodne","Zezwolenia dla przedsiębiorstw/Handel/Ż 3833. Promy, barki, siatki wodne",Zezwolenia dla przedsiębiorstw/Handel,True
+3,1. Number of workers in plants I-VII,Zezwolenia dla przedsiębiorstw/Przemysł/1. Number of workers in plants I-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,10. Mineral: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/10. Mineral: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,11. Mineral: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/11. Mineral: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,12. Mineral: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/12. Mineral: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,13. Mineral: brickyards (within others),Zezwolenia dla przedsiębiorstw/Przemysł/13. Mineral: brickyards (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,14. Mineral: concrete plants (within others),Zezwolenia dla przedsiębiorstw/Przemysł/14. Mineral: concrete plants (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,15. Metal and electrotechnical: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/15. Metal and electrotechnical: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,16. Metal and electrotechnical: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/16. Metal and electrotechnical: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,17. Metal and electrotechnical: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/17. Metal and electrotechnical: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,18. Metal and electrotechnical: metal production (within others),Zezwolenia dla przedsiębiorstw/Przemysł/18. Metal and electrotechnical: metal production (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,19. Metal and electrotechnical: blacksmithing (within others),Zezwolenia dla przedsiębiorstw/Przemysł/19. Metal and electrotechnical: blacksmithing (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,2. Plants: total,Zezwolenia dla przedsiębiorstw/Przemysł/2. Plants: total,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,"20. Metal and electrotechnical: locksmithing, repairs (within others)","Zezwolenia dla przedsiębiorstw/Przemysł/20. Metal and electrotechnical: locksmithing, repairs (within others)",Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,21. Metal and electrotechnical: tinsmithing (within others),Zezwolenia dla przedsiębiorstw/Przemysł/21. Metal and electrotechnical: tinsmithing (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,22. Metal and electrotechnical: watchmaking and jewelry (within others),Zezwolenia dla przedsiębiorstw/Przemysł/22. Metal and electrotechnical: watchmaking and jewelry (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,23. Chemical: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/23. Chemical: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,24. Chemical: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/24. Chemical: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,25. Chemical: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/25. Chemical: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,26. Chemical: oil mills (within others),Zezwolenia dla przedsiębiorstw/Przemysł/26. Chemical: oil mills (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,27. Textile: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/27. Textile: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,28. Textile: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/28. Textile: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,29. Textile: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/29. Textile: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,3. Plants: I-III,Zezwolenia dla przedsiębiorstw/Przemysł/3. Plants: I-III,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,30. Paper: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/30. Paper: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,31. Paper: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/31. Paper: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,32. Paper: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/32. Paper: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,33. Leather: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/33. Leather: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,34. Leather: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/34. Leather: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,35. Leather: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/35. Leather: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,36. Leather: tanning and white leather (within others),Zezwolenia dla przedsiębiorstw/Przemysł/36. Leather: tanning and white leather (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,37. Leather: saddlery and harness making (within others),Zezwolenia dla przedsiębiorstw/Przemysł/37. Leather: saddlery and harness making (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,38. Wood: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/38. Wood: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,39. Wood: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/39. Wood: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,4. Plants: IV-V,Zezwolenia dla przedsiębiorstw/Przemysł/4. Plants: IV-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,40. Wood: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/40. Wood: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,41. Wood: sawmills (within others),Zezwolenia dla przedsiębiorstw/Przemysł/41. Wood: sawmills (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,42. Wood: carpentry (within others),Zezwolenia dla przedsiębiorstw/Przemysł/42. Wood: carpentry (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,43. Wood: wheelwrighting (within others),Zezwolenia dla przedsiębiorstw/Przemysł/43. Wood: wheelwrighting (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,44. Food: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/44. Food: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,45. Food: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/45. Food: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,46. Food: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/46. Food: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,47. Food: mills (within others),Zezwolenia dla przedsiębiorstw/Przemysł/47. Food: mills (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,48. Food: bakeries (within others),Zezwolenia dla przedsiębiorstw/Przemysł/48. Food: bakeries (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,49. Food: dairies (within others),Zezwolenia dla przedsiębiorstw/Przemysł/49. Food: dairies (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,5. Plants: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/5. Plants: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,50. Food: butchery and meat processing (within others),Zezwolenia dla przedsiębiorstw/Przemysł/50. Food: butchery and meat processing (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,51. Clothing: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/51. Clothing: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,52. Clothing: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/52. Clothing: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,53. Clothing: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/53. Clothing: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,54. Clothing: tailoring and clothing accessories (within others),Zezwolenia dla przedsiębiorstw/Przemysł/54. Clothing: tailoring and clothing accessories (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,55. Clothing: shoemaking and boot making (within others),Zezwolenia dla przedsiębiorstw/Przemysł/55. Clothing: shoemaking and boot making (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,56. Clothing: furriery (within others),Zezwolenia dla przedsiębiorstw/Przemysł/56. Clothing: furriery (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,57. Printing: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/57. Printing: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,58. Printing: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/58. Printing: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,59. Printing: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/59. Printing: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,6. Plants: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/6. Plants: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,60. Printing: printing houses (within others),Zezwolenia dla przedsiębiorstw/Przemysł/60. Printing: printing houses (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,61. Construction: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/61. Construction: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,62. Construction: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/62. Construction: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,63. Construction: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/63. Construction: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,64. Processing of various materials: VII,Zezwolenia dla przedsiębiorstw/Przemysł/64. Processing of various materials: VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,65. Processing of various materials: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/65. Processing of various materials: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,66. Power plants: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/66. Power plants: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,67. Power plants: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/67. Power plants: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,68. Power plants: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/68. Power plants: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,69. Services: V-VII,Zezwolenia dla przedsiębiorstw/Przemysł/69. Services: V-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,7. Mining: I-V,Zezwolenia dla przedsiębiorstw/Przemysł/7. Mining: I-V,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,70. Services: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/70. Services: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,71. Services: hairdressing (within others),Zezwolenia dla przedsiębiorstw/Przemysł/71. Services: hairdressing (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,72. Services: transport (within others),Zezwolenia dla przedsiębiorstw/Przemysł/72. Services: transport (within others),Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,73. Horticulture and fisheries: V-VII,Zezwolenia dla przedsiębiorstw/Przemysł/73. Horticulture and fisheries: V-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,74. Horticulture and fisheries: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/74. Horticulture and fisheries: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,75. Other plants: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/75. Other plants: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,8. Mining: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/8. Mining: VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,9. Mining: VIII,Zezwolenia dla przedsiębiorstw/Przemysł/9. Mining: VIII,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria IIPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IIPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria IPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria IR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria IVPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IVPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria VIIIPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VIIIPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria VIIIR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VIIIR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria VIIPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VIIPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria VIIR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VIIR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria VIPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VIPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria VIR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VIR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria VPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Kategoria VR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,PR,Zezwolenia dla przedsiębiorstw/Przemysł/PR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,R,Zezwolenia dla przedsiębiorstw/Przemysł/R,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Handel jarmarczny,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,False
+3,Karty rejestracyjne,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,False
+3,Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
+3,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
+3,Kategoria IIPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IIPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
+3,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
+3,Kategoria IPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
+3,Kategoria IR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
+3,Kategoria IVPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IVPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
+3,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
+3,Razem,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,False
+4,Browarny,Ceny/Lokalne płacone producentom/Jęczmień/Browarny,Ceny/Lokalne płacone producentom/Jęczmień,True
+4,Innych gatunków,Ceny/Lokalne płacone producentom/Jęczmień/Innych gatunków,Ceny/Lokalne płacone producentom/Jęczmień,True
+4,Na kaszę,Ceny/Lokalne płacone producentom/Jęczmień/Na kaszę,Ceny/Lokalne płacone producentom/Jęczmień,True
+4,Ogółem,Ceny/Lokalne płacone producentom/Jęczmień/Ogółem,Ceny/Lokalne płacone producentom/Jęczmień,True
+4,Koniczyny,Ceny/Lokalne płacone producentom/Siano/Koniczyny,Ceny/Lokalne płacone producentom/Siano,True
+4,Ogółem,Ceny/Lokalne płacone producentom/Siano/Ogółem,Ceny/Lokalne płacone producentom/Siano,True
+4,Łąkowe,Ceny/Lokalne płacone producentom/Siano/Łąkowe,Ceny/Lokalne płacone producentom/Siano,True
+4,Fabryczne,Ceny/Lokalne płacone producentom/Ziemniaki/Fabryczne,Ceny/Lokalne płacone producentom/Ziemniaki,True
+4,Jadalne,Ceny/Lokalne płacone producentom/Ziemniaki/Jadalne,Ceny/Lokalne płacone producentom/Ziemniaki,True
+4,Ogółem,Uprawy rolne/Powierzchnia/Jęczmień/Ogółem,Uprawy rolne/Powierzchnia/Jęczmień,True
+4,Inne mieszanki zbóż,Uprawy rolne/Powierzchnia/Mieszanki na ziarno/Inne mieszanki zbóż,Uprawy rolne/Powierzchnia/Mieszanki na ziarno,True
+4,Jęczmień,Uprawy rolne/Powierzchnia/Mieszanki na ziarno/Jęczmień,Uprawy rolne/Powierzchnia/Mieszanki na ziarno,True
+4,Nasienie,Uprawy rolne/Zbiory/Konopie/Nasienie,Uprawy rolne/Zbiory/Konopie,True
+4,Włókno,Uprawy rolne/Zbiory/Konopie/Włókno,Uprawy rolne/Zbiory/Konopie,True
+4,Nasienie,Uprawy rolne/Zbiory/Len/Nasienie,Uprawy rolne/Zbiory/Len,True
+4,Włókno,Uprawy rolne/Zbiory/Len/Włókno,Uprawy rolne/Zbiory/Len,True
+4,Inne mieszanki zbóż,Uprawy rolne/Zbiory/Mieszanki na ziarno/Inne mieszanki zbóż,Uprawy rolne/Zbiory/Mieszanki na ziarno,True
+4,Jęczmień,Uprawy rolne/Zbiory/Mieszanki na ziarno/Jęczmień,Uprawy rolne/Zbiory/Mieszanki na ziarno,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budownictwo/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budownictwo,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/COdzieżowy i zabawkarski/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/COdzieżowy i zabawkarski,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Drzewny/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Drzewny,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Drzewny/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Drzewny,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Drzewny/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Drzewny,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrotechniczny/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrotechniczny,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrotechniczny/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrotechniczny,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrotechniczny/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrotechniczny,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrownie i wodociągi/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrownie i wodociągi,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrownie i wodociągi/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrownie i wodociągi,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrownie i wodociągi/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrownie i wodociągi,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Górnictwo/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Górnictwo,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Górnictwo/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Górnictwo,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Górnictwo/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Górnictwo,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Metalowy/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Metalowy,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Metalowy/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Metalowy,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Metalowy/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Metalowy,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Mineralny/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Mineralny,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Mineralny/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Mineralny,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Mineralny/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Mineralny,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Odzieżowy i zabawkarski/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Odzieżowy i zabawkarski,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Odzieżowy i zabawkarski/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Odzieżowy i zabawkarski,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Papierniczy/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Papierniczy,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Papierniczy/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Papierniczy,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Papierniczy/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Papierniczy,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Poligraficzny/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Poligraficzny,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Poligraficzny/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Poligraficzny,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Poligraficzny/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Poligraficzny,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Razem/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Razem,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Razem/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Razem,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Razem/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Razem,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Skórzany/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Skórzany,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Skórzany/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Skórzany,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Skórzany/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Skórzany,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Spożywczy/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Spożywczy,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Spożywczy/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Spożywczy,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Spożywczy/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Spożywczy,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Włókienniczy/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Włókienniczy,True
+4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Włókienniczy/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Włókienniczy,True
+4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Włókienniczy/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Włókienniczy,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem),True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem),True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem),True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem),True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem),True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem),True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Razem,Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem),True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja/Razem,Zezwolenia dla przedsiębiorstw/Handel/10. Konfekcja i galanterja,True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane/Razem","Zezwolenia dla przedsiębiorstw/Handel/11. Ubrania, części ubrań, futra i wyroby futrzane",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie/Razem,Zezwolenia dla przedsiębiorstw/Handel/12. Obuwie,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi/Razem,Zezwolenia dla przedsiębiorstw/Handel/13. Obuwie łącznie ze skórami i przyborami szewskiemi,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia)/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia)/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia)/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia)/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia)/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia)/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia)/Razem,Zezwolenia dla przedsiębiorstw/Handel/14. Skóry wszelkiego rodzaju i wyroby z nich (bez obuwia),True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)/Razem","Zezwolenia dla przedsiębiorstw/Handel/15. Maszyny, narzędzia i artykuły techniczne (z wyjątkiem rolniczych)",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe/Razem,Zezwolenia dla przedsiębiorstw/Handel/16. Artykuły budowlane i opałowe,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa/Razem,Zezwolenia dla przedsiębiorstw/Handel/17. Meble i wszelkie wyroby z drzewa,True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)/Razem","Zezwolenia dla przedsiębiorstw/Handel/18. Żelazo, wyroby żelazne, emaljowane, aluminiowe (ewent. łącznie z innemi towarami)",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra/Razem","Zezwolenia dla przedsiębiorstw/Handel/19. Naczynia kuchenne, wyroby porcelanowe, fajansowe, szklane, szyby i lustra",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie),True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie),True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie),True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie),True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie),True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie),True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Razem,Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie),True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)/Razem","Zezwolenia dla przedsiębiorstw/Handel/20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne/Razem","Zezwolenia dla przedsiębiorstw/Handel/21. Instrumenty muzyczne, optyczne, chirurgiczne, aparaty i przybory fotograficzne",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane/Razem","Zezwolenia dla przedsiębiorstw/Handel/22. Wyroby zegarmistrzowskie, jubilerskie i platerowane",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe/Razem","Zezwolenia dla przedsiębiorstw/Handel/23. Aparaty, wyroby elektrotechniczne, radjotechniczne oraz wszelkie przybory oświetleniowe",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki/Razem,Zezwolenia dla przedsiębiorstw/Handel/24. Apteki,True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne/Razem","Zezwolenia dla przedsiębiorstw/Handel/25. Składy apteczne, sklepy perfumeryjne i kosmetyczne",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp./Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp./Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp./Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp./Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp./Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp./Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp./Razem","Zezwolenia dla przedsiębiorstw/Handel/26. Artykuły gumowe, cerata, linoleum, kalosze, plandeki, opony, dętki itp.",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)/Razem","Zezwolenia dla przedsiębiorstw/Handel/27. Księgarnie, materiały piśmienne i wyroby papiernicze (ew. łącznie z innemi towarami)",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze/Razem","Zezwolenia dla przedsiębiorstw/Handel/28. Maszyny, narzędzia i artykuły rolnicze",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe/Razem,Zezwolenia dla przedsiębiorstw/Handel/29. Syndykaty i spółdzielnie rolniczo-handlowe,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Razem,Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek),True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego/Razem","Zezwolenia dla przedsiębiorstw/Handel/30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne/Razem","Zezwolenia dla przedsiębiorstw/Handel/31. Przedsiębiorstwa ekspedycyjne, przewozowe, komunikacyjne",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)/Razem","Zezwolenia dla przedsiębiorstw/Handel/32. Przedsiębiorstwa innych usług (czytelnie, lecznice, magle, łaźnie, garaże, sale tańca itp.)",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe/Razem","Zezwolenia dla przedsiębiorstw/Handel/33. Hotele, pensjonaty, pokoje umeblowane, domy noclegowe",True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska/Razem","Zezwolenia dla przedsiębiorstw/Handel/34. Teatry, kina i inne widowiska",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe/Razem,Zezwolenia dla przedsiębiorstw/Handel/35. Towarzystwa ubezpieczeniowe,True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp./Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp./Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp./Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp./Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp./Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp./Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp./Razem","Zezwolenia dla przedsiębiorstw/Handel/36. Biura: komisowe, pośrednictwa handlowego, ogłoszeń, porad prawnych, agenturowe, techniczne itp.",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione/Razem,Zezwolenia dla przedsiębiorstw/Handel/37. Pozostałe przedsiębiorstwa wyżej niewymienione,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży/Razem,Zezwolenia dla przedsiębiorstw/Handel/38. Karty niewypełnione co do branży,True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Razem","Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Razem,Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku,True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Razem","Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)",True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Razem,Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Razem,Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura,True
+4,Kategoria IIIR,"Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IIIR","Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem",True
+4,Kategoria IIR,"Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IIR","Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem",True
+4,Kategoria IR,"Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IR","Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem",True
+4,Kategoria IVR,"Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IVR","Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem",True
+4,Kategoria VaR,"Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria VaR","Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem",True
+4,Kategoria VbR,"Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria VbR","Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem",True
+4,Razem,"Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Razem","Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem",True
+4,Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria IIPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria IIPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria IPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria IPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria IVPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria IVPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria VaPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria VaPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria VbPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria VbPR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw/Razem,Zezwolenia dla przedsiębiorstw/Handel/Wszystkie typy przedsiębiorstw,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe/Razem,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne),True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne),True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne),True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne),True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne),True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne),True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Razem,Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne),True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze),True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze),True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze),True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze),True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze),True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze),True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Razem,Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze),True
+4,"B II. 3102. Sprzedaż towarów (wymiana zboża na mąkę, chleb)","Zezwolenia dla przedsiębiorstw/Handel/bread exchange)/B II. 3102. Sprzedaż towarów (wymiana zboża na mąkę, chleb)",Zezwolenia dla przedsiębiorstw/Handel/bread exchange),True
+4,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),True
+4,Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IIR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),True
+4,Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),True
+4,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),True
+4,Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria VaR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),True
+4,Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria VbR,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),True
+4,Razem,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Razem,Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej),True
+4,Detal,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny,False
+4,Hurt,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Hurt,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny,False
+4,PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne/PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne,True
+4,R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne/R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne,True
+4,PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem/PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem,True
+4,R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem/R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem,True
+5,PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal/PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal,True
+5,R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal/R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal,True
+5,PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Hurt/PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Hurt,True
+5,R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Hurt/R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Hurt,True

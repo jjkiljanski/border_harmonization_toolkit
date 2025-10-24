@@ -805,7 +805,7 @@ class AdministrativeHistoryProcessor():
 
         return grouped
 
-    def build_database_tree(self, filename, format: str = "ascii"):
+    def build_database_tree(self, filename, format: str = "ascii", lang: str = "eng"):
         """
         Build a tree from all `columns[*]["category"]` values and write it out.
 
@@ -815,6 +815,7 @@ class AdministrativeHistoryProcessor():
                     - "ascii": Unicode box-drawing tree (best for readability).
                     - "markdown": nested bullet list (portable in docs/READMEs).
                     - "csv": tabular, easy to filter/sort in spreadsheets.
+            lang: one of {"eng", "pol"}.
 
         Output path:
             Uses self.database_tree_output_path.
@@ -846,7 +847,12 @@ class AdministrativeHistoryProcessor():
         for item in metadata:
             cols = item.columns
             for col_info in cols.values():
-                cat = col_info.category
+                if lang=="eng":
+                    cat = col_info.category["eng"]
+                elif lang=="pol":
+                    cat = col_info.category["pol"]
+                else:
+                    raise ValueError(f"Only 'eng' and 'pol' values of the 'lang' attribute supported. Passed: {lang}.")
                 if not isinstance(cat, str) or not cat.strip():
                     continue
                 parts = [p.strip() for p in cat.split("/") if p.strip()]

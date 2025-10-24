@@ -18,8 +18,10 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "category": "Census 1921/Population/Total",
-                "category_pl": "Spis Powszechny 1921/Ludność/Ogółem",
+                "category": {
+                    "eng": "Census 1921/Population/Total",
+                    "pol": "Spis Powszechny 1921/Ludność/Ogółem"
+                },
                 "data_type": "int"
             }
         }
@@ -43,8 +45,10 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "category": "Census 1931/Population/Total",
-                "category_pl": "Spis Powszechny 1931/Ludność/Ogółem",
+                "category": {
+                    "eng": "Census 1931/Population/Total",
+                    "pol": "Spis Powszechny 1931/Ludność/Ogółem"
+                },
                 "data_type": "int"
             }
         }
@@ -68,8 +72,10 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "category": "Census 1921/Population/Total",
-                "category_pl": "Spis Powszechny 1921/Ludność/Ogółem",
+                "category": {
+                    "eng": "Census 1921/Population/Total",
+                    "pol": "Spis Powszechny 1921/Ludność/Ogółem"
+                },
                 "data_type": "int"
             }
         }
@@ -93,8 +99,10 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "category": "Census 1931/Population/Total",
-                "category_pl": "Spis Powszechny 1931/Ludność/Ogółem",
+                "category": {
+                    "eng": "Census 1931/Population/Total",
+                    "pol": "Spis Powszechny 1931/Ludność/Ogółem"
+                },
                 "data_type": "int"
             }
         }
@@ -118,8 +126,10 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "category": "Census 1921/Population/Total",
-                "category_pl": "Spis Powszechny 1921/Ludność/Ogółem",
+                "category": {
+                    "eng": "Census 1921/Population/Total",
+                    "pol": "Spis Powszechny 1921/Ludność/Ogółem"
+                },
                 "data_type": "int"
             }
         }
@@ -143,8 +153,10 @@
         "columns": {
             "Population": {
                 "unit": "",
-                "category": "Yearbook 1939/Population/Total",
-                "category_pl": "Ludność/Ogółem",
+                "category": {
+                    "eng": "Yearbook 1939/Population/Total",
+                    "pol": "Rocznik 1939/Ludność/Ogółem"
+                },
                 "data_type": "int"
             }
         }

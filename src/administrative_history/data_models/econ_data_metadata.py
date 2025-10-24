@@ -4,7 +4,7 @@ from datetime import datetime
 
 class ColumnMetadata(BaseModel):
     unit: str
-    category: str
+    category: Dict[Union[Literal["pol"], Literal["eng"]], str]
     data_type: str
     completeness: Optional[float] = None
     n_na: Optional[int] = None
@@ -12,6 +12,21 @@ class ColumnMetadata(BaseModel):
     completeness_after_imputation: Optional[float] = None
     n_na_after_imputation: Optional[int] = None
     n_not_na_after_imputation: Optional[int] = None
+
+    @model_validator(mode="after")
+    def validate_category_parts(self) -> "ColumnMetadata":
+        """
+        Ensure that all values in `category` have the same number of '/'-separated parts.
+        """
+        if self.category:
+            # Count non-empty parts to avoid mismatches from accidental '//' or leading/trailing '/'
+            counts = {lang: len([p for p in text.split("/") if p.strip() != ""])
+                      for lang, text in self.category.items()}
+            if len(set(counts.values())) > 1:
+                raise ValueError(
+                    f"All `category` values must have the same number of '/' parts; got {counts}"
+                )
+        return self
 class DataTableMetadata(BaseModel):
     """
     Metadata model for describing a data table, including source and reference 

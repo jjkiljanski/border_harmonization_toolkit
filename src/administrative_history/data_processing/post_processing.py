@@ -47,65 +47,110 @@ def collapse_metadata_dicts(
             return ", ".join(values_to_concatenate)
 
     def collapse_columns(metadata_list):
-        # (unchanged from your version)
+        """
+        Collapse (merge) the `columns` sections from multiple `DataTableMetadata` objects
+        into a single, harmonized dictionary of `ColumnMetadata`.
+
+        This function:
+        • Groups columns across all metadata objects by their English `category` value.
+        • Ensures that the corresponding Polish (`pol`) categories for each group are identical.
+        • Verifies that `unit` and `data_type` are consistent within each category group.
+        • Aggregates completeness statistics across datasets (before and after imputation).
+        • Builds a new unified `ColumnMetadata` entry per unique category, 
+            where both `eng` and `pol` values are retained in a dictionary.
+
+        The result is a dict mapping representative column names to merged `ColumnMetadata` objects.
+
+        Raises:
+            ValueError:
+                - If any column `category` is not a dict or missing 'eng'/'pol' keys.
+                - If multiple Polish categories correspond to the same English one.
+                - If `unit` or `data_type` differ across merged columns.
+        """
+
         grouped_columns = defaultdict(list)
+
+        # --- 1. Group columns across metadata by their English category ---
         for md in metadata_list:
             for col_name, col_meta in md.columns.items():
-                key = col_meta.category
-                grouped_columns[key].append((col_name, col_meta))
+                if not isinstance(col_meta.category, dict):
+                    raise ValueError(
+                        f"Column '{col_name}' in '{md.data_table_id}' has non-dict category: {col_meta.category!r}"
+                    )
+                if "eng" not in col_meta.category or "pol" not in col_meta.category:
+                    raise ValueError(
+                        f"Column '{col_name}' in '{md.data_table_id}' category must have both 'eng' and 'pol' keys."
+                    )
+
+                eng_key = col_meta.category["eng"]
+                grouped_columns[eng_key].append((col_name, col_meta))
 
         merged_columns = {}
-        for category, col_entries in grouped_columns.items():
-            # Check consistency of unit and data_type
-            units = {col_meta.unit for _, col_meta in col_entries}
+
+        # --- 2. Process each category group ---
+        for eng_category, col_entries in grouped_columns.items():
+            # Ensure Polish categories are consistent for the same English key
+            pol_values = {cm.category["pol"] for _, cm in col_entries}
+            if len(pol_values) != 1:
+                details = {
+                    md_id: cm.category["pol"]
+                    for (md_id, (cn, cm)) in zip(
+                        [md.data_table_id for md in metadata_list], col_entries
+                    )
+                }
+                raise ValueError(
+                    "Inconsistent 'pol' category values for the same 'eng' category "
+                    f"'{eng_category}': {pol_values}. Details per dataset: {details}"
+                )
+            pol_category = pol_values.pop()
+
+            # Ensure unit and data_type consistency
+            units = {cm.unit for _, cm in col_entries}
             if len(units) != 1:
                 raise ValueError(
-                    f"Data tables have inconsistent 'unit' attribute for column '{category}': {units}"
-                )
-            data_types = {col_meta.data_type for _, col_meta in col_entries}
-            if len(data_types) != 1:
-                raise ValueError(
-                    f"Data tables have inconsistent 'data_type' attribute for column '{category}': {data_types}"
+                    f"Inconsistent 'unit' values for category '{eng_category}': {units}"
                 )
 
+            data_types = {cm.data_type for _, cm in col_entries}
+            if len(data_types) != 1:
+                raise ValueError(
+                    f"Inconsistent 'data_type' values for category '{eng_category}': {data_types}"
+                )
+
+            # --- 3. Compute completeness stats ---
             go_to_adm_state = adm_history_processor.adm_history.find_adm_state_by_date(
                 adm_history_processor.harmonize_to_date
             )
             total_all = len(go_to_adm_state.all_district_names(homeland_only=True))
-            
-            # Compute completeness stats before imputation
+
+            # Before imputation
             n_of_none = sum(1 for _, cm in col_entries if cm.n_not_na is None)
             if n_of_none > 0:
-                total_not_na = None
-                total_na = None
-                completeness = None
+                total_not_na = total_na = completeness = None
             else:
                 total_not_na = sum(cm.n_not_na or 0 for _, cm in col_entries)
                 total_na = total_all - total_not_na
                 completeness = total_not_na / total_all
 
-            # Compute completeness stats after imputation
+            # After imputation
             n_of_none_after_imputation = sum(
                 1 for _, cm in col_entries if cm.n_not_na_after_imputation is None
             )
             if n_of_none_after_imputation > 0:
-                total_not_na_after_imputation = None
-                total_na_after_imputation = None
-                completeness_after_imputation = None
+                total_not_na_after_imputation = total_na_after_imputation = completeness_after_imputation = None
             else:
                 total_not_na_after_imputation = sum(
                     cm.n_not_na_after_imputation or 0 for _, cm in col_entries
                 )
                 total_na_after_imputation = total_all - total_not_na_after_imputation
-                completeness_after_imputation = (
-                    total_not_na_after_imputation / total_all
-                )
+                completeness_after_imputation = total_not_na_after_imputation / total_all
 
-            representative_name = col_entries[0][0]  # Use the first name found
+            # --- 4. Build merged ColumnMetadata entry ---
+            representative_name = col_entries[0][0]  # Use first encountered name
             merged_columns[representative_name] = ColumnMetadata(
-                unit=units.pop(),
-                category=category,
-                data_type=data_types.pop(),
+                unit=next(iter(units)),
+                category={"eng": eng_category, "pol": pol_category},
+                data_type=next(iter(data_types)),
                 n_na=total_na,
                 n_not_na=total_not_na,
                 completeness=completeness,
