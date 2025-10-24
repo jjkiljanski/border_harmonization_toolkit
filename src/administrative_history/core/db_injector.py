@@ -1,10 +1,3 @@
-"""
-This module handles the creation of DuckDB and parquet files.
-It is used by core.processor.AdministrativeHistoryProcessor when
-it method process_raw_csv_file is called.
-"""
-
-# storage_duckdb.py
 from __future__ import annotations
 
 from pathlib import Path
@@ -14,6 +7,12 @@ import duckdb
 import pandas as pd
 import json
 import os
+
+"""
+This module handles the creation of DuckDB and parquet files.
+It is used by core.processor.AdministrativeHistoryProcessor when
+it method process_raw_csv_file is called.
+"""
 
 def _json_or_text(x: Any) -> str:
     if isinstance(x, (list, dict)):
