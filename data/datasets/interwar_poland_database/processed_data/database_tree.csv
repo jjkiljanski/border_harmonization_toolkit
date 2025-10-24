@@ -25,23 +25,12 @@
 2,Average Yield per ha,Crops/Average Yield per ha,Crops,False
 2,Size,Crops/Size,Crops,False
 2,Yields (q per ha),Crops/Yields (q per ha),Crops,False
-2,Chemical,Employment/Chemical,Employment,True
-2,Clothing and Toymaking,Employment/Clothing and Toymaking,Employment,True
-2,Construction,Employment/Construction,Employment,True
 2,Employment Share,Employment/Employment Share,Employment,False
-2,Food,Employment/Food,Employment,True
-2,Leather,Employment/Leather,Employment,True
-2,Metal and electrotechnical,Employment/Metal and electrotechnical,Employment,True
-2,Mineral,Employment/Mineral,Employment,True
+2,Industry,Employment/Industry,Employment,False
 2,Mining,Employment/Mining,Employment,True
 2,Mining and Industry - Total,Employment/Mining and Industry - Total,Employment,True
-2,Paper,Employment/Paper,Employment,True
-2,Power plants and waterworks,Employment/Power plants and waterworks,Employment,True
-2,Printing,Employment/Printing,Employment,True
 2,Public works,Employment/Public works,Employment,True
-2,Textile,Employment/Textile,Employment,True
 2,Total,Employment/Total,Employment,True
-2,Wood,Employment/Wood,Employment,True
 2,Area,Forests/Area,Forests,True
 2,Goats,Livestock/Goats,Livestock,True
 2,Horned Cattle,Livestock/Horned Cattle,Livestock,True
@@ -62,81 +51,81 @@
 3,Registration Permits,Business Permissions/Industrial Occupations/Registration Permits,Business Permissions/Industrial Occupations,False
 3,Together,Business Permissions/Industrial Occupations/Together,Business Permissions/Industrial Occupations,False
 3,Trade at Fairs,Business Permissions/Industrial Occupations/Trade at Fairs,Business Permissions/Industrial Occupations,False
-3,1. Number of workers in plants I-VII,Business Permissions/Industry/1. Number of workers in plants I-VII,Business Permissions/Industry,True
-3,10. Mineral: I-V,Business Permissions/Industry/10. Mineral: I-V,Business Permissions/Industry,True
-3,11. Mineral: VI-VII,Business Permissions/Industry/11. Mineral: VI-VII,Business Permissions/Industry,True
-3,12. Mineral: VIII,Business Permissions/Industry/12. Mineral: VIII,Business Permissions/Industry,True
-3,13. Mineral: brickyards (within others),Business Permissions/Industry/13. Mineral: brickyards (within others),Business Permissions/Industry,True
-3,14. Mineral: concrete plants (within others),Business Permissions/Industry/14. Mineral: concrete plants (within others),Business Permissions/Industry,True
-3,15. Metal and electrotechnical: I-V,Business Permissions/Industry/15. Metal and electrotechnical: I-V,Business Permissions/Industry,True
-3,16. Metal and electrotechnical: VI-VII,Business Permissions/Industry/16. Metal and electrotechnical: VI-VII,Business Permissions/Industry,True
-3,17. Metal and electrotechnical: VIII,Business Permissions/Industry/17. Metal and electrotechnical: VIII,Business Permissions/Industry,True
-3,18. Metal and electrotechnical: metal production (within others),Business Permissions/Industry/18. Metal and electrotechnical: metal production (within others),Business Permissions/Industry,True
-3,19. Metal and electrotechnical: blacksmithing (within others),Business Permissions/Industry/19. Metal and electrotechnical: blacksmithing (within others),Business Permissions/Industry,True
-3,2. Plants: total,Business Permissions/Industry/2. Plants: total,Business Permissions/Industry,True
-3,"20. Metal and electrotechnical: locksmithing, repairs (within others)","Business Permissions/Industry/20. Metal and electrotechnical: locksmithing, repairs (within others)",Business Permissions/Industry,True
-3,21. Metal and electrotechnical: tinsmithing (within others),Business Permissions/Industry/21. Metal and electrotechnical: tinsmithing (within others),Business Permissions/Industry,True
-3,22. Metal and electrotechnical: watchmaking and jewelry (within others),Business Permissions/Industry/22. Metal and electrotechnical: watchmaking and jewelry (within others),Business Permissions/Industry,True
-3,23. Chemical: I-V,Business Permissions/Industry/23. Chemical: I-V,Business Permissions/Industry,True
-3,24. Chemical: VI-VII,Business Permissions/Industry/24. Chemical: VI-VII,Business Permissions/Industry,True
-3,25. Chemical: VIII,Business Permissions/Industry/25. Chemical: VIII,Business Permissions/Industry,True
-3,26. Chemical: oil mills (within others),Business Permissions/Industry/26. Chemical: oil mills (within others),Business Permissions/Industry,True
-3,27. Textile: I-V,Business Permissions/Industry/27. Textile: I-V,Business Permissions/Industry,True
-3,28. Textile: VI-VII,Business Permissions/Industry/28. Textile: VI-VII,Business Permissions/Industry,True
-3,29. Textile: VIII,Business Permissions/Industry/29. Textile: VIII,Business Permissions/Industry,True
-3,3. Plants: I-III,Business Permissions/Industry/3. Plants: I-III,Business Permissions/Industry,True
-3,30. Paper: I-V,Business Permissions/Industry/30. Paper: I-V,Business Permissions/Industry,True
-3,31. Paper: VI-VII,Business Permissions/Industry/31. Paper: VI-VII,Business Permissions/Industry,True
-3,32. Paper: VIII,Business Permissions/Industry/32. Paper: VIII,Business Permissions/Industry,True
-3,33. Leather: I-V,Business Permissions/Industry/33. Leather: I-V,Business Permissions/Industry,True
-3,34. Leather: VI-VII,Business Permissions/Industry/34. Leather: VI-VII,Business Permissions/Industry,True
-3,35. Leather: VIII,Business Permissions/Industry/35. Leather: VIII,Business Permissions/Industry,True
-3,36. Leather: tanning and white leather (within others),Business Permissions/Industry/36. Leather: tanning and white leather (within others),Business Permissions/Industry,True
-3,37. Leather: saddlery and harness making (within others),Business Permissions/Industry/37. Leather: saddlery and harness making (within others),Business Permissions/Industry,True
-3,38. Wood: I-V,Business Permissions/Industry/38. Wood: I-V,Business Permissions/Industry,True
-3,39. Wood: VI-VII,Business Permissions/Industry/39. Wood: VI-VII,Business Permissions/Industry,True
-3,4. Plants: IV-V,Business Permissions/Industry/4. Plants: IV-V,Business Permissions/Industry,True
-3,40. Wood: VIII,Business Permissions/Industry/40. Wood: VIII,Business Permissions/Industry,True
-3,41. Wood: sawmills (within others),Business Permissions/Industry/41. Wood: sawmills (within others),Business Permissions/Industry,True
-3,42. Wood: carpentry (within others),Business Permissions/Industry/42. Wood: carpentry (within others),Business Permissions/Industry,True
-3,43. Wood: wheelwrighting (within others),Business Permissions/Industry/43. Wood: wheelwrighting (within others),Business Permissions/Industry,True
-3,44. Food: I-V,Business Permissions/Industry/44. Food: I-V,Business Permissions/Industry,True
-3,45. Food: VI-VII,Business Permissions/Industry/45. Food: VI-VII,Business Permissions/Industry,True
-3,46. Food: VIII,Business Permissions/Industry/46. Food: VIII,Business Permissions/Industry,True
-3,47. Food: mills (within others),Business Permissions/Industry/47. Food: mills (within others),Business Permissions/Industry,True
-3,48. Food: bakeries (within others),Business Permissions/Industry/48. Food: bakeries (within others),Business Permissions/Industry,True
-3,49. Food: dairies (within others),Business Permissions/Industry/49. Food: dairies (within others),Business Permissions/Industry,True
-3,5. Plants: VI-VII,Business Permissions/Industry/5. Plants: VI-VII,Business Permissions/Industry,True
-3,50. Food: butchery and meat processing (within others),Business Permissions/Industry/50. Food: butchery and meat processing (within others),Business Permissions/Industry,True
-3,51. Clothing: I-V,Business Permissions/Industry/51. Clothing: I-V,Business Permissions/Industry,True
-3,52. Clothing: VI-VII,Business Permissions/Industry/52. Clothing: VI-VII,Business Permissions/Industry,True
-3,53. Clothing: VIII,Business Permissions/Industry/53. Clothing: VIII,Business Permissions/Industry,True
-3,54. Clothing: tailoring and clothing accessories (within others),Business Permissions/Industry/54. Clothing: tailoring and clothing accessories (within others),Business Permissions/Industry,True
-3,55. Clothing: shoemaking and boot making (within others),Business Permissions/Industry/55. Clothing: shoemaking and boot making (within others),Business Permissions/Industry,True
-3,56. Clothing: furriery (within others),Business Permissions/Industry/56. Clothing: furriery (within others),Business Permissions/Industry,True
-3,57. Printing: I-V,Business Permissions/Industry/57. Printing: I-V,Business Permissions/Industry,True
-3,58. Printing: VI-VII,Business Permissions/Industry/58. Printing: VI-VII,Business Permissions/Industry,True
-3,59. Printing: VIII,Business Permissions/Industry/59. Printing: VIII,Business Permissions/Industry,True
-3,6. Plants: VIII,Business Permissions/Industry/6. Plants: VIII,Business Permissions/Industry,True
-3,60. Printing: printing houses (within others),Business Permissions/Industry/60. Printing: printing houses (within others),Business Permissions/Industry,True
-3,61. Construction: I-V,Business Permissions/Industry/61. Construction: I-V,Business Permissions/Industry,True
-3,62. Construction: VI-VII,Business Permissions/Industry/62. Construction: VI-VII,Business Permissions/Industry,True
-3,63. Construction: VIII,Business Permissions/Industry/63. Construction: VIII,Business Permissions/Industry,True
-3,64. Processing of various materials: VII,Business Permissions/Industry/64. Processing of various materials: VII,Business Permissions/Industry,True
-3,65. Processing of various materials: VIII,Business Permissions/Industry/65. Processing of various materials: VIII,Business Permissions/Industry,True
-3,66. Power plants: I-V,Business Permissions/Industry/66. Power plants: I-V,Business Permissions/Industry,True
-3,67. Power plants: VI-VII,Business Permissions/Industry/67. Power plants: VI-VII,Business Permissions/Industry,True
-3,68. Power plants: VIII,Business Permissions/Industry/68. Power plants: VIII,Business Permissions/Industry,True
-3,69. Services: V-VII,Business Permissions/Industry/69. Services: V-VII,Business Permissions/Industry,True
-3,7. Mining: I-V,Business Permissions/Industry/7. Mining: I-V,Business Permissions/Industry,True
-3,70. Services: VIII,Business Permissions/Industry/70. Services: VIII,Business Permissions/Industry,True
-3,71. Services: hairdressing (within others),Business Permissions/Industry/71. Services: hairdressing (within others),Business Permissions/Industry,True
-3,72. Services: transport (within others),Business Permissions/Industry/72. Services: transport (within others),Business Permissions/Industry,True
-3,73. Horticulture and fisheries: V-VII,Business Permissions/Industry/73. Horticulture and fisheries: V-VII,Business Permissions/Industry,True
-3,74. Horticulture and fisheries: VIII,Business Permissions/Industry/74. Horticulture and fisheries: VIII,Business Permissions/Industry,True
-3,75. Other plants: VIII,Business Permissions/Industry/75. Other plants: VIII,Business Permissions/Industry,True
-3,8. Mining: VI-VII,Business Permissions/Industry/8. Mining: VI-VII,Business Permissions/Industry,True
-3,9. Mining: VIII,Business Permissions/Industry/9. Mining: VIII,Business Permissions/Industry,True
+3,01. Number of workers in plants I-VII,Business Permissions/Industry/01. Number of workers in plants I-VII,Business Permissions/Industry,True
+3,02. Plants of All Types,Business Permissions/Industry/02. Plants of All Types,Business Permissions/Industry,False
+3,03. Plants of All Types,Business Permissions/Industry/03. Plants of All Types,Business Permissions/Industry,False
+3,05. Plants of All Types,Business Permissions/Industry/05. Plants of All Types,Business Permissions/Industry,False
+3,07. Mining,Business Permissions/Industry/07. Mining,Business Permissions/Industry,False
+3,08. Mining,Business Permissions/Industry/08. Mining,Business Permissions/Industry,False
+3,10. Mineral,Business Permissions/Industry/10. Mineral,Business Permissions/Industry,False
+3,11. Mineral,Business Permissions/Industry/11. Mineral,Business Permissions/Industry,False
+3,12. Mineral,Business Permissions/Industry/12. Mineral,Business Permissions/Industry,False
+3,13. Mineral,Business Permissions/Industry/13. Mineral,Business Permissions/Industry,False
+3,14. Mineral,Business Permissions/Industry/14. Mineral,Business Permissions/Industry,False
+3,15. Metal and electrotechnical,Business Permissions/Industry/15. Metal and electrotechnical,Business Permissions/Industry,False
+3,16. Metal and electrotechnical,Business Permissions/Industry/16. Metal and electrotechnical,Business Permissions/Industry,False
+3,17. Metal and electrotechnical,Business Permissions/Industry/17. Metal and electrotechnical,Business Permissions/Industry,False
+3,18. Metal and electrotechnical,Business Permissions/Industry/18. Metal and electrotechnical,Business Permissions/Industry,False
+3,19. Metal and electrotechnical,Business Permissions/Industry/19. Metal and electrotechnical,Business Permissions/Industry,False
+3,20. Metal and electrotechnical,Business Permissions/Industry/20. Metal and electrotechnical,Business Permissions/Industry,False
+3,21. Metal and electrotechnical,Business Permissions/Industry/21. Metal and electrotechnical,Business Permissions/Industry,False
+3,22. Metal and electrotechnical,Business Permissions/Industry/22. Metal and electrotechnical,Business Permissions/Industry,False
+3,23. Chemical,Business Permissions/Industry/23. Chemical,Business Permissions/Industry,False
+3,24. Chemical,Business Permissions/Industry/24. Chemical,Business Permissions/Industry,False
+3,25. Chemical,Business Permissions/Industry/25. Chemical,Business Permissions/Industry,False
+3,26. Chemical,Business Permissions/Industry/26. Chemical,Business Permissions/Industry,False
+3,27. Textile,Business Permissions/Industry/27. Textile,Business Permissions/Industry,False
+3,28. Textile,Business Permissions/Industry/28. Textile,Business Permissions/Industry,False
+3,29. Textile,Business Permissions/Industry/29. Textile,Business Permissions/Industry,False
+3,30. Paper,Business Permissions/Industry/30. Paper,Business Permissions/Industry,False
+3,31. Paper,Business Permissions/Industry/31. Paper,Business Permissions/Industry,False
+3,32. Paper,Business Permissions/Industry/32. Paper,Business Permissions/Industry,False
+3,33. Leather,Business Permissions/Industry/33. Leather,Business Permissions/Industry,False
+3,34. Leather,Business Permissions/Industry/34. Leather,Business Permissions/Industry,False
+3,35. Leather,Business Permissions/Industry/35. Leather,Business Permissions/Industry,False
+3,36. Leather,Business Permissions/Industry/36. Leather,Business Permissions/Industry,False
+3,37. Leather,Business Permissions/Industry/37. Leather,Business Permissions/Industry,False
+3,38. Wood,Business Permissions/Industry/38. Wood,Business Permissions/Industry,False
+3,39. Wood,Business Permissions/Industry/39. Wood,Business Permissions/Industry,False
+3,4. Plants of All Types,Business Permissions/Industry/4. Plants of All Types,Business Permissions/Industry,False
+3,40. Wood,Business Permissions/Industry/40. Wood,Business Permissions/Industry,False
+3,41. Wood,Business Permissions/Industry/41. Wood,Business Permissions/Industry,False
+3,42. Wood,Business Permissions/Industry/42. Wood,Business Permissions/Industry,False
+3,43. Wood,Business Permissions/Industry/43. Wood,Business Permissions/Industry,False
+3,44. Food,Business Permissions/Industry/44. Food,Business Permissions/Industry,False
+3,45. Food,Business Permissions/Industry/45. Food,Business Permissions/Industry,False
+3,46. Food,Business Permissions/Industry/46. Food,Business Permissions/Industry,False
+3,47. Food,Business Permissions/Industry/47. Food,Business Permissions/Industry,False
+3,48. Food,Business Permissions/Industry/48. Food,Business Permissions/Industry,False
+3,49. Food,Business Permissions/Industry/49. Food,Business Permissions/Industry,False
+3,50. Food,Business Permissions/Industry/50. Food,Business Permissions/Industry,False
+3,51. Clothing,Business Permissions/Industry/51. Clothing,Business Permissions/Industry,False
+3,52. Clothing,Business Permissions/Industry/52. Clothing,Business Permissions/Industry,False
+3,53. Clothing,Business Permissions/Industry/53. Clothing,Business Permissions/Industry,False
+3,54. Clothing,Business Permissions/Industry/54. Clothing,Business Permissions/Industry,False
+3,55. Clothing,Business Permissions/Industry/55. Clothing,Business Permissions/Industry,False
+3,56. Clothing,Business Permissions/Industry/56. Clothing,Business Permissions/Industry,False
+3,57. Printing,Business Permissions/Industry/57. Printing,Business Permissions/Industry,False
+3,58. Printing,Business Permissions/Industry/58. Printing,Business Permissions/Industry,False
+3,59. Printing,Business Permissions/Industry/59. Printing,Business Permissions/Industry,False
+3,6. Plants of All Types,Business Permissions/Industry/6. Plants of All Types,Business Permissions/Industry,False
+3,60. Printing,Business Permissions/Industry/60. Printing,Business Permissions/Industry,False
+3,61. Construction,Business Permissions/Industry/61. Construction,Business Permissions/Industry,False
+3,62. Construction,Business Permissions/Industry/62. Construction,Business Permissions/Industry,False
+3,63. Construction,Business Permissions/Industry/63. Construction,Business Permissions/Industry,False
+3,64. Processing of various materials,Business Permissions/Industry/64. Processing of various materials,Business Permissions/Industry,False
+3,65. Processing of various materials,Business Permissions/Industry/65. Processing of various materials,Business Permissions/Industry,False
+3,66. Power plants,Business Permissions/Industry/66. Power plants,Business Permissions/Industry,False
+3,67. Power plants,Business Permissions/Industry/67. Power plants,Business Permissions/Industry,False
+3,68. Power plants,Business Permissions/Industry/68. Power plants,Business Permissions/Industry,False
+3,69. Services,Business Permissions/Industry/69. Services,Business Permissions/Industry,False
+3,70. Services,Business Permissions/Industry/70. Services,Business Permissions/Industry,False
+3,71. Services,Business Permissions/Industry/71. Services,Business Permissions/Industry,False
+3,72. Services,Business Permissions/Industry/72. Services,Business Permissions/Industry,False
+3,73. Horticulture and fisheries,Business Permissions/Industry/73. Horticulture and fisheries,Business Permissions/Industry,False
+3,74. Horticulture and fisheries,Business Permissions/Industry/74. Horticulture and fisheries,Business Permissions/Industry,False
+3,75. Other plants,Business Permissions/Industry/75. Other plants,Business Permissions/Industry,False
+3,9. Mining,Business Permissions/Industry/9. Mining,Business Permissions/Industry,False
 3,Category IIIPR,Business Permissions/Industry/Category IIIPR,Business Permissions/Industry,True
 3,Category IIIR,Business Permissions/Industry/Category IIIR,Business Permissions/Industry,True
 3,Category IIPR,Business Permissions/Industry/Category IIPR,Business Permissions/Industry,True
@@ -215,6 +204,7 @@
 3,B I. 3081-3085. Goods sales (live animals),Business Permissions/Trade/B I. 3081-3085. Goods sales (live animals),Business Permissions/Trade,True
 3,B II. 3101-3179. Goods sales (food products),Business Permissions/Trade/B II. 3101-3179. Goods sales (food products),Business Permissions/Trade,True
 3,"B II. 3101. Goods sales (flour, groats, rice)","Business Permissions/Trade/B II. 3101. Goods sales (flour, groats, rice)",Business Permissions/Trade,True
+3,B II. 3102. Goods sales (grain-for-flour or bread exchange),Business Permissions/Trade/B II. 3102. Goods sales (grain-for-flour or bread exchange),Business Permissions/Trade,True
 3,B II. 3103. Goods sales (bread),Business Permissions/Trade/B II. 3103. Goods sales (bread),Business Permissions/Trade,True
 3,B II. 3119. Goods sales (dairy),Business Permissions/Trade/B II. 3119. Goods sales (dairy),Business Permissions/Trade,True
 3,B II. 3121-3123. Goods sales (meat),Business Permissions/Trade/B II. 3121-3123. Goods sales (meat),Business Permissions/Trade,True
@@ -256,7 +246,6 @@
 3,B VIII. 3441. Goods sales (electrotechnical products),Business Permissions/Trade/B VIII. 3441. Goods sales (electrotechnical products),Business Permissions/Trade,True
 3,"B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Goods sales (various and unspecified articles)","Business Permissions/Trade/B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Goods sales (various and unspecified articles)",Business Permissions/Trade,True
 3,b. Professional purchasing (livestock),Business Permissions/Trade/b. Professional purchasing (livestock),Business Permissions/Trade,False
-3,bread exchange),Business Permissions/Trade/bread exchange),Business Permissions/Trade,False
 3,"C 3501-3509. Gastronomic establishments, room rental (gastronomic establishments)","Business Permissions/Trade/C 3501-3509. Gastronomic establishments, room rental (gastronomic establishments)",Business Permissions/Trade,True
 3,"C 3501-3539. Gastronomic establishments, room rental","Business Permissions/Trade/C 3501-3539. Gastronomic establishments, room rental",Business Permissions/Trade,True
 3,"C 3511. Gastronomic establishments, room rental (guesthouses, shelters)","Business Permissions/Trade/C 3511. Gastronomic establishments, room rental (guesthouses, shelters)",Business Permissions/Trade,True
@@ -686,7 +675,7 @@
 3,Sugar Beets,Crops/Size/Sugar Beets,Crops/Size,True
 3,Tabacco,Crops/Size/Tabacco,Crops/Size,True
 3,Wheat,Crops/Size/Wheat,Crops/Size,True
-3,Buraki Cukrowe,Crops/Yields (q per ha)/Buraki Cukrowe,Crops/Yields (q per ha),True
+3,Buraki cukrowe,Crops/Yields (q per ha)/Buraki cukrowe,Crops/Yields (q per ha),True
 3,Chemical,Employment/Employment Share/Chemical,Employment/Employment Share,False
 3,Clothing and Toymaking,Employment/Employment Share/Clothing and Toymaking,Employment/Employment Share,False
 3,Construction,Employment/Employment Share/Construction,Employment/Employment Share,False
@@ -703,6 +692,18 @@
 3,Textile,Employment/Employment Share/Textile,Employment/Employment Share,False
 3,Together,Employment/Employment Share/Together,Employment/Employment Share,False
 3,Wood,Employment/Employment Share/Wood,Employment/Employment Share,False
+3,Chemical,Employment/Industry/Chemical,Employment/Industry,True
+3,Clothing and Toymaking,Employment/Industry/Clothing and Toymaking,Employment/Industry,True
+3,Construction,Employment/Industry/Construction,Employment/Industry,True
+3,Food,Employment/Industry/Food,Employment/Industry,True
+3,Leather,Employment/Industry/Leather,Employment/Industry,True
+3,Metal and electrotechnical,Employment/Industry/Metal and electrotechnical,Employment/Industry,True
+3,Mineral,Employment/Industry/Mineral,Employment/Industry,True
+3,Paper,Employment/Industry/Paper,Employment/Industry,True
+3,Power plants and waterworks,Employment/Industry/Power plants and waterworks,Employment/Industry,True
+3,Printing,Employment/Industry/Printing,Employment/Industry,True
+3,Textile,Employment/Industry/Textile,Employment/Industry,True
+3,Wood,Employment/Industry/Wood,Employment/Industry,True
 3,Barley,Prices/Local Paid to Producers/Barley,Prices/Local Paid to Producers,False
 3,Buckwheat,Prices/Local Paid to Producers/Buckwheat,Prices/Local Paid to Producers,True
 3,Hay,Prices/Local Paid to Producers/Hay,Prices/Local Paid to Producers,False
@@ -724,6 +725,80 @@
 4,R,Business Permissions/Industrial Occupations/Together/R,Business Permissions/Industrial Occupations/Together,True
 4,Retail,Business Permissions/Industrial Occupations/Trade at Fairs/Retail,Business Permissions/Industrial Occupations/Trade at Fairs,False
 4,Wholesale,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale,Business Permissions/Industrial Occupations/Trade at Fairs,False
+4,Total,Business Permissions/Industry/02. Plants of All Types/Total,Business Permissions/Industry/02. Plants of All Types,True
+4,I-III,Business Permissions/Industry/03. Plants of All Types/I-III,Business Permissions/Industry/03. Plants of All Types,True
+4,VI-VII,Business Permissions/Industry/05. Plants of All Types/VI-VII,Business Permissions/Industry/05. Plants of All Types,True
+4,I-V,Business Permissions/Industry/07. Mining/I-V,Business Permissions/Industry/07. Mining,True
+4,VI-VII,Business Permissions/Industry/08. Mining/VI-VII,Business Permissions/Industry/08. Mining,True
+4,I-V,Business Permissions/Industry/10. Mineral/I-V,Business Permissions/Industry/10. Mineral,True
+4,VI-VII,Business Permissions/Industry/11. Mineral/VI-VII,Business Permissions/Industry/11. Mineral,True
+4,VIII,Business Permissions/Industry/12. Mineral/VIII,Business Permissions/Industry/12. Mineral,True
+4,brickyards (within others),Business Permissions/Industry/13. Mineral/brickyards (within others),Business Permissions/Industry/13. Mineral,True
+4,Concrete plants (within others),Business Permissions/Industry/14. Mineral/Concrete plants (within others),Business Permissions/Industry/14. Mineral,True
+4,I-V,Business Permissions/Industry/15. Metal and electrotechnical/I-V,Business Permissions/Industry/15. Metal and electrotechnical,True
+4,VI-VII,Business Permissions/Industry/16. Metal and electrotechnical/VI-VII,Business Permissions/Industry/16. Metal and electrotechnical,True
+4,VIII,Business Permissions/Industry/17. Metal and electrotechnical/VIII,Business Permissions/Industry/17. Metal and electrotechnical,True
+4,metal production (within others),Business Permissions/Industry/18. Metal and electrotechnical/metal production (within others),Business Permissions/Industry/18. Metal and electrotechnical,True
+4,Backsmithing (within others),Business Permissions/Industry/19. Metal and electrotechnical/Backsmithing (within others),Business Permissions/Industry/19. Metal and electrotechnical,True
+4,"Locksmithing, repairs (within others)","Business Permissions/Industry/20. Metal and electrotechnical/Locksmithing, repairs (within others)",Business Permissions/Industry/20. Metal and electrotechnical,True
+4,tinsmithing (within others),Business Permissions/Industry/21. Metal and electrotechnical/tinsmithing (within others),Business Permissions/Industry/21. Metal and electrotechnical,True
+4,Watchmaking and jewelry (within others),Business Permissions/Industry/22. Metal and electrotechnical/Watchmaking and jewelry (within others),Business Permissions/Industry/22. Metal and electrotechnical,True
+4,I-V,Business Permissions/Industry/23. Chemical/I-V,Business Permissions/Industry/23. Chemical,True
+4,VI-VII,Business Permissions/Industry/24. Chemical/VI-VII,Business Permissions/Industry/24. Chemical,True
+4,VIII,Business Permissions/Industry/25. Chemical/VIII,Business Permissions/Industry/25. Chemical,True
+4,Oil mills (within others),Business Permissions/Industry/26. Chemical/Oil mills (within others),Business Permissions/Industry/26. Chemical,True
+4,I-V,Business Permissions/Industry/27. Textile/I-V,Business Permissions/Industry/27. Textile,True
+4,VI-VII,Business Permissions/Industry/28. Textile/VI-VII,Business Permissions/Industry/28. Textile,True
+4,VIII,Business Permissions/Industry/29. Textile/VIII,Business Permissions/Industry/29. Textile,True
+4,I-V,Business Permissions/Industry/30. Paper/I-V,Business Permissions/Industry/30. Paper,True
+4,VI-VII,Business Permissions/Industry/31. Paper/VI-VII,Business Permissions/Industry/31. Paper,True
+4,VIII,Business Permissions/Industry/32. Paper/VIII,Business Permissions/Industry/32. Paper,True
+4,I-V,Business Permissions/Industry/33. Leather/I-V,Business Permissions/Industry/33. Leather,True
+4,VI-VII,Business Permissions/Industry/34. Leather/VI-VII,Business Permissions/Industry/34. Leather,True
+4,VIII,Business Permissions/Industry/35. Leather/VIII,Business Permissions/Industry/35. Leather,True
+4,Tanning and white leather (within others),Business Permissions/Industry/36. Leather/Tanning and white leather (within others),Business Permissions/Industry/36. Leather,True
+4,Saddlery and harness making (within others),Business Permissions/Industry/37. Leather/Saddlery and harness making (within others),Business Permissions/Industry/37. Leather,True
+4,I-V,Business Permissions/Industry/38. Wood/I-V,Business Permissions/Industry/38. Wood,True
+4,VI-VII,Business Permissions/Industry/39. Wood/VI-VII,Business Permissions/Industry/39. Wood,True
+4,IV-V,Business Permissions/Industry/4. Plants of All Types/IV-V,Business Permissions/Industry/4. Plants of All Types,True
+4,VIII,Business Permissions/Industry/40. Wood/VIII,Business Permissions/Industry/40. Wood,True
+4,Sawmills (within others),Business Permissions/Industry/41. Wood/Sawmills (within others),Business Permissions/Industry/41. Wood,True
+4,Carpentry (within others),Business Permissions/Industry/42. Wood/Carpentry (within others),Business Permissions/Industry/42. Wood,True
+4,Wheelwrighting (within others),Business Permissions/Industry/43. Wood/Wheelwrighting (within others),Business Permissions/Industry/43. Wood,True
+4,I-V,Business Permissions/Industry/44. Food/I-V,Business Permissions/Industry/44. Food,True
+4,VI-VII,Business Permissions/Industry/45. Food/VI-VII,Business Permissions/Industry/45. Food,True
+4,VIII,Business Permissions/Industry/46. Food/VIII,Business Permissions/Industry/46. Food,True
+4,mills (within others),Business Permissions/Industry/47. Food/mills (within others),Business Permissions/Industry/47. Food,True
+4,Bakeries (within others),Business Permissions/Industry/48. Food/Bakeries (within others),Business Permissions/Industry/48. Food,True
+4,Dairies (within others),Business Permissions/Industry/49. Food/Dairies (within others),Business Permissions/Industry/49. Food,True
+4,Butchery and meat processing (within others),Business Permissions/Industry/50. Food/Butchery and meat processing (within others),Business Permissions/Industry/50. Food,True
+4,I-V,Business Permissions/Industry/51. Clothing/I-V,Business Permissions/Industry/51. Clothing,True
+4,VI-VII,Business Permissions/Industry/52. Clothing/VI-VII,Business Permissions/Industry/52. Clothing,True
+4,VIII,Business Permissions/Industry/53. Clothing/VIII,Business Permissions/Industry/53. Clothing,True
+4,Tailoring and clothing accessories (within others),Business Permissions/Industry/54. Clothing/Tailoring and clothing accessories (within others),Business Permissions/Industry/54. Clothing,True
+4,Shoemaking and boot making (within others),Business Permissions/Industry/55. Clothing/Shoemaking and boot making (within others),Business Permissions/Industry/55. Clothing,True
+4,furriery (within others),Business Permissions/Industry/56. Clothing/furriery (within others),Business Permissions/Industry/56. Clothing,True
+4,I-V,Business Permissions/Industry/57. Printing/I-V,Business Permissions/Industry/57. Printing,True
+4,VI-VII,Business Permissions/Industry/58. Printing/VI-VII,Business Permissions/Industry/58. Printing,True
+4,VIII,Business Permissions/Industry/59. Printing/VIII,Business Permissions/Industry/59. Printing,True
+4,VIII,Business Permissions/Industry/6. Plants of All Types/VIII,Business Permissions/Industry/6. Plants of All Types,True
+4,Printing houses (within others),Business Permissions/Industry/60. Printing/Printing houses (within others),Business Permissions/Industry/60. Printing,True
+4,I-V,Business Permissions/Industry/61. Construction/I-V,Business Permissions/Industry/61. Construction,True
+4,VI-VII,Business Permissions/Industry/62. Construction/VI-VII,Business Permissions/Industry/62. Construction,True
+4,VIII,Business Permissions/Industry/63. Construction/VIII,Business Permissions/Industry/63. Construction,True
+4,VII,Business Permissions/Industry/64. Processing of various materials/VII,Business Permissions/Industry/64. Processing of various materials,True
+4,VIII,Business Permissions/Industry/65. Processing of various materials/VIII,Business Permissions/Industry/65. Processing of various materials,True
+4,I-V,Business Permissions/Industry/66. Power plants/I-V,Business Permissions/Industry/66. Power plants,True
+4,VI-VII,Business Permissions/Industry/67. Power plants/VI-VII,Business Permissions/Industry/67. Power plants,True
+4,VIII,Business Permissions/Industry/68. Power plants/VIII,Business Permissions/Industry/68. Power plants,True
+4,VIII,Business Permissions/Industry/69. Services/VIII,Business Permissions/Industry/69. Services,True
+4,VIII,Business Permissions/Industry/70. Services/VIII,Business Permissions/Industry/70. Services,True
+4,Hairdressing (within others),Business Permissions/Industry/71. Services/Hairdressing (within others),Business Permissions/Industry/71. Services,True
+4,Transport (within others),Business Permissions/Industry/72. Services/Transport (within others),Business Permissions/Industry/72. Services,True
+4,VIII,Business Permissions/Industry/73. Horticulture and fisheries/VIII,Business Permissions/Industry/73. Horticulture and fisheries,True
+4,VIII,Business Permissions/Industry/74. Horticulture and fisheries/VIII,Business Permissions/Industry/74. Horticulture and fisheries,True
+4,VIII,Business Permissions/Industry/75. Other plants/VIII,Business Permissions/Industry/75. Other plants,True
+4,VIII,Business Permissions/Industry/9. Mining/VIII,Business Permissions/Industry/9. Mining,True
 4,Category IIIR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IIIR,Business Permissions/Trade/1. All types of professional purchasing (total),True
 4,Category IIR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IIR,Business Permissions/Trade/1. All types of professional purchasing (total),True
 4,Category IR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IR,Business Permissions/Trade/1. All types of professional purchasing (total),True
@@ -1024,7 +1099,6 @@
 4,Category VaR,Business Permissions/Trade/b. Professional purchasing (livestock)/Category VaR,Business Permissions/Trade/b. Professional purchasing (livestock),True
 4,Category VbR,Business Permissions/Trade/b. Professional purchasing (livestock)/Category VbR,Business Permissions/Trade/b. Professional purchasing (livestock),True
 4,Total,Business Permissions/Trade/b. Professional purchasing (livestock)/Total,Business Permissions/Trade/b. Professional purchasing (livestock),True
-4,B II. 3102. Goods sales (grain-for-flour or bread exchange),Business Permissions/Trade/bread exchange)/B II. 3102. Goods sales (grain-for-flour or bread exchange),Business Permissions/Trade/bread exchange),True
 4,Category IIIR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IIIR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
 4,Category IIR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IIR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
 4,Category IR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True

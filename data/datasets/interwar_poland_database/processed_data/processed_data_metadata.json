@@ -463,7 +463,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/% Orthodox",
-                    "pol": "Spis Powszechny 1921/Religia/% Prawosławne"
+                    "pol": "Spis Powszechny 1921/Wyznanie/% Prawosławne"
                 },
                 "data_type": "%",
                 "completeness": 0.9848484848484849,
@@ -477,7 +477,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/% Evangelical",
-                    "pol": "Spis Powszechny 1921/Religia/% Ewangelickie"
+                    "pol": "Spis Powszechny 1921/Wyznanie/% Ewangelickie"
                 },
                 "data_type": "%",
                 "completeness": 0.9848484848484849,
@@ -491,7 +491,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/Other Christian Denominations",
-                    "pol": "Spis Powszechny 1921/Religia/Pozostałe wyznania chrześcijańskie"
+                    "pol": "Spis Powszechny 1921/Wyznanie/Pozostałe wyznania chrześcijańskie"
                 },
                 "data_type": "int",
                 "completeness": 0.7992424242424242,
@@ -505,7 +505,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/Other or Unknown",
-                    "pol": "Spis Powszechny 1921/Religia/Inne lub niewiadome"
+                    "pol": "Spis Powszechny 1921/Wyznanie/Inne lub niewiadome"
                 },
                 "data_type": "int",
                 "completeness": 0.8143939393939394,
@@ -519,7 +519,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/Roman Catholic",
-                    "pol": "Spis Powszechny 1921/Religia/Rzymskokatolickie"
+                    "pol": "Spis Powszechny 1921/Wyznanie/Rzymskokatolickie"
                 },
                 "data_type": "int",
                 "completeness": 0.9848484848484849,
@@ -533,7 +533,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/% Mosaic (Jewish)",
-                    "pol": "Spis Powszechny 1921/Religia/% Mojżeszowe"
+                    "pol": "Spis Powszechny 1921/Wyznanie/% Mojżeszowe"
                 },
                 "data_type": "%",
                 "completeness": 0.9848484848484849,
@@ -547,7 +547,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/Evangelical",
-                    "pol": "Spis Powszechny 1921/Religia/Ewangelickie"
+                    "pol": "Spis Powszechny 1921/Wyznanie/Ewangelickie"
                 },
                 "data_type": "int",
                 "completeness": 0.9810606060606061,
@@ -561,7 +561,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/% Greek Catholic",
-                    "pol": "Spis Powszechny 1921/Religia/% Grecko-katolickie"
+                    "pol": "Spis Powszechny 1921/Wyznanie/% Grecko-katolickie"
                 },
                 "data_type": "%",
                 "completeness": 0.9848484848484849,
@@ -575,7 +575,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/Orthodox",
-                    "pol": "Spis Powszechny 1921/Religia/Prawosławne"
+                    "pol": "Spis Powszechny 1921/Wyznanie/Prawosławne"
                 },
                 "data_type": "int",
                 "completeness": 0.9772727272727273,
@@ -589,7 +589,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/Greek Catholic",
-                    "pol": "Spis Powszechny 1921/Religia/Grecko-katolickie"
+                    "pol": "Spis Powszechny 1921/Wyznanie/Grecko-katolickie"
                 },
                 "data_type": "int",
                 "completeness": 0.9393939393939394,
@@ -603,7 +603,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/% Other Christian",
-                    "pol": "Spis Powszechny 1921/Religia/% Pozostałe wyznania chrześcijańskie"
+                    "pol": "Spis Powszechny 1921/Wyznanie/% Pozostałe wyznania chrześcijańskie"
                 },
                 "data_type": "%",
                 "completeness": 0.9848484848484849,
@@ -617,7 +617,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/% Roman Catholic",
-                    "pol": "Spis Powszechny 1921/Religia/% Rzymskokatolickie"
+                    "pol": "Spis Powszechny 1921/Wyznanie/% Rzymskokatolickie"
                 },
                 "data_type": "%",
                 "completeness": 0.9848484848484849,
@@ -631,7 +631,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/% Other",
-                    "pol": "Spis Powszechny 1921/Religia/% Inne"
+                    "pol": "Spis Powszechny 1921/Wyznanie/% Inne"
                 },
                 "data_type": "%",
                 "completeness": 0.9848484848484849,
@@ -645,7 +645,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Religion/Mosaic (Jewish)",
-                    "pol": "Spis Powszechny 1921/Religia/Mojżeszowe"
+                    "pol": "Spis Powszechny 1921/Wyznanie/Mojżeszowe"
                 },
                 "data_type": "int",
                 "completeness": 0.9848484848484849,
@@ -876,7 +876,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Crops/Area/Sugar Beets",
-                    "pol": "Uprawy rolne/Powierzchnia/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Powierzchnia/Buraki cukrowe"
                 },
                 "data_type": "int",
                 "completeness": 0.18115942028985507,
@@ -2464,8 +2464,8 @@
             "Buraki Cukrowe - przeciętny zbiór (q z ha)": {
                 "unit": "quintal/ha",
                 "category": {
-                    "eng": "Crops/Yields (q per ha)/Buraki Cukrowe",
-                    "pol": "Uprawy rolne/Plony (q na ha)/Buraki Cukrowe"
+                    "eng": "Crops/Yields (q per ha)/Buraki cukrowe",
+                    "pol": "Uprawy rolne/Plony (q na ha)/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6413043478260869,
@@ -3557,7 +3557,7 @@
                 "unit": "ha",
                 "category": {
                     "eng": "Crops/Area/Sugar Beets",
-                    "pol": "Uprawy rolne/Powierzchnia/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Powierzchnia/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.9288256227758007,
@@ -3886,7 +3886,7 @@
                 "unit": "quintal",
                 "category": {
                     "eng": "Crops/Size/Sugar Beets",
-                    "pol": "Uprawy rolne/Zbiory/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Zbiory/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.9288256227758007,
@@ -4362,7 +4362,7 @@
                 "unit": "quintal",
                 "category": {
                     "eng": "Crops/Size/Sugar Beets",
-                    "pol": "Uprawy rolne/Zbiory/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Zbiory/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.925531914893617,
@@ -4439,7 +4439,7 @@
                 "unit": "ha",
                 "category": {
                     "eng": "Forests/Area",
-                    "pol": "Forests/Powierzchnia"
+                    "pol": "Lasy/Powierzchnia"
                 },
                 "data_type": "float",
                 "completeness": 0.9893617021276596,
@@ -4782,7 +4782,7 @@
                 "unit": "quintal",
                 "category": {
                     "eng": "Crops/Size/Sugar Beets",
-                    "pol": "Uprawy rolne/Zbiory/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Zbiory/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.9222614840989399,
@@ -5048,7 +5048,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/03. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5062,7 +5062,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/5. Catering establishments with and without alcohol/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/05. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5076,7 +5076,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/b. Professional purchasing (livestock)/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5090,7 +5090,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/04. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5132,7 +5132,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/09. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5216,7 +5216,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/1. All types of professional purchasing (total)/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5314,7 +5314,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01a. Skup zawodowy (produkty rolne)/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5398,7 +5398,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/8. Textiles/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/08. Manufaktura/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5426,7 +5426,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5482,7 +5482,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/7. Tobacco monopoly products/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/07. Wyroby monopolu tytoniowego/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5524,7 +5524,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/06. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5538,7 +5538,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category IR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/02. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IR"
                 },
                 "data_type": "int",
                 "completeness": 0.9823321554770318,
@@ -5671,7 +5671,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/03. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -5685,7 +5685,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/5. Catering establishments with and without alcohol/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/05. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -5699,7 +5699,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/b. Professional purchasing (livestock)/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -5713,7 +5713,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/04. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -5755,7 +5755,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/09. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9858657243816255,
@@ -5839,7 +5839,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/1. All types of professional purchasing (total)/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -5937,7 +5937,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01a. Skup zawodowy (produkty rolne)/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6021,7 +6021,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/8. Textiles/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/08. Manufaktura/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6049,7 +6049,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6105,7 +6105,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/7. Tobacco monopoly products/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/07. Wyroby monopolu tytoniowego/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6147,7 +6147,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/06. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6161,7 +6161,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category IIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/02. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6294,7 +6294,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/03. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6308,7 +6308,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/5. Catering establishments with and without alcohol/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/05. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6322,7 +6322,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/b. Professional purchasing (livestock)/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6336,7 +6336,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/04. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6378,7 +6378,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/09. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6462,7 +6462,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/1. All types of professional purchasing (total)/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6560,7 +6560,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01a. Skup zawodowy (produkty rolne)/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6644,7 +6644,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/8. Textiles/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/08. Manufaktura/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6672,7 +6672,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6728,7 +6728,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/7. Tobacco monopoly products/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/07. Wyroby monopolu tytoniowego/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6770,7 +6770,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/06. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6784,7 +6784,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category IIIR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IIIR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/02. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IIIR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6917,7 +6917,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/03. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6931,7 +6931,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/5. Catering establishments with and without alcohol/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/05. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6945,7 +6945,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/b. Professional purchasing (livestock)/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -6959,7 +6959,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/04. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7001,7 +7001,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/09. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7085,7 +7085,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/1. All types of professional purchasing (total)/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7183,7 +7183,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01a. Skup zawodowy (produkty rolne)/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7267,7 +7267,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/8. Textiles/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/08. Manufaktura/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7295,7 +7295,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7351,7 +7351,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/7. Tobacco monopoly products/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/07. Wyroby monopolu tytoniowego/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7393,7 +7393,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/06. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7407,7 +7407,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category IVR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IVR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/02. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria IVR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7540,7 +7540,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/03. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7554,7 +7554,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/5. Catering establishments with and without alcohol/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/05. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7568,7 +7568,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/b. Professional purchasing (livestock)/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7582,7 +7582,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/04. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7624,7 +7624,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/09. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7708,7 +7708,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/1. All types of professional purchasing (total)/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7806,7 +7806,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01a. Skup zawodowy (produkty rolne)/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7890,7 +7890,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/8. Textiles/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/08. Manufaktura/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7918,7 +7918,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -7974,7 +7974,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/7. Tobacco monopoly products/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/07. Wyroby monopolu tytoniowego/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8016,7 +8016,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/06. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8030,7 +8030,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category VaR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria VaR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/02. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria VaR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8163,7 +8163,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/03. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8177,7 +8177,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/5. Catering establishments with and without alcohol/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/05. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8191,7 +8191,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/b. Professional purchasing (livestock)/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01b. Skup zawodowy (zwierzęta gospodarcze)/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8205,7 +8205,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/04. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8247,7 +8247,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/09. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8331,7 +8331,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/1. All types of professional purchasing (total)/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01. Skup zawodowy wszelkiego rodzaju (ogółem)/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8429,7 +8429,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01a. Skup zawodowy (produkty rolne)/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8513,7 +8513,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/8. Textiles/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/08. Manufaktura/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8541,7 +8541,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8597,7 +8597,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/7. Tobacco monopoly products/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/07. Wyroby monopolu tytoniowego/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8639,7 +8639,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/06. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8653,7 +8653,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category VbR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria VbR"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/02. Artykuły spożywcze i kolonjalne (wyłącznie)/Kategoria VbR"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8786,7 +8786,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/03. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8800,7 +8800,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/5. Catering establishments with and without alcohol/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/05. Zakłady gastronomiczne z wyszynkiem i bez wyszynku/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8814,7 +8814,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/b. Professional purchasing (livestock)/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/b. Skup zawodowy (zwierzęta gospodarcze)/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01b. Skup zawodowy (zwierzęta gospodarcze)/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8828,7 +8828,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/04. Mięso, tłuszcze i przetwory mięsne (wyłącznie)/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8870,7 +8870,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/09. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -8954,7 +8954,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/1. All types of professional purchasing (total)/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/1. Skup zawodowy wszelkiego rodzaju (ogółem)/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01. Skup zawodowy wszelkiego rodzaju (ogółem)/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -9052,7 +9052,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/a. Professional purchasing (agricultural products)/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/a. Skup zawodowy (produkty rolne)/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01a. Skup zawodowy (produkty rolne)/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -9136,7 +9136,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/8. Textiles/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/8. Manufaktura/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/08. Manufaktura/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -9164,7 +9164,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/01c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -9220,7 +9220,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/7. Tobacco monopoly products/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/7. Wyroby monopolu tytoniowego/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/07. Wyroby monopolu tytoniowego/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -9262,7 +9262,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/06. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -9276,7 +9276,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Trade/2. Food and colonial goods (exclusively)/Total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/2. Artykuły spożywcze i kolonjalne (wyłącznie)/Razem"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/02. Artykuły spożywcze i kolonjalne (wyłącznie)/Razem"
                 },
                 "data_type": "int",
                 "completeness": 0.9893992932862191,
@@ -9542,7 +9542,7 @@
                 "unit": "ha",
                 "category": {
                     "eng": "Crops/Area/Sugar Beets",
-                    "pol": "Uprawy rolne/Powierzchnia/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Powierzchnia/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6477272727272727,
@@ -9815,7 +9815,7 @@
                 "unit": "quintal",
                 "category": {
                     "eng": "Crops/Size/Sugar Beets",
-                    "pol": "Uprawy rolne/Zbiory/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Zbiory/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6477272727272727,
@@ -10487,7 +10487,7 @@
                 "unit": "ha",
                 "category": {
                     "eng": "Crops/Area/Sugar Beets",
-                    "pol": "Uprawy rolne/Powierzchnia/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Powierzchnia/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6136363636363636,
@@ -10620,7 +10620,7 @@
                 "unit": "quintal",
                 "category": {
                     "eng": "Crops/Size/Sugar Beets",
-                    "pol": "Uprawy rolne/Zbiory/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Zbiory/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6136363636363636,
@@ -11005,7 +11005,7 @@
                 "unit": "quintal",
                 "category": {
                     "eng": "Crops/Size/Sugar Beets",
-                    "pol": "Uprawy rolne/Zbiory/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Zbiory/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6628787878787878,
@@ -11095,8 +11095,8 @@
             "64. Processing of various materials: VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/64. Processing of various materials: VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/64. Processing of various materials: VII"
+                    "eng": "Business Permissions/Industry/64. Processing of various materials/VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/64. Przerób różnych materiałów/VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11109,8 +11109,8 @@
             "31. Paper: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/31. Paper: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/31. Paper: VI-VII"
+                    "eng": "Business Permissions/Industry/31. Paper/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/31. Papierniczy/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11123,8 +11123,8 @@
             "33. Leather: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/33. Leather: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/33. Leather: I-V"
+                    "eng": "Business Permissions/Industry/33. Leather/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/33. Skórzany/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11137,8 +11137,8 @@
             "21. Metal and electrotechnical: tinsmithing (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/21. Metal and electrotechnical: tinsmithing (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/21. Metal and electrotechnical: tinsmithing (within others)"
+                    "eng": "Business Permissions/Industry/21. Metal and electrotechnical/tinsmithing (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/21. Metalowy i elektrotechniczny/blacharstwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11151,8 +11151,8 @@
             "27. Textile: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/27. Textile: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/27. Textile: I-V"
+                    "eng": "Business Permissions/Industry/27. Textile/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/27. Włókienniczy/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11165,8 +11165,8 @@
             "12. Mineral: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/12. Mineral: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/12. Mineral: VIII"
+                    "eng": "Business Permissions/Industry/12. Mineral/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/12. Mineralny/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11179,8 +11179,8 @@
             "66. Power plants: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/66. Power plants: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/66. Power plants: I-V"
+                    "eng": "Business Permissions/Industry/66. Power plants/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/66. Elektrownie/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11193,8 +11193,8 @@
             "56. Clothing: furriery (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/56. Clothing: furriery (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/56. Clothing: furriery (within others)"
+                    "eng": "Business Permissions/Industry/56. Clothing/furriery (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/56. Odzieżowy/kuśnierstwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11207,8 +11207,8 @@
             "73. Horticulture and fisheries: V-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/73. Horticulture and fisheries: V-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/73. Horticulture and fisheries: V-VII"
+                    "eng": "Business Permissions/Industry/73. Horticulture and fisheries/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/73. Ogrodnictwo i rybołówstwo/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11221,8 +11221,8 @@
             "47. Food: mills (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/47. Food: mills (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/47. Food: mills (within others)"
+                    "eng": "Business Permissions/Industry/47. Food/mills (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/47. Spożywczy/młyny (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11235,8 +11235,8 @@
             "13. Mineral: brickyards (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/13. Mineral: brickyards (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/13. Mineral: brickyards (within others)"
+                    "eng": "Business Permissions/Industry/13. Mineral/brickyards (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/13. Mineralny/cegielnie (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11249,8 +11249,8 @@
             "25. Chemical: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/25. Chemical: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/25. Chemical: VIII"
+                    "eng": "Business Permissions/Industry/25. Chemical/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/25. Chemiczny/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11263,8 +11263,8 @@
             "2. Plants: total": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/2. Plants: total",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/2. Plants: total"
+                    "eng": "Business Permissions/Industry/02. Plants of All Types/Total",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/02. Zakłady ogółem/Total"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11277,8 +11277,8 @@
             "4. Plants: IV-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/4. Plants: IV-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/4. Plants: IV-V"
+                    "eng": "Business Permissions/Industry/4. Plants of All Types/IV-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/4. Zakłady/IV-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11291,8 +11291,8 @@
             "18. Metal and electrotechnical: metal production (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/18. Metal and electrotechnical: metal production (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/18. Metal and electrotechnical: metal production (within others)"
+                    "eng": "Business Permissions/Industry/18. Metal and electrotechnical/metal production (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/18. Metalowy i elektrotechniczny/wytw. metalowe (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11305,8 +11305,8 @@
             "15. Metal and electrotechnical: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/15. Metal and electrotechnical: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/15. Metal and electrotechnical: I-V"
+                    "eng": "Business Permissions/Industry/15. Metal and electrotechnical/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/15. Metalowy i elektrotechniczny/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11319,8 +11319,8 @@
             "74. Horticulture and fisheries: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/74. Horticulture and fisheries: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/74. Horticulture and fisheries: VIII"
+                    "eng": "Business Permissions/Industry/74. Horticulture and fisheries/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/74. Ogrodnictwo i rybołówstwo/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11333,8 +11333,8 @@
             "59. Printing: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/59. Printing: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/59. Printing: VIII"
+                    "eng": "Business Permissions/Industry/59. Printing/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/59. Poligraficzny/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11347,8 +11347,8 @@
             "75. Other plants: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/75. Other plants: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/75. Other plants: VIII"
+                    "eng": "Business Permissions/Industry/75. Other plants/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/75. Inne zakłady/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11361,8 +11361,8 @@
             "67. Power plants: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/67. Power plants: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/67. Power plants: VI-VII"
+                    "eng": "Business Permissions/Industry/67. Power plants/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/67. Elektrownie/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11375,8 +11375,8 @@
             "41. Wood: sawmills (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/41. Wood: sawmills (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/41. Wood: sawmills (within others)"
+                    "eng": "Business Permissions/Industry/41. Wood/Sawmills (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/41. Drzewny/Tartaki (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11389,8 +11389,8 @@
             "17. Metal and electrotechnical: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/17. Metal and electrotechnical: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/17. Metal and electrotechnical: VIII"
+                    "eng": "Business Permissions/Industry/17. Metal and electrotechnical/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/17. Metalowy i elektrotechniczny/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11403,8 +11403,8 @@
             "29. Textile: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/29. Textile: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/29. Textile: VIII"
+                    "eng": "Business Permissions/Industry/29. Textile/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/29. Włókienniczy/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11417,8 +11417,8 @@
             "28. Textile: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/28. Textile: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/28. Textile: VI-VII"
+                    "eng": "Business Permissions/Industry/28. Textile/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/28. Włókienniczy/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11431,8 +11431,8 @@
             "55. Clothing: shoemaking and boot making (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/55. Clothing: shoemaking and boot making (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/55. Clothing: shoemaking and boot making (within others)"
+                    "eng": "Business Permissions/Industry/55. Clothing/Shoemaking and boot making (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/55. Odzieżowy/Szewstwo i kamasznictwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11445,8 +11445,8 @@
             "36. Leather: tanning and white leather (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/36. Leather: tanning and white leather (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/36. Leather: tanning and white leather (within others)"
+                    "eng": "Business Permissions/Industry/36. Leather/Tanning and white leather (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/36. Skórzany/Garbarstwo i białoskórnictwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11459,8 +11459,8 @@
             "49. Food: dairies (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/49. Food: dairies (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/49. Food: dairies (within others)"
+                    "eng": "Business Permissions/Industry/49. Food/Dairies (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/49. Spożywczy/Mleczarnie (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11473,8 +11473,8 @@
             "63. Construction: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/63. Construction: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/63. Construction: VIII"
+                    "eng": "Business Permissions/Industry/63. Construction/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/63. Budowlany/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11487,8 +11487,8 @@
             "26. Chemical: oil mills (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/26. Chemical: oil mills (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/26. Chemical: oil mills (within others)"
+                    "eng": "Business Permissions/Industry/26. Chemical/Oil mills (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/26. Chemiczny/Olejarnie (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11501,8 +11501,8 @@
             "11. Mineral: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/11. Mineral: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/11. Mineral: VI-VII"
+                    "eng": "Business Permissions/Industry/11. Mineral/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/11. Mineralny/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11515,8 +11515,8 @@
             "1. Number of workers in plants I-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/1. Number of workers in plants I-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/1. Number of workers in plants I-VII"
+                    "eng": "Business Permissions/Industry/01. Number of workers in plants I-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/01. Liczba robotników w zakładach I-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11529,8 +11529,8 @@
             "53. Clothing: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/53. Clothing: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/53. Clothing: VIII"
+                    "eng": "Business Permissions/Industry/53. Clothing/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/53. Odzieżowy/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11543,8 +11543,8 @@
             "57. Printing: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/57. Printing: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/57. Printing: I-V"
+                    "eng": "Business Permissions/Industry/57. Printing/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/57. Poligraficzny/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11557,8 +11557,8 @@
             "65. Processing of various materials: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/65. Processing of various materials: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/65. Processing of various materials: VIII"
+                    "eng": "Business Permissions/Industry/65. Processing of various materials/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/65. Przerób różnych materiałów/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11571,8 +11571,8 @@
             "20. Metal and electrotechnical: locksmithing, repairs (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/20. Metal and electrotechnical: locksmithing, repairs (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/20. Metal and electrotechnical: locksmithing, repairs (within others)"
+                    "eng": "Business Permissions/Industry/20. Metal and electrotechnical/Locksmithing, repairs (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/20. Metalowy i elektrotechniczny/Ślusarstwo, reparacje (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11585,8 +11585,8 @@
             "7. Mining: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/7. Mining: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/7. Mining: I-V"
+                    "eng": "Business Permissions/Industry/07. Mining/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/07. Kopalnictwo/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11599,8 +11599,8 @@
             "58. Printing: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/58. Printing: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/58. Printing: VI-VII"
+                    "eng": "Business Permissions/Industry/58. Printing/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/58. Poligraficzny/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11613,8 +11613,8 @@
             "50. Food: butchery and meat processing (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/50. Food: butchery and meat processing (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/50. Food: butchery and meat processing (within others)"
+                    "eng": "Business Permissions/Industry/50. Food/Butchery and meat processing (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/50. Spożywczy/Rzeźnictwo i wędlina (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11627,8 +11627,8 @@
             "72. Services: transport (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/72. Services: transport (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/72. Services: transport (within others)"
+                    "eng": "Business Permissions/Industry/72. Services/Transport (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/72. Świadczenia/Przewóz (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11641,8 +11641,8 @@
             "8. Mining: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/8. Mining: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/8. Mining: VI-VII"
+                    "eng": "Business Permissions/Industry/08. Mining/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/08. Kopalnictwo/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11655,8 +11655,8 @@
             "10. Mineral: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/10. Mineral: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/10. Mineral: I-V"
+                    "eng": "Business Permissions/Industry/10. Mineral/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/10. Mineralny/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11669,8 +11669,8 @@
             "16. Metal and electrotechnical: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/16. Metal and electrotechnical: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/16. Metal and electrotechnical: VI-VII"
+                    "eng": "Business Permissions/Industry/16. Metal and electrotechnical/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/16. Metalowy i elektrotechniczny/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11683,8 +11683,8 @@
             "48. Food: bakeries (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/48. Food: bakeries (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/48. Food: bakeries (within others)"
+                    "eng": "Business Permissions/Industry/48. Food/Bakeries (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/48. Spożywczy/Piekarnie (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11697,8 +11697,8 @@
             "45. Food: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/45. Food: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/45. Food: VI-VII"
+                    "eng": "Business Permissions/Industry/45. Food/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/45. Spożywczy/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11711,8 +11711,8 @@
             "22. Metal and electrotechnical: watchmaking and jewelry (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/22. Metal and electrotechnical: watchmaking and jewelry (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/22. Metal and electrotechnical: watchmaking and jewelry (within others)"
+                    "eng": "Business Permissions/Industry/22. Metal and electrotechnical/Watchmaking and jewelry (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/22. Metalowy i elektrotechniczny/Zegarmistrzostwo i jubil. (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11725,8 +11725,8 @@
             "30. Paper: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/30. Paper: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/30. Paper: I-V"
+                    "eng": "Business Permissions/Industry/30. Paper/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/30. Papierniczy/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11739,8 +11739,8 @@
             "42. Wood: carpentry (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/42. Wood: carpentry (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/42. Wood: carpentry (within others)"
+                    "eng": "Business Permissions/Industry/42. Wood/Carpentry (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/42. Drzewny/Stolarstwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11753,8 +11753,8 @@
             "71. Services: hairdressing (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/71. Services: hairdressing (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/71. Services: hairdressing (within others)"
+                    "eng": "Business Permissions/Industry/71. Services/Hairdressing (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/71. Świadczenia/Fryzjerstwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11767,8 +11767,8 @@
             "35. Leather: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/35. Leather: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/35. Leather: VIII"
+                    "eng": "Business Permissions/Industry/35. Leather/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/35. Skórzany/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11781,8 +11781,8 @@
             "54. Clothing: tailoring and clothing accessories (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/54. Clothing: tailoring and clothing accessories (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/54. Clothing: tailoring and clothing accessories (within others)"
+                    "eng": "Business Permissions/Industry/54. Clothing/Tailoring and clothing accessories (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/54. Odzieżowy/Krawiectwo i dodatki odzieżowe (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11795,8 +11795,8 @@
             "32. Paper: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/32. Paper: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/32. Paper: VIII"
+                    "eng": "Business Permissions/Industry/32. Paper/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/32. Papierniczy/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11809,8 +11809,8 @@
             "52. Clothing: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/52. Clothing: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/52. Clothing: VI-VII"
+                    "eng": "Business Permissions/Industry/52. Clothing/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/52. Odzieżowy/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11823,8 +11823,8 @@
             "61. Construction: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/61. Construction: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/61. Construction: I-V"
+                    "eng": "Business Permissions/Industry/61. Construction/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/61. Budowlany/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11837,8 +11837,8 @@
             "19. Metal and electrotechnical: blacksmithing (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/19. Metal and electrotechnical: blacksmithing (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/19. Metal and electrotechnical: blacksmithing (within others)"
+                    "eng": "Business Permissions/Industry/19. Metal and electrotechnical/Backsmithing (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/19. Metalowy i elektrotechniczny/Kowalstwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11851,8 +11851,8 @@
             "38. Wood: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/38. Wood: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/38. Wood: I-V"
+                    "eng": "Business Permissions/Industry/38. Wood/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/38. Drzewny/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11865,8 +11865,8 @@
             "23. Chemical: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/23. Chemical: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/23. Chemical: I-V"
+                    "eng": "Business Permissions/Industry/23. Chemical/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/23. Chemiczny/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11879,8 +11879,8 @@
             "43. Wood: wheelwrighting (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/43. Wood: wheelwrighting (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/43. Wood: wheelwrighting (within others)"
+                    "eng": "Business Permissions/Industry/43. Wood/Wheelwrighting (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/43. Drzewny/Kołodziejstwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11893,8 +11893,8 @@
             "60. Printing: printing houses (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/60. Printing: printing houses (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/60. Printing: printing houses (within others)"
+                    "eng": "Business Permissions/Industry/60. Printing/Printing houses (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/60. Poligraficzny/Drukarnie (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11907,8 +11907,8 @@
             "14. Mineral: concrete plants (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/14. Mineral: concrete plants (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/14. Mineral: concrete plants (within others)"
+                    "eng": "Business Permissions/Industry/14. Mineral/Concrete plants (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/14. Mineralny/Betoniarnie (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11921,8 +11921,8 @@
             "51. Clothing: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/51. Clothing: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/51. Clothing: I-V"
+                    "eng": "Business Permissions/Industry/51. Clothing/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/51. Odzieżowy/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11935,8 +11935,8 @@
             "5. Plants: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/5. Plants: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/5. Plants: VI-VII"
+                    "eng": "Business Permissions/Industry/05. Plants of All Types/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/05. Zakłady ogółem/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11949,8 +11949,8 @@
             "40. Wood: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/40. Wood: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/40. Wood: VIII"
+                    "eng": "Business Permissions/Industry/40. Wood/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/40. Drzewny/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11963,8 +11963,8 @@
             "37. Leather: saddlery and harness making (within others)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/37. Leather: saddlery and harness making (within others)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/37. Leather: saddlery and harness making (within others)"
+                    "eng": "Business Permissions/Industry/37. Leather/Saddlery and harness making (within others)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/37. Skórzany/Rymarstwo i siodlarstwo (w obrębie pozostałych)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11977,8 +11977,8 @@
             "68. Power plants: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/68. Power plants: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/68. Power plants: VIII"
+                    "eng": "Business Permissions/Industry/68. Power plants/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/68. Elektrownie/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11991,8 +11991,8 @@
             "9. Mining: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/9. Mining: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/9. Mining: VIII"
+                    "eng": "Business Permissions/Industry/9. Mining/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/9. Kopalnictwo/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12005,8 +12005,8 @@
             "6. Plants: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/6. Plants: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/6. Plants: VIII"
+                    "eng": "Business Permissions/Industry/6. Plants of All Types/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/6. Zakłady ogółem/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12019,8 +12019,8 @@
             "34. Leather: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/34. Leather: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/34. Leather: VI-VII"
+                    "eng": "Business Permissions/Industry/34. Leather/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/34. Skórzany/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12033,8 +12033,8 @@
             "39. Wood: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/39. Wood: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/39. Wood: VI-VII"
+                    "eng": "Business Permissions/Industry/39. Wood/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/39. Drzewny/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12047,8 +12047,8 @@
             "44. Food: I-V": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/44. Food: I-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/44. Food: I-V"
+                    "eng": "Business Permissions/Industry/44. Food/I-V",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/44. Spożywczy/I-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12061,8 +12061,8 @@
             "70. Services: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/70. Services: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/70. Services: VIII"
+                    "eng": "Business Permissions/Industry/70. Services/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/70. Świadczenia/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12075,8 +12075,8 @@
             "62. Construction: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/62. Construction: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/62. Construction: VI-VII"
+                    "eng": "Business Permissions/Industry/62. Construction/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/62. Budowlany/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12089,8 +12089,8 @@
             "24. Chemical: VI-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/24. Chemical: VI-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/24. Chemical: VI-VII"
+                    "eng": "Business Permissions/Industry/24. Chemical/VI-VII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/24. Chemiczny/VI-VII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12103,8 +12103,8 @@
             "46. Food: VIII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/46. Food: VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/46. Food: VIII"
+                    "eng": "Business Permissions/Industry/46. Food/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/46. Spożywczy/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12117,8 +12117,8 @@
             "69. Services: V-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/69. Services: V-VII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/69. Services: V-VII"
+                    "eng": "Business Permissions/Industry/69. Services/VIII",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/69. Świadczenia/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12131,8 +12131,8 @@
             "3. Plants: I-III": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/3. Plants: I-III",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/3. Plants: I-III"
+                    "eng": "Business Permissions/Industry/03. Plants of All Types/I-III",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/03. Zakłady ogółem/I-III"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -12838,8 +12838,8 @@
             "B II. 3102. Goods sales (grain-for-flour/bread exchange) ": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Trade/bread exchange)/B II. 3102. Goods sales (grain-for-flour or bread exchange)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/bread exchange)/B II. 3102. Sprzedaż towarów (wymiana zboża na mąkę, chleb)"
+                    "eng": "Business Permissions/Trade/B II. 3102. Goods sales (grain-for-flour or bread exchange)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/B II. 3102. Sprzedaż towarów (wymiana zboża na mąkę, chleb)"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -13517,8 +13517,8 @@
             "B II. 3102. Goods sales (grain-for-flour/bread exchange)": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Trade/bread exchange)/B II. 3102. Goods sales (grain-for-flour or bread exchange)",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/bread exchange)/B II. 3102. Sprzedaż towarów (wymiana zboża na mąkę, chleb)"
+                    "eng": "Business Permissions/Trade/B II. 3102. Goods sales (grain-for-flour or bread exchange)",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Handel/B II. 3102. Sprzedaż towarów (wymiana zboża na mąkę, chleb)"
                 },
                 "data_type": "int",
                 "completeness": 0.9734848484848485,
@@ -15149,7 +15149,7 @@
                 "unit": "ha",
                 "category": {
                     "eng": "Crops/Area/Sugar Beets",
-                    "pol": "Uprawy rolne/Powierzchnia/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Powierzchnia/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6439393939393939,
@@ -15324,7 +15324,7 @@
                 "unit": "quintal",
                 "category": {
                     "eng": "Crops/Size/Sugar Beets",
-                    "pol": "Uprawy rolne/Zbiory/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Zbiory/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": null,
@@ -15695,7 +15695,7 @@
                 "unit": "ha",
                 "category": {
                     "eng": "Crops/Area/Sugar Beets",
-                    "pol": "Uprawy rolne/Powierzchnia/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Powierzchnia/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6439393939393939,
@@ -15870,7 +15870,7 @@
                 "unit": "quintal",
                 "category": {
                     "eng": "Crops/Size/Sugar Beets",
-                    "pol": "Uprawy rolne/Zbiory/Buraki Cukrowe"
+                    "pol": "Uprawy rolne/Zbiory/Buraki cukrowe"
                 },
                 "data_type": "float",
                 "completeness": 0.6439393939393939,
@@ -15961,7 +15961,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Employment/Mining and Industry - Total",
-                    "pol": "Zatrudnienie/Mining and Industry - Total"
+                    "pol": "Zatrudnienie/Górnictwo i przemysł - ogółem"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -15975,7 +15975,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Employment/Mining",
-                    "pol": "Zatrudnienie/Mining"
+                    "pol": "Zatrudnienie/Górnictwo"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -15988,8 +15988,8 @@
             "Mineral": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Mineral",
-                    "pol": "Zatrudnienie/Mineral"
+                    "eng": "Employment/Industry/Mineral",
+                    "pol": "Zatrudnienie/Przemysł/Mineralny"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16002,8 +16002,8 @@
             "Metal and electrotechnical": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Metal and electrotechnical",
-                    "pol": "Zatrudnienie/Metal and electrotechnical"
+                    "eng": "Employment/Industry/Metal and electrotechnical",
+                    "pol": "Zatrudnienie/Przemysł/Metalowy i elektrotechniczny"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16016,8 +16016,8 @@
             "Chemical": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Chemical",
-                    "pol": "Zatrudnienie/Chemical"
+                    "eng": "Employment/Industry/Chemical",
+                    "pol": "Zatrudnienie/Przemysł/Chemiczny"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16030,8 +16030,8 @@
             "Textile": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Textile",
-                    "pol": "Zatrudnienie/Textile"
+                    "eng": "Employment/Industry/Textile",
+                    "pol": "Zatrudnienie/Przemysł/Włókienniczy"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16044,8 +16044,8 @@
             "Paper": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Paper",
-                    "pol": "Zatrudnienie/Paper"
+                    "eng": "Employment/Industry/Paper",
+                    "pol": "Zatrudnienie/Przemysł/Papierowy"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16058,8 +16058,8 @@
             "Leather": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Leather",
-                    "pol": "Zatrudnienie/Leather"
+                    "eng": "Employment/Industry/Leather",
+                    "pol": "Zatrudnienie/Przemysł/Skórzany"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16072,8 +16072,8 @@
             "Wood": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Wood",
-                    "pol": "Zatrudnienie/Wood"
+                    "eng": "Employment/Industry/Wood",
+                    "pol": "Zatrudnienie/Przemysł/Drzewny"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16086,8 +16086,8 @@
             "Food": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Food",
-                    "pol": "Zatrudnienie/Food"
+                    "eng": "Employment/Industry/Food",
+                    "pol": "Zatrudnienie/Przemysł/Spożywczy"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16100,8 +16100,8 @@
             "Clothing and Toymaking": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Clothing and Toymaking",
-                    "pol": "Zatrudnienie/Clothing and Toymaking"
+                    "eng": "Employment/Industry/Clothing and Toymaking",
+                    "pol": "Zatrudnienie/Przemysł/Odzieżowy i zabawkarski"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16114,8 +16114,8 @@
             "Printing": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Printing",
-                    "pol": "Zatrudnienie/Printing"
+                    "eng": "Employment/Industry/Printing",
+                    "pol": "Zatrudnienie/Przemysł/Poligraficzny"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16128,8 +16128,8 @@
             "Construction": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Construction",
-                    "pol": "Zatrudnienie/Construction"
+                    "eng": "Employment/Industry/Construction",
+                    "pol": "Zatrudnienie/Przemysł/Budowlany"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16142,8 +16142,8 @@
             "Power plants and waterworks": {
                 "unit": "",
                 "category": {
-                    "eng": "Employment/Power plants and waterworks",
-                    "pol": "Zatrudnienie/Power plants and waterworks"
+                    "eng": "Employment/Industry/Power plants and waterworks",
+                    "pol": "Zatrudnienie/Przemysł/Elektrownie i wodociągi"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16346,7 +16346,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Employment/Employment Share/Clothing and Toymaking/I-III",
-                    "pol": "Zatrudnienie/Udział w całkowitym zatrudnieniu/COdzieżowy i zabawkarski/I-III"
+                    "pol": "Zatrudnienie/Udział w całkowitym zatrudnieniu/Odzieżowy i zabawkarski/I-III"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -21463,7 +21463,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Census 1921/Population/Total (Data from 1931 Census Publications)",
-                    "pol": "Census 1921/Ludność/Ogółem (dane z publikacji o spisie 1931)"
+                    "pol": "Spis Powszechny 1921/Ludność/Ogółem (dane z publikacji o spisie 1931)"
                 },
                 "data_type": "int",
                 "completeness": 2.0,

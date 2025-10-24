@@ -22,81 +22,155 @@
 │   │           ├── PR
 │   │           └── R
 │   ├── Industry
-│   │   ├── 1. Number of workers in plants I-VII
-│   │   ├── 10. Mineral: I-V
-│   │   ├── 11. Mineral: VI-VII
-│   │   ├── 12. Mineral: VIII
-│   │   ├── 13. Mineral: brickyards (within others)
-│   │   ├── 14. Mineral: concrete plants (within others)
-│   │   ├── 15. Metal and electrotechnical: I-V
-│   │   ├── 16. Metal and electrotechnical: VI-VII
-│   │   ├── 17. Metal and electrotechnical: VIII
-│   │   ├── 18. Metal and electrotechnical: metal production (within others)
-│   │   ├── 19. Metal and electrotechnical: blacksmithing (within others)
-│   │   ├── 2. Plants: total
-│   │   ├── 20. Metal and electrotechnical: locksmithing, repairs (within others)
-│   │   ├── 21. Metal and electrotechnical: tinsmithing (within others)
-│   │   ├── 22. Metal and electrotechnical: watchmaking and jewelry (within others)
-│   │   ├── 23. Chemical: I-V
-│   │   ├── 24. Chemical: VI-VII
-│   │   ├── 25. Chemical: VIII
-│   │   ├── 26. Chemical: oil mills (within others)
-│   │   ├── 27. Textile: I-V
-│   │   ├── 28. Textile: VI-VII
-│   │   ├── 29. Textile: VIII
-│   │   ├── 3. Plants: I-III
-│   │   ├── 30. Paper: I-V
-│   │   ├── 31. Paper: VI-VII
-│   │   ├── 32. Paper: VIII
-│   │   ├── 33. Leather: I-V
-│   │   ├── 34. Leather: VI-VII
-│   │   ├── 35. Leather: VIII
-│   │   ├── 36. Leather: tanning and white leather (within others)
-│   │   ├── 37. Leather: saddlery and harness making (within others)
-│   │   ├── 38. Wood: I-V
-│   │   ├── 39. Wood: VI-VII
-│   │   ├── 4. Plants: IV-V
-│   │   ├── 40. Wood: VIII
-│   │   ├── 41. Wood: sawmills (within others)
-│   │   ├── 42. Wood: carpentry (within others)
-│   │   ├── 43. Wood: wheelwrighting (within others)
-│   │   ├── 44. Food: I-V
-│   │   ├── 45. Food: VI-VII
-│   │   ├── 46. Food: VIII
-│   │   ├── 47. Food: mills (within others)
-│   │   ├── 48. Food: bakeries (within others)
-│   │   ├── 49. Food: dairies (within others)
-│   │   ├── 5. Plants: VI-VII
-│   │   ├── 50. Food: butchery and meat processing (within others)
-│   │   ├── 51. Clothing: I-V
-│   │   ├── 52. Clothing: VI-VII
-│   │   ├── 53. Clothing: VIII
-│   │   ├── 54. Clothing: tailoring and clothing accessories (within others)
-│   │   ├── 55. Clothing: shoemaking and boot making (within others)
-│   │   ├── 56. Clothing: furriery (within others)
-│   │   ├── 57. Printing: I-V
-│   │   ├── 58. Printing: VI-VII
-│   │   ├── 59. Printing: VIII
-│   │   ├── 6. Plants: VIII
-│   │   ├── 60. Printing: printing houses (within others)
-│   │   ├── 61. Construction: I-V
-│   │   ├── 62. Construction: VI-VII
-│   │   ├── 63. Construction: VIII
-│   │   ├── 64. Processing of various materials: VII
-│   │   ├── 65. Processing of various materials: VIII
-│   │   ├── 66. Power plants: I-V
-│   │   ├── 67. Power plants: VI-VII
-│   │   ├── 68. Power plants: VIII
-│   │   ├── 69. Services: V-VII
-│   │   ├── 7. Mining: I-V
-│   │   ├── 70. Services: VIII
-│   │   ├── 71. Services: hairdressing (within others)
-│   │   ├── 72. Services: transport (within others)
-│   │   ├── 73. Horticulture and fisheries: V-VII
-│   │   ├── 74. Horticulture and fisheries: VIII
-│   │   ├── 75. Other plants: VIII
-│   │   ├── 8. Mining: VI-VII
-│   │   ├── 9. Mining: VIII
+│   │   ├── 01. Number of workers in plants I-VII
+│   │   ├── 02. Plants of All Types
+│   │   │   └── Total
+│   │   ├── 03. Plants of All Types
+│   │   │   └── I-III
+│   │   ├── 05. Plants of All Types
+│   │   │   └── VI-VII
+│   │   ├── 07. Mining
+│   │   │   └── I-V
+│   │   ├── 08. Mining
+│   │   │   └── VI-VII
+│   │   ├── 10. Mineral
+│   │   │   └── I-V
+│   │   ├── 11. Mineral
+│   │   │   └── VI-VII
+│   │   ├── 12. Mineral
+│   │   │   └── VIII
+│   │   ├── 13. Mineral
+│   │   │   └── brickyards (within others)
+│   │   ├── 14. Mineral
+│   │   │   └── Concrete plants (within others)
+│   │   ├── 15. Metal and electrotechnical
+│   │   │   └── I-V
+│   │   ├── 16. Metal and electrotechnical
+│   │   │   └── VI-VII
+│   │   ├── 17. Metal and electrotechnical
+│   │   │   └── VIII
+│   │   ├── 18. Metal and electrotechnical
+│   │   │   └── metal production (within others)
+│   │   ├── 19. Metal and electrotechnical
+│   │   │   └── Backsmithing (within others)
+│   │   ├── 20. Metal and electrotechnical
+│   │   │   └── Locksmithing, repairs (within others)
+│   │   ├── 21. Metal and electrotechnical
+│   │   │   └── tinsmithing (within others)
+│   │   ├── 22. Metal and electrotechnical
+│   │   │   └── Watchmaking and jewelry (within others)
+│   │   ├── 23. Chemical
+│   │   │   └── I-V
+│   │   ├── 24. Chemical
+│   │   │   └── VI-VII
+│   │   ├── 25. Chemical
+│   │   │   └── VIII
+│   │   ├── 26. Chemical
+│   │   │   └── Oil mills (within others)
+│   │   ├── 27. Textile
+│   │   │   └── I-V
+│   │   ├── 28. Textile
+│   │   │   └── VI-VII
+│   │   ├── 29. Textile
+│   │   │   └── VIII
+│   │   ├── 30. Paper
+│   │   │   └── I-V
+│   │   ├── 31. Paper
+│   │   │   └── VI-VII
+│   │   ├── 32. Paper
+│   │   │   └── VIII
+│   │   ├── 33. Leather
+│   │   │   └── I-V
+│   │   ├── 34. Leather
+│   │   │   └── VI-VII
+│   │   ├── 35. Leather
+│   │   │   └── VIII
+│   │   ├── 36. Leather
+│   │   │   └── Tanning and white leather (within others)
+│   │   ├── 37. Leather
+│   │   │   └── Saddlery and harness making (within others)
+│   │   ├── 38. Wood
+│   │   │   └── I-V
+│   │   ├── 39. Wood
+│   │   │   └── VI-VII
+│   │   ├── 4. Plants of All Types
+│   │   │   └── IV-V
+│   │   ├── 40. Wood
+│   │   │   └── VIII
+│   │   ├── 41. Wood
+│   │   │   └── Sawmills (within others)
+│   │   ├── 42. Wood
+│   │   │   └── Carpentry (within others)
+│   │   ├── 43. Wood
+│   │   │   └── Wheelwrighting (within others)
+│   │   ├── 44. Food
+│   │   │   └── I-V
+│   │   ├── 45. Food
+│   │   │   └── VI-VII
+│   │   ├── 46. Food
+│   │   │   └── VIII
+│   │   ├── 47. Food
+│   │   │   └── mills (within others)
+│   │   ├── 48. Food
+│   │   │   └── Bakeries (within others)
+│   │   ├── 49. Food
+│   │   │   └── Dairies (within others)
+│   │   ├── 50. Food
+│   │   │   └── Butchery and meat processing (within others)
+│   │   ├── 51. Clothing
+│   │   │   └── I-V
+│   │   ├── 52. Clothing
+│   │   │   └── VI-VII
+│   │   ├── 53. Clothing
+│   │   │   └── VIII
+│   │   ├── 54. Clothing
+│   │   │   └── Tailoring and clothing accessories (within others)
+│   │   ├── 55. Clothing
+│   │   │   └── Shoemaking and boot making (within others)
+│   │   ├── 56. Clothing
+│   │   │   └── furriery (within others)
+│   │   ├── 57. Printing
+│   │   │   └── I-V
+│   │   ├── 58. Printing
+│   │   │   └── VI-VII
+│   │   ├── 59. Printing
+│   │   │   └── VIII
+│   │   ├── 6. Plants of All Types
+│   │   │   └── VIII
+│   │   ├── 60. Printing
+│   │   │   └── Printing houses (within others)
+│   │   ├── 61. Construction
+│   │   │   └── I-V
+│   │   ├── 62. Construction
+│   │   │   └── VI-VII
+│   │   ├── 63. Construction
+│   │   │   └── VIII
+│   │   ├── 64. Processing of various materials
+│   │   │   └── VII
+│   │   ├── 65. Processing of various materials
+│   │   │   └── VIII
+│   │   ├── 66. Power plants
+│   │   │   └── I-V
+│   │   ├── 67. Power plants
+│   │   │   └── VI-VII
+│   │   ├── 68. Power plants
+│   │   │   └── VIII
+│   │   ├── 69. Services
+│   │   │   └── VIII
+│   │   ├── 70. Services
+│   │   │   └── VIII
+│   │   ├── 71. Services
+│   │   │   └── Hairdressing (within others)
+│   │   ├── 72. Services
+│   │   │   └── Transport (within others)
+│   │   ├── 73. Horticulture and fisheries
+│   │   │   └── VIII
+│   │   ├── 74. Horticulture and fisheries
+│   │   │   └── VIII
+│   │   ├── 75. Other plants
+│   │   │   └── VIII
+│   │   ├── 9. Mining
+│   │   │   └── VIII
 │   │   ├── Category IIIPR
 │   │   ├── Category IIIR
 │   │   ├── Category IIPR
@@ -462,6 +536,7 @@
 │       ├── B I. 3081-3085. Goods sales (live animals)
 │       ├── B II. 3101-3179. Goods sales (food products)
 │       ├── B II. 3101. Goods sales (flour, groats, rice)
+│       ├── B II. 3102. Goods sales (grain-for-flour or bread exchange)
 │       ├── B II. 3103. Goods sales (bread)
 │       ├── B II. 3119. Goods sales (dairy)
 │       ├── B II. 3121-3123. Goods sales (meat)
@@ -510,8 +585,6 @@
 │       │   ├── Category VaR
 │       │   ├── Category VbR
 │       │   └── Total
-│       ├── bread exchange)
-│       │   └── B II. 3102. Goods sales (grain-for-flour or bread exchange)
 │       ├── C 3501-3509. Gastronomic establishments, room rental (gastronomic establishments)
 │       ├── C 3501-3539. Gastronomic establishments, room rental
 │       ├── C 3511. Gastronomic establishments, room rental (guesthouses, shelters)
@@ -980,12 +1053,9 @@
 │   │   ├── Tabacco
 │   │   └── Wheat
 │   └── Yields (q per ha)
-│       └── Buraki Cukrowe
+│       └── Buraki cukrowe
 ├── District Area
 ├── Employment
-│   ├── Chemical
-│   ├── Clothing and Toymaking
-│   ├── Construction
 │   ├── Employment Share
 │   │   ├── Chemical
 │   │   │   ├── I-III
@@ -1048,19 +1118,23 @@
 │   │       ├── I-III
 │   │       ├── IV-V
 │   │       └── VI-VII
-│   ├── Food
-│   ├── Leather
-│   ├── Metal and electrotechnical
-│   ├── Mineral
+│   ├── Industry
+│   │   ├── Chemical
+│   │   ├── Clothing and Toymaking
+│   │   ├── Construction
+│   │   ├── Food
+│   │   ├── Leather
+│   │   ├── Metal and electrotechnical
+│   │   ├── Mineral
+│   │   ├── Paper
+│   │   ├── Power plants and waterworks
+│   │   ├── Printing
+│   │   ├── Textile
+│   │   └── Wood
 │   ├── Mining
 │   ├── Mining and Industry - Total
-│   ├── Paper
-│   ├── Power plants and waterworks
-│   ├── Printing
 │   ├── Public works
-│   ├── Textile
-│   ├── Total
-│   └── Wood
+│   └── Total
 ├── Forests
 │   └── Area
 ├── Livestock

@@ -1,6 +1,3 @@
-├── Census 1921
-│   └── Ludność
-│       └── Ogółem (dane z publikacji o spisie 1931)
 ├── Ceny
 │   └── Lokalne płacone producentom
 │       ├── Groch
@@ -26,8 +23,6 @@
 │       │   ├── Fabryczne
 │       │   └── Jadalne
 │       └── Żyto
-├── Forests
-│   └── Powierzchnia
 ├── Inwentarz żywy
 │   ├── Bydło rogate
 │   ├── Konie
@@ -35,13 +30,16 @@
 │   ├── Owce
 │   ├── Owce i kozy
 │   └── Trzoda chlewna
+├── Lasy
+│   └── Powierzchnia
 ├── Powierzchnia powiatów
 ├── Rocznik 1939
 │   └── Ludność
 │       └── Ogółem
 ├── Spis Powszechny 1921
 │   ├── Ludność
-│   │   └── Ogółem
+│   │   ├── Ogółem
+│   │   └── Ogółem (dane z publikacji o spisie 1931)
 │   ├── Narodowość
 │   │   ├── % Białorusińska
 │   │   ├── % Inna i niewiadoma: ogółem
@@ -59,7 +57,7 @@
 │   │   ├── Rusińska
 │   │   ├── Tutejsza
 │   │   └── Żydowska
-│   ├── Religia
+│   ├── Wyznanie
 │   │   ├── % Ewangelickie
 │   │   ├── % Grecko-katolickie
 │   │   ├── % Inne
@@ -413,9 +411,9 @@
 │       └── Służba publiczna
 ├── Uprawy rolne
 │   ├── Plony (q na ha)
-│   │   └── Buraki Cukrowe
+│   │   └── Buraki cukrowe
 │   ├── Powierzchnia
-│   │   ├── Buraki Cukrowe
+│   │   ├── Buraki cukrowe
 │   │   ├── Chmiel
 │   │   ├── Cykoria
 │   │   ├── Fasola, bób, soczewica
@@ -448,7 +446,6 @@
 │   ├── Przeciętny zbiór z ha
 │   │   └── Buraki cukrowe
 │   └── Zbiory
-│       ├── Buraki Cukrowe
 │       ├── Buraki cukrowe
 │       ├── Chmiel
 │       ├── Fasola, bób, soczewica
@@ -473,88 +470,176 @@
 │       ├── Ziemniaki
 │       └── Żyto
 ├── Zatrudnienie
-│   ├── Chemical
-│   ├── Clothing and Toymaking
-│   ├── Construction
-│   ├── Food
-│   ├── Leather
-│   ├── Metal and electrotechnical
-│   ├── Mineral
-│   ├── Mining
-│   ├── Mining and Industry - Total
-│   ├── Paper
-│   ├── Power plants and waterworks
-│   ├── Printing
+│   ├── Górnictwo
+│   ├── Górnictwo i przemysł - ogółem
+│   ├── Przemysł
+│   │   ├── Budowlany
+│   │   ├── Chemiczny
+│   │   ├── Drzewny
+│   │   ├── Elektrownie i wodociągi
+│   │   ├── Metalowy i elektrotechniczny
+│   │   ├── Mineralny
+│   │   ├── Odzieżowy i zabawkarski
+│   │   ├── Papierowy
+│   │   ├── Poligraficzny
+│   │   ├── Skórzany
+│   │   ├── Spożywczy
+│   │   └── Włókienniczy
 │   ├── Public works
 │   ├── Razem
-│   ├── Textile
-│   ├── Udział w całkowitym zatrudnieniu
-│   │   ├── Budowlany
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Budownictwo
-│   │   │   └── I-III
-│   │   ├── Chemiczny
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── COdzieżowy i zabawkarski
-│   │   │   └── I-III
-│   │   ├── Drzewny
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Elektrotechniczny
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Elektrownie i wodociągi
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Górnictwo
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Metalowy
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Mineralny
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Odzieżowy i zabawkarski
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Papierniczy
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Poligraficzny
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Razem
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Skórzany
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   ├── Spożywczy
-│   │   │   ├── I-III
-│   │   │   ├── IV-V
-│   │   │   └── VI-VII
-│   │   └── Włókienniczy
-│   │       ├── I-III
-│   │       ├── IV-V
-│   │       └── VI-VII
-│   └── Wood
+│   └── Udział w całkowitym zatrudnieniu
+│       ├── Budowlany
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Budownictwo
+│       │   └── I-III
+│       ├── Chemiczny
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Drzewny
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Elektrotechniczny
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Elektrownie i wodociągi
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Górnictwo
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Metalowy
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Mineralny
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Odzieżowy i zabawkarski
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Papierniczy
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Poligraficzny
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Razem
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Skórzany
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       ├── Spożywczy
+│       │   ├── I-III
+│       │   ├── IV-V
+│       │   └── VI-VII
+│       └── Włókienniczy
+│           ├── I-III
+│           ├── IV-V
+│           └── VI-VII
 └── Zezwolenia dla przedsiębiorstw
     ├── Handel
-    │   ├── 1. Skup zawodowy wszelkiego rodzaju (ogółem)
+    │   ├── 01. Skup zawodowy wszelkiego rodzaju (ogółem)
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 01a. Skup zawodowy (produkty rolne)
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 01b. Skup zawodowy (zwierzęta gospodarcze)
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 01c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 02. Artykuły spożywcze i kolonjalne (wyłącznie)
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 03. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 04. Mięso, tłuszcze i przetwory mięsne (wyłącznie)
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 05. Zakłady gastronomiczne z wyszynkiem i bez wyszynku
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 06. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 07. Wyroby monopolu tytoniowego
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 08. Manufaktura
+    │   │   ├── Kategoria IIIR
+    │   │   ├── Kategoria IIR
+    │   │   ├── Kategoria IR
+    │   │   ├── Kategoria IVR
+    │   │   ├── Kategoria VaR
+    │   │   ├── Kategoria VbR
+    │   │   └── Razem
+    │   ├── 09. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem
     │   │   ├── Kategoria IIIR
     │   │   ├── Kategoria IIR
     │   │   ├── Kategoria IR
@@ -642,14 +727,6 @@
     │   │   ├── Kategoria VaR
     │   │   ├── Kategoria VbR
     │   │   └── Razem
-    │   ├── 2. Artykuły spożywcze i kolonjalne (wyłącznie)
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
     │   ├── 20. Mydło, świece, farby, benzyna, nafta, oleje mineralne, smary (mydlarnie)
     │   │   ├── Kategoria IIIR
     │   │   ├── Kategoria IIR
@@ -730,14 +807,6 @@
     │   │   ├── Kategoria VaR
     │   │   ├── Kategoria VbR
     │   │   └── Razem
-    │   ├── 3. Artykuły spożywcze łącznie z innemi artykułami niespożywczemi (bez win i wódek)
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
     │   ├── 30. Banki, kantory wymiany i inne instytucje kredytu krótko i długo-terminowego
     │   │   ├── Kategoria IIIR
     │   │   ├── Kategoria IIR
@@ -810,54 +879,6 @@
     │   │   ├── Kategoria VaR
     │   │   ├── Kategoria VbR
     │   │   └── Razem
-    │   ├── 4. Mięso, tłuszcze i przetwory mięsne (wyłącznie)
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
-    │   ├── 5. Zakłady gastronomiczne z wyszynkiem i bez wyszynku
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
-    │   ├── 6. Wina, wódki i piwo (ewentualnie łącznie z towarami spożywczo-kolonjalnemi)
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
-    │   ├── 7. Wyroby monopolu tytoniowego
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
-    │   ├── 8. Manufaktura
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
-    │   ├── 9. Manufaktura łącznie z konfekcją, kalanterią, odzieżą i obuwiem
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
     │   ├── A 3011-3059. Skup towarowy ogółem
     │   ├── A 3011. Skup towarowy (skup zboża)
     │   ├── A 3012. Skup towarowy (skup owoców)
@@ -871,14 +892,6 @@
     │   ├── A i B. Handel towarowy ogółem
     │   ├── A-K I-II cat. Commercial establishments (categories I and II)
     │   ├── A-K. Zakłady handlowe ogółem
-    │   ├── a. Skup zawodowy (produkty rolne)
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
     │   ├── B (I-X). Sprzedaż towarów ogółem
     │   ├── B I. 3061-3062. Sprzedaż towarów (syndykaty i spółdz. rolnicze)
     │   ├── B I. 3061-3089. Sprzedaż towarów (surowce rolne, art. dla rolnictwa)
@@ -886,6 +899,7 @@
     │   ├── B I. 3081-3085. Sprzedaż towarów (zwierzęta żywe)
     │   ├── B II. 3101-3179. Sprzedaż towarów (artykuły żywnościowe)
     │   ├── B II. 3101. Sprzedaż towarów (mąka, kasza, ryż)
+    │   ├── B II. 3102. Sprzedaż towarów (wymiana zboża na mąkę, chleb)
     │   ├── B II. 3103. Sprzedaż towarów (pieczywo)
     │   ├── B II. 3119. Sprzedaż towarów (nabiał)
     │   ├── B II. 3121-3123. Sprzedaż towarów (mięso)
@@ -926,28 +940,10 @@
     │   ├── B VIII. 3431-3432. Sprzedaż towarów (wyroby zegarmistrz., jubilerskie)
     │   ├── B VIII. 3441. Sprzedaż towarów (wyroby elektrotechniczne)
     │   ├── B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Sprzedaż towarów (artykuły różne i bliżej nie określone)
-    │   ├── b. Skup zawodowy (zwierzęta gospodarcze)
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
-    │   ├── bread exchange)
-    │   │   └── B II. 3102. Sprzedaż towarów (wymiana zboża na mąkę, chleb)
     │   ├── C 3501-3509. Zakłady gastronomiczne, wynajem pomieszczeń (zakłady gastronomiczne)
     │   ├── C 3501-3539. Zakłady gastronomiczne, wynajem pomieszczeń
     │   ├── C 3511. Zakłady gastronomiczne, wynajem pomieszczeń (pensjonaty, schroniska)
     │   ├── C 3521-3529. Zakłady gastronomiczne, wynajem pomieszczeń (wynajem pomieszczeń mieszkalnych)
-    │   ├── c. Skup zawodowy (artykuły wytwórczości roślinnej i zwierzęcej)
-    │   │   ├── Kategoria IIIR
-    │   │   ├── Kategoria IIR
-    │   │   ├── Kategoria IR
-    │   │   ├── Kategoria IVR
-    │   │   ├── Kategoria VaR
-    │   │   ├── Kategoria VbR
-    │   │   └── Razem
     │   ├── D 3601-3611. Handel pieniężny, ubezpieczenia
     │   ├── E 3612, 3651-3655. Biura wszelkie (pośrednictwo, bez biur podróży)
     │   ├── F 3701 (3702). Wypożyczalnie (maszyny rolnicze)
@@ -987,81 +983,155 @@
     │   │   └── Razem
     │   └── Ż 3833. Promy, barki, siatki wodne
     ├── Przemysł
-    │   ├── 1. Number of workers in plants I-VII
-    │   ├── 10. Mineral: I-V
-    │   ├── 11. Mineral: VI-VII
-    │   ├── 12. Mineral: VIII
-    │   ├── 13. Mineral: brickyards (within others)
-    │   ├── 14. Mineral: concrete plants (within others)
-    │   ├── 15. Metal and electrotechnical: I-V
-    │   ├── 16. Metal and electrotechnical: VI-VII
-    │   ├── 17. Metal and electrotechnical: VIII
-    │   ├── 18. Metal and electrotechnical: metal production (within others)
-    │   ├── 19. Metal and electrotechnical: blacksmithing (within others)
-    │   ├── 2. Plants: total
-    │   ├── 20. Metal and electrotechnical: locksmithing, repairs (within others)
-    │   ├── 21. Metal and electrotechnical: tinsmithing (within others)
-    │   ├── 22. Metal and electrotechnical: watchmaking and jewelry (within others)
-    │   ├── 23. Chemical: I-V
-    │   ├── 24. Chemical: VI-VII
-    │   ├── 25. Chemical: VIII
-    │   ├── 26. Chemical: oil mills (within others)
-    │   ├── 27. Textile: I-V
-    │   ├── 28. Textile: VI-VII
-    │   ├── 29. Textile: VIII
-    │   ├── 3. Plants: I-III
-    │   ├── 30. Paper: I-V
-    │   ├── 31. Paper: VI-VII
-    │   ├── 32. Paper: VIII
-    │   ├── 33. Leather: I-V
-    │   ├── 34. Leather: VI-VII
-    │   ├── 35. Leather: VIII
-    │   ├── 36. Leather: tanning and white leather (within others)
-    │   ├── 37. Leather: saddlery and harness making (within others)
-    │   ├── 38. Wood: I-V
-    │   ├── 39. Wood: VI-VII
-    │   ├── 4. Plants: IV-V
-    │   ├── 40. Wood: VIII
-    │   ├── 41. Wood: sawmills (within others)
-    │   ├── 42. Wood: carpentry (within others)
-    │   ├── 43. Wood: wheelwrighting (within others)
-    │   ├── 44. Food: I-V
-    │   ├── 45. Food: VI-VII
-    │   ├── 46. Food: VIII
-    │   ├── 47. Food: mills (within others)
-    │   ├── 48. Food: bakeries (within others)
-    │   ├── 49. Food: dairies (within others)
-    │   ├── 5. Plants: VI-VII
-    │   ├── 50. Food: butchery and meat processing (within others)
-    │   ├── 51. Clothing: I-V
-    │   ├── 52. Clothing: VI-VII
-    │   ├── 53. Clothing: VIII
-    │   ├── 54. Clothing: tailoring and clothing accessories (within others)
-    │   ├── 55. Clothing: shoemaking and boot making (within others)
-    │   ├── 56. Clothing: furriery (within others)
-    │   ├── 57. Printing: I-V
-    │   ├── 58. Printing: VI-VII
-    │   ├── 59. Printing: VIII
-    │   ├── 6. Plants: VIII
-    │   ├── 60. Printing: printing houses (within others)
-    │   ├── 61. Construction: I-V
-    │   ├── 62. Construction: VI-VII
-    │   ├── 63. Construction: VIII
-    │   ├── 64. Processing of various materials: VII
-    │   ├── 65. Processing of various materials: VIII
-    │   ├── 66. Power plants: I-V
-    │   ├── 67. Power plants: VI-VII
-    │   ├── 68. Power plants: VIII
-    │   ├── 69. Services: V-VII
-    │   ├── 7. Mining: I-V
-    │   ├── 70. Services: VIII
-    │   ├── 71. Services: hairdressing (within others)
-    │   ├── 72. Services: transport (within others)
-    │   ├── 73. Horticulture and fisheries: V-VII
-    │   ├── 74. Horticulture and fisheries: VIII
-    │   ├── 75. Other plants: VIII
-    │   ├── 8. Mining: VI-VII
-    │   ├── 9. Mining: VIII
+    │   ├── 01. Liczba robotników w zakładach I-VII
+    │   ├── 02. Zakłady ogółem
+    │   │   └── Total
+    │   ├── 03. Zakłady ogółem
+    │   │   └── I-III
+    │   ├── 05. Zakłady ogółem
+    │   │   └── VI-VII
+    │   ├── 07. Kopalnictwo
+    │   │   └── I-V
+    │   ├── 08. Kopalnictwo
+    │   │   └── VI-VII
+    │   ├── 10. Mineralny
+    │   │   └── I-V
+    │   ├── 11. Mineralny
+    │   │   └── VI-VII
+    │   ├── 12. Mineralny
+    │   │   └── VIII
+    │   ├── 13. Mineralny
+    │   │   └── cegielnie (w obrębie pozostałych)
+    │   ├── 14. Mineralny
+    │   │   └── Betoniarnie (w obrębie pozostałych)
+    │   ├── 15. Metalowy i elektrotechniczny
+    │   │   └── I-V
+    │   ├── 16. Metalowy i elektrotechniczny
+    │   │   └── VI-VII
+    │   ├── 17. Metalowy i elektrotechniczny
+    │   │   └── VIII
+    │   ├── 18. Metalowy i elektrotechniczny
+    │   │   └── wytw. metalowe (w obrębie pozostałych)
+    │   ├── 19. Metalowy i elektrotechniczny
+    │   │   └── Kowalstwo (w obrębie pozostałych)
+    │   ├── 20. Metalowy i elektrotechniczny
+    │   │   └── Ślusarstwo, reparacje (w obrębie pozostałych)
+    │   ├── 21. Metalowy i elektrotechniczny
+    │   │   └── blacharstwo (w obrębie pozostałych)
+    │   ├── 22. Metalowy i elektrotechniczny
+    │   │   └── Zegarmistrzostwo i jubil. (w obrębie pozostałych)
+    │   ├── 23. Chemiczny
+    │   │   └── I-V
+    │   ├── 24. Chemiczny
+    │   │   └── VI-VII
+    │   ├── 25. Chemiczny
+    │   │   └── VIII
+    │   ├── 26. Chemiczny
+    │   │   └── Olejarnie (w obrębie pozostałych)
+    │   ├── 27. Włókienniczy
+    │   │   └── I-V
+    │   ├── 28. Włókienniczy
+    │   │   └── VI-VII
+    │   ├── 29. Włókienniczy
+    │   │   └── VIII
+    │   ├── 30. Papierniczy
+    │   │   └── I-V
+    │   ├── 31. Papierniczy
+    │   │   └── VI-VII
+    │   ├── 32. Papierniczy
+    │   │   └── VIII
+    │   ├── 33. Skórzany
+    │   │   └── I-V
+    │   ├── 34. Skórzany
+    │   │   └── VI-VII
+    │   ├── 35. Skórzany
+    │   │   └── VIII
+    │   ├── 36. Skórzany
+    │   │   └── Garbarstwo i białoskórnictwo (w obrębie pozostałych)
+    │   ├── 37. Skórzany
+    │   │   └── Rymarstwo i siodlarstwo (w obrębie pozostałych)
+    │   ├── 38. Drzewny
+    │   │   └── I-V
+    │   ├── 39. Drzewny
+    │   │   └── VI-VII
+    │   ├── 4. Zakłady
+    │   │   └── IV-V
+    │   ├── 40. Drzewny
+    │   │   └── VIII
+    │   ├── 41. Drzewny
+    │   │   └── Tartaki (w obrębie pozostałych)
+    │   ├── 42. Drzewny
+    │   │   └── Stolarstwo (w obrębie pozostałych)
+    │   ├── 43. Drzewny
+    │   │   └── Kołodziejstwo (w obrębie pozostałych)
+    │   ├── 44. Spożywczy
+    │   │   └── I-V
+    │   ├── 45. Spożywczy
+    │   │   └── VI-VII
+    │   ├── 46. Spożywczy
+    │   │   └── VIII
+    │   ├── 47. Spożywczy
+    │   │   └── młyny (w obrębie pozostałych)
+    │   ├── 48. Spożywczy
+    │   │   └── Piekarnie (w obrębie pozostałych)
+    │   ├── 49. Spożywczy
+    │   │   └── Mleczarnie (w obrębie pozostałych)
+    │   ├── 50. Spożywczy
+    │   │   └── Rzeźnictwo i wędlina (w obrębie pozostałych)
+    │   ├── 51. Odzieżowy
+    │   │   └── I-V
+    │   ├── 52. Odzieżowy
+    │   │   └── VI-VII
+    │   ├── 53. Odzieżowy
+    │   │   └── VIII
+    │   ├── 54. Odzieżowy
+    │   │   └── Krawiectwo i dodatki odzieżowe (w obrębie pozostałych)
+    │   ├── 55. Odzieżowy
+    │   │   └── Szewstwo i kamasznictwo (w obrębie pozostałych)
+    │   ├── 56. Odzieżowy
+    │   │   └── kuśnierstwo (w obrębie pozostałych)
+    │   ├── 57. Poligraficzny
+    │   │   └── I-V
+    │   ├── 58. Poligraficzny
+    │   │   └── VI-VII
+    │   ├── 59. Poligraficzny
+    │   │   └── VIII
+    │   ├── 6. Zakłady ogółem
+    │   │   └── VIII
+    │   ├── 60. Poligraficzny
+    │   │   └── Drukarnie (w obrębie pozostałych)
+    │   ├── 61. Budowlany
+    │   │   └── I-V
+    │   ├── 62. Budowlany
+    │   │   └── VI-VII
+    │   ├── 63. Budowlany
+    │   │   └── VIII
+    │   ├── 64. Przerób różnych materiałów
+    │   │   └── VII
+    │   ├── 65. Przerób różnych materiałów
+    │   │   └── VIII
+    │   ├── 66. Elektrownie
+    │   │   └── I-V
+    │   ├── 67. Elektrownie
+    │   │   └── VI-VII
+    │   ├── 68. Elektrownie
+    │   │   └── VIII
+    │   ├── 69. Świadczenia
+    │   │   └── VIII
+    │   ├── 70. Świadczenia
+    │   │   └── VIII
+    │   ├── 71. Świadczenia
+    │   │   └── Fryzjerstwo (w obrębie pozostałych)
+    │   ├── 72. Świadczenia
+    │   │   └── Przewóz (w obrębie pozostałych)
+    │   ├── 73. Ogrodnictwo i rybołówstwo
+    │   │   └── VIII
+    │   ├── 74. Ogrodnictwo i rybołówstwo
+    │   │   └── VIII
+    │   ├── 75. Inne zakłady
+    │   │   └── VIII
+    │   ├── 9. Kopalnictwo
+    │   │   └── VIII
     │   ├── Kategoria IIIPR
     │   ├── Kategoria IIIR
     │   ├── Kategoria IIPR
