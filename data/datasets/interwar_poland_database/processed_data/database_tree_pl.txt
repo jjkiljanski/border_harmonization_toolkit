@@ -485,14 +485,13 @@
 │   │   ├── Skórzany
 │   │   ├── Spożywczy
 │   │   └── Włókienniczy
-│   ├── Public works
 │   ├── Razem
+│   ├── Roboty publiczne
 │   └── Udział w całkowitym zatrudnieniu
 │       ├── Budowlany
+│       │   ├── I-III
 │       │   ├── IV-V
 │       │   └── VI-VII
-│       ├── Budownictwo
-│       │   └── I-III
 │       ├── Chemiczny
 │       │   ├── I-III
 │       │   ├── IV-V
@@ -988,12 +987,16 @@
     │   │   └── Total
     │   ├── 03. Zakłady ogółem
     │   │   └── I-III
+    │   ├── 04. Zakłady
+    │   │   └── IV-V
     │   ├── 05. Zakłady ogółem
     │   │   └── VI-VII
     │   ├── 07. Kopalnictwo
     │   │   └── I-V
     │   ├── 08. Kopalnictwo
     │   │   └── VI-VII
+    │   ├── 09. Kopalnictwo
+    │   │   └── VIII
     │   ├── 10. Mineralny
     │   │   └── I-V
     │   ├── 11. Mineralny
@@ -1054,8 +1057,6 @@
     │   │   └── I-V
     │   ├── 39. Drzewny
     │   │   └── VI-VII
-    │   ├── 4. Zakłady
-    │   │   └── IV-V
     │   ├── 40. Drzewny
     │   │   └── VIII
     │   ├── 41. Drzewny
@@ -1130,8 +1131,6 @@
     │   │   └── VIII
     │   ├── 75. Inne zakłady
     │   │   └── VIII
-    │   ├── 9. Kopalnictwo
-    │   │   └── VIII
     │   ├── Kategoria IIIPR
     │   ├── Kategoria IIIR
     │   ├── Kategoria IIPR
@@ -1148,8 +1147,8 @@
     │   ├── Kategoria VIR
     │   ├── Kategoria VPR
     │   ├── Kategoria VR
-    │   ├── PR
-    │   └── R
+    │   ├── Razem PR
+    │   └── Razem R
     └── Zajęcia przemysłowe
         ├── Handel jarmarczny
         │   ├── Detal

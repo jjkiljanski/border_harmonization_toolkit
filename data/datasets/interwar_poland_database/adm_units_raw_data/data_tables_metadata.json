@@ -12304,7 +12304,7 @@
         "unit": "",
         "data_type": "int",
         "category": {
-          "eng": "Business Permissions/Industry/4. Plants of All Types/IV-V",
+          "eng": "Business Permissions/Industry/04. Plants of All Types/IV-V",
           "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/04. Zakłady/IV-V"
         }
       },
@@ -12712,7 +12712,7 @@
         "unit": "",
         "data_type": "int",
         "category": {
-          "eng": "Business Permissions/Industry/9. Mining/VIII",
+          "eng": "Business Permissions/Industry/09. Mining/VIII",
           "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/09. Kopalnictwo/VIII"
         }
       },
@@ -12720,8 +12720,8 @@
         "unit": "",
         "data_type": "int",
         "category": {
-          "eng": "Business Permissions/Industry/6. Plants of All Types/VIII",
-          "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/6. Zakłady ogółem/VIII"
+          "eng": "Business Permissions/Industry/06. Plants of All Types/VIII",
+          "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/06. Zakłady ogółem/VIII"
         }
       },
       "34. Leather: VI-VII": {

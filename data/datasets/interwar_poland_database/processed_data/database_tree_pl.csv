@@ -34,8 +34,8 @@
 2,Górnictwo,Zatrudnienie/Górnictwo,Zatrudnienie,True
 2,Górnictwo i przemysł - ogółem,Zatrudnienie/Górnictwo i przemysł - ogółem,Zatrudnienie,True
 2,Przemysł,Zatrudnienie/Przemysł,Zatrudnienie,False
-2,Public works,Zatrudnienie/Public works,Zatrudnienie,True
 2,Razem,Zatrudnienie/Razem,Zatrudnienie,True
+2,Roboty publiczne,Zatrudnienie/Roboty publiczne,Zatrudnienie,True
 2,Udział w całkowitym zatrudnieniu,Zatrudnienie/Udział w całkowitym zatrudnieniu,Zatrudnienie,False
 2,Handel,Zezwolenia dla przedsiębiorstw/Handel,Zezwolenia dla przedsiębiorstw,False
 2,Przemysł,Zezwolenia dla przedsiębiorstw/Przemysł,Zezwolenia dla przedsiębiorstw,False
@@ -476,7 +476,6 @@
 3,Spożywczy,Zatrudnienie/Przemysł/Spożywczy,Zatrudnienie/Przemysł,True
 3,Włókienniczy,Zatrudnienie/Przemysł/Włókienniczy,Zatrudnienie/Przemysł,True
 3,Budowlany,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
-3,Budownictwo,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budownictwo,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
 3,Chemiczny,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
 3,Drzewny,Zatrudnienie/Udział w całkowitym zatrudnieniu/Drzewny,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
 3,Elektrotechniczny,Zatrudnienie/Udział w całkowitym zatrudnieniu/Elektrotechniczny,Zatrudnienie/Udział w całkowitym zatrudnieniu,False
@@ -618,9 +617,11 @@
 3,01. Liczba robotników w zakładach I-VII,Zezwolenia dla przedsiębiorstw/Przemysł/01. Liczba robotników w zakładach I-VII,Zezwolenia dla przedsiębiorstw/Przemysł,True
 3,02. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł/02. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,03. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł/03. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł,False
+3,04. Zakłady,Zezwolenia dla przedsiębiorstw/Przemysł/04. Zakłady,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,05. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł/05. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,07. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł/07. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,08. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł/08. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
+3,09. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł/09. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,10. Mineralny,Zezwolenia dla przedsiębiorstw/Przemysł/10. Mineralny,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,11. Mineralny,Zezwolenia dla przedsiębiorstw/Przemysł/11. Mineralny,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,12. Mineralny,Zezwolenia dla przedsiębiorstw/Przemysł/12. Mineralny,Zezwolenia dla przedsiębiorstw/Przemysł,False
@@ -651,7 +652,6 @@
 3,37. Skórzany,Zezwolenia dla przedsiębiorstw/Przemysł/37. Skórzany,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,38. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł/38. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,39. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł/39. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł,False
-3,4. Zakłady,Zezwolenia dla przedsiębiorstw/Przemysł/4. Zakłady,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,40. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł/40. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,41. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł/41. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,42. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł/42. Drzewny,Zezwolenia dla przedsiębiorstw/Przemysł,False
@@ -689,7 +689,6 @@
 3,73. Ogrodnictwo i rybołówstwo,Zezwolenia dla przedsiębiorstw/Przemysł/73. Ogrodnictwo i rybołówstwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,74. Ogrodnictwo i rybołówstwo,Zezwolenia dla przedsiębiorstw/Przemysł/74. Ogrodnictwo i rybołówstwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,75. Inne zakłady,Zezwolenia dla przedsiębiorstw/Przemysł/75. Inne zakłady,Zezwolenia dla przedsiębiorstw/Przemysł,False
-3,9. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł/9. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
 3,Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IIIR,Zezwolenia dla przedsiębiorstw/Przemysł,True
 3,Kategoria IIPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria IIPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
@@ -706,8 +705,8 @@
 3,Kategoria VIR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VIR,Zezwolenia dla przedsiębiorstw/Przemysł,True
 3,Kategoria VPR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VPR,Zezwolenia dla przedsiębiorstw/Przemysł,True
 3,Kategoria VR,Zezwolenia dla przedsiębiorstw/Przemysł/Kategoria VR,Zezwolenia dla przedsiębiorstw/Przemysł,True
-3,PR,Zezwolenia dla przedsiębiorstw/Przemysł/PR,Zezwolenia dla przedsiębiorstw/Przemysł,True
-3,R,Zezwolenia dla przedsiębiorstw/Przemysł/R,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Razem PR,Zezwolenia dla przedsiębiorstw/Przemysł/Razem PR,Zezwolenia dla przedsiębiorstw/Przemysł,True
+3,Razem R,Zezwolenia dla przedsiębiorstw/Przemysł/Razem R,Zezwolenia dla przedsiębiorstw/Przemysł,True
 3,Handel jarmarczny,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,False
 3,Karty rejestracyjne,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,False
 3,Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IIIPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
@@ -737,9 +736,9 @@
 4,Włókno,Uprawy rolne/Zbiory/Len/Włókno,Uprawy rolne/Zbiory/Len,True
 4,Inne mieszanki zbóż,Uprawy rolne/Zbiory/Mieszanki na ziarno/Inne mieszanki zbóż,Uprawy rolne/Zbiory/Mieszanki na ziarno,True
 4,Jęczmień,Uprawy rolne/Zbiory/Mieszanki na ziarno/Jęczmień,Uprawy rolne/Zbiory/Mieszanki na ziarno,True
+4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,True
 4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,True
 4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,True
-4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budownictwo/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budownictwo,True
 4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny,True
 4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny,True
 4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Chemiczny,True
@@ -1091,9 +1090,11 @@
 4,Razem,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe/Razem,Zezwolenia dla przedsiębiorstw/Handel/ZP. Zajęcia przemysłowe,True
 4,Total,Zezwolenia dla przedsiębiorstw/Przemysł/02. Zakłady ogółem/Total,Zezwolenia dla przedsiębiorstw/Przemysł/02. Zakłady ogółem,True
 4,I-III,Zezwolenia dla przedsiębiorstw/Przemysł/03. Zakłady ogółem/I-III,Zezwolenia dla przedsiębiorstw/Przemysł/03. Zakłady ogółem,True
+4,IV-V,Zezwolenia dla przedsiębiorstw/Przemysł/04. Zakłady/IV-V,Zezwolenia dla przedsiębiorstw/Przemysł/04. Zakłady,True
 4,VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/05. Zakłady ogółem/VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/05. Zakłady ogółem,True
 4,I-V,Zezwolenia dla przedsiębiorstw/Przemysł/07. Kopalnictwo/I-V,Zezwolenia dla przedsiębiorstw/Przemysł/07. Kopalnictwo,True
 4,VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/08. Kopalnictwo/VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/08. Kopalnictwo,True
+4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/09. Kopalnictwo/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/09. Kopalnictwo,True
 4,I-V,Zezwolenia dla przedsiębiorstw/Przemysł/10. Mineralny/I-V,Zezwolenia dla przedsiębiorstw/Przemysł/10. Mineralny,True
 4,VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/11. Mineralny/VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/11. Mineralny,True
 4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/12. Mineralny/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/12. Mineralny,True
@@ -1124,7 +1125,6 @@
 4,Rymarstwo i siodlarstwo (w obrębie pozostałych),Zezwolenia dla przedsiębiorstw/Przemysł/37. Skórzany/Rymarstwo i siodlarstwo (w obrębie pozostałych),Zezwolenia dla przedsiębiorstw/Przemysł/37. Skórzany,True
 4,I-V,Zezwolenia dla przedsiębiorstw/Przemysł/38. Drzewny/I-V,Zezwolenia dla przedsiębiorstw/Przemysł/38. Drzewny,True
 4,VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/39. Drzewny/VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/39. Drzewny,True
-4,IV-V,Zezwolenia dla przedsiębiorstw/Przemysł/4. Zakłady/IV-V,Zezwolenia dla przedsiębiorstw/Przemysł/4. Zakłady,True
 4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/40. Drzewny/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/40. Drzewny,True
 4,Tartaki (w obrębie pozostałych),Zezwolenia dla przedsiębiorstw/Przemysł/41. Drzewny/Tartaki (w obrębie pozostałych),Zezwolenia dla przedsiębiorstw/Przemysł/41. Drzewny,True
 4,Stolarstwo (w obrębie pozostałych),Zezwolenia dla przedsiębiorstw/Przemysł/42. Drzewny/Stolarstwo (w obrębie pozostałych),Zezwolenia dla przedsiębiorstw/Przemysł/42. Drzewny,True
@@ -1162,7 +1162,6 @@
 4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/73. Ogrodnictwo i rybołówstwo/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/73. Ogrodnictwo i rybołówstwo,True
 4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/74. Ogrodnictwo i rybołówstwo/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/74. Ogrodnictwo i rybołówstwo,True
 4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/75. Inne zakłady/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/75. Inne zakłady,True
-4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/9. Kopalnictwo/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/9. Kopalnictwo,True
 4,Detal,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny,False
 4,Hurt,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Hurt,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny,False
 4,PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne/PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne,True

@@ -11,6 +11,7 @@ import csv
 from collections import defaultdict
 
 from administrative_history.core.core import AdministrativeHistory
+from administrative_history.core.db_injector import DuckParquetStorage
 from administrative_history.data_models.adm_timespan import *
 from administrative_history.data_models.adm_unit import *
 from administrative_history.data_models.adm_state import *
@@ -373,6 +374,9 @@ class AdministrativeHistoryProcessor():
         start_time = time.time()
         print(f"Harmonizing data in the '{self.adm_units_raw_data_folder}' folder.")
 
+        # initiate storage:
+        storage = DuckParquetStorage(self.duckdb_path, self.parquet_root)
+
         harmonize_from_dict = {} # Dict mapping adm. states to the list of data table ids
         conv_matrix = None
 
@@ -414,7 +418,8 @@ class AdministrativeHistoryProcessor():
                     output_csv_path=output_csv_path,
                     data_table_metadata_dict=data_table_metadata_dict,
                     date_to=self.harmonize_to_date,
-                    conv_matrix=conv_matrix     # For cities it doesn't matter which date_to and conv_matrix are passed.
+                    conv_matrix=conv_matrix,     # For cities it doesn't matter which date_to and conv_matrix are passed.
+                    storage=storage
                 )
 
                 self.processed_data_metadata.append(processed_data_table_dict)
@@ -427,6 +432,10 @@ class AdministrativeHistoryProcessor():
                 )
                 print(error_msg)
                 failed_files.append(error_msg)
+
+        storage.replace_metadata_tables(self.processed_data_metadata)
+        storage.export_all_to_parquet()
+        storage.close()
 
         end_time = time.time()
         execution_time = end_time - start_time
@@ -458,6 +467,7 @@ class AdministrativeHistoryProcessor():
         data_table_metadata_dict: DataTableMetadata,
         date_to: Optional[datetime] = None,
         conv_matrix: Optional[pd.DataFrame] = None,
+        storage: Optional["DuckParquetStorage"] = None
     ):
         """
         Process a raw CSV file containing either District- or City-level data.  
@@ -590,7 +600,19 @@ class AdministrativeHistoryProcessor():
         # ============================================================
         # 4. SAVING & METADATA UPDATE
         # ============================================================
+
+        # Ingest to DuckDB
+        if storage is not None:
+            storage.ingest_processed_df(
+                df_output=df_output,
+                m=data_table_metadata_dict,
+                harmonize_to_date=self.harmonize_to_date,
+                id_column=adm_level,            # "District"/"Region"/"City"
+            )
+
+        # Save to csv
         df_output.to_csv(output_csv_path, index=False)
+
         end_time = time.time()
         print(f"✅ Finished processing in {end_time - start_time:.2f} seconds. Output: {output_csv_path}")
 

@@ -3178,8 +3178,8 @@
             "R": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/R",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/R"
+                    "eng": "Business Permissions/Industry/Total R",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/Razem R"
                 },
                 "data_type": "int",
                 "completeness": 0.9818181818181818,
@@ -3192,8 +3192,8 @@
             "PR": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/PR",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/PR"
+                    "eng": "Business Permissions/Industry/Total PR",
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/Razem PR"
                 },
                 "data_type": "int",
                 "completeness": 0.9818181818181818,
@@ -11278,7 +11278,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Industry/4. Plants of All Types/IV-V",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/4. Zakłady/IV-V"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/04. Zakłady/IV-V"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -11992,7 +11992,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Business Permissions/Industry/9. Mining/VIII",
-                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/9. Kopalnictwo/VIII"
+                    "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/09. Kopalnictwo/VIII"
                 },
                 "data_type": "int",
                 "completeness": 0.9886363636363636,
@@ -16157,7 +16157,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Employment/Public works",
-                    "pol": "Zatrudnienie/Public works"
+                    "pol": "Zatrudnienie/Roboty publiczne"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -16374,7 +16374,7 @@
                 "unit": "",
                 "category": {
                     "eng": "Employment/Employment Share/Construction/I-III",
-                    "pol": "Zatrudnienie/Udział w całkowitym zatrudnieniu/Budownictwo/I-III"
+                    "pol": "Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/I-III"
                 },
                 "data_type": "int",
                 "completeness": 1.0,

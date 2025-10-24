@@ -187,8 +187,8 @@
     - Category VIR
     - Category VPR
     - Category VR
-    - PR
-    - R
+    - Total PR
+    - Total R
   - Trade
     - 1. All types of professional purchasing (total)
       - Category IIIR

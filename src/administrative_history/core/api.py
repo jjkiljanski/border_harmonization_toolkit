@@ -1,6 +1,9 @@
 import pandas as pd
 import os
-from typing import Union, Literal, Dict
+from __future__ import annotations
+from pathlib import Path
+from core.db_injector import DuckParquetStorage
+from typing import Union, Literal, Dict, Optional
 
 from administrative_history.core.processor import AdministrativeHistoryProcessor
 from administrative_history.utils.helper_functions import read_economic_csv_input
@@ -22,11 +25,41 @@ Example usage:
     # Load the needed data table.
     population_1931, population_1931_data_table_metadata, population_1931_adm_state_date = adm_history_api.load_data_table(data_table_id = '1931-total_population', version='harmonized')
 """
-
-class AdministrativeHistoryAPI():
-    def __init__(self, adm_history_processor: AdministrativeHistoryProcessor):
+class AdministrativeHistoryAPI:
+    def __init__(self, adm_history_processor):
+        """
+        Behavior:
+          - If a DuckDB file exists at adm_history_processor.duckdb_path, open it.
+          - Else, if Parquet exists at adm_history_processor.parquet_root, create DB from Parquet.
+          - Else, raise a descriptive error.
+        """
         self.adm_history_processor = adm_history_processor
         self.adm_history = self.adm_history_processor.adm_history
+
+        duckdb_path: Path = Path(self.adm_history_processor.duckdb_path)
+        parquet_root: Path = Path(self.adm_history_processor.parquet_root)
+
+        self.storage = DuckParquetStorage(duckdb_path, parquet_root)
+
+        db_exists = duckdb_path.exists() and duckdb_path.stat().st_size > 0
+
+        if db_exists:
+            # DB already connected by storage.__init__
+            pass
+        elif self.storage.parquet_files_exist():
+            # Rebuild DB from Parquet and reuse it
+            print(f"ℹ️ DuckDB not found at {duckdb_path}. Rebuilding from Parquet in {parquet_root}...")
+            self.storage.rebuild_duckdb_from_parquet(overwrite=True)
+            print("✅ DuckDB rebuilt from Parquet.")
+        else:
+            self.storage.close()
+            raise FileNotFoundError(
+                f"No DuckDB at '{duckdb_path}' and no Parquet files in '{parquet_root}'. "
+                f"Run your processing pipeline first to create them."
+            )
+
+        # Optional: expose a convenient connection for local queries
+        self.con = self.storage.con
 
     def load_data_table(
                         self,
