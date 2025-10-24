@@ -1,0 +1,1102 @@
+﻿level,name,path,parent,is_leaf
+1,Business Permissions,Business Permissions,,False
+1,Census 1921,Census 1921,,False
+1,Census 1931,Census 1931,,False
+1,Crops,Crops,,False
+1,Dist - Area,Dist - Area,,True
+1,Employment,Employment,,False
+1,Forests,Forests,,False
+1,Livestock,Livestock,,False
+1,Prices,Prices,,False
+1,Yearbook 1939,Yearbook 1939,,False
+2,Industrial Occupations,Business Permissions/Industrial Occupations,Business Permissions,False
+2,Industry,Business Permissions/Industry,Business Permissions,False
+2,Trade,Business Permissions/Trade,Business Permissions,False
+2,Ethnicity,Census 1921/Ethnicity,Census 1921,False
+2,Indirect Occupation,Census 1921/Indirect Occupation,Census 1921,False
+2,Population,Census 1921/Population,Census 1921,False
+2,Religion,Census 1921/Religion,Census 1921,False
+2,Economically Active Population,Census 1931/Economically Active Population,Census 1931,False
+2,Indirect Occupation,Census 1931/Indirect Occupation,Census 1931,False
+2,Mother Tongue,Census 1931/Mother Tongue,Census 1931,False
+2,Population,Census 1931/Population,Census 1931,False
+2,Religion,Census 1931/Religion,Census 1931,False
+2,Area,Crops/Area,Crops,False
+2,Average Yield per ha,Crops/Average Yield per ha,Crops,False
+2,Size,Crops/Size,Crops,False
+2,Yields (q per ha),Crops/Yields (q per ha),Crops,False
+2,Chemical,Employment/Chemical,Employment,True
+2,Clothing and Toymaking,Employment/Clothing and Toymaking,Employment,True
+2,Construction,Employment/Construction,Employment,True
+2,Employment Share,Employment/Employment Share,Employment,False
+2,Food,Employment/Food,Employment,True
+2,Leather,Employment/Leather,Employment,True
+2,Metal and electrotechnical,Employment/Metal and electrotechnical,Employment,True
+2,Mineral,Employment/Mineral,Employment,True
+2,Mining,Employment/Mining,Employment,True
+2,Mining and Industry - Total,Employment/Mining and Industry - Total,Employment,True
+2,Paper,Employment/Paper,Employment,True
+2,Power plants and waterworks,Employment/Power plants and waterworks,Employment,True
+2,Printing,Employment/Printing,Employment,True
+2,Public works,Employment/Public works,Employment,True
+2,Textile,Employment/Textile,Employment,True
+2,Total,Employment/Total,Employment,True
+2,Wood,Employment/Wood,Employment,True
+2,Area,Forests/Area,Forests,True
+2,Goats,Livestock/Goats,Livestock,True
+2,Horned Cattle,Livestock/Horned Cattle,Livestock,True
+2,Horses,Livestock/Horses,Livestock,True
+2,Pigs,Livestock/Pigs,Livestock,True
+2,Sheep,Livestock/Sheep,Livestock,True
+2,Sheep and Goats,Livestock/Sheep and Goats,Livestock,True
+2,Local Paid to Producers,Prices/Local Paid to Producers,Prices,False
+2,Population,Yearbook 1939/Population,Yearbook 1939,False
+3,Category IIIPR,Business Permissions/Industrial Occupations/Category IIIPR,Business Permissions/Industrial Occupations,True
+3,Category IIIR,Business Permissions/Industrial Occupations/Category IIIR,Business Permissions/Industrial Occupations,True
+3,Category IIPR,Business Permissions/Industrial Occupations/Category IIPR,Business Permissions/Industrial Occupations,True
+3,Category IIR,Business Permissions/Industrial Occupations/Category IIR,Business Permissions/Industrial Occupations,True
+3,Category IPR,Business Permissions/Industrial Occupations/Category IPR,Business Permissions/Industrial Occupations,True
+3,Category IR,Business Permissions/Industrial Occupations/Category IR,Business Permissions/Industrial Occupations,True
+3,Category IVPR,Business Permissions/Industrial Occupations/Category IVPR,Business Permissions/Industrial Occupations,True
+3,Category IVR,Business Permissions/Industrial Occupations/Category IVR,Business Permissions/Industrial Occupations,True
+3,Registration Permits,Business Permissions/Industrial Occupations/Registration Permits,Business Permissions/Industrial Occupations,False
+3,Together,Business Permissions/Industrial Occupations/Together,Business Permissions/Industrial Occupations,False
+3,Trade at Fairs,Business Permissions/Industrial Occupations/Trade at Fairs,Business Permissions/Industrial Occupations,False
+3,1. Number of workers in plants I-VII,Business Permissions/Industry/1. Number of workers in plants I-VII,Business Permissions/Industry,True
+3,10. Mineral: I-V,Business Permissions/Industry/10. Mineral: I-V,Business Permissions/Industry,True
+3,11. Mineral: VI-VII,Business Permissions/Industry/11. Mineral: VI-VII,Business Permissions/Industry,True
+3,12. Mineral: VIII,Business Permissions/Industry/12. Mineral: VIII,Business Permissions/Industry,True
+3,13. Mineral: brickyards (within others),Business Permissions/Industry/13. Mineral: brickyards (within others),Business Permissions/Industry,True
+3,14. Mineral: concrete plants (within others),Business Permissions/Industry/14. Mineral: concrete plants (within others),Business Permissions/Industry,True
+3,15. Metal and electrotechnical: I-V,Business Permissions/Industry/15. Metal and electrotechnical: I-V,Business Permissions/Industry,True
+3,16. Metal and electrotechnical: VI-VII,Business Permissions/Industry/16. Metal and electrotechnical: VI-VII,Business Permissions/Industry,True
+3,17. Metal and electrotechnical: VIII,Business Permissions/Industry/17. Metal and electrotechnical: VIII,Business Permissions/Industry,True
+3,18. Metal and electrotechnical: metal production (within others),Business Permissions/Industry/18. Metal and electrotechnical: metal production (within others),Business Permissions/Industry,True
+3,19. Metal and electrotechnical: blacksmithing (within others),Business Permissions/Industry/19. Metal and electrotechnical: blacksmithing (within others),Business Permissions/Industry,True
+3,2. Plants: total,Business Permissions/Industry/2. Plants: total,Business Permissions/Industry,True
+3,"20. Metal and electrotechnical: locksmithing, repairs (within others)","Business Permissions/Industry/20. Metal and electrotechnical: locksmithing, repairs (within others)",Business Permissions/Industry,True
+3,21. Metal and electrotechnical: tinsmithing (within others),Business Permissions/Industry/21. Metal and electrotechnical: tinsmithing (within others),Business Permissions/Industry,True
+3,22. Metal and electrotechnical: watchmaking and jewelry (within others),Business Permissions/Industry/22. Metal and electrotechnical: watchmaking and jewelry (within others),Business Permissions/Industry,True
+3,23. Chemical: I-V,Business Permissions/Industry/23. Chemical: I-V,Business Permissions/Industry,True
+3,24. Chemical: VI-VII,Business Permissions/Industry/24. Chemical: VI-VII,Business Permissions/Industry,True
+3,25. Chemical: VIII,Business Permissions/Industry/25. Chemical: VIII,Business Permissions/Industry,True
+3,26. Chemical: oil mills (within others),Business Permissions/Industry/26. Chemical: oil mills (within others),Business Permissions/Industry,True
+3,27. Textile: I-V,Business Permissions/Industry/27. Textile: I-V,Business Permissions/Industry,True
+3,28. Textile: VI-VII,Business Permissions/Industry/28. Textile: VI-VII,Business Permissions/Industry,True
+3,29. Textile: VIII,Business Permissions/Industry/29. Textile: VIII,Business Permissions/Industry,True
+3,3. Plants: I-III,Business Permissions/Industry/3. Plants: I-III,Business Permissions/Industry,True
+3,30. Paper: I-V,Business Permissions/Industry/30. Paper: I-V,Business Permissions/Industry,True
+3,31. Paper: VI-VII,Business Permissions/Industry/31. Paper: VI-VII,Business Permissions/Industry,True
+3,32. Paper: VIII,Business Permissions/Industry/32. Paper: VIII,Business Permissions/Industry,True
+3,33. Leather: I-V,Business Permissions/Industry/33. Leather: I-V,Business Permissions/Industry,True
+3,34. Leather: VI-VII,Business Permissions/Industry/34. Leather: VI-VII,Business Permissions/Industry,True
+3,35. Leather: VIII,Business Permissions/Industry/35. Leather: VIII,Business Permissions/Industry,True
+3,36. Leather: tanning and white leather (within others),Business Permissions/Industry/36. Leather: tanning and white leather (within others),Business Permissions/Industry,True
+3,37. Leather: saddlery and harness making (within others),Business Permissions/Industry/37. Leather: saddlery and harness making (within others),Business Permissions/Industry,True
+3,38. Wood: I-V,Business Permissions/Industry/38. Wood: I-V,Business Permissions/Industry,True
+3,39. Wood: VI-VII,Business Permissions/Industry/39. Wood: VI-VII,Business Permissions/Industry,True
+3,4. Plants: IV-V,Business Permissions/Industry/4. Plants: IV-V,Business Permissions/Industry,True
+3,40. Wood: VIII,Business Permissions/Industry/40. Wood: VIII,Business Permissions/Industry,True
+3,41. Wood: sawmills (within others),Business Permissions/Industry/41. Wood: sawmills (within others),Business Permissions/Industry,True
+3,42. Wood: carpentry (within others),Business Permissions/Industry/42. Wood: carpentry (within others),Business Permissions/Industry,True
+3,43. Wood: wheelwrighting (within others),Business Permissions/Industry/43. Wood: wheelwrighting (within others),Business Permissions/Industry,True
+3,44. Food: I-V,Business Permissions/Industry/44. Food: I-V,Business Permissions/Industry,True
+3,45. Food: VI-VII,Business Permissions/Industry/45. Food: VI-VII,Business Permissions/Industry,True
+3,46. Food: VIII,Business Permissions/Industry/46. Food: VIII,Business Permissions/Industry,True
+3,47. Food: mills (within others),Business Permissions/Industry/47. Food: mills (within others),Business Permissions/Industry,True
+3,48. Food: bakeries (within others),Business Permissions/Industry/48. Food: bakeries (within others),Business Permissions/Industry,True
+3,49. Food: dairies (within others),Business Permissions/Industry/49. Food: dairies (within others),Business Permissions/Industry,True
+3,5. Plants: VI-VII,Business Permissions/Industry/5. Plants: VI-VII,Business Permissions/Industry,True
+3,50. Food: butchery and meat processing (within others),Business Permissions/Industry/50. Food: butchery and meat processing (within others),Business Permissions/Industry,True
+3,51. Clothing: I-V,Business Permissions/Industry/51. Clothing: I-V,Business Permissions/Industry,True
+3,52. Clothing: VI-VII,Business Permissions/Industry/52. Clothing: VI-VII,Business Permissions/Industry,True
+3,53. Clothing: VIII,Business Permissions/Industry/53. Clothing: VIII,Business Permissions/Industry,True
+3,54. Clothing: tailoring and clothing accessories (within others),Business Permissions/Industry/54. Clothing: tailoring and clothing accessories (within others),Business Permissions/Industry,True
+3,55. Clothing: shoemaking and boot making (within others),Business Permissions/Industry/55. Clothing: shoemaking and boot making (within others),Business Permissions/Industry,True
+3,56. Clothing: furriery (within others),Business Permissions/Industry/56. Clothing: furriery (within others),Business Permissions/Industry,True
+3,57. Printing: I-V,Business Permissions/Industry/57. Printing: I-V,Business Permissions/Industry,True
+3,58. Printing: VI-VII,Business Permissions/Industry/58. Printing: VI-VII,Business Permissions/Industry,True
+3,59. Printing: VIII,Business Permissions/Industry/59. Printing: VIII,Business Permissions/Industry,True
+3,6. Plants: VIII,Business Permissions/Industry/6. Plants: VIII,Business Permissions/Industry,True
+3,60. Printing: printing houses (within others),Business Permissions/Industry/60. Printing: printing houses (within others),Business Permissions/Industry,True
+3,61. Construction: I-V,Business Permissions/Industry/61. Construction: I-V,Business Permissions/Industry,True
+3,62. Construction: VI-VII,Business Permissions/Industry/62. Construction: VI-VII,Business Permissions/Industry,True
+3,63. Construction: VIII,Business Permissions/Industry/63. Construction: VIII,Business Permissions/Industry,True
+3,64. Processing of various materials: VII,Business Permissions/Industry/64. Processing of various materials: VII,Business Permissions/Industry,True
+3,65. Processing of various materials: VIII,Business Permissions/Industry/65. Processing of various materials: VIII,Business Permissions/Industry,True
+3,66. Power plants: I-V,Business Permissions/Industry/66. Power plants: I-V,Business Permissions/Industry,True
+3,67. Power plants: VI-VII,Business Permissions/Industry/67. Power plants: VI-VII,Business Permissions/Industry,True
+3,68. Power plants: VIII,Business Permissions/Industry/68. Power plants: VIII,Business Permissions/Industry,True
+3,69. Services: V-VII,Business Permissions/Industry/69. Services: V-VII,Business Permissions/Industry,True
+3,7. Mining: I-V,Business Permissions/Industry/7. Mining: I-V,Business Permissions/Industry,True
+3,70. Services: VIII,Business Permissions/Industry/70. Services: VIII,Business Permissions/Industry,True
+3,71. Services: hairdressing (within others),Business Permissions/Industry/71. Services: hairdressing (within others),Business Permissions/Industry,True
+3,72. Services: transport (within others),Business Permissions/Industry/72. Services: transport (within others),Business Permissions/Industry,True
+3,73. Horticulture and fisheries: V-VII,Business Permissions/Industry/73. Horticulture and fisheries: V-VII,Business Permissions/Industry,True
+3,74. Horticulture and fisheries: VIII,Business Permissions/Industry/74. Horticulture and fisheries: VIII,Business Permissions/Industry,True
+3,75. Other plants: VIII,Business Permissions/Industry/75. Other plants: VIII,Business Permissions/Industry,True
+3,8. Mining: VI-VII,Business Permissions/Industry/8. Mining: VI-VII,Business Permissions/Industry,True
+3,9. Mining: VIII,Business Permissions/Industry/9. Mining: VIII,Business Permissions/Industry,True
+3,Category IIIPR,Business Permissions/Industry/Category IIIPR,Business Permissions/Industry,True
+3,Category IIIR,Business Permissions/Industry/Category IIIR,Business Permissions/Industry,True
+3,Category IIPR,Business Permissions/Industry/Category IIPR,Business Permissions/Industry,True
+3,Category IIR,Business Permissions/Industry/Category IIR,Business Permissions/Industry,True
+3,Category IPR,Business Permissions/Industry/Category IPR,Business Permissions/Industry,True
+3,Category IR,Business Permissions/Industry/Category IR,Business Permissions/Industry,True
+3,Category IVPR,Business Permissions/Industry/Category IVPR,Business Permissions/Industry,True
+3,Category IVR,Business Permissions/Industry/Category IVR,Business Permissions/Industry,True
+3,Category VIIIPR,Business Permissions/Industry/Category VIIIPR,Business Permissions/Industry,True
+3,Category VIIIR,Business Permissions/Industry/Category VIIIR,Business Permissions/Industry,True
+3,Category VIIPR,Business Permissions/Industry/Category VIIPR,Business Permissions/Industry,True
+3,Category VIIR,Business Permissions/Industry/Category VIIR,Business Permissions/Industry,True
+3,Category VIPR,Business Permissions/Industry/Category VIPR,Business Permissions/Industry,True
+3,Category VIR,Business Permissions/Industry/Category VIR,Business Permissions/Industry,True
+3,Category VPR,Business Permissions/Industry/Category VPR,Business Permissions/Industry,True
+3,Category VR,Business Permissions/Industry/Category VR,Business Permissions/Industry,True
+3,PR,Business Permissions/Industry/PR,Business Permissions/Industry,True
+3,R,Business Permissions/Industry/R,Business Permissions/Industry,True
+3,1. All types of professional purchasing (total),Business Permissions/Trade/1. All types of professional purchasing (total),Business Permissions/Trade,False
+3,10. Ready-made clothing and haberdashery,Business Permissions/Trade/10. Ready-made clothing and haberdashery,Business Permissions/Trade,False
+3,"11. Garments, garment parts, furs, and fur products","Business Permissions/Trade/11. Garments, garment parts, furs, and fur products",Business Permissions/Trade,False
+3,12. Footwear,Business Permissions/Trade/12. Footwear,Business Permissions/Trade,False
+3,13. Footwear with leather and shoemaking accessories,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories,Business Permissions/Trade,False
+3,14. All types of leather and leather products (excluding footwear),Business Permissions/Trade/14. All types of leather and leather products (excluding footwear),Business Permissions/Trade,False
+3,"15. Machinery, tools, and technical goods (excluding agricultural)","Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)",Business Permissions/Trade,False
+3,16. Building materials and fuels,Business Permissions/Trade/16. Building materials and fuels,Business Permissions/Trade,False
+3,17. Furniture and all wooden products,Business Permissions/Trade/17. Furniture and all wooden products,Business Permissions/Trade,False
+3,"18. Iron, ironware, enameled and aluminum goods (possibly with other goods)","Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)",Business Permissions/Trade,False
+3,"19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors","Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors",Business Permissions/Trade,False
+3,2. Food and colonial goods (exclusively),Business Permissions/Trade/2. Food and colonial goods (exclusively),Business Permissions/Trade,False
+3,"20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)","Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)",Business Permissions/Trade,False
+3,"21. Musical, optical, surgical instruments, photographic equipment and accessories","Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories",Business Permissions/Trade,False
+3,"22. Watchmaking, jewelry, and silver-plated products","Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products",Business Permissions/Trade,False
+3,"23. Electrical equipment, radio equipment, and all lighting accessories","Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories",Business Permissions/Trade,False
+3,24. Pharmacies,Business Permissions/Trade/24. Pharmacies,Business Permissions/Trade,False
+3,"25. Pharmaceutical warehouses, perfumeries, and cosmetic shops","Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops",Business Permissions/Trade,False
+3,"26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.","Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.",Business Permissions/Trade,False
+3,"27. Bookstores, stationery, and paper products (possibly with other goods)","Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)",Business Permissions/Trade,False
+3,"28. Agricultural machinery, tools, and goods","Business Permissions/Trade/28. Agricultural machinery, tools, and goods",Business Permissions/Trade,False
+3,29. Agricultural-commercial syndicates and cooperatives,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives,Business Permissions/Trade,False
+3,3. Food products along with non-food items (excluding wine and spirits),Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits),Business Permissions/Trade,False
+3,"30. Banks, exchange offices, and other short- and long-term credit institutions","Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions",Business Permissions/Trade,False
+3,"31. Forwarding, transport, and communication enterprises","Business Permissions/Trade/31. Forwarding, transport, and communication enterprises",Business Permissions/Trade,False
+3,"32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)","Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)",Business Permissions/Trade,False
+3,"33. Hotels, boarding houses, furnished rooms, lodging houses","Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses",Business Permissions/Trade,False
+3,"34. Theaters, cinemas, and other performances","Business Permissions/Trade/34. Theaters, cinemas, and other performances",Business Permissions/Trade,False
+3,35. Insurance companies,Business Permissions/Trade/35. Insurance companies,Business Permissions/Trade,False
+3,"36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.","Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.",Business Permissions/Trade,False
+3,37. Other enterprises not listed above,Business Permissions/Trade/37. Other enterprises not listed above,Business Permissions/Trade,False
+3,38. Cards with no industry branch specified,Business Permissions/Trade/38. Cards with no industry branch specified,Business Permissions/Trade,False
+3,"4. Meat, fats, and meat products (exclusively)","Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)",Business Permissions/Trade,False
+3,5. Catering establishments with and without alcohol,Business Permissions/Trade/5. Catering establishments with and without alcohol,Business Permissions/Trade,False
+3,"6. Wine, spirits, and beer (possibly with food and colonial goods)","Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)",Business Permissions/Trade,False
+3,7. Tobacco monopoly products,Business Permissions/Trade/7. Tobacco monopoly products,Business Permissions/Trade,False
+3,8. Textiles,Business Permissions/Trade/8. Textiles,Business Permissions/Trade,False
+3,"9. Textiles with clothing, haberdashery, garments, and footwear","Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear",Business Permissions/Trade,False
+3,A 3011-3059. Total commodity purchase,Business Permissions/Trade/A 3011-3059. Total commodity purchase,Business Permissions/Trade,True
+3,A 3011. Commodity purchase (grain purchase),Business Permissions/Trade/A 3011. Commodity purchase (grain purchase),Business Permissions/Trade,True
+3,A 3012. Commodity purchase (fruit purchase),Business Permissions/Trade/A 3012. Commodity purchase (fruit purchase),Business Permissions/Trade,True
+3,A 3016. Commodity purchase (timber materials purchase),Business Permissions/Trade/A 3016. Commodity purchase (timber materials purchase),Business Permissions/Trade,True
+3,A 3021-3029. Commodity purchase (live animals purchase),Business Permissions/Trade/A 3021-3029. Commodity purchase (live animals purchase),Business Permissions/Trade,True
+3,"A 3031-3032, 3034-3039. Commodity purchase (other livestock products purchase)","Business Permissions/Trade/A 3031-3032, 3034-3039. Commodity purchase (other livestock products purchase)",Business Permissions/Trade,True
+3,A 3033. Commodity purchase (raw hides purchase),Business Permissions/Trade/A 3033. Commodity purchase (raw hides purchase),Business Permissions/Trade,True
+3,"A 3051, 3053-3059. Commodity purchase (scrap purchase)","Business Permissions/Trade/A 3051, 3053-3059. Commodity purchase (scrap purchase)",Business Permissions/Trade,True
+3,A 3052. Commodity purchase (rags purchase),Business Permissions/Trade/A 3052. Commodity purchase (rags purchase),Business Permissions/Trade,True
+3,A&B (only I i II cat.). Commodity trade (categories I and II),Business Permissions/Trade/A&B (only I i II cat.). Commodity trade (categories I and II),Business Permissions/Trade,True
+3,A&B. Total commodity trade,Business Permissions/Trade/A&B. Total commodity trade,Business Permissions/Trade,True
+3,A-K I-II cat. Commercial establishments (categories I and II),Business Permissions/Trade/A-K I-II cat. Commercial establishments (categories I and II),Business Permissions/Trade,True
+3,A-K. Commercial establishments total,Business Permissions/Trade/A-K. Commercial establishments total,Business Permissions/Trade,True
+3,a. Professional purchasing (agricultural products),Business Permissions/Trade/a. Professional purchasing (agricultural products),Business Permissions/Trade,False
+3,All Types,Business Permissions/Trade/All Types,Business Permissions/Trade,False
+3,B (I-X). Total goods sales,Business Permissions/Trade/B (I-X). Total goods sales,Business Permissions/Trade,True
+3,B I. 3061-3062. Goods sales (agricultural syndicates and cooperatives),Business Permissions/Trade/B I. 3061-3062. Goods sales (agricultural syndicates and cooperatives),Business Permissions/Trade,True
+3,"B I. 3061-3089. Goods sales (agricultural raw materials, goods for agriculture)","Business Permissions/Trade/B I. 3061-3089. Goods sales (agricultural raw materials, goods for agriculture)",Business Permissions/Trade,True
+3,B I. 3071-3072. Goods sales (grain),Business Permissions/Trade/B I. 3071-3072. Goods sales (grain),Business Permissions/Trade,True
+3,B I. 3081-3085. Goods sales (live animals),Business Permissions/Trade/B I. 3081-3085. Goods sales (live animals),Business Permissions/Trade,True
+3,B II. 3101-3179. Goods sales (food products),Business Permissions/Trade/B II. 3101-3179. Goods sales (food products),Business Permissions/Trade,True
+3,"B II. 3101. Goods sales (flour, groats, rice)","Business Permissions/Trade/B II. 3101. Goods sales (flour, groats, rice)",Business Permissions/Trade,True
+3,B II. 3103. Goods sales (bread),Business Permissions/Trade/B II. 3103. Goods sales (bread),Business Permissions/Trade,True
+3,B II. 3119. Goods sales (dairy),Business Permissions/Trade/B II. 3119. Goods sales (dairy),Business Permissions/Trade,True
+3,B II. 3121-3123. Goods sales (meat),Business Permissions/Trade/B II. 3121-3123. Goods sales (meat),Business Permissions/Trade,True
+3,"B II. 3124-3126. Goods sales (fish, herrings)","Business Permissions/Trade/B II. 3124-3126. Goods sales (fish, herrings)",Business Permissions/Trade,True
+3,"B II. 3131-3133. Goods sales (fruits, vegetables)","Business Permissions/Trade/B II. 3131-3133. Goods sales (fruits, vegetables)",Business Permissions/Trade,True
+3,B II. 3134. Goods sales (sweets),Business Permissions/Trade/B II. 3134. Goods sales (sweets),Business Permissions/Trade,True
+3,"B II. 3141-3146, 3171-3173. Goods sales (various food articles)","Business Permissions/Trade/B II. 3141-3146, 3171-3173. Goods sales (various food articles)",Business Permissions/Trade,True
+3,B II. 3151. Goods sales (beer),Business Permissions/Trade/B II. 3151. Goods sales (beer),Business Permissions/Trade,True
+3,B II. 3159. Goods sales (alcoholic beverages),Business Permissions/Trade/B II. 3159. Goods sales (alcoholic beverages),Business Permissions/Trade,True
+3,B II. 3161. Goods sales (tobacco products),Business Permissions/Trade/B II. 3161. Goods sales (tobacco products),Business Permissions/Trade,True
+3,B III. 3201-3257. Goods sales (clothing articles),Business Permissions/Trade/B III. 3201-3257. Goods sales (clothing articles),Business Permissions/Trade,True
+3,B III. 3211-3213. Goods sales (fabrics),Business Permissions/Trade/B III. 3211-3213. Goods sales (fabrics),Business Permissions/Trade,True
+3,"B III. 3221-3227, 3257. Goods sales (clothing, furs)","Business Permissions/Trade/B III. 3221-3227, 3257. Goods sales (clothing, furs)",Business Permissions/Trade,True
+3,"B III. 3231-3239. Goods sales (underwear, haberdashery)","Business Permissions/Trade/B III. 3231-3239. Goods sales (underwear, haberdashery)",Business Permissions/Trade,True
+3,"B III. 3241-3249. Goods sales (hats, caps)","Business Permissions/Trade/B III. 3241-3249. Goods sales (hats, caps)",Business Permissions/Trade,True
+3,"B III. 3251-3254, 3256. Goods sales (leather, leather products)","Business Permissions/Trade/B III. 3251-3254, 3256. Goods sales (leather, leather products)",Business Permissions/Trade,True
+3,B III. 3255. Goods sales (footwear),Business Permissions/Trade/B III. 3255. Goods sales (footwear),Business Permissions/Trade,True
+3,"B IV. 3261, 3267. Goods sales (furniture)","Business Permissions/Trade/B IV. 3261, 3267. Goods sales (furniture)",Business Permissions/Trade,True
+3,"B IV. 3261, 3281. Goods sales (furniture, appliances, utensils)","Business Permissions/Trade/B IV. 3261, 3281. Goods sales (furniture, appliances, utensils)",Business Permissions/Trade,True
+3,B IV. 3271. Goods sales (household appliances),Business Permissions/Trade/B IV. 3271. Goods sales (household appliances),Business Permissions/Trade,True
+3,"B IV. 3272-3273. Goods sales (glass, ceramics)","Business Permissions/Trade/B IV. 3272-3273. Goods sales (glass, ceramics)",Business Permissions/Trade,True
+3,"B IX. 3461-3462, 3469. Goods sales (building materials)","Business Permissions/Trade/B IX. 3461-3462, 3469. Goods sales (building materials)",Business Permissions/Trade,True
+3,B IX. 3461-3485. Goods sales (building and fuel materials),Business Permissions/Trade/B IX. 3461-3485. Goods sales (building and fuel materials),Business Permissions/Trade,True
+3,"B IX. 3481, 3483-3485. Goods sales (coal, coke and other articles)","Business Permissions/Trade/B IX. 3481, 3483-3485. Goods sales (coal, coke and other articles)",Business Permissions/Trade,True
+3,B V. 3301-3319. Goods sales (chemical articles),Business Permissions/Trade/B V. 3301-3319. Goods sales (chemical articles),Business Permissions/Trade,True
+3,B V. 3301. Goods sales (pharmacies),Business Permissions/Trade/B V. 3301. Goods sales (pharmacies),Business Permissions/Trade,True
+3,B V. 3302. Goods sales (pharmaceutical warehouses),Business Permissions/Trade/B V. 3302. Goods sales (pharmaceutical warehouses),Business Permissions/Trade,True
+3,B V. 3311-3315. Goods sales (soap shops),Business Permissions/Trade/B V. 3311-3315. Goods sales (soap shops),Business Permissions/Trade,True
+3,"B V. 3312, 3318. Goods sales (petroleum products)","Business Permissions/Trade/B V. 3312, 3318. Goods sales (petroleum products)",Business Permissions/Trade,True
+3,"B VI. 3321-3329. Goods sales (paper, paper products)","Business Permissions/Trade/B VI. 3321-3329. Goods sales (paper, paper products)",Business Permissions/Trade,True
+3,B VII. 3331-3332. Goods sales (bookstores),Business Permissions/Trade/B VII. 3331-3332. Goods sales (bookstores),Business Permissions/Trade,True
+3,"B VII. 3331-3335. Goods sales (books, periodicals, art works)","Business Permissions/Trade/B VII. 3331-3335. Goods sales (books, periodicals, art works)",Business Permissions/Trade,True
+3,B VII. 3333. Goods sales (periodicals),Business Permissions/Trade/B VII. 3333. Goods sales (periodicals),Business Permissions/Trade,True
+3,"B VIII. 3401-3441. Goods sales (iron, metals, products)","Business Permissions/Trade/B VIII. 3401-3441. Goods sales (iron, metals, products)",Business Permissions/Trade,True
+3,B VIII. 3411-3414. Goods sales (means of communication),Business Permissions/Trade/B VIII. 3411-3414. Goods sales (means of communication),Business Permissions/Trade,True
+3,B VIII. 3415-3419. Goods sales (machines),Business Permissions/Trade/B VIII. 3415-3419. Goods sales (machines),Business Permissions/Trade,True
+3,"B VIII. 3421-3429, 3433-3439. Goods sales (tools, instruments)","Business Permissions/Trade/B VIII. 3421-3429, 3433-3439. Goods sales (tools, instruments)",Business Permissions/Trade,True
+3,"B VIII. 3431-3432. Goods sales (watchmaking, jewelry products)","Business Permissions/Trade/B VIII. 3431-3432. Goods sales (watchmaking, jewelry products)",Business Permissions/Trade,True
+3,B VIII. 3441. Goods sales (electrotechnical products),Business Permissions/Trade/B VIII. 3441. Goods sales (electrotechnical products),Business Permissions/Trade,True
+3,"B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Goods sales (various and unspecified articles)","Business Permissions/Trade/B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Goods sales (various and unspecified articles)",Business Permissions/Trade,True
+3,b. Professional purchasing (livestock),Business Permissions/Trade/b. Professional purchasing (livestock),Business Permissions/Trade,False
+3,bread exchange),Business Permissions/Trade/bread exchange),Business Permissions/Trade,False
+3,"C 3501-3509. Gastronomic establishments, room rental (gastronomic establishments)","Business Permissions/Trade/C 3501-3509. Gastronomic establishments, room rental (gastronomic establishments)",Business Permissions/Trade,True
+3,"C 3501-3539. Gastronomic establishments, room rental","Business Permissions/Trade/C 3501-3539. Gastronomic establishments, room rental",Business Permissions/Trade,True
+3,"C 3511. Gastronomic establishments, room rental (guesthouses, shelters)","Business Permissions/Trade/C 3511. Gastronomic establishments, room rental (guesthouses, shelters)",Business Permissions/Trade,True
+3,"C 3521-3529. Gastronomic establishments, room rental (residential room rental)","Business Permissions/Trade/C 3521-3529. Gastronomic establishments, room rental (residential room rental)",Business Permissions/Trade,True
+3,c. Professional purchasing (plant and animal products),Business Permissions/Trade/c. Professional purchasing (plant and animal products),Business Permissions/Trade,False
+3,"D 3601-3611. Monetary trade, insurance","Business Permissions/Trade/D 3601-3611. Monetary trade, insurance",Business Permissions/Trade,True
+3,"E 3612, 3651-3655. Offices of all types (brokerage, excluding travel agencies)","Business Permissions/Trade/E 3612, 3651-3655. Offices of all types (brokerage, excluding travel agencies)",Business Permissions/Trade,True
+3,F 3701 (3702). Rental services (agricultural machinery),Business Permissions/Trade/F 3701 (3702). Rental services (agricultural machinery),Business Permissions/Trade,True
+3,F 3701-3729. Rental services,Business Permissions/Trade/F 3701-3729. Rental services,Business Permissions/Trade,True
+3,F 3704. Rental services (mangles),Business Permissions/Trade/F 3704. Rental services (mangles),Business Permissions/Trade,True
+3,F 3722. Rental services (books),Business Permissions/Trade/F 3722. Rental services (books),Business Permissions/Trade,True
+3,"G 3811-3844 (bez 3833). Transport, communication, forwarding","Business Permissions/Trade/G 3811-3844 (bez 3833). Transport, communication, forwarding",Business Permissions/Trade,True
+3,"G 3841-3843, 3832. Transport, communication, forwarding (public transport)","Business Permissions/Trade/G 3841-3843, 3832. Transport, communication, forwarding (public transport)",Business Permissions/Trade,True
+3,H 3861. Entertainment enterprises (cinematographs),Business Permissions/Trade/H 3861. Entertainment enterprises (cinematographs),Business Permissions/Trade,True
+3,H 3961-3879. Entertainment enterprises,Business Permissions/Trade/H 3961-3879. Entertainment enterprises,Business Permissions/Trade,True
+3,"I 3881-3887. Healthcare, hygiene","Business Permissions/Trade/I 3881-3887. Healthcare, hygiene",Business Permissions/Trade,True
+3,"I 3881. Healthcare, hygiene (clinics)","Business Permissions/Trade/I 3881. Healthcare, hygiene (clinics)",Business Permissions/Trade,True
+3,"I 3883-3885. Healthcare, hygiene (baths, bathing resorts, spas)","Business Permissions/Trade/I 3883-3885. Healthcare, hygiene (baths, bathing resorts, spas)",Business Permissions/Trade,True
+3,K 3891-3999. Other and unspecified,Business Permissions/Trade/K 3891-3999. Other and unspecified,Business Permissions/Trade,True
+3,Z 3661-3669. Industrial occupations,Business Permissions/Trade/Z 3661-3669. Industrial occupations,Business Permissions/Trade,True
+3,ZP. Industrial activities,Business Permissions/Trade/ZP. Industrial activities,Business Permissions/Trade,False
+3,"Ż 3833. Ferries, barges, water networks","Business Permissions/Trade/Ż 3833. Ferries, barges, water networks",Business Permissions/Trade,True
+3,% Belarusian,Census 1921/Ethnicity/% Belarusian,Census 1921/Ethnicity,True
+3,% German,Census 1921/Ethnicity/% German,Census 1921/Ethnicity,True
+3,% Jewish,Census 1921/Ethnicity/% Jewish,Census 1921/Ethnicity,True
+3,% Local (Tutejsza),Census 1921/Ethnicity/% Local (Tutejsza),Census 1921/Ethnicity,True
+3,% Minorities total,Census 1921/Ethnicity/% Minorities total,Census 1921/Ethnicity,True
+3,% Other: total,Census 1921/Ethnicity/% Other: total,Census 1921/Ethnicity,True
+3,% Polish,Census 1921/Ethnicity/% Polish,Census 1921/Ethnicity,True
+3,% Ruthenian,Census 1921/Ethnicity/% Ruthenian,Census 1921/Ethnicity,True
+3,Belarusian,Census 1921/Ethnicity/Belarusian,Census 1921/Ethnicity,True
+3,German,Census 1921/Ethnicity/German,Census 1921/Ethnicity,True
+3,Jewish,Census 1921/Ethnicity/Jewish,Census 1921/Ethnicity,True
+3,Local (Tutejszy),Census 1921/Ethnicity/Local (Tutejszy),Census 1921/Ethnicity,True
+3,Minorities total (excluding Polish),Census 1921/Ethnicity/Minorities total (excluding Polish),Census 1921/Ethnicity,True
+3,Other and unknown: total,Census 1921/Ethnicity/Other and unknown: total,Census 1921/Ethnicity,True
+3,Polish,Census 1921/Ethnicity/Polish,Census 1921/Ethnicity,True
+3,Ruthenian,Census 1921/Ethnicity/Ruthenian,Census 1921/Ethnicity,True
+3,A. Agriculture and forestry,Census 1921/Indirect Occupation/A. Agriculture and forestry,Census 1921/Indirect Occupation,True
+3,B. Mining and industry,Census 1921/Indirect Occupation/B. Mining and industry,Census 1921/Indirect Occupation,True
+3,C. Trade and insurance,Census 1921/Indirect Occupation/C. Trade and insurance,Census 1921/Indirect Occupation,True
+3,D. Communication and transport,Census 1921/Indirect Occupation/D. Communication and transport,Census 1921/Indirect Occupation,True
+3,"E. Public service, liberal professions","Census 1921/Indirect Occupation/E. Public service, liberal professions",Census 1921/Indirect Occupation,True
+3,F. Army,Census 1921/Indirect Occupation/F. Army,Census 1921/Indirect Occupation,True
+3,G. Domestic service,Census 1921/Indirect Occupation/G. Domestic service,Census 1921/Indirect Occupation,True
+3,H. Unemployed,Census 1921/Indirect Occupation/H. Unemployed,Census 1921/Indirect Occupation,True
+3,N. Not further specified,Census 1921/Indirect Occupation/N. Not further specified,Census 1921/Indirect Occupation,True
+3,Total,Census 1921/Indirect Occupation/Total,Census 1921/Indirect Occupation,True
+3,Total,Census 1921/Population/Total,Census 1921/Population,True
+3,Total (Data from 1931 Census Publications),Census 1921/Population/Total (Data from 1931 Census Publications),Census 1921/Population,True
+3,% Evangelical,Census 1921/Religion/% Evangelical,Census 1921/Religion,True
+3,% Greek Catholic,Census 1921/Religion/% Greek Catholic,Census 1921/Religion,True
+3,% Mosaic (Jewish),Census 1921/Religion/% Mosaic (Jewish),Census 1921/Religion,True
+3,% Orthodox,Census 1921/Religion/% Orthodox,Census 1921/Religion,True
+3,% Other,Census 1921/Religion/% Other,Census 1921/Religion,True
+3,% Other Christian,Census 1921/Religion/% Other Christian,Census 1921/Religion,True
+3,% Roman Catholic,Census 1921/Religion/% Roman Catholic,Census 1921/Religion,True
+3,Evangelical,Census 1921/Religion/Evangelical,Census 1921/Religion,True
+3,Greek Catholic,Census 1921/Religion/Greek Catholic,Census 1921/Religion,True
+3,Mosaic (Jewish),Census 1921/Religion/Mosaic (Jewish),Census 1921/Religion,True
+3,Orthodox,Census 1921/Religion/Orthodox,Census 1921/Religion,True
+3,Other Christian Denominations,Census 1921/Religion/Other Christian Denominations,Census 1921/Religion,True
+3,Other or Unknown,Census 1921/Religion/Other or Unknown,Census 1921/Religion,True
+3,Roman Catholic,Census 1921/Religion/Roman Catholic,Census 1921/Religion,True
+3,00 Forestry and hunting,Census 1931/Economically Active Population/00 Forestry and hunting,Census 1931/Economically Active Population,True
+3,08 Horticulture and beekeeping,Census 1931/Economically Active Population/08 Horticulture and beekeeping,Census 1931/Economically Active Population,True
+3,"08-00 Section B. Horticulture, fishing, forestry - all","Census 1931/Economically Active Population/08-00 Section B. Horticulture, fishing, forestry - all",Census 1931/Economically Active Population,True
+3,"08-00 Section B. Horticulture, fishing, forestry - f","Census 1931/Economically Active Population/08-00 Section B. Horticulture, fishing, forestry - f",Census 1931/Economically Active Population,True
+3,"08-00 Section B. Horticulture, fishing, forestry - m","Census 1931/Economically Active Population/08-00 Section B. Horticulture, fishing, forestry - m",Census 1931/Economically Active Population,True
+3,09 Fishing,Census 1931/Economically Active Population/09 Fishing,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Categories I-V - all,Census 1931/Economically Active Population/1-2 Industrial plants: Categories I-V - all,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Categories I-V - f,Census 1931/Economically Active Population/1-2 Industrial plants: Categories I-V - f,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Categories I-V - m,Census 1931/Economically Active Population/1-2 Industrial plants: Categories I-V - m,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Categories VI-VII - all,Census 1931/Economically Active Population/1-2 Industrial plants: Categories VI-VII - all,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Categories VI-VII - f,Census 1931/Economically Active Population/1-2 Industrial plants: Categories VI-VII - f,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Categories VI-VII - m,Census 1931/Economically Active Population/1-2 Industrial plants: Categories VI-VII - m,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Category VIII - all,Census 1931/Economically Active Population/1-2 Industrial plants: Category VIII - all,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Category VIII - f,Census 1931/Economically Active Population/1-2 Industrial plants: Category VIII - f,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Category VIII - m,Census 1931/Economically Active Population/1-2 Industrial plants: Category VIII - m,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Unknown category - all,Census 1931/Economically Active Population/1-2 Industrial plants: Unknown category - all,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Unknown category - f,Census 1931/Economically Active Population/1-2 Industrial plants: Unknown category - f,Census 1931/Economically Active Population,True
+3,1-2 Industrial plants: Unknown category - m,Census 1931/Economically Active Population/1-2 Industrial plants: Unknown category - m,Census 1931/Economically Active Population,True
+3,1-2 Section C. Mining and industry - all,Census 1931/Economically Active Population/1-2 Section C. Mining and industry - all,Census 1931/Economically Active Population,True
+3,1-2 Section C. Mining and industry - f,Census 1931/Economically Active Population/1-2 Section C. Mining and industry - f,Census 1931/Economically Active Population,True
+3,1-2 Section C. Mining and industry - m,Census 1931/Economically Active Population/1-2 Section C. Mining and industry - m,Census 1931/Economically Active Population,True
+3,10 Mining,Census 1931/Economically Active Population/10 Mining,Census 1931/Economically Active Population,True
+3,101 Mining not specified,Census 1931/Economically Active Population/101 Mining not specified,Census 1931/Economically Active Population,True
+3,102 Hard coal mines,Census 1931/Economically Active Population/102 Hard coal mines,Census 1931/Economically Active Population,True
+3,103 Iron ore mines,Census 1931/Economically Active Population/103 Iron ore mines,Census 1931/Economically Active Population,True
+3,104 Zinc and lead ore mines,Census 1931/Economically Active Population/104 Zinc and lead ore mines,Census 1931/Economically Active Population,True
+3,105 Rock salt mines and salt works,Census 1931/Economically Active Population/105 Rock salt mines and salt works,Census 1931/Economically Active Population,True
+3,106 Oil and gas fields,Census 1931/Economically Active Population/106 Oil and gas fields,Census 1931/Economically Active Population,True
+3,"11-13 Metallurgy, metal and machinery industry","Census 1931/Economically Active Population/11-13 Metallurgy, metal and machinery industry",Census 1931/Economically Active Population,True
+3,111 Metallurgy and metal industry unspecified — excluding machinery,Census 1931/Economically Active Population/111 Metallurgy and metal industry unspecified — excluding machinery,Census 1931/Economically Active Population,True
+3,112 Ironworks,Census 1931/Economically Active Population/112 Ironworks,Census 1931/Economically Active Population,True
+3,113 Ironworks with further processing divisions,Census 1931/Economically Active Population/113 Ironworks with further processing divisions,Census 1931/Economically Active Population,True
+3,114 Zinc and lead smelters,Census 1931/Economically Active Population/114 Zinc and lead smelters,Census 1931/Economically Active Population,True
+3,115 Foundries,Census 1931/Economically Active Population/115 Foundries,Census 1931/Economically Active Population,True
+3,"116 Boiler, valve, and construction production","Census 1931/Economically Active Population/116 Boiler, valve, and construction production",Census 1931/Economically Active Population,True
+3,"117 Production of metal furniture and fittings, locks, latches","Census 1931/Economically Active Population/117 Production of metal furniture and fittings, locks, latches",Census 1931/Economically Active Population,True
+3,118 Tinware and other sheet metal products,Census 1931/Economically Active Population/118 Tinware and other sheet metal products,Census 1931/Economically Active Population,True
+3,119 Production of copper and copper alloy products,Census 1931/Economically Active Population/119 Production of copper and copper alloy products,Census 1931/Economically Active Population,True
+3,121 Unspecified metal industry combined with machinery production,Census 1931/Economically Active Population/121 Unspecified metal industry combined with machinery production,Census 1931/Economically Active Population,True
+3,"122 Wire, nails, screws, and chain production","Census 1931/Economically Active Population/122 Wire, nails, screws, and chain production",Census 1931/Economically Active Population,True
+3,123 Blacksmithing,Census 1931/Economically Active Population/123 Blacksmithing,Census 1931/Economically Active Population,True
+3,124 Locksmithing,Census 1931/Economically Active Population/124 Locksmithing,Census 1931/Economically Active Population,True
+3,125 Tinsmithing,Census 1931/Economically Active Population/125 Tinsmithing,Census 1931/Economically Active Population,True
+3,127 Production of industrial machinery,Census 1931/Economically Active Population/127 Production of industrial machinery,Census 1931/Economically Active Population,True
+3,128 Production of agricultural machinery,Census 1931/Economically Active Population/128 Production of agricultural machinery,Census 1931/Economically Active Population,True
+3,129 Engine production,Census 1931/Economically Active Population/129 Engine production,Census 1931/Economically Active Population,True
+3,132 Wagon production,Census 1931/Economically Active Population/132 Wagon production,Census 1931/Economically Active Population,True
+3,"133 Bicycle, motorcycle, and car production","Census 1931/Economically Active Population/133 Bicycle, motorcycle, and car production",Census 1931/Economically Active Population,True
+3,134 Electrotechnical industry,Census 1931/Economically Active Population/134 Electrotechnical industry,Census 1931/Economically Active Population,True
+3,"135 Scale, instrument, and precision device production","Census 1931/Economically Active Population/135 Scale, instrument, and precision device production",Census 1931/Economically Active Population,True
+3,136 Musical instrument production,Census 1931/Economically Active Population/136 Musical instrument production,Census 1931/Economically Active Population,True
+3,137 Watchmaking and jewelry,Census 1931/Economically Active Population/137 Watchmaking and jewelry,Census 1931/Economically Active Population,True
+3,14-15 Chemical industry,Census 1931/Economically Active Population/14-15 Chemical industry,Census 1931/Economically Active Population,True
+3,141 Chemical industry not specified,Census 1931/Economically Active Population/141 Chemical industry not specified,Census 1931/Economically Active Population,True
+3,142 Tar and turpentine distilleries,Census 1931/Economically Active Population/142 Tar and turpentine distilleries,Census 1931/Economically Active Population,True
+3,143 Coke plants,Census 1931/Economically Active Population/143 Coke plants,Census 1931/Economically Active Population,True
+3,144 Oil refineries and gasoline plants,Census 1931/Economically Active Population/144 Oil refineries and gasoline plants,Census 1931/Economically Active Population,True
+3,146 Match production,Census 1931/Economically Active Population/146 Match production,Census 1931/Economically Active Population,True
+3,147 Artificial silk production,Census 1931/Economically Active Population/147 Artificial silk production,Census 1931/Economically Active Population,True
+3,148 Rubber product manufacturing,Census 1931/Economically Active Population/148 Rubber product manufacturing,Census 1931/Economically Active Population,True
+3,149 Large-scale inorganic industry,Census 1931/Economically Active Population/149 Large-scale inorganic industry,Census 1931/Economically Active Population,True
+3,152 Fat-based product manufacturing,Census 1931/Economically Active Population/152 Fat-based product manufacturing,Census 1931/Economically Active Population,True
+3,153 Soap production,Census 1931/Economically Active Population/153 Soap production,Census 1931/Economically Active Population,True
+3,154 Oil mills,Census 1931/Economically Active Population/154 Oil mills,Census 1931/Economically Active Population,True
+3,155 Cosmetic and pharmaceutical products manufacturing,Census 1931/Economically Active Population/155 Cosmetic and pharmaceutical products manufacturing,Census 1931/Economically Active Population,True
+3,16 Mineral industry,Census 1931/Economically Active Population/16 Mineral industry,Census 1931/Economically Active Population,True
+3,161 Mineral industry not specified,Census 1931/Economically Active Population/161 Mineral industry not specified,Census 1931/Economically Active Population,True
+3,162 Quarries,Census 1931/Economically Active Population/162 Quarries,Census 1931/Economically Active Population,True
+3,163 Lime kilns and gypsum mines,Census 1931/Economically Active Population/163 Lime kilns and gypsum mines,Census 1931/Economically Active Population,True
+3,164 Cement plants,Census 1931/Economically Active Population/164 Cement plants,Census 1931/Economically Active Population,True
+3,165 Concrete plants,Census 1931/Economically Active Population/165 Concrete plants,Census 1931/Economically Active Population,True
+3,166 Brickworks,Census 1931/Economically Active Population/166 Brickworks,Census 1931/Economically Active Population,True
+3,167 Ceramics and pottery industry,Census 1931/Economically Active Population/167 Ceramics and pottery industry,Census 1931/Economically Active Population,True
+3,168 Glassworks,Census 1931/Economically Active Population/168 Glassworks,Census 1931/Economically Active Population,True
+3,169 Stonemasonry,Census 1931/Economically Active Population/169 Stonemasonry,Census 1931/Economically Active Population,True
+3,17-18 Wood industry,Census 1931/Economically Active Population/17-18 Wood industry,Census 1931/Economically Active Population,True
+3,171 Wood industry not specified,Census 1931/Economically Active Population/171 Wood industry not specified,Census 1931/Economically Active Population,True
+3,172 Forest exploitation,Census 1931/Economically Active Population/172 Forest exploitation,Census 1931/Economically Active Population,True
+3,173 Forest exploitation with sawmills,Census 1931/Economically Active Population/173 Forest exploitation with sawmills,Census 1931/Economically Active Population,True
+3,174 Sawmills,Census 1931/Economically Active Population/174 Sawmills,Census 1931/Economically Active Population,True
+3,175 Carpentry and regular furniture manufacturing,Census 1931/Economically Active Population/175 Carpentry and regular furniture manufacturing,Census 1931/Economically Active Population,True
+3,176 Bentwood furniture production,Census 1931/Economically Active Population/176 Bentwood furniture production,Census 1931/Economically Active Population,True
+3,177 Cooperage,Census 1931/Economically Active Population/177 Cooperage,Census 1931/Economically Active Population,True
+3,178 Wheelwrighting,Census 1931/Economically Active Population/178 Wheelwrighting,Census 1931/Economically Active Population,True
+3,179 Basketry and wickerwork,Census 1931/Economically Active Population/179 Basketry and wickerwork,Census 1931/Economically Active Population,True
+3,182 Upholstery,Census 1931/Economically Active Population/182 Upholstery,Census 1931/Economically Active Population,True
+3,19 Paper industry,Census 1931/Economically Active Population/19 Paper industry,Census 1931/Economically Active Population,True
+3,192 Paper mills and cardboard plants,Census 1931/Economically Active Population/192 Paper mills and cardboard plants,Census 1931/Economically Active Population,True
+3,193 Paper products manufacturing,Census 1931/Economically Active Population/193 Paper products manufacturing,Census 1931/Economically Active Population,True
+3,20-21 Textile industry,Census 1931/Economically Active Population/20-21 Textile industry,Census 1931/Economically Active Population,True
+3,201 Textile industry not specified,Census 1931/Economically Active Population/201 Textile industry not specified,Census 1931/Economically Active Population,True
+3,202 Flax retting,Census 1931/Economically Active Population/202 Flax retting,Census 1931/Economically Active Population,True
+3,203 Spinning mills unspecified,Census 1931/Economically Active Population/203 Spinning mills unspecified,Census 1931/Economically Active Population,True
+3,204 Cotton spinning mills,Census 1931/Economically Active Population/204 Cotton spinning mills,Census 1931/Economically Active Population,True
+3,205 Wool spinning mills,Census 1931/Economically Active Population/205 Wool spinning mills,Census 1931/Economically Active Population,True
+3,206 Weaving mills unspecified,Census 1931/Economically Active Population/206 Weaving mills unspecified,Census 1931/Economically Active Population,True
+3,207 Cotton weaving mills,Census 1931/Economically Active Population/207 Cotton weaving mills,Census 1931/Economically Active Population,True
+3,208 Wool weaving mills,Census 1931/Economically Active Population/208 Wool weaving mills,Census 1931/Economically Active Population,True
+3,209 Spinning and weaving combined - unspecified,Census 1931/Economically Active Population/209 Spinning and weaving combined - unspecified,Census 1931/Economically Active Population,True
+3,212 Spinning and weaving combined - cotton,Census 1931/Economically Active Population/212 Spinning and weaving combined - cotton,Census 1931/Economically Active Population,True
+3,213 Spinning and weaving combined - wool,Census 1931/Economically Active Population/213 Spinning and weaving combined - wool,Census 1931/Economically Active Population,True
+3,214 Finishing plants,Census 1931/Economically Active Population/214 Finishing plants,Census 1931/Economically Active Population,True
+3,215 Carpet manufacturing,Census 1931/Economically Active Population/215 Carpet manufacturing,Census 1931/Economically Active Population,True
+3,216 Rope making,Census 1931/Economically Active Population/216 Rope making,Census 1931/Economically Active Population,True
+3,217 Hosiery and knitwear production,Census 1931/Economically Active Population/217 Hosiery and knitwear production,Census 1931/Economically Active Population,True
+3,22 Leather industry,Census 1931/Economically Active Population/22 Leather industry,Census 1931/Economically Active Population,True
+3,221 Leather industry not specified,Census 1931/Economically Active Population/221 Leather industry not specified,Census 1931/Economically Active Population,True
+3,222 Tanneries,Census 1931/Economically Active Population/222 Tanneries,Census 1931/Economically Active Population,True
+3,"223 Saddlery, harness, and leather goods production","Census 1931/Economically Active Population/223 Saddlery, harness, and leather goods production",Census 1931/Economically Active Population,True
+3,224 Brush making,Census 1931/Economically Active Population/224 Brush making,Census 1931/Economically Active Population,True
+3,23 Clothing industry,Census 1931/Economically Active Population/23 Clothing industry,Census 1931/Economically Active Population,True
+3,231 Clothing industry not specified,Census 1931/Economically Active Population/231 Clothing industry not specified,Census 1931/Economically Active Population,True
+3,232 Tailoring,Census 1931/Economically Active Population/232 Tailoring,Census 1931/Economically Active Population,True
+3,233 Linen making,Census 1931/Economically Active Population/233 Linen making,Census 1931/Economically Active Population,True
+3,234 Furriery,Census 1931/Economically Active Population/234 Furriery,Census 1931/Economically Active Population,True
+3,235 Shoemaking and mechanical footwear production,Census 1931/Economically Active Population/235 Shoemaking and mechanical footwear production,Census 1931/Economically Active Population,True
+3,"236 Hat, cap, and millinery making","Census 1931/Economically Active Population/236 Hat, cap, and millinery making",Census 1931/Economically Active Population,True
+3,24-25 Food industry,Census 1931/Economically Active Population/24-25 Food industry,Census 1931/Economically Active Population,True
+3,241 Food industry not specified,Census 1931/Economically Active Population/241 Food industry not specified,Census 1931/Economically Active Population,True
+3,242 Mills,Census 1931/Economically Active Population/242 Mills,Census 1931/Economically Active Population,True
+3,243 Bakeries,Census 1931/Economically Active Population/243 Bakeries,Census 1931/Economically Active Population,True
+3,244 Confectionery product manufacturing,Census 1931/Economically Active Population/244 Confectionery product manufacturing,Census 1931/Economically Active Population,True
+3,245 Sugar refineries,Census 1931/Economically Active Population/245 Sugar refineries,Census 1931/Economically Active Population,True
+3,246 Distilleries,Census 1931/Economically Active Population/246 Distilleries,Census 1931/Economically Active Population,True
+3,247 Breweries and maltings,Census 1931/Economically Active Population/247 Breweries and maltings,Census 1931/Economically Active Population,True
+3,"248 Vodka, wine, mead, and juice production","Census 1931/Economically Active Population/248 Vodka, wine, mead, and juice production",Census 1931/Economically Active Population,True
+3,249 Mineral and carbonated water production,Census 1931/Economically Active Population/249 Mineral and carbonated water production,Census 1931/Economically Active Population,True
+3,252 Starch factories,Census 1931/Economically Active Population/252 Starch factories,Census 1931/Economically Active Population,True
+3,253 Dairy processing,Census 1931/Economically Active Population/253 Dairy processing,Census 1931/Economically Active Population,True
+3,254 Butchery,Census 1931/Economically Active Population/254 Butchery,Census 1931/Economically Active Population,True
+3,255 Tobacco product manufacturing,Census 1931/Economically Active Population/255 Tobacco product manufacturing,Census 1931/Economically Active Population,True
+3,26 Printing industry,Census 1931/Economically Active Population/26 Printing industry,Census 1931/Economically Active Population,True
+3,261 Printing industry not specified,Census 1931/Economically Active Population/261 Printing industry not specified,Census 1931/Economically Active Population,True
+3,262 Printing and lithography,Census 1931/Economically Active Population/262 Printing and lithography,Census 1931/Economically Active Population,True
+3,263 Bookbinding,Census 1931/Economically Active Population/263 Bookbinding,Census 1931/Economically Active Population,True
+3,264 Photographic studios,Census 1931/Economically Active Population/264 Photographic studios,Census 1931/Economically Active Population,True
+3,27 Construction industry,Census 1931/Economically Active Population/27 Construction industry,Census 1931/Economically Active Population,True
+3,271 Construction industry not specified,Census 1931/Economically Active Population/271 Construction industry not specified,Census 1931/Economically Active Population,True
+3,272 Earthworks and housing construction combined,Census 1931/Economically Active Population/272 Earthworks and housing construction combined,Census 1931/Economically Active Population,True
+3,273 Earthworks,Census 1931/Economically Active Population/273 Earthworks,Census 1931/Economically Active Population,True
+3,274 Housing construction,Census 1931/Economically Active Population/274 Housing construction,Census 1931/Economically Active Population,True
+3,275 Installation works,Census 1931/Economically Active Population/275 Installation works,Census 1931/Economically Active Population,True
+3,276 Glazing,Census 1931/Economically Active Population/276 Glazing,Census 1931/Economically Active Population,True
+3,277 Painting and wallpapering,Census 1931/Economically Active Population/277 Painting and wallpapering,Census 1931/Economically Active Population,True
+3,278 Stove fitting,Census 1931/Economically Active Population/278 Stove fitting,Census 1931/Economically Active Population,True
+3,279 Surveying and land improvement works,Census 1931/Economically Active Population/279 Surveying and land improvement works,Census 1931/Economically Active Population,True
+3,"28 Power plants, gasworks, and waterworks","Census 1931/Economically Active Population/28 Power plants, gasworks, and waterworks",Census 1931/Economically Active Population,True
+3,281 Not specified,Census 1931/Economically Active Population/281 Not specified,Census 1931/Economically Active Population,True
+3,282 Power plants,Census 1931/Economically Active Population/282 Power plants,Census 1931/Economically Active Population,True
+3,283 Gasworks,Census 1931/Economically Active Population/283 Gasworks,Census 1931/Economically Active Population,True
+3,284 Waterworks and sewage systems,Census 1931/Economically Active Population/284 Waterworks and sewage systems,Census 1931/Economically Active Population,True
+3,29 Mining and industry without branch specification,Census 1931/Economically Active Population/29 Mining and industry without branch specification,Census 1931/Economically Active Population,True
+3,292 Industry unknown,Census 1931/Economically Active Population/292 Industry unknown,Census 1931/Economically Active Population,True
+3,293 Mining and metallurgy - persons without branch details,Census 1931/Economically Active Population/293 Mining and metallurgy - persons without branch details,Census 1931/Economically Active Population,True
+3,2x Unspecified workers - all,Census 1931/Economically Active Population/2x Unspecified workers - all,Census 1931/Economically Active Population,True
+3,2x Unspecified workers - f,Census 1931/Economically Active Population/2x Unspecified workers - f,Census 1931/Economically Active Population,True
+3,2x Unspecified workers - m,Census 1931/Economically Active Population/2x Unspecified workers - m,Census 1931/Economically Active Population,True
+3,3 Trade and insurance - all,Census 1931/Economically Active Population/3 Trade and insurance - all,Census 1931/Economically Active Population,True
+3,3 Trade and insurance - f,Census 1931/Economically Active Population/3 Trade and insurance - f,Census 1931/Economically Active Population,True
+3,3 Trade and insurance - m,Census 1931/Economically Active Population/3 Trade and insurance - m,Census 1931/Economically Active Population,True
+3,30 Trade not specified,Census 1931/Economically Active Population/30 Trade not specified,Census 1931/Economically Active Population,True
+3,31 Commodity trade,Census 1931/Economically Active Population/31 Commodity trade,Census 1931/Economically Active Population,True
+3,311 Commodity trade not specified,Census 1931/Economically Active Population/311 Commodity trade not specified,Census 1931/Economically Active Population,True
+3,312 Wholesale trade,Census 1931/Economically Active Population/312 Wholesale trade,Census 1931/Economically Active Population,True
+3,313 Traveling and door-to-door trade,Census 1931/Economically Active Population/313 Traveling and door-to-door trade,Census 1931/Economically Active Population,True
+3,314 Trade cooperatives,Census 1931/Economically Active Population/314 Trade cooperatives,Census 1931/Economically Active Population,True
+3,32 Room rental and gastronomy,Census 1931/Economically Active Population/32 Room rental and gastronomy,Census 1931/Economically Active Population,True
+3,321 Room rental not specified,Census 1931/Economically Active Population/321 Room rental not specified,Census 1931/Economically Active Population,True
+3,322 Apartment buildings (owners and caretakers),Census 1931/Economically Active Population/322 Apartment buildings (owners and caretakers),Census 1931/Economically Active Population,True
+3,323 Hotels and guesthouses,Census 1931/Economically Active Population/323 Hotels and guesthouses,Census 1931/Economically Active Population,True
+3,324 Private room rental and home dining,Census 1931/Economically Active Population/324 Private room rental and home dining,Census 1931/Economically Active Population,True
+3,325 Gastronomy establishments,Census 1931/Economically Active Population/325 Gastronomy establishments,Census 1931/Economically Active Population,True
+3,33 Financial transactions,Census 1931/Economically Active Population/33 Financial transactions,Census 1931/Economically Active Population,True
+3,34 Private insurance companies,Census 1931/Economically Active Population/34 Private insurance companies,Census 1931/Economically Active Population,True
+3,35 Brokerage,Census 1931/Economically Active Population/35 Brokerage,Census 1931/Economically Active Population,True
+3,4 Communication and transport - all,Census 1931/Economically Active Population/4 Communication and transport - all,Census 1931/Economically Active Population,True
+3,4 Communication and transport - f,Census 1931/Economically Active Population/4 Communication and transport - f,Census 1931/Economically Active Population,True
+3,4 Communication and transport - m,Census 1931/Economically Active Population/4 Communication and transport - m,Census 1931/Economically Active Population,True
+3,"40 Post, telephone, telegraph, radio telegraph","Census 1931/Economically Active Population/40 Post, telephone, telegraph, radio telegraph",Census 1931/Economically Active Population,True
+3,"41 Sea, inland, and air navigation","Census 1931/Economically Active Population/41 Sea, inland, and air navigation",Census 1931/Economically Active Population,True
+3,412 Sea navigation,Census 1931/Economically Active Population/412 Sea navigation,Census 1931/Economically Active Population,True
+3,413 Inland navigation,Census 1931/Economically Active Population/413 Inland navigation,Census 1931/Economically Active Population,True
+3,414 Civil aviation,Census 1931/Economically Active Population/414 Civil aviation,Census 1931/Economically Active Population,True
+3,42 Railways,Census 1931/Economically Active Population/42 Railways,Census 1931/Economically Active Population,True
+3,43 City trams and buses,Census 1931/Economically Active Population/43 City trams and buses,Census 1931/Economically Active Population,True
+3,44 Other types of transport and communication,Census 1931/Economically Active Population/44 Other types of transport and communication,Census 1931/Economically Active Population,True
+3,441 Unspecified types,Census 1931/Economically Active Population/441 Unspecified types,Census 1931/Economically Active Population,True
+3,442 Taxis,Census 1931/Economically Active Population/442 Taxis,Census 1931/Economically Active Population,True
+3,443 Horse-drawn carriages,Census 1931/Economically Active Population/443 Horse-drawn carriages,Census 1931/Economically Active Population,True
+3,444 Motor vehicle transport,Census 1931/Economically Active Population/444 Motor vehicle transport,Census 1931/Economically Active Population,True
+3,445 Horse-drawn transport,Census 1931/Economically Active Population/445 Horse-drawn transport,Census 1931/Economically Active Population,True
+3,446 Messengers and porters,Census 1931/Economically Active Population/446 Messengers and porters,Census 1931/Economically Active Population,True
+3,45 Road and waterway supervision,Census 1931/Economically Active Population/45 Road and waterway supervision,Census 1931/Economically Active Population,True
+3,"5 Public service, church, social organizations and institutions","Census 1931/Economically Active Population/5 Public service, church, social organizations and institutions",Census 1931/Economically Active Population,True
+3,5-n Other sections combined - all,Census 1931/Economically Active Population/5-n Other sections combined - all,Census 1931/Economically Active Population,True
+3,5-n Other sections combined - f,Census 1931/Economically Active Population/5-n Other sections combined - f,Census 1931/Economically Active Population,True
+3,5-n Other sections combined - m,Census 1931/Economically Active Population/5-n Other sections combined - m,Census 1931/Economically Active Population,True
+3,50 Foreign diplomatic and consular offices,Census 1931/Economically Active Population/50 Foreign diplomatic and consular offices,Census 1931/Economically Active Population,True
+3,"51 State, local government, and other public administration","Census 1931/Economically Active Population/51 State, local government, and other public administration",Census 1931/Economically Active Population,True
+3,512 State administration,Census 1931/Economically Active Population/512 State administration,Census 1931/Economically Active Population,True
+3,513 Local government administration,Census 1931/Economically Active Population/513 Local government administration,Census 1931/Economically Active Population,True
+3,514 Other public legal bodies' administration,Census 1931/Economically Active Population/514 Other public legal bodies' administration,Census 1931/Economically Active Population,True
+3,"52 Judiciary, bar, and notary","Census 1931/Economically Active Population/52 Judiciary, bar, and notary",Census 1931/Economically Active Population,True
+3,522 Judiciary,Census 1931/Economically Active Population/522 Judiciary,Census 1931/Economically Active Population,True
+3,523 Bar and notary,Census 1931/Economically Active Population/523 Bar and notary,Census 1931/Economically Active Population,True
+3,524 Legal counsel and petition offices,Census 1931/Economically Active Population/524 Legal counsel and petition offices,Census 1931/Economically Active Population,True
+3,53 Public security and penitentiary services,Census 1931/Economically Active Population/53 Public security and penitentiary services,Census 1931/Economically Active Population,True
+3,531 Public security service not specified,Census 1931/Economically Active Population/531 Public security service not specified,Census 1931/Economically Active Population,True
+3,532 State police,Census 1931/Economically Active Population/532 State police,Census 1931/Economically Active Population,True
+3,533 Border guard,Census 1931/Economically Active Population/533 Border guard,Census 1931/Economically Active Population,True
+3,535 Penitentiary service,Census 1931/Economically Active Population/535 Penitentiary service,Census 1931/Economically Active Population,True
+3,536 Fire service,Census 1931/Economically Active Population/536 Fire service,Census 1931/Economically Active Population,True
+3,54 Church and religious associations,Census 1931/Economically Active Population/54 Church and religious associations,Census 1931/Economically Active Population,True
+3,542 Clergy,Census 1931/Economically Active Population/542 Clergy,Census 1931/Economically Active Population,True
+3,543 Secular persons in church and religious associations,Census 1931/Economically Active Population/543 Secular persons in church and religious associations,Census 1931/Economically Active Population,True
+3,55 Administration of social organizations and institutions,Census 1931/Economically Active Population/55 Administration of social organizations and institutions,Census 1931/Economically Active Population,True
+3,7 Education and culture,Census 1931/Economically Active Population/7 Education and culture,Census 1931/Economically Active Population,True
+3,70 Education,Census 1931/Economically Active Population/70 Education,Census 1931/Economically Active Population,True
+3,701 Education unspecified,Census 1931/Economically Active Population/701 Education unspecified,Census 1931/Economically Active Population,True
+3,702 General education,Census 1931/Economically Active Population/702 General education,Census 1931/Economically Active Population,True
+3,703 Secondary education,Census 1931/Economically Active Population/703 Secondary education,Census 1931/Economically Active Population,True
+3,704 Higher education,Census 1931/Economically Active Population/704 Higher education,Census 1931/Economically Active Population,True
+3,705 Cheders,Census 1931/Economically Active Population/705 Cheders,Census 1931/Economically Active Population,True
+3,706 Other education,Census 1931/Economically Active Population/706 Other education,Census 1931/Economically Active Population,True
+3,71 Upbringing and non-school education,Census 1931/Economically Active Population/71 Upbringing and non-school education,Census 1931/Economically Active Population,True
+3,712 Private teachers,Census 1931/Economically Active Population/712 Private teachers,Census 1931/Economically Active Population,True
+3,713 Preschool education,Census 1931/Economically Active Population/713 Preschool education,Census 1931/Economically Active Population,True
+3,714 Non-school education,Census 1931/Economically Active Population/714 Non-school education,Census 1931/Economically Active Population,True
+3,715 Physical education and sport,Census 1931/Economically Active Population/715 Physical education and sport,Census 1931/Economically Active Population,True
+3,"72 Science, literature and art","Census 1931/Economically Active Population/72 Science, literature and art",Census 1931/Economically Active Population,True
+3,722 Scientific institutions,Census 1931/Economically Active Population/722 Scientific institutions,Census 1931/Economically Active Population,True
+3,723 Literature and art,Census 1931/Economically Active Population/723 Literature and art,Census 1931/Economically Active Population,True
+3,"73 Press, publishing and reading rooms","Census 1931/Economically Active Population/73 Press, publishing and reading rooms",Census 1931/Economically Active Population,True
+3,731 Non-daily press and other publishing,Census 1931/Economically Active Population/731 Non-daily press and other publishing,Census 1931/Economically Active Population,True
+3,732 Daily press,Census 1931/Economically Active Population/732 Daily press,Census 1931/Economically Active Population,True
+3,733 Reading rooms,Census 1931/Economically Active Population/733 Reading rooms,Census 1931/Economically Active Population,True
+3,74 Entertainment,Census 1931/Economically Active Population/74 Entertainment,Census 1931/Economically Active Population,True
+3,741 Entertainment unspecified,Census 1931/Economically Active Population/741 Entertainment unspecified,Census 1931/Economically Active Population,True
+3,742 Theater and music,Census 1931/Economically Active Population/742 Theater and music,Census 1931/Economically Active Population,True
+3,743 Cinematography,Census 1931/Economically Active Population/743 Cinematography,Census 1931/Economically Active Population,True
+3,744 Circuses and traveling artists,Census 1931/Economically Active Population/744 Circuses and traveling artists,Census 1931/Economically Active Population,True
+3,"8 Health care and hygiene, cleaning and social welfare","Census 1931/Economically Active Population/8 Health care and hygiene, cleaning and social welfare",Census 1931/Economically Active Population,True
+3,80 Health care and prevention,Census 1931/Economically Active Population/80 Health care and prevention,Census 1931/Economically Active Population,True
+3,801 Prevention not specified,Census 1931/Economically Active Population/801 Prevention not specified,Census 1931/Economically Active Population,True
+3,802 Medical institutions and sanitary services,Census 1931/Economically Active Population/802 Medical institutions and sanitary services,Census 1931/Economically Active Population,True
+3,803 Pharmacies and medical labs,Census 1931/Economically Active Population/803 Pharmacies and medical labs,Census 1931/Economically Active Population,True
+3,804 Private physicians,Census 1931/Economically Active Population/804 Private physicians,Census 1931/Economically Active Population,True
+3,"805 Private paramedics, nurses, and masseurs","Census 1931/Economically Active Population/805 Private paramedics, nurses, and masseurs",Census 1931/Economically Active Population,True
+3,806 Private midwives,Census 1931/Economically Active Population/806 Private midwives,Census 1931/Economically Active Population,True
+3,807 Veterinary medicine,Census 1931/Economically Active Population/807 Veterinary medicine,Census 1931/Economically Active Population,True
+3,81 Personal and premises hygiene. Street and square cleaning. Burials,Census 1931/Economically Active Population/81 Personal and premises hygiene. Street and square cleaning. Burials,Census 1931/Economically Active Population,True
+3,811 Hygiene not specified,Census 1931/Economically Active Population/811 Hygiene not specified,Census 1931/Economically Active Population,True
+3,812 Bathhouses,Census 1931/Economically Active Population/812 Bathhouses,Census 1931/Economically Active Population,True
+3,813 Hairdressing and beauty salons,Census 1931/Economically Active Population/813 Hairdressing and beauty salons,Census 1931/Economically Active Population,True
+3,814 Laundries and ironing services,Census 1931/Economically Active Population/814 Laundries and ironing services,Census 1931/Economically Active Population,True
+3,815 Street and square cleaning,Census 1931/Economically Active Population/815 Street and square cleaning,Census 1931/Economically Active Population,True
+3,816 Cemeteries and funeral services,Census 1931/Economically Active Population/816 Cemeteries and funeral services,Census 1931/Economically Active Population,True
+3,82 Social welfare institutions,Census 1931/Economically Active Population/82 Social welfare institutions,Census 1931/Economically Active Population,True
+3,9 Domestic service,Census 1931/Economically Active Population/9 Domestic service,Census 1931/Economically Active Population,True
+3,"n Section N. Persons with unspecified occupation, delinquent persons, and persons with unknown occupation","Census 1931/Economically Active Population/n Section N. Persons with unspecified occupation, delinquent persons, and persons with unknown occupation",Census 1931/Economically Active Population,True
+3,R08-00 Other branches of Section B,Census 1931/Economically Active Population/R08-00 Other branches of Section B,Census 1931/Economically Active Population,True
+3,R1-2 Other branches of Section C,Census 1931/Economically Active Population/R1-2 Other branches of Section C,Census 1931/Economically Active Population,True
+3,R11-13 Other branches of 11-13,Census 1931/Economically Active Population/R11-13 Other branches of 11-13,Census 1931/Economically Active Population,True
+3,R3 Other branches of Section D,Census 1931/Economically Active Population/R3 Other branches of Section D,Census 1931/Economically Active Population,True
+3,R4 Other branches of Section 4,Census 1931/Economically Active Population/R4 Other branches of Section 4,Census 1931/Economically Active Population,True
+3,R5 Other branches of Section 5,Census 1931/Economically Active Population/R5 Other branches of Section 5,Census 1931/Economically Active Population,True
+3,R7 Other branches of Section 7,Census 1931/Economically Active Population/R7 Other branches of Section 7,Census 1931/Economically Active Population,True
+3,R8 Other branches of Section I,Census 1931/Economically Active Population/R8 Other branches of Section I,Census 1931/Economically Active Population,True
+3,Total - all,Census 1931/Economically Active Population/Total - all,Census 1931/Economically Active Population,True
+3,Total - f,Census 1931/Economically Active Population/Total - f,Census 1931/Economically Active Population,True
+3,Total - m,Census 1931/Economically Active Population/Total - m,Census 1931/Economically Active Population,True
+3,x Persons living without gainful employment,Census 1931/Economically Active Population/x Persons living without gainful employment,Census 1931/Economically Active Population,True
+3,x1 Capitalists and rentiers,Census 1931/Economically Active Population/x1 Capitalists and rentiers,Census 1931/Economically Active Population,True
+3,Agriculture,Census 1931/Indirect Occupation/Agriculture,Census 1931/Indirect Occupation,True
+3,Domestic service,Census 1931/Indirect Occupation/Domestic service,Census 1931/Indirect Occupation,True
+3,Indirect Occupation,Census 1931/Indirect Occupation/Indirect Occupation,Census 1931/Indirect Occupation,False
+3,Mining and industry,Census 1931/Indirect Occupation/Mining and industry,Census 1931/Indirect Occupation,True
+3,Other,Census 1931/Indirect Occupation/Other,Census 1931/Indirect Occupation,True
+3,Outside Agriculture,Census 1931/Indirect Occupation/Outside Agriculture,Census 1931/Indirect Occupation,True
+3,Public Hygiene and Sanitation,Census 1931/Indirect Occupation/Public Hygiene and Sanitation,Census 1931/Indirect Occupation,True
+3,Public service,Census 1931/Indirect Occupation/Public service,Census 1931/Indirect Occupation,True
+3,"Schooling, Education, and Culture","Census 1931/Indirect Occupation/Schooling, Education, and Culture",Census 1931/Indirect Occupation,True
+3,Total,Census 1931/Indirect Occupation/Total,Census 1931/Indirect Occupation,True
+3,Trade and insurance,Census 1931/Indirect Occupation/Trade and insurance,Census 1931/Indirect Occupation,True
+3,Transport and communication,Census 1931/Indirect Occupation/Transport and communication,Census 1931/Indirect Occupation,True
+3,% Belarusian,Census 1931/Mother Tongue/% Belarusian,Census 1931/Mother Tongue,True
+3,% German,Census 1931/Mother Tongue/% German,Census 1931/Mother Tongue,True
+3,% Hebrew,Census 1931/Mother Tongue/% Hebrew,Census 1931/Mother Tongue,True
+3,% Jewish,Census 1931/Mother Tongue/% Jewish,Census 1931/Mother Tongue,True
+3,% Minority Languages Altogether (Excluding Polish),Census 1931/Mother Tongue/% Minority Languages Altogether (Excluding Polish),Census 1931/Mother Tongue,True
+3,% Other,Census 1931/Mother Tongue/% Other,Census 1931/Mother Tongue,True
+3,% Polish,Census 1931/Mother Tongue/% Polish,Census 1931/Mother Tongue,True
+3,% Russian,Census 1931/Mother Tongue/% Russian,Census 1931/Mother Tongue,True
+3,% Ruthenian,Census 1931/Mother Tongue/% Ruthenian,Census 1931/Mother Tongue,True
+3,% Ukrainian,Census 1931/Mother Tongue/% Ukrainian,Census 1931/Mother Tongue,True
+3,Belarusian,Census 1931/Mother Tongue/Belarusian,Census 1931/Mother Tongue,True
+3,German,Census 1931/Mother Tongue/German,Census 1931/Mother Tongue,True
+3,Hebrew,Census 1931/Mother Tongue/Hebrew,Census 1931/Mother Tongue,True
+3,Jewish,Census 1931/Mother Tongue/Jewish,Census 1931/Mother Tongue,True
+3,Minority Languages Altogether (Excluding Polish),Census 1931/Mother Tongue/Minority Languages Altogether (Excluding Polish),Census 1931/Mother Tongue,True
+3,Other,Census 1931/Mother Tongue/Other,Census 1931/Mother Tongue,True
+3,Polish,Census 1931/Mother Tongue/Polish,Census 1931/Mother Tongue,True
+3,Russian,Census 1931/Mother Tongue/Russian,Census 1931/Mother Tongue,True
+3,Ruthenian,Census 1931/Mother Tongue/Ruthenian,Census 1931/Mother Tongue,True
+3,Ukrainian,Census 1931/Mother Tongue/Ukrainian,Census 1931/Mother Tongue,True
+3,Total,Census 1931/Population/Total,Census 1931/Population,True
+3,% Evangelical,Census 1931/Religion/% Evangelical,Census 1931/Religion,True
+3,% Greek Catholic,Census 1931/Religion/% Greek Catholic,Census 1931/Religion,True
+3,% Mosaic (Jewish),Census 1931/Religion/% Mosaic (Jewish),Census 1931/Religion,True
+3,% Orthodox,Census 1931/Religion/% Orthodox,Census 1931/Religion,True
+3,% Other,Census 1931/Religion/% Other,Census 1931/Religion,True
+3,% Other Christian,Census 1931/Religion/% Other Christian,Census 1931/Religion,True
+3,% Roman Catholic,Census 1931/Religion/% Roman Catholic,Census 1931/Religion,True
+3,Evangelical,Census 1931/Religion/Evangelical,Census 1931/Religion,True
+3,Greek Catholic,Census 1931/Religion/Greek Catholic,Census 1931/Religion,True
+3,Mosaic (Jewish),Census 1931/Religion/Mosaic (Jewish),Census 1931/Religion,True
+3,Orthodox,Census 1931/Religion/Orthodox,Census 1931/Religion,True
+3,Other,Census 1931/Religion/Other,Census 1931/Religion,True
+3,Other Christian denominations,Census 1931/Religion/Other Christian denominations,Census 1931/Religion,True
+3,Roman Catholic,Census 1931/Religion/Roman Catholic,Census 1931/Religion,True
+3,Barley,Crops/Area/Barley,Crops/Area,True
+3,"Beans, Broad Beans, and Lentils","Crops/Area/Beans, Broad Beans, and Lentils",Crops/Area,True
+3,Buckwheat,Crops/Area/Buckwheat,Crops/Area,True
+3,Cereal Mixtures for Grain (Barley and Oats),Crops/Area/Cereal Mixtures for Grain (Barley and Oats),Crops/Area,True
+3,Chicory,Crops/Area/Chicory,Crops/Area,True
+3,Clover,Crops/Area/Clover,Crops/Area,True
+3,"Field Pea, Vetch, and Faba Bean","Crops/Area/Field Pea, Vetch, and Faba Bean",Crops/Area,True
+3,Flax,Crops/Area/Flax,Crops/Area,True
+3,Hemp,Crops/Area/Hemp,Crops/Area,True
+3,Hops,Crops/Area/Hops,Crops/Area,True
+3,Lupin,Crops/Area/Lupin,Crops/Area,True
+3,Maize,Crops/Area/Maize,Crops/Area,True
+3,Millet,Crops/Area/Millet,Crops/Area,True
+3,Mixtures for Grain,Crops/Area/Mixtures for Grain,Crops/Area,False
+3,Oats,Crops/Area/Oats,Crops/Area,True
+3,Other Cereal Mixtures for Grain,Crops/Area/Other Cereal Mixtures for Grain,Crops/Area,True
+3,Other Fodder Crops and Mixtures,Crops/Area/Other Fodder Crops and Mixtures,Crops/Area,True
+3,Peas,Crops/Area/Peas,Crops/Area,True
+3,Potatoes,Crops/Area/Potatoes,Crops/Area,True
+3,Rapeseed and Turnip Rape,Crops/Area/Rapeseed and Turnip Rape,Crops/Area,True
+3,Rye,Crops/Area/Rye,Crops/Area,True
+3,Serradella,Crops/Area/Serradella,Crops/Area,True
+3,Sugar Beets,Crops/Area/Sugar Beets,Crops/Area,True
+3,Tabacco,Crops/Area/Tabacco,Crops/Area,True
+3,Wheat,Crops/Area/Wheat,Crops/Area,True
+3,Winter and Spring Rapeseed and Turnip Rape,Crops/Area/Winter and Spring Rapeseed and Turnip Rape,Crops/Area,True
+3,Sugar Beets,Crops/Average Yield per ha/Sugar Beets,Crops/Average Yield per ha,True
+3,Barley,Crops/Size/Barley,Crops/Size,True
+3,"Beans, Broad Beans, and Lentils","Crops/Size/Beans, Broad Beans, and Lentils",Crops/Size,True
+3,Buckwheat,Crops/Size/Buckwheat,Crops/Size,True
+3,Flax,Crops/Size/Flax,Crops/Size,False
+3,Hemp,Crops/Size/Hemp,Crops/Size,False
+3,Hops,Crops/Size/Hops,Crops/Size,True
+3,Maize,Crops/Size/Maize,Crops/Size,True
+3,Millet,Crops/Size/Millet,Crops/Size,True
+3,Mixtures for Grain,Crops/Size/Mixtures for Grain,Crops/Size,False
+3,Oats,Crops/Size/Oats,Crops/Size,True
+3,Peas,Crops/Size/Peas,Crops/Size,True
+3,Potatoes,Crops/Size/Potatoes,Crops/Size,True
+3,Rapeseed and Turnip Rape,Crops/Size/Rapeseed and Turnip Rape,Crops/Size,True
+3,Rye,Crops/Size/Rye,Crops/Size,True
+3,Seed,Crops/Size/Seed,Crops/Size,False
+3,Sugar Beets,Crops/Size/Sugar Beets,Crops/Size,True
+3,Tabacco,Crops/Size/Tabacco,Crops/Size,True
+3,Wheat,Crops/Size/Wheat,Crops/Size,True
+3,Buraki Cukrowe,Crops/Yields (q per ha)/Buraki Cukrowe,Crops/Yields (q per ha),True
+3,Chemical,Employment/Employment Share/Chemical,Employment/Employment Share,False
+3,Clothing and Toymaking,Employment/Employment Share/Clothing and Toymaking,Employment/Employment Share,False
+3,Construction,Employment/Employment Share/Construction,Employment/Employment Share,False
+3,Electrotechnical,Employment/Employment Share/Electrotechnical,Employment/Employment Share,False
+3,Food,Employment/Employment Share/Food,Employment/Employment Share,False
+3,Leather,Employment/Employment Share/Leather,Employment/Employment Share,False
+3,Metal,Employment/Employment Share/Metal,Employment/Employment Share,False
+3,Mineral,Employment/Employment Share/Mineral,Employment/Employment Share,False
+3,Mining,Employment/Employment Share/Mining,Employment/Employment Share,False
+3,Paper,Employment/Employment Share/Paper,Employment/Employment Share,False
+3,Plants,Employment/Employment Share/Plants,Employment/Employment Share,False
+3,Power plants and waterworks,Employment/Employment Share/Power plants and waterworks,Employment/Employment Share,False
+3,Printing,Employment/Employment Share/Printing,Employment/Employment Share,False
+3,Textile,Employment/Employment Share/Textile,Employment/Employment Share,False
+3,Together,Employment/Employment Share/Together,Employment/Employment Share,False
+3,Wood,Employment/Employment Share/Wood,Employment/Employment Share,False
+3,Barley,Prices/Local Paid to Producers/Barley,Prices/Local Paid to Producers,False
+3,Buckwheat,Prices/Local Paid to Producers/Buckwheat,Prices/Local Paid to Producers,True
+3,Hay,Prices/Local Paid to Producers/Hay,Prices/Local Paid to Producers,False
+3,Milking Cow (Maximum Price),Prices/Local Paid to Producers/Milking Cow (Maximum Price),Prices/Local Paid to Producers,True
+3,Milking Cow (Minimum Price),Prices/Local Paid to Producers/Milking Cow (Minimum Price),Prices/Local Paid to Producers,True
+3,Oats,Prices/Local Paid to Producers/Oats,Prices/Local Paid to Producers,True
+3,Peas,Prices/Local Paid to Producers/Peas,Prices/Local Paid to Producers,True
+3,Pig (per kg),Prices/Local Paid to Producers/Pig (per kg),Prices/Local Paid to Producers,True
+3,Potatoes,Prices/Local Paid to Producers/Potatoes,Prices/Local Paid to Producers,False
+3,Rye,Prices/Local Paid to Producers/Rye,Prices/Local Paid to Producers,True
+3,Straw,Prices/Local Paid to Producers/Straw,Prices/Local Paid to Producers,True
+3,Wheat,Prices/Local Paid to Producers/Wheat,Prices/Local Paid to Producers,True
+3,Working Horse (Maximum Price),Prices/Local Paid to Producers/Working Horse (Maximum Price),Prices/Local Paid to Producers,True
+3,Working Horse (Minimum Price),Prices/Local Paid to Producers/Working Horse (Minimum Price),Prices/Local Paid to Producers,True
+3,Total,Yearbook 1939/Population/Total,Yearbook 1939/Population,True
+4,PR,Business Permissions/Industrial Occupations/Registration Permits/PR,Business Permissions/Industrial Occupations/Registration Permits,True
+4,R,Business Permissions/Industrial Occupations/Registration Permits/R,Business Permissions/Industrial Occupations/Registration Permits,True
+4,PR,Business Permissions/Industrial Occupations/Together/PR,Business Permissions/Industrial Occupations/Together,True
+4,R,Business Permissions/Industrial Occupations/Together/R,Business Permissions/Industrial Occupations/Together,True
+4,Retail,Business Permissions/Industrial Occupations/Trade at Fairs/Retail,Business Permissions/Industrial Occupations/Trade at Fairs,False
+4,Wholesale,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale,Business Permissions/Industrial Occupations/Trade at Fairs,False
+4,Category IIIR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IIIR,Business Permissions/Trade/1. All types of professional purchasing (total),True
+4,Category IIR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IIR,Business Permissions/Trade/1. All types of professional purchasing (total),True
+4,Category IR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IR,Business Permissions/Trade/1. All types of professional purchasing (total),True
+4,Category IVR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IVR,Business Permissions/Trade/1. All types of professional purchasing (total),True
+4,Category VaR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category VaR,Business Permissions/Trade/1. All types of professional purchasing (total),True
+4,Category VbR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category VbR,Business Permissions/Trade/1. All types of professional purchasing (total),True
+4,Total,Business Permissions/Trade/1. All types of professional purchasing (total)/Total,Business Permissions/Trade/1. All types of professional purchasing (total),True
+4,Category IIIR,Business Permissions/Trade/10. Ready-made clothing and haberdashery/Category IIIR,Business Permissions/Trade/10. Ready-made clothing and haberdashery,True
+4,Category IIR,Business Permissions/Trade/10. Ready-made clothing and haberdashery/Category IIR,Business Permissions/Trade/10. Ready-made clothing and haberdashery,True
+4,Category IR,Business Permissions/Trade/10. Ready-made clothing and haberdashery/Category IR,Business Permissions/Trade/10. Ready-made clothing and haberdashery,True
+4,Category IVR,Business Permissions/Trade/10. Ready-made clothing and haberdashery/Category IVR,Business Permissions/Trade/10. Ready-made clothing and haberdashery,True
+4,Category VaR,Business Permissions/Trade/10. Ready-made clothing and haberdashery/Category VaR,Business Permissions/Trade/10. Ready-made clothing and haberdashery,True
+4,Category VbR,Business Permissions/Trade/10. Ready-made clothing and haberdashery/Category VbR,Business Permissions/Trade/10. Ready-made clothing and haberdashery,True
+4,Total,Business Permissions/Trade/10. Ready-made clothing and haberdashery/Total,Business Permissions/Trade/10. Ready-made clothing and haberdashery,True
+4,Category IIIR,"Business Permissions/Trade/11. Garments, garment parts, furs, and fur products/Category IIIR","Business Permissions/Trade/11. Garments, garment parts, furs, and fur products",True
+4,Category IIR,"Business Permissions/Trade/11. Garments, garment parts, furs, and fur products/Category IIR","Business Permissions/Trade/11. Garments, garment parts, furs, and fur products",True
+4,Category IR,"Business Permissions/Trade/11. Garments, garment parts, furs, and fur products/Category IR","Business Permissions/Trade/11. Garments, garment parts, furs, and fur products",True
+4,Category IVR,"Business Permissions/Trade/11. Garments, garment parts, furs, and fur products/Category IVR","Business Permissions/Trade/11. Garments, garment parts, furs, and fur products",True
+4,Category VaR,"Business Permissions/Trade/11. Garments, garment parts, furs, and fur products/Category VaR","Business Permissions/Trade/11. Garments, garment parts, furs, and fur products",True
+4,Category VbR,"Business Permissions/Trade/11. Garments, garment parts, furs, and fur products/Category VbR","Business Permissions/Trade/11. Garments, garment parts, furs, and fur products",True
+4,Total,"Business Permissions/Trade/11. Garments, garment parts, furs, and fur products/Total","Business Permissions/Trade/11. Garments, garment parts, furs, and fur products",True
+4,Category IIIR,Business Permissions/Trade/12. Footwear/Category IIIR,Business Permissions/Trade/12. Footwear,True
+4,Category IIR,Business Permissions/Trade/12. Footwear/Category IIR,Business Permissions/Trade/12. Footwear,True
+4,Category IR,Business Permissions/Trade/12. Footwear/Category IR,Business Permissions/Trade/12. Footwear,True
+4,Category IVR,Business Permissions/Trade/12. Footwear/Category IVR,Business Permissions/Trade/12. Footwear,True
+4,Category VaR,Business Permissions/Trade/12. Footwear/Category VaR,Business Permissions/Trade/12. Footwear,True
+4,Category VbR,Business Permissions/Trade/12. Footwear/Category VbR,Business Permissions/Trade/12. Footwear,True
+4,Total,Business Permissions/Trade/12. Footwear/Total,Business Permissions/Trade/12. Footwear,True
+4,Category IIIR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories/Category IIIR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories,True
+4,Category IIR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories/Category IIR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories,True
+4,Category IR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories/Category IR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories,True
+4,Category IVR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories/Category IVR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories,True
+4,Category VaR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories/Category VaR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories,True
+4,Category VbR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories/Category VbR,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories,True
+4,Total,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories/Total,Business Permissions/Trade/13. Footwear with leather and shoemaking accessories,True
+4,Category IIIR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear)/Category IIIR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear),True
+4,Category IIR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear)/Category IIR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear),True
+4,Category IR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear)/Category IR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear),True
+4,Category IVR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear)/Category IVR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear),True
+4,Category VaR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear)/Category VaR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear),True
+4,Category VbR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear)/Category VbR,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear),True
+4,Total,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear)/Total,Business Permissions/Trade/14. All types of leather and leather products (excluding footwear),True
+4,Category IIIR,"Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)/Category IIIR","Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)",True
+4,Category IIR,"Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)/Category IIR","Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)",True
+4,Category IR,"Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)/Category IR","Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)",True
+4,Category IVR,"Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)/Category IVR","Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)",True
+4,Category VaR,"Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)/Category VaR","Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)",True
+4,Category VbR,"Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)/Category VbR","Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)",True
+4,Total,"Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)/Total","Business Permissions/Trade/15. Machinery, tools, and technical goods (excluding agricultural)",True
+4,Category IIIR,Business Permissions/Trade/16. Building materials and fuels/Category IIIR,Business Permissions/Trade/16. Building materials and fuels,True
+4,Category IIR,Business Permissions/Trade/16. Building materials and fuels/Category IIR,Business Permissions/Trade/16. Building materials and fuels,True
+4,Category IR,Business Permissions/Trade/16. Building materials and fuels/Category IR,Business Permissions/Trade/16. Building materials and fuels,True
+4,Category IVR,Business Permissions/Trade/16. Building materials and fuels/Category IVR,Business Permissions/Trade/16. Building materials and fuels,True
+4,Category VaR,Business Permissions/Trade/16. Building materials and fuels/Category VaR,Business Permissions/Trade/16. Building materials and fuels,True
+4,Category VbR,Business Permissions/Trade/16. Building materials and fuels/Category VbR,Business Permissions/Trade/16. Building materials and fuels,True
+4,Total,Business Permissions/Trade/16. Building materials and fuels/Total,Business Permissions/Trade/16. Building materials and fuels,True
+4,Category IIIR,Business Permissions/Trade/17. Furniture and all wooden products/Category IIIR,Business Permissions/Trade/17. Furniture and all wooden products,True
+4,Category IIR,Business Permissions/Trade/17. Furniture and all wooden products/Category IIR,Business Permissions/Trade/17. Furniture and all wooden products,True
+4,Category IR,Business Permissions/Trade/17. Furniture and all wooden products/Category IR,Business Permissions/Trade/17. Furniture and all wooden products,True
+4,Category IVR,Business Permissions/Trade/17. Furniture and all wooden products/Category IVR,Business Permissions/Trade/17. Furniture and all wooden products,True
+4,Category VaR,Business Permissions/Trade/17. Furniture and all wooden products/Category VaR,Business Permissions/Trade/17. Furniture and all wooden products,True
+4,Category VbR,Business Permissions/Trade/17. Furniture and all wooden products/Category VbR,Business Permissions/Trade/17. Furniture and all wooden products,True
+4,Total,Business Permissions/Trade/17. Furniture and all wooden products/Total,Business Permissions/Trade/17. Furniture and all wooden products,True
+4,Category IIIR,"Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)/Category IIIR","Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)",True
+4,Category IIR,"Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)/Category IIR","Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)",True
+4,Category IR,"Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)/Category IR","Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)",True
+4,Category IVR,"Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)/Category IVR","Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)",True
+4,Category VaR,"Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)/Category VaR","Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)",True
+4,Category VbR,"Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)/Category VbR","Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)",True
+4,Total,"Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)/Total","Business Permissions/Trade/18. Iron, ironware, enameled and aluminum goods (possibly with other goods)",True
+4,Category IIIR,"Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors/Category IIIR","Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors",True
+4,Category IIR,"Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors/Category IIR","Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors",True
+4,Category IR,"Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors/Category IR","Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors",True
+4,Category IVR,"Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors/Category IVR","Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors",True
+4,Category VaR,"Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors/Category VaR","Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors",True
+4,Category VbR,"Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors/Category VbR","Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors",True
+4,Total,"Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors/Total","Business Permissions/Trade/19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors",True
+4,Category IIIR,Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category IIIR,Business Permissions/Trade/2. Food and colonial goods (exclusively),True
+4,Category IIR,Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category IIR,Business Permissions/Trade/2. Food and colonial goods (exclusively),True
+4,Category IR,Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category IR,Business Permissions/Trade/2. Food and colonial goods (exclusively),True
+4,Category IVR,Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category IVR,Business Permissions/Trade/2. Food and colonial goods (exclusively),True
+4,Category VaR,Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category VaR,Business Permissions/Trade/2. Food and colonial goods (exclusively),True
+4,Category VbR,Business Permissions/Trade/2. Food and colonial goods (exclusively)/Category VbR,Business Permissions/Trade/2. Food and colonial goods (exclusively),True
+4,Total,Business Permissions/Trade/2. Food and colonial goods (exclusively)/Total,Business Permissions/Trade/2. Food and colonial goods (exclusively),True
+4,Category IIIR,"Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)/Category IIIR","Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)",True
+4,Category IIR,"Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)/Category IIR","Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)",True
+4,Category IR,"Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)/Category IR","Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)",True
+4,Category IVR,"Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)/Category IVR","Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)",True
+4,Category VaR,"Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)/Category VaR","Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)",True
+4,Category VbR,"Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)/Category VbR","Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)",True
+4,Total,"Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)/Total","Business Permissions/Trade/20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)",True
+4,Category IIIR,"Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories/Category IIIR","Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories",True
+4,Category IIR,"Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories/Category IIR","Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories",True
+4,Category IR,"Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories/Category IR","Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories",True
+4,Category IVR,"Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories/Category IVR","Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories",True
+4,Category VaR,"Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories/Category VaR","Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories",True
+4,Category VbR,"Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories/Category VbR","Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories",True
+4,Total,"Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories/Total","Business Permissions/Trade/21. Musical, optical, surgical instruments, photographic equipment and accessories",True
+4,Category IIIR,"Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products/Category IIIR","Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products",True
+4,Category IIR,"Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products/Category IIR","Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products",True
+4,Category IR,"Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products/Category IR","Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products",True
+4,Category IVR,"Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products/Category IVR","Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products",True
+4,Category VaR,"Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products/Category VaR","Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products",True
+4,Category VbR,"Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products/Category VbR","Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products",True
+4,Total,"Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products/Total","Business Permissions/Trade/22. Watchmaking, jewelry, and silver-plated products",True
+4,Category IIIR,"Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories/Category IIIR","Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories",True
+4,Category IIR,"Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories/Category IIR","Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories",True
+4,Category IR,"Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories/Category IR","Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories",True
+4,Category IVR,"Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories/Category IVR","Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories",True
+4,Category VaR,"Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories/Category VaR","Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories",True
+4,Category VbR,"Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories/Category VbR","Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories",True
+4,Total,"Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories/Total","Business Permissions/Trade/23. Electrical equipment, radio equipment, and all lighting accessories",True
+4,Category IIIR,Business Permissions/Trade/24. Pharmacies/Category IIIR,Business Permissions/Trade/24. Pharmacies,True
+4,Category IIR,Business Permissions/Trade/24. Pharmacies/Category IIR,Business Permissions/Trade/24. Pharmacies,True
+4,Category IR,Business Permissions/Trade/24. Pharmacies/Category IR,Business Permissions/Trade/24. Pharmacies,True
+4,Category IVR,Business Permissions/Trade/24. Pharmacies/Category IVR,Business Permissions/Trade/24. Pharmacies,True
+4,Category VaR,Business Permissions/Trade/24. Pharmacies/Category VaR,Business Permissions/Trade/24. Pharmacies,True
+4,Category VbR,Business Permissions/Trade/24. Pharmacies/Category VbR,Business Permissions/Trade/24. Pharmacies,True
+4,Total,Business Permissions/Trade/24. Pharmacies/Total,Business Permissions/Trade/24. Pharmacies,True
+4,Category IIIR,"Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops/Category IIIR","Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops",True
+4,Category IIR,"Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops/Category IIR","Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops",True
+4,Category IR,"Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops/Category IR","Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops",True
+4,Category IVR,"Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops/Category IVR","Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops",True
+4,Category VaR,"Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops/Category VaR","Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops",True
+4,Category VbR,"Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops/Category VbR","Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops",True
+4,Total,"Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops/Total","Business Permissions/Trade/25. Pharmaceutical warehouses, perfumeries, and cosmetic shops",True
+4,Category IIIR,"Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc./Category IIIR","Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.",True
+4,Category IIR,"Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc./Category IIR","Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.",True
+4,Category IR,"Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc./Category IR","Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.",True
+4,Category IVR,"Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc./Category IVR","Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.",True
+4,Category VaR,"Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc./Category VaR","Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.",True
+4,Category VbR,"Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc./Category VbR","Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.",True
+4,Total,"Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc./Total","Business Permissions/Trade/26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.",True
+4,Category IIIR,"Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)/Category IIIR","Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)",True
+4,Category IIR,"Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)/Category IIR","Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)",True
+4,Category IR,"Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)/Category IR","Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)",True
+4,Category IVR,"Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)/Category IVR","Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)",True
+4,Category VaR,"Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)/Category VaR","Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)",True
+4,Category VbR,"Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)/Category VbR","Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)",True
+4,Total,"Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)/Total","Business Permissions/Trade/27. Bookstores, stationery, and paper products (possibly with other goods)",True
+4,Category IIIR,"Business Permissions/Trade/28. Agricultural machinery, tools, and goods/Category IIIR","Business Permissions/Trade/28. Agricultural machinery, tools, and goods",True
+4,Category IIR,"Business Permissions/Trade/28. Agricultural machinery, tools, and goods/Category IIR","Business Permissions/Trade/28. Agricultural machinery, tools, and goods",True
+4,Category IR,"Business Permissions/Trade/28. Agricultural machinery, tools, and goods/Category IR","Business Permissions/Trade/28. Agricultural machinery, tools, and goods",True
+4,Category IVR,"Business Permissions/Trade/28. Agricultural machinery, tools, and goods/Category IVR","Business Permissions/Trade/28. Agricultural machinery, tools, and goods",True
+4,Category VaR,"Business Permissions/Trade/28. Agricultural machinery, tools, and goods/Category VaR","Business Permissions/Trade/28. Agricultural machinery, tools, and goods",True
+4,Category VbR,"Business Permissions/Trade/28. Agricultural machinery, tools, and goods/Category VbR","Business Permissions/Trade/28. Agricultural machinery, tools, and goods",True
+4,Total,"Business Permissions/Trade/28. Agricultural machinery, tools, and goods/Total","Business Permissions/Trade/28. Agricultural machinery, tools, and goods",True
+4,Category IIIR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives/Category IIIR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives,True
+4,Category IIR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives/Category IIR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives,True
+4,Category IR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives/Category IR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives,True
+4,Category IVR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives/Category IVR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives,True
+4,Category VaR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives/Category VaR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives,True
+4,Category VbR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives/Category VbR,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives,True
+4,Total,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives/Total,Business Permissions/Trade/29. Agricultural-commercial syndicates and cooperatives,True
+4,Category IIIR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category IIIR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits),True
+4,Category IIR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category IIR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits),True
+4,Category IR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category IR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits),True
+4,Category IVR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category IVR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits),True
+4,Category VaR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category VaR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits),True
+4,Category VbR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Category VbR,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits),True
+4,Total,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits)/Total,Business Permissions/Trade/3. Food products along with non-food items (excluding wine and spirits),True
+4,Category IIIR,"Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions/Category IIIR","Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions",True
+4,Category IIR,"Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions/Category IIR","Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions",True
+4,Category IR,"Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions/Category IR","Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions",True
+4,Category IVR,"Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions/Category IVR","Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions",True
+4,Category VaR,"Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions/Category VaR","Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions",True
+4,Category VbR,"Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions/Category VbR","Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions",True
+4,Total,"Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions/Total","Business Permissions/Trade/30. Banks, exchange offices, and other short- and long-term credit institutions",True
+4,Category IIIR,"Business Permissions/Trade/31. Forwarding, transport, and communication enterprises/Category IIIR","Business Permissions/Trade/31. Forwarding, transport, and communication enterprises",True
+4,Category IIR,"Business Permissions/Trade/31. Forwarding, transport, and communication enterprises/Category IIR","Business Permissions/Trade/31. Forwarding, transport, and communication enterprises",True
+4,Category IR,"Business Permissions/Trade/31. Forwarding, transport, and communication enterprises/Category IR","Business Permissions/Trade/31. Forwarding, transport, and communication enterprises",True
+4,Category IVR,"Business Permissions/Trade/31. Forwarding, transport, and communication enterprises/Category IVR","Business Permissions/Trade/31. Forwarding, transport, and communication enterprises",True
+4,Category VaR,"Business Permissions/Trade/31. Forwarding, transport, and communication enterprises/Category VaR","Business Permissions/Trade/31. Forwarding, transport, and communication enterprises",True
+4,Category VbR,"Business Permissions/Trade/31. Forwarding, transport, and communication enterprises/Category VbR","Business Permissions/Trade/31. Forwarding, transport, and communication enterprises",True
+4,Total,"Business Permissions/Trade/31. Forwarding, transport, and communication enterprises/Total","Business Permissions/Trade/31. Forwarding, transport, and communication enterprises",True
+4,Category IIIR,"Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)/Category IIIR","Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)",True
+4,Category IIR,"Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)/Category IIR","Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)",True
+4,Category IR,"Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)/Category IR","Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)",True
+4,Category IVR,"Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)/Category IVR","Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)",True
+4,Category VaR,"Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)/Category VaR","Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)",True
+4,Category VbR,"Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)/Category VbR","Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)",True
+4,Total,"Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)/Total","Business Permissions/Trade/32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)",True
+4,Category IIIR,"Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses/Category IIIR","Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses",True
+4,Category IIR,"Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses/Category IIR","Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses",True
+4,Category IR,"Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses/Category IR","Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses",True
+4,Category IVR,"Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses/Category IVR","Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses",True
+4,Category VaR,"Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses/Category VaR","Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses",True
+4,Category VbR,"Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses/Category VbR","Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses",True
+4,Total,"Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses/Total","Business Permissions/Trade/33. Hotels, boarding houses, furnished rooms, lodging houses",True
+4,Category IIIR,"Business Permissions/Trade/34. Theaters, cinemas, and other performances/Category IIIR","Business Permissions/Trade/34. Theaters, cinemas, and other performances",True
+4,Category IIR,"Business Permissions/Trade/34. Theaters, cinemas, and other performances/Category IIR","Business Permissions/Trade/34. Theaters, cinemas, and other performances",True
+4,Category IR,"Business Permissions/Trade/34. Theaters, cinemas, and other performances/Category IR","Business Permissions/Trade/34. Theaters, cinemas, and other performances",True
+4,Category IVR,"Business Permissions/Trade/34. Theaters, cinemas, and other performances/Category IVR","Business Permissions/Trade/34. Theaters, cinemas, and other performances",True
+4,Category VaR,"Business Permissions/Trade/34. Theaters, cinemas, and other performances/Category VaR","Business Permissions/Trade/34. Theaters, cinemas, and other performances",True
+4,Category VbR,"Business Permissions/Trade/34. Theaters, cinemas, and other performances/Category VbR","Business Permissions/Trade/34. Theaters, cinemas, and other performances",True
+4,Total,"Business Permissions/Trade/34. Theaters, cinemas, and other performances/Total","Business Permissions/Trade/34. Theaters, cinemas, and other performances",True
+4,Category IIIR,Business Permissions/Trade/35. Insurance companies/Category IIIR,Business Permissions/Trade/35. Insurance companies,True
+4,Category IIR,Business Permissions/Trade/35. Insurance companies/Category IIR,Business Permissions/Trade/35. Insurance companies,True
+4,Category IR,Business Permissions/Trade/35. Insurance companies/Category IR,Business Permissions/Trade/35. Insurance companies,True
+4,Category IVR,Business Permissions/Trade/35. Insurance companies/Category IVR,Business Permissions/Trade/35. Insurance companies,True
+4,Category VaR,Business Permissions/Trade/35. Insurance companies/Category VaR,Business Permissions/Trade/35. Insurance companies,True
+4,Category VbR,Business Permissions/Trade/35. Insurance companies/Category VbR,Business Permissions/Trade/35. Insurance companies,True
+4,Total,Business Permissions/Trade/35. Insurance companies/Total,Business Permissions/Trade/35. Insurance companies,True
+4,Category IIIR,"Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc./Category IIIR","Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.",True
+4,Category IIR,"Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc./Category IIR","Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.",True
+4,Category IR,"Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc./Category IR","Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.",True
+4,Category IVR,"Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc./Category IVR","Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.",True
+4,Category VaR,"Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc./Category VaR","Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.",True
+4,Category VbR,"Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc./Category VbR","Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.",True
+4,Total,"Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc./Total","Business Permissions/Trade/36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.",True
+4,Category IIIR,Business Permissions/Trade/37. Other enterprises not listed above/Category IIIR,Business Permissions/Trade/37. Other enterprises not listed above,True
+4,Category IIR,Business Permissions/Trade/37. Other enterprises not listed above/Category IIR,Business Permissions/Trade/37. Other enterprises not listed above,True
+4,Category IR,Business Permissions/Trade/37. Other enterprises not listed above/Category IR,Business Permissions/Trade/37. Other enterprises not listed above,True
+4,Category IVR,Business Permissions/Trade/37. Other enterprises not listed above/Category IVR,Business Permissions/Trade/37. Other enterprises not listed above,True
+4,Category VaR,Business Permissions/Trade/37. Other enterprises not listed above/Category VaR,Business Permissions/Trade/37. Other enterprises not listed above,True
+4,Category VbR,Business Permissions/Trade/37. Other enterprises not listed above/Category VbR,Business Permissions/Trade/37. Other enterprises not listed above,True
+4,Total,Business Permissions/Trade/37. Other enterprises not listed above/Total,Business Permissions/Trade/37. Other enterprises not listed above,True
+4,Category IIIR,Business Permissions/Trade/38. Cards with no industry branch specified/Category IIIR,Business Permissions/Trade/38. Cards with no industry branch specified,True
+4,Category IIR,Business Permissions/Trade/38. Cards with no industry branch specified/Category IIR,Business Permissions/Trade/38. Cards with no industry branch specified,True
+4,Category IR,Business Permissions/Trade/38. Cards with no industry branch specified/Category IR,Business Permissions/Trade/38. Cards with no industry branch specified,True
+4,Category IVR,Business Permissions/Trade/38. Cards with no industry branch specified/Category IVR,Business Permissions/Trade/38. Cards with no industry branch specified,True
+4,Category VaR,Business Permissions/Trade/38. Cards with no industry branch specified/Category VaR,Business Permissions/Trade/38. Cards with no industry branch specified,True
+4,Category VbR,Business Permissions/Trade/38. Cards with no industry branch specified/Category VbR,Business Permissions/Trade/38. Cards with no industry branch specified,True
+4,Total,Business Permissions/Trade/38. Cards with no industry branch specified/Total,Business Permissions/Trade/38. Cards with no industry branch specified,True
+4,Category IIIR,"Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category IIIR","Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)",True
+4,Category IIR,"Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category IIR","Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)",True
+4,Category IR,"Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category IR","Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)",True
+4,Category IVR,"Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category IVR","Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)",True
+4,Category VaR,"Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category VaR","Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)",True
+4,Category VbR,"Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Category VbR","Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)",True
+4,Total,"Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)/Total","Business Permissions/Trade/4. Meat, fats, and meat products (exclusively)",True
+4,Category IIIR,Business Permissions/Trade/5. Catering establishments with and without alcohol/Category IIIR,Business Permissions/Trade/5. Catering establishments with and without alcohol,True
+4,Category IIR,Business Permissions/Trade/5. Catering establishments with and without alcohol/Category IIR,Business Permissions/Trade/5. Catering establishments with and without alcohol,True
+4,Category IR,Business Permissions/Trade/5. Catering establishments with and without alcohol/Category IR,Business Permissions/Trade/5. Catering establishments with and without alcohol,True
+4,Category IVR,Business Permissions/Trade/5. Catering establishments with and without alcohol/Category IVR,Business Permissions/Trade/5. Catering establishments with and without alcohol,True
+4,Category VaR,Business Permissions/Trade/5. Catering establishments with and without alcohol/Category VaR,Business Permissions/Trade/5. Catering establishments with and without alcohol,True
+4,Category VbR,Business Permissions/Trade/5. Catering establishments with and without alcohol/Category VbR,Business Permissions/Trade/5. Catering establishments with and without alcohol,True
+4,Total,Business Permissions/Trade/5. Catering establishments with and without alcohol/Total,Business Permissions/Trade/5. Catering establishments with and without alcohol,True
+4,Category IIIR,"Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category IIIR","Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)",True
+4,Category IIR,"Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category IIR","Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)",True
+4,Category IR,"Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category IR","Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)",True
+4,Category IVR,"Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category IVR","Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)",True
+4,Category VaR,"Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category VaR","Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)",True
+4,Category VbR,"Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Category VbR","Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)",True
+4,Total,"Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)/Total","Business Permissions/Trade/6. Wine, spirits, and beer (possibly with food and colonial goods)",True
+4,Category IIIR,Business Permissions/Trade/7. Tobacco monopoly products/Category IIIR,Business Permissions/Trade/7. Tobacco monopoly products,True
+4,Category IIR,Business Permissions/Trade/7. Tobacco monopoly products/Category IIR,Business Permissions/Trade/7. Tobacco monopoly products,True
+4,Category IR,Business Permissions/Trade/7. Tobacco monopoly products/Category IR,Business Permissions/Trade/7. Tobacco monopoly products,True
+4,Category IVR,Business Permissions/Trade/7. Tobacco monopoly products/Category IVR,Business Permissions/Trade/7. Tobacco monopoly products,True
+4,Category VaR,Business Permissions/Trade/7. Tobacco monopoly products/Category VaR,Business Permissions/Trade/7. Tobacco monopoly products,True
+4,Category VbR,Business Permissions/Trade/7. Tobacco monopoly products/Category VbR,Business Permissions/Trade/7. Tobacco monopoly products,True
+4,Total,Business Permissions/Trade/7. Tobacco monopoly products/Total,Business Permissions/Trade/7. Tobacco monopoly products,True
+4,Category IIIR,Business Permissions/Trade/8. Textiles/Category IIIR,Business Permissions/Trade/8. Textiles,True
+4,Category IIR,Business Permissions/Trade/8. Textiles/Category IIR,Business Permissions/Trade/8. Textiles,True
+4,Category IR,Business Permissions/Trade/8. Textiles/Category IR,Business Permissions/Trade/8. Textiles,True
+4,Category IVR,Business Permissions/Trade/8. Textiles/Category IVR,Business Permissions/Trade/8. Textiles,True
+4,Category VaR,Business Permissions/Trade/8. Textiles/Category VaR,Business Permissions/Trade/8. Textiles,True
+4,Category VbR,Business Permissions/Trade/8. Textiles/Category VbR,Business Permissions/Trade/8. Textiles,True
+4,Total,Business Permissions/Trade/8. Textiles/Total,Business Permissions/Trade/8. Textiles,True
+4,Category IIIR,"Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category IIIR","Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear",True
+4,Category IIR,"Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category IIR","Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear",True
+4,Category IR,"Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category IR","Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear",True
+4,Category IVR,"Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category IVR","Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear",True
+4,Category VaR,"Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category VaR","Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear",True
+4,Category VbR,"Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Category VbR","Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear",True
+4,Total,"Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear/Total","Business Permissions/Trade/9. Textiles with clothing, haberdashery, garments, and footwear",True
+4,Category IIIPR,Business Permissions/Trade/All Types/Category IIIPR,Business Permissions/Trade/All Types,True
+4,Category IIIR,Business Permissions/Trade/All Types/Category IIIR,Business Permissions/Trade/All Types,True
+4,Category IIPR,Business Permissions/Trade/All Types/Category IIPR,Business Permissions/Trade/All Types,True
+4,Category IIR,Business Permissions/Trade/All Types/Category IIR,Business Permissions/Trade/All Types,True
+4,Category IPR,Business Permissions/Trade/All Types/Category IPR,Business Permissions/Trade/All Types,True
+4,Category IR,Business Permissions/Trade/All Types/Category IR,Business Permissions/Trade/All Types,True
+4,Category IVPR,Business Permissions/Trade/All Types/Category IVPR,Business Permissions/Trade/All Types,True
+4,Category IVR,Business Permissions/Trade/All Types/Category IVR,Business Permissions/Trade/All Types,True
+4,Category VaPR,Business Permissions/Trade/All Types/Category VaPR,Business Permissions/Trade/All Types,True
+4,Category VaR,Business Permissions/Trade/All Types/Category VaR,Business Permissions/Trade/All Types,True
+4,Category VbPR,Business Permissions/Trade/All Types/Category VbPR,Business Permissions/Trade/All Types,True
+4,Category VbR,Business Permissions/Trade/All Types/Category VbR,Business Permissions/Trade/All Types,True
+4,Total,Business Permissions/Trade/All Types/Total,Business Permissions/Trade/All Types,True
+4,Category IIIR,Business Permissions/Trade/ZP. Industrial activities/Category IIIR,Business Permissions/Trade/ZP. Industrial activities,True
+4,Category IIR,Business Permissions/Trade/ZP. Industrial activities/Category IIR,Business Permissions/Trade/ZP. Industrial activities,True
+4,Category IR,Business Permissions/Trade/ZP. Industrial activities/Category IR,Business Permissions/Trade/ZP. Industrial activities,True
+4,Category IVR,Business Permissions/Trade/ZP. Industrial activities/Category IVR,Business Permissions/Trade/ZP. Industrial activities,True
+4,Category VaR,Business Permissions/Trade/ZP. Industrial activities/Category VaR,Business Permissions/Trade/ZP. Industrial activities,True
+4,Category VbR,Business Permissions/Trade/ZP. Industrial activities/Category VbR,Business Permissions/Trade/ZP. Industrial activities,True
+4,Total,Business Permissions/Trade/ZP. Industrial activities/Total,Business Permissions/Trade/ZP. Industrial activities,True
+4,Category IIIR,Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category IIIR,Business Permissions/Trade/a. Professional purchasing (agricultural products),True
+4,Category IIR,Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category IIR,Business Permissions/Trade/a. Professional purchasing (agricultural products),True
+4,Category IR,Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category IR,Business Permissions/Trade/a. Professional purchasing (agricultural products),True
+4,Category IVR,Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category IVR,Business Permissions/Trade/a. Professional purchasing (agricultural products),True
+4,Category VaR,Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category VaR,Business Permissions/Trade/a. Professional purchasing (agricultural products),True
+4,Category VbR,Business Permissions/Trade/a. Professional purchasing (agricultural products)/Category VbR,Business Permissions/Trade/a. Professional purchasing (agricultural products),True
+4,Total,Business Permissions/Trade/a. Professional purchasing (agricultural products)/Total,Business Permissions/Trade/a. Professional purchasing (agricultural products),True
+4,Category IIIR,Business Permissions/Trade/b. Professional purchasing (livestock)/Category IIIR,Business Permissions/Trade/b. Professional purchasing (livestock),True
+4,Category IIR,Business Permissions/Trade/b. Professional purchasing (livestock)/Category IIR,Business Permissions/Trade/b. Professional purchasing (livestock),True
+4,Category IR,Business Permissions/Trade/b. Professional purchasing (livestock)/Category IR,Business Permissions/Trade/b. Professional purchasing (livestock),True
+4,Category IVR,Business Permissions/Trade/b. Professional purchasing (livestock)/Category IVR,Business Permissions/Trade/b. Professional purchasing (livestock),True
+4,Category VaR,Business Permissions/Trade/b. Professional purchasing (livestock)/Category VaR,Business Permissions/Trade/b. Professional purchasing (livestock),True
+4,Category VbR,Business Permissions/Trade/b. Professional purchasing (livestock)/Category VbR,Business Permissions/Trade/b. Professional purchasing (livestock),True
+4,Total,Business Permissions/Trade/b. Professional purchasing (livestock)/Total,Business Permissions/Trade/b. Professional purchasing (livestock),True
+4,B II. 3102. Goods sales (grain-for-flour or bread exchange),Business Permissions/Trade/bread exchange)/B II. 3102. Goods sales (grain-for-flour or bread exchange),Business Permissions/Trade/bread exchange),True
+4,Category IIIR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IIIR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
+4,Category IIR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IIR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
+4,Category IR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
+4,Category IVR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category IVR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
+4,Category VaR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category VaR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
+4,Category VbR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category VbR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
+4,Total,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Total,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
+4,Horticulture,Census 1931/Indirect Occupation/Indirect Occupation/Horticulture,Census 1931/Indirect Occupation/Indirect Occupation,True
+4,All Types,Crops/Area/Barley/All Types,Crops/Area/Barley,True
+4,Barley,Crops/Area/Mixtures for Grain/Barley,Crops/Area/Mixtures for Grain,True
+4,Other mixtures,Crops/Area/Mixtures for Grain/Other mixtures,Crops/Area/Mixtures for Grain,True
+4,Fiber,Crops/Size/Flax/Fiber,Crops/Size/Flax,True
+4,Seed,Crops/Size/Flax/Seed,Crops/Size/Flax,True
+4,Seed,Crops/Size/Hemp/Seed,Crops/Size/Hemp,True
+4,Barley,Crops/Size/Mixtures for Grain/Barley,Crops/Size/Mixtures for Grain,True
+4,Other mixtures,Crops/Size/Mixtures for Grain/Other mixtures,Crops/Size/Mixtures for Grain,True
+4,Fiber,Crops/Size/Seed/Fiber,Crops/Size/Seed,True
+4,I-III,Employment/Employment Share/Chemical/I-III,Employment/Employment Share/Chemical,True
+4,IV-V,Employment/Employment Share/Chemical/IV-V,Employment/Employment Share/Chemical,True
+4,VI-VII,Employment/Employment Share/Chemical/VI-VII,Employment/Employment Share/Chemical,True
+4,I-III,Employment/Employment Share/Clothing and Toymaking/I-III,Employment/Employment Share/Clothing and Toymaking,True
+4,IV-V,Employment/Employment Share/Clothing and Toymaking/IV-V,Employment/Employment Share/Clothing and Toymaking,True
+4,VI-VII,Employment/Employment Share/Clothing and Toymaking/VI-VII,Employment/Employment Share/Clothing and Toymaking,True
+4,I-III,Employment/Employment Share/Construction/I-III,Employment/Employment Share/Construction,True
+4,IV-V,Employment/Employment Share/Construction/IV-V,Employment/Employment Share/Construction,True
+4,VI-VII,Employment/Employment Share/Construction/VI-VII,Employment/Employment Share/Construction,True
+4,I-III,Employment/Employment Share/Electrotechnical/I-III,Employment/Employment Share/Electrotechnical,True
+4,IV-V,Employment/Employment Share/Electrotechnical/IV-V,Employment/Employment Share/Electrotechnical,True
+4,VI-VII,Employment/Employment Share/Electrotechnical/VI-VII,Employment/Employment Share/Electrotechnical,True
+4,I-III,Employment/Employment Share/Food/I-III,Employment/Employment Share/Food,True
+4,IV-V,Employment/Employment Share/Food/IV-V,Employment/Employment Share/Food,True
+4,VI-VII,Employment/Employment Share/Food/VI-VII,Employment/Employment Share/Food,True
+4,I-III,Employment/Employment Share/Leather/I-III,Employment/Employment Share/Leather,True
+4,IV-V,Employment/Employment Share/Leather/IV-V,Employment/Employment Share/Leather,True
+4,VI-VII,Employment/Employment Share/Leather/VI-VII,Employment/Employment Share/Leather,True
+4,I-III,Employment/Employment Share/Metal/I-III,Employment/Employment Share/Metal,True
+4,IV-V,Employment/Employment Share/Metal/IV-V,Employment/Employment Share/Metal,True
+4,VI-VII,Employment/Employment Share/Metal/VI-VII,Employment/Employment Share/Metal,True
+4,I-III,Employment/Employment Share/Mineral/I-III,Employment/Employment Share/Mineral,True
+4,IV-V,Employment/Employment Share/Mineral/IV-V,Employment/Employment Share/Mineral,True
+4,VI-VII,Employment/Employment Share/Mineral/VI-VII,Employment/Employment Share/Mineral,True
+4,I-III,Employment/Employment Share/Mining/I-III,Employment/Employment Share/Mining,True
+4,IV-V,Employment/Employment Share/Mining/IV-V,Employment/Employment Share/Mining,True
+4,VI-VII,Employment/Employment Share/Mining/VI-VII,Employment/Employment Share/Mining,True
+4,I-III,Employment/Employment Share/Paper/I-III,Employment/Employment Share/Paper,True
+4,IV-V,Employment/Employment Share/Paper/IV-V,Employment/Employment Share/Paper,True
+4,VI-VII,Employment/Employment Share/Paper/VI-VII,Employment/Employment Share/Paper,True
+4,VI-VII,Employment/Employment Share/Plants/VI-VII,Employment/Employment Share/Plants,True
+4,I-III,Employment/Employment Share/Power plants and waterworks/I-III,Employment/Employment Share/Power plants and waterworks,True
+4,IV-V,Employment/Employment Share/Power plants and waterworks/IV-V,Employment/Employment Share/Power plants and waterworks,True
+4,VI-VII,Employment/Employment Share/Power plants and waterworks/VI-VII,Employment/Employment Share/Power plants and waterworks,True
+4,I-III,Employment/Employment Share/Printing/I-III,Employment/Employment Share/Printing,True
+4,IV-V,Employment/Employment Share/Printing/IV-V,Employment/Employment Share/Printing,True
+4,VI-VII,Employment/Employment Share/Printing/VI-VII,Employment/Employment Share/Printing,True
+4,I-III,Employment/Employment Share/Textile/I-III,Employment/Employment Share/Textile,True
+4,IV-V,Employment/Employment Share/Textile/IV-V,Employment/Employment Share/Textile,True
+4,VI-VII,Employment/Employment Share/Textile/VI-VII,Employment/Employment Share/Textile,True
+4,I-III,Employment/Employment Share/Together/I-III,Employment/Employment Share/Together,True
+4,IV-V,Employment/Employment Share/Together/IV-V,Employment/Employment Share/Together,True
+4,I-III,Employment/Employment Share/Wood/I-III,Employment/Employment Share/Wood,True
+4,IV-V,Employment/Employment Share/Wood/IV-V,Employment/Employment Share/Wood,True
+4,VI-VII,Employment/Employment Share/Wood/VI-VII,Employment/Employment Share/Wood,True
+4,All Types,Prices/Local Paid to Producers/Barley/All Types,Prices/Local Paid to Producers/Barley,True
+4,For Groats,Prices/Local Paid to Producers/Barley/For Groats,Prices/Local Paid to Producers/Barley,True
+4,Malting Barley,Prices/Local Paid to Producers/Barley/Malting Barley,Prices/Local Paid to Producers/Barley,True
+4,Other Varieties,Prices/Local Paid to Producers/Barley/Other Varieties,Prices/Local Paid to Producers/Barley,True
+4,All Types,Prices/Local Paid to Producers/Hay/All Types,Prices/Local Paid to Producers/Hay,True
+4,Clover Hay,Prices/Local Paid to Producers/Hay/Clover Hay,Prices/Local Paid to Producers/Hay,True
+4,Meadow Hay,Prices/Local Paid to Producers/Hay/Meadow Hay,Prices/Local Paid to Producers/Hay,True
+4,Edible,Prices/Local Paid to Producers/Potatoes/Edible,Prices/Local Paid to Producers/Potatoes,True
+4,For Processing,Prices/Local Paid to Producers/Potatoes/For Processing,Prices/Local Paid to Producers/Potatoes,True
+5,PR,Business Permissions/Industrial Occupations/Trade at Fairs/Retail/PR,Business Permissions/Industrial Occupations/Trade at Fairs/Retail,True
+5,R,Business Permissions/Industrial Occupations/Trade at Fairs/Retail/R,Business Permissions/Industrial Occupations/Trade at Fairs/Retail,True
+5,PR,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale/PR,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale,True
+5,R,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale/R,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale,True

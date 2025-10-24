@@ -1,0 +1,1101 @@
+- Business Permissions
+  - Industrial Occupations
+    - Category IIIPR
+    - Category IIIR
+    - Category IIPR
+    - Category IIR
+    - Category IPR
+    - Category IR
+    - Category IVPR
+    - Category IVR
+    - Registration Permits
+      - PR
+      - R
+    - Together
+      - PR
+      - R
+    - Trade at Fairs
+      - Retail
+        - PR
+        - R
+      - Wholesale
+        - PR
+        - R
+  - Industry
+    - 1. Number of workers in plants I-VII
+    - 10. Mineral: I-V
+    - 11. Mineral: VI-VII
+    - 12. Mineral: VIII
+    - 13. Mineral: brickyards (within others)
+    - 14. Mineral: concrete plants (within others)
+    - 15. Metal and electrotechnical: I-V
+    - 16. Metal and electrotechnical: VI-VII
+    - 17. Metal and electrotechnical: VIII
+    - 18. Metal and electrotechnical: metal production (within others)
+    - 19. Metal and electrotechnical: blacksmithing (within others)
+    - 2. Plants: total
+    - 20. Metal and electrotechnical: locksmithing, repairs (within others)
+    - 21. Metal and electrotechnical: tinsmithing (within others)
+    - 22. Metal and electrotechnical: watchmaking and jewelry (within others)
+    - 23. Chemical: I-V
+    - 24. Chemical: VI-VII
+    - 25. Chemical: VIII
+    - 26. Chemical: oil mills (within others)
+    - 27. Textile: I-V
+    - 28. Textile: VI-VII
+    - 29. Textile: VIII
+    - 3. Plants: I-III
+    - 30. Paper: I-V
+    - 31. Paper: VI-VII
+    - 32. Paper: VIII
+    - 33. Leather: I-V
+    - 34. Leather: VI-VII
+    - 35. Leather: VIII
+    - 36. Leather: tanning and white leather (within others)
+    - 37. Leather: saddlery and harness making (within others)
+    - 38. Wood: I-V
+    - 39. Wood: VI-VII
+    - 4. Plants: IV-V
+    - 40. Wood: VIII
+    - 41. Wood: sawmills (within others)
+    - 42. Wood: carpentry (within others)
+    - 43. Wood: wheelwrighting (within others)
+    - 44. Food: I-V
+    - 45. Food: VI-VII
+    - 46. Food: VIII
+    - 47. Food: mills (within others)
+    - 48. Food: bakeries (within others)
+    - 49. Food: dairies (within others)
+    - 5. Plants: VI-VII
+    - 50. Food: butchery and meat processing (within others)
+    - 51. Clothing: I-V
+    - 52. Clothing: VI-VII
+    - 53. Clothing: VIII
+    - 54. Clothing: tailoring and clothing accessories (within others)
+    - 55. Clothing: shoemaking and boot making (within others)
+    - 56. Clothing: furriery (within others)
+    - 57. Printing: I-V
+    - 58. Printing: VI-VII
+    - 59. Printing: VIII
+    - 6. Plants: VIII
+    - 60. Printing: printing houses (within others)
+    - 61. Construction: I-V
+    - 62. Construction: VI-VII
+    - 63. Construction: VIII
+    - 64. Processing of various materials: VII
+    - 65. Processing of various materials: VIII
+    - 66. Power plants: I-V
+    - 67. Power plants: VI-VII
+    - 68. Power plants: VIII
+    - 69. Services: V-VII
+    - 7. Mining: I-V
+    - 70. Services: VIII
+    - 71. Services: hairdressing (within others)
+    - 72. Services: transport (within others)
+    - 73. Horticulture and fisheries: V-VII
+    - 74. Horticulture and fisheries: VIII
+    - 75. Other plants: VIII
+    - 8. Mining: VI-VII
+    - 9. Mining: VIII
+    - Category IIIPR
+    - Category IIIR
+    - Category IIPR
+    - Category IIR
+    - Category IPR
+    - Category IR
+    - Category IVPR
+    - Category IVR
+    - Category VIIIPR
+    - Category VIIIR
+    - Category VIIPR
+    - Category VIIR
+    - Category VIPR
+    - Category VIR
+    - Category VPR
+    - Category VR
+    - PR
+    - R
+  - Trade
+    - 1. All types of professional purchasing (total)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 10. Ready-made clothing and haberdashery
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 11. Garments, garment parts, furs, and fur products
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 12. Footwear
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 13. Footwear with leather and shoemaking accessories
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 14. All types of leather and leather products (excluding footwear)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 15. Machinery, tools, and technical goods (excluding agricultural)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 16. Building materials and fuels
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 17. Furniture and all wooden products
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 18. Iron, ironware, enameled and aluminum goods (possibly with other goods)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 19. Kitchenware, porcelain, faience, glassware, window panes, and mirrors
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 2. Food and colonial goods (exclusively)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 20. Soap, candles, paints, gasoline, kerosene, mineral oils, lubricants (soap shops)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 21. Musical, optical, surgical instruments, photographic equipment and accessories
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 22. Watchmaking, jewelry, and silver-plated products
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 23. Electrical equipment, radio equipment, and all lighting accessories
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 24. Pharmacies
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 25. Pharmaceutical warehouses, perfumeries, and cosmetic shops
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 26. Rubber goods, oilcloth, linoleum, galoshes, tarpaulins, tires, inner tubes, etc.
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 27. Bookstores, stationery, and paper products (possibly with other goods)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 28. Agricultural machinery, tools, and goods
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 29. Agricultural-commercial syndicates and cooperatives
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 3. Food products along with non-food items (excluding wine and spirits)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 30. Banks, exchange offices, and other short- and long-term credit institutions
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 31. Forwarding, transport, and communication enterprises
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 32. Other service enterprises (reading rooms, clinics, laundries, bathhouses, garages, dance halls, etc.)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 33. Hotels, boarding houses, furnished rooms, lodging houses
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 34. Theaters, cinemas, and other performances
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 35. Insurance companies
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 36. Offices: commission, trade brokerage, advertising, legal advice, agency, technical, etc.
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 37. Other enterprises not listed above
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 38. Cards with no industry branch specified
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 4. Meat, fats, and meat products (exclusively)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 5. Catering establishments with and without alcohol
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 6. Wine, spirits, and beer (possibly with food and colonial goods)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 7. Tobacco monopoly products
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 8. Textiles
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - 9. Textiles with clothing, haberdashery, garments, and footwear
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - A 3011-3059. Total commodity purchase
+    - A 3011. Commodity purchase (grain purchase)
+    - A 3012. Commodity purchase (fruit purchase)
+    - A 3016. Commodity purchase (timber materials purchase)
+    - A 3021-3029. Commodity purchase (live animals purchase)
+    - A 3031-3032, 3034-3039. Commodity purchase (other livestock products purchase)
+    - A 3033. Commodity purchase (raw hides purchase)
+    - A 3051, 3053-3059. Commodity purchase (scrap purchase)
+    - A 3052. Commodity purchase (rags purchase)
+    - A&B (only I i II cat.). Commodity trade (categories I and II)
+    - A&B. Total commodity trade
+    - A-K I-II cat. Commercial establishments (categories I and II)
+    - A-K. Commercial establishments total
+    - a. Professional purchasing (agricultural products)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - All Types
+      - Category IIIPR
+      - Category IIIR
+      - Category IIPR
+      - Category IIR
+      - Category IPR
+      - Category IR
+      - Category IVPR
+      - Category IVR
+      - Category VaPR
+      - Category VaR
+      - Category VbPR
+      - Category VbR
+      - Total
+    - B (I-X). Total goods sales
+    - B I. 3061-3062. Goods sales (agricultural syndicates and cooperatives)
+    - B I. 3061-3089. Goods sales (agricultural raw materials, goods for agriculture)
+    - B I. 3071-3072. Goods sales (grain)
+    - B I. 3081-3085. Goods sales (live animals)
+    - B II. 3101-3179. Goods sales (food products)
+    - B II. 3101. Goods sales (flour, groats, rice)
+    - B II. 3103. Goods sales (bread)
+    - B II. 3119. Goods sales (dairy)
+    - B II. 3121-3123. Goods sales (meat)
+    - B II. 3124-3126. Goods sales (fish, herrings)
+    - B II. 3131-3133. Goods sales (fruits, vegetables)
+    - B II. 3134. Goods sales (sweets)
+    - B II. 3141-3146, 3171-3173. Goods sales (various food articles)
+    - B II. 3151. Goods sales (beer)
+    - B II. 3159. Goods sales (alcoholic beverages)
+    - B II. 3161. Goods sales (tobacco products)
+    - B III. 3201-3257. Goods sales (clothing articles)
+    - B III. 3211-3213. Goods sales (fabrics)
+    - B III. 3221-3227, 3257. Goods sales (clothing, furs)
+    - B III. 3231-3239. Goods sales (underwear, haberdashery)
+    - B III. 3241-3249. Goods sales (hats, caps)
+    - B III. 3251-3254, 3256. Goods sales (leather, leather products)
+    - B III. 3255. Goods sales (footwear)
+    - B IV. 3261, 3267. Goods sales (furniture)
+    - B IV. 3261, 3281. Goods sales (furniture, appliances, utensils)
+    - B IV. 3271. Goods sales (household appliances)
+    - B IV. 3272-3273. Goods sales (glass, ceramics)
+    - B IX. 3461-3462, 3469. Goods sales (building materials)
+    - B IX. 3461-3485. Goods sales (building and fuel materials)
+    - B IX. 3481, 3483-3485. Goods sales (coal, coke and other articles)
+    - B V. 3301-3319. Goods sales (chemical articles)
+    - B V. 3301. Goods sales (pharmacies)
+    - B V. 3302. Goods sales (pharmaceutical warehouses)
+    - B V. 3311-3315. Goods sales (soap shops)
+    - B V. 3312, 3318. Goods sales (petroleum products)
+    - B VI. 3321-3329. Goods sales (paper, paper products)
+    - B VII. 3331-3332. Goods sales (bookstores)
+    - B VII. 3331-3335. Goods sales (books, periodicals, art works)
+    - B VII. 3333. Goods sales (periodicals)
+    - B VIII. 3401-3441. Goods sales (iron, metals, products)
+    - B VIII. 3411-3414. Goods sales (means of communication)
+    - B VIII. 3415-3419. Goods sales (machines)
+    - B VIII. 3421-3429, 3433-3439. Goods sales (tools, instruments)
+    - B VIII. 3431-3432. Goods sales (watchmaking, jewelry products)
+    - B VIII. 3441. Goods sales (electrotechnical products)
+    - B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Goods sales (various and unspecified articles)
+    - b. Professional purchasing (livestock)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - bread exchange)
+      - B II. 3102. Goods sales (grain-for-flour or bread exchange)
+    - C 3501-3509. Gastronomic establishments, room rental (gastronomic establishments)
+    - C 3501-3539. Gastronomic establishments, room rental
+    - C 3511. Gastronomic establishments, room rental (guesthouses, shelters)
+    - C 3521-3529. Gastronomic establishments, room rental (residential room rental)
+    - c. Professional purchasing (plant and animal products)
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - D 3601-3611. Monetary trade, insurance
+    - E 3612, 3651-3655. Offices of all types (brokerage, excluding travel agencies)
+    - F 3701 (3702). Rental services (agricultural machinery)
+    - F 3701-3729. Rental services
+    - F 3704. Rental services (mangles)
+    - F 3722. Rental services (books)
+    - G 3811-3844 (bez 3833). Transport, communication, forwarding
+    - G 3841-3843, 3832. Transport, communication, forwarding (public transport)
+    - H 3861. Entertainment enterprises (cinematographs)
+    - H 3961-3879. Entertainment enterprises
+    - I 3881-3887. Healthcare, hygiene
+    - I 3881. Healthcare, hygiene (clinics)
+    - I 3883-3885. Healthcare, hygiene (baths, bathing resorts, spas)
+    - K 3891-3999. Other and unspecified
+    - Z 3661-3669. Industrial occupations
+    - ZP. Industrial activities
+      - Category IIIR
+      - Category IIR
+      - Category IR
+      - Category IVR
+      - Category VaR
+      - Category VbR
+      - Total
+    - Ż 3833. Ferries, barges, water networks
+- Census 1921
+  - Ethnicity
+    - % Belarusian
+    - % German
+    - % Jewish
+    - % Local (Tutejsza)
+    - % Minorities total
+    - % Other: total
+    - % Polish
+    - % Ruthenian
+    - Belarusian
+    - German
+    - Jewish
+    - Local (Tutejszy)
+    - Minorities total (excluding Polish)
+    - Other and unknown: total
+    - Polish
+    - Ruthenian
+  - Indirect Occupation
+    - A. Agriculture and forestry
+    - B. Mining and industry
+    - C. Trade and insurance
+    - D. Communication and transport
+    - E. Public service, liberal professions
+    - F. Army
+    - G. Domestic service
+    - H. Unemployed
+    - N. Not further specified
+    - Total
+  - Population
+    - Total
+    - Total (Data from 1931 Census Publications)
+  - Religion
+    - % Evangelical
+    - % Greek Catholic
+    - % Mosaic (Jewish)
+    - % Orthodox
+    - % Other
+    - % Other Christian
+    - % Roman Catholic
+    - Evangelical
+    - Greek Catholic
+    - Mosaic (Jewish)
+    - Orthodox
+    - Other Christian Denominations
+    - Other or Unknown
+    - Roman Catholic
+- Census 1931
+  - Economically Active Population
+    - 00 Forestry and hunting
+    - 08 Horticulture and beekeeping
+    - 08-00 Section B. Horticulture, fishing, forestry - all
+    - 08-00 Section B. Horticulture, fishing, forestry - f
+    - 08-00 Section B. Horticulture, fishing, forestry - m
+    - 09 Fishing
+    - 1-2 Industrial plants: Categories I-V - all
+    - 1-2 Industrial plants: Categories I-V - f
+    - 1-2 Industrial plants: Categories I-V - m
+    - 1-2 Industrial plants: Categories VI-VII - all
+    - 1-2 Industrial plants: Categories VI-VII - f
+    - 1-2 Industrial plants: Categories VI-VII - m
+    - 1-2 Industrial plants: Category VIII - all
+    - 1-2 Industrial plants: Category VIII - f
+    - 1-2 Industrial plants: Category VIII - m
+    - 1-2 Industrial plants: Unknown category - all
+    - 1-2 Industrial plants: Unknown category - f
+    - 1-2 Industrial plants: Unknown category - m
+    - 1-2 Section C. Mining and industry - all
+    - 1-2 Section C. Mining and industry - f
+    - 1-2 Section C. Mining and industry - m
+    - 10 Mining
+    - 101 Mining not specified
+    - 102 Hard coal mines
+    - 103 Iron ore mines
+    - 104 Zinc and lead ore mines
+    - 105 Rock salt mines and salt works
+    - 106 Oil and gas fields
+    - 11-13 Metallurgy, metal and machinery industry
+    - 111 Metallurgy and metal industry unspecified — excluding machinery
+    - 112 Ironworks
+    - 113 Ironworks with further processing divisions
+    - 114 Zinc and lead smelters
+    - 115 Foundries
+    - 116 Boiler, valve, and construction production
+    - 117 Production of metal furniture and fittings, locks, latches
+    - 118 Tinware and other sheet metal products
+    - 119 Production of copper and copper alloy products
+    - 121 Unspecified metal industry combined with machinery production
+    - 122 Wire, nails, screws, and chain production
+    - 123 Blacksmithing
+    - 124 Locksmithing
+    - 125 Tinsmithing
+    - 127 Production of industrial machinery
+    - 128 Production of agricultural machinery
+    - 129 Engine production
+    - 132 Wagon production
+    - 133 Bicycle, motorcycle, and car production
+    - 134 Electrotechnical industry
+    - 135 Scale, instrument, and precision device production
+    - 136 Musical instrument production
+    - 137 Watchmaking and jewelry
+    - 14-15 Chemical industry
+    - 141 Chemical industry not specified
+    - 142 Tar and turpentine distilleries
+    - 143 Coke plants
+    - 144 Oil refineries and gasoline plants
+    - 146 Match production
+    - 147 Artificial silk production
+    - 148 Rubber product manufacturing
+    - 149 Large-scale inorganic industry
+    - 152 Fat-based product manufacturing
+    - 153 Soap production
+    - 154 Oil mills
+    - 155 Cosmetic and pharmaceutical products manufacturing
+    - 16 Mineral industry
+    - 161 Mineral industry not specified
+    - 162 Quarries
+    - 163 Lime kilns and gypsum mines
+    - 164 Cement plants
+    - 165 Concrete plants
+    - 166 Brickworks
+    - 167 Ceramics and pottery industry
+    - 168 Glassworks
+    - 169 Stonemasonry
+    - 17-18 Wood industry
+    - 171 Wood industry not specified
+    - 172 Forest exploitation
+    - 173 Forest exploitation with sawmills
+    - 174 Sawmills
+    - 175 Carpentry and regular furniture manufacturing
+    - 176 Bentwood furniture production
+    - 177 Cooperage
+    - 178 Wheelwrighting
+    - 179 Basketry and wickerwork
+    - 182 Upholstery
+    - 19 Paper industry
+    - 192 Paper mills and cardboard plants
+    - 193 Paper products manufacturing
+    - 20-21 Textile industry
+    - 201 Textile industry not specified
+    - 202 Flax retting
+    - 203 Spinning mills unspecified
+    - 204 Cotton spinning mills
+    - 205 Wool spinning mills
+    - 206 Weaving mills unspecified
+    - 207 Cotton weaving mills
+    - 208 Wool weaving mills
+    - 209 Spinning and weaving combined - unspecified
+    - 212 Spinning and weaving combined - cotton
+    - 213 Spinning and weaving combined - wool
+    - 214 Finishing plants
+    - 215 Carpet manufacturing
+    - 216 Rope making
+    - 217 Hosiery and knitwear production
+    - 22 Leather industry
+    - 221 Leather industry not specified
+    - 222 Tanneries
+    - 223 Saddlery, harness, and leather goods production
+    - 224 Brush making
+    - 23 Clothing industry
+    - 231 Clothing industry not specified
+    - 232 Tailoring
+    - 233 Linen making
+    - 234 Furriery
+    - 235 Shoemaking and mechanical footwear production
+    - 236 Hat, cap, and millinery making
+    - 24-25 Food industry
+    - 241 Food industry not specified
+    - 242 Mills
+    - 243 Bakeries
+    - 244 Confectionery product manufacturing
+    - 245 Sugar refineries
+    - 246 Distilleries
+    - 247 Breweries and maltings
+    - 248 Vodka, wine, mead, and juice production
+    - 249 Mineral and carbonated water production
+    - 252 Starch factories
+    - 253 Dairy processing
+    - 254 Butchery
+    - 255 Tobacco product manufacturing
+    - 26 Printing industry
+    - 261 Printing industry not specified
+    - 262 Printing and lithography
+    - 263 Bookbinding
+    - 264 Photographic studios
+    - 27 Construction industry
+    - 271 Construction industry not specified
+    - 272 Earthworks and housing construction combined
+    - 273 Earthworks
+    - 274 Housing construction
+    - 275 Installation works
+    - 276 Glazing
+    - 277 Painting and wallpapering
+    - 278 Stove fitting
+    - 279 Surveying and land improvement works
+    - 28 Power plants, gasworks, and waterworks
+    - 281 Not specified
+    - 282 Power plants
+    - 283 Gasworks
+    - 284 Waterworks and sewage systems
+    - 29 Mining and industry without branch specification
+    - 292 Industry unknown
+    - 293 Mining and metallurgy - persons without branch details
+    - 2x Unspecified workers - all
+    - 2x Unspecified workers - f
+    - 2x Unspecified workers - m
+    - 3 Trade and insurance - all
+    - 3 Trade and insurance - f
+    - 3 Trade and insurance - m
+    - 30 Trade not specified
+    - 31 Commodity trade
+    - 311 Commodity trade not specified
+    - 312 Wholesale trade
+    - 313 Traveling and door-to-door trade
+    - 314 Trade cooperatives
+    - 32 Room rental and gastronomy
+    - 321 Room rental not specified
+    - 322 Apartment buildings (owners and caretakers)
+    - 323 Hotels and guesthouses
+    - 324 Private room rental and home dining
+    - 325 Gastronomy establishments
+    - 33 Financial transactions
+    - 34 Private insurance companies
+    - 35 Brokerage
+    - 4 Communication and transport - all
+    - 4 Communication and transport - f
+    - 4 Communication and transport - m
+    - 40 Post, telephone, telegraph, radio telegraph
+    - 41 Sea, inland, and air navigation
+    - 412 Sea navigation
+    - 413 Inland navigation
+    - 414 Civil aviation
+    - 42 Railways
+    - 43 City trams and buses
+    - 44 Other types of transport and communication
+    - 441 Unspecified types
+    - 442 Taxis
+    - 443 Horse-drawn carriages
+    - 444 Motor vehicle transport
+    - 445 Horse-drawn transport
+    - 446 Messengers and porters
+    - 45 Road and waterway supervision
+    - 5 Public service, church, social organizations and institutions
+    - 5-n Other sections combined - all
+    - 5-n Other sections combined - f
+    - 5-n Other sections combined - m
+    - 50 Foreign diplomatic and consular offices
+    - 51 State, local government, and other public administration
+    - 512 State administration
+    - 513 Local government administration
+    - 514 Other public legal bodies' administration
+    - 52 Judiciary, bar, and notary
+    - 522 Judiciary
+    - 523 Bar and notary
+    - 524 Legal counsel and petition offices
+    - 53 Public security and penitentiary services
+    - 531 Public security service not specified
+    - 532 State police
+    - 533 Border guard
+    - 535 Penitentiary service
+    - 536 Fire service
+    - 54 Church and religious associations
+    - 542 Clergy
+    - 543 Secular persons in church and religious associations
+    - 55 Administration of social organizations and institutions
+    - 7 Education and culture
+    - 70 Education
+    - 701 Education unspecified
+    - 702 General education
+    - 703 Secondary education
+    - 704 Higher education
+    - 705 Cheders
+    - 706 Other education
+    - 71 Upbringing and non-school education
+    - 712 Private teachers
+    - 713 Preschool education
+    - 714 Non-school education
+    - 715 Physical education and sport
+    - 72 Science, literature and art
+    - 722 Scientific institutions
+    - 723 Literature and art
+    - 73 Press, publishing and reading rooms
+    - 731 Non-daily press and other publishing
+    - 732 Daily press
+    - 733 Reading rooms
+    - 74 Entertainment
+    - 741 Entertainment unspecified
+    - 742 Theater and music
+    - 743 Cinematography
+    - 744 Circuses and traveling artists
+    - 8 Health care and hygiene, cleaning and social welfare
+    - 80 Health care and prevention
+    - 801 Prevention not specified
+    - 802 Medical institutions and sanitary services
+    - 803 Pharmacies and medical labs
+    - 804 Private physicians
+    - 805 Private paramedics, nurses, and masseurs
+    - 806 Private midwives
+    - 807 Veterinary medicine
+    - 81 Personal and premises hygiene. Street and square cleaning. Burials
+    - 811 Hygiene not specified
+    - 812 Bathhouses
+    - 813 Hairdressing and beauty salons
+    - 814 Laundries and ironing services
+    - 815 Street and square cleaning
+    - 816 Cemeteries and funeral services
+    - 82 Social welfare institutions
+    - 9 Domestic service
+    - n Section N. Persons with unspecified occupation, delinquent persons, and persons with unknown occupation
+    - R08-00 Other branches of Section B
+    - R1-2 Other branches of Section C
+    - R11-13 Other branches of 11-13
+    - R3 Other branches of Section D
+    - R4 Other branches of Section 4
+    - R5 Other branches of Section 5
+    - R7 Other branches of Section 7
+    - R8 Other branches of Section I
+    - Total - all
+    - Total - f
+    - Total - m
+    - x Persons living without gainful employment
+    - x1 Capitalists and rentiers
+  - Indirect Occupation
+    - Agriculture
+    - Domestic service
+    - Indirect Occupation
+      - Horticulture
+    - Mining and industry
+    - Other
+    - Outside Agriculture
+    - Public Hygiene and Sanitation
+    - Public service
+    - Schooling, Education, and Culture
+    - Total
+    - Trade and insurance
+    - Transport and communication
+  - Mother Tongue
+    - % Belarusian
+    - % German
+    - % Hebrew
+    - % Jewish
+    - % Minority Languages Altogether (Excluding Polish)
+    - % Other
+    - % Polish
+    - % Russian
+    - % Ruthenian
+    - % Ukrainian
+    - Belarusian
+    - German
+    - Hebrew
+    - Jewish
+    - Minority Languages Altogether (Excluding Polish)
+    - Other
+    - Polish
+    - Russian
+    - Ruthenian
+    - Ukrainian
+  - Population
+    - Total
+  - Religion
+    - % Evangelical
+    - % Greek Catholic
+    - % Mosaic (Jewish)
+    - % Orthodox
+    - % Other
+    - % Other Christian
+    - % Roman Catholic
+    - Evangelical
+    - Greek Catholic
+    - Mosaic (Jewish)
+    - Orthodox
+    - Other
+    - Other Christian denominations
+    - Roman Catholic
+- Crops
+  - Area
+    - Barley
+      - All Types
+    - Beans, Broad Beans, and Lentils
+    - Buckwheat
+    - Cereal Mixtures for Grain (Barley and Oats)
+    - Chicory
+    - Clover
+    - Field Pea, Vetch, and Faba Bean
+    - Flax
+    - Hemp
+    - Hops
+    - Lupin
+    - Maize
+    - Millet
+    - Mixtures for Grain
+      - Barley
+      - Other mixtures
+    - Oats
+    - Other Cereal Mixtures for Grain
+    - Other Fodder Crops and Mixtures
+    - Peas
+    - Potatoes
+    - Rapeseed and Turnip Rape
+    - Rye
+    - Serradella
+    - Sugar Beets
+    - Tabacco
+    - Wheat
+    - Winter and Spring Rapeseed and Turnip Rape
+  - Average Yield per ha
+    - Sugar Beets
+  - Size
+    - Barley
+    - Beans, Broad Beans, and Lentils
+    - Buckwheat
+    - Flax
+      - Fiber
+      - Seed
+    - Hemp
+      - Seed
+    - Hops
+    - Maize
+    - Millet
+    - Mixtures for Grain
+      - Barley
+      - Other mixtures
+    - Oats
+    - Peas
+    - Potatoes
+    - Rapeseed and Turnip Rape
+    - Rye
+    - Seed
+      - Fiber
+    - Sugar Beets
+    - Tabacco
+    - Wheat
+  - Yields (q per ha)
+    - Buraki Cukrowe
+- Dist - Area
+- Employment
+  - Chemical
+  - Clothing and Toymaking
+  - Construction
+  - Employment Share
+    - Chemical
+      - I-III
+      - IV-V
+      - VI-VII
+    - Clothing and Toymaking
+      - I-III
+      - IV-V
+      - VI-VII
+    - Construction
+      - I-III
+      - IV-V
+      - VI-VII
+    - Electrotechnical
+      - I-III
+      - IV-V
+      - VI-VII
+    - Food
+      - I-III
+      - IV-V
+      - VI-VII
+    - Leather
+      - I-III
+      - IV-V
+      - VI-VII
+    - Metal
+      - I-III
+      - IV-V
+      - VI-VII
+    - Mineral
+      - I-III
+      - IV-V
+      - VI-VII
+    - Mining
+      - I-III
+      - IV-V
+      - VI-VII
+    - Paper
+      - I-III
+      - IV-V
+      - VI-VII
+    - Plants
+      - VI-VII
+    - Power plants and waterworks
+      - I-III
+      - IV-V
+      - VI-VII
+    - Printing
+      - I-III
+      - IV-V
+      - VI-VII
+    - Textile
+      - I-III
+      - IV-V
+      - VI-VII
+    - Together
+      - I-III
+      - IV-V
+    - Wood
+      - I-III
+      - IV-V
+      - VI-VII
+  - Food
+  - Leather
+  - Metal and electrotechnical
+  - Mineral
+  - Mining
+  - Mining and Industry - Total
+  - Paper
+  - Power plants and waterworks
+  - Printing
+  - Public works
+  - Textile
+  - Total
+  - Wood
+- Forests
+  - Area
+- Livestock
+  - Goats
+  - Horned Cattle
+  - Horses
+  - Pigs
+  - Sheep
+  - Sheep and Goats
+- Prices
+  - Local Paid to Producers
+    - Barley
+      - All Types
+      - For Groats
+      - Malting Barley
+      - Other Varieties
+    - Buckwheat
+    - Hay
+      - All Types
+      - Clover Hay
+      - Meadow Hay
+    - Milking Cow (Maximum Price)
+    - Milking Cow (Minimum Price)
+    - Oats
+    - Peas
+    - Pig (per kg)
+    - Potatoes
+      - Edible
+      - For Processing
+    - Rye
+    - Straw
+    - Wheat
+    - Working Horse (Maximum Price)
+    - Working Horse (Minimum Price)
+- Yearbook 1939
+  - Population
+    - Total

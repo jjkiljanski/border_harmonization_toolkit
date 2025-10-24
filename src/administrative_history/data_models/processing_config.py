@@ -106,5 +106,6 @@ class ProcessingConfig(BaseModel):
     harmonization_errors_output_path: str
     post_processing_errors_output_path: str
     processed_data_metadata_output_path: str
+    database_tree_output_path: str
     harmonize_to_date: str
     post_processing_config: List[ReorganizeMethod]

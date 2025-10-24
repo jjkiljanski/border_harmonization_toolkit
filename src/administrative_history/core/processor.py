@@ -6,6 +6,9 @@ import geopandas as gpd
 import pandas as pd
 import time
 import traceback
+import os
+import csv
+from collections import defaultdict
 
 from administrative_history.core.core import AdministrativeHistory
 from administrative_history.data_models.adm_timespan import *
@@ -58,6 +61,7 @@ class AdministrativeHistoryProcessor():
         self.harmonization_errors_output_path = self.processing_config.harmonization_errors_output_path
         self.post_processing_errors_output_path = self.processing_config.post_processing_errors_output_path
         self.processed_data_metadata_output_path = self.processing_config.processed_data_metadata_output_path
+        self.database_tree_output_path = self.processing_config.database_tree_output_path
 
         self._load_processed_data_metadata()
     
@@ -800,3 +804,125 @@ class AdministrativeHistoryProcessor():
                 grouped.index.name = "City"  # restore the expected index name
 
         return grouped
+
+    def build_database_tree(self, filename, format: str = "ascii"):
+        """
+        Build a tree from all `columns[*]["category"]` values and write it out.
+
+        Args:
+            filename: str (if no extension passed, it is added based on format).
+            format: one of {"ascii", "markdown", "csv"}.
+                    - "ascii": Unicode box-drawing tree (best for readability).
+                    - "markdown": nested bullet list (portable in docs/READMEs).
+                    - "csv": tabular, easy to filter/sort in spreadsheets.
+
+        Output path:
+            Uses self.database_tree_output_path.
+        """
+
+        metadata = self.processed_data_metadata
+        # Ensure the base output directory exists
+        base_dir = getattr(self, "database_tree_output_path", None)
+        if not isinstance(base_dir, str) or not base_dir:
+            raise ValueError("self.database_tree_output_path must be a non-empty string (a directory path).")
+        os.makedirs(base_dir, exist_ok=True)
+
+        # Determine extension and construct full output path
+        base_name, ext = os.path.splitext(filename)
+        if not ext:  # add extension if missing
+            if format == "ascii":
+                ext = ".txt"
+            elif format == "markdown":
+                ext = ".md"
+            elif format == "csv":
+                ext = ".csv"
+            else:
+                raise ValueError('format must be one of: "ascii", "markdown", "csv"')
+
+        out_path = os.path.join(base_dir, base_name + ext)
+
+        # --- 1) Collect category paths
+        leaf_paths = set()
+        for item in metadata:
+            cols = item.columns
+            for col_info in cols.values():
+                cat = col_info.category
+                if not isinstance(cat, str) or not cat.strip():
+                    continue
+                parts = [p.strip() for p in cat.split("/") if p.strip()]
+                if parts:
+                    leaf_paths.add("/".join(parts))
+
+        # --- 2) Build a nested tree structure: dict[node] -> children dict
+        def tree():
+            return defaultdict(tree)
+
+        root = tree()
+        for full in leaf_paths:
+            parts = full.split("/")
+            cursor = root
+            for part in parts:
+                cursor = cursor[part]
+
+        # Helper to list children in sorted order
+        def _sorted_items(node_dict):
+            return sorted(node_dict.items(), key=lambda kv: kv[0].lower())
+
+        # --- 3) Writers for each format
+        os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
+
+        if format == "ascii":
+            # Unicode box drawing (├──, └──, │)
+            lines = []
+
+            def dfs(node_dict, prefix=""):
+                items = _sorted_items(node_dict)
+                for i, (name, child) in enumerate(items):
+                    connector = "└── " if i == len(items) - 1 else "├── "
+                    lines.append(prefix + connector + name)
+                    next_prefix = prefix + ("    " if i == len(items) - 1 else "│   ")
+                    dfs(child, next_prefix)
+
+            dfs(root)
+            # If there are multiple top-level roots, there will be multiple first-level lines.
+            with open(out_path, "w", encoding="utf-8") as f:
+                f.write("\n".join(lines))
+
+        elif format == "markdown":
+            # Nested bullet list
+            lines = []
+
+            def dfs_md(node_dict, depth=0):
+                for name, child in _sorted_items(node_dict):
+                    lines.append(("  " * depth) + f"- {name}")
+                    dfs_md(child, depth + 1)
+
+            dfs_md(root)
+            with open(out_path, "w", encoding="utf-8") as f:
+                f.write("\n".join(lines))
+
+        elif format == "csv":
+            # Flat table with hierarchy columns
+            nodes = {}  # path -> (level, name, parent)
+            for full in leaf_paths:
+                parts = full.split("/")
+                for i in range(1, len(parts) + 1):
+                    path = "/".join(parts[:i])
+                    parent = "/".join(parts[:i-1]) if i > 1 else ""
+                    if path not in nodes:
+                        nodes[path] = (i, parts[i-1], parent)
+
+            # Sort parents -> children, alpha by name
+            sorted_rows = sorted(
+                ({"level": lvl, "name": name, "path": p, "parent": parent, "is_leaf": p in leaf_paths}
+                for p, (lvl, name, parent) in nodes.items()),
+                key=lambda r: (r["level"], r["parent"], r["name"].lower())
+            )
+
+            with open(out_path, "w", newline="", encoding="utf-8-sig") as f:
+                w = csv.writer(f)
+                w.writerow(["level", "name", "path", "parent", "is_leaf"])
+                for r in sorted_rows:
+                    w.writerow([r["level"], r["name"], r["path"], r["parent"], str(r["is_leaf"])])
+        else:
+            raise ValueError('format must be one of: "ascii", "markdown", "csv"')
