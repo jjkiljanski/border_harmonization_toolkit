@@ -1,10 +1,2 @@
 Post-Processing Errors:
 
-❌ 0. method in the post_processing sequence (combine_data_tables): [Errno 2] No such file or directory: 'data/datasets/interwar_poland_database/processed_data/9.12.1931-occupation_central_eastern_voivodships_ready_clean.csv'
-❌ 1. method in the post_processing sequence (combine_data_tables): [Errno 2] No such file or directory: 'data/datasets/interwar_poland_database/processed_data/1931-total_population_central_eastern_voivodships.csv'
-❌ 2. method in the post_processing sequence (combine_data_tables): [Errno 2] No such file or directory: 'data/datasets/interwar_poland_database/processed_data/1931-ethnicity_central_eastern_voivodships.csv'
-❌ 3. method in the post_processing sequence (combine_data_tables): [Errno 2] No such file or directory: 'data/datasets/interwar_poland_database/processed_data/1931-indirect_occupation_central_eastern_voivodships.csv'
-❌ 4. method in the post_processing sequence (combine_data_tables): [Errno 2] No such file or directory: 'data/datasets/interwar_poland_database/processed_data/1931-religion_central_eastern_voivodships.csv'
-❌ 5. method in the post_processing sequence (combine_data_tables): [Errno 2] No such file or directory: 'data/datasets/interwar_poland_database/processed_data/1921-total_population_from_1931_census_publications_1933_borders.csv'
-❌ 6. method in the post_processing sequence (combine_data_tables): [Errno 2] No such file or directory: 'data/datasets/interwar_poland_database/processed_data/1921-population-more-than-10000.csv'
-❌ 7. method in the post_processing sequence (combine_data_tables): [Errno 2] No such file or directory: 'data/datasets/interwar_poland_database/processed_data/1931-population-more-than-10000.csv'

@@ -58,10 +58,16 @@ class AdministrativeHistoryProcessor():
         self.harmonize_to_date = datetime.strptime(self.processing_config.harmonize_to_date, "%d.%m.%Y")
         self.adm_units_raw_data_folder = self.processing_config.adm_units_raw_data_folder
         self.cities_raw_data_folder = self.processing_config.cities_raw_data_folder
+
         self.processed_data_output_folder = self.processing_config.processed_data_output_folder
         self.processed_data_csv_root = self.processing_config.processed_data_output_folder + "csv/"
         self.duckdb_path = self.processing_config.duckdb_path
         self.processed_data_parquet_root = self.processing_config.processed_data_output_folder + "parquet/"
+
+        os.makedirs(self.processed_data_output_folder, exist_ok=True)
+        os.makedirs(self.processed_data_csv_root, exist_ok=True)
+        os.makedirs(self.processed_data_parquet_root, exist_ok=True)
+
         self.harmonization_errors_output_path = self.processing_config.harmonization_errors_output_path
         self.post_processing_errors_output_path = self.processing_config.post_processing_errors_output_path
         self.processed_data_metadata_output_path = self.processing_config.processed_data_metadata_output_path
@@ -412,15 +418,14 @@ class AdministrativeHistoryProcessor():
                 else:
                     input_csv_path = self.cities_raw_data_folder + data_table_metadata_dict.data_table_id + ".csv"
 
-                output_csv_path = self.processed_data_csv_root + data_table_metadata_dict.data_table_id + ".csv"
+                output_parquet_path = self.processed_data_parquet_root + data_table_metadata_dict.data_table_id + ".parquet"
 
                 processed_data_table_dict = self.process_raw_csv_file(
                     input_csv_path=input_csv_path,
-                    output_csv_path=output_csv_path,
+                    output_parquet_path=output_parquet_path,
                     data_table_metadata_dict=data_table_metadata_dict,
                     date_to=self.harmonize_to_date,
-                    conv_matrix=conv_matrix,     # For cities it doesn't matter which date_to and conv_matrix are passed.
-                    storage=storage
+                    conv_matrix=conv_matrix     # For cities it doesn't matter which date_to and conv_matrix are passed.
                 )
 
                 self.processed_data_metadata.append(processed_data_table_dict)
@@ -433,11 +438,6 @@ class AdministrativeHistoryProcessor():
                 )
                 print(error_msg)
                 failed_files.append(error_msg)
-
-        storage.replace_metadata_tables(self.processed_data_metadata)
-        storage.export_all_to_parquet()
-        storage.checkpoint(vacuum=False)
-        storage.close()
 
         end_time = time.time()
         execution_time = end_time - start_time
@@ -465,11 +465,10 @@ class AdministrativeHistoryProcessor():
     def process_raw_csv_file(
         self,
         input_csv_path: str,
-        output_csv_path: str,
+        output_parquet_path: str,
         data_table_metadata_dict: DataTableMetadata,
         date_to: Optional[datetime] = None,
-        conv_matrix: Optional[pd.DataFrame] = None,
-        storage: Optional["DuckParquetStorage"] = None
+        conv_matrix: Optional[pd.DataFrame] = None
     ):
         """
         Process a raw CSV file containing either District- or City-level data.  
@@ -511,7 +510,7 @@ class AdministrativeHistoryProcessor():
         # 1. VALIDATION & LOADING
         # ============================================================
         df_input = read_economic_csv_input(adm_level=adm_level, input_csv_path=input_csv_path)
-        numeric_cols = list(set(df_input.columns) - {adm_level})
+        numeric_cols = [c for c in df_input.columns if c != adm_level]
 
         if adm_level == "City":
             # ✅ Validate city names against reference list (when "City" is the index)
@@ -529,7 +528,7 @@ class AdministrativeHistoryProcessor():
 
             df_input_filtered = df_valid
 
-        elif adm_level == "District" or "Region":
+        elif adm_level in ["District", "Region"]:
             # Build conversion matrix if not provided
             if date_to is None:
                 date_to = self.harmonize_to_date
@@ -603,20 +602,20 @@ class AdministrativeHistoryProcessor():
         # 4. SAVING & METADATA UPDATE
         # ============================================================
 
-        # Ingest to DuckDB
-        if storage is not None:
-            storage.ingest_processed_df(
-                df_output=df_output,
-                m=data_table_metadata_dict,
-                harmonize_to_date=self.harmonize_to_date,
-                id_column=adm_level,            # "District"/"Region"/"City"
-            )
+        # Save to parquet
+        try:
+            df_output.to_parquet(output_parquet_path, index=False)
+        except Exception as e:
+            # Give a clear hint if pyarrow/fastparquet is missing
+            if "pyarrow" in str(e).lower() or "fastparquet" in str(e).lower():
+                raise RuntimeError(
+                    "Writing Parquet requires 'pyarrow' or 'fastparquet'. "
+                    "Install with: pip install pyarrow"
+                ) from e
+            raise
 
-        # Save to csv
-        df_output.to_csv(output_csv_path, index=False)
-
-        end_time = time.time()
-        print(f"✅ Finished processing in {end_time - start_time:.2f} seconds. Output: {output_csv_path}")
+        duration = time.time() - start_time
+        print(f"✅ Finished processing in {duration:.2f} seconds. Output: {output_parquet_path}")
 
         # Update metadata
         # numpy.float64 and numpy.int64 are cast to native python float and int types to allow for pydantic serialization.
@@ -638,7 +637,7 @@ class AdministrativeHistoryProcessor():
 
         end_time = time.time()
         execution_time = end_time-start_time
-        print(f"✅ Successfully harmonized '{input_csv_path}' and saved to '{output_csv_path}' in {execution_time:.2f} seconds")       
+        print(f"✅ Successfully harmonized '{input_csv_path}' and saved to '{output_parquet_path}' in {execution_time:.2f} seconds")       
 
         return data_table_metadata_dict
 

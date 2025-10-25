@@ -248,8 +248,8 @@ def load_and_validate_data_tables_for_summing(folder, arguments):
     index_column = None  # The column that all dfs must use
 
     for data_table_name in arguments.data_tables_list:
-        path = os.path.join(folder, f"{data_table_name}.csv")
-        df = pd.read_csv(path)
+        path = os.path.join(folder, f"{data_table_name}.parquet")
+        df = pd.read_parquet(path)
 
         # Which allowed columns are present in this df?
         present_allowed = [col for col in allowed_columns if col in df.columns]
@@ -287,8 +287,8 @@ def combine_data_tables(adm_history_processor: AdministrativeHistoryProcessor, a
 
     This method should be applied only to already processed datasets!
     """
-    folder = adm_history_processor.processed_data_csv_root
-    print(f"🟡 Starting combine_data_tables with '{arguments.method}' method: {arguments.data_tables_list} -> {arguments.new_data_table_name}.csv")
+    folder = adm_history_processor.processed_data_parquet_root
+    print(f"🟡 Starting combine_data_tables with '{arguments.method}' method: {arguments.data_tables_list} -> {arguments.new_data_table_name}.parquet")
 
     dfs = []
 
@@ -333,8 +333,8 @@ def combine_data_tables(adm_history_processor: AdministrativeHistoryProcessor, a
         )
 
     # Write result
-    output_path = os.path.join(folder, f"{arguments.new_data_table_name}.csv")
-    result_df.to_csv(output_path, index=False)
+    output_path = os.path.join(folder, f"{arguments.new_data_table_name}.parquet")
+    result_df.to_parquet(output_path, index=False)
 
     # Find metadata dicts of the datasets
     metadata_dicts = [metadata_dict for metadata_dict in adm_history_processor.processed_data_metadata if metadata_dict.data_table_id in arguments.data_tables_list]
@@ -358,7 +358,7 @@ def create_dist_area_dataset(adm_history_processor: AdministrativeHistoryProcess
     """
     print(f"🟡 Starting create_dist_area_dataset (adm. state for {adm_history_processor.harmonize_to_date.date()})")
     data_table_metadata = arguments.data_table_metadata
-    output_path = adm_history_processor.processed_data_csv_root + data_table_metadata.data_table_id + ".csv"
+    output_path = adm_history_processor.processed_data_parquet_root + data_table_metadata.data_table_id + ".parquet"
     # Get the GeoDataFrame of districts
     dist_gdf = adm_history_processor.adm_history.dist_registry._plot_layer(adm_history_processor.harmonize_to_date)
 
@@ -376,7 +376,7 @@ def create_dist_area_dataset(adm_history_processor: AdministrativeHistoryProcess
     df = dist_gdf_proj[["name_id", "Area"]].rename(columns={"name_id": "District"})
 
     # Write the DataFrame to csv
-    df.to_csv(output_path, index = False)
+    df.to_parquet(output_path, index = False)
 
     # Update processed_data_metadata
     data_table_metadata.date = adm_history_processor.harmonize_to_date.strftime("%d.%m.%Y")
