@@ -4,11 +4,12 @@ from typing import List
 from shapely.geometry import Point
 import geopandas as gpd
 import pandas as pd
+import shutil
 import time
 import traceback
 import os
 import csv
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 from administrative_history.core.core import AdministrativeHistory
 from administrative_history.core.db_injector import DuckParquetStorage
@@ -60,12 +61,9 @@ class AdministrativeHistoryProcessor():
         self.cities_raw_data_folder = self.processing_config.cities_raw_data_folder
 
         self.processed_data_output_folder = self.processing_config.processed_data_output_folder
-        self.processed_data_csv_root = self.processing_config.processed_data_output_folder + "csv/"
-        self.duckdb_path = self.processing_config.duckdb_path
         self.processed_data_parquet_root = self.processing_config.processed_data_output_folder + "parquet/"
 
         os.makedirs(self.processed_data_output_folder, exist_ok=True)
-        os.makedirs(self.processed_data_csv_root, exist_ok=True)
         os.makedirs(self.processed_data_parquet_root, exist_ok=True)
 
         self.harmonization_errors_output_path = self.processing_config.harmonization_errors_output_path
@@ -73,7 +71,14 @@ class AdministrativeHistoryProcessor():
         self.processed_data_metadata_output_path = self.processing_config.processed_data_metadata_output_path
         self.database_tree_output_path = self.processing_config.database_tree_output_path
 
+        self.parquet_combination_config = self.processing_config.parquet_combination_config
+
         self._load_processed_data_metadata()
+
+    def build_db(self):
+        self.process_raw_data()
+        self.post_processing_reorganize_data_tables()
+        self.combine_parquets_by_adm_level()
     
     def _load_processed_data_metadata(self):
         """
@@ -512,6 +517,14 @@ class AdministrativeHistoryProcessor():
         df_input = read_economic_csv_input(adm_level=adm_level, input_csv_path=input_csv_path)
         numeric_cols = [c for c in df_input.columns if c != adm_level]
 
+        # Build mapping: original column name -> English category label from metadata
+        # (only for columns that actually exist in the input)
+        eng_map = {}
+        for orig_name, col_meta in data_table_metadata_dict.columns.items():
+            if orig_name in df_input.columns:
+                eng = col_meta.category["eng"]
+                eng_map[orig_name] = eng
+
         if adm_level == "City":
             # ✅ Validate city names against reference list (when "City" is the index)
             valid_city_names = set(self.adm_history.cities_df["City"])
@@ -602,6 +615,10 @@ class AdministrativeHistoryProcessor():
         # 4. SAVING & METADATA UPDATE
         # ============================================================
 
+        # Rename columns to their English names defined in the metadata
+        if eng_map:
+            df_output = df_output.rename(columns=eng_map)
+
         # Save to parquet
         try:
             df_output.to_parquet(output_parquet_path, index=False)
@@ -631,6 +648,18 @@ class AdministrativeHistoryProcessor():
                     data_table_metadata_dict.columns[col].n_not_na_after_imputation = int(column_n_not_na_after_imputation[col])
             else:
                 raise ValueError(f"Column '{col}' found in the data table '{input_csv_path}', but it doesn't exist in the raw data table metadata.\nColumns present in metadata: {data_table_metadata_dict.columns.keys()}.")
+
+        if eng_map:
+            new_columns = {}
+            for orig_name, col_meta in data_table_metadata_dict.columns.items():
+                new_key = eng_map.get(orig_name, orig_name)  # if a column wasn’t present, keep its key
+                if new_key in new_columns:
+                    raise ValueError(
+                        f"Rekeying metadata would overwrite '{new_key}' in table '{data_table_metadata_dict.data_table_id}'. "
+                        "English labels must be unique per table."
+                    )
+                new_columns[new_key] = col_meta
+            data_table_metadata_dict.columns = new_columns
             
         data_table_metadata_dict.adm_state_date = self.harmonize_to_date
         print(f"Set data_table_metadata_dict.adm_state_date to {self.harmonize_to_date.date()}.\data_table_metadata_dict: {data_table_metadata_dict}.")
@@ -711,6 +740,171 @@ class AdministrativeHistoryProcessor():
             print(f"\n⚠️ The following post-processing methods failed. See log at: {self.post_processing_errors_output_path}")
         else:
             print("🎉 All post-processing methods applied successfully.")
+
+    def combine_parquets_by_adm_level(self) -> dict:
+        """
+        Combine per-table Parquet files into one **long/tidy** Parquet per adm level,
+        using self.parquet_combination_config to control behavior:
+        - 'strict': all files must have identical ID sets
+        - 'union' : files may have different ID sets; output contains the union of IDs
+
+        self.parquet_combination_config may look like:
+            {'District': 'strict', 'Region': 'union', 'City': 'union'}
+        You can also use booleans: True == 'strict', False == 'union'.
+        If a level is missing from the config, defaults to 'strict'.
+
+        Output schema per level (file: {AdmLevel}_datasets.parquet):
+            adm_level      : str                  (constant for the file's level)
+            {AdmLevel}     : str                  (ID column: 'District' | 'Region' | 'City')
+            data_table_id  : str
+            variable_name  : str                  (original column name in the per-table Parquet)
+            value          : float
+
+        Returns:
+            dict: {adm_level: output_parquet_path} for levels that had data
+        """
+
+        # --- helpers
+        def mode_for(level: str) -> str:
+            cfg = getattr(self, "parquet_combination_config", {}) or {}
+            val = cfg.get(level, "strict")
+            if isinstance(val, bool):
+                return "strict" if val else "union"
+            val = str(val).strip().lower()
+            if val not in ("strict", "union"):
+                raise ValueError(
+                    f"Invalid mode '{val}' for level '{level}' in self.parquet_combination_config "
+                    f"(expected 'strict' or 'union')."
+                )
+            return val
+
+        import os
+        import pandas as pd
+
+        src_root = self.processed_data_parquet_root
+        out_root = self.processed_data_output_folder
+        os.makedirs(out_root, exist_ok=True)
+
+        results = {}
+        for adm_level in ["District", "Region", "City"]:
+            # collect IDs from Pydantic models
+            dt_ids = [md.data_table_id for md in self.processed_data_metadata if md.adm_level == adm_level]
+            if not dt_ids:
+                print(f"ℹ️ No processed metadata entries for adm_level='{adm_level}'. Skipping.")
+                continue
+
+            mode = mode_for(adm_level)
+            id_col = adm_level  # by design
+
+            print(f"📦 Combining {len(dt_ids)} {adm_level} Parquet file(s) in '{mode}' mode…")
+
+            # state
+            canonical_set = None   # for 'strict': exact equality check; for 'union': grows to the union set
+            long_parts = []
+            used_files = []
+
+            for data_table_id in sorted(dt_ids):
+                fpath = os.path.join(src_root, f"{data_table_id}.parquet")
+                if not os.path.exists(fpath):
+                    raise FileNotFoundError(f"Missing Parquet for '{data_table_id}': {fpath}")
+
+                df = pd.read_parquet(fpath)
+
+                # structure checks
+                if id_col not in df.columns:
+                    raise ValueError(f"{fpath}: required id column '{id_col}' not found. Columns: {list(df.columns)}")
+                if df[id_col].isnull().any():
+                    raise ValueError(f"{fpath}: '{id_col}' column contains nulls.")
+                if df[id_col].duplicated().any():
+                    dups = df.loc[df[id_col].duplicated(), id_col].astype(str).tolist()
+                    raise ValueError(f"{fpath}: duplicate '{id_col}' values found: {dups}")
+
+                ids_this = set(df[id_col].astype(str).tolist())
+
+                if mode == "strict":
+                    if canonical_set is None:
+                        canonical_set = ids_this
+                        print(f"  ✓ Canonical {adm_level} count: {len(canonical_set)} from '{data_table_id}.parquet'")
+                    else:
+                        if ids_this != canonical_set:
+                            missing = sorted(list(canonical_set - ids_this))
+                            extra   = sorted(list(ids_this - canonical_set))
+                            raise ValueError(
+                                f"{fpath}: {adm_level} set mismatch.\n"
+                                f"  Missing vs canonical: {missing}\n"
+                                f"  Extra vs canonical:   {extra}"
+                            )
+                else:  # mode == "union"
+                    if canonical_set is None:
+                        canonical_set = set()
+                    # expand to union set
+                    canonical_set |= ids_this
+
+                # variable columns (everything except id column)
+                var_cols = [c for c in df.columns if c != id_col]
+                if not var_cols:
+                    print(f"  • Skipping '{data_table_id}.parquet': no variable columns.")
+                    continue
+
+                # melt to long format
+                tidy = df.melt(
+                    id_vars=[id_col],
+                    value_vars=var_cols,
+                    var_name="variable_name",
+                    value_name="value",
+                    ignore_index=True,
+                )
+                # attach identifiers
+                tidy["adm_level"] = adm_level
+                tidy["data_table_id"] = data_table_id
+                # normalize dtypes
+                tidy[id_col] = tidy[id_col].astype(str)
+                tidy["variable_name"] = tidy["variable_name"].astype(str)
+                tidy["data_table_id"] = tidy["data_table_id"].astype(str)
+                tidy["adm_level"] = tidy["adm_level"].astype(str)
+                tidy["value"] = pd.to_numeric(tidy["value"], errors="coerce")
+
+                long_parts.append(tidy)
+                used_files.append(fpath)
+                print(f"  ✓ Included '{data_table_id}.parquet' → {len(tidy)} rows")
+
+            if not long_parts:
+                print(f"ℹ️ No usable Parquet files for adm_level='{adm_level}'. Skipping.")
+                continue
+
+            # concatenate all long parts (union over rows naturally handled)
+            combined_long = pd.concat(long_parts, ignore_index=True)
+
+            # write output
+            out_path = os.path.join(out_root, f"{adm_level}_datasets.parquet")
+            try:
+                combined_long.to_parquet(out_path, index=False)
+            except Exception as e:
+                if "pyarrow" in str(e).lower() or "fastparquet" in str(e).lower():
+                    raise RuntimeError(
+                        "Writing Parquet requires 'pyarrow' or 'fastparquet'. Install with: pip install pyarrow"
+                    ) from e
+                raise
+
+            # delete only the combined inputs
+            deleted = 0
+            for f in used_files:
+                try:
+                    os.remove(f)
+                    deleted += 1
+                except Exception as e:
+                    print(f"⚠️ Could not delete {f}: {e}")
+
+            print(
+                f"✅ Wrote combined {adm_level} long dataset: {out_path} "
+                f"({len(combined_long)} rows from {len(used_files)} files; mode={mode})."
+            )
+            if deleted:
+                print(f"🧹 Deleted {deleted} source file(s) for {adm_level}.")
+
+            results[adm_level] = out_path
+
+        return results
 
     def map_city_data_to_dists(self, df: pd.DataFrame, date, geojson_path: str = None, custom_grouping: Dict[str, str] = None,
                         custom_grouping_method: Union[Literal['sum'], Literal['average']] = 'average'):

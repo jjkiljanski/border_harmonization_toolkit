@@ -236,22 +236,25 @@ def collapse_metadata_dicts(
 
 def load_and_validate_data_tables_for_summing(folder, arguments):
     """
-    Load CSV data tables and validate that:
+    Load Parquet data tables and validate that:
     - Each table has exactly one of the allowed columns.
     - All tables consistently use the same allowed column.
+    Returns: (dfs, index_column, file_paths)
     """
+    import os
+    import pandas as pd
 
-    # Define the allowed columns (expandable later)
+    # If you also support Region, feel free to add "Region" here.
     allowed_columns = ["District", "City"]
 
     dfs = []
     index_column = None  # The column that all dfs must use
+    file_paths = []
 
     for data_table_name in arguments.data_tables_list:
         path = os.path.join(folder, f"{data_table_name}.parquet")
         df = pd.read_parquet(path)
 
-        # Which allowed columns are present in this df?
         present_allowed = [col for col in allowed_columns if col in df.columns]
 
         if len(present_allowed) == 0:
@@ -265,7 +268,6 @@ def load_and_validate_data_tables_for_summing(folder, arguments):
                 f"{present_allowed}, which is not permitted."
             )
 
-        # Decide or check consistency of the chosen allowed column
         if index_column is None:
             index_column = present_allowed[0]
         elif present_allowed[0] != index_column:
@@ -275,8 +277,9 @@ def load_and_validate_data_tables_for_summing(folder, arguments):
             )
 
         dfs.append(df)
+        file_paths.append(path)
 
-    return dfs, index_column
+    return dfs, index_column, file_paths
 
 
 def combine_data_tables(adm_history_processor: AdministrativeHistoryProcessor, arguments: CombineDataTablesArgs) -> None:
@@ -347,6 +350,20 @@ def combine_data_tables(adm_history_processor: AdministrativeHistoryProcessor, a
     ] + [collapsed_metadata]
 
     print(f"✅ Finished combine_data_tables: Output written to {output_path}")
+
+    # Delete source Parquet files that were combined
+    deleted = 0
+    for p in file_paths:
+        # extra safety: don't delete the just-written output if names collide (they shouldn't)
+        if os.path.abspath(p) == os.path.abspath(output_path):
+            continue
+        try:
+            os.remove(p)
+            deleted += 1
+        except Exception as e:
+            print(f"⚠️ Could not delete {p}: {e}")
+    if deleted:
+        print(f"🧹 Deleted {deleted} source file(s).")
 
 def create_dist_area_dataset(adm_history_processor: AdministrativeHistoryProcessor, arguments: CreateDistAreaDatasetArgs):
     """

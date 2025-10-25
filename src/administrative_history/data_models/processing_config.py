@@ -10,7 +10,7 @@ specific method models. These models describe how different data reorganization
 operations (e.g., summing data tables, creating datasets) should be configured.
 """
 
-from typing import Union, List, Annotated, Literal
+from typing import Union, List, Annotated, Literal, Dict
 from pydantic import BaseModel, Field
 from typing_extensions import Annotated  # redundant import kept for compatibility
 
@@ -108,5 +108,6 @@ class ProcessingConfig(BaseModel):
     post_processing_errors_output_path: str
     processed_data_metadata_output_path: str
     database_tree_output_path: str
+    parquet_combination_config: Dict[Union[Literal["District"], Literal["Region"], Literal["City"]], Union[Literal["strict"], Literal["union"]]]
     harmonize_to_date: str
     post_processing_config: List[ReorganizeMethod]
