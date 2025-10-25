@@ -54,9 +54,12 @@
 3,01. Number of workers in plants I-VII,Business Permissions/Industry/01. Number of workers in plants I-VII,Business Permissions/Industry,True
 3,02. Plants of All Types,Business Permissions/Industry/02. Plants of All Types,Business Permissions/Industry,False
 3,03. Plants of All Types,Business Permissions/Industry/03. Plants of All Types,Business Permissions/Industry,False
+3,04. Plants of All Types,Business Permissions/Industry/04. Plants of All Types,Business Permissions/Industry,False
 3,05. Plants of All Types,Business Permissions/Industry/05. Plants of All Types,Business Permissions/Industry,False
+3,06. Plants of All Types,Business Permissions/Industry/06. Plants of All Types,Business Permissions/Industry,False
 3,07. Mining,Business Permissions/Industry/07. Mining,Business Permissions/Industry,False
 3,08. Mining,Business Permissions/Industry/08. Mining,Business Permissions/Industry,False
+3,09. Mining,Business Permissions/Industry/09. Mining,Business Permissions/Industry,False
 3,10. Mineral,Business Permissions/Industry/10. Mineral,Business Permissions/Industry,False
 3,11. Mineral,Business Permissions/Industry/11. Mineral,Business Permissions/Industry,False
 3,12. Mineral,Business Permissions/Industry/12. Mineral,Business Permissions/Industry,False
@@ -87,7 +90,6 @@
 3,37. Leather,Business Permissions/Industry/37. Leather,Business Permissions/Industry,False
 3,38. Wood,Business Permissions/Industry/38. Wood,Business Permissions/Industry,False
 3,39. Wood,Business Permissions/Industry/39. Wood,Business Permissions/Industry,False
-3,4. Plants of All Types,Business Permissions/Industry/4. Plants of All Types,Business Permissions/Industry,False
 3,40. Wood,Business Permissions/Industry/40. Wood,Business Permissions/Industry,False
 3,41. Wood,Business Permissions/Industry/41. Wood,Business Permissions/Industry,False
 3,42. Wood,Business Permissions/Industry/42. Wood,Business Permissions/Industry,False
@@ -108,7 +110,6 @@
 3,57. Printing,Business Permissions/Industry/57. Printing,Business Permissions/Industry,False
 3,58. Printing,Business Permissions/Industry/58. Printing,Business Permissions/Industry,False
 3,59. Printing,Business Permissions/Industry/59. Printing,Business Permissions/Industry,False
-3,6. Plants of All Types,Business Permissions/Industry/6. Plants of All Types,Business Permissions/Industry,False
 3,60. Printing,Business Permissions/Industry/60. Printing,Business Permissions/Industry,False
 3,61. Construction,Business Permissions/Industry/61. Construction,Business Permissions/Industry,False
 3,62. Construction,Business Permissions/Industry/62. Construction,Business Permissions/Industry,False
@@ -125,7 +126,6 @@
 3,73. Horticulture and fisheries,Business Permissions/Industry/73. Horticulture and fisheries,Business Permissions/Industry,False
 3,74. Horticulture and fisheries,Business Permissions/Industry/74. Horticulture and fisheries,Business Permissions/Industry,False
 3,75. Other plants,Business Permissions/Industry/75. Other plants,Business Permissions/Industry,False
-3,9. Mining,Business Permissions/Industry/9. Mining,Business Permissions/Industry,False
 3,Category IIIPR,Business Permissions/Industry/Category IIIPR,Business Permissions/Industry,True
 3,Category IIIR,Business Permissions/Industry/Category IIIR,Business Permissions/Industry,True
 3,Category IIPR,Business Permissions/Industry/Category IIPR,Business Permissions/Industry,True
@@ -727,9 +727,12 @@
 4,Wholesale,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale,Business Permissions/Industrial Occupations/Trade at Fairs,False
 4,Total,Business Permissions/Industry/02. Plants of All Types/Total,Business Permissions/Industry/02. Plants of All Types,True
 4,I-III,Business Permissions/Industry/03. Plants of All Types/I-III,Business Permissions/Industry/03. Plants of All Types,True
+4,IV-V,Business Permissions/Industry/04. Plants of All Types/IV-V,Business Permissions/Industry/04. Plants of All Types,True
 4,VI-VII,Business Permissions/Industry/05. Plants of All Types/VI-VII,Business Permissions/Industry/05. Plants of All Types,True
+4,VIII,Business Permissions/Industry/06. Plants of All Types/VIII,Business Permissions/Industry/06. Plants of All Types,True
 4,I-V,Business Permissions/Industry/07. Mining/I-V,Business Permissions/Industry/07. Mining,True
 4,VI-VII,Business Permissions/Industry/08. Mining/VI-VII,Business Permissions/Industry/08. Mining,True
+4,VIII,Business Permissions/Industry/09. Mining/VIII,Business Permissions/Industry/09. Mining,True
 4,I-V,Business Permissions/Industry/10. Mineral/I-V,Business Permissions/Industry/10. Mineral,True
 4,VI-VII,Business Permissions/Industry/11. Mineral/VI-VII,Business Permissions/Industry/11. Mineral,True
 4,VIII,Business Permissions/Industry/12. Mineral/VIII,Business Permissions/Industry/12. Mineral,True
@@ -760,7 +763,6 @@
 4,Saddlery and harness making (within others),Business Permissions/Industry/37. Leather/Saddlery and harness making (within others),Business Permissions/Industry/37. Leather,True
 4,I-V,Business Permissions/Industry/38. Wood/I-V,Business Permissions/Industry/38. Wood,True
 4,VI-VII,Business Permissions/Industry/39. Wood/VI-VII,Business Permissions/Industry/39. Wood,True
-4,IV-V,Business Permissions/Industry/4. Plants of All Types/IV-V,Business Permissions/Industry/4. Plants of All Types,True
 4,VIII,Business Permissions/Industry/40. Wood/VIII,Business Permissions/Industry/40. Wood,True
 4,Sawmills (within others),Business Permissions/Industry/41. Wood/Sawmills (within others),Business Permissions/Industry/41. Wood,True
 4,Carpentry (within others),Business Permissions/Industry/42. Wood/Carpentry (within others),Business Permissions/Industry/42. Wood,True
@@ -781,7 +783,6 @@
 4,I-V,Business Permissions/Industry/57. Printing/I-V,Business Permissions/Industry/57. Printing,True
 4,VI-VII,Business Permissions/Industry/58. Printing/VI-VII,Business Permissions/Industry/58. Printing,True
 4,VIII,Business Permissions/Industry/59. Printing/VIII,Business Permissions/Industry/59. Printing,True
-4,VIII,Business Permissions/Industry/6. Plants of All Types/VIII,Business Permissions/Industry/6. Plants of All Types,True
 4,Printing houses (within others),Business Permissions/Industry/60. Printing/Printing houses (within others),Business Permissions/Industry/60. Printing,True
 4,I-V,Business Permissions/Industry/61. Construction/I-V,Business Permissions/Industry/61. Construction,True
 4,VI-VII,Business Permissions/Industry/62. Construction/VI-VII,Business Permissions/Industry/62. Construction,True
@@ -798,7 +799,6 @@
 4,VIII,Business Permissions/Industry/73. Horticulture and fisheries/VIII,Business Permissions/Industry/73. Horticulture and fisheries,True
 4,VIII,Business Permissions/Industry/74. Horticulture and fisheries/VIII,Business Permissions/Industry/74. Horticulture and fisheries,True
 4,VIII,Business Permissions/Industry/75. Other plants/VIII,Business Permissions/Industry/75. Other plants,True
-4,VIII,Business Permissions/Industry/9. Mining/VIII,Business Permissions/Industry/9. Mining,True
 4,Category IIIR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IIIR,Business Permissions/Trade/1. All types of professional purchasing (total),True
 4,Category IIR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IIR,Business Permissions/Trade/1. All types of professional purchasing (total),True
 4,Category IR,Business Permissions/Trade/1. All types of professional purchasing (total)/Category IR,Business Permissions/Trade/1. All types of professional purchasing (total),True

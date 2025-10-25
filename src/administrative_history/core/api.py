@@ -1,12 +1,10 @@
+from __future__ import annotations
+
 import pandas as pd
 import os
-from __future__ import annotations
 from pathlib import Path
-from core.db_injector import DuckParquetStorage
+from administrative_history.core.db_injector import DuckParquetStorage
 from typing import Union, Literal, Dict, Optional
-
-from administrative_history.core.processor import AdministrativeHistoryProcessor
-from administrative_history.utils.helper_functions import read_economic_csv_input
 
 """
 This component serves as the user api for the access to the data stored in the database.
@@ -30,14 +28,14 @@ class AdministrativeHistoryAPI:
         """
         Behavior:
           - If a DuckDB file exists at adm_history_processor.duckdb_path, open it.
-          - Else, if Parquet exists at adm_history_processor.parquet_root, create DB from Parquet.
+          - Else, if Parquet exists at adm_history_processor.processed_data_parquet_root, create DB from Parquet.
           - Else, raise a descriptive error.
         """
         self.adm_history_processor = adm_history_processor
         self.adm_history = self.adm_history_processor.adm_history
 
         duckdb_path: Path = Path(self.adm_history_processor.duckdb_path)
-        parquet_root: Path = Path(self.adm_history_processor.parquet_root)
+        parquet_root: Path = Path(self.adm_history_processor.processed_data_parquet_root)
 
         self.storage = DuckParquetStorage(duckdb_path, parquet_root)
 

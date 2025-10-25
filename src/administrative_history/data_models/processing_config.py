@@ -103,6 +103,7 @@ class ProcessingConfig(BaseModel):
     adm_units_raw_data_folder: str
     cities_raw_data_folder: str
     processed_data_output_folder: str
+    duckdb_path: str
     harmonization_errors_output_path: str
     post_processing_errors_output_path: str
     processed_data_metadata_output_path: str

@@ -619,6 +619,7 @@
 3,03. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł/03. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,04. Zakłady,Zezwolenia dla przedsiębiorstw/Przemysł/04. Zakłady,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,05. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł/05. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł,False
+3,06. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł/06. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,07. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł/07. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,08. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł/08. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,09. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł/09. Kopalnictwo,Zezwolenia dla przedsiębiorstw/Przemysł,False
@@ -672,7 +673,6 @@
 3,57. Poligraficzny,Zezwolenia dla przedsiębiorstw/Przemysł/57. Poligraficzny,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,58. Poligraficzny,Zezwolenia dla przedsiębiorstw/Przemysł/58. Poligraficzny,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,59. Poligraficzny,Zezwolenia dla przedsiębiorstw/Przemysł/59. Poligraficzny,Zezwolenia dla przedsiębiorstw/Przemysł,False
-3,6. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł/6. Zakłady ogółem,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,60. Poligraficzny,Zezwolenia dla przedsiębiorstw/Przemysł/60. Poligraficzny,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,61. Budowlany,Zezwolenia dla przedsiębiorstw/Przemysł/61. Budowlany,Zezwolenia dla przedsiębiorstw/Przemysł,False
 3,62. Budowlany,Zezwolenia dla przedsiębiorstw/Przemysł/62. Budowlany,Zezwolenia dla przedsiębiorstw/Przemysł,False
@@ -1092,6 +1092,7 @@
 4,I-III,Zezwolenia dla przedsiębiorstw/Przemysł/03. Zakłady ogółem/I-III,Zezwolenia dla przedsiębiorstw/Przemysł/03. Zakłady ogółem,True
 4,IV-V,Zezwolenia dla przedsiębiorstw/Przemysł/04. Zakłady/IV-V,Zezwolenia dla przedsiębiorstw/Przemysł/04. Zakłady,True
 4,VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/05. Zakłady ogółem/VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/05. Zakłady ogółem,True
+4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/06. Zakłady ogółem/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/06. Zakłady ogółem,True
 4,I-V,Zezwolenia dla przedsiębiorstw/Przemysł/07. Kopalnictwo/I-V,Zezwolenia dla przedsiębiorstw/Przemysł/07. Kopalnictwo,True
 4,VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/08. Kopalnictwo/VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/08. Kopalnictwo,True
 4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/09. Kopalnictwo/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/09. Kopalnictwo,True
@@ -1145,7 +1146,6 @@
 4,I-V,Zezwolenia dla przedsiębiorstw/Przemysł/57. Poligraficzny/I-V,Zezwolenia dla przedsiębiorstw/Przemysł/57. Poligraficzny,True
 4,VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/58. Poligraficzny/VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/58. Poligraficzny,True
 4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/59. Poligraficzny/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/59. Poligraficzny,True
-4,VIII,Zezwolenia dla przedsiębiorstw/Przemysł/6. Zakłady ogółem/VIII,Zezwolenia dla przedsiębiorstw/Przemysł/6. Zakłady ogółem,True
 4,Drukarnie (w obrębie pozostałych),Zezwolenia dla przedsiębiorstw/Przemysł/60. Poligraficzny/Drukarnie (w obrębie pozostałych),Zezwolenia dla przedsiębiorstw/Przemysł/60. Poligraficzny,True
 4,I-V,Zezwolenia dla przedsiębiorstw/Przemysł/61. Budowlany/I-V,Zezwolenia dla przedsiębiorstw/Przemysł/61. Budowlany,True
 4,VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/62. Budowlany/VI-VII,Zezwolenia dla przedsiębiorstw/Przemysł/62. Budowlany,True

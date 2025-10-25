@@ -287,7 +287,7 @@ def combine_data_tables(adm_history_processor: AdministrativeHistoryProcessor, a
 
     This method should be applied only to already processed datasets!
     """
-    folder = adm_history_processor.processed_data_output_folder
+    folder = adm_history_processor.processed_data_csv_root
     print(f"🟡 Starting combine_data_tables with '{arguments.method}' method: {arguments.data_tables_list} -> {arguments.new_data_table_name}.csv")
 
     dfs = []
@@ -358,7 +358,7 @@ def create_dist_area_dataset(adm_history_processor: AdministrativeHistoryProcess
     """
     print(f"🟡 Starting create_dist_area_dataset (adm. state for {adm_history_processor.harmonize_to_date.date()})")
     data_table_metadata = arguments.data_table_metadata
-    output_path = adm_history_processor.processed_data_output_folder + data_table_metadata.data_table_id + ".csv"
+    output_path = adm_history_processor.processed_data_csv_root + data_table_metadata.data_table_id + ".csv"
     # Get the GeoDataFrame of districts
     dist_gdf = adm_history_processor.adm_history.dist_registry._plot_layer(adm_history_processor.harmonize_to_date)
 

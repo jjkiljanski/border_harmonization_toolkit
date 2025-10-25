@@ -227,3 +227,22 @@ CREATE VIEW observations       AS SELECT * FROM read_parquet('{ob}');
         if self.con:
             self.con.close()
             self.con = None
+
+    def checkpoint(self, vacuum: bool = False):
+        """
+        Fold the WAL into the main .duckdb file (and optionally compact).
+        Works across DuckDB versions by trying CALL/PRAGMA forms.
+        """
+        # Prefer the modern form
+        try:
+            self.con.execute("CALL checkpoint();")
+        except Exception:
+            # Fallback for older versions
+            try:
+                self.con.execute("PRAGMA checkpoint;")
+            except Exception as e:
+                raise RuntimeError(f"Could not run checkpoint: {e}")
+
+        if vacuum:
+            # VACUUM is a statement in DuckDB; rewrites/compacts the database file
+            self.con.execute("VACUUM;")

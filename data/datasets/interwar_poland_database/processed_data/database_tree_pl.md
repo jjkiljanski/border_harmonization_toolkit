@@ -991,6 +991,8 @@
       - IV-V
     - 05. Zakłady ogółem
       - VI-VII
+    - 06. Zakłady ogółem
+      - VIII
     - 07. Kopalnictwo
       - I-V
     - 08. Kopalnictwo
@@ -1096,8 +1098,6 @@
     - 58. Poligraficzny
       - VI-VII
     - 59. Poligraficzny
-      - VIII
-    - 6. Zakłady ogółem
       - VIII
     - 60. Poligraficzny
       - Drukarnie (w obrębie pozostałych)

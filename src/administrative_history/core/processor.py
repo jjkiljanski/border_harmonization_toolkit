@@ -59,6 +59,9 @@ class AdministrativeHistoryProcessor():
         self.adm_units_raw_data_folder = self.processing_config.adm_units_raw_data_folder
         self.cities_raw_data_folder = self.processing_config.cities_raw_data_folder
         self.processed_data_output_folder = self.processing_config.processed_data_output_folder
+        self.processed_data_csv_root = self.processing_config.processed_data_output_folder + "csv/"
+        self.duckdb_path = self.processing_config.duckdb_path
+        self.processed_data_parquet_root = self.processing_config.processed_data_output_folder + "parquet/"
         self.harmonization_errors_output_path = self.processing_config.harmonization_errors_output_path
         self.post_processing_errors_output_path = self.processing_config.post_processing_errors_output_path
         self.processed_data_metadata_output_path = self.processing_config.processed_data_metadata_output_path
@@ -120,6 +123,7 @@ class AdministrativeHistoryProcessor():
         except Exception as e:
             print(f"⚠️ Failed to load harmonized data metadata: {e}")
             self.processed_data_metadata = []
+            return
 
         # Print success message
         end_time = time.time()
@@ -374,9 +378,6 @@ class AdministrativeHistoryProcessor():
         start_time = time.time()
         print(f"Harmonizing data in the '{self.adm_units_raw_data_folder}' folder.")
 
-        # initiate storage:
-        storage = DuckParquetStorage(self.duckdb_path, self.parquet_root)
-
         harmonize_from_dict = {} # Dict mapping adm. states to the list of data table ids
         conv_matrix = None
 
@@ -411,7 +412,7 @@ class AdministrativeHistoryProcessor():
                 else:
                     input_csv_path = self.cities_raw_data_folder + data_table_metadata_dict.data_table_id + ".csv"
 
-                output_csv_path = self.processed_data_output_folder + data_table_metadata_dict.data_table_id + ".csv"
+                output_csv_path = self.processed_data_csv_root + data_table_metadata_dict.data_table_id + ".csv"
 
                 processed_data_table_dict = self.process_raw_csv_file(
                     input_csv_path=input_csv_path,
@@ -435,6 +436,7 @@ class AdministrativeHistoryProcessor():
 
         storage.replace_metadata_tables(self.processed_data_metadata)
         storage.export_all_to_parquet()
+        storage.checkpoint(vacuum=False)
         storage.close()
 
         end_time = time.time()

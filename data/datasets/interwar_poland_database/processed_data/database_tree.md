@@ -27,12 +27,18 @@
       - Total
     - 03. Plants of All Types
       - I-III
+    - 04. Plants of All Types
+      - IV-V
     - 05. Plants of All Types
       - VI-VII
+    - 06. Plants of All Types
+      - VIII
     - 07. Mining
       - I-V
     - 08. Mining
       - VI-VII
+    - 09. Mining
+      - VIII
     - 10. Mineral
       - I-V
     - 11. Mineral
@@ -93,8 +99,6 @@
       - I-V
     - 39. Wood
       - VI-VII
-    - 4. Plants of All Types
-      - IV-V
     - 40. Wood
       - VIII
     - 41. Wood
@@ -135,8 +139,6 @@
       - VI-VII
     - 59. Printing
       - VIII
-    - 6. Plants of All Types
-      - VIII
     - 60. Printing
       - Printing houses (within others)
     - 61. Construction
@@ -168,8 +170,6 @@
     - 74. Horticulture and fisheries
       - VIII
     - 75. Other plants
-      - VIII
-    - 9. Mining
       - VIII
     - Category IIIPR
     - Category IIIR
