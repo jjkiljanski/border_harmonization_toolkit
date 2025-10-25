@@ -1,10 +1,2 @@
 Post-Processing Errors:
 
-❌ 0. method in the post_processing sequence (combine_data_tables): too many values to unpack (expected 2)
-❌ 1. method in the post_processing sequence (combine_data_tables): too many values to unpack (expected 2)
-❌ 2. method in the post_processing sequence (combine_data_tables): too many values to unpack (expected 2)
-❌ 3. method in the post_processing sequence (combine_data_tables): too many values to unpack (expected 2)
-❌ 4. method in the post_processing sequence (combine_data_tables): too many values to unpack (expected 2)
-❌ 5. method in the post_processing sequence (combine_data_tables): too many values to unpack (expected 2)
-❌ 6. method in the post_processing sequence (combine_data_tables): too many values to unpack (expected 2)
-❌ 7. method in the post_processing sequence (combine_data_tables): too many values to unpack (expected 2)

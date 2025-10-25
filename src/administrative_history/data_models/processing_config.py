@@ -106,7 +106,7 @@ class ProcessingConfig(BaseModel):
     duckdb_path: str
     harmonization_errors_output_path: str
     post_processing_errors_output_path: str
-    processed_data_metadata_output_path: str
+    processed_data_metadata_output_folder: str
     database_tree_output_path: str
     parquet_combination_config: Dict[Union[Literal["District"], Literal["Region"], Literal["City"]], Union[Literal["strict"], Literal["union"]]]
     harmonize_to_date: str

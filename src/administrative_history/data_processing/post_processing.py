@@ -241,8 +241,6 @@ def load_and_validate_data_tables_for_summing(folder, arguments):
     - All tables consistently use the same allowed column.
     Returns: (dfs, index_column, file_paths)
     """
-    import os
-    import pandas as pd
 
     # If you also support Region, feel free to add "Region" here.
     allowed_columns = ["District", "City"]
@@ -296,7 +294,7 @@ def combine_data_tables(adm_history_processor: AdministrativeHistoryProcessor, a
     dfs = []
 
     # --- Load all data tables and ensure that all have either "District" or "City" column.
-    dfs, index_column = load_and_validate_data_tables_for_summing(folder, arguments)
+    dfs, index_column, file_paths = load_and_validate_data_tables_for_summing(folder, arguments)
 
     # ------------------------------
     # Additional checks according to method
@@ -340,12 +338,12 @@ def combine_data_tables(adm_history_processor: AdministrativeHistoryProcessor, a
     result_df.to_parquet(output_path, index=False)
 
     # Find metadata dicts of the datasets
-    metadata_dicts = [metadata_dict for metadata_dict in adm_history_processor.processed_data_metadata if metadata_dict.data_table_id in arguments.data_tables_list]
+    metadata_dicts = [metadata_dict for metadata_dict in adm_history_processor.processed_data_metadata.items if metadata_dict.data_table_id in arguments.data_tables_list]
 
     # Collapse metadata and update the processed_data_metadata list
     collapsed_metadata = collapse_metadata_dicts(adm_history_processor, metadata_dicts, arguments.new_data_table_name)
-    adm_history_processor.processed_data_metadata = [
-        md for md in adm_history_processor.processed_data_metadata
+    adm_history_processor.processed_data_metadata.items = [
+        md for md in adm_history_processor.processed_data_metadata.items
         if md.data_table_id not in arguments.data_tables_list
     ] + [collapsed_metadata]
 
@@ -398,6 +396,6 @@ def create_dist_area_dataset(adm_history_processor: AdministrativeHistoryProcess
     # Update processed_data_metadata
     data_table_metadata.date = adm_history_processor.harmonize_to_date.strftime("%d.%m.%Y")
     data_table_metadata.adm_state_date = adm_history_processor.harmonize_to_date
-    adm_history_processor.processed_data_metadata.append(data_table_metadata)
+    adm_history_processor.processed_data_metadata.items.append(data_table_metadata)
 
     print(f"✅ Finished create_dist_area_dataset: Metadata and output added to the database.")

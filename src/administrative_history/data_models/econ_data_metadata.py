@@ -1,5 +1,7 @@
+from __future__ import annotations
+
 from pydantic import BaseModel, model_validator
-from typing import Union, Optional, Literal, List, Dict, Any
+from typing import Union, Optional, Literal, List, Dict, Any, Tuple
 from datetime import datetime
 
 class ColumnMetadata(BaseModel):
@@ -104,3 +106,146 @@ class DataTableMetadata(BaseModel):
                         )
 
         return self
+class MetadataRegistry(BaseModel):
+    """
+    A registry of data-table metadata entries with a helper to flatten
+    into two analytics-friendly pandas DataFrames.
+
+    This model stays I/O-free: it only returns DataFrames; saving is the caller's job.
+    """
+    items: List[DataTableMetadata] = []
+
+    # ------------------------ Loader ------------------------
+
+    @classmethod
+    def from_json_list(cls, data: List[Dict[str, Any]]) -> "MetadataRegistry":
+        return cls.model_validate({"items": data}).sort_by_dates_inplace()
+    
+    # ------------------------ Sorter ------------------------
+
+    def sort_by_dates_inplace(self) -> "MetadataRegistry":
+        self.items.sort(
+            key=lambda m: (m.orig_adm_state_date or m.adm_state_date or datetime.min)
+        )
+        return self
+
+    # ---------- helpers (translator-specific, pure) ----------
+
+    @staticmethod
+    def _to_list(x: Optional[Union[str, List[Any]]]) -> List[Any]:
+        """Normalize scalars/None to lists. Empty string -> []"""
+        if x is None:
+            return []
+        if isinstance(x, list):
+            return x
+        if isinstance(x, str) and x.strip() == "":
+            return []
+        return [x]
+    
+    @staticmethod
+    def _as_str_list(lst: List[Any]) -> List[str]:
+        return [None if x is None else str(x) for x in lst]
+
+    @staticmethod
+    def _dt(x: Optional[datetime]):
+        """Convert datetime/None to pandas Timestamp; import pandas lazily."""
+        if x is None:
+            return None
+        import pandas as pd
+        return pd.to_datetime(x)
+
+    @staticmethod
+    def _get_lang(d: Optional[Dict[str, str]], key: str) -> Optional[str]:
+        if not d:
+            return None
+        return d.get(key)
+
+    # ---------- public API ----------
+
+    def to_parquet(self, output_folder: str):
+        """
+        Returns:
+          tables_df: one row per DataTableMetadata (description flattened, list fields preserved)
+          columns_df: one row per ColumnMetadata with data_table_id + column_name (category flattened)
+        """
+        import pandas as pd
+
+        table_rows: List[Dict[str, Any]] = []
+        column_rows: List[Dict[str, Any]] = []
+
+        for t in self.items:
+            # -- table row --
+            table_rows.append({
+                "data_table_id": t.data_table_id,
+                "adm_level": t.adm_level,
+
+                # list-like fields preserved (Arrow will store as list<...>)
+                "source": self._to_list(t.source),
+                "link": self._to_list(t.link),
+                "table": self._to_list(t.table),
+                "page": self._to_list(t.page),
+                "pdf_page": self._to_list(t.pdf_page),
+
+                # language flatten
+                "description_pol": self._get_lang(t.description, "pol"),
+                "description_eng": self._get_lang(t.description, "eng"),
+
+                # scalars
+                "date": t.date,
+                "orig_adm_state_date": self._dt(t.orig_adm_state_date),
+                "adm_state_date": self._dt(t.adm_state_date),
+                "standardization_comments": t.standardization_comments or None,
+                "harmonization_method": t.harmonization_method or None,
+                "imputation_method": t.imputation_method or None,
+            })
+
+            # -- column rows --
+            for col_name, c in (t.columns or {}).items():
+                column_rows.append({
+                    "data_table_id": t.data_table_id,   # FK to table
+                    "column_name": col_name,
+                    "unit": c.unit,
+                    "data_type": c.data_type,
+                    "category_pol": self._get_lang(c.category, "pol"),
+                    "category_eng": self._get_lang(c.category, "eng"),
+                    "completeness": c.completeness,
+                    "n_na": c.n_na,
+                    "n_not_na": c.n_not_na,
+                    "completeness_after_imputation": c.completeness_after_imputation,
+                    "n_na_after_imputation": c.n_na_after_imputation,
+                    "n_not_na_after_imputation": c.n_not_na_after_imputation,
+                })
+
+        tables_df = pd.DataFrame.from_records(table_rows)
+        columns_df = pd.DataFrame.from_records(column_rows)
+
+        # Guarantee list-typed columns are actual lists (important for Arrow)
+        for col in ("source", "link", "table", "page", "pdf_page"):
+            if col in tables_df.columns:
+                tables_df[col] = tables_df[col].apply(
+                    lambda v: v if isinstance(v, list) else ([] if v is None else [v])
+                )
+
+        # page can be int/str per model -> store as list[str]
+        if "page" in tables_df.columns:
+            tables_df["page"] = tables_df["page"].apply(self._as_str_list)
+
+        # Coerce datetimes (robust even if all Nones)
+        for col in ("orig_adm_state_date", "adm_state_date"):
+            if col in tables_df.columns:
+                tables_df[col] = pd.to_datetime(tables_df[col], errors="coerce")
+
+        # Optional: use pandas 'string' dtype for nicer null handling downstream
+        for col in (
+            "data_table_id", "adm_level", "description_pol", "description_eng", "date",
+            "standardization_comments", "harmonization_method", "imputation_method",
+        ):
+            if col in tables_df.columns:
+                tables_df[col] = tables_df[col].astype("string")
+
+        for col in ("data_table_id", "column_name", "unit", "data_type", "category_pol", "category_eng"):
+            if col in columns_df.columns:
+                columns_df[col] = columns_df[col].astype("string")
+
+        tables_df.to_parquet(output_folder + "data_tables_metadata.parquet", engine="pyarrow", index=False)
+        columns_df.to_parquet(output_folder + "columns_metadata.parquet", engine="pyarrow", index=False)

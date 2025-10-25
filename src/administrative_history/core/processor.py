@@ -4,12 +4,12 @@ from typing import List
 from shapely.geometry import Point
 import geopandas as gpd
 import pandas as pd
-import shutil
 import time
 import traceback
 import os
 import csv
 from collections import defaultdict, Counter
+from pathlib import Path
 
 from administrative_history.core.core import AdministrativeHistory
 from administrative_history.core.db_injector import DuckParquetStorage
@@ -68,79 +68,60 @@ class AdministrativeHistoryProcessor():
 
         self.harmonization_errors_output_path = self.processing_config.harmonization_errors_output_path
         self.post_processing_errors_output_path = self.processing_config.post_processing_errors_output_path
-        self.processed_data_metadata_output_path = self.processing_config.processed_data_metadata_output_path
+        self.processed_data_metadata_output_folder = self.processing_config.processed_data_metadata_output_folder
         self.database_tree_output_path = self.processing_config.database_tree_output_path
 
         self.parquet_combination_config = self.processing_config.parquet_combination_config
 
         self._load_processed_data_metadata()
 
-    def build_db(self):
+    def build_db(self, metadata_format: List[Literal["parquet", "json"]]):
         self.process_raw_data()
         self.post_processing_reorganize_data_tables()
         self.combine_parquets_by_adm_level()
+        self.dump_processed_data_metadata(format = metadata_format)
     
     def _load_processed_data_metadata(self):
         """
-        Loads raw data_tables metadata, processing config, and the metadata of previously harmonized data from JSONs stored in relevant paths.
-        If the 'process_raw_data' method is called, self.processed_data_metadata is overwritten.
+        Loads raw data_tables metadata (adm_units + cities) and processed metadata
+        into MetadataRegistry objects. If 'process_raw_data' runs later, it may
+        overwrite self.processed_data_metadata.
         """
-        ################## Load data tables metadata ###################
-        start_time = time.time()
-        print(f"Loading metadata of the data tables that will be harmonized...")
+        # ---------- Load raw (adm_units + cities) into registries ----------
+        t0 = time.time()
+        print("Loading metadata of the data tables that will be harmonized...")
 
-        ### Load adm units metadata ###
-        # Load raw data metadata from JSON:
-        with open(self.adm_units_raw_data_metadata_path, 'r', encoding='utf-8') as f:
-            adm_units_raw_data_metadata_raw = json.load(f)
-        # Convert each dict to a DataTableMetadata instance
-        adm_units_raw_data_metadata: List[DataTableMetadata] = [
-            DataTableMetadata(**metadata_dict) for metadata_dict in adm_units_raw_data_metadata_raw
-        ]
-        # Sort by orig_adm_state_date
-        adm_units_raw_data_metadata.sort(key=lambda metadata: metadata.orig_adm_state_date)
+        with open(self.adm_units_raw_data_metadata_path, "r", encoding="utf-8") as f:
+            adm_units_raw = json.load(f)
+        adm_units_reg = MetadataRegistry.from_json_list(adm_units_raw)
 
-        ### Load cities data metadata
-        # Load raw data metadata from JSON:
-        with open(self.cities_raw_data_metadata_path, 'r', encoding='utf-8') as f:
-            cities_raw_data_metadata_raw = json.load(f)
-        # Convert each dict to a DataTableMetadata instance
-        cities_raw_data_metadata: List[DataTableMetadata] = [
-            DataTableMetadata(**metadata_dict) for metadata_dict in cities_raw_data_metadata_raw
-        ]
-        # Sort by orig_adm_state_date
-        cities_raw_data_metadata.sort(key=lambda metadata: metadata.orig_adm_state_date)
+        with open(self.cities_raw_data_metadata_path, "r", encoding="utf-8") as f:
+            cities_raw = json.load(f)
+        cities_reg = MetadataRegistry.from_json_list(cities_raw)
 
-        self.raw_data_metadata = adm_units_raw_data_metadata + cities_raw_data_metadata
+        # Merge into a single registry for raw data (preserving sorted order)
+        self.raw_data_metadata = MetadataRegistry(
+            items=(adm_units_reg.items + cities_reg.items)
+        ).sort_by_dates_inplace()
 
-        # Print success message
-        end_time = time.time()
-        execution_time = end_time - start_time
-        print(f"✅ Successfully loaded metadata of raw data tables in {execution_time:.2f} seconds.")
+        print(f"✅ Successfully loaded metadata of raw data tables in {time.time() - t0:.2f} seconds.")
 
-        ################# Load harmonized data metadata ##################
-        start_time = time.time()
-        print(f"Loading processed data metadata...")
+        # ---------- Load processed (harmonized) into a registry ----------
+        t1 = time.time()
+        print("Loading processed data metadata...")
         try:
-            # Load processed data metadata from JSON:
-            with open(self.processed_data_metadata_output_path, 'r', encoding='utf-8') as f:
-                processed_data_metadata_raw = json.load(f)
-            # Convert each dict to a DataTableMetadata instance
-            self.processed_data_metadata: List[DataTableMetadata] = [
-                DataTableMetadata(**metadata_dict) for metadata_dict in processed_data_metadata_raw
-            ]
-            # Sort by orig_adm_state_date
-            self.processed_data_metadata.sort(key=lambda metadata: metadata.orig_adm_state_date)
+            with open(self.processed_data_metadata_output_folder + "processed_data_metadata.json", "r", encoding="utf-8") as f:
+                processed_raw = json.load(f)
+
+            self.processed_data_metadata = MetadataRegistry.from_json_list(processed_raw)
+            print(f"✅ Successfully loaded harmonized data metadata in {time.time() - t1:.2f} seconds.")
+
         except Exception as e:
             print(f"⚠️ Failed to load harmonized data metadata: {e}")
-            self.processed_data_metadata = []
+            # Keep attribute type stable even on failure
+            self.processed_data_metadata = MetadataRegistry(items=[])
             return
-
-        # Print success message
-        end_time = time.time()
-        execution_time = end_time - start_time
-        print(f"✅ Successfully loaded harmonized data metadata in {execution_time:.2f} seconds.")
-
+    
     def _construct_conversion_dict(self, date_from: datetime, date_to: datetime, verbose: bool = False):
         """
         Constructs a dictionary that maps each district (by name_id) existing on `date_from`
@@ -392,16 +373,12 @@ class AdministrativeHistoryProcessor():
         harmonize_from_dict = {} # Dict mapping adm. states to the list of data table ids
         conv_matrix = None
 
-        self.processed_data_metadata = []
+        self.processed_data_metadata = MetadataRegistry(items=[])
         failed_files = []
 
         ################################################    Harmonize district data    #####################################################
 
-        dist_metadata = [metadata_dict for metadata_dict in self.raw_data_metadata if metadata_dict.adm_level == "District"]
-        region_metadata = [metadata_dict for metadata_dict in self.raw_data_metadata if metadata_dict.adm_level == "Region"]
-        city_metadata = [metadata_dict for metadata_dict in self.raw_data_metadata if metadata_dict.adm_level == "City"]
-
-        all_metadata = dist_metadata + region_metadata + city_metadata
+        all_metadata = self.raw_data_metadata.items
 
         for data_table_metadata_dict in all_metadata:
             adm_level = data_table_metadata_dict.adm_level
@@ -433,7 +410,7 @@ class AdministrativeHistoryProcessor():
                     conv_matrix=conv_matrix     # For cities it doesn't matter which date_to and conv_matrix are passed.
                 )
 
-                self.processed_data_metadata.append(processed_data_table_dict)
+                self.processed_data_metadata.items.append(processed_data_table_dict)
 
             except Exception as e:
                 error_msg = (
@@ -448,13 +425,6 @@ class AdministrativeHistoryProcessor():
         execution_time = end_time - start_time
 
         print(f"✅ Finished harmonization in {execution_time:.2f} seconds.")
-
-        # Save self.processed_data_metadata to JSON file
-        # Write the dictionary to JSON
-        # Dump using Pydantic's JSON serialization (handles datetime etc. properly)
-        with open(self.processed_data_metadata_output_path, 'w', encoding='utf-8') as f:
-            json_str = json.dumps([model.model_dump(mode="json") for model in self.processed_data_metadata], ensure_ascii=False, indent=4)
-            f.write(json_str)
 
         # Create log file with harmonization errors
         with open(self.harmonization_errors_output_path, 'w', encoding='utf-8') as f:
@@ -724,11 +694,6 @@ class AdministrativeHistoryProcessor():
                 error_msg = f"❌ {i}. method in the post_processing sequence ({method_dict.method_name}): {e}"
                 print(error_msg)
                 failed_methods.append(error_msg)
-        
-        # Dump processed_data_metadata (overwriting the previous instance)
-        with open(self.processed_data_metadata_output_path, 'w', encoding='utf-8') as f:
-            json_str = json.dumps([model.model_dump(mode="json") for model in self.processed_data_metadata], ensure_ascii=False, indent=4)
-            f.write(json_str)
 
         # Create log file with post-processing errors
         with open(self.post_processing_errors_output_path, 'w', encoding='utf-8') as f:
@@ -788,7 +753,7 @@ class AdministrativeHistoryProcessor():
         results = {}
         for adm_level in ["District", "Region", "City"]:
             # collect IDs from Pydantic models
-            dt_ids = [md.data_table_id for md in self.processed_data_metadata if md.adm_level == adm_level]
+            dt_ids = [md.data_table_id for md in self.processed_data_metadata.items if md.adm_level == adm_level]
             if not dt_ids:
                 print(f"ℹ️ No processed metadata entries for adm_level='{adm_level}'. Skipping.")
                 continue
@@ -906,6 +871,24 @@ class AdministrativeHistoryProcessor():
 
         return results
 
+    def dump_processed_data_metadata(self, format: List[Literal["parquet", "json"]]):
+
+        output_path = Path(self.processed_data_metadata_output_folder) / "processed_data_metadata.json"
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        if "json" in format:
+
+            # Get a JSON-serializable dict and extract the list
+            payload = self.processed_data_metadata.model_dump(mode="json")["items"]
+
+            output_path.write_text(
+                json.dumps(payload, ensure_ascii=False, indent=4),
+                encoding="utf-8",
+            )
+        
+        if "parquet" in format:
+            self.processed_data_metadata.to_parquet(self.processed_data_metadata_output_folder)
+        
     def map_city_data_to_dists(self, df: pd.DataFrame, date, geojson_path: str = None, custom_grouping: Dict[str, str] = None,
                         custom_grouping_method: Union[Literal['sum'], Literal['average']] = 'average'):
         """
@@ -1038,7 +1021,7 @@ class AdministrativeHistoryProcessor():
             Uses self.database_tree_output_path.
         """
 
-        metadata = self.processed_data_metadata
+        metadata = self.processed_data_metadata.items
         # Ensure the base output directory exists
         base_dir = getattr(self, "database_tree_output_path", None)
         if not isinstance(base_dir, str) or not base_dir:

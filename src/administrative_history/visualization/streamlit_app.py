@@ -159,14 +159,14 @@ elif selected_database == "Economic Database":
     # Create sorted list of unique categories
     categories = sorted(set([
         data_table_metadata.category
-        for data_table_metadata in adm_history_processor.processed_data_metadata
+        for data_table_metadata in adm_history_processor.processed_data_metadata.items
     ]))
 
     # Create a dict with all data tables
     data_tables_dict = {
         category: {
 meta.data_table_id: sorted([f'{c_name} (completeness: Undefined)' if c_dict.completeness is None else f'{c_name} (completeness: {c_dict.completeness*100:.2f}%)' for c_name, c_dict in meta.columns.items()])
-            for meta in adm_history_processor.processed_data_metadata
+            for meta in adm_history_processor.processed_data_metadata.items
             if meta.category == category
         }
         for category in {
@@ -190,7 +190,7 @@ meta.data_table_id: sorted([f'{c_name} (completeness: Undefined)' if c_dict.comp
         # Filter and sort data table IDs for the selected category
         filtered_ids = sorted([
             data_table_metadata.data_table_id
-            for data_table_metadata in adm_history_processor.processed_data_metadata
+            for data_table_metadata in adm_history_processor.processed_data_metadata.items
             if data_table_metadata.category == selected_category
         ])
 
@@ -199,8 +199,8 @@ meta.data_table_id: sorted([f'{c_name} (completeness: Undefined)' if c_dict.comp
         if selected_data_table_id is None:
             st.write(f"### Select dataset.")
         else:
-            data_table_description = [data_table_metadata.description["eng"] for data_table_metadata in adm_history_processor.processed_data_metadata if data_table_metadata.data_table_id == selected_data_table_id][0]
-            data_table_date = [data_table_metadata.date for data_table_metadata in adm_history_processor.processed_data_metadata if data_table_metadata.data_table_id == selected_data_table_id][0]
+            data_table_description = [data_table_metadata.description["eng"] for data_table_metadata in adm_history_processor.processed_data_metadata.items if data_table_metadata.data_table_id == selected_data_table_id][0]
+            data_table_date = [data_table_metadata.date for data_table_metadata in adm_history_processor.processed_data_metadata.items if data_table_metadata.data_table_id == selected_data_table_id][0]
 
             st.write(f"### {data_table_description} ({data_table_date})")
 

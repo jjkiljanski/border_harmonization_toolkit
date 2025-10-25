@@ -7,7 +7,7 @@
     "duckdb_path": "E:/Studia/Studia magisterskie/Masterarbeit - Wirtschaftwissenschaft/dane/Digitalizacja/interwar_poland_database.duckdb",
     "harmonization_errors_output_path": "data/datasets/interwar_poland_database/processed_data/harmonization_errors.txt",
     "post_processing_errors_output_path": "data/datasets/interwar_poland_database/processed_data/post_processing_errors.txt",
-    "processed_data_metadata_output_path": "data/datasets/interwar_poland_database/processed_data/processed_data_metadata.json",
+    "processed_data_metadata_output_folder": "data/datasets/interwar_poland_database/processed_data/",
     "database_tree_output_path": "data/datasets/interwar_poland_database/processed_data/",
     "parquet_combination_config": {
         "District": "strict",

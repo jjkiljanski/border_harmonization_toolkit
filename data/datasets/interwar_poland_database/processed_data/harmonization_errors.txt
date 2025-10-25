@@ -1,2 +1,123 @@
 Harmonization Errors:
 
+❌ 1935-crops_q_ready failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 1935-industry_permissions_ready_clean failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 1935-trade_permissions_total_ready_clean failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 1935-trade_permissions_no_fixed_location_ready_clean failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 07.1935_prices_ready failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 08.1935_prices_ready failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 09.1935_prices_ready failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 30.06.1936-livestock_ready failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 1936-crops_area_ha_ready failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 1936-crops_q_ready failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
+❌ 08.1936_prices_ready failed.
+Exception: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+Traceback:
+Traceback (most recent call last):
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 405, in process_raw_data
+    processed_data_table_dict = self.process_raw_csv_file(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Studia\Studia magisterskie\Masterarbeit - Wirtschaftwissenschaft\dane\Digitalizacja\border_harmonization_toolkit\src\administrative_history\core\processor.py", line 531, in process_raw_csv_file
+    raise ValueError(f"Districts in conversion matrix but not in input: {missing_in_input}")
+ValueError: Districts in conversion matrix but not in input: {'ZIEMIA WILEŃSKA', 'POLESKIE', 'ŚLĄSKIE', 'BIAŁOSTOCKIE', 'ŁÓDZKIE', 'POZNAŃSKIE', 'WARSZAWSKIE', 'TARNOPOLSKIE', 'POMORSKIE', 'LWOWSKIE', 'M. ST. WARSZAWA', 'KRAKOWSKIE', 'WOŁYŃSKIE', 'KIELECKIE', 'STANISŁAWOWSKIE', 'NOWOGRÓDZKIE', 'LUBELSKIE'}
+
