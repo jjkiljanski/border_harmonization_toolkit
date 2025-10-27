@@ -667,7 +667,7 @@ class DistrictRegistry(UnitRegistry):
         return gpd.GeoDataFrame({'District': dist_name_id, 'geometry': geometries}, crs = "EPSG:4326")
     
     def _plot_layer(self, date: datetime):
-    # Collect district states and names for districts that exist on the given date
+        # Collect district states and names for districts that exist on the given date
         states_and_names = [(district.find_state_by_date(date), district.name_id) for district in self.unit_list if district.exists(date)]
         # Extract geometries and district names
         geometries = [state.current_territory for state, _ in states_and_names if state.current_territory is not None]

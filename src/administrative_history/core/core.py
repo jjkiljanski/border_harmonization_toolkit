@@ -606,3 +606,15 @@ class AdministrativeHistory():
 
         # Return the name_id of the first matching district
         return address
+    
+    def geojson(self, date: datetime):
+        states_and_names = [(district.find_state_by_date(date), district.name_id) for district in self.dist_registry.unit_list if district.exists(date)]
+        # Extract geometries and district names
+        geometries = [state.current_territory for state, _ in states_and_names if state.current_territory is not None]
+        dist_name_id = [name for state, name in states_and_names if state.current_territory is not None]  # Extract names for each district
+        # Return a GeoDataFrame with district names and corresponding geometries
+        return gpd.GeoDataFrame({'District': dist_name_id, 'geometry': geometries}, crs = "EPSG:4326")
+    
+    def export_geojson(self, date, file_path):
+        gdf = self.geojson(date)
+        gdf.to_file(file_path, driver="GeoJSON")
