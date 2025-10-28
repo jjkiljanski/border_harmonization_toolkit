@@ -183,11 +183,11 @@ def collapse_metadata_dicts(
 
     if all_equal(sources) and all_equal(links) and all_equal(tables) and all_equal(pages) and all_equal(pdf_pages):
         # Everything is unique → keep scalars
-        source_out = sources[0]
-        link_out = links[0]
-        table_out = tables[0]
-        page_out = pages[0]
-        pdf_page_out = pdf_pages[0]
+        source_out = sources[0] if sources else ""
+        link_out = links[0] if links else ""
+        table_out = tables[0] if tables else ""
+        page_out = pages[0] if pages else ""
+        pdf_page_out = pdf_pages[0] if pdf_pages else ""
     else:
         # Not unique → return aligned, flattened lists
         source_out = flatten(sources)

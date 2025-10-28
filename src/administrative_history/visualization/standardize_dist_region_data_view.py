@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-from core.core import AdministrativeHistory
+from administrative_history.core.core import AdministrativeHistory
 from utils.helper_functions import standardize_df, load_uploaded_csv
 import os
 

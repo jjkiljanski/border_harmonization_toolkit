@@ -213,7 +213,7 @@ def plot_convergence(
     else:
         plt.show()
 
-from core.core import AdministrativeHistory
+from administrative_history.core.core import AdministrativeHistory
 
 def plot_year_df_columns(
     administrative_history: AdministrativeHistory,

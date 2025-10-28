@@ -461,8 +461,8 @@
         "unit": "ha",
         "data_type": "float",
         "category": {
-          "eng": "Crops/Area/Barley/All Types",
-          "pol": "Uprawy rolne/Powierzchnia/Jęczmień/Ogółem"
+          "eng": "Crops/Area/Barley",
+          "pol": "Uprawy rolne/Powierzchnia/Jęczmień"
         }
       }
     }

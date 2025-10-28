@@ -378,48 +378,49 @@ class AdministrativeHistoryProcessor():
 
         ################################################    Harmonize district data    #####################################################
 
-        all_metadata = self.raw_data_metadata.items
+        # Process all datasets, proceeding one adm. level at a time
+        for adm_level in ['District', 'Region', 'City']:
+            adm_level_metadata = [metadata_dict for metadata_dict in self.raw_data_metadata.items if metadata_dict.adm_level == adm_level]
 
-        for data_table_metadata_dict in all_metadata:
-            adm_level = data_table_metadata_dict.adm_level
-            try:
-                if adm_level in ["Region", "District"]:
-                    input_csv_path = self.adm_units_raw_data_folder + data_table_metadata_dict.data_table_id + ".csv"
+            for data_table_metadata_dict in adm_level_metadata:
+                try:
+                    if adm_level in ["Region", "District"]:
+                        input_csv_path = self.adm_units_raw_data_folder + data_table_metadata_dict.data_table_id + ".csv"
 
-                    currently_considered_adm_state = self.adm_history.find_adm_state_by_date(data_table_metadata_dict.orig_adm_state_date)
-                    
-                    if adm_level == 'Region' or (adm_level == "District" and str(currently_considered_adm_state) not in harmonize_from_dict):
-                        harmonize_from_dict[str(currently_considered_adm_state)] = []
-                        conv_matrix = self.construct_conversion_matrix(
-                            adm_level=data_table_metadata_dict.adm_level,
-                            date_from=currently_considered_adm_state.timespan.middle,
-                            date_to=self.harmonize_to_date,
-                            verbose=False
-                        )
-                    harmonize_from_dict[str(currently_considered_adm_state)].append(data_table_metadata_dict.data_table_id)
-                else:
-                    input_csv_path = self.cities_raw_data_folder + data_table_metadata_dict.data_table_id + ".csv"
+                        currently_considered_adm_state = self.adm_history.find_adm_state_by_date(data_table_metadata_dict.orig_adm_state_date)
+                        
+                        if adm_level == 'Region' or (adm_level == "District" and str(currently_considered_adm_state) not in harmonize_from_dict):
+                            harmonize_from_dict[str(currently_considered_adm_state)] = []
+                            conv_matrix = self.construct_conversion_matrix(
+                                adm_level=data_table_metadata_dict.adm_level,
+                                date_from=currently_considered_adm_state.timespan.middle,
+                                date_to=self.harmonize_to_date,
+                                verbose=False
+                            )
+                        harmonize_from_dict[str(currently_considered_adm_state)].append(data_table_metadata_dict.data_table_id)
+                    else:
+                        input_csv_path = self.cities_raw_data_folder + data_table_metadata_dict.data_table_id + ".csv"
 
-                output_parquet_path = self.processed_data_parquet_root + data_table_metadata_dict.data_table_id + ".parquet"
+                    output_parquet_path = self.processed_data_parquet_root + data_table_metadata_dict.data_table_id + ".parquet"
 
-                processed_data_table_dict = self.process_raw_csv_file(
-                    input_csv_path=input_csv_path,
-                    output_parquet_path=output_parquet_path,
-                    data_table_metadata_dict=data_table_metadata_dict,
-                    date_to=self.harmonize_to_date,
-                    conv_matrix=conv_matrix     # For cities it doesn't matter which date_to and conv_matrix are passed.
-                )
+                    processed_data_table_dict = self.process_raw_csv_file(
+                        input_csv_path=input_csv_path,
+                        output_parquet_path=output_parquet_path,
+                        data_table_metadata_dict=data_table_metadata_dict,
+                        date_to=self.harmonize_to_date,
+                        conv_matrix=conv_matrix     # For cities it doesn't matter which date_to and conv_matrix are passed.
+                    )
 
-                self.processed_data_metadata.items.append(processed_data_table_dict)
+                    self.processed_data_metadata.items.append(processed_data_table_dict)
 
-            except Exception as e:
-                error_msg = (
-                    f"❌ {data_table_metadata_dict.data_table_id} failed.\n"
-                    f"Exception: {e}\n"
-                    f"Traceback:\n{traceback.format_exc()}"
-                )
-                print(error_msg)
-                failed_files.append(error_msg)
+                except Exception as e:
+                    error_msg = (
+                        f"❌ {data_table_metadata_dict.data_table_id} failed.\n"
+                        f"Exception: {e}\n"
+                        f"Traceback:\n{traceback.format_exc()}"
+                    )
+                    print(error_msg)
+                    failed_files.append(error_msg)
 
         end_time = time.time()
         execution_time = end_time - start_time
@@ -691,7 +692,11 @@ class AdministrativeHistoryProcessor():
                 else:
                     raise ValueError(f"The method {method_dict.method_name} is not supported.")
             except Exception as e:
-                error_msg = f"❌ {i}. method in the post_processing sequence ({method_dict.method_name}): {e}"
+                error_msg = (
+                    f"❌ {i}. method in the post_processing sequence ({method_dict.method_name}) failed.\n"
+                    f"Exception: {e}\n"
+                    f"Traceback:\n{traceback.format_exc()}"
+                )
                 print(error_msg)
                 failed_methods.append(error_msg)
 

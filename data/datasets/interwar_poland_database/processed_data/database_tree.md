@@ -22,6 +22,155 @@
         - PR
         - R
   - Industry
+    - 01. Number of workers in plants I-VII
+    - 02. Plants of All Types
+      - Total
+    - 03. Plants of All Types
+      - I-III
+    - 04. Plants of All Types
+      - IV-V
+    - 05. Plants of All Types
+      - VI-VII
+    - 06. Plants of All Types
+      - VIII
+    - 07. Mining
+      - I-V
+    - 08. Mining
+      - VI-VII
+    - 09. Mining
+      - VIII
+    - 10. Mineral
+      - I-V
+    - 11. Mineral
+      - VI-VII
+    - 12. Mineral
+      - VIII
+    - 13. Mineral
+      - brickyards (within others)
+    - 14. Mineral
+      - Concrete plants (within others)
+    - 15. Metal and electrotechnical
+      - I-V
+    - 16. Metal and electrotechnical
+      - VI-VII
+    - 17. Metal and electrotechnical
+      - VIII
+    - 18. Metal and electrotechnical
+      - metal production (within others)
+    - 19. Metal and electrotechnical
+      - Backsmithing (within others)
+    - 20. Metal and electrotechnical
+      - Locksmithing, repairs (within others)
+    - 21. Metal and electrotechnical
+      - tinsmithing (within others)
+    - 22. Metal and electrotechnical
+      - Watchmaking and jewelry (within others)
+    - 23. Chemical
+      - I-V
+    - 24. Chemical
+      - VI-VII
+    - 25. Chemical
+      - VIII
+    - 26. Chemical
+      - Oil mills (within others)
+    - 27. Textile
+      - I-V
+    - 28. Textile
+      - VI-VII
+    - 29. Textile
+      - VIII
+    - 30. Paper
+      - I-V
+    - 31. Paper
+      - VI-VII
+    - 32. Paper
+      - VIII
+    - 33. Leather
+      - I-V
+    - 34. Leather
+      - VI-VII
+    - 35. Leather
+      - VIII
+    - 36. Leather
+      - Tanning and white leather (within others)
+    - 37. Leather
+      - Saddlery and harness making (within others)
+    - 38. Wood
+      - I-V
+    - 39. Wood
+      - VI-VII
+    - 40. Wood
+      - VIII
+    - 41. Wood
+      - Sawmills (within others)
+    - 42. Wood
+      - Carpentry (within others)
+    - 43. Wood
+      - Wheelwrighting (within others)
+    - 44. Food
+      - I-V
+    - 45. Food
+      - VI-VII
+    - 46. Food
+      - VIII
+    - 47. Food
+      - mills (within others)
+    - 48. Food
+      - Bakeries (within others)
+    - 49. Food
+      - Dairies (within others)
+    - 50. Food
+      - Butchery and meat processing (within others)
+    - 51. Clothing
+      - I-V
+    - 52. Clothing
+      - VI-VII
+    - 53. Clothing
+      - VIII
+    - 54. Clothing
+      - Tailoring and clothing accessories (within others)
+    - 55. Clothing
+      - Shoemaking and boot making (within others)
+    - 56. Clothing
+      - furriery (within others)
+    - 57. Printing
+      - I-V
+    - 58. Printing
+      - VI-VII
+    - 59. Printing
+      - VIII
+    - 60. Printing
+      - Printing houses (within others)
+    - 61. Construction
+      - I-V
+    - 62. Construction
+      - VI-VII
+    - 63. Construction
+      - VIII
+    - 64. Processing of various materials
+      - VII
+    - 65. Processing of various materials
+      - VIII
+    - 66. Power plants
+      - I-V
+    - 67. Power plants
+      - VI-VII
+    - 68. Power plants
+      - VIII
+    - 69. Services
+      - VIII
+    - 70. Services
+      - VIII
+    - 71. Services
+      - Hairdressing (within others)
+    - 72. Services
+      - Transport (within others)
+    - 73. Horticulture and fisheries
+      - VIII
+    - 74. Horticulture and fisheries
+      - VIII
+    - 75. Other plants
+      - VIII
     - Category IIIPR
     - Category IIIR
     - Category IIPR
@@ -345,6 +494,19 @@
       - Category VaR
       - Category VbR
       - Total
+    - A 3011-3059. Total commodity purchase
+    - A 3011. Commodity purchase (grain purchase)
+    - A 3012. Commodity purchase (fruit purchase)
+    - A 3016. Commodity purchase (timber materials purchase)
+    - A 3021-3029. Commodity purchase (live animals purchase)
+    - A 3031-3032, 3034-3039. Commodity purchase (other livestock products purchase)
+    - A 3033. Commodity purchase (raw hides purchase)
+    - A 3051, 3053-3059. Commodity purchase (scrap purchase)
+    - A 3052. Commodity purchase (rags purchase)
+    - A&B (only I i II cat.). Commodity trade (categories I and II)
+    - A&B. Total commodity trade
+    - A-K I-II cat. Commercial establishments (categories I and II)
+    - A-K. Commercial establishments total
     - a. Professional purchasing (agricultural products)
       - Category IIIR
       - Category IIR
@@ -367,6 +529,54 @@
       - Category VbPR
       - Category VbR
       - Total
+    - B (I-X). Total goods sales
+    - B I. 3061-3062. Goods sales (agricultural syndicates and cooperatives)
+    - B I. 3061-3089. Goods sales (agricultural raw materials, goods for agriculture)
+    - B I. 3071-3072. Goods sales (grain)
+    - B I. 3081-3085. Goods sales (live animals)
+    - B II. 3101-3179. Goods sales (food products)
+    - B II. 3101. Goods sales (flour, groats, rice)
+    - B II. 3102. Goods sales (grain-for-flour or bread exchange)
+    - B II. 3103. Goods sales (bread)
+    - B II. 3119. Goods sales (dairy)
+    - B II. 3121-3123. Goods sales (meat)
+    - B II. 3124-3126. Goods sales (fish, herrings)
+    - B II. 3131-3133. Goods sales (fruits, vegetables)
+    - B II. 3134. Goods sales (sweets)
+    - B II. 3141-3146, 3171-3173. Goods sales (various food articles)
+    - B II. 3151. Goods sales (beer)
+    - B II. 3159. Goods sales (alcoholic beverages)
+    - B II. 3161. Goods sales (tobacco products)
+    - B III. 3201-3257. Goods sales (clothing articles)
+    - B III. 3211-3213. Goods sales (fabrics)
+    - B III. 3221-3227, 3257. Goods sales (clothing, furs)
+    - B III. 3231-3239. Goods sales (underwear, haberdashery)
+    - B III. 3241-3249. Goods sales (hats, caps)
+    - B III. 3251-3254, 3256. Goods sales (leather, leather products)
+    - B III. 3255. Goods sales (footwear)
+    - B IV. 3261, 3267. Goods sales (furniture)
+    - B IV. 3261, 3281. Goods sales (furniture, appliances, utensils)
+    - B IV. 3271. Goods sales (household appliances)
+    - B IV. 3272-3273. Goods sales (glass, ceramics)
+    - B IX. 3461-3462, 3469. Goods sales (building materials)
+    - B IX. 3461-3485. Goods sales (building and fuel materials)
+    - B IX. 3481, 3483-3485. Goods sales (coal, coke and other articles)
+    - B V. 3301-3319. Goods sales (chemical articles)
+    - B V. 3301. Goods sales (pharmacies)
+    - B V. 3302. Goods sales (pharmaceutical warehouses)
+    - B V. 3311-3315. Goods sales (soap shops)
+    - B V. 3312, 3318. Goods sales (petroleum products)
+    - B VI. 3321-3329. Goods sales (paper, paper products)
+    - B VII. 3331-3332. Goods sales (bookstores)
+    - B VII. 3331-3335. Goods sales (books, periodicals, art works)
+    - B VII. 3333. Goods sales (periodicals)
+    - B VIII. 3401-3441. Goods sales (iron, metals, products)
+    - B VIII. 3411-3414. Goods sales (means of communication)
+    - B VIII. 3415-3419. Goods sales (machines)
+    - B VIII. 3421-3429, 3433-3439. Goods sales (tools, instruments)
+    - B VIII. 3431-3432. Goods sales (watchmaking, jewelry products)
+    - B VIII. 3441. Goods sales (electrotechnical products)
+    - B X. 3191-3199, 3341-3343, 3351-3352, 3486-3488. Goods sales (various and unspecified articles)
     - b. Professional purchasing (livestock)
       - Category IIIR
       - Category IIR
@@ -375,6 +585,10 @@
       - Category VaR
       - Category VbR
       - Total
+    - C 3501-3509. Gastronomic establishments, room rental (gastronomic establishments)
+    - C 3501-3539. Gastronomic establishments, room rental
+    - C 3511. Gastronomic establishments, room rental (guesthouses, shelters)
+    - C 3521-3529. Gastronomic establishments, room rental (residential room rental)
     - c. Professional purchasing (plant and animal products)
       - Category IIIR
       - Category IIR
@@ -383,6 +597,21 @@
       - Category VaR
       - Category VbR
       - Total
+    - D 3601-3611. Monetary trade, insurance
+    - E 3612, 3651-3655. Offices of all types (brokerage, excluding travel agencies)
+    - F 3701 (3702). Rental services (agricultural machinery)
+    - F 3701-3729. Rental services
+    - F 3704. Rental services (mangles)
+    - F 3722. Rental services (books)
+    - G 3811-3844 (bez 3833). Transport, communication, forwarding
+    - G 3841-3843, 3832. Transport, communication, forwarding (public transport)
+    - H 3861. Entertainment enterprises (cinematographs)
+    - H 3961-3879. Entertainment enterprises
+    - I 3881-3887. Healthcare, hygiene
+    - I 3881. Healthcare, hygiene (clinics)
+    - I 3883-3885. Healthcare, hygiene (baths, bathing resorts, spas)
+    - K 3891-3999. Other and unspecified
+    - Z 3661-3669. Industrial occupations
     - ZP. Industrial activities
       - Category IIIR
       - Category IIR
@@ -391,6 +620,7 @@
       - Category VaR
       - Category VbR
       - Total
+    - Ż 3833. Ferries, barges, water networks
 - Census 1921
   - Ethnicity
     - % Belarusian
@@ -767,7 +997,6 @@
 - Crops
   - Area
     - Barley
-      - All Types
     - Beans, Broad Beans, and Lentils
     - Buckwheat
     - Cereal Mixtures for Grain (Barley and Oats)
@@ -918,6 +1147,7 @@
   - Local Paid to Producers
     - Barley
       - All Types
+      - For Groats
       - Malting Barley
       - Other Varieties
     - Buckwheat
