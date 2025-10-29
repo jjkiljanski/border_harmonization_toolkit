@@ -583,7 +583,17 @@ class AdministrativeHistoryProcessor():
             df_output = df_input_filtered.reset_index().rename(columns={"index": adm_level})
 
         # ============================================================
-        # 4. SAVING & METADATA UPDATE
+        # 4. IMPOSE PREDEFINED COLUMN DATA TYPE
+        # ============================================================
+
+        for col in df_output.columns.difference([adm_level]):
+            col_data_type = data_table_metadata_dict.columns[col].data_type
+            if col_data_type == "int":
+                df_output[col].round(0).astype("Int64")
+
+
+        # ============================================================
+        # 5. SAVING & METADATA UPDATE
         # ============================================================
 
         # Rename columns to their English names defined in the metadata

@@ -660,11 +660,11 @@
     {
         "data_table_id": "large_land_estates_private",
         "adm_level": "District",
-        "source": "",
-        "link": "",
-        "table": "",
-        "page": null,
-        "pdf_page": null,
+        "source": "Wielka Własność Rolna. (Warszawa 1925).",
+        "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/QRQH9JNE3AKRG94NG3346NXJJ9F97H.pdf",
+        "table": "B. Wielka własność według powiatów. I. Własność prywatna. Tabl. 1. Użycie ziemi.",
+        "page": 26,
+        "pdf_page": 46,
         "description": {
             "pol": "Wielka własność prywatna. Użycie ziemi.",
             "eng": "Large land estates. Land use."
