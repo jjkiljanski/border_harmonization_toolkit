@@ -147,37 +147,32 @@ def analyze_all_years_theil(production_by_year, d_to_r, sum_up_regions):
 ############################## Spatial econometrics ####################################
 from shapely.geometry import Point
 
+from pyproj import Geod
+
 def create_distance_matrix(dist_geoms):
     """
-    Computes a distance matrix (in meters) between district centroids.
-    
-    Parameters:
-    - dist_geoms (GeoDataFrame): A GeoDataFrame indexed by 'District', with polygon geometries.
-    
-    Returns:
-    - DataFrame: A symmetric DataFrame of pairwise distances between centroids.
+    Computes a geodesic (ellipsoidal) distance matrix in meters.
     """
-
-    # Ensure geometries are in a projected CRS (meters, not degrees)
-    if dist_geoms.crs.is_geographic:
-        dist_geoms = dist_geoms.to_crs(epsg=3857)  # Web Mercator in meters
+    # Ensure coordinates are in geographic CRS (degrees)
+    if not dist_geoms.crs.is_geographic:
+        dist_geoms = dist_geoms.to_crs(4326)
     
-    # Compute centroids
+    geod = Geod(ellps="WGS84")  # standard Earth ellipsoid
     centroids = dist_geoms.geometry.centroid
-
-    # Initialize distance matrix
+    coords = {i: (pt.x, pt.y) for i, pt in zip(dist_geoms.index, centroids)}
     districts = dist_geoms.index
-    distance_matrix = pd.DataFrame(index=districts, columns=districts, dtype=float)
 
-    # Compute distances between all pairs of centroids
+    D = pd.DataFrame(index=districts, columns=districts, dtype=float)
+
     for i in districts:
+        lon1, lat1 = coords[i]
         for j in districts:
-            if pd.isna(distance_matrix.at[i, j]):
-                dist = centroids[i].distance(centroids[j])
-                distance_matrix.at[i, j] = dist
-                distance_matrix.at[j, i] = dist  # symmetric
-    
-    return distance_matrix
+            if pd.isna(D.at[i, j]):
+                lon2, lat2 = coords[j]
+                # returns (fwd_azimuth, back_azimuth, distance_meters)
+                _, _, dist_m = geod.inv(lon1, lat1, lon2, lat2)
+                D.at[i, j] = D.at[j, i] = dist_m
+    return D
 
 from libpysal.weights import W
 

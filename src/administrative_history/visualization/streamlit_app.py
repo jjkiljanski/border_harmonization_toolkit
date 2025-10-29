@@ -43,7 +43,7 @@ if "administrative_history" not in st.session_state:
     st.session_state.adm_history_processor = AdministrativeHistoryProcessor(
         processing_config, st.session_state.administrative_history
     )
-    st.session_state.adm_history_api = AdministrativeHistoryAPI(st.session_state.adm_history_processor)
+    st.session_state.adm_history_api = AdministrativeHistoryAPI(st.session_state.adm_history_processor, duckdb_path="data/datasets/interwar_poland_database/processed_data/interwar_poland_database.duckdb", overwrite_duckdb=True)
     st.session_state.adm_history_plotter = AdministrativeHistoryPlotter(
         st.session_state.administrative_history
     )
