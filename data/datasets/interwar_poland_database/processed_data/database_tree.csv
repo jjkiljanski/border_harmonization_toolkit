@@ -6,6 +6,7 @@
 1,District Area,District Area,,True
 1,Employment,Employment,,False
 1,Forests,Forests,,False
+1,Large Land Estates,Large Land Estates,,False
 1,Livestock,Livestock,,False
 1,Prices,Prices,,False
 1,Yearbook 1939,Yearbook 1939,,False
@@ -32,6 +33,7 @@
 2,Public works,Employment/Public works,Employment,True
 2,Total,Employment/Total,Employment,True
 2,Area,Forests/Area,Forests,True
+2,Private,Large Land Estates/Private,Large Land Estates,False
 2,Goats,Livestock/Goats,Livestock,True
 2,Horned Cattle,Livestock/Horned Cattle,Livestock,True
 2,Horses,Livestock/Horses,Livestock,True
@@ -704,6 +706,18 @@
 3,Printing,Employment/Industry/Printing,Employment/Industry,True
 3,Textile,Employment/Industry/Textile,Employment/Industry,True
 3,Wood,Employment/Industry/Wood,Employment/Industry,True
+3,Arable land,Large Land Estates/Private/Arable land,Large Land Estates/Private,False
+3,Land under forest use,Large Land Estates/Private/Land under forest use,Large Land Estates/Private,False
+3,Meadows,Large Land Estates/Private/Meadows,Large Land Estates/Private,False
+3,Number of estates,Large Land Estates/Private/Number of estates,Large Land Estates/Private,False
+3,Orchards,Large Land Estates/Private/Orchards,Large Land Estates/Private,False
+3,Parks,Large Land Estates/Private/Parks,Large Land Estates/Private,False
+3,"Permanent pastures, mountain meadows, and heaths","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",Large Land Estates/Private,False
+3,Ponds and lakes,Large Land Estates/Private/Ponds and lakes,Large Land Estates/Private,False
+3,Total area,Large Land Estates/Private/Total area,Large Land Estates/Private,False
+3,Under buildings and roads,Large Land Estates/Private/Under buildings and roads,Large Land Estates/Private,False
+3,Unproductive land,Large Land Estates/Private/Unproductive land,Large Land Estates/Private,False
+3,Vegetable gardens,Large Land Estates/Private/Vegetable gardens,Large Land Estates/Private,False
 3,Barley,Prices/Local Paid to Producers/Barley,Prices/Local Paid to Producers,False
 3,Buckwheat,Prices/Local Paid to Producers/Buckwheat,Prices/Local Paid to Producers,True
 3,Hay,Prices/Local Paid to Producers/Hay,Prices/Local Paid to Producers,False
@@ -1159,6 +1173,102 @@
 4,I-III,Employment/Employment Share/Wood/I-III,Employment/Employment Share/Wood,True
 4,IV-V,Employment/Employment Share/Wood/IV-V,Employment/Employment Share/Wood,True
 4,VI-VII,Employment/Employment Share/Wood/VI-VII,Employment/Employment Share/Wood,True
+4,From 100 to 200,Large Land Estates/Private/Arable land/From 100 to 200,Large Land Estates/Private/Arable land,True
+4,From 200 to 300,Large Land Estates/Private/Arable land/From 200 to 300,Large Land Estates/Private/Arable land,True
+4,From 300 to 400,Large Land Estates/Private/Arable land/From 300 to 400,Large Land Estates/Private/Arable land,True
+4,From 400 to 500,Large Land Estates/Private/Arable land/From 400 to 500,Large Land Estates/Private/Arable land,True
+4,From 50 to 100,Large Land Estates/Private/Arable land/From 50 to 100,Large Land Estates/Private/Arable land,True
+4,From 500 to 1000,Large Land Estates/Private/Arable land/From 500 to 1000,Large Land Estates/Private/Arable land,True
+4,Over 1000,Large Land Estates/Private/Arable land/Over 1000,Large Land Estates/Private/Arable land,True
+4,Together,Large Land Estates/Private/Arable land/Together,Large Land Estates/Private/Arable land,True
+4,From 100 to 200,Large Land Estates/Private/Land under forest use/From 100 to 200,Large Land Estates/Private/Land under forest use,True
+4,From 200 to 300,Large Land Estates/Private/Land under forest use/From 200 to 300,Large Land Estates/Private/Land under forest use,True
+4,From 300 to 400,Large Land Estates/Private/Land under forest use/From 300 to 400,Large Land Estates/Private/Land under forest use,True
+4,From 400 to 500,Large Land Estates/Private/Land under forest use/From 400 to 500,Large Land Estates/Private/Land under forest use,True
+4,From 50 to 100,Large Land Estates/Private/Land under forest use/From 50 to 100,Large Land Estates/Private/Land under forest use,True
+4,From 500 to 1000,Large Land Estates/Private/Land under forest use/From 500 to 1000,Large Land Estates/Private/Land under forest use,True
+4,Over 1000,Large Land Estates/Private/Land under forest use/Over 1000,Large Land Estates/Private/Land under forest use,True
+4,Together,Large Land Estates/Private/Land under forest use/Together,Large Land Estates/Private/Land under forest use,True
+4,From 100 to 200,Large Land Estates/Private/Meadows/From 100 to 200,Large Land Estates/Private/Meadows,True
+4,From 200 to 300,Large Land Estates/Private/Meadows/From 200 to 300,Large Land Estates/Private/Meadows,True
+4,From 300 to 400,Large Land Estates/Private/Meadows/From 300 to 400,Large Land Estates/Private/Meadows,True
+4,From 400 to 500,Large Land Estates/Private/Meadows/From 400 to 500,Large Land Estates/Private/Meadows,True
+4,From 50 to 100,Large Land Estates/Private/Meadows/From 50 to 100,Large Land Estates/Private/Meadows,True
+4,From 500 to 1000,Large Land Estates/Private/Meadows/From 500 to 1000,Large Land Estates/Private/Meadows,True
+4,Over 1000,Large Land Estates/Private/Meadows/Over 1000,Large Land Estates/Private/Meadows,True
+4,Together,Large Land Estates/Private/Meadows/Together,Large Land Estates/Private/Meadows,True
+4,From 100 to 200,Large Land Estates/Private/Number of estates/From 100 to 200,Large Land Estates/Private/Number of estates,True
+4,From 200 to 300,Large Land Estates/Private/Number of estates/From 200 to 300,Large Land Estates/Private/Number of estates,True
+4,From 300 to 400,Large Land Estates/Private/Number of estates/From 300 to 400,Large Land Estates/Private/Number of estates,True
+4,From 400 to 500,Large Land Estates/Private/Number of estates/From 400 to 500,Large Land Estates/Private/Number of estates,True
+4,From 50 to 100,Large Land Estates/Private/Number of estates/From 50 to 100,Large Land Estates/Private/Number of estates,True
+4,From 500 to 1000,Large Land Estates/Private/Number of estates/From 500 to 1000,Large Land Estates/Private/Number of estates,True
+4,Over 1000,Large Land Estates/Private/Number of estates/Over 1000,Large Land Estates/Private/Number of estates,True
+4,Together,Large Land Estates/Private/Number of estates/Together,Large Land Estates/Private/Number of estates,True
+4,From 100 to 200,Large Land Estates/Private/Orchards/From 100 to 200,Large Land Estates/Private/Orchards,True
+4,From 200 to 300,Large Land Estates/Private/Orchards/From 200 to 300,Large Land Estates/Private/Orchards,True
+4,From 300 to 400,Large Land Estates/Private/Orchards/From 300 to 400,Large Land Estates/Private/Orchards,True
+4,From 400 to 500,Large Land Estates/Private/Orchards/From 400 to 500,Large Land Estates/Private/Orchards,True
+4,From 50 to 100,Large Land Estates/Private/Orchards/From 50 to 100,Large Land Estates/Private/Orchards,True
+4,From 500 to 1000,Large Land Estates/Private/Orchards/From 500 to 1000,Large Land Estates/Private/Orchards,True
+4,Over 1000,Large Land Estates/Private/Orchards/Over 1000,Large Land Estates/Private/Orchards,True
+4,Together,Large Land Estates/Private/Orchards/Together,Large Land Estates/Private/Orchards,True
+4,From 100 to 200,Large Land Estates/Private/Parks/From 100 to 200,Large Land Estates/Private/Parks,True
+4,From 200 to 300,Large Land Estates/Private/Parks/From 200 to 300,Large Land Estates/Private/Parks,True
+4,From 300 to 400,Large Land Estates/Private/Parks/From 300 to 400,Large Land Estates/Private/Parks,True
+4,From 400 to 500,Large Land Estates/Private/Parks/From 400 to 500,Large Land Estates/Private/Parks,True
+4,From 50 to 100,Large Land Estates/Private/Parks/From 50 to 100,Large Land Estates/Private/Parks,True
+4,From 500 to 1000,Large Land Estates/Private/Parks/From 500 to 1000,Large Land Estates/Private/Parks,True
+4,Over 1000,Large Land Estates/Private/Parks/Over 1000,Large Land Estates/Private/Parks,True
+4,Together,Large Land Estates/Private/Parks/Together,Large Land Estates/Private/Parks,True
+4,From 100 to 200,"Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 100 to 200","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",True
+4,From 200 to 300,"Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 200 to 300","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",True
+4,From 300 to 400,"Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 300 to 400","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",True
+4,From 400 to 500,"Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 400 to 500","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",True
+4,From 50 to 100,"Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 50 to 100","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",True
+4,From 500 to 1000,"Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 500 to 1000","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",True
+4,Over 1000,"Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/Over 1000","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",True
+4,Together,"Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/Together","Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths",True
+4,From 100 to 200,Large Land Estates/Private/Ponds and lakes/From 100 to 200,Large Land Estates/Private/Ponds and lakes,True
+4,From 200 to 300,Large Land Estates/Private/Ponds and lakes/From 200 to 300,Large Land Estates/Private/Ponds and lakes,True
+4,From 300 to 400,Large Land Estates/Private/Ponds and lakes/From 300 to 400,Large Land Estates/Private/Ponds and lakes,True
+4,From 400 to 500,Large Land Estates/Private/Ponds and lakes/From 400 to 500,Large Land Estates/Private/Ponds and lakes,True
+4,From 50 to 100,Large Land Estates/Private/Ponds and lakes/From 50 to 100,Large Land Estates/Private/Ponds and lakes,True
+4,From 500 to 1000,Large Land Estates/Private/Ponds and lakes/From 500 to 1000,Large Land Estates/Private/Ponds and lakes,True
+4,Over 1000,Large Land Estates/Private/Ponds and lakes/Over 1000,Large Land Estates/Private/Ponds and lakes,True
+4,Together,Large Land Estates/Private/Ponds and lakes/Together,Large Land Estates/Private/Ponds and lakes,True
+4,From 100 to 200,Large Land Estates/Private/Total area/From 100 to 200,Large Land Estates/Private/Total area,True
+4,From 200 to 300,Large Land Estates/Private/Total area/From 200 to 300,Large Land Estates/Private/Total area,True
+4,From 300 to 400,Large Land Estates/Private/Total area/From 300 to 400,Large Land Estates/Private/Total area,True
+4,From 400 to 500,Large Land Estates/Private/Total area/From 400 to 500,Large Land Estates/Private/Total area,True
+4,From 50 to 100,Large Land Estates/Private/Total area/From 50 to 100,Large Land Estates/Private/Total area,True
+4,From 500 to 1000,Large Land Estates/Private/Total area/From 500 to 1000,Large Land Estates/Private/Total area,True
+4,Over 1000,Large Land Estates/Private/Total area/Over 1000,Large Land Estates/Private/Total area,True
+4,Together,Large Land Estates/Private/Total area/Together,Large Land Estates/Private/Total area,True
+4,From 100 to 200,Large Land Estates/Private/Under buildings and roads/From 100 to 200,Large Land Estates/Private/Under buildings and roads,True
+4,From 200 to 300,Large Land Estates/Private/Under buildings and roads/From 200 to 300,Large Land Estates/Private/Under buildings and roads,True
+4,From 300 to 400,Large Land Estates/Private/Under buildings and roads/From 300 to 400,Large Land Estates/Private/Under buildings and roads,True
+4,From 400 to 500,Large Land Estates/Private/Under buildings and roads/From 400 to 500,Large Land Estates/Private/Under buildings and roads,True
+4,From 50 to 100,Large Land Estates/Private/Under buildings and roads/From 50 to 100,Large Land Estates/Private/Under buildings and roads,True
+4,From 500 to 1000,Large Land Estates/Private/Under buildings and roads/From 500 to 1000,Large Land Estates/Private/Under buildings and roads,True
+4,Over 1000,Large Land Estates/Private/Under buildings and roads/Over 1000,Large Land Estates/Private/Under buildings and roads,True
+4,Together,Large Land Estates/Private/Under buildings and roads/Together,Large Land Estates/Private/Under buildings and roads,True
+4,From 100 to 200,Large Land Estates/Private/Unproductive land/From 100 to 200,Large Land Estates/Private/Unproductive land,True
+4,From 200 to 300,Large Land Estates/Private/Unproductive land/From 200 to 300,Large Land Estates/Private/Unproductive land,True
+4,From 300 to 400,Large Land Estates/Private/Unproductive land/From 300 to 400,Large Land Estates/Private/Unproductive land,True
+4,From 400 to 500,Large Land Estates/Private/Unproductive land/From 400 to 500,Large Land Estates/Private/Unproductive land,True
+4,From 50 to 100,Large Land Estates/Private/Unproductive land/From 50 to 100,Large Land Estates/Private/Unproductive land,True
+4,From 500 to 1000,Large Land Estates/Private/Unproductive land/From 500 to 1000,Large Land Estates/Private/Unproductive land,True
+4,Over 1000,Large Land Estates/Private/Unproductive land/Over 1000,Large Land Estates/Private/Unproductive land,True
+4,Together,Large Land Estates/Private/Unproductive land/Together,Large Land Estates/Private/Unproductive land,True
+4,From 100 to 200,Large Land Estates/Private/Vegetable gardens/From 100 to 200,Large Land Estates/Private/Vegetable gardens,True
+4,From 200 to 300,Large Land Estates/Private/Vegetable gardens/From 200 to 300,Large Land Estates/Private/Vegetable gardens,True
+4,From 300 to 400,Large Land Estates/Private/Vegetable gardens/From 300 to 400,Large Land Estates/Private/Vegetable gardens,True
+4,From 400 to 500,Large Land Estates/Private/Vegetable gardens/From 400 to 500,Large Land Estates/Private/Vegetable gardens,True
+4,From 50 to 100,Large Land Estates/Private/Vegetable gardens/From 50 to 100,Large Land Estates/Private/Vegetable gardens,True
+4,From 500 to 1000,Large Land Estates/Private/Vegetable gardens/From 500 to 1000,Large Land Estates/Private/Vegetable gardens,True
+4,Over 1000,Large Land Estates/Private/Vegetable gardens/Over 1000,Large Land Estates/Private/Vegetable gardens,True
+4,Together,Large Land Estates/Private/Vegetable gardens/Together,Large Land Estates/Private/Vegetable gardens,True
 4,All Types,Prices/Local Paid to Producers/Barley/All Types,Prices/Local Paid to Producers/Barley,True
 4,For Groats,Prices/Local Paid to Producers/Barley/For Groats,Prices/Local Paid to Producers/Barley,True
 4,Malting Barley,Prices/Local Paid to Producers/Barley/Malting Barley,Prices/Local Paid to Producers/Barley,True

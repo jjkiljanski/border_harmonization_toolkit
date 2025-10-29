@@ -658,6 +658,1371 @@
         }
     },
     {
+        "data_table_id": "large_land_estates_private",
+        "adm_level": "District",
+        "source": "",
+        "link": "",
+        "table": "",
+        "page": null,
+        "pdf_page": null,
+        "description": {
+            "pol": "Wielka własność prywatna. Użycie ziemi.",
+            "eng": "Large land estates. Land use."
+        },
+        "date": "30.09.1921",
+        "orig_adm_state_date": "1923-12-30T00:00:00",
+        "adm_state_date": "1934-10-01T00:00:00",
+        "standardization_comments": "",
+        "harmonization_method": "proportional_to_territory",
+        "imputation_method": null,
+        "columns": {
+            "Large Land Estates/Private/Number of estates/Together": {
+                "unit": "",
+                "category": {
+                    "eng": "Large Land Estates/Private/Number of estates/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Liczba majątków/Ogółem"
+                },
+                "data_type": "int",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Number of estates/From 50 to 100": {
+                "unit": "",
+                "category": {
+                    "eng": "Large Land Estates/Private/Number of estates/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Liczba majątków/Od 50 do 100"
+                },
+                "data_type": "int",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Number of estates/From 100 to 200": {
+                "unit": "",
+                "category": {
+                    "eng": "Large Land Estates/Private/Number of estates/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Liczba majątków/Od 100 do 200"
+                },
+                "data_type": "int",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Number of estates/From 200 to 300": {
+                "unit": "",
+                "category": {
+                    "eng": "Large Land Estates/Private/Number of estates/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Liczba majątków/Od 200 do 300"
+                },
+                "data_type": "int",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Number of estates/From 300 to 400": {
+                "unit": "",
+                "category": {
+                    "eng": "Large Land Estates/Private/Number of estates/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Liczba majątków/Od 300 do 400"
+                },
+                "data_type": "int",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Number of estates/From 400 to 500": {
+                "unit": "",
+                "category": {
+                    "eng": "Large Land Estates/Private/Number of estates/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Liczba majątków/Od 400 do 500"
+                },
+                "data_type": "int",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Number of estates/From 500 to 1000": {
+                "unit": "",
+                "category": {
+                    "eng": "Large Land Estates/Private/Number of estates/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Liczba majątków/Od 500 do 1000"
+                },
+                "data_type": "int",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Number of estates/Over 1000": {
+                "unit": "",
+                "category": {
+                    "eng": "Large Land Estates/Private/Number of estates/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Liczba majątków/Powyżej 1000"
+                },
+                "data_type": "int",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Total area/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Total area/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Total area/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Total area/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Total area/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Total area/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Total area/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Total area/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Total area/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Total area/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Total area/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Total area/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Total area/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Total area/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Total area/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Total area/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Arable land/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Arable land/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty orne/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Arable land/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Arable land/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty orne/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Arable land/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Arable land/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty orne/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Arable land/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Arable land/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty orne/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Arable land/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Arable land/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty orne/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Arable land/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Arable land/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty orne/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Arable land/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Arable land/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty orne/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Arable land/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Arable land/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty orne/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Meadows/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Meadows/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Łąki/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Meadows/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Meadows/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Łąki/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Meadows/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Meadows/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Łąki/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Meadows/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Meadows/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Łąki/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Meadows/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Meadows/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Łąki/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Meadows/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Meadows/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Łąki/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Meadows/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Meadows/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Łąki/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Meadows/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Meadows/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Łąki/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.9637681159420289,
+                "n_na": 10,
+                "n_not_na": 266,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.9565217391304348,
+                "n_na": 12,
+                "n_not_na": 264,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Permanent pastures, mountain meadows, and heaths/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Orchards/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Orchards/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Sady owocowe/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Orchards/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Orchards/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Sady owocowe/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Orchards/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Orchards/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Sady owocowe/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Orchards/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Orchards/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Sady owocowe/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Orchards/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Orchards/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Sady owocowe/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Orchards/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Orchards/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Sady owocowe/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Orchards/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Orchards/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Sady owocowe/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Orchards/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Orchards/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Sady owocowe/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Vegetable gardens/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Vegetable gardens/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Ogrody warzywne/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Vegetable gardens/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Vegetable gardens/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Vegetable gardens/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Vegetable gardens/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Vegetable gardens/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Vegetable gardens/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Vegetable gardens/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Vegetable gardens/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Vegetable gardens/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Vegetable gardens/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Vegetable gardens/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Vegetable gardens/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Vegetable gardens/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Vegetable gardens/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Ogrody warzywne/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Parks/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Parks/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Parki/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Parks/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Parks/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Parki/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9601449275362319,
+                "n_na": 11,
+                "n_not_na": 265,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Parks/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Parks/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Parki/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Parks/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Parks/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Parki/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Parks/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Parks/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Parki/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Parks/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Parks/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Parki/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Parks/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Parks/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Parki/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Parks/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Parks/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Parki/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Land under forest use/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Land under forest use/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Land under forest use/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Land under forest use/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Land under forest use/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Land under forest use/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Land under forest use/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Land under forest use/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Land under forest use/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Land under forest use/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.9637681159420289,
+                "n_na": 10,
+                "n_not_na": 266,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Land under forest use/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Land under forest use/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Land under forest use/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Land under forest use/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Land under forest use/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Land under forest use/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Ponds and lakes/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Ponds and lakes/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Stawy i jeziora/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Ponds and lakes/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Ponds and lakes/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Ponds and lakes/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Ponds and lakes/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Ponds and lakes/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Ponds and lakes/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Ponds and lakes/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Ponds and lakes/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Ponds and lakes/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Ponds and lakes/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Ponds and lakes/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Ponds and lakes/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Ponds and lakes/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Ponds and lakes/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Stawy i jeziora/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Under buildings and roads/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Under buildings and roads/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Under buildings and roads/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Under buildings and roads/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Under buildings and roads/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Under buildings and roads/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Under buildings and roads/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Under buildings and roads/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Under buildings and roads/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Under buildings and roads/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Under buildings and roads/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Under buildings and roads/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Under buildings and roads/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Under buildings and roads/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Under buildings and roads/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Under buildings and roads/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Unproductive land/Together": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Unproductive land/Together",
+                    "pol": "Wielka Własność Rolna/Prywatna/Nieużytki/Ogółem"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Unproductive land/From 50 to 100": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Unproductive land/From 50 to 100",
+                    "pol": "Wielka Własność Rolna/Prywatna/Nieużytki/Od 50 do 100"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Unproductive land/From 100 to 200": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Unproductive land/From 100 to 200",
+                    "pol": "Wielka Własność Rolna/Prywatna/Nieużytki/Od 100 do 200"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Unproductive land/From 200 to 300": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Unproductive land/From 200 to 300",
+                    "pol": "Wielka Własność Rolna/Prywatna/Nieużytki/Od 200 do 300"
+                },
+                "data_type": "float",
+                "completeness": 0.9710144927536232,
+                "n_na": 8,
+                "n_not_na": 268,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Unproductive land/From 300 to 400": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Unproductive land/From 300 to 400",
+                    "pol": "Wielka Własność Rolna/Prywatna/Nieużytki/Od 300 do 400"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Unproductive land/From 400 to 500": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Unproductive land/From 400 to 500",
+                    "pol": "Wielka Własność Rolna/Prywatna/Nieużytki/Od 400 do 500"
+                },
+                "data_type": "float",
+                "completeness": 0.9637681159420289,
+                "n_na": 10,
+                "n_not_na": 266,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Unproductive land/From 500 to 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Unproductive land/From 500 to 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Nieużytki/Od 500 do 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.9746376811594203,
+                "n_na": 7,
+                "n_not_na": 269,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            },
+            "Large Land Estates/Private/Unproductive land/Over 1000": {
+                "unit": "ha",
+                "category": {
+                    "eng": "Large Land Estates/Private/Unproductive land/Over 1000",
+                    "pol": "Wielka Własność Rolna/Prywatna/Nieużytki/Powyżej 1000"
+                },
+                "data_type": "float",
+                "completeness": 0.967391304347826,
+                "n_na": 9,
+                "n_not_na": 267,
+                "completeness_after_imputation": null,
+                "n_na_after_imputation": null,
+                "n_not_na_after_imputation": null
+            }
+        }
+    },
+    {
         "data_table_id": "1923-1924-crops_area_ha_ready",
         "adm_level": "District",
         "source": "Kwartalnik Statystyczny Tom II Zeszyt 1 Rok 1925",

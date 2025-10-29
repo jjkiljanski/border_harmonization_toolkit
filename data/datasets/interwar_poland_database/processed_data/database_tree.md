@@ -1136,6 +1136,116 @@
   - Total
 - Forests
   - Area
+- Large Land Estates
+  - Private
+    - Arable land
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Land under forest use
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Meadows
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Number of estates
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Orchards
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Parks
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Permanent pastures, mountain meadows, and heaths
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Ponds and lakes
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Total area
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Under buildings and roads
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Unproductive land
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
+    - Vegetable gardens
+      - From 100 to 200
+      - From 200 to 300
+      - From 300 to 400
+      - From 400 to 500
+      - From 50 to 100
+      - From 500 to 1000
+      - Over 1000
+      - Together
 - Livestock
   - Goats
   - Horned Cattle

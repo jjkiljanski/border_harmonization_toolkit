@@ -7,6 +7,7 @@
 1,Spis Powszechny 1921,Spis Powszechny 1921,,False
 1,Spis Powszechny 1931,Spis Powszechny 1931,,False
 1,Uprawy rolne,Uprawy rolne,,False
+1,Wielka Własność Rolna,Wielka Własność Rolna,,False
 1,Zatrudnienie,Zatrudnienie,,False
 1,Zezwolenia dla przedsiębiorstw,Zezwolenia dla przedsiębiorstw,,False
 2,Lokalne płacone producentom,Ceny/Lokalne płacone producentom,Ceny,False
@@ -31,6 +32,7 @@
 2,Powierzchnia,Uprawy rolne/Powierzchnia,Uprawy rolne,False
 2,Przeciętny zbiór z ha,Uprawy rolne/Przeciętny zbiór z ha,Uprawy rolne,False
 2,Zbiory,Uprawy rolne/Zbiory,Uprawy rolne,False
+2,Prywatna,Wielka Własność Rolna/Prywatna,Wielka Własność Rolna,False
 2,Górnictwo,Zatrudnienie/Górnictwo,Zatrudnienie,True
 2,Górnictwo i przemysł - ogółem,Zatrudnienie/Górnictwo i przemysł - ogółem,Zatrudnienie,True
 2,Przemysł,Zatrudnienie/Przemysł,Zatrudnienie,False
@@ -463,6 +465,18 @@
 3,Tytoń,Uprawy rolne/Zbiory/Tytoń,Uprawy rolne/Zbiory,True
 3,Ziemniaki,Uprawy rolne/Zbiory/Ziemniaki,Uprawy rolne/Zbiory,True
 3,Żyto,Uprawy rolne/Zbiory/Żyto,Uprawy rolne/Zbiory,True
+3,Grunty orne,Wielka Własność Rolna/Prywatna/Grunty orne,Wielka Własność Rolna/Prywatna,False
+3,Grunty w użytkowaniu leśnem,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,Wielka Własność Rolna/Prywatna,False
+3,Liczba majątków,Wielka Własność Rolna/Prywatna/Liczba majątków,Wielka Własność Rolna/Prywatna,False
+3,Nieużytki,Wielka Własność Rolna/Prywatna/Nieużytki,Wielka Własność Rolna/Prywatna,False
+3,Ogrody warzywne,Wielka Własność Rolna/Prywatna/Ogrody warzywne,Wielka Własność Rolna/Prywatna,False
+3,Parki,Wielka Własność Rolna/Prywatna/Parki,Wielka Własność Rolna/Prywatna,False
+3,"Pastwiska stałe, połoniny i wrzosowiska","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",Wielka Własność Rolna/Prywatna,False
+3,Pod zabudowaniami i drogami,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,Wielka Własność Rolna/Prywatna,False
+3,Powierzchnia ogólna,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,Wielka Własność Rolna/Prywatna,False
+3,Sady owocowe,Wielka Własność Rolna/Prywatna/Sady owocowe,Wielka Własność Rolna/Prywatna,False
+3,Stawy i jeziora,Wielka Własność Rolna/Prywatna/Stawy i jeziora,Wielka Własność Rolna/Prywatna,False
+3,Łąki,Wielka Własność Rolna/Prywatna/Łąki,Wielka Własność Rolna/Prywatna,False
 3,Budowlany,Zatrudnienie/Przemysł/Budowlany,Zatrudnienie/Przemysł,True
 3,Chemiczny,Zatrudnienie/Przemysł/Chemiczny,Zatrudnienie/Przemysł,True
 3,Drzewny,Zatrudnienie/Przemysł/Drzewny,Zatrudnienie/Przemysł,True
@@ -735,6 +749,102 @@
 4,Włókno,Uprawy rolne/Zbiory/Len/Włókno,Uprawy rolne/Zbiory/Len,True
 4,Inne mieszanki zbóż,Uprawy rolne/Zbiory/Mieszanki na ziarno/Inne mieszanki zbóż,Uprawy rolne/Zbiory/Mieszanki na ziarno,True
 4,Jęczmień,Uprawy rolne/Zbiory/Mieszanki na ziarno/Jęczmień,Uprawy rolne/Zbiory/Mieszanki na ziarno,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Grunty orne/Od 100 do 200,Wielka Własność Rolna/Prywatna/Grunty orne,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Grunty orne/Od 200 do 300,Wielka Własność Rolna/Prywatna/Grunty orne,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Grunty orne/Od 300 do 400,Wielka Własność Rolna/Prywatna/Grunty orne,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Grunty orne/Od 400 do 500,Wielka Własność Rolna/Prywatna/Grunty orne,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Grunty orne/Od 50 do 100,Wielka Własność Rolna/Prywatna/Grunty orne,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Grunty orne/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Grunty orne,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Grunty orne/Ogółem,Wielka Własność Rolna/Prywatna/Grunty orne,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Grunty orne/Powyżej 1000,Wielka Własność Rolna/Prywatna/Grunty orne,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 100 do 200,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 200 do 300,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 300 do 400,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 400 do 500,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 50 do 100,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Ogółem,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem/Powyżej 1000,Wielka Własność Rolna/Prywatna/Grunty w użytkowaniu leśnem,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Liczba majątków/Od 100 do 200,Wielka Własność Rolna/Prywatna/Liczba majątków,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Liczba majątków/Od 200 do 300,Wielka Własność Rolna/Prywatna/Liczba majątków,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Liczba majątków/Od 300 do 400,Wielka Własność Rolna/Prywatna/Liczba majątków,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Liczba majątków/Od 400 do 500,Wielka Własność Rolna/Prywatna/Liczba majątków,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Liczba majątków/Od 50 do 100,Wielka Własność Rolna/Prywatna/Liczba majątków,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Liczba majątków/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Liczba majątków,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Liczba majątków/Ogółem,Wielka Własność Rolna/Prywatna/Liczba majątków,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Liczba majątków/Powyżej 1000,Wielka Własność Rolna/Prywatna/Liczba majątków,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Nieużytki/Od 100 do 200,Wielka Własność Rolna/Prywatna/Nieużytki,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Nieużytki/Od 200 do 300,Wielka Własność Rolna/Prywatna/Nieużytki,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Nieużytki/Od 300 do 400,Wielka Własność Rolna/Prywatna/Nieużytki,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Nieużytki/Od 400 do 500,Wielka Własność Rolna/Prywatna/Nieużytki,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Nieużytki/Od 50 do 100,Wielka Własność Rolna/Prywatna/Nieużytki,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Nieużytki/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Nieużytki,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Nieużytki/Ogółem,Wielka Własność Rolna/Prywatna/Nieużytki,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Nieużytki/Powyżej 1000,Wielka Własność Rolna/Prywatna/Nieużytki,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 100 do 200,Wielka Własność Rolna/Prywatna/Ogrody warzywne,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 200 do 300,Wielka Własność Rolna/Prywatna/Ogrody warzywne,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 300 do 400,Wielka Własność Rolna/Prywatna/Ogrody warzywne,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 400 do 500,Wielka Własność Rolna/Prywatna/Ogrody warzywne,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 50 do 100,Wielka Własność Rolna/Prywatna/Ogrody warzywne,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Ogrody warzywne/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Ogrody warzywne,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Ogrody warzywne/Ogółem,Wielka Własność Rolna/Prywatna/Ogrody warzywne,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Ogrody warzywne/Powyżej 1000,Wielka Własność Rolna/Prywatna/Ogrody warzywne,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Parki/Od 100 do 200,Wielka Własność Rolna/Prywatna/Parki,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Parki/Od 200 do 300,Wielka Własność Rolna/Prywatna/Parki,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Parki/Od 300 do 400,Wielka Własność Rolna/Prywatna/Parki,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Parki/Od 400 do 500,Wielka Własność Rolna/Prywatna/Parki,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Parki/Od 50 do 100,Wielka Własność Rolna/Prywatna/Parki,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Parki/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Parki,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Parki/Ogółem,Wielka Własność Rolna/Prywatna/Parki,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Parki/Powyżej 1000,Wielka Własność Rolna/Prywatna/Parki,True
+4,Od 100 do 200,"Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 100 do 200","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",True
+4,Od 200 do 300,"Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 200 do 300","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",True
+4,Od 300 do 400,"Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 300 do 400","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",True
+4,Od 400 do 500,"Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 400 do 500","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",True
+4,Od 50 do 100,"Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 50 do 100","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",True
+4,Od 500 do 1000,"Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Od 500 do 1000","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",True
+4,Ogółem,"Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Ogółem","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",True
+4,Powyżej 1000,"Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska/Powyżej 1000","Wielka Własność Rolna/Prywatna/Pastwiska stałe, połoniny i wrzosowiska",True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 100 do 200,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 200 do 300,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 300 do 400,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 400 do 500,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 50 do 100,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Ogółem,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami/Powyżej 1000,Wielka Własność Rolna/Prywatna/Pod zabudowaniami i drogami,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 100 do 200,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 200 do 300,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 300 do 400,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 400 do 500,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 50 do 100,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Ogółem,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna/Powyżej 1000,Wielka Własność Rolna/Prywatna/Powierzchnia ogólna,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Sady owocowe/Od 100 do 200,Wielka Własność Rolna/Prywatna/Sady owocowe,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Sady owocowe/Od 200 do 300,Wielka Własność Rolna/Prywatna/Sady owocowe,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Sady owocowe/Od 300 do 400,Wielka Własność Rolna/Prywatna/Sady owocowe,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Sady owocowe/Od 400 do 500,Wielka Własność Rolna/Prywatna/Sady owocowe,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Sady owocowe/Od 50 do 100,Wielka Własność Rolna/Prywatna/Sady owocowe,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Sady owocowe/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Sady owocowe,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Sady owocowe/Ogółem,Wielka Własność Rolna/Prywatna/Sady owocowe,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Sady owocowe/Powyżej 1000,Wielka Własność Rolna/Prywatna/Sady owocowe,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 100 do 200,Wielka Własność Rolna/Prywatna/Stawy i jeziora,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 200 do 300,Wielka Własność Rolna/Prywatna/Stawy i jeziora,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 300 do 400,Wielka Własność Rolna/Prywatna/Stawy i jeziora,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 400 do 500,Wielka Własność Rolna/Prywatna/Stawy i jeziora,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 50 do 100,Wielka Własność Rolna/Prywatna/Stawy i jeziora,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Stawy i jeziora/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Stawy i jeziora,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Stawy i jeziora/Ogółem,Wielka Własność Rolna/Prywatna/Stawy i jeziora,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Stawy i jeziora/Powyżej 1000,Wielka Własność Rolna/Prywatna/Stawy i jeziora,True
+4,Od 100 do 200,Wielka Własność Rolna/Prywatna/Łąki/Od 100 do 200,Wielka Własność Rolna/Prywatna/Łąki,True
+4,Od 200 do 300,Wielka Własność Rolna/Prywatna/Łąki/Od 200 do 300,Wielka Własność Rolna/Prywatna/Łąki,True
+4,Od 300 do 400,Wielka Własność Rolna/Prywatna/Łąki/Od 300 do 400,Wielka Własność Rolna/Prywatna/Łąki,True
+4,Od 400 do 500,Wielka Własność Rolna/Prywatna/Łąki/Od 400 do 500,Wielka Własność Rolna/Prywatna/Łąki,True
+4,Od 50 do 100,Wielka Własność Rolna/Prywatna/Łąki/Od 50 do 100,Wielka Własność Rolna/Prywatna/Łąki,True
+4,Od 500 do 1000,Wielka Własność Rolna/Prywatna/Łąki/Od 500 do 1000,Wielka Własność Rolna/Prywatna/Łąki,True
+4,Ogółem,Wielka Własność Rolna/Prywatna/Łąki/Ogółem,Wielka Własność Rolna/Prywatna/Łąki,True
+4,Powyżej 1000,Wielka Własność Rolna/Prywatna/Łąki/Powyżej 1000,Wielka Własność Rolna/Prywatna/Łąki,True
 4,I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/I-III,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,True
 4,IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/IV-V,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,True
 4,VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany/VI-VII,Zatrudnienie/Udział w całkowitym zatrudnieniu/Budowlany,True
