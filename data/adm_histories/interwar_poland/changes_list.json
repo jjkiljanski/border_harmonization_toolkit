@@ -42,6 +42,25 @@
     "date": "13.04.1922",
     "sources": ["Dz.U. z 1922 r. nr 26, poz. 213"],
     "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19220260213"],
+    "description": "Przeniesiono powiat brasławski do nowoutworzonego woj. wileńskiego",
+    "matter": {
+      "change_type": "ChangeAdmState",
+      "take_from": [
+        "HOMELAND",
+        "NOWOGRÓDZKIE",
+        "BRASŁAWSKI"
+      ],
+      "take_to": [
+        "HOMELAND",
+        "ZIEMIA WILEŃSKA",
+        "BRASŁAWSKI"
+      ]
+    }
+  },
+  {
+    "date": "13.04.1922",
+    "sources": ["Dz.U. z 1922 r. nr 26, poz. 213"],
+    "links": ["https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19220260213"],
     "description": "od 13.04.1922 należał do Ziemi Wileńskiej",
     "matter": {
       "change_type": "ChangeAdmState",
