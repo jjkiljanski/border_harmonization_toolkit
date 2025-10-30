@@ -3,6 +3,8 @@
 ⚠️ **Notice:** This project is under active development.  
 The current version is not final and may change frequently.
 
+You can check out a live DEMO website with project outcomes [here](https://jjkiljanski.github.io/interwar_poland_database_website/).
+
 ## General Description
 
 This toolkit allows for the creation of an administrative history of an area on the Country-Region-District level. It creates a data model of the adm. history on the basis of standardized inputs, and allows to use it for history-summaries generation, data standardization, imputation, and harmonization (between different borders).
