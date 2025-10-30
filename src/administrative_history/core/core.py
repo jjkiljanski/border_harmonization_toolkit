@@ -608,8 +608,8 @@ class AdministrativeHistory():
         return address
     
     def geojson(self, date: datetime, adm_level='District'):
-        if adm_level not in ['District', 'Region']:
-            raise ValueError(f"The argument adm_level must be 'District' or 'Region'. Passed: {adm_level}")
+        if adm_level not in ['District', 'Region', 'HOMELAND']:
+            raise ValueError(f"The argument adm_level must be 'District', 'Region', or 'HOMELAND'. Passed: {adm_level}")
         
         states_and_names = [(district.find_state_by_date(date), district.name_id) for district in self.dist_registry.unit_list if district.exists(date)]
         # Extract geometries and district names
@@ -621,7 +621,7 @@ class AdministrativeHistory():
 
         if adm_level == 'District':
             return dist_geo
-        else:
+        elif adm_level == 'Region':
             chosen_adm_state = self.find_adm_state_by_date(date)
             hierarchy = chosen_adm_state.unit_hierarchy["HOMELAND"]
             district_to_region = {district: region for region, region_items in hierarchy.items() for district in region_items.keys()}
@@ -629,6 +629,15 @@ class AdministrativeHistory():
             region_geo = dist_geo.dissolve(by='Region', as_index=False)
             region_geo = region_geo[['Region', 'geometry']]
             return region_geo
+        else:
+            chosen_adm_state = self.find_adm_state_by_date(date)
+            hierarchy = chosen_adm_state.unit_hierarchy["HOMELAND"]
+            districts_in_homeland = [district for region_name, region_items in hierarchy.items() for district in region_items.keys()]
+            dist_geo = dist_geo[dist_geo['District'].isin(districts_in_homeland)]
+            homeland_geo = dist_geo.dissolve()
+            return homeland_geo
+
+
         
     def export_geojson(self, date, file_path, adm_level='District'):
         gdf = self.geojson(date, adm_level)
