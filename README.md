@@ -2,7 +2,8 @@
 
 ⚠️ **Notice:** This project is under active development.  
 The current version is not final and may change frequently.
-You can checkout a live DEMO website with project outcomes [here](https://jjkiljanski.github.io/interwar_poland_database_website/).
+
+You can check out a live DEMO website with project outcomes [here](https://jjkiljanski.github.io/interwar_poland_database_website/).
 
 ## General Description
 
