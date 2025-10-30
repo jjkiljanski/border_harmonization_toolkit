@@ -18204,11 +18204,11 @@
         "harmonization_method": null,
         "imputation_method": null,
         "columns": {
-            "Yearbook 1939/Population/Total": {
+            "Yearbook 1939/City Population/Total": {
                 "unit": "",
                 "category": {
-                    "eng": "Yearbook 1939/Population/Total",
-                    "pol": "Rocznik 1939/Ludność/Ogółem"
+                    "eng": "Yearbook 1939/City Population/Total",
+                    "pol": "Rocznik 1939/Ludność Miast/Ogółem"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -22879,11 +22879,11 @@
         "harmonization_method": null,
         "imputation_method": null,
         "columns": {
-            "Census 1921/Population/Total": {
+            "Census 1921/City Population/Total": {
                 "unit": "",
                 "category": {
-                    "eng": "Census 1921/Population/Total",
-                    "pol": "Spis Powszechny 1921/Ludność/Ogółem"
+                    "eng": "Census 1921/City Population/Total",
+                    "pol": "Spis Powszechny 1921/Ludność Miast/Ogółem"
                 },
                 "data_type": "int",
                 "completeness": 2.4431818181818183,
@@ -22929,11 +22929,11 @@
         "harmonization_method": null,
         "imputation_method": null,
         "columns": {
-            "Census 1931/Population/Total": {
+            "Census 1931/City Population/Total": {
                 "unit": "",
                 "category": {
-                    "eng": "Census 1931/Population/Total",
-                    "pol": "Spis Powszechny 1931/Ludność/Ogółem"
+                    "eng": "Census 1931/City Population/Total",
+                    "pol": "Spis Powszechny 1931/Ludność Miast/Ogółem"
                 },
                 "data_type": "int",
                 "completeness": 2.4431818181818183,
