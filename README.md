@@ -13,6 +13,7 @@ To install the toolkit in editable (development) mode, first clone the repositor
 git clone https://github.com/<your_username>/border_harmonization_toolkit.git
 cd border_harmonization_toolkit
 pip install -e .
+```
 
 ## General Description
 
