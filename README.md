@@ -10,7 +10,7 @@ You can check out a live DEMO website with project outcomes [here](https://jjkil
 To install the toolkit in editable (development) mode, first clone the repository, enter its folder, and run:
 
 ```bash
-git clone https://github.com/<your_username>/border_harmonization_toolkit.git
+git clone https://github.com/jjkiljanski/border_harmonization_toolkit.git
 cd border_harmonization_toolkit
 pip install -e .
 ```
