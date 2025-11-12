@@ -5,6 +5,16 @@ The current version is not final and may change frequently.
 
 You can check out a live DEMO website with project outcomes [here](https://jjkiljanski.github.io/interwar_poland_database_website/).
 
+## Installation
+
+To install the toolkit in editable (development) mode, first clone the repository, enter its folder, and run:
+
+```bash
+git clone https://github.com/jjkiljanski/border_harmonization_toolkit.git
+cd border_harmonization_toolkit
+pip install -e .
+```
+
 ## General Description
 
 This toolkit allows for the creation of an administrative history of an area on the Country-Region-District level. It creates a data model of the adm. history on the basis of standardized inputs, and allows to use it for history-summaries generation, data standardization, imputation, and harmonization (between different borders).
