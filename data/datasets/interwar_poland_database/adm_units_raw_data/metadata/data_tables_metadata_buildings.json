@@ -1,0 +1,575 @@
+[
+  {
+    "data_table_id": "1921-number_of_buildings_ready",
+    "adm_level": "District",
+    "source": "",
+    "link": "",
+    "table": "",
+    "page": null,
+    "pdf_page": null,
+    "description": {
+      "pol": "Całkowita liczba nieruchomości wg. spisu powszechnego 1921 (stan na 30.09.1921). Aktywni zawodowo wraz z członkami rodzin, bezrobotni itd.",
+      "eng": "Number of buildings according to the 1921 national census (as of September 30, 1921). Economically active together with family members, unemployed etc."
+    },
+    "date": "30.09.1921",
+    "orig_adm_state_date": "30.07.1921",
+    "standardization_comments": "",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "Liczba nieruchomości": {
+        "unit": "",
+        "data_type": "int",
+        "category": {
+          "eng": "Census 1921/Buildings/Total Number",
+          "pol": "Spis Powszechny 1921/Budynki/Całkowita liczba nieruchomości"
+        }
+      }
+    }
+  },
+  {
+    "data_table_id": "1921-building_counts_ready",
+    "adm_level": "District",
+    "source": "",
+    "link": "",
+    "table": "",
+    "page": null,
+    "pdf_page": null,
+    "description": {
+      "pol": "Gęstość zabudowania i zaludnienia. Liczba budynków na nieruchomość. Budynki zamieszkane według przeznaczenia. Budynki i mieszkania niezamieszkane.",
+      "eng": "Density of buildings and population. Number of buildings per property. Inhabited buildings by intended use. Uninhabited buildings and dwellings."
+    },
+    "date": "30.09.1921",
+    "orig_adm_state_date": "30.07.1921",
+    "standardization_comments": "",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "Liczba budynków z przeznaczenia mieszkalnych na 1 km2": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of residential buildings per 1 km2",
+          "pol": "Liczba budynków z przeznaczenia mieszkalnych na 1 km2"
+        }
+      },
+      "Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of residential and other inhabited buildings per 1 property/Total",
+          "pol": "Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Ogółem"
+        }
+      },
+      "Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Wieś": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of residential and other inhabited buildings per 1 property/Rural Areas",
+          "pol": "Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Wieś"
+        }
+      },
+      "Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of residential and other inhabited buildings per 1 property/Towns under 20,000 inhabitants",
+          "pol": "Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of residential and other inhabited buildings per 1 property/Towns over 20,000 inhabitants",
+          "pol": "Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Liczba ludności na 1 budynek/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population per 1 building/Total",
+          "pol": "Liczba ludności na 1 budynek/Ogółem"
+        }
+      },
+      "Liczba ludności na 1 budynek/Wieś": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population per 1 building/Rural Areas",
+          "pol": "Liczba ludności na 1 budynek/Wieś"
+        }
+      },
+      "Liczba ludności na 1 budynek/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population per 1 building/Towns under 20,000 inhabitants",
+          "pol": "Liczba ludności na 1 budynek/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Liczba ludności na 1 budynek/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population per 1 building/Towns over 20,000 inhabitants",
+          "pol": "Liczba ludności na 1 budynek/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Liczba ludności na 1 nieruchomość zamieszkaną/Miasta poniżej 20 000 mieszkanców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population per 1 inhabited property/Towns under 20,000 inhabitants",
+          "pol": "Liczba ludności na 1 nieruchomość zamieszkaną/Miasta poniżej 20 000 mieszkanców"
+        }
+      },
+      "Liczba ludności na 1 nieruchomość zamieszkaną/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population per 1 inhabited property/Towns over 20,000 inhabitants",
+          "pol": "Liczba ludności na 1 nieruchomość zamieszkaną/Miasta powyżej 20 000 mieszkanców" 
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Residential By Intended Use/Total",
+          "pol": "Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Ogółem" 
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Used mainly for other purposes/Total",
+          "pol": "Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Ogółem"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings/Total",
+          "pol": "Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Ogółem"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Wieś": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Residential By Intended Use/Rural Areas",
+          "pol": "Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Wieś" 
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Wieś": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Used mainly for other purposes/Rural Areas",
+          "pol": "Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Wieś"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Wieś": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings/Rural Areas",
+          "pol": "Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Wieś"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Residential By Intended Use/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Miasta poniżej 20 000 mieszkanców"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Used mainly for other purposes/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Residential By Intended Use/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Miasta powyżej 20 000 mieszkanców"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Used mainly for other purposes/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Percentage of Uninhabited Buildings Intended for Residential Use/Total",
+          "pol": "Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Ogółem"
+        }
+      },
+      "Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Wieś": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Percentage of Uninhabited Buildings Intended for Residential Use/Rural Areas",
+          "pol": "Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Wieś"
+        }
+      },
+      "Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Percentage of Uninhabited Buildings Intended for Residential Use/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Percentage of Uninhabited Buildings Intended for Residential Use/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 mieszkań było niezamieszkanych/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Percentage of Uninhabited Dwellings/Total",
+          "pol": "Na 100 mieszkań było niezamieszkanych/Ogółem"
+        }
+      },
+      "Na 100 mieszkań było niezamieszkanych/Wieś": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Percentage of Uninhabited Dwellings/Rural Areas",
+          "pol": "Na 100 mieszkań było niezamieszkanych/Wieś"
+        }
+      },
+      "Na 100 mieszkań było niezamieszkanych/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Percentage of Uninhabited Dwellings/Towns under 20,000 inhabitants",
+          "pol": "Na 100 mieszkań było niezamieszkanych/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 mieszkań było niezamieszkanych/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Percentage of Uninhabited Dwellings/Towns over 20,000 inhabitants",
+          "pol": "Na 100 mieszkań było niezamieszkanych/Miasta powyżej 20 000 mieszkańców"
+        }
+      }
+    }
+  },
+  {
+    "data_table_id": "1921-building_construction_material_ready",
+    "adm_level": "District",
+    "source": "Główny Urząd Statystyczny. Pierwszy Powszechny Spis Rzeczypospolitej Polskiej z dnia 30 września 1921 roku. Budynki. Analiza.",
+    "link": "https://statlibr.stat.gov.pl/exlibris/aleph/a22_1/apache_media/A9HRPAG3I55AIA6QMN44X322CXX9N6.pdf",
+    "table": "2",
+    "page": 72,
+    "pdf_page": 84,
+    "description": {
+      "pol": "Budynki z przeznaczenia mieszkalne według materiału ścian i według pokrycia.",
+      "eng": "Residential buildings by wall material and by roofing type."
+    },
+    "date": "30.09.1921",
+    "orig_adm_state_date": "30.07.1921",
+    "standardization_comments": "",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "Na 100 budynków było/Murowanych/Ogółem": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Masonry/Total",
+          "pol": "Na 100 budynków było/Murowanych/Ogółem"
+        }
+      },
+      "Na 100 budynków było/Drewnianych/Ogółem": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Wooden/Total",
+          "pol": "Na 100 budynków było/Drewnianych/Ogółem"
+        }
+      },
+      "Na 100 budynków było/Z gliny innych materjałów/Ogółem": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Clay and other materials/Total",
+          "pol": "Na 100 budynków było/Z gliny innych materjałów/Ogółem"
+        }
+      },
+      "Na 100 budynków było/Z niewiadomego materiału/Ogółem": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Unknown material/Total",
+          "pol": "Na 100 budynków było/Z niewiadomego materiału/Ogółem"
+        }
+      },
+      "Na 100 budynków było/Murowanych/Wieś": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Masonry/Rural areas",
+          "pol": "Na 100 budynków było/Murowanych/Wieś"
+        }
+      },
+      "Na 100 budynków było/Drewnianych/Wieś": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Wooden/Rural areas",
+          "pol": "Na 100 budynków było/Drewnianych/Wieś"
+        }
+      },
+      "Na 100 budynków było/Z gliny innych materjałów/Wieś": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Clay and other materials/Rural areas",
+          "pol": "Na 100 budynków było/Z gliny innych materjałów/Wieś"
+        }
+      },
+      "Na 100 budynków było/Z niewiadomego materiału/Wieś": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Unknown material/Rural areas",
+          "pol": "Na 100 budynków było/Z niewiadomego materiału/Wieś"
+        }
+      },
+      "Na 100 budynków było/Murowanych/Miasta poniżej 20 000 mieszk.": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Masonry/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków było/Murowanych/Miasta poniżej 20 000 mieszk."
+        }
+      },
+      "Na 100 budynków było/Drewnianych/Miasta poniżej 20 000 mieszk.": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Wooden/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków było/Drewnianych/Miasta poniżej 20 000 mieszk."
+        }
+      },
+      "Na 100 budynków było/Z gliny innych materjałów/Miasta poniżej 20 000 mieszk.": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Clay and other materials/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków było/Z gliny innych materjałów/Miasta poniżej 20 000 mieszk."
+        }
+      },
+      "Na 100 budynków było/Z niewiadomego materiału/Miasta poniżej 20 000 mieszk.": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Unknown material/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków było/Z niewiadomego materiału/Miasta poniżej 20 000 mieszk."
+        }
+      },
+      "Na 100 budynków było/Murowanych/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Masonry/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków było/Murowanych/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków było/Drewnianych/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Wooden/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków było/Drewnianych/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków było/Z gliny innych materjałów/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Clay and other materials/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków było/Z gliny innych materjałów/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków było/Z niewiadomego materiału/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Unknown material/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków było/Z niewiadomego materiału/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+
+      "Na 100 budynków miało pokrycie/Ogniotrwałe/Ogółem": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Fireproof roofing/Total",
+          "pol": "Na 100 budynków miało pokrycie/Ogniotrwałe/Ogółem"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Z drzewa/Ogółem": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Wood roofing/Total",
+          "pol": "Na 100 budynków miało pokrycie/Z drzewa/Ogółem"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Ze słomy/Ogółem": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Straw roofing/Total",
+          "pol": "Na 100 budynków miało pokrycie/Ze słomy/Ogółem"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Niewiadome/Ogółem": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Roofing unknown/Total",
+          "pol": "Na 100 budynków miało pokrycie/Niewiadome/Ogółem"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Ogniotrwałe/Wieś": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Fireproof roofing/Rural areas",
+          "pol": "Na 100 budynków miało pokrycie/Ogniotrwałe/Wieś"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Z drzewa/Wieś": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Wood roofing/Rural areas",
+          "pol": "Na 100 budynków miało pokrycie/Z drzewa/Wieś"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Ze słomy/Wieś": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Straw roofing/Rural areas",
+          "pol": "Na 100 budynków miało pokrycie/Ze słomy/Wieś"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Niewiadome/Wieś": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Roofing unknown/Rural areas",
+          "pol": "Na 100 budynków miało pokrycie/Niewiadome/Wieś"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Ogniotrwałe/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Fireproof roofing/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków miało pokrycie/Ogniotrwałe/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Z drzewa/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Wood roofing/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków miało pokrycie/Z drzewa/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Ze słomy/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Straw roofing/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków miało pokrycie/Ze słomy/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Niewiadome/Miasta poniżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Roofing unknown/Towns under 20,000 inhabitants",
+          "pol": "Na 100 budynków miało pokrycie/Niewiadome/Miasta poniżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Ogniotrwałe/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Fireproof roofing/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków miało pokrycie/Ogniotrwałe/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Z drzewa/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Wood roofing/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków miało pokrycie/Z drzewa/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Ze słomy/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Straw roofing/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków miało pokrycie/Ze słomy/Miasta powyżej 20 000 mieszkańców"
+        }
+      },
+      "Na 100 budynków miało pokrycie/Niewiadome/Miasta powyżej 20 000 mieszkańców": {
+        "unit": "per 100 buildings",
+        "data_type": "number",
+        "category": {
+          "eng": "Out of every 100 buildings/Roofing unknown/Towns over 20,000 inhabitants",
+          "pol": "Na 100 budynków miało pokrycie/Niewiadome/Miasta powyżej 20 000 mieszkańców"
+        }
+      }
+    }
+  }
+]

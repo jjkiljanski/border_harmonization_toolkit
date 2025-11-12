@@ -4,6 +4,7 @@ import pandas as pd
 from administrative_history.core.core import AdministrativeHistory
 from utils.helper_functions import standardize_df, load_uploaded_csv
 import os
+import json
 
 def standardize_dist_region_data_view(administrative_history: AdministrativeHistory):
     ################# Create containers #################
@@ -12,6 +13,7 @@ def standardize_dist_region_data_view(administrative_history: AdministrativeHist
     comparison_container = st.container()
     editor_container = st.container()
     display_ready_container = st.container()
+    download_col_template_container = st.container()
 
     ################# Define basic container content #################
     with upload_container:
@@ -422,6 +424,84 @@ def standardize_dist_region_data_view(administrative_history: AdministrativeHist
                         file_name=f"{adm_state.timespan.middle.date()}-region_district_template.csv",
                         mime="text/csv"
                     )
+
+                ###################### Download the column metadata template ############################
+                # Download the "columns" JSON field that can be put into the metadata dict
+                with download_col_template_container:
+                    st.markdown("#### Build & Download Column Metadata Template")
+
+                    # 1) Take all column names except Region/District
+                    other_cols = [c for c in display_df.columns if c not in ["Region", "District"]]
+
+                    if not other_cols:
+                        st.info("No additional columns found besides 'Region' and 'District'. Upload a file with extra columns to build metadata.")
+                    else:
+                        # 2) Split names by "/" and build an editor with columns: original, pol, eng
+                        #    - 'original' are unique parts
+                        #    - 'pol' prefilled same as 'original'
+                        #    - 'eng' left for user to fill
+                        unique_parts = sorted({
+                            part.strip()
+                            for col in other_cols
+                            for part in str(col).split("/")
+                            if part.strip()
+                        })
+
+                        parts_df = pd.DataFrame({
+                            "original": unique_parts,
+                            "pol": unique_parts,  # same as original by default
+                            "eng": [""] * len(unique_parts)  # user fills in
+                        })
+
+                        edited_parts_df = st.data_editor(
+                            parts_df,
+                            hide_index=True,
+                            key="meta_part_names_editor"
+                        )
+
+                        # 3) Build mappings and downloadable JSON when user clicks the button
+                        #    part_name_dict: {part_name_original: (part_name_pol, part_name_eng)}
+                        part_name_dict = {
+                            row["original"]: (row["pol"], row["eng"])
+                            for _, row in edited_parts_df.iterrows()
+                        }
+
+                        # Helpers to translate full column names by splitting and recombining with "/"
+                        def translate_full_name(col_name: str):
+                            parts = [p.strip() for p in str(col_name).split("/") if p.strip()]
+                            pol_parts = []
+                            eng_parts = []
+                            for p in parts:
+                                # default fallback if user leaves 'eng' empty: keep original
+                                pol, eng = part_name_dict.get(p, (p, p))
+                                pol_parts.append(pol if pol else p)
+                                eng_parts.append(eng if eng else p)
+                            return "/".join(eng_parts), "/".join(pol_parts)
+
+                        # Build the final metadata dict
+                        metadata = {}
+                        for original_col in other_cols:
+                            col_eng, col_pol = translate_full_name(original_col)
+                            metadata[original_col] = {
+                                "unit": "",
+                                "data_type": "",
+                                "category": {
+                                    "eng": col_eng,
+                                    "pol": col_pol
+                                }
+                            }
+
+                        # Dump to JSON (UTF-8, pretty)
+                        metadata_json = json.dumps(metadata, ensure_ascii=False, indent=2)
+
+                        st.download_button(
+                            label="Download Meta Column Template",
+                            data=metadata_json.encode("utf-8"),
+                            file_name=f"{name}_metadata.json",
+                            mime="application/json",
+                            key="download_meta_col_template"
+                        )
+
 
         except Exception as e:
             st.error(f"Could not process uploaded file: {str(e)}")

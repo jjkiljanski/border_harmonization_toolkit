@@ -10,6 +10,7 @@ src/administrative_history.egg-info/top_level.txt
 src/administrative_history/core/__init__.py
 src/administrative_history/core/api.py
 src/administrative_history/core/core.py
+src/administrative_history/core/db_injector.py
 src/administrative_history/core/plotter.py
 src/administrative_history/core/processor.py
 src/administrative_history/data_models/__init__.py

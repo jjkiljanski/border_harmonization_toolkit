@@ -98,8 +98,8 @@ class ProcessingConfig(BaseModel):
         post_processing_reorganize_data_tables: A list of reorganizing methods
         to apply after harmonization, represented as `ReorganizeMethod` objects.
     """
-    adm_units_raw_data_metadata_path: str
-    cities_raw_data_metadata_path: str
+    adm_units_raw_data_metadata_folder: str
+    cities_raw_data_metadata_folder: str
     adm_units_raw_data_folder: str
     cities_raw_data_folder: str
     processed_data_output_folder: str

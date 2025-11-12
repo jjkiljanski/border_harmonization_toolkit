@@ -3,8 +3,8 @@
     "initial_adm_state_path": "data/adm_histories/interwar_poland/initial_adm_state.json",
     "initial_region_list_path": "data/adm_histories/interwar_poland/initial_region_state_list.json",
     "initial_dist_list_path": "data/adm_histories/interwar_poland/initial_dist_state_list.json",
-    "adm_states_output_path": "data/adm_histories/interwar_poland/generated_summaries/adm_states",
-    "adm_states_maps_output_path": "data/adm_histories/interwar_poland/generated_summaries/adm_states_maps",
+    "adm_states_output_path": "data/adm_histories/interwar_poland/generated_summaries/adm_states/",
+    "adm_states_maps_output_path": "data/adm_histories/interwar_poland/generated_summaries/adm_states_maps/",
     "territories_path": "data/adm_histories/interwar_poland/territories/",
     "cities_path": "data/adm_histories/interwar_poland/cities_coords/cities_coords.geojson",
     "global_timespan": {

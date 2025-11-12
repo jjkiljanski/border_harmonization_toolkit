@@ -1,0 +1,74 @@
+[
+  {
+    "data_table_id": "destroyed_buildings_silesia_vilnius_ready",
+    "adm_level": "District",
+    "source": "",
+    "link": "",
+    "table": "",
+    "page": null,
+    "pdf_page": null,
+    "description": {
+      "pol": "Liczba zniszczonych budynków spisana z mapy przygotowanej przez Ministerstwo Robót Publicznych przygotowanej na podstawie zgłoszeń poszkodowanych i sprawozdań okręgowych Dyrekcji Odbudowy.",
+      "eng": "The number of destroyed buildings recorded from a map prepared by the Ministry of Public Works, based on reports submitted by those affected and on the reports of the District Reconstruction Directorates."
+    },
+    "date": "1.1.1923",
+    "orig_adm_state_date": "1.10.1922",
+    "standardization_comments": "",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Zniszczone w ogóle": {
+        "unit": "",
+        "data_type": "int",
+        "category": {
+          "eng": "War Damage 1914–1920/Destroyed Buildings/Number of All Destroyed",
+          "pol": "Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Zniszczone w ogóle"
+        }
+      },
+      "Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Pozostające do odbudowy 01-01-1923": {
+        "unit": "",
+        "data_type": "int",
+        "category": {
+          "eng": "War Damage 1914–1920/Destroyed Buildings/Remaining to be Rebuilt on 1 Jan. 1923",
+          "pol": "Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Pozostające do odbudowy 01-01-1923"
+        }
+      }
+    }
+  },
+  {
+    "data_table_id": "destroyed_buildings_no_silesia_vilnius_ready",
+    "adm_level": "District",
+    "source": "",
+    "link": "",
+    "table": "",
+    "page": null,
+    "pdf_page": null,
+    "description": {
+      "pol": "Liczba zniszczonych budynków spisana z mapy przygotowanej przez Ministerstwo Robót Publicznych przygotowanej na podstawie zgłoszeń poszkodowanych i sprawozdań okręgowych Dyrekcji Odbudowy.",
+      "eng": "The number of destroyed buildings recorded from a map prepared by the Ministry of Public Works, based on reports submitted by those affected and on the reports of the District Reconstruction Directorates."
+    },
+    "date": "1.1.1923",
+    "orig_adm_state_date": "30.07.1921",
+    "standardization_comments": "",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Zniszczone w ogóle": {
+        "unit": "",
+        "data_type": "int",
+        "category": {
+          "eng": "War Damage 1914–1920/Destroyed Buildings/Number of All Destroyed",
+          "pol": "Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Zniszczone w ogóle"
+        }
+      },
+      "Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Pozostające do odbudowy 01-01-1923": {
+        "unit": "",
+        "data_type": "int",
+        "category": {
+          "eng": "War Damage 1914–1920/Destroyed Buildings/Remaining to be Rebuilt on 1 Jan. 1923",
+          "pol": "Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Pozostające do odbudowy 01-01-1923"
+        }
+      }
+    }
+  }
+]

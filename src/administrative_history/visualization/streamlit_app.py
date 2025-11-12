@@ -3,7 +3,10 @@ import streamlit as st
 import os
 import sys
 import pandas as pd
+from pathlib import Path
 
+# Add the /src directory to sys.path
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 # Add the project root directory to sys.path to ensure that imports work
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 

@@ -1,0 +1,1838 @@
+[
+  {
+    "data_table_id": "1931-land_area_shares_pz_ready",
+    "adm_level": "District",
+    "source": "",
+    "link": "",
+    "table": "",
+    "page": null,
+    "pdf_page": null,
+    "description": {
+      "pol": "Wielkość gospodarstw rolnych wg. spisu powszechnego 1931 (stan na 09.12.1931). Województwa południowe i zachodnie.",
+      "eng": "Size of land estates according to the 1931 national census (as of December 09, 1931). Southern and Western Voivodships."
+    },
+    "date": "09.12.1931",
+    "orig_adm_state_date": "01.08.1934",
+    "standardization_comments": "",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "Liczba ludności/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/Total",
+          "pol": "Liczba ludności/Ogółem"
+        }
+      },
+      "Liczba ludności/Mniej niż 2 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/Less than 2 ha",
+          "pol": "Liczba ludności/Mniej niż 2 ha"
+        }
+      },
+      "Liczba ludności/2 - 5 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/2 – 5 ha",
+          "pol": "Liczba ludności/2 - 5 ha"
+        }
+      },
+      "Liczba ludności/5 - 10 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/5 – 10 ha",
+          "pol": "Liczba ludności/5 - 10 ha"
+        }
+      },
+      "Liczba ludności/10 - 15 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/10 – 15 ha",
+          "pol": "Liczba ludności/10 - 15 ha"
+        }
+      },
+      "Liczba ludności/15 - 50 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/15 – 50 ha",
+          "pol": "Liczba ludności/15 - 50 ha"
+        }
+      },
+      "Liczba ludności/50 ha i więcej": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/50 ha and more",
+          "pol": "Liczba ludności/50 ha i więcej"
+        }
+      },
+      "Liczba ludności/Niewiadoma": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/Unknown",
+          "pol": "Liczba ludności/Niewiadoma"
+        }
+      },
+      "Liczba zespołów/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/Total",
+          "pol": "Liczba zespołów/Ogółem"
+        }
+      },
+      "Liczba zespołów/Mniej niż 2 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/Less than 2 ha",
+          "pol": "Liczba zespołów/Mniej niż 2 ha"
+        }
+      },
+      "Liczba zespołów/2 - 5 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/2 – 5 ha",
+          "pol": "Liczba zespołów/2 - 5 ha"
+        }
+      },
+      "Liczba zespołów/5 - 10 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/5 – 10 ha",
+          "pol": "Liczba zespołów/5 - 10 ha"
+        }
+      },
+      "Liczba zespołów/10 - 15 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/10 – 15 ha",
+          "pol": "Liczba zespołów/10 - 15 ha"
+        }
+      },
+      "Liczba zespołów/15 - 50 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/15 – 50 ha",
+          "pol": "Liczba zespołów/15 - 50 ha"
+        }
+      },
+      "Liczba zespołów/50 ha i więcej": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/50 ha and more",
+          "pol": "Liczba zespołów/50 ha i więcej"
+        }
+      },
+      "Liczba zespołów/Niewiadoma": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/Unknown",
+          "pol": "Liczba zespołów/Niewiadoma"
+        }
+      }
+    }
+  },
+  {
+    "data_table_id": "1931-land_area_shares_cw_ready",
+    "adm_level": "District",
+    "source": "",
+    "link": "",
+    "table": "",
+    "page": null,
+    "pdf_page": null,
+    "description": {
+      "pol": "Wielkość gospodarstw rolnych wg. spisu powszechnego 1931 (stan na 09.12.1931). Województwa Centralne i Wschodnie.",
+      "eng": "Size of land estates according to the 1931 national census (as of December 09, 1931). Central and Eastern Voivodships."
+    },
+    "date": "09.12.1931",
+    "orig_adm_state_date": "01.01.1933",
+    "standardization_comments": "",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "Liczba ludności/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/Total",
+          "pol": "Liczba ludności/Ogółem"
+        }
+      },
+      "Liczba ludności/Mniej niż 2 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/Less than 2 ha",
+          "pol": "Liczba ludności/Mniej niż 2 ha"
+        }
+      },
+      "Liczba ludności/2 - 5 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/2 – 5 ha",
+          "pol": "Liczba ludności/2 - 5 ha"
+        }
+      },
+      "Liczba ludności/5 - 10 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/5 – 10 ha",
+          "pol": "Liczba ludności/5 - 10 ha"
+        }
+      },
+      "Liczba ludności/10 - 15 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/10 – 15 ha",
+          "pol": "Liczba ludności/10 - 15 ha"
+        }
+      },
+      "Liczba ludności/15 - 50 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/15 – 50 ha",
+          "pol": "Liczba ludności/15 - 50 ha"
+        }
+      },
+      "Liczba ludności/50 ha i więcej": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/50 ha and more",
+          "pol": "Liczba ludności/50 ha i więcej"
+        }
+      },
+      "Liczba ludności/Niewiadoma": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Population/Unknown",
+          "pol": "Liczba ludności/Niewiadoma"
+        }
+      },
+      "Liczba zespołów/Ogółem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/Total",
+          "pol": "Liczba zespołów/Ogółem"
+        }
+      },
+      "Liczba zespołów/Mniej niż 2 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/Less than 2 ha",
+          "pol": "Liczba zespołów/Mniej niż 2 ha"
+        }
+      },
+      "Liczba zespołów/2 - 5 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/2 – 5 ha",
+          "pol": "Liczba zespołów/2 - 5 ha"
+        }
+      },
+      "Liczba zespołów/5 - 10 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/5 – 10 ha",
+          "pol": "Liczba zespołów/5 - 10 ha"
+        }
+      },
+      "Liczba zespołów/10 - 15 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/10 – 15 ha",
+          "pol": "Liczba zespołów/10 - 15 ha"
+        }
+      },
+      "Liczba zespołów/15 - 50 ha": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/15 – 50 ha",
+          "pol": "Liczba zespołów/15 - 50 ha"
+        }
+      },
+      "Liczba zespołów/50 ha i więcej": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/50 ha and more",
+          "pol": "Liczba zespołów/50 ha i więcej"
+        }
+      },
+      "Liczba zespołów/Niewiadoma": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Number of holdings/Unknown",
+          "pol": "Liczba zespołów/Niewiadoma"
+        }
+      }
+    }
+  },
+  {
+    "data_table_id": "1921-land_ownership_structure_ready",
+    "adm_level": "District",
+    "source": "",
+    "link": "",
+    "table": "",
+    "page": null,
+    "pdf_page": null,
+    "description": {
+      "pol": "Wielkość gospodarstw rolnych wg. spisu powszechnego 1921 (stan na 30.09.1921).",
+      "eng": "Size of land estates according to the 1921 national census (as of September 30, 1921)."
+    },
+    "date": "30.09.1921",
+    "orig_adm_state_date": "30.07.1921",
+    "standardization_comments": "",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "0,0 - 0,5 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Number of holdings",
+          "pol": "0,0 - 0,5 ha/Liczba gospodarstw"
+        }
+      },
+      "0,0 - 0,5 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Area",
+          "pol": "0,0 - 0,5 ha/Powierzchnia"
+        }
+      },
+      "0,0 - 0,5 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Arable Land",
+          "pol": "0,0 - 0,5 ha/Grunt orny"
+        }
+      },
+      "0,0 - 0,5 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Meadows",
+          "pol": "0,0 - 0,5 ha/Łąki"
+        }
+      },
+      "0,0 - 0,5 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Permanent Pastures, Mountain Meadows, and Heaths",
+          "pol": "0,0 - 0,5 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "0,0 - 0,5 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Orchards and Vegetable Gardens",
+          "pol": "0,0 - 0,5 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "0,0 - 0,5 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Arable Land under Forest Use",
+          "pol": "0,0 - 0,5 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "0,0 - 0,5 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "0,0 - 0,5 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "0,0 - 0,5 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Under Buildings and Roads",
+          "pol": "0,0 - 0,5 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "0,0 - 0,5 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,0 - 0,5 ha/Unproductive land",
+          "pol": "0,0 - 0,5 ha/Nieużytki"
+        }
+      },
+      "0,5 - 1,0 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Number of holdings",
+          "pol": "0,5 - 1,0 ha/Liczba gospodarstw"
+        }
+      },
+      "0,5 - 1,0 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Area",
+          "pol": "0,5 - 1,0 ha/Powierzchnia"
+        }
+      },
+      "0,5 - 1,0 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Arable Land",
+          "pol": "0,5 - 1,0 ha/Grunt orny"
+        }
+      },
+      "0,5 - 1,0 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Meadows",
+          "pol": "0,5 - 1,0 ha/Łąki"
+        }
+      },
+      "0,5 - 1,0 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "0,5 - 1,0 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "0,5 - 1,0 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Orchards and Vegetable Gardens",
+          "pol": "0,5 - 1,0 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "0,5 - 1,0 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Arable Land under Forest Use",
+          "pol": "0,5 - 1,0 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "0,5 - 1,0 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "0,5 - 1,0 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "0,5 - 1,0 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Under buildings and roads",
+          "pol": "0,5 - 1,0 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "0,5 - 1,0 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "0,5 - 1,0 ha/Unproductive land",
+          "pol": "0,5 - 1,0 ha/Nieużytki"
+        }
+      },
+      "1 - 2 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Number of holdings",
+          "pol": "1 - 2 ha/Liczba gospodarstw"
+        }
+      },
+      "1 - 2 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Area",
+          "pol": "1 - 2 ha/Powierzchnia"
+        }
+      },
+      "1 - 2 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Arable Land",
+          "pol": "1 - 2 ha/Grunt orny"
+        }
+      },
+      "1 - 2 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Meadows",
+          "pol": "1 - 2 ha/Łąki"
+        }
+      },
+      "1 - 2 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "1 - 2 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "1 - 2 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Orchards and Vegetable Gardens",
+          "pol": "1 - 2 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "1 - 2 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Arable Land under Forest Use",
+          "pol": "1 - 2 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "1 - 2 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "1 - 2 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "1 - 2 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Under buildings and roads",
+          "pol": "1 - 2 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "1 - 2 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "1 - 2 ha/Unproductive land",
+          "pol": "1 - 2 ha/Nieużytki"
+        }
+      },
+      "10 - 20 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Number of holdings",
+          "pol": "10 - 20 ha/Liczba gospodarstw"
+        }
+      },
+      "10 - 20 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Area",
+          "pol": "10 - 20 ha/Powierzchnia"
+        }
+      },
+      "10 - 20 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Arable Land",
+          "pol": "10 - 20 ha/Grunt orny"
+        }
+      },
+      "10 - 20 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Meadows",
+          "pol": "10 - 20 ha/Łąki"
+        }
+      },
+      "10 - 20 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "10 - 20 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "10 - 20 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Orchards and Vegetable Gardens",
+          "pol": "10 - 20 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "10 - 20 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Arable Land under Forest Use",
+          "pol": "10 - 20 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "10 - 20 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "10 - 20 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "10 - 20 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Under buildings and roads",
+          "pol": "10 - 20 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "10 - 20 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "10 - 20 ha/Unproductive land",
+          "pol": "10 - 20 ha/Nieużytki"
+        }
+      },
+      "100 - 200 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Number of holdings",
+          "pol": "100 - 200 ha/Liczba gospodarstw"
+        }
+      },
+      "100 - 200 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Area",
+          "pol": "100 - 200 ha/Powierzchnia"
+        }
+      },
+      "100 - 200 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Arable Land",
+          "pol": "100 - 200 ha/Grunt orny"
+        }
+      },
+      "100 - 200 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Meadows",
+          "pol": "100 - 200 ha/Łąki"
+        }
+      },
+      "100 - 200 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "100 - 200 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "100 - 200 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Orchards and Vegetable Gardens",
+          "pol": "100 - 200 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "100 - 200 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Arable Land under Forest Use",
+          "pol": "100 - 200 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "100 - 200 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "100 - 200 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "100 - 200 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Under buildings and roads",
+          "pol": "100 - 200 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "100 - 200 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "100 - 200 ha/Unproductive land",
+          "pol": "100 - 200 ha/Nieużytki"
+        }
+      },
+      "2 - 3 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Number of holdings",
+          "pol": "2 - 3 ha/Liczba gospodarstw"
+        }
+      },
+      "2 - 3 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Area",
+          "pol": "2 - 3 ha/Powierzchnia"
+        }
+      },
+      "2 - 3 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Arable Land",
+          "pol": "2 - 3 ha/Grunt orny"
+        }
+      },
+      "2 - 3 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Meadows",
+          "pol": "2 - 3 ha/Łąki"
+        }
+      },
+      "2 - 3 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "2 - 3 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "2 - 3 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Orchards and Vegetable Gardens",
+          "pol": "2 - 3 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "2 - 3 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Arable Land under Forest Use",
+          "pol": "2 - 3 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "2 - 3 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "2 - 3 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "2 - 3 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Under buildings and roads",
+          "pol": "2 - 3 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "2 - 3 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "2 - 3 ha/Unproductive land",
+          "pol": "2 - 3 ha/Nieużytki"
+        }
+      },
+      "20 - 50 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Number of holdings",
+          "pol": "20 - 50 ha/Liczba gospodarstw"
+        }
+      },
+      "20 - 50 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Area",
+          "pol": "20 - 50 ha/Powierzchnia"
+        }
+      },
+      "20 - 50 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Arable Land",
+          "pol": "20 - 50 ha/Grunt orny"
+        }
+      },
+      "20 - 50 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Meadows",
+          "pol": "20 - 50 ha/Łąki"
+        }
+      },
+      "20 - 50 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "20 - 50 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "20 - 50 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Orchards and Vegetable Gardens",
+          "pol": "20 - 50 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "20 - 50 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Arable Land under Forest Use",
+          "pol": "20 - 50 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "20 - 50 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "20 - 50 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "20 - 50 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Under buildings and roads",
+          "pol": "20 - 50 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "20 - 50 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "20 - 50 ha/Unproductive land",
+          "pol": "20 - 50 ha/Nieużytki"
+        }
+      },
+      "200 - 1000 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Number of holdings",
+          "pol": "200 - 1000 ha/Liczba gospodarstw"
+        }
+      },
+      "200 - 1000 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Area",
+          "pol": "200 - 1000 ha/Powierzchnia"
+        }
+      },
+      "200 - 1000 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Arable Land",
+          "pol": "200 - 1000 ha/Grunt orny"
+        }
+      },
+      "200 - 1000 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Meadows",
+          "pol": "200 - 1000 ha/Łąki"
+        }
+      },
+      "200 - 1000 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "200 - 1000 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "200 - 1000 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Orchards and Vegetable Gardens",
+          "pol": "200 - 1000 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "200 - 1000 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Arable Land under Forest Use",
+          "pol": "200 - 1000 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "200 - 1000 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "200 - 1000 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "200 - 1000 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Under buildings and roads",
+          "pol": "200 - 1000 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "200 - 1000 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 1000 ha/Unproductive land",
+          "pol": "200 - 1000 ha/Nieużytki"
+        }
+      },
+      "200 - 300 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Number of holdings",
+          "pol": "200 - 300 ha/Liczba gospodarstw"
+        }
+      },
+      "200 - 300 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Area",
+          "pol": "200 - 300 ha/Powierzchnia"
+        }
+      },
+      "200 - 300 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Arable Land",
+          "pol": "200 - 300 ha/Grunt orny"
+        }
+      },
+      "200 - 300 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Meadows",
+          "pol": "200 - 300 ha/Łąki"
+        }
+      },
+      "200 - 300 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "200 - 300 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "200 - 300 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Orchards and Vegetable Gardens",
+          "pol": "200 - 300 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "200 - 300 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Arable Land under Forest Use",
+          "pol": "200 - 300 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "200 - 300 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "200 - 300 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "200 - 300 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Under buildings and roads",
+          "pol": "200 - 300 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "200 - 300 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "200 - 300 ha/Unproductive land",
+          "pol": "200 - 300 ha/Nieużytki"
+        }
+      },
+      "3 - 4 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Number of holdings",
+          "pol": "3 - 4 ha/Liczba gospodarstw"
+        }
+      },
+      "3 - 4 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Area",
+          "pol": "3 - 4 ha/Powierzchnia"
+        }
+      },
+      "3 - 4 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Arable Land",
+          "pol": "3 - 4 ha/Grunt orny"
+        }
+      },
+      "3 - 4 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Meadows",
+          "pol": "3 - 4 ha/Łąki"
+        }
+      },
+      "3 - 4 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "3 - 4 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "3 - 4 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Orchards and Vegetable Gardens",
+          "pol": "3 - 4 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "3 - 4 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Arable Land under Forest Use",
+          "pol": "3 - 4 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "3 - 4 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "3 - 4 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "3 - 4 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Under buildings and roads",
+          "pol": "3 - 4 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "3 - 4 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "3 - 4 ha/Unproductive land",
+          "pol": "3 - 4 ha/Nieużytki"
+        }
+      },
+      "300 - 400 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Number of holdings",
+          "pol": "300 - 400 ha/Liczba gospodarstw"
+        }
+      },
+      "300 - 400 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Area",
+          "pol": "300 - 400 ha/Powierzchnia"
+        }
+      },
+      "300 - 400 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Arable Land",
+          "pol": "300 - 400 ha/Grunt orny"
+        }
+      },
+      "300 - 400 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Meadows",
+          "pol": "300 - 400 ha/Łąki"
+        }
+      },
+      "300 - 400 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "300 - 400 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "300 - 400 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Orchards and Vegetable Gardens",
+          "pol": "300 - 400 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "300 - 400 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Arable Land under Forest Use",
+          "pol": "300 - 400 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "300 - 400 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "300 - 400 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "300 - 400 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Under buildings and roads",
+          "pol": "300 - 400 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "300 - 400 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "300 - 400 ha/Unproductive land",
+          "pol": "300 - 400 ha/Nieużytki"
+        }
+      },
+      "4 - 5 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Number of holdings",
+          "pol": "4 - 5 ha/Liczba gospodarstw"
+        }
+      },
+      "4 - 5 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Area",
+          "pol": "4 - 5 ha/Powierzchnia"
+        }
+      },
+      "4 - 5 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Arable Land",
+          "pol": "4 - 5 ha/Grunt orny"
+        }
+      },
+      "4 - 5 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Meadows",
+          "pol": "4 - 5 ha/Łąki"
+        }
+      },
+      "4 - 5 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "4 - 5 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "4 - 5 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Orchards and Vegetable Gardens",
+          "pol": "4 - 5 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "4 - 5 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Arable Land under Forest Use",
+          "pol": "4 - 5 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "4 - 5 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "4 - 5 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "4 - 5 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Under buildings and roads",
+          "pol": "4 - 5 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "4 - 5 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "4 - 5 ha/Unproductive land",
+          "pol": "4 - 5 ha/Nieużytki"
+        }
+      },
+      "400 - 500 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Number of holdings",
+          "pol": "400 - 500 ha/Liczba gospodarstw"
+        }
+      },
+      "400 - 500 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Area",
+          "pol": "400 - 500 ha/Powierzchnia"
+        }
+      },
+      "400 - 500 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Arable Land",
+          "pol": "400 - 500 ha/Grunt orny"
+        }
+      },
+      "400 - 500 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Meadows",
+          "pol": "400 - 500 ha/Łąki"
+        }
+      },
+      "400 - 500 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "400 - 500 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "400 - 500 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Orchards and Vegetable Gardens",
+          "pol": "400 - 500 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "400 - 500 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Arable Land under Forest Use",
+          "pol": "400 - 500 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "400 - 500 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "400 - 500 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "400 - 500 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Under buildings and roads",
+          "pol": "400 - 500 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "400 - 500 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "400 - 500 ha/Unproductive land",
+          "pol": "400 - 500 ha/Nieużytki"
+        }
+      },
+      "5 - 10 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Number of holdings",
+          "pol": "5 - 10 ha/Liczba gospodarstw"
+        }
+      },
+      "5 - 10 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Area",
+          "pol": "5 - 10 ha/Powierzchnia"
+        }
+      },
+      "5 - 10 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Arable Land",
+          "pol": "5 - 10 ha/Grunt orny"
+        }
+      },
+      "5 - 10 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Meadows",
+          "pol": "5 - 10 ha/Łąki"
+        }
+      },
+      "5 - 10 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "5 - 10 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "5 - 10 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Orchards and Vegetable Gardens",
+          "pol": "5 - 10 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "5 - 10 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Arable Land under Forest Use",
+          "pol": "5 - 10 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "5 - 10 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "5 - 10 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "5 - 10 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Under buildings and roads",
+          "pol": "5 - 10 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "5 - 10 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "5 - 10 ha/Unproductive land",
+          "pol": "5 - 10 ha/Nieużytki"
+        }
+      },
+      "50 - 100 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Number of holdings",
+          "pol": "50 - 100 ha/Liczba gospodarstw"
+        }
+      },
+      "50 - 100 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Area",
+          "pol": "50 - 100 ha/Powierzchnia"
+        }
+      },
+      "50 - 100 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Arable Land",
+          "pol": "50 - 100 ha/Grunt orny"
+        }
+      },
+      "50 - 100 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Meadows",
+          "pol": "50 - 100 ha/Łąki"
+        }
+      },
+      "50 - 100 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "50 - 100 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "50 - 100 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Orchards and Vegetable Gardens",
+          "pol": "50 - 100 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "50 - 100 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Arable Land under Forest Use",
+          "pol": "50 - 100 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "50 - 100 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "50 - 100 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "50 - 100 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Under buildings and roads",
+          "pol": "50 - 100 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "50 - 100 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "50 - 100 ha/Unproductive land",
+          "pol": "50 - 100 ha/Nieużytki"
+        }
+      },
+      "500 - 1000 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Number of holdings",
+          "pol": "500 - 1000 ha/Liczba gospodarstw"
+        }
+      },
+      "500 - 1000 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Area",
+          "pol": "500 - 1000 ha/Powierzchnia"
+        }
+      },
+      "500 - 1000 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Arable Land",
+          "pol": "500 - 1000 ha/Grunt orny"
+        }
+      },
+      "500 - 1000 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Meadows",
+          "pol": "500 - 1000 ha/Łąki"
+        }
+      },
+      "500 - 1000 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "500 - 1000 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "500 - 1000 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Orchards and Vegetable Gardens",
+          "pol": "500 - 1000 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "500 - 1000 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Arable Land under Forest Use",
+          "pol": "500 - 1000 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "500 - 1000 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "500 - 1000 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "500 - 1000 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Under buildings and roads",
+          "pol": "500 - 1000 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "500 - 1000 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "500 - 1000 ha/Unproductive land",
+          "pol": "500 - 1000 ha/Nieużytki"
+        }
+      },
+      "Ogółem/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Number of holdings",
+          "pol": "Ogółem/Liczba gospodarstw"
+        }
+      },
+      "Ogółem/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Area",
+          "pol": "Ogółem/Powierzchnia"
+        }
+      },
+      "Ogółem/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Arable Land",
+          "pol": "Ogółem/Grunt orny"
+        }
+      },
+      "Ogółem/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Meadows",
+          "pol": "Ogółem/Łąki"
+        }
+      },
+      "Ogółem/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Permanent pastures, mountain meadows, and heaths",
+          "pol": "Ogółem/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "Ogółem/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Orchards and Vegetable Gardens",
+          "pol": "Ogółem/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "Ogółem/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Arable Land under Forest Use",
+          "pol": "Ogółem/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "Ogółem/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "Ogółem/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "Ogółem/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Under buildings and roads",
+          "pol": "Ogółem/Pod zabudowaniami i drogami"
+        }
+      },
+      "Ogółem/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "Together/Unproductive land",
+          "pol": "Ogółem/Nieużytki"
+        }
+      },
+      "powyżej 100 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Number of holdings",
+          "pol": "powyżej 100 ha/Liczba gospodarstw"
+        }
+      },
+      "powyżej 100 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Area",
+          "pol": "powyżej 100 ha/Powierzchnia"
+        }
+      },
+      "powyżej 100 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Arable Land",
+          "pol": "powyżej 100 ha/Grunt orny"
+        }
+      },
+      "powyżej 100 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Meadows",
+          "pol": "powyżej 100 ha/Łąki"
+        }
+      },
+      "powyżej 100 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "powyżej 100 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "powyżej 100 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Orchards and Vegetable Gardens",
+          "pol": "powyżej 100 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "powyżej 100 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Arable Land under Forest Use",
+          "pol": "powyżej 100 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "powyżej 100 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "powyżej 100 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "powyżej 100 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Under buildings and roads",
+          "pol": "powyżej 100 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "powyżej 100 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 100 ha/Unproductive land",
+          "pol": "powyżej 100 ha/Nieużytki"
+        }
+      },
+      "powyżej 1000 ha/Liczba gospodarstw": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Number of holdings",
+          "pol": "powyżej 1000 ha/Liczba gospodarstw"
+        }
+      },
+      "powyżej 1000 ha/Powierzchnia": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Area",
+          "pol": "powyżej 1000 ha/Powierzchnia"
+        }
+      },
+      "powyżej 1000 ha/Grunt orny": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Arable Land",
+          "pol": "powyżej 1000 ha/Grunt orny"
+        }
+      },
+      "powyżej 1000 ha/Łąki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Meadows",
+          "pol": "powyżej 1000 ha/Łąki"
+        }
+      },
+      "powyżej 1000 ha/Pastwiska stałe, połoniny i wrzosowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Permanent pastures, mountain meadows, and heaths",
+          "pol": "powyżej 1000 ha/Pastwiska stałe, połoniny i wrzosowiska"
+        }
+      },
+      "powyżej 1000 ha/Sady owocowe i ogrody warzywne": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Orchards and Vegetable Gardens",
+          "pol": "powyżej 1000 ha/Sady owocowe i ogrody warzywne"
+        }
+      },
+      "powyżej 1000 ha/Grunt w użytkowaniu leśnem": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Arable Land under Forest Use",
+          "pol": "powyżej 1000 ha/Grunt w użytkowaniu leśnem"
+        }
+      },
+      "powyżej 1000 ha/Stawy, jeziora i eksploatowane torfowiska": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Ponds, Lakes, and Exploited Peatlands",
+          "pol": "powyżej 1000 ha/Stawy, jeziora i eksploatowane torfowiska"
+        }
+      },
+      "powyżej 1000 ha/Pod zabudowaniami i drogami": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Under buildings and roads",
+          "pol": "powyżej 1000 ha/Pod zabudowaniami i drogami"
+        }
+      },
+      "powyżej 1000 ha/Nieużytki": {
+        "unit": "",
+        "data_type": "",
+        "category": {
+          "eng": "over 1000 ha/Unproductive land",
+          "pol": "powyżej 1000 ha/Nieużytki"
+        }
+      }
+    }
+  }
+]

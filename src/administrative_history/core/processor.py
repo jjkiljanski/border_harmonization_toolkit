@@ -54,8 +54,8 @@ class AdministrativeHistoryProcessor():
         self.processing_config = ProcessingConfig(**processing_config)
         self.post_processing_config = self.processing_config.post_processing_config
 
-        self.adm_units_raw_data_metadata_path = self.processing_config.adm_units_raw_data_metadata_path
-        self.cities_raw_data_metadata_path = self.processing_config.cities_raw_data_metadata_path
+        self.adm_units_raw_data_metadata_folder = self.processing_config.adm_units_raw_data_metadata_folder
+        self.cities_raw_data_metadata_folder = self.processing_config.cities_raw_data_metadata_folder
         self.harmonize_to_date = datetime.strptime(self.processing_config.harmonize_to_date, "%d.%m.%Y")
         self.adm_units_raw_data_folder = self.processing_config.adm_units_raw_data_folder
         self.cities_raw_data_folder = self.processing_config.cities_raw_data_folder
@@ -91,13 +91,13 @@ class AdministrativeHistoryProcessor():
         t0 = time.time()
         print("Loading metadata of the data tables that will be harmonized...")
 
-        with open(self.adm_units_raw_data_metadata_path, "r", encoding="utf-8") as f:
-            adm_units_raw = json.load(f)
-        adm_units_reg = MetadataRegistry.from_json_list(adm_units_raw)
+        adm_units_reg = MetadataRegistry.from_folder(
+            Path(self.adm_units_raw_data_metadata_folder)
+        )
 
-        with open(self.cities_raw_data_metadata_path, "r", encoding="utf-8") as f:
-            cities_raw = json.load(f)
-        cities_reg = MetadataRegistry.from_json_list(cities_raw)
+        cities_reg = MetadataRegistry.from_folder(
+            Path(self.cities_raw_data_metadata_folder)
+        )
 
         # Merge into a single registry for raw data (preserving sorted order)
         self.raw_data_metadata = MetadataRegistry(

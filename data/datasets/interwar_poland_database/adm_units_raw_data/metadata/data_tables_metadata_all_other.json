@@ -860,6 +860,674 @@
       }
   },
   {
+    "data_table_id": "1921-education_ready",
+    "adm_level": "District",
+    "source": "",
+    "link": "",
+    "table": "",
+    "page": null,
+    "pdf_page": null,
+    "description": {
+      "pol": "Wykształcenie ludności w wieku 10 lat i powyżej wg. spisu powszechnego 1921 (stan na 30.09.1921).",
+      "eng": "Educational attainment of the population aged 10 years and over according to the 1921 Census (state for 30.09.1921)."
+    },
+    "date": "30.09.1921",
+    "orig_adm_state_date": "30.07.1921",
+    "standardization_comments": "Dane dla występującego osobno Okręgu Dąbrowsko-Sosnowieckiego (taki powiat nie istniał w 1921 roku) zostały dodane do danych dla powiatu Będzińskiego.",
+    "harmonization_method": "proportional_to_territory",
+    "imputation_method": null,
+    "columns": {
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/r": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/r",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas/r"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/m": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/m",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas/m"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total/k"
+          }
+      },
+      "Spis powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/k": {
+          "unit": "",
+          "data_type": "int",
+          "category": {
+              "pol": "Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/k",
+              "eng": "Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas/k"
+          }
+      }
+    }
+  },
+  {
     "data_table_id": "1921-occupation_ready_clean",
     "adm_level": "District",
     "source": "",

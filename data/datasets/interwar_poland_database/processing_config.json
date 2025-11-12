@@ -1,6 +1,6 @@
 {
-    "adm_units_raw_data_metadata_path": "data/datasets/interwar_poland_database/adm_units_raw_data/data_tables_metadata.json",
-    "cities_raw_data_metadata_path": "data/datasets/interwar_poland_database/cities_raw_data/data_tables_metadata.json",
+    "adm_units_raw_data_metadata_folder": "data/datasets/interwar_poland_database/adm_units_raw_data/metadata/",
+    "cities_raw_data_metadata_folder": "data/datasets/interwar_poland_database/cities_raw_data/metadata/",
     "adm_units_raw_data_folder": "data/datasets/interwar_poland_database/adm_units_raw_data/data/",
     "cities_raw_data_folder": "data/datasets/interwar_poland_database/cities_raw_data/data/",
     "processed_data_output_folder": "data/datasets/interwar_poland_database/processed_data/",
@@ -69,6 +69,28 @@
                     "1931-religion_southern_western_voivodships"
                 ],
                 "new_data_table_name": "1931-religion"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "sum",
+                "data_tables_list": [
+                    "destroyed_buildings_silesia_vilnius_ready",
+                    "destroyed_buildings_no_silesia_vilnius_ready"
+                ],
+                "new_data_table_name": "destroyed_buildings"
+            }
+        },
+        {
+            "method_name": "combine_data_tables",
+            "arguments": {
+                "method": "sum",
+                "data_tables_list": [
+                    "1931-land_area_shares_pz_ready",
+                    "1931-land_area_shares_cw_ready"
+                ],
+                "new_data_table_name": "1931-land_area_shares"
             }
         },
         {

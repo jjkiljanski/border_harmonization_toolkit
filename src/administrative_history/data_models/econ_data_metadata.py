@@ -2,7 +2,10 @@ from __future__ import annotations
 
 from pydantic import BaseModel, model_validator
 from typing import Union, Optional, Literal, List, Dict, Any, Tuple
+from pydantic.type_adapter import TypeAdapter
 from datetime import datetime
+from pathlib import Path
+import json
 
 class ColumnMetadata(BaseModel):
     unit: str
@@ -106,6 +109,9 @@ class DataTableMetadata(BaseModel):
                         )
 
         return self
+    
+# Adapter for validating a list of DataTableMetadata
+_DATA_TABLE_LIST = TypeAdapter(List[DataTableMetadata])
 class MetadataRegistry(BaseModel):
     """
     A registry of data-table metadata entries with a helper to flatten
@@ -115,11 +121,47 @@ class MetadataRegistry(BaseModel):
     """
     items: List[DataTableMetadata] = []
 
-    # ------------------------ Loader ------------------------
+    # ------------------------ Loaders -----------------------
 
     @classmethod
     def from_json_list(cls, data: List[Dict[str, Any]]) -> "MetadataRegistry":
         return cls.model_validate({"items": data}).sort_by_dates_inplace()
+    
+    @classmethod
+    def from_folder(cls, folder: Path) -> "MetadataRegistry":
+        """
+        Read all *.json files directly in `folder`.
+        Each must contain a JSON list of DataTableMetadata dicts.
+        Loads all valid files, reports (but does not stop on) file errors.
+        Raises if no JSON files are found in the folder.
+        """
+        if not folder.exists() or not folder.is_dir():
+            raise FileNotFoundError(f"{folder} is not a directory")
+
+        json_files = sorted(folder.glob("*.json"))
+        if not json_files:
+            raise FileNotFoundError(f"No *.json files found in folder: {folder}")
+
+        all_items: List[DataTableMetadata] = []
+
+        for json_path in json_files:
+            try:
+                with json_path.open("r", encoding="utf-8") as f:
+                    payload = json.load(f)
+
+                if not isinstance(payload, list):
+                    raise TypeError(
+                        f"{json_path} must contain a JSON list, got {type(payload).__name__}"
+                    )
+
+                items = _DATA_TABLE_LIST.validate_python(payload)
+                all_items.extend(items)
+
+            except Exception as e:
+                # Report and continue; the caller can log or handle differently if needed
+                print(f"[MetadataRegistry.from_folder] Skipped {json_path}: {e}")
+
+        return cls(items=all_items)
     
     # ------------------------ Sorter ------------------------
 
