@@ -606,39 +606,202 @@ class AdministrativeHistory():
 
         # Return the name_id of the first matching district
         return address
-    
-    def geojson(self, date: datetime, adm_level='District'):
+
+    def geojson(
+        self,
+        date: datetime,
+        adm_level: str = 'District',
+        custom_grouping: Optional[Dict[str, str]] = None,
+        homeland_only: bool = True,
+    ):
+        """
+        Build a GeoDataFrame of administrative units for a given date.
+
+        Parameters
+        ----------
+        date : datetime
+            Date for which to construct the geometry.
+        adm_level : {'District', 'Region', 'HOMELAND'}, default 'District'
+            Administrative level of the returned geometries.
+        custom_grouping : dict, optional
+            Mapping from district name -> custom group label.
+            Only supported when adm_level == 'District'.
+            Must contain *exactly* the same set of districts as
+            `all_dists = adm_state.all_district_names(homeland_only=homeland_only)`.
+        homeland_only : bool, default True
+            If True and adm_level == 'District', only homeland districts are included.
+            If False, all districts are included.
+            For 'Region' and 'HOMELAND', this flag is currently ignored
+            (those levels are inherently homeland-based).
+        """
         if adm_level not in ['District', 'Region', 'HOMELAND']:
-            raise ValueError(f"The argument adm_level must be 'District', 'Region', or 'HOMELAND'. Passed: {adm_level}")
-        
-        states_and_names = [(district.find_state_by_date(date), district.name_id) for district in self.dist_registry.unit_list if district.exists(date)]
-        # Extract geometries and district names
-        geometries = [state.current_territory for state, _ in states_and_names if state.current_territory is not None]
-        dist_name_id = [name for state, name in states_and_names if state.current_territory is not None]  # Extract names for each district
+            raise ValueError(
+                "The argument adm_level must be 'District', 'Region', or 'HOMELAND'. "
+                f"Passed: {adm_level}"
+            )
 
-        # Return a GeoDataFrame with district names and corresponding geometries
-        dist_geo = gpd.GeoDataFrame({'District': dist_name_id, 'geometry': geometries}, crs = "EPSG:4326")
+        # We'll need the adm_state in any case
+        chosen_adm_state = self.find_adm_state_by_date(date)
 
+        # --- Base district geometries (all districts that exist at this date) ---
+        states_and_names = [
+            (district.find_state_by_date(date), district.name_id)
+            for district in self.dist_registry.unit_list
+            if district.exists(date)
+        ]
+
+        geometries = [
+            state.current_territory
+            for state, _ in states_and_names
+            if state.current_territory is not None
+        ]
+        dist_name_id = [
+            name
+            for state, name in states_and_names
+            if state.current_territory is not None
+        ]
+
+        dist_geo = gpd.GeoDataFrame(
+            {'District': dist_name_id, 'geometry': geometries},
+            crs="EPSG:4326"
+        )
+
+        # ---- District level (with homeland_only + custom_grouping support) ----
         if adm_level == 'District':
-            return dist_geo
+            # Get the list of districts that *should* be present
+            all_dists = chosen_adm_state.all_district_names(homeland_only=homeland_only)
+
+            # Filter the geometries to those districts
+            dist_geo = dist_geo[dist_geo['District'].isin(all_dists)].copy()
+
+            # Optional: sanity check that we didn't lose or gain anything weird
+            geo_set = set(dist_geo['District'])
+            all_set = set(all_dists)
+            if geo_set != all_set:
+                missing_in_geo = sorted(all_set - geo_set)
+                extra_in_geo = sorted(geo_set - all_set)
+                raise RuntimeError(
+                    "District set for the geometry doesn't agree with the "
+                    "district set from the administrative state.\n"
+                    f"Missing in geometry: {missing_in_geo}\n"
+                    f"Extra in geometry: {extra_in_geo}"
+                )
+
+            base_geo = dist_geo[['District', 'geometry']].copy()
+
+            # ---- Custom grouping on districts ----
+            if custom_grouping is not None:
+                grouping_keys = set(custom_grouping.keys())
+                # strict equality: keys must match the district list exactly
+                if grouping_keys != all_set:
+                    missing_in_grouping = sorted(all_set - grouping_keys)
+                    extra_in_grouping = sorted(grouping_keys - all_set)
+                    msg_parts = []
+                    if missing_in_grouping:
+                        msg_parts.append(
+                            f"Missing in custom_grouping: {missing_in_grouping}"
+                        )
+                    if extra_in_grouping:
+                        msg_parts.append(
+                            f"Extra keys in custom_grouping (not districts at this date/"
+                            f"homeland_only={homeland_only}): {extra_in_grouping}"
+                        )
+                    raise ValueError(
+                        "custom_grouping.keys() must match exactly the district set "
+                        f"returned by all_district_names(homeland_only={homeland_only}). "
+                        + " ".join(msg_parts)
+                    )
+
+                base_geo['__group__'] = base_geo['District'].map(custom_grouping)
+
+                # Dissolve by custom group labels
+                grouped_geo = base_geo.dissolve(by='__group__', as_index=False)
+
+                # Keep only the group label + geometry to avoid duplicate "District"
+                grouped_geo = grouped_geo[['__group__', 'geometry']].copy()
+
+                # Rename group column back to "District"
+                grouped_geo = grouped_geo.rename(columns={'__group__': 'District'})
+
+                return grouped_geo
+            else:
+                return base_geo
+
+        # ---- Region level (unchanged, homeland_only/custom_grouping ignored) ----
         elif adm_level == 'Region':
-            chosen_adm_state = self.find_adm_state_by_date(date)
+            if custom_grouping is not None:
+                raise ValueError(
+                    "custom_grouping is currently only supported for adm_level='District'."
+                )
+
             hierarchy = chosen_adm_state.unit_hierarchy["HOMELAND"]
-            district_to_region = {district: region for region, region_items in hierarchy.items() for district in region_items.keys()}
+            district_to_region = {
+                district: region
+                for region, region_items in hierarchy.items()
+                for district in region_items.keys()
+            }
+
+            dist_geo = dist_geo.copy()
             dist_geo['Region'] = dist_geo['District'].map(district_to_region)
+
+            if dist_geo['Region'].isnull().any():
+                missing = dist_geo.loc[dist_geo['Region'].isnull(), 'District'].tolist()
+                raise RuntimeError(
+                    "Some districts could not be mapped to a region based on the hierarchy. "
+                    f"Missing for districts: {missing}"
+                )
+
             region_geo = dist_geo.dissolve(by='Region', as_index=False)
             region_geo = region_geo[['Region', 'geometry']]
             return region_geo
-        else:
-            chosen_adm_state = self.find_adm_state_by_date(date)
+
+        # ---- HOMELAND aggregated geometry (single polygon) ----
+        else:  # adm_level == 'HOMELAND'
+            if custom_grouping is not None:
+                raise ValueError(
+                    "custom_grouping is not supported for adm_level='HOMELAND', "
+                    "since it represents a single aggregated unit."
+                )
+
             hierarchy = chosen_adm_state.unit_hierarchy["HOMELAND"]
-            districts_in_homeland = [district for region_name, region_items in hierarchy.items() for district in region_items.keys()]
+            districts_in_homeland = [
+                district
+                for _, region_items in hierarchy.items()
+                for district in region_items.keys()
+            ]
             dist_geo = dist_geo[dist_geo['District'].isin(districts_in_homeland)]
-            homeland_geo = dist_geo.dissolve()
+            homeland_geo = dist_geo.dissolve()  # single geometry
             return homeland_geo
 
+    def export_geojson(
+        self,
+        date: datetime,
+        file_path: str,
+        adm_level: str = 'District',
+        custom_grouping: Optional[Dict[str, str]] = None,
+        homeland_only: bool = True,
+    ):
+        """
+        Export a GeoJSON file for the specified date and administrative level.
 
-        
-    def export_geojson(self, date, file_path, adm_level='District'):
-        gdf = self.geojson(date, adm_level)
+        Parameters
+        ----------
+        date : datetime
+            Date for which to construct the geometry.
+        file_path : str
+            Output path for the GeoJSON file.
+        adm_level : {'District', 'Region', 'HOMELAND'}, default 'District'
+            Administrative level of the geometries.
+        custom_grouping : dict, optional
+            See `geojson` docstring. Only supported for adm_level='District'.
+        homeland_only : bool, default True
+            Passed through to `geojson`; controls whether only homeland
+            districts are used (for adm_level='District').
+        """
+        gdf = self.geojson(
+            date,
+            adm_level=adm_level,
+            custom_grouping=custom_grouping,
+            homeland_only=homeland_only,
+        )
         gdf.to_file(file_path, driver="GeoJSON")
