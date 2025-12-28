@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import os
-from typing import Dict
+from typing import Dict, Iterable, Optional
 from collections import defaultdict
+from datetime import datetime
+from pathlib import Path
 
 import geopandas as gpd
 import matplotlib.pyplot as plt
@@ -107,7 +109,6 @@ def plot_administrative_borders(
     else:
         plt.show()
 
-
 def plot_convergence(
     year_df_dict,
     values_column,
@@ -117,33 +118,29 @@ def plot_convergence(
     group_to_color=None,
     plots_output_path=None,
     path_suffix=None,
-    verbose = False
+    verbose=False
 ):
     """
     Plots values over time from a dictionary of {year: DataFrame}.
 
-    Parameters:
-    - year_df_dict (dict): Dictionary with year as keys and DataFrames as values.
-    - values_column (str): Name of the column with values to plot.
-    - adm_level (str): Name of the column representing districts or data level.
-    - color_by_district (bool): Whether to color-code points by region group.
-    - d_to_group (dict): Mapping from district to region group.
-    - group_to_color (dict): Mapping from region group to color.
-    - save_to_path (str): If provided, saves the plot to this path.
-
-    Returns:
-    - None
+    If plots_output_path is provided, the directory is created if missing,
+    and the plot is saved there.
     """
 
     # Combine all years into a single DataFrame
     all_years_data = []
     for year, df in year_df_dict.items():
         if df.index.name != adm_level:
-            raise ValueError(f"The df for year {year} in year_df_dict index name must be '{adm_level}'. Found: {df.index.name}.")
+            raise ValueError(
+                f"The df for year {year} in year_df_dict index name must be '{adm_level}'. "
+                f"Found: {df.index.name}."
+            )
+
         temp = df.copy()
-        temp['Year'] = year
+        temp["Year"] = year
+
         if values_column in temp.columns:
-            all_years_data.append(temp[['Year', values_column]].reset_index())
+            all_years_data.append(temp[["Year", values_column]].reset_index())
             if verbose:
                 print(f"Added values from {values_column} to plot.")
         else:
@@ -155,6 +152,9 @@ def plot_convergence(
 
     combined_df = pd.concat(all_years_data, ignore_index=True)
 
+    # Plot
+    plt.figure(figsize=(10, 6))
+
     if color_by_district:
         if d_to_group is None or group_to_color is None:
             raise ValueError("To color by district, both 'd_to_group' and 'group_to_color' must be provided.")
@@ -165,58 +165,64 @@ def plot_convergence(
         if unmapped_districts:
             raise ValueError(f"The following districts are missing in 'd_to_group': {unmapped_districts}")
 
+        combined_df["Region Group"] = combined_df[adm_level].map(d_to_group)
+
         # Validate all region groups are mapped
-        combined_df['Region Group'] = combined_df[adm_level].map(d_to_group)
-        unique_region_groups = combined_df['Region Group'].unique()
-        unmapped_region_groups = [r for r in unique_region_groups if r not in group_to_color.keys()]
+        unique_region_groups = combined_df["Region Group"].unique()
+        unmapped_region_groups = [r for r in unique_region_groups if r not in group_to_color]
         if unmapped_region_groups:
             raise ValueError(f"The following region groups are missing in 'group_to_color': {unmapped_region_groups}")
 
-        # Assign colors
-        combined_df['Color'] = combined_df['Region Group'].map(group_to_color)
+        combined_df["Color"] = combined_df["Region Group"].map(group_to_color)
 
-        # Plot
-        plt.figure(figsize=(10, 6))
         plt.scatter(
-            combined_df['Year'],
+            combined_df["Year"],
             combined_df[values_column],
-            c=combined_df['Color'],
+            c=combined_df["Color"],
             alpha=0.7,
             s=15
         )
 
-        # Custom legend
         legend_handles = [
             mpatches.Patch(color=color, label=region)
             for region, color in group_to_color.items()
         ]
-        plt.legend(handles=legend_handles, title="Region Group", bbox_to_anchor=(1.05, 1), loc='upper left')
+        plt.legend(handles=legend_handles, title="Region Group", bbox_to_anchor=(1.05, 1), loc="upper left")
 
     else:
-        # Default plotting
-        plt.figure(figsize=(10, 6))
-        plt.scatter(combined_df['Year'], combined_df[values_column], alpha=0.7)
+        plt.scatter(combined_df["Year"], combined_df[values_column], alpha=0.7, s=15)
 
-    # Final plot formatting
+    # Final formatting
     plt.title(f'{values_column.replace("_", " ")} by {adm_level} Over Time')
-    plt.xlabel('Year')
-    plt.ylabel(values_column.replace('_', ' '))
+    plt.xlabel("Year")
+    plt.ylabel(values_column.replace("_", " "))
     plt.grid(True)
     plt.tight_layout()
-    
-    # Save or show the plot
-    if path_suffix:
-        save_to_path = plots_output_path + path_suffix + "convergence.png"
-        plt.savefig(save_to_path, dpi=300, bbox_inches='tight')
-        print(f"Plot saved to {save_to_path}")
+
+    # Save or show
+    if plots_output_path is not None:
+        out_dir = Path(plots_output_path)
+
+        # If they pass a suffix like "foo/bar/" or "foo/bar", treat it as subfolders
+        if path_suffix:
+            out_dir = out_dir / path_suffix
+
+        # Create directory tree if missing
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+        save_to_path = out_dir / "convergence.png"
+        plt.savefig(save_to_path, dpi=300, bbox_inches="tight")
+        if verbose:
+            print(f"Plot saved to {save_to_path}")
         plt.close()
     else:
         plt.show()
 
-from administrative_history.core.core import AdministrativeHistory
+from administrative_history.core.plotter import AdministrativeHistoryPlotter
 
 def plot_year_df_columns(
-    administrative_history: AdministrativeHistory,
+    adm_history_plotter: AdministrativeHistoryPlotter,
+    adm_state_date: datetime,
     custom_dist_grouping: Dict,
     plots_output_path: str,
     path_suffix: str,
@@ -232,6 +238,7 @@ def plot_year_df_columns(
     Creates maps for each column in each DataFrame in year_df_dict and optionally saves the data to an Excel file.
 
     Parameters:
+    - adm_state_date (datetime): The administrative state date to use for plotting.
     - path_suffix (str): Subfolder path where plots and Excel file will be saved.
     - year_df_dict (Dict[int, pd.DataFrame]): Dictionary mapping years to DataFrames.
     - col_name (str): Base name used in file naming and Excel export.
@@ -243,7 +250,12 @@ def plot_year_df_columns(
     """
     import os
 
-    os.makedirs(os.path.join(plots_output_path, path_suffix), exist_ok=True)
+    # Build the target directory and ensure it exists
+    base_dir = Path(plots_output_path)
+    # Treat path_suffix as *always relative*, even if it starts with "/" or "\"
+    clean_suffix = path_suffix.lstrip("/\\")
+    target_dir = base_dir / clean_suffix
+    target_dir.mkdir(parents=True, exist_ok=True)
 
     # Collect all years' data into one DataFrame
     combined_df = pd.DataFrame()
@@ -252,11 +264,11 @@ def plot_year_df_columns(
         if col_name not in df.columns:
             raise ValueError(f"df for year {year} doesn't contain the {col_name} column!")
         plot_path = plots_output_path + path_suffix + f"{year}.png"
-        fig = administrative_history.plot_dataset(
+        fig = adm_history_plotter.plot_dataset(
             df=df,
             col_name=col_name,
             adm_level='District',
-            adm_state_date=administrative_history.harmonize_to_date,
+            adm_state_date=adm_state_date,
             save_to_path=plot_path,
             title=f'{title} ({year})',
             legend_min = legend_min,
@@ -273,55 +285,60 @@ def plot_year_df_columns(
         combined_df.to_excel(excel_path, sheet_name="data")
 
 def plot_df_columns_and_export_excel(
-    administrative_history: AdministrativeHistory,
+    adm_history_plotter: "AdministrativeHistoryPlotter",
+    adm_state_date: datetime,
     custom_dist_grouping: Dict,
     plots_output_path: str,
     path_suffix: str,
     df: pd.DataFrame,
     col_title_prefix: str,
-    cmap: str = 'OrRd',
+    cmap: str = "OrRd",
     export_excel: bool = True,
-    columns_subset = None
-):
+    columns_subset: Optional[Iterable[str]] = None,
+) -> None:
     """
     Creates maps for all columns in the DataFrame and optionally saves them and the data to an Excel file.
-
-    Parameters:
-    - path_suffix (str): Subfolder path where plots and Excel file will be saved.
-    - df (pd.DataFrame): DataFrame to be visualized and exported. Index should be District or Region.
-    - col_title_prefix (str): Prefix added to the title of each plot.
-    - adm_state_date (datetime): The administrative state date to use for plotting.
-    - cmap (str): Color map for the plots.
-    - export_excel (bool): Whether to export the data to an Excel file.
-    - columns_subset (list): If passed, plots only the given subset of the columns.
     """
-    import os
 
-    os.makedirs(os.path.join(plots_output_path, path_suffix), exist_ok=True)
+    # Build the target directory and ensure it exists
+    base_dir = Path(plots_output_path)
+    # Treat path_suffix as *always relative*, even if it starts with "/" or "\"
+    clean_suffix = path_suffix.lstrip("/\\")
+    target_dir = base_dir / clean_suffix
+    target_dir.mkdir(parents=True, exist_ok=True)
 
     combined_df = pd.DataFrame(index=df.index)
 
+    # Determine which columns to plot
     if columns_subset is None:
-        columns_subset = df.columns
+        effective_columns = list(df.columns)
     else:
-        columns_subset = list(set(columns_subset)&set(df.columns))
+        effective_columns = list(set(columns_subset) & set(df.columns))
 
-    for i, column in enumerate(columns_subset):
-        plot_path = plots_output_path + path_suffix + f"{column.replace(': ', '_')}.png"
-        fig = administrative_history.plot_dataset(
+    for column in effective_columns:
+
+        # Clean the column name for filenames
+        # Replace "/" to avoid invalid filenames
+        safe_col_name = column.replace("/", "_").replace(": ", "_")
+
+        # Full path for the plot
+        plot_path = target_dir / f"{safe_col_name}.png"
+
+        adm_history_plotter.plot_dataset(
             df=df,
             col_name=column,
-            adm_level='District',
-            adm_state_date = administrative_history.harmonize_to_date,
-            save_to_path=plot_path,
-            title=f'{col_title_prefix} ({column})',
+            adm_level="District",
+            adm_state_date=adm_state_date,
+            save_to_path=str(plot_path),
+            title=f"{col_title_prefix} ({column})",
             cmap=cmap,
-            custom_grouping = custom_dist_grouping
+            custom_grouping=custom_dist_grouping,
         )
+
         combined_df[column] = df[column]
 
     if export_excel:
-        excel_path = plots_output_path + path_suffix + f"data.xlsx"
+        excel_path = target_dir / "data.xlsx"
         print(f"Exporting to {excel_path}")
         combined_df.to_excel(excel_path, sheet_name="data")
 
@@ -484,8 +501,6 @@ def plot_theil_decompositions(results, save_path: str, sector_colors: Dict[str, 
         plt.savefig(os.path.join(save_path, f"sectoral_shapley_{level.lower()}.png"))
         plt.close()
 
-import matplotlib.pyplot as plt
-
 def plot_theil_decomposition_sequence(
     production_by_year: dict,
     variable: str,
@@ -493,20 +508,14 @@ def plot_theil_decomposition_sequence(
     population_col: str = 'Population',
     pop_by_year: dict = None,
     save_path: str = None,
-    var_title: str = None
+    var_title: str = None,
+    verbose: bool = False
 ):
     """
     Plots the Theil index decomposition (Total, Between, Within) over years
     for a given variable across a dictionary of yearly data.
 
-    Parameters:
-        production_by_year (dict): {year: DataFrame}, each with 'District' index and the target variable.
-        variable (str): Name of the variable to analyze (column in DataFrames).
-        d_to_r (dict): Mapping of district names to regions.
-        population_col (str): Name of population column. Default is 'Population'.
-        pop_by_year (dict): Optional dict {year: DataFrame} with population data per district.
-        save_path (str): Optional path to save the plot.
-        var_title (str): Optional title for the variable (used in plot title).
+    If save_path is provided, its parent directory is created if missing.
     """
     from gdp_computation_utils.estimates import decompose_theil_regionally
 
@@ -537,13 +546,20 @@ def plot_theil_decomposition_sequence(
 
     plt.xlabel('Year')
     plt.ylabel('Theil Index')
-    title = f"Theil Decomposition of {var_title or variable} Over Time"
-    plt.title(title)
+    plt.title(f"Theil Decomposition of {var_title or variable} Over Time")
     plt.legend()
     plt.grid(True)
 
     if save_path:
+        save_path = Path(save_path)
+
+        # Create parent directory if it doesn't exist
+        save_path.parent.mkdir(parents=True, exist_ok=True)
+
         plt.savefig(save_path, bbox_inches='tight')
+        if verbose:
+            print(f"Plot saved to {save_path}")
+        plt.close()
     else:
         plt.show()
 
