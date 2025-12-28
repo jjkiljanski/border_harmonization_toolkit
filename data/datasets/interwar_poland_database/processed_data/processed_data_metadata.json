@@ -1831,11 +1831,11 @@
         "harmonization_method": "proportional_to_territory",
         "imputation_method": null,
         "columns": {
-            "Buildings/Census 1921/Buildings/Total Number": {
+            "Buildings/Total Number of Buildings": {
                 "unit": "",
                 "category": {
-                    "eng": "Buildings/Census 1921/Buildings/Total Number",
-                    "pol": "Budynki/Spis Powszechny 1921/Budynki/Całkowita liczba nieruchomości"
+                    "eng": "Buildings/Total Number of Buildings",
+                    "pol": "Budynki/Całkowita liczba nieruchomości"
                 },
                 "data_type": "int",
                 "completeness": 1.0,
@@ -9773,7 +9773,7 @@
                 "unit": "ha",
                 "category": {
                     "eng": "Crops/Area/Beans, Broad Beans, and Lentils",
-                    "pol": "Uprawy rolne/Powierzchnia/Fasola, Bób, Soczewica"
+                    "pol": "Uprawy rolne/Powierzchnia/Fasola, bób, soczewica"
                 },
                 "data_type": "float",
                 "completeness": 0.9288256227758007,
@@ -17364,10 +17364,10 @@
                 "n_na_after_imputation": null,
                 "n_not_na_after_imputation": null
             },
-            "Business Permissions/Industry/73. Horticulture and fisheries/VIII": {
+            "Business Permissions/Industry/73. Horticulture and fisheries/V-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/73. Horticulture and fisheries/VIII",
+                    "eng": "Business Permissions/Industry/73. Horticulture and fisheries/V-VII",
                     "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/73. Ogrodnictwo i rybołówstwo/VIII"
                 },
                 "data_type": "int",
@@ -18274,10 +18274,10 @@
                 "n_na_after_imputation": null,
                 "n_not_na_after_imputation": null
             },
-            "Business Permissions/Industry/69. Services/VIII": {
+            "Business Permissions/Industry/69. Services/V-VII": {
                 "unit": "",
                 "category": {
-                    "eng": "Business Permissions/Industry/69. Services/VIII",
+                    "eng": "Business Permissions/Industry/69. Services/V-VII",
                     "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/69. Świadczenia/VIII"
                 },
                 "data_type": "int",
@@ -27920,9 +27920,9 @@
                     "pol": "Spis Powszechny 1921/Ludność/Ogółem (dane z publikacji o spisie 1931)"
                 },
                 "data_type": "int",
-                "completeness": 2.0,
-                "n_na": -264,
-                "n_not_na": 528,
+                "completeness": 1.643939393939394,
+                "n_na": -170,
+                "n_not_na": 434,
                 "completeness_after_imputation": null,
                 "n_na_after_imputation": null,
                 "n_not_na_after_imputation": null

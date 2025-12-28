@@ -1,4 +1,5 @@
 ﻿level,name,path,parent,is_leaf
+1,Budynki,Budynki,,False
 1,Ceny,Ceny,,False
 1,Inwentarz żywy,Inwentarz żywy,,False
 1,Lasy,Lasy,,False
@@ -6,10 +7,22 @@
 1,Rocznik 1939,Rocznik 1939,,False
 1,Spis Powszechny 1921,Spis Powszechny 1921,,False
 1,Spis Powszechny 1931,Spis Powszechny 1931,,False
+1,Struktura własności gospodarstw,Struktura własności gospodarstw,,False
 1,Uprawy rolne,Uprawy rolne,,False
 1,Wielka Własność Rolna,Wielka Własność Rolna,,False
 1,Zatrudnienie,Zatrudnienie,,False
 1,Zezwolenia dla przedsiębiorstw,Zezwolenia dla przedsiębiorstw,,False
+1,Zniszczenia Wojenne 1914-1920,Zniszczenia Wojenne 1914-1920,,False
+2,Całkowita liczba nieruchomości,Budynki/Całkowita liczba nieruchomości,Budynki,True
+2,Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość,Budynki,False
+2,Liczba budynków z przeznaczenia mieszkalnych na 1 km2,Budynki/Liczba budynków z przeznaczenia mieszkalnych na 1 km2,Budynki,True
+2,Liczba ludności na 1 budynek,Budynki/Liczba ludności na 1 budynek,Budynki,False
+2,Liczba ludności na 1 nieruchomość zamieszkaną,Budynki/Liczba ludności na 1 nieruchomość zamieszkaną,Budynki,False
+2,Na 100 budynków było,Budynki/Na 100 budynków było,Budynki,False
+2,Na 100 budynków miało pokrycie,Budynki/Na 100 budynków miało pokrycie,Budynki,False
+2,Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych,Budynki,False
+2,Na 100 budynków zamieszkanych było,Budynki/Na 100 budynków zamieszkanych było,Budynki,False
+2,Na 100 mieszkań było niezamieszkanych,Budynki/Na 100 mieszkań było niezamieszkanych,Budynki,False
 2,Lokalne płacone producentom,Ceny/Lokalne płacone producentom,Ceny,False
 2,Bydło rogate,Inwentarz żywy/Bydło rogate,Inwentarz żywy,True
 2,Konie,Inwentarz żywy/Konie,Inwentarz żywy,True
@@ -18,16 +31,44 @@
 2,Owce i kozy,Inwentarz żywy/Owce i kozy,Inwentarz żywy,True
 2,Trzoda chlewna,Inwentarz żywy/Trzoda chlewna,Inwentarz żywy,True
 2,Powierzchnia,Lasy/Powierzchnia,Lasy,True
-2,Ludność,Rocznik 1939/Ludność,Rocznik 1939,False
+2,Ludność Miast,Rocznik 1939/Ludność Miast,Rocznik 1939,False
 2,Ludność,Spis Powszechny 1921/Ludność,Spis Powszechny 1921,False
+2,Ludność Miast,Spis Powszechny 1921/Ludność Miast,Spis Powszechny 1921,False
 2,Narodowość,Spis Powszechny 1921/Narodowość,Spis Powszechny 1921,False
+2,Wykształcenie ludności w wieku 10 lat i więcej,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,Spis Powszechny 1921,False
 2,Wyznanie,Spis Powszechny 1921/Wyznanie,Spis Powszechny 1921,False
 2,Zawód Główny,Spis Powszechny 1921/Zawód Główny,Spis Powszechny 1921,False
 2,Język ojczysty,Spis Powszechny 1931/Język ojczysty,Spis Powszechny 1931,False
 2,Ludność,Spis Powszechny 1931/Ludność,Spis Powszechny 1931,False
 2,Ludność aktywna zawodowo,Spis Powszechny 1931/Ludność aktywna zawodowo,Spis Powszechny 1931,False
+2,Ludność Miast,Spis Powszechny 1931/Ludność Miast,Spis Powszechny 1931,False
 2,Wyznanie,Spis Powszechny 1931/Wyznanie,Spis Powszechny 1931,False
 2,Zawód Główny,Spis Powszechny 1931/Zawód Główny,Spis Powszechny 1931,False
+2,"0,0 - 0,5 ha","Struktura własności gospodarstw/0,0 - 0,5 ha",Struktura własności gospodarstw,False
+2,"0,5 - 1,0 ha","Struktura własności gospodarstw/0,5 - 1,0 ha",Struktura własności gospodarstw,False
+2,1 - 2 ha,Struktura własności gospodarstw/1 - 2 ha,Struktura własności gospodarstw,False
+2,10 - 15 ha,Struktura własności gospodarstw/10 - 15 ha,Struktura własności gospodarstw,False
+2,10 - 20 ha,Struktura własności gospodarstw/10 - 20 ha,Struktura własności gospodarstw,False
+2,100 - 200 ha,Struktura własności gospodarstw/100 - 200 ha,Struktura własności gospodarstw,False
+2,15 - 50 ha,Struktura własności gospodarstw/15 - 50 ha,Struktura własności gospodarstw,False
+2,2 - 3 ha,Struktura własności gospodarstw/2 - 3 ha,Struktura własności gospodarstw,False
+2,2 - 5 ha,Struktura własności gospodarstw/2 - 5 ha,Struktura własności gospodarstw,False
+2,20 - 50 ha,Struktura własności gospodarstw/20 - 50 ha,Struktura własności gospodarstw,False
+2,200 - 1000 ha,Struktura własności gospodarstw/200 - 1000 ha,Struktura własności gospodarstw,False
+2,200 - 300 ha,Struktura własności gospodarstw/200 - 300 ha,Struktura własności gospodarstw,False
+2,3 - 4 ha,Struktura własności gospodarstw/3 - 4 ha,Struktura własności gospodarstw,False
+2,300 - 400 ha,Struktura własności gospodarstw/300 - 400 ha,Struktura własności gospodarstw,False
+2,4 - 5 ha,Struktura własności gospodarstw/4 - 5 ha,Struktura własności gospodarstw,False
+2,400 - 500 ha,Struktura własności gospodarstw/400 - 500 ha,Struktura własności gospodarstw,False
+2,5 - 10 ha,Struktura własności gospodarstw/5 - 10 ha,Struktura własności gospodarstw,False
+2,50 - 100 ha,Struktura własności gospodarstw/50 - 100 ha,Struktura własności gospodarstw,False
+2,50 ha i więcej,Struktura własności gospodarstw/50 ha i więcej,Struktura własności gospodarstw,False
+2,500 - 1000 ha,Struktura własności gospodarstw/500 - 1000 ha,Struktura własności gospodarstw,False
+2,Mniej niż 2 ha,Struktura własności gospodarstw/Mniej niż 2 ha,Struktura własności gospodarstw,False
+2,Niewiadoma powierzchnia,Struktura własności gospodarstw/Niewiadoma powierzchnia,Struktura własności gospodarstw,False
+2,Ogółem,Struktura własności gospodarstw/Ogółem,Struktura własności gospodarstw,False
+2,powyżej 100 ha,Struktura własności gospodarstw/powyżej 100 ha,Struktura własności gospodarstw,False
+2,powyżej 1000 ha,Struktura własności gospodarstw/powyżej 1000 ha,Struktura własności gospodarstw,False
 2,Plony (q na ha),Uprawy rolne/Plony (q na ha),Uprawy rolne,False
 2,Powierzchnia,Uprawy rolne/Powierzchnia,Uprawy rolne,False
 2,Przeciętny zbiór z ha,Uprawy rolne/Przeciętny zbiór z ha,Uprawy rolne,False
@@ -42,6 +83,36 @@
 2,Handel,Zezwolenia dla przedsiębiorstw/Handel,Zezwolenia dla przedsiębiorstw,False
 2,Przemysł,Zezwolenia dla przedsiębiorstw/Przemysł,Zezwolenia dla przedsiębiorstw,False
 2,Zajęcia przemysłowe,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,Zezwolenia dla przedsiębiorstw,False
+2,Zniszczone budynki,Zniszczenia Wojenne 1914-1920/Zniszczone budynki,Zniszczenia Wojenne 1914-1920,False
+3,Miasta poniżej 20 000 mieszkańców,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Miasta poniżej 20 000 mieszkańców,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość,True
+3,Miasta powyżej 20 000 mieszkańców,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Miasta powyżej 20 000 mieszkańców,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość,True
+3,Ogółem,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Ogółem,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość,True
+3,Wieś,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość/Wieś,Budynki/Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość,True
+3,Miasta poniżej 20 000 mieszkańców,Budynki/Liczba ludności na 1 budynek/Miasta poniżej 20 000 mieszkańców,Budynki/Liczba ludności na 1 budynek,True
+3,Miasta powyżej 20 000 mieszkańców,Budynki/Liczba ludności na 1 budynek/Miasta powyżej 20 000 mieszkańców,Budynki/Liczba ludności na 1 budynek,True
+3,Ogółem,Budynki/Liczba ludności na 1 budynek/Ogółem,Budynki/Liczba ludności na 1 budynek,True
+3,Wieś,Budynki/Liczba ludności na 1 budynek/Wieś,Budynki/Liczba ludności na 1 budynek,True
+3,Miasta poniżej 20 000 mieszkanców,Budynki/Liczba ludności na 1 nieruchomość zamieszkaną/Miasta poniżej 20 000 mieszkanców,Budynki/Liczba ludności na 1 nieruchomość zamieszkaną,True
+3,Miasta powyżej 20 000 mieszkanców,Budynki/Liczba ludności na 1 nieruchomość zamieszkaną/Miasta powyżej 20 000 mieszkanców,Budynki/Liczba ludności na 1 nieruchomość zamieszkaną,True
+3,Drewnianych,Budynki/Na 100 budynków było/Drewnianych,Budynki/Na 100 budynków było,False
+3,Murowanych,Budynki/Na 100 budynków było/Murowanych,Budynki/Na 100 budynków było,False
+3,Z gliny innych materjałów,Budynki/Na 100 budynków było/Z gliny innych materjałów,Budynki/Na 100 budynków było,False
+3,Z niewiadomego materiału,Budynki/Na 100 budynków było/Z niewiadomego materiału,Budynki/Na 100 budynków było,False
+3,Niewiadome,Budynki/Na 100 budynków miało pokrycie/Niewiadome,Budynki/Na 100 budynków miało pokrycie,False
+3,Ogniotrwałe,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe,Budynki/Na 100 budynków miało pokrycie,False
+3,Z drzewa,Budynki/Na 100 budynków miało pokrycie/Z drzewa,Budynki/Na 100 budynków miało pokrycie,False
+3,Ze słomy,Budynki/Na 100 budynków miało pokrycie/Ze słomy,Budynki/Na 100 budynków miało pokrycie,False
+3,Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych,True
+3,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych,True
+3,Ogółem,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Ogółem,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych,True
+3,Wieś,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych/Wieś,Budynki/Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych,True
+3,"Gospodarczych, tymczasowych i ruchomych","Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych",Budynki/Na 100 budynków zamieszkanych było,False
+3,Służących głównie dla innych celów,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów,Budynki/Na 100 budynków zamieszkanych było,False
+3,Z przeznaczenia mieszkalnych,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych,Budynki/Na 100 budynków zamieszkanych było,False
+3,Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 mieszkań było niezamieszkanych/Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 mieszkań było niezamieszkanych,True
+3,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 mieszkań było niezamieszkanych/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 mieszkań było niezamieszkanych,True
+3,Ogółem,Budynki/Na 100 mieszkań było niezamieszkanych/Ogółem,Budynki/Na 100 mieszkań było niezamieszkanych,True
+3,Wieś,Budynki/Na 100 mieszkań było niezamieszkanych/Wieś,Budynki/Na 100 mieszkań było niezamieszkanych,True
 3,Groch,Ceny/Lokalne płacone producentom/Groch,Ceny/Lokalne płacone producentom,True
 3,Gryka,Ceny/Lokalne płacone producentom/Gryka,Ceny/Lokalne płacone producentom,True
 3,Jęczmień,Ceny/Lokalne płacone producentom/Jęczmień,Ceny/Lokalne płacone producentom,False
@@ -56,9 +127,10 @@
 3,Wieprz (za kg),Ceny/Lokalne płacone producentom/Wieprz (za kg),Ceny/Lokalne płacone producentom,True
 3,Ziemniaki,Ceny/Lokalne płacone producentom/Ziemniaki,Ceny/Lokalne płacone producentom,False
 3,Żyto,Ceny/Lokalne płacone producentom/Żyto,Ceny/Lokalne płacone producentom,True
-3,Ogółem,Rocznik 1939/Ludność/Ogółem,Rocznik 1939/Ludność,True
+3,Ogółem,Rocznik 1939/Ludność Miast/Ogółem,Rocznik 1939/Ludność Miast,True
 3,Ogółem,Spis Powszechny 1921/Ludność/Ogółem,Spis Powszechny 1921/Ludność,True
 3,Ogółem (dane z publikacji o spisie 1931),Spis Powszechny 1921/Ludność/Ogółem (dane z publikacji o spisie 1931),Spis Powszechny 1921/Ludność,True
+3,Ogółem,Spis Powszechny 1921/Ludność Miast/Ogółem,Spis Powszechny 1921/Ludność Miast,True
 3,% Białorusińska,Spis Powszechny 1921/Narodowość/% Białorusińska,Spis Powszechny 1921/Narodowość,True
 3,% Inna i niewiadoma: ogółem,Spis Powszechny 1921/Narodowość/% Inna i niewiadoma: ogółem,Spis Powszechny 1921/Narodowość,True
 3,% Mniejszości razem,Spis Powszechny 1921/Narodowość/% Mniejszości razem,Spis Powszechny 1921/Narodowość,True
@@ -75,6 +147,15 @@
 3,Rusińska,Spis Powszechny 1921/Narodowość/Rusińska,Spis Powszechny 1921/Narodowość,True
 3,Tutejsza,Spis Powszechny 1921/Narodowość/Tutejsza,Spis Powszechny 1921/Narodowość,True
 3,Żydowska,Spis Powszechny 1921/Narodowość/Żydowska,Spis Powszechny 1921/Narodowość,True
+3,Domowe,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
+3,Liczba ludności w wieku 10 lat i więcej,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
+3,Nie umiało czytać,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
+3,Niewiadome,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
+3,Początkowe,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
+3,Umiejętność czytania niewiadoma,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
+3,Wyższe,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
+3,Zawodowe średnie i niższe,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
+3,Średnie,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej,False
 3,% Ewangelickie,Spis Powszechny 1921/Wyznanie/% Ewangelickie,Spis Powszechny 1921/Wyznanie,True
 3,% Grecko-katolickie,Spis Powszechny 1921/Wyznanie/% Grecko-katolickie,Spis Powszechny 1921/Wyznanie,True
 3,% Inne,Spis Powszechny 1921/Wyznanie/% Inne,Spis Powszechny 1921/Wyznanie,True
@@ -120,6 +201,7 @@
 3,Ukraiński,Spis Powszechny 1931/Język ojczysty/Ukraiński,Spis Powszechny 1931/Język ojczysty,True
 3,Żydowski,Spis Powszechny 1931/Język ojczysty/Żydowski,Spis Powszechny 1931/Język ojczysty,True
 3,Ogółem,Spis Powszechny 1931/Ludność/Ogółem,Spis Powszechny 1931/Ludność,True
+3,Ogółem,Spis Powszechny 1931/Ludność Miast/Ogółem,Spis Powszechny 1931/Ludność Miast,True
 3,00 Leśnictwo i łowiectwo,Spis Powszechny 1931/Ludność aktywna zawodowo/00 Leśnictwo i łowiectwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
 3,08 Ogrodnictwo i pszczelarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo/08 Ogrodnictwo i pszczelarstwo,Spis Powszechny 1931/Ludność aktywna zawodowo,True
 3,"08-00 Dział B. Ogrodnictwo, rybactwo, leśnictwo - k","Spis Powszechny 1931/Ludność aktywna zawodowo/08-00 Dział B. Ogrodnictwo, rybactwo, leśnictwo - k",Spis Powszechny 1931/Ludność aktywna zawodowo,True
@@ -419,6 +501,212 @@
 3,"Szkolnictwo, oświata i kultura","Spis Powszechny 1931/Zawód Główny/Szkolnictwo, oświata i kultura",Spis Powszechny 1931/Zawód Główny,True
 3,Służba domowa,Spis Powszechny 1931/Zawód Główny/Służba domowa,Spis Powszechny 1931/Zawód Główny,True
 3,Służba publiczna,Spis Powszechny 1931/Zawód Główny/Służba publiczna,Spis Powszechny 1931/Zawód Główny,True
+3,Grunt orny,"Struktura własności gospodarstw/0,0 - 0,5 ha/Grunt orny","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,Grunt w użytkowaniu leśnem,"Struktura własności gospodarstw/0,0 - 0,5 ha/Grunt w użytkowaniu leśnem","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,Liczba gospodarstw,"Struktura własności gospodarstw/0,0 - 0,5 ha/Liczba gospodarstw","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,Nieużytki,"Struktura własności gospodarstw/0,0 - 0,5 ha/Nieużytki","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/0,0 - 0,5 ha/Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,Pod zabudowaniami i drogami,"Struktura własności gospodarstw/0,0 - 0,5 ha/Pod zabudowaniami i drogami","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,Powierzchnia,"Struktura własności gospodarstw/0,0 - 0,5 ha/Powierzchnia","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,Sady owocowe i ogrody warzywne,"Struktura własności gospodarstw/0,0 - 0,5 ha/Sady owocowe i ogrody warzywne","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/0,0 - 0,5 ha/Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,Łąki,"Struktura własności gospodarstw/0,0 - 0,5 ha/Łąki","Struktura własności gospodarstw/0,0 - 0,5 ha",True
+3,Grunt orny,"Struktura własności gospodarstw/0,5 - 1,0 ha/Grunt orny","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,Grunt w użytkowaniu leśnem,"Struktura własności gospodarstw/0,5 - 1,0 ha/Grunt w użytkowaniu leśnem","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,Liczba gospodarstw,"Struktura własności gospodarstw/0,5 - 1,0 ha/Liczba gospodarstw","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,Nieużytki,"Struktura własności gospodarstw/0,5 - 1,0 ha/Nieużytki","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/0,5 - 1,0 ha/Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,Pod zabudowaniami i drogami,"Struktura własności gospodarstw/0,5 - 1,0 ha/Pod zabudowaniami i drogami","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,Powierzchnia,"Struktura własności gospodarstw/0,5 - 1,0 ha/Powierzchnia","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,Sady owocowe i ogrody warzywne,"Struktura własności gospodarstw/0,5 - 1,0 ha/Sady owocowe i ogrody warzywne","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/0,5 - 1,0 ha/Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,Łąki,"Struktura własności gospodarstw/0,5 - 1,0 ha/Łąki","Struktura własności gospodarstw/0,5 - 1,0 ha",True
+3,Grunt orny,Struktura własności gospodarstw/1 - 2 ha/Grunt orny,Struktura własności gospodarstw/1 - 2 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/1 - 2 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/1 - 2 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/1 - 2 ha/Liczba gospodarstw,Struktura własności gospodarstw/1 - 2 ha,True
+3,Nieużytki,Struktura własności gospodarstw/1 - 2 ha/Nieużytki,Struktura własności gospodarstw/1 - 2 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/1 - 2 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/1 - 2 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/1 - 2 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/1 - 2 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/1 - 2 ha/Powierzchnia,Struktura własności gospodarstw/1 - 2 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/1 - 2 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/1 - 2 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/1 - 2 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/1 - 2 ha,True
+3,Łąki,Struktura własności gospodarstw/1 - 2 ha/Łąki,Struktura własności gospodarstw/1 - 2 ha,True
+3,Liczba ludności,Struktura własności gospodarstw/10 - 15 ha/Liczba ludności,Struktura własności gospodarstw/10 - 15 ha,True
+3,Liczba zespołów,Struktura własności gospodarstw/10 - 15 ha/Liczba zespołów,Struktura własności gospodarstw/10 - 15 ha,True
+3,Grunt orny,Struktura własności gospodarstw/10 - 20 ha/Grunt orny,Struktura własności gospodarstw/10 - 20 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/10 - 20 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/10 - 20 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/10 - 20 ha/Liczba gospodarstw,Struktura własności gospodarstw/10 - 20 ha,True
+3,Nieużytki,Struktura własności gospodarstw/10 - 20 ha/Nieużytki,Struktura własności gospodarstw/10 - 20 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/10 - 20 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/10 - 20 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/10 - 20 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/10 - 20 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/10 - 20 ha/Powierzchnia,Struktura własności gospodarstw/10 - 20 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/10 - 20 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/10 - 20 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/10 - 20 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/10 - 20 ha,True
+3,Łąki,Struktura własności gospodarstw/10 - 20 ha/Łąki,Struktura własności gospodarstw/10 - 20 ha,True
+3,Grunt orny,Struktura własności gospodarstw/100 - 200 ha/Grunt orny,Struktura własności gospodarstw/100 - 200 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/100 - 200 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/100 - 200 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/100 - 200 ha/Liczba gospodarstw,Struktura własności gospodarstw/100 - 200 ha,True
+3,Nieużytki,Struktura własności gospodarstw/100 - 200 ha/Nieużytki,Struktura własności gospodarstw/100 - 200 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/100 - 200 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/100 - 200 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/100 - 200 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/100 - 200 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/100 - 200 ha/Powierzchnia,Struktura własności gospodarstw/100 - 200 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/100 - 200 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/100 - 200 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/100 - 200 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/100 - 200 ha,True
+3,Łąki,Struktura własności gospodarstw/100 - 200 ha/Łąki,Struktura własności gospodarstw/100 - 200 ha,True
+3,Liczba ludności,Struktura własności gospodarstw/15 - 50 ha/Liczba ludności,Struktura własności gospodarstw/15 - 50 ha,True
+3,Liczba zespołów,Struktura własności gospodarstw/15 - 50 ha/Liczba zespołów,Struktura własności gospodarstw/15 - 50 ha,True
+3,Grunt orny,Struktura własności gospodarstw/2 - 3 ha/Grunt orny,Struktura własności gospodarstw/2 - 3 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/2 - 3 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/2 - 3 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/2 - 3 ha/Liczba gospodarstw,Struktura własności gospodarstw/2 - 3 ha,True
+3,Nieużytki,Struktura własności gospodarstw/2 - 3 ha/Nieużytki,Struktura własności gospodarstw/2 - 3 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/2 - 3 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/2 - 3 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/2 - 3 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/2 - 3 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/2 - 3 ha/Powierzchnia,Struktura własności gospodarstw/2 - 3 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/2 - 3 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/2 - 3 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/2 - 3 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/2 - 3 ha,True
+3,Łąki,Struktura własności gospodarstw/2 - 3 ha/Łąki,Struktura własności gospodarstw/2 - 3 ha,True
+3,Liczba ludności,Struktura własności gospodarstw/2 - 5 ha/Liczba ludności,Struktura własności gospodarstw/2 - 5 ha,True
+3,Liczba zespołów,Struktura własności gospodarstw/2 - 5 ha/Liczba zespołów,Struktura własności gospodarstw/2 - 5 ha,True
+3,Grunt orny,Struktura własności gospodarstw/20 - 50 ha/Grunt orny,Struktura własności gospodarstw/20 - 50 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/20 - 50 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/20 - 50 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/20 - 50 ha/Liczba gospodarstw,Struktura własności gospodarstw/20 - 50 ha,True
+3,Nieużytki,Struktura własności gospodarstw/20 - 50 ha/Nieużytki,Struktura własności gospodarstw/20 - 50 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/20 - 50 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/20 - 50 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/20 - 50 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/20 - 50 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/20 - 50 ha/Powierzchnia,Struktura własności gospodarstw/20 - 50 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/20 - 50 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/20 - 50 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/20 - 50 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/20 - 50 ha,True
+3,Łąki,Struktura własności gospodarstw/20 - 50 ha/Łąki,Struktura własności gospodarstw/20 - 50 ha,True
+3,Grunt orny,Struktura własności gospodarstw/200 - 1000 ha/Grunt orny,Struktura własności gospodarstw/200 - 1000 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/200 - 1000 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/200 - 1000 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/200 - 1000 ha/Liczba gospodarstw,Struktura własności gospodarstw/200 - 1000 ha,True
+3,Nieużytki,Struktura własności gospodarstw/200 - 1000 ha/Nieużytki,Struktura własności gospodarstw/200 - 1000 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/200 - 1000 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/200 - 1000 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/200 - 1000 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/200 - 1000 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/200 - 1000 ha/Powierzchnia,Struktura własności gospodarstw/200 - 1000 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/200 - 1000 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/200 - 1000 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/200 - 1000 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/200 - 1000 ha,True
+3,Łąki,Struktura własności gospodarstw/200 - 1000 ha/Łąki,Struktura własności gospodarstw/200 - 1000 ha,True
+3,Grunt orny,Struktura własności gospodarstw/200 - 300 ha/Grunt orny,Struktura własności gospodarstw/200 - 300 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/200 - 300 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/200 - 300 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/200 - 300 ha/Liczba gospodarstw,Struktura własności gospodarstw/200 - 300 ha,True
+3,Nieużytki,Struktura własności gospodarstw/200 - 300 ha/Nieużytki,Struktura własności gospodarstw/200 - 300 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/200 - 300 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/200 - 300 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/200 - 300 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/200 - 300 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/200 - 300 ha/Powierzchnia,Struktura własności gospodarstw/200 - 300 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/200 - 300 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/200 - 300 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/200 - 300 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/200 - 300 ha,True
+3,Łąki,Struktura własności gospodarstw/200 - 300 ha/Łąki,Struktura własności gospodarstw/200 - 300 ha,True
+3,Grunt orny,Struktura własności gospodarstw/3 - 4 ha/Grunt orny,Struktura własności gospodarstw/3 - 4 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/3 - 4 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/3 - 4 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/3 - 4 ha/Liczba gospodarstw,Struktura własności gospodarstw/3 - 4 ha,True
+3,Nieużytki,Struktura własności gospodarstw/3 - 4 ha/Nieużytki,Struktura własności gospodarstw/3 - 4 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/3 - 4 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/3 - 4 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/3 - 4 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/3 - 4 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/3 - 4 ha/Powierzchnia,Struktura własności gospodarstw/3 - 4 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/3 - 4 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/3 - 4 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/3 - 4 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/3 - 4 ha,True
+3,Łąki,Struktura własności gospodarstw/3 - 4 ha/Łąki,Struktura własności gospodarstw/3 - 4 ha,True
+3,Grunt orny,Struktura własności gospodarstw/300 - 400 ha/Grunt orny,Struktura własności gospodarstw/300 - 400 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/300 - 400 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/300 - 400 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/300 - 400 ha/Liczba gospodarstw,Struktura własności gospodarstw/300 - 400 ha,True
+3,Nieużytki,Struktura własności gospodarstw/300 - 400 ha/Nieużytki,Struktura własności gospodarstw/300 - 400 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/300 - 400 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/300 - 400 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/300 - 400 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/300 - 400 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/300 - 400 ha/Powierzchnia,Struktura własności gospodarstw/300 - 400 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/300 - 400 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/300 - 400 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/300 - 400 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/300 - 400 ha,True
+3,Łąki,Struktura własności gospodarstw/300 - 400 ha/Łąki,Struktura własności gospodarstw/300 - 400 ha,True
+3,Grunt orny,Struktura własności gospodarstw/4 - 5 ha/Grunt orny,Struktura własności gospodarstw/4 - 5 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/4 - 5 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/4 - 5 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/4 - 5 ha/Liczba gospodarstw,Struktura własności gospodarstw/4 - 5 ha,True
+3,Nieużytki,Struktura własności gospodarstw/4 - 5 ha/Nieużytki,Struktura własności gospodarstw/4 - 5 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/4 - 5 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/4 - 5 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/4 - 5 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/4 - 5 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/4 - 5 ha/Powierzchnia,Struktura własności gospodarstw/4 - 5 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/4 - 5 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/4 - 5 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/4 - 5 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/4 - 5 ha,True
+3,Łąki,Struktura własności gospodarstw/4 - 5 ha/Łąki,Struktura własności gospodarstw/4 - 5 ha,True
+3,Grunt orny,Struktura własności gospodarstw/400 - 500 ha/Grunt orny,Struktura własności gospodarstw/400 - 500 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/400 - 500 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/400 - 500 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/400 - 500 ha/Liczba gospodarstw,Struktura własności gospodarstw/400 - 500 ha,True
+3,Nieużytki,Struktura własności gospodarstw/400 - 500 ha/Nieużytki,Struktura własności gospodarstw/400 - 500 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/400 - 500 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/400 - 500 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/400 - 500 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/400 - 500 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/400 - 500 ha/Powierzchnia,Struktura własności gospodarstw/400 - 500 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/400 - 500 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/400 - 500 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/400 - 500 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/400 - 500 ha,True
+3,Łąki,Struktura własności gospodarstw/400 - 500 ha/Łąki,Struktura własności gospodarstw/400 - 500 ha,True
+3,Grunt orny,Struktura własności gospodarstw/5 - 10 ha/Grunt orny,Struktura własności gospodarstw/5 - 10 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/5 - 10 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/5 - 10 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/5 - 10 ha/Liczba gospodarstw,Struktura własności gospodarstw/5 - 10 ha,True
+3,Liczba ludności,Struktura własności gospodarstw/5 - 10 ha/Liczba ludności,Struktura własności gospodarstw/5 - 10 ha,True
+3,Liczba zespołów,Struktura własności gospodarstw/5 - 10 ha/Liczba zespołów,Struktura własności gospodarstw/5 - 10 ha,True
+3,Nieużytki,Struktura własności gospodarstw/5 - 10 ha/Nieużytki,Struktura własności gospodarstw/5 - 10 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/5 - 10 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/5 - 10 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/5 - 10 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/5 - 10 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/5 - 10 ha/Powierzchnia,Struktura własności gospodarstw/5 - 10 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/5 - 10 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/5 - 10 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/5 - 10 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/5 - 10 ha,True
+3,Łąki,Struktura własności gospodarstw/5 - 10 ha/Łąki,Struktura własności gospodarstw/5 - 10 ha,True
+3,Grunt orny,Struktura własności gospodarstw/50 - 100 ha/Grunt orny,Struktura własności gospodarstw/50 - 100 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/50 - 100 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/50 - 100 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/50 - 100 ha/Liczba gospodarstw,Struktura własności gospodarstw/50 - 100 ha,True
+3,Nieużytki,Struktura własności gospodarstw/50 - 100 ha/Nieużytki,Struktura własności gospodarstw/50 - 100 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/50 - 100 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/50 - 100 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/50 - 100 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/50 - 100 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/50 - 100 ha/Powierzchnia,Struktura własności gospodarstw/50 - 100 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/50 - 100 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/50 - 100 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/50 - 100 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/50 - 100 ha,True
+3,Łąki,Struktura własności gospodarstw/50 - 100 ha/Łąki,Struktura własności gospodarstw/50 - 100 ha,True
+3,Liczba ludności,Struktura własności gospodarstw/50 ha i więcej/Liczba ludności,Struktura własności gospodarstw/50 ha i więcej,True
+3,Liczba zespołów,Struktura własności gospodarstw/50 ha i więcej/Liczba zespołów,Struktura własności gospodarstw/50 ha i więcej,True
+3,Grunt orny,Struktura własności gospodarstw/500 - 1000 ha/Grunt orny,Struktura własności gospodarstw/500 - 1000 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/500 - 1000 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/500 - 1000 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/500 - 1000 ha/Liczba gospodarstw,Struktura własności gospodarstw/500 - 1000 ha,True
+3,Nieużytki,Struktura własności gospodarstw/500 - 1000 ha/Nieużytki,Struktura własności gospodarstw/500 - 1000 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/500 - 1000 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/500 - 1000 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/500 - 1000 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/500 - 1000 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/500 - 1000 ha/Powierzchnia,Struktura własności gospodarstw/500 - 1000 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/500 - 1000 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/500 - 1000 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/500 - 1000 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/500 - 1000 ha,True
+3,Łąki,Struktura własności gospodarstw/500 - 1000 ha/Łąki,Struktura własności gospodarstw/500 - 1000 ha,True
+3,Liczba ludności,Struktura własności gospodarstw/Mniej niż 2 ha/Liczba ludności,Struktura własności gospodarstw/Mniej niż 2 ha,True
+3,Liczba zespołów,Struktura własności gospodarstw/Mniej niż 2 ha/Liczba zespołów,Struktura własności gospodarstw/Mniej niż 2 ha,True
+3,Liczba ludności,Struktura własności gospodarstw/Niewiadoma powierzchnia/Liczba ludności,Struktura własności gospodarstw/Niewiadoma powierzchnia,True
+3,Liczba zespołów,Struktura własności gospodarstw/Niewiadoma powierzchnia/Liczba zespołów,Struktura własności gospodarstw/Niewiadoma powierzchnia,True
+3,Grunt orny,Struktura własności gospodarstw/Ogółem/Grunt orny,Struktura własności gospodarstw/Ogółem,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/Ogółem/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/Ogółem,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/Ogółem/Liczba gospodarstw,Struktura własności gospodarstw/Ogółem,True
+3,Liczba ludności,Struktura własności gospodarstw/Ogółem/Liczba ludności,Struktura własności gospodarstw/Ogółem,True
+3,Liczba zespołów,Struktura własności gospodarstw/Ogółem/Liczba zespołów,Struktura własności gospodarstw/Ogółem,True
+3,Nieużytki,Struktura własności gospodarstw/Ogółem/Nieużytki,Struktura własności gospodarstw/Ogółem,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/Ogółem/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/Ogółem,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/Ogółem/Pod zabudowaniami i drogami,Struktura własności gospodarstw/Ogółem,True
+3,Powierzchnia,Struktura własności gospodarstw/Ogółem/Powierzchnia,Struktura własności gospodarstw/Ogółem,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/Ogółem/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/Ogółem,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/Ogółem/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/Ogółem,True
+3,Łąki,Struktura własności gospodarstw/Ogółem/Łąki,Struktura własności gospodarstw/Ogółem,True
+3,Grunt orny,Struktura własności gospodarstw/powyżej 100 ha/Grunt orny,Struktura własności gospodarstw/powyżej 100 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/powyżej 100 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/powyżej 100 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/powyżej 100 ha/Liczba gospodarstw,Struktura własności gospodarstw/powyżej 100 ha,True
+3,Nieużytki,Struktura własności gospodarstw/powyżej 100 ha/Nieużytki,Struktura własności gospodarstw/powyżej 100 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/powyżej 100 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/powyżej 100 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/powyżej 100 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/powyżej 100 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/powyżej 100 ha/Powierzchnia,Struktura własności gospodarstw/powyżej 100 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/powyżej 100 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/powyżej 100 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/powyżej 100 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/powyżej 100 ha,True
+3,Łąki,Struktura własności gospodarstw/powyżej 100 ha/Łąki,Struktura własności gospodarstw/powyżej 100 ha,True
+3,Grunt orny,Struktura własności gospodarstw/powyżej 1000 ha/Grunt orny,Struktura własności gospodarstw/powyżej 1000 ha,True
+3,Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/powyżej 1000 ha/Grunt w użytkowaniu leśnem,Struktura własności gospodarstw/powyżej 1000 ha,True
+3,Liczba gospodarstw,Struktura własności gospodarstw/powyżej 1000 ha/Liczba gospodarstw,Struktura własności gospodarstw/powyżej 1000 ha,True
+3,Nieużytki,Struktura własności gospodarstw/powyżej 1000 ha/Nieużytki,Struktura własności gospodarstw/powyżej 1000 ha,True
+3,"Pastwiska stałe, połoniny i wrzosowiska","Struktura własności gospodarstw/powyżej 1000 ha/Pastwiska stałe, połoniny i wrzosowiska",Struktura własności gospodarstw/powyżej 1000 ha,True
+3,Pod zabudowaniami i drogami,Struktura własności gospodarstw/powyżej 1000 ha/Pod zabudowaniami i drogami,Struktura własności gospodarstw/powyżej 1000 ha,True
+3,Powierzchnia,Struktura własności gospodarstw/powyżej 1000 ha/Powierzchnia,Struktura własności gospodarstw/powyżej 1000 ha,True
+3,Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/powyżej 1000 ha/Sady owocowe i ogrody warzywne,Struktura własności gospodarstw/powyżej 1000 ha,True
+3,"Stawy, jeziora i eksploatowane torfowiska","Struktura własności gospodarstw/powyżej 1000 ha/Stawy, jeziora i eksploatowane torfowiska",Struktura własności gospodarstw/powyżej 1000 ha,True
+3,Łąki,Struktura własności gospodarstw/powyżej 1000 ha/Łąki,Struktura własności gospodarstw/powyżej 1000 ha,True
 3,Buraki cukrowe,Uprawy rolne/Plony (q na ha)/Buraki cukrowe,Uprawy rolne/Plony (q na ha),True
 3,Buraki cukrowe,Uprawy rolne/Powierzchnia/Buraki cukrowe,Uprawy rolne/Powierzchnia,True
 3,Chmiel,Uprawy rolne/Powierzchnia/Chmiel,Uprawy rolne/Powierzchnia,True
@@ -732,6 +1020,52 @@
 3,Kategoria IVPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IVPR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
 3,Kategoria IVR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Kategoria IVR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,True
 3,Razem,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe,False
+3,Pozostające do odbudowy 01-01-1923,Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Pozostające do odbudowy 01-01-1923,Zniszczenia Wojenne 1914-1920/Zniszczone budynki,True
+3,Zniszczone w ogóle,Zniszczenia Wojenne 1914-1920/Zniszczone budynki/Zniszczone w ogóle,Zniszczenia Wojenne 1914-1920/Zniszczone budynki,True
+4,Miasta poniżej 20 000 mieszk.,Budynki/Na 100 budynków było/Drewnianych/Miasta poniżej 20 000 mieszk.,Budynki/Na 100 budynków było/Drewnianych,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków było/Drewnianych/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków było/Drewnianych,True
+4,Ogółem,Budynki/Na 100 budynków było/Drewnianych/Ogółem,Budynki/Na 100 budynków było/Drewnianych,True
+4,Wieś,Budynki/Na 100 budynków było/Drewnianych/Wieś,Budynki/Na 100 budynków było/Drewnianych,True
+4,Miasta poniżej 20 000 mieszk.,Budynki/Na 100 budynków było/Murowanych/Miasta poniżej 20 000 mieszk.,Budynki/Na 100 budynków było/Murowanych,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków było/Murowanych/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków było/Murowanych,True
+4,Ogółem,Budynki/Na 100 budynków było/Murowanych/Ogółem,Budynki/Na 100 budynków było/Murowanych,True
+4,Wieś,Budynki/Na 100 budynków było/Murowanych/Wieś,Budynki/Na 100 budynków było/Murowanych,True
+4,Miasta poniżej 20 000 mieszk.,Budynki/Na 100 budynków było/Z gliny innych materjałów/Miasta poniżej 20 000 mieszk.,Budynki/Na 100 budynków było/Z gliny innych materjałów,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków było/Z gliny innych materjałów/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków było/Z gliny innych materjałów,True
+4,Ogółem,Budynki/Na 100 budynków było/Z gliny innych materjałów/Ogółem,Budynki/Na 100 budynków było/Z gliny innych materjałów,True
+4,Wieś,Budynki/Na 100 budynków było/Z gliny innych materjałów/Wieś,Budynki/Na 100 budynków było/Z gliny innych materjałów,True
+4,Miasta poniżej 20 000 mieszk.,Budynki/Na 100 budynków było/Z niewiadomego materiału/Miasta poniżej 20 000 mieszk.,Budynki/Na 100 budynków było/Z niewiadomego materiału,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków było/Z niewiadomego materiału/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków było/Z niewiadomego materiału,True
+4,Ogółem,Budynki/Na 100 budynków było/Z niewiadomego materiału/Ogółem,Budynki/Na 100 budynków było/Z niewiadomego materiału,True
+4,Wieś,Budynki/Na 100 budynków było/Z niewiadomego materiału/Wieś,Budynki/Na 100 budynków było/Z niewiadomego materiału,True
+4,Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Niewiadome/Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Niewiadome,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Niewiadome/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Niewiadome,True
+4,Ogółem,Budynki/Na 100 budynków miało pokrycie/Niewiadome/Ogółem,Budynki/Na 100 budynków miało pokrycie/Niewiadome,True
+4,Wieś,Budynki/Na 100 budynków miało pokrycie/Niewiadome/Wieś,Budynki/Na 100 budynków miało pokrycie/Niewiadome,True
+4,Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe/Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe,True
+4,Ogółem,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe/Ogółem,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe,True
+4,Wieś,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe/Wieś,Budynki/Na 100 budynków miało pokrycie/Ogniotrwałe,True
+4,Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Z drzewa/Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Z drzewa,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Z drzewa/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Z drzewa,True
+4,Ogółem,Budynki/Na 100 budynków miało pokrycie/Z drzewa/Ogółem,Budynki/Na 100 budynków miało pokrycie/Z drzewa,True
+4,Wieś,Budynki/Na 100 budynków miało pokrycie/Z drzewa/Wieś,Budynki/Na 100 budynków miało pokrycie/Z drzewa,True
+4,Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Ze słomy/Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Ze słomy,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Ze słomy/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków miało pokrycie/Ze słomy,True
+4,Ogółem,Budynki/Na 100 budynków miało pokrycie/Ze słomy/Ogółem,Budynki/Na 100 budynków miało pokrycie/Ze słomy,True
+4,Wieś,Budynki/Na 100 budynków miało pokrycie/Ze słomy/Wieś,Budynki/Na 100 budynków miało pokrycie/Ze słomy,True
+4,Miasta poniżej 20 000 mieszkańców,"Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Miasta poniżej 20 000 mieszkańców","Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych",True
+4,Miasta powyżej 20 000 mieszkańców,"Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Miasta powyżej 20 000 mieszkańców","Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych",True
+4,Ogółem,"Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Ogółem","Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych",True
+4,Wieś,"Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych/Wieś","Budynki/Na 100 budynków zamieszkanych było/Gospodarczych, tymczasowych i ruchomych",True
+4,Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Miasta poniżej 20 000 mieszkańców,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów,True
+4,Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Miasta powyżej 20 000 mieszkańców,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów,True
+4,Ogółem,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Ogółem,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów,True
+4,Wieś,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów/Wieś,Budynki/Na 100 budynków zamieszkanych było/Służących głównie dla innych celów,True
+4,Miasta poniżej 20 000 mieszkanców,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Miasta poniżej 20 000 mieszkanców,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych,True
+4,Miasta powyżej 20 000 mieszkanców,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Miasta powyżej 20 000 mieszkanców,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych,True
+4,Ogółem,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Ogółem,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych,True
+4,Wieś,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych/Wieś,Budynki/Na 100 budynków zamieszkanych było/Z przeznaczenia mieszkalnych,True
 4,Browarny,Ceny/Lokalne płacone producentom/Jęczmień/Browarny,Ceny/Lokalne płacone producentom/Jęczmień,True
 4,Innych gatunków,Ceny/Lokalne płacone producentom/Jęczmień/Innych gatunków,Ceny/Lokalne płacone producentom/Jęczmień,True
 4,Na kaszę,Ceny/Lokalne płacone producentom/Jęczmień/Na kaszę,Ceny/Lokalne płacone producentom/Jęczmień,True
@@ -741,6 +1075,33 @@
 4,Łąkowe,Ceny/Lokalne płacone producentom/Siano/Łąkowe,Ceny/Lokalne płacone producentom/Siano,True
 4,Fabryczne,Ceny/Lokalne płacone producentom/Ziemniaki/Fabryczne,Ceny/Lokalne płacone producentom/Ziemniaki,True
 4,Jadalne,Ceny/Lokalne płacone producentom/Ziemniaki/Jadalne,Ceny/Lokalne płacone producentom/Ziemniaki,True
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe,False
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej,False
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać,False
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome,False
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe,False
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma,False
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe,False
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe,False
+4,Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie,False
+4,Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie,False
+4,Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie,False
 4,Inne mieszanki zbóż,Uprawy rolne/Powierzchnia/Mieszanki na ziarno/Inne mieszanki zbóż,Uprawy rolne/Powierzchnia/Mieszanki na ziarno,True
 4,Jęczmień,Uprawy rolne/Powierzchnia/Mieszanki na ziarno/Jęczmień,Uprawy rolne/Powierzchnia/Mieszanki na ziarno,True
 4,Nasienie,Uprawy rolne/Zbiory/Konopie/Nasienie,Uprawy rolne/Zbiory/Konopie,True
@@ -1277,6 +1638,87 @@
 4,R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne/R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Karty rejestracyjne,True
 4,PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem/PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem,True
 4,R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem/R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Razem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Domowe/Wieś,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Liczba ludności w wieku 10 lat i więcej/Wieś,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Nie umiało czytać/Wieś,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Niewiadome/Wieś,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Początkowe/Wieś,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Umiejętność czytania niewiadoma/Wieś,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Wyższe/Wieś,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Zawodowe średnie i niższe/Wieś,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Miasta,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Ogółem,True
+5,k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/k,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś,True
+5,m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/m,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś,True
+5,r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś/r,Spis Powszechny 1921/Wykształcenie ludności w wieku 10 lat i więcej/Średnie/Wieś,True
 5,PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal/PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal,True
 5,R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal/R,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Detal,True
 5,PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Hurt/PR,Zezwolenia dla przedsiębiorstw/Zajęcia przemysłowe/Handel jarmarczny/Hurt,True

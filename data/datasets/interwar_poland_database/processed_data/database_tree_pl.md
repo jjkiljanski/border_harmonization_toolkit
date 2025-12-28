@@ -1,3 +1,87 @@
+- Budynki
+  - Całkowita liczba nieruchomości
+  - Liczba budynków z przeznaczenia mieszkalnych i innych zamieszkanych na 1 nieruchomość
+    - Miasta poniżej 20 000 mieszkańców
+    - Miasta powyżej 20 000 mieszkańców
+    - Ogółem
+    - Wieś
+  - Liczba budynków z przeznaczenia mieszkalnych na 1 km2
+  - Liczba ludności na 1 budynek
+    - Miasta poniżej 20 000 mieszkańców
+    - Miasta powyżej 20 000 mieszkańców
+    - Ogółem
+    - Wieś
+  - Liczba ludności na 1 nieruchomość zamieszkaną
+    - Miasta poniżej 20 000 mieszkanców
+    - Miasta powyżej 20 000 mieszkanców
+  - Na 100 budynków było
+    - Drewnianych
+      - Miasta poniżej 20 000 mieszk.
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+    - Murowanych
+      - Miasta poniżej 20 000 mieszk.
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+    - Z gliny innych materjałów
+      - Miasta poniżej 20 000 mieszk.
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+    - Z niewiadomego materiału
+      - Miasta poniżej 20 000 mieszk.
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+  - Na 100 budynków miało pokrycie
+    - Niewiadome
+      - Miasta poniżej 20 000 mieszkańców
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+    - Ogniotrwałe
+      - Miasta poniżej 20 000 mieszkańców
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+    - Z drzewa
+      - Miasta poniżej 20 000 mieszkańców
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+    - Ze słomy
+      - Miasta poniżej 20 000 mieszkańców
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+  - Na 100 budynków z przeznaczenia mieszkalnych było niezamieszkanych
+    - Miasta poniżej 20 000 mieszkańców
+    - Miasta powyżej 20 000 mieszkańców
+    - Ogółem
+    - Wieś
+  - Na 100 budynków zamieszkanych było
+    - Gospodarczych, tymczasowych i ruchomych
+      - Miasta poniżej 20 000 mieszkańców
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+    - Służących głównie dla innych celów
+      - Miasta poniżej 20 000 mieszkańców
+      - Miasta powyżej 20 000 mieszkańców
+      - Ogółem
+      - Wieś
+    - Z przeznaczenia mieszkalnych
+      - Miasta poniżej 20 000 mieszkanców
+      - Miasta powyżej 20 000 mieszkanców
+      - Ogółem
+      - Wieś
+  - Na 100 mieszkań było niezamieszkanych
+    - Miasta poniżej 20 000 mieszkańców
+    - Miasta powyżej 20 000 mieszkańców
+    - Ogółem
+    - Wieś
 - Ceny
   - Lokalne płacone producentom
     - Groch
@@ -34,12 +118,14 @@
   - Powierzchnia
 - Powierzchnia powiatów
 - Rocznik 1939
-  - Ludność
+  - Ludność Miast
     - Ogółem
 - Spis Powszechny 1921
   - Ludność
     - Ogółem
     - Ogółem (dane z publikacji o spisie 1931)
+  - Ludność Miast
+    - Ogółem
   - Narodowość
     - % Białorusińska
     - % Inna i niewiadoma: ogółem
@@ -57,6 +143,124 @@
     - Rusińska
     - Tutejsza
     - Żydowska
+  - Wykształcenie ludności w wieku 10 lat i więcej
+    - Domowe
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
+    - Liczba ludności w wieku 10 lat i więcej
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
+    - Nie umiało czytać
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
+    - Niewiadome
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
+    - Początkowe
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
+    - Umiejętność czytania niewiadoma
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
+    - Wyższe
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
+    - Zawodowe średnie i niższe
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
+    - Średnie
+      - Miasta
+        - k
+        - m
+        - r
+      - Ogółem
+        - k
+        - m
+        - r
+      - Wieś
+        - k
+        - m
+        - r
   - Wyznanie
     - % Ewangelickie
     - % Grecko-katolickie
@@ -381,6 +585,8 @@
     - R8 pozostałe gałęzie działu I
     - x Utrzymujący się bez pracy zarobkowej
     - x1 Kapitaliści i rentierzy
+  - Ludność Miast
+    - Ogółem
   - Wyznanie
     - % Ewangelickie
     - % Grekokatolickie
@@ -409,6 +615,238 @@
     - Szkolnictwo, oświata i kultura
     - Służba domowa
     - Służba publiczna
+- Struktura własności gospodarstw
+  - 0,0 - 0,5 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 0,5 - 1,0 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 1 - 2 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 10 - 15 ha
+    - Liczba ludności
+    - Liczba zespołów
+  - 10 - 20 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 100 - 200 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 15 - 50 ha
+    - Liczba ludności
+    - Liczba zespołów
+  - 2 - 3 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 2 - 5 ha
+    - Liczba ludności
+    - Liczba zespołów
+  - 20 - 50 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 200 - 1000 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 200 - 300 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 3 - 4 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 300 - 400 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 4 - 5 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 400 - 500 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 5 - 10 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Liczba ludności
+    - Liczba zespołów
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 50 - 100 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - 50 ha i więcej
+    - Liczba ludności
+    - Liczba zespołów
+  - 500 - 1000 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - Mniej niż 2 ha
+    - Liczba ludności
+    - Liczba zespołów
+  - Niewiadoma powierzchnia
+    - Liczba ludności
+    - Liczba zespołów
+  - Ogółem
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Liczba ludności
+    - Liczba zespołów
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - powyżej 100 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
+  - powyżej 1000 ha
+    - Grunt orny
+    - Grunt w użytkowaniu leśnem
+    - Liczba gospodarstw
+    - Nieużytki
+    - Pastwiska stałe, połoniny i wrzosowiska
+    - Pod zabudowaniami i drogami
+    - Powierzchnia
+    - Sady owocowe i ogrody warzywne
+    - Stawy, jeziora i eksploatowane torfowiska
+    - Łąki
 - Uprawy rolne
   - Plony (q na ha)
     - Buraki cukrowe
@@ -1280,3 +1718,7 @@
     - Razem
       - PR
       - R
+- Zniszczenia Wojenne 1914-1920
+  - Zniszczone budynki
+    - Pozostające do odbudowy 01-01-1923
+    - Zniszczone w ogóle

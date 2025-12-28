@@ -3784,7 +3784,7 @@
         "data_type": "float",
         "category": {
           "eng": "Crops/Area/Beans, Broad Beans, and Lentils",
-          "pol": "Uprawy rolne/Powierzchnia/Fasola, Bób, Soczewica"
+          "pol": "Uprawy rolne/Powierzchnia/Fasola, bób, soczewica"
         }
       },
       "Seradela": {
@@ -13792,7 +13792,7 @@
         "unit": "",
         "data_type": "int",
         "category": {
-          "eng": "Business Permissions/Industry/73. Horticulture and fisheries/VIII",
+          "eng": "Business Permissions/Industry/73. Horticulture and fisheries/V-VII",
           "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/73. Ogrodnictwo i rybołówstwo/VIII"
         }
       },
@@ -14312,7 +14312,7 @@
         "unit": "",
         "data_type": "int",
         "category": {
-          "eng": "Business Permissions/Industry/69. Services/VIII",
+          "eng": "Business Permissions/Industry/69. Services/V-VII",
           "pol": "Zezwolenia dla przedsiębiorstw/Przemysł/69. Świadczenia/VIII"
         }
       },

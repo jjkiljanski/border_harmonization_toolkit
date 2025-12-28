@@ -1,3 +1,86 @@
+- Buildings
+  - Number of residential and other inhabited buildings per 1 property
+    - Rural Areas
+    - Total
+    - Towns over 20,000 inhabitants
+    - Towns under 20,000 inhabitants
+  - Number of residential buildings per 1 km2
+  - Out of every 100 buildings
+    - Clay and other materials
+      - Rural areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Fireproof roofing
+      - Rural areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Masonry
+      - Rural areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Roofing unknown
+      - Rural areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Straw roofing
+      - Rural areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Unknown material
+      - Rural areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Wood roofing
+      - Rural areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Wooden
+      - Rural areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+  - Out of every 100 inhabited buildings
+    - Residential By Intended Use
+      - Rural Areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Used mainly for other purposes
+      - Rural Areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+    - Utility, Temporary and Movable Buildings
+      - Rural Areas
+      - Total
+      - Towns over 20,000 inhabitants
+      - Towns under 20,000 inhabitants
+  - Percentage of Uninhabited Buildings Intended for Residential Use
+    - Rural Areas
+    - Total
+    - Towns over 20,000 inhabitants
+    - Towns under 20,000 inhabitants
+  - Percentage of Uninhabited Dwellings
+    - Rural Areas
+    - Total
+    - Towns over 20,000 inhabitants
+    - Towns under 20,000 inhabitants
+  - Population per 1 building
+    - Rural Areas
+    - Total
+    - Towns over 20,000 inhabitants
+    - Towns under 20,000 inhabitants
+  - Population per 1 inhabited property
+    - Towns over 20,000 inhabitants
+    - Towns under 20,000 inhabitants
+  - Total Number of Buildings
 - Business Permissions
   - Industrial Occupations
     - Category IIIPR
@@ -622,6 +705,126 @@
       - Total
     - Ż 3833. Ferries, barges, water networks
 - Census 1921
+  - City Population
+    - Total
+  - Educational attainment of the population aged 10 years and over
+    - Education Unknown
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
+    - Higher Education
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
+    - Home Education
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
+    - Number of people aged 10 years and over
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
+    - Primary Education
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
+    - Reading ability unknown
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
+    - Secondary Education
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
+    - Unable to read
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
+    - Vocational Education (Secondary and Lower)
+      - Cities
+        - k
+        - m
+        - r
+      - Rural Areas
+        - k
+        - m
+        - r
+      - Total
+        - k
+        - m
+        - r
   - Ethnicity
     - % Belarusian
     - % German
@@ -669,6 +872,8 @@
     - Other or Unknown
     - Roman Catholic
 - Census 1931
+  - City Population
+    - Total
   - Economically Active Population
     - 00 Forestry and hunting
     - 08 Horticulture and beekeeping
@@ -1136,6 +1341,240 @@
   - Total
 - Forests
   - Area
+- Land ownership structure
+  - 0,0 - 0,5 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent Pastures, Mountain Meadows, and Heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under Buildings and Roads
+    - Unproductive land
+  - 0,5 - 1,0 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 1 - 2 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 10 - 20 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 10 – 15 ha
+    - Number of holdings
+    - Population Size
+  - 100 - 200 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 15 – 50 ha
+    - Number of holdings
+    - Population Size
+  - 2 - 3 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 2 – 5 ha
+    - Number of holdings
+    - Population Size
+  - 20 - 50 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 200 - 1000 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 200 - 300 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 3 - 4 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 300 - 400 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 4 - 5 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 400 - 500 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 5 - 10 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 5 – 10 ha
+    - Number of holdings
+    - Population Size
+  - 50 - 100 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - 50 ha and more
+    - Number of holdings
+    - Population Size
+  - 500 - 1000 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - Less than 2 ha
+    - Number of holdings
+    - Population Size
+  - over 100 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - over 1000 ha
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - Together
+    - Arable Land
+    - Arable Land under Forest Use
+    - Area
+    - Meadows
+    - Number of holdings
+    - Orchards and Vegetable Gardens
+    - Permanent pastures, mountain meadows, and heaths
+    - Ponds, Lakes, and Exploited Peatlands
+    - Under buildings and roads
+    - Unproductive land
+  - Total
+    - Number of holdings
+    - Population Size
+  - Unknown Area
+    - Number of holdings
+    - Population Size
 - Large Land Estates
   - Private
     - Arable land
@@ -1278,6 +1717,10 @@
     - Wheat
     - Working Horse (Maximum Price)
     - Working Horse (Minimum Price)
+- War Damage 1914–1920
+  - Destroyed Buildings
+    - Number of All Destroyed
+    - Remaining to be Rebuilt on 1 Jan. 1923
 - Yearbook 1939
-  - Population
+  - City Population
     - Total

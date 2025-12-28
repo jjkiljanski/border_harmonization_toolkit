@@ -1,4 +1,5 @@
 ﻿level,name,path,parent,is_leaf
+1,Buildings,Buildings,,False
 1,Business Permissions,Business Permissions,,False
 1,Census 1921,Census 1921,,False
 1,Census 1931,Census 1931,,False
@@ -6,17 +7,31 @@
 1,District Area,District Area,,True
 1,Employment,Employment,,False
 1,Forests,Forests,,False
+1,Land ownership structure,Land ownership structure,,False
 1,Large Land Estates,Large Land Estates,,False
 1,Livestock,Livestock,,False
 1,Prices,Prices,,False
+1,War Damage 1914–1920,War Damage 1914–1920,,False
 1,Yearbook 1939,Yearbook 1939,,False
+2,Number of residential and other inhabited buildings per 1 property,Buildings/Number of residential and other inhabited buildings per 1 property,Buildings,False
+2,Number of residential buildings per 1 km2,Buildings/Number of residential buildings per 1 km2,Buildings,True
+2,Out of every 100 buildings,Buildings/Out of every 100 buildings,Buildings,False
+2,Out of every 100 inhabited buildings,Buildings/Out of every 100 inhabited buildings,Buildings,False
+2,Percentage of Uninhabited Buildings Intended for Residential Use,Buildings/Percentage of Uninhabited Buildings Intended for Residential Use,Buildings,False
+2,Percentage of Uninhabited Dwellings,Buildings/Percentage of Uninhabited Dwellings,Buildings,False
+2,Population per 1 building,Buildings/Population per 1 building,Buildings,False
+2,Population per 1 inhabited property,Buildings/Population per 1 inhabited property,Buildings,False
+2,Total Number of Buildings,Buildings/Total Number of Buildings,Buildings,True
 2,Industrial Occupations,Business Permissions/Industrial Occupations,Business Permissions,False
 2,Industry,Business Permissions/Industry,Business Permissions,False
 2,Trade,Business Permissions/Trade,Business Permissions,False
+2,City Population,Census 1921/City Population,Census 1921,False
+2,Educational attainment of the population aged 10 years and over,Census 1921/Educational attainment of the population aged 10 years and over,Census 1921,False
 2,Ethnicity,Census 1921/Ethnicity,Census 1921,False
 2,Indirect Occupation,Census 1921/Indirect Occupation,Census 1921,False
 2,Population,Census 1921/Population,Census 1921,False
 2,Religion,Census 1921/Religion,Census 1921,False
+2,City Population,Census 1931/City Population,Census 1931,False
 2,Economically Active Population,Census 1931/Economically Active Population,Census 1931,False
 2,Indirect Occupation,Census 1931/Indirect Occupation,Census 1931,False
 2,Mother Tongue,Census 1931/Mother Tongue,Census 1931,False
@@ -33,6 +48,33 @@
 2,Public works,Employment/Public works,Employment,True
 2,Total,Employment/Total,Employment,True
 2,Area,Forests/Area,Forests,True
+2,"0,0 - 0,5 ha","Land ownership structure/0,0 - 0,5 ha",Land ownership structure,False
+2,"0,5 - 1,0 ha","Land ownership structure/0,5 - 1,0 ha",Land ownership structure,False
+2,1 - 2 ha,Land ownership structure/1 - 2 ha,Land ownership structure,False
+2,10 - 20 ha,Land ownership structure/10 - 20 ha,Land ownership structure,False
+2,10 – 15 ha,Land ownership structure/10 – 15 ha,Land ownership structure,False
+2,100 - 200 ha,Land ownership structure/100 - 200 ha,Land ownership structure,False
+2,15 – 50 ha,Land ownership structure/15 – 50 ha,Land ownership structure,False
+2,2 - 3 ha,Land ownership structure/2 - 3 ha,Land ownership structure,False
+2,2 – 5 ha,Land ownership structure/2 – 5 ha,Land ownership structure,False
+2,20 - 50 ha,Land ownership structure/20 - 50 ha,Land ownership structure,False
+2,200 - 1000 ha,Land ownership structure/200 - 1000 ha,Land ownership structure,False
+2,200 - 300 ha,Land ownership structure/200 - 300 ha,Land ownership structure,False
+2,3 - 4 ha,Land ownership structure/3 - 4 ha,Land ownership structure,False
+2,300 - 400 ha,Land ownership structure/300 - 400 ha,Land ownership structure,False
+2,4 - 5 ha,Land ownership structure/4 - 5 ha,Land ownership structure,False
+2,400 - 500 ha,Land ownership structure/400 - 500 ha,Land ownership structure,False
+2,5 - 10 ha,Land ownership structure/5 - 10 ha,Land ownership structure,False
+2,5 – 10 ha,Land ownership structure/5 – 10 ha,Land ownership structure,False
+2,50 - 100 ha,Land ownership structure/50 - 100 ha,Land ownership structure,False
+2,50 ha and more,Land ownership structure/50 ha and more,Land ownership structure,False
+2,500 - 1000 ha,Land ownership structure/500 - 1000 ha,Land ownership structure,False
+2,Less than 2 ha,Land ownership structure/Less than 2 ha,Land ownership structure,False
+2,over 100 ha,Land ownership structure/over 100 ha,Land ownership structure,False
+2,over 1000 ha,Land ownership structure/over 1000 ha,Land ownership structure,False
+2,Together,Land ownership structure/Together,Land ownership structure,False
+2,Total,Land ownership structure/Total,Land ownership structure,False
+2,Unknown Area,Land ownership structure/Unknown Area,Land ownership structure,False
 2,Private,Large Land Estates/Private,Large Land Estates,False
 2,Goats,Livestock/Goats,Livestock,True
 2,Horned Cattle,Livestock/Horned Cattle,Livestock,True
@@ -41,7 +83,37 @@
 2,Sheep,Livestock/Sheep,Livestock,True
 2,Sheep and Goats,Livestock/Sheep and Goats,Livestock,True
 2,Local Paid to Producers,Prices/Local Paid to Producers,Prices,False
-2,Population,Yearbook 1939/Population,Yearbook 1939,False
+2,Destroyed Buildings,War Damage 1914–1920/Destroyed Buildings,War Damage 1914–1920,False
+2,City Population,Yearbook 1939/City Population,Yearbook 1939,False
+3,Rural Areas,Buildings/Number of residential and other inhabited buildings per 1 property/Rural Areas,Buildings/Number of residential and other inhabited buildings per 1 property,True
+3,Total,Buildings/Number of residential and other inhabited buildings per 1 property/Total,Buildings/Number of residential and other inhabited buildings per 1 property,True
+3,"Towns over 20,000 inhabitants","Buildings/Number of residential and other inhabited buildings per 1 property/Towns over 20,000 inhabitants",Buildings/Number of residential and other inhabited buildings per 1 property,True
+3,"Towns under 20,000 inhabitants","Buildings/Number of residential and other inhabited buildings per 1 property/Towns under 20,000 inhabitants",Buildings/Number of residential and other inhabited buildings per 1 property,True
+3,Clay and other materials,Buildings/Out of every 100 buildings/Clay and other materials,Buildings/Out of every 100 buildings,False
+3,Fireproof roofing,Buildings/Out of every 100 buildings/Fireproof roofing,Buildings/Out of every 100 buildings,False
+3,Masonry,Buildings/Out of every 100 buildings/Masonry,Buildings/Out of every 100 buildings,False
+3,Roofing unknown,Buildings/Out of every 100 buildings/Roofing unknown,Buildings/Out of every 100 buildings,False
+3,Straw roofing,Buildings/Out of every 100 buildings/Straw roofing,Buildings/Out of every 100 buildings,False
+3,Unknown material,Buildings/Out of every 100 buildings/Unknown material,Buildings/Out of every 100 buildings,False
+3,Wood roofing,Buildings/Out of every 100 buildings/Wood roofing,Buildings/Out of every 100 buildings,False
+3,Wooden,Buildings/Out of every 100 buildings/Wooden,Buildings/Out of every 100 buildings,False
+3,Residential By Intended Use,Buildings/Out of every 100 inhabited buildings/Residential By Intended Use,Buildings/Out of every 100 inhabited buildings,False
+3,Used mainly for other purposes,Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes,Buildings/Out of every 100 inhabited buildings,False
+3,"Utility, Temporary and Movable Buildings","Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings",Buildings/Out of every 100 inhabited buildings,False
+3,Rural Areas,Buildings/Percentage of Uninhabited Buildings Intended for Residential Use/Rural Areas,Buildings/Percentage of Uninhabited Buildings Intended for Residential Use,True
+3,Total,Buildings/Percentage of Uninhabited Buildings Intended for Residential Use/Total,Buildings/Percentage of Uninhabited Buildings Intended for Residential Use,True
+3,"Towns over 20,000 inhabitants","Buildings/Percentage of Uninhabited Buildings Intended for Residential Use/Towns over 20,000 inhabitants",Buildings/Percentage of Uninhabited Buildings Intended for Residential Use,True
+3,"Towns under 20,000 inhabitants","Buildings/Percentage of Uninhabited Buildings Intended for Residential Use/Towns under 20,000 inhabitants",Buildings/Percentage of Uninhabited Buildings Intended for Residential Use,True
+3,Rural Areas,Buildings/Percentage of Uninhabited Dwellings/Rural Areas,Buildings/Percentage of Uninhabited Dwellings,True
+3,Total,Buildings/Percentage of Uninhabited Dwellings/Total,Buildings/Percentage of Uninhabited Dwellings,True
+3,"Towns over 20,000 inhabitants","Buildings/Percentage of Uninhabited Dwellings/Towns over 20,000 inhabitants",Buildings/Percentage of Uninhabited Dwellings,True
+3,"Towns under 20,000 inhabitants","Buildings/Percentage of Uninhabited Dwellings/Towns under 20,000 inhabitants",Buildings/Percentage of Uninhabited Dwellings,True
+3,Rural Areas,Buildings/Population per 1 building/Rural Areas,Buildings/Population per 1 building,True
+3,Total,Buildings/Population per 1 building/Total,Buildings/Population per 1 building,True
+3,"Towns over 20,000 inhabitants","Buildings/Population per 1 building/Towns over 20,000 inhabitants",Buildings/Population per 1 building,True
+3,"Towns under 20,000 inhabitants","Buildings/Population per 1 building/Towns under 20,000 inhabitants",Buildings/Population per 1 building,True
+3,"Towns over 20,000 inhabitants","Buildings/Population per 1 inhabited property/Towns over 20,000 inhabitants",Buildings/Population per 1 inhabited property,True
+3,"Towns under 20,000 inhabitants","Buildings/Population per 1 inhabited property/Towns under 20,000 inhabitants",Buildings/Population per 1 inhabited property,True
 3,Category IIIPR,Business Permissions/Industrial Occupations/Category IIIPR,Business Permissions/Industrial Occupations,True
 3,Category IIIR,Business Permissions/Industrial Occupations/Category IIIR,Business Permissions/Industrial Occupations,True
 3,Category IIPR,Business Permissions/Industrial Occupations/Category IIPR,Business Permissions/Industrial Occupations,True
@@ -270,6 +342,16 @@
 3,Z 3661-3669. Industrial occupations,Business Permissions/Trade/Z 3661-3669. Industrial occupations,Business Permissions/Trade,True
 3,ZP. Industrial activities,Business Permissions/Trade/ZP. Industrial activities,Business Permissions/Trade,False
 3,"Ż 3833. Ferries, barges, water networks","Business Permissions/Trade/Ż 3833. Ferries, barges, water networks",Business Permissions/Trade,True
+3,Total,Census 1921/City Population/Total,Census 1921/City Population,True
+3,Education Unknown,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown,Census 1921/Educational attainment of the population aged 10 years and over,False
+3,Higher Education,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education,Census 1921/Educational attainment of the population aged 10 years and over,False
+3,Home Education,Census 1921/Educational attainment of the population aged 10 years and over/Home Education,Census 1921/Educational attainment of the population aged 10 years and over,False
+3,Number of people aged 10 years and over,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over,Census 1921/Educational attainment of the population aged 10 years and over,False
+3,Primary Education,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education,Census 1921/Educational attainment of the population aged 10 years and over,False
+3,Reading ability unknown,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown,Census 1921/Educational attainment of the population aged 10 years and over,False
+3,Secondary Education,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education,Census 1921/Educational attainment of the population aged 10 years and over,False
+3,Unable to read,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read,Census 1921/Educational attainment of the population aged 10 years and over,False
+3,Vocational Education (Secondary and Lower),Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower),Census 1921/Educational attainment of the population aged 10 years and over,False
 3,% Belarusian,Census 1921/Ethnicity/% Belarusian,Census 1921/Ethnicity,True
 3,% German,Census 1921/Ethnicity/% German,Census 1921/Ethnicity,True
 3,% Jewish,Census 1921/Ethnicity/% Jewish,Census 1921/Ethnicity,True
@@ -312,6 +394,7 @@
 3,Other Christian Denominations,Census 1921/Religion/Other Christian Denominations,Census 1921/Religion,True
 3,Other or Unknown,Census 1921/Religion/Other or Unknown,Census 1921/Religion,True
 3,Roman Catholic,Census 1921/Religion/Roman Catholic,Census 1921/Religion,True
+3,Total,Census 1931/City Population/Total,Census 1931/City Population,True
 3,00 Forestry and hunting,Census 1931/Economically Active Population/00 Forestry and hunting,Census 1931/Economically Active Population,True
 3,08 Horticulture and beekeeping,Census 1931/Economically Active Population/08 Horticulture and beekeeping,Census 1931/Economically Active Population,True
 3,"08-00 Section B. Horticulture, fishing, forestry - all","Census 1931/Economically Active Population/08-00 Section B. Horticulture, fishing, forestry - all",Census 1931/Economically Active Population,True
@@ -706,6 +789,212 @@
 3,Printing,Employment/Industry/Printing,Employment/Industry,True
 3,Textile,Employment/Industry/Textile,Employment/Industry,True
 3,Wood,Employment/Industry/Wood,Employment/Industry,True
+3,Arable Land,"Land ownership structure/0,0 - 0,5 ha/Arable Land","Land ownership structure/0,0 - 0,5 ha",True
+3,Arable Land under Forest Use,"Land ownership structure/0,0 - 0,5 ha/Arable Land under Forest Use","Land ownership structure/0,0 - 0,5 ha",True
+3,Area,"Land ownership structure/0,0 - 0,5 ha/Area","Land ownership structure/0,0 - 0,5 ha",True
+3,Meadows,"Land ownership structure/0,0 - 0,5 ha/Meadows","Land ownership structure/0,0 - 0,5 ha",True
+3,Number of holdings,"Land ownership structure/0,0 - 0,5 ha/Number of holdings","Land ownership structure/0,0 - 0,5 ha",True
+3,Orchards and Vegetable Gardens,"Land ownership structure/0,0 - 0,5 ha/Orchards and Vegetable Gardens","Land ownership structure/0,0 - 0,5 ha",True
+3,"Permanent Pastures, Mountain Meadows, and Heaths","Land ownership structure/0,0 - 0,5 ha/Permanent Pastures, Mountain Meadows, and Heaths","Land ownership structure/0,0 - 0,5 ha",True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/0,0 - 0,5 ha/Ponds, Lakes, and Exploited Peatlands","Land ownership structure/0,0 - 0,5 ha",True
+3,Under Buildings and Roads,"Land ownership structure/0,0 - 0,5 ha/Under Buildings and Roads","Land ownership structure/0,0 - 0,5 ha",True
+3,Unproductive land,"Land ownership structure/0,0 - 0,5 ha/Unproductive land","Land ownership structure/0,0 - 0,5 ha",True
+3,Arable Land,"Land ownership structure/0,5 - 1,0 ha/Arable Land","Land ownership structure/0,5 - 1,0 ha",True
+3,Arable Land under Forest Use,"Land ownership structure/0,5 - 1,0 ha/Arable Land under Forest Use","Land ownership structure/0,5 - 1,0 ha",True
+3,Area,"Land ownership structure/0,5 - 1,0 ha/Area","Land ownership structure/0,5 - 1,0 ha",True
+3,Meadows,"Land ownership structure/0,5 - 1,0 ha/Meadows","Land ownership structure/0,5 - 1,0 ha",True
+3,Number of holdings,"Land ownership structure/0,5 - 1,0 ha/Number of holdings","Land ownership structure/0,5 - 1,0 ha",True
+3,Orchards and Vegetable Gardens,"Land ownership structure/0,5 - 1,0 ha/Orchards and Vegetable Gardens","Land ownership structure/0,5 - 1,0 ha",True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/0,5 - 1,0 ha/Permanent pastures, mountain meadows, and heaths","Land ownership structure/0,5 - 1,0 ha",True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/0,5 - 1,0 ha/Ponds, Lakes, and Exploited Peatlands","Land ownership structure/0,5 - 1,0 ha",True
+3,Under buildings and roads,"Land ownership structure/0,5 - 1,0 ha/Under buildings and roads","Land ownership structure/0,5 - 1,0 ha",True
+3,Unproductive land,"Land ownership structure/0,5 - 1,0 ha/Unproductive land","Land ownership structure/0,5 - 1,0 ha",True
+3,Arable Land,Land ownership structure/1 - 2 ha/Arable Land,Land ownership structure/1 - 2 ha,True
+3,Arable Land under Forest Use,Land ownership structure/1 - 2 ha/Arable Land under Forest Use,Land ownership structure/1 - 2 ha,True
+3,Area,Land ownership structure/1 - 2 ha/Area,Land ownership structure/1 - 2 ha,True
+3,Meadows,Land ownership structure/1 - 2 ha/Meadows,Land ownership structure/1 - 2 ha,True
+3,Number of holdings,Land ownership structure/1 - 2 ha/Number of holdings,Land ownership structure/1 - 2 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/1 - 2 ha/Orchards and Vegetable Gardens,Land ownership structure/1 - 2 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/1 - 2 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/1 - 2 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/1 - 2 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/1 - 2 ha,True
+3,Under buildings and roads,Land ownership structure/1 - 2 ha/Under buildings and roads,Land ownership structure/1 - 2 ha,True
+3,Unproductive land,Land ownership structure/1 - 2 ha/Unproductive land,Land ownership structure/1 - 2 ha,True
+3,Arable Land,Land ownership structure/10 - 20 ha/Arable Land,Land ownership structure/10 - 20 ha,True
+3,Arable Land under Forest Use,Land ownership structure/10 - 20 ha/Arable Land under Forest Use,Land ownership structure/10 - 20 ha,True
+3,Area,Land ownership structure/10 - 20 ha/Area,Land ownership structure/10 - 20 ha,True
+3,Meadows,Land ownership structure/10 - 20 ha/Meadows,Land ownership structure/10 - 20 ha,True
+3,Number of holdings,Land ownership structure/10 - 20 ha/Number of holdings,Land ownership structure/10 - 20 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/10 - 20 ha/Orchards and Vegetable Gardens,Land ownership structure/10 - 20 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/10 - 20 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/10 - 20 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/10 - 20 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/10 - 20 ha,True
+3,Under buildings and roads,Land ownership structure/10 - 20 ha/Under buildings and roads,Land ownership structure/10 - 20 ha,True
+3,Unproductive land,Land ownership structure/10 - 20 ha/Unproductive land,Land ownership structure/10 - 20 ha,True
+3,Number of holdings,Land ownership structure/10 – 15 ha/Number of holdings,Land ownership structure/10 – 15 ha,True
+3,Population Size,Land ownership structure/10 – 15 ha/Population Size,Land ownership structure/10 – 15 ha,True
+3,Arable Land,Land ownership structure/100 - 200 ha/Arable Land,Land ownership structure/100 - 200 ha,True
+3,Arable Land under Forest Use,Land ownership structure/100 - 200 ha/Arable Land under Forest Use,Land ownership structure/100 - 200 ha,True
+3,Area,Land ownership structure/100 - 200 ha/Area,Land ownership structure/100 - 200 ha,True
+3,Meadows,Land ownership structure/100 - 200 ha/Meadows,Land ownership structure/100 - 200 ha,True
+3,Number of holdings,Land ownership structure/100 - 200 ha/Number of holdings,Land ownership structure/100 - 200 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/100 - 200 ha/Orchards and Vegetable Gardens,Land ownership structure/100 - 200 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/100 - 200 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/100 - 200 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/100 - 200 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/100 - 200 ha,True
+3,Under buildings and roads,Land ownership structure/100 - 200 ha/Under buildings and roads,Land ownership structure/100 - 200 ha,True
+3,Unproductive land,Land ownership structure/100 - 200 ha/Unproductive land,Land ownership structure/100 - 200 ha,True
+3,Number of holdings,Land ownership structure/15 – 50 ha/Number of holdings,Land ownership structure/15 – 50 ha,True
+3,Population Size,Land ownership structure/15 – 50 ha/Population Size,Land ownership structure/15 – 50 ha,True
+3,Arable Land,Land ownership structure/2 - 3 ha/Arable Land,Land ownership structure/2 - 3 ha,True
+3,Arable Land under Forest Use,Land ownership structure/2 - 3 ha/Arable Land under Forest Use,Land ownership structure/2 - 3 ha,True
+3,Area,Land ownership structure/2 - 3 ha/Area,Land ownership structure/2 - 3 ha,True
+3,Meadows,Land ownership structure/2 - 3 ha/Meadows,Land ownership structure/2 - 3 ha,True
+3,Number of holdings,Land ownership structure/2 - 3 ha/Number of holdings,Land ownership structure/2 - 3 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/2 - 3 ha/Orchards and Vegetable Gardens,Land ownership structure/2 - 3 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/2 - 3 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/2 - 3 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/2 - 3 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/2 - 3 ha,True
+3,Under buildings and roads,Land ownership structure/2 - 3 ha/Under buildings and roads,Land ownership structure/2 - 3 ha,True
+3,Unproductive land,Land ownership structure/2 - 3 ha/Unproductive land,Land ownership structure/2 - 3 ha,True
+3,Number of holdings,Land ownership structure/2 – 5 ha/Number of holdings,Land ownership structure/2 – 5 ha,True
+3,Population Size,Land ownership structure/2 – 5 ha/Population Size,Land ownership structure/2 – 5 ha,True
+3,Arable Land,Land ownership structure/20 - 50 ha/Arable Land,Land ownership structure/20 - 50 ha,True
+3,Arable Land under Forest Use,Land ownership structure/20 - 50 ha/Arable Land under Forest Use,Land ownership structure/20 - 50 ha,True
+3,Area,Land ownership structure/20 - 50 ha/Area,Land ownership structure/20 - 50 ha,True
+3,Meadows,Land ownership structure/20 - 50 ha/Meadows,Land ownership structure/20 - 50 ha,True
+3,Number of holdings,Land ownership structure/20 - 50 ha/Number of holdings,Land ownership structure/20 - 50 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/20 - 50 ha/Orchards and Vegetable Gardens,Land ownership structure/20 - 50 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/20 - 50 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/20 - 50 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/20 - 50 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/20 - 50 ha,True
+3,Under buildings and roads,Land ownership structure/20 - 50 ha/Under buildings and roads,Land ownership structure/20 - 50 ha,True
+3,Unproductive land,Land ownership structure/20 - 50 ha/Unproductive land,Land ownership structure/20 - 50 ha,True
+3,Arable Land,Land ownership structure/200 - 1000 ha/Arable Land,Land ownership structure/200 - 1000 ha,True
+3,Arable Land under Forest Use,Land ownership structure/200 - 1000 ha/Arable Land under Forest Use,Land ownership structure/200 - 1000 ha,True
+3,Area,Land ownership structure/200 - 1000 ha/Area,Land ownership structure/200 - 1000 ha,True
+3,Meadows,Land ownership structure/200 - 1000 ha/Meadows,Land ownership structure/200 - 1000 ha,True
+3,Number of holdings,Land ownership structure/200 - 1000 ha/Number of holdings,Land ownership structure/200 - 1000 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/200 - 1000 ha/Orchards and Vegetable Gardens,Land ownership structure/200 - 1000 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/200 - 1000 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/200 - 1000 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/200 - 1000 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/200 - 1000 ha,True
+3,Under buildings and roads,Land ownership structure/200 - 1000 ha/Under buildings and roads,Land ownership structure/200 - 1000 ha,True
+3,Unproductive land,Land ownership structure/200 - 1000 ha/Unproductive land,Land ownership structure/200 - 1000 ha,True
+3,Arable Land,Land ownership structure/200 - 300 ha/Arable Land,Land ownership structure/200 - 300 ha,True
+3,Arable Land under Forest Use,Land ownership structure/200 - 300 ha/Arable Land under Forest Use,Land ownership structure/200 - 300 ha,True
+3,Area,Land ownership structure/200 - 300 ha/Area,Land ownership structure/200 - 300 ha,True
+3,Meadows,Land ownership structure/200 - 300 ha/Meadows,Land ownership structure/200 - 300 ha,True
+3,Number of holdings,Land ownership structure/200 - 300 ha/Number of holdings,Land ownership structure/200 - 300 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/200 - 300 ha/Orchards and Vegetable Gardens,Land ownership structure/200 - 300 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/200 - 300 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/200 - 300 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/200 - 300 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/200 - 300 ha,True
+3,Under buildings and roads,Land ownership structure/200 - 300 ha/Under buildings and roads,Land ownership structure/200 - 300 ha,True
+3,Unproductive land,Land ownership structure/200 - 300 ha/Unproductive land,Land ownership structure/200 - 300 ha,True
+3,Arable Land,Land ownership structure/3 - 4 ha/Arable Land,Land ownership structure/3 - 4 ha,True
+3,Arable Land under Forest Use,Land ownership structure/3 - 4 ha/Arable Land under Forest Use,Land ownership structure/3 - 4 ha,True
+3,Area,Land ownership structure/3 - 4 ha/Area,Land ownership structure/3 - 4 ha,True
+3,Meadows,Land ownership structure/3 - 4 ha/Meadows,Land ownership structure/3 - 4 ha,True
+3,Number of holdings,Land ownership structure/3 - 4 ha/Number of holdings,Land ownership structure/3 - 4 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/3 - 4 ha/Orchards and Vegetable Gardens,Land ownership structure/3 - 4 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/3 - 4 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/3 - 4 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/3 - 4 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/3 - 4 ha,True
+3,Under buildings and roads,Land ownership structure/3 - 4 ha/Under buildings and roads,Land ownership structure/3 - 4 ha,True
+3,Unproductive land,Land ownership structure/3 - 4 ha/Unproductive land,Land ownership structure/3 - 4 ha,True
+3,Arable Land,Land ownership structure/300 - 400 ha/Arable Land,Land ownership structure/300 - 400 ha,True
+3,Arable Land under Forest Use,Land ownership structure/300 - 400 ha/Arable Land under Forest Use,Land ownership structure/300 - 400 ha,True
+3,Area,Land ownership structure/300 - 400 ha/Area,Land ownership structure/300 - 400 ha,True
+3,Meadows,Land ownership structure/300 - 400 ha/Meadows,Land ownership structure/300 - 400 ha,True
+3,Number of holdings,Land ownership structure/300 - 400 ha/Number of holdings,Land ownership structure/300 - 400 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/300 - 400 ha/Orchards and Vegetable Gardens,Land ownership structure/300 - 400 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/300 - 400 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/300 - 400 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/300 - 400 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/300 - 400 ha,True
+3,Under buildings and roads,Land ownership structure/300 - 400 ha/Under buildings and roads,Land ownership structure/300 - 400 ha,True
+3,Unproductive land,Land ownership structure/300 - 400 ha/Unproductive land,Land ownership structure/300 - 400 ha,True
+3,Arable Land,Land ownership structure/4 - 5 ha/Arable Land,Land ownership structure/4 - 5 ha,True
+3,Arable Land under Forest Use,Land ownership structure/4 - 5 ha/Arable Land under Forest Use,Land ownership structure/4 - 5 ha,True
+3,Area,Land ownership structure/4 - 5 ha/Area,Land ownership structure/4 - 5 ha,True
+3,Meadows,Land ownership structure/4 - 5 ha/Meadows,Land ownership structure/4 - 5 ha,True
+3,Number of holdings,Land ownership structure/4 - 5 ha/Number of holdings,Land ownership structure/4 - 5 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/4 - 5 ha/Orchards and Vegetable Gardens,Land ownership structure/4 - 5 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/4 - 5 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/4 - 5 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/4 - 5 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/4 - 5 ha,True
+3,Under buildings and roads,Land ownership structure/4 - 5 ha/Under buildings and roads,Land ownership structure/4 - 5 ha,True
+3,Unproductive land,Land ownership structure/4 - 5 ha/Unproductive land,Land ownership structure/4 - 5 ha,True
+3,Arable Land,Land ownership structure/400 - 500 ha/Arable Land,Land ownership structure/400 - 500 ha,True
+3,Arable Land under Forest Use,Land ownership structure/400 - 500 ha/Arable Land under Forest Use,Land ownership structure/400 - 500 ha,True
+3,Area,Land ownership structure/400 - 500 ha/Area,Land ownership structure/400 - 500 ha,True
+3,Meadows,Land ownership structure/400 - 500 ha/Meadows,Land ownership structure/400 - 500 ha,True
+3,Number of holdings,Land ownership structure/400 - 500 ha/Number of holdings,Land ownership structure/400 - 500 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/400 - 500 ha/Orchards and Vegetable Gardens,Land ownership structure/400 - 500 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/400 - 500 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/400 - 500 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/400 - 500 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/400 - 500 ha,True
+3,Under buildings and roads,Land ownership structure/400 - 500 ha/Under buildings and roads,Land ownership structure/400 - 500 ha,True
+3,Unproductive land,Land ownership structure/400 - 500 ha/Unproductive land,Land ownership structure/400 - 500 ha,True
+3,Arable Land,Land ownership structure/5 - 10 ha/Arable Land,Land ownership structure/5 - 10 ha,True
+3,Arable Land under Forest Use,Land ownership structure/5 - 10 ha/Arable Land under Forest Use,Land ownership structure/5 - 10 ha,True
+3,Area,Land ownership structure/5 - 10 ha/Area,Land ownership structure/5 - 10 ha,True
+3,Meadows,Land ownership structure/5 - 10 ha/Meadows,Land ownership structure/5 - 10 ha,True
+3,Number of holdings,Land ownership structure/5 - 10 ha/Number of holdings,Land ownership structure/5 - 10 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/5 - 10 ha/Orchards and Vegetable Gardens,Land ownership structure/5 - 10 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/5 - 10 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/5 - 10 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/5 - 10 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/5 - 10 ha,True
+3,Under buildings and roads,Land ownership structure/5 - 10 ha/Under buildings and roads,Land ownership structure/5 - 10 ha,True
+3,Unproductive land,Land ownership structure/5 - 10 ha/Unproductive land,Land ownership structure/5 - 10 ha,True
+3,Number of holdings,Land ownership structure/5 – 10 ha/Number of holdings,Land ownership structure/5 – 10 ha,True
+3,Population Size,Land ownership structure/5 – 10 ha/Population Size,Land ownership structure/5 – 10 ha,True
+3,Arable Land,Land ownership structure/50 - 100 ha/Arable Land,Land ownership structure/50 - 100 ha,True
+3,Arable Land under Forest Use,Land ownership structure/50 - 100 ha/Arable Land under Forest Use,Land ownership structure/50 - 100 ha,True
+3,Area,Land ownership structure/50 - 100 ha/Area,Land ownership structure/50 - 100 ha,True
+3,Meadows,Land ownership structure/50 - 100 ha/Meadows,Land ownership structure/50 - 100 ha,True
+3,Number of holdings,Land ownership structure/50 - 100 ha/Number of holdings,Land ownership structure/50 - 100 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/50 - 100 ha/Orchards and Vegetable Gardens,Land ownership structure/50 - 100 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/50 - 100 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/50 - 100 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/50 - 100 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/50 - 100 ha,True
+3,Under buildings and roads,Land ownership structure/50 - 100 ha/Under buildings and roads,Land ownership structure/50 - 100 ha,True
+3,Unproductive land,Land ownership structure/50 - 100 ha/Unproductive land,Land ownership structure/50 - 100 ha,True
+3,Number of holdings,Land ownership structure/50 ha and more/Number of holdings,Land ownership structure/50 ha and more,True
+3,Population Size,Land ownership structure/50 ha and more/Population Size,Land ownership structure/50 ha and more,True
+3,Arable Land,Land ownership structure/500 - 1000 ha/Arable Land,Land ownership structure/500 - 1000 ha,True
+3,Arable Land under Forest Use,Land ownership structure/500 - 1000 ha/Arable Land under Forest Use,Land ownership structure/500 - 1000 ha,True
+3,Area,Land ownership structure/500 - 1000 ha/Area,Land ownership structure/500 - 1000 ha,True
+3,Meadows,Land ownership structure/500 - 1000 ha/Meadows,Land ownership structure/500 - 1000 ha,True
+3,Number of holdings,Land ownership structure/500 - 1000 ha/Number of holdings,Land ownership structure/500 - 1000 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/500 - 1000 ha/Orchards and Vegetable Gardens,Land ownership structure/500 - 1000 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/500 - 1000 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/500 - 1000 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/500 - 1000 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/500 - 1000 ha,True
+3,Under buildings and roads,Land ownership structure/500 - 1000 ha/Under buildings and roads,Land ownership structure/500 - 1000 ha,True
+3,Unproductive land,Land ownership structure/500 - 1000 ha/Unproductive land,Land ownership structure/500 - 1000 ha,True
+3,Number of holdings,Land ownership structure/Less than 2 ha/Number of holdings,Land ownership structure/Less than 2 ha,True
+3,Population Size,Land ownership structure/Less than 2 ha/Population Size,Land ownership structure/Less than 2 ha,True
+3,Arable Land,Land ownership structure/Together/Arable Land,Land ownership structure/Together,True
+3,Arable Land under Forest Use,Land ownership structure/Together/Arable Land under Forest Use,Land ownership structure/Together,True
+3,Area,Land ownership structure/Together/Area,Land ownership structure/Together,True
+3,Meadows,Land ownership structure/Together/Meadows,Land ownership structure/Together,True
+3,Number of holdings,Land ownership structure/Together/Number of holdings,Land ownership structure/Together,True
+3,Orchards and Vegetable Gardens,Land ownership structure/Together/Orchards and Vegetable Gardens,Land ownership structure/Together,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/Together/Permanent pastures, mountain meadows, and heaths",Land ownership structure/Together,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/Together/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/Together,True
+3,Under buildings and roads,Land ownership structure/Together/Under buildings and roads,Land ownership structure/Together,True
+3,Unproductive land,Land ownership structure/Together/Unproductive land,Land ownership structure/Together,True
+3,Number of holdings,Land ownership structure/Total/Number of holdings,Land ownership structure/Total,True
+3,Population Size,Land ownership structure/Total/Population Size,Land ownership structure/Total,True
+3,Number of holdings,Land ownership structure/Unknown Area/Number of holdings,Land ownership structure/Unknown Area,True
+3,Population Size,Land ownership structure/Unknown Area/Population Size,Land ownership structure/Unknown Area,True
+3,Arable Land,Land ownership structure/over 100 ha/Arable Land,Land ownership structure/over 100 ha,True
+3,Arable Land under Forest Use,Land ownership structure/over 100 ha/Arable Land under Forest Use,Land ownership structure/over 100 ha,True
+3,Area,Land ownership structure/over 100 ha/Area,Land ownership structure/over 100 ha,True
+3,Meadows,Land ownership structure/over 100 ha/Meadows,Land ownership structure/over 100 ha,True
+3,Number of holdings,Land ownership structure/over 100 ha/Number of holdings,Land ownership structure/over 100 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/over 100 ha/Orchards and Vegetable Gardens,Land ownership structure/over 100 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/over 100 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/over 100 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/over 100 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/over 100 ha,True
+3,Under buildings and roads,Land ownership structure/over 100 ha/Under buildings and roads,Land ownership structure/over 100 ha,True
+3,Unproductive land,Land ownership structure/over 100 ha/Unproductive land,Land ownership structure/over 100 ha,True
+3,Arable Land,Land ownership structure/over 1000 ha/Arable Land,Land ownership structure/over 1000 ha,True
+3,Arable Land under Forest Use,Land ownership structure/over 1000 ha/Arable Land under Forest Use,Land ownership structure/over 1000 ha,True
+3,Area,Land ownership structure/over 1000 ha/Area,Land ownership structure/over 1000 ha,True
+3,Meadows,Land ownership structure/over 1000 ha/Meadows,Land ownership structure/over 1000 ha,True
+3,Number of holdings,Land ownership structure/over 1000 ha/Number of holdings,Land ownership structure/over 1000 ha,True
+3,Orchards and Vegetable Gardens,Land ownership structure/over 1000 ha/Orchards and Vegetable Gardens,Land ownership structure/over 1000 ha,True
+3,"Permanent pastures, mountain meadows, and heaths","Land ownership structure/over 1000 ha/Permanent pastures, mountain meadows, and heaths",Land ownership structure/over 1000 ha,True
+3,"Ponds, Lakes, and Exploited Peatlands","Land ownership structure/over 1000 ha/Ponds, Lakes, and Exploited Peatlands",Land ownership structure/over 1000 ha,True
+3,Under buildings and roads,Land ownership structure/over 1000 ha/Under buildings and roads,Land ownership structure/over 1000 ha,True
+3,Unproductive land,Land ownership structure/over 1000 ha/Unproductive land,Land ownership structure/over 1000 ha,True
 3,Arable land,Large Land Estates/Private/Arable land,Large Land Estates/Private,False
 3,Land under forest use,Large Land Estates/Private/Land under forest use,Large Land Estates/Private,False
 3,Meadows,Large Land Estates/Private/Meadows,Large Land Estates/Private,False
@@ -732,7 +1021,53 @@
 3,Wheat,Prices/Local Paid to Producers/Wheat,Prices/Local Paid to Producers,True
 3,Working Horse (Maximum Price),Prices/Local Paid to Producers/Working Horse (Maximum Price),Prices/Local Paid to Producers,True
 3,Working Horse (Minimum Price),Prices/Local Paid to Producers/Working Horse (Minimum Price),Prices/Local Paid to Producers,True
-3,Total,Yearbook 1939/Population/Total,Yearbook 1939/Population,True
+3,Number of All Destroyed,War Damage 1914–1920/Destroyed Buildings/Number of All Destroyed,War Damage 1914–1920/Destroyed Buildings,True
+3,Remaining to be Rebuilt on 1 Jan. 1923,War Damage 1914–1920/Destroyed Buildings/Remaining to be Rebuilt on 1 Jan. 1923,War Damage 1914–1920/Destroyed Buildings,True
+3,Total,Yearbook 1939/City Population/Total,Yearbook 1939/City Population,True
+4,Rural areas,Buildings/Out of every 100 buildings/Clay and other materials/Rural areas,Buildings/Out of every 100 buildings/Clay and other materials,True
+4,Total,Buildings/Out of every 100 buildings/Clay and other materials/Total,Buildings/Out of every 100 buildings/Clay and other materials,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 buildings/Clay and other materials/Towns over 20,000 inhabitants",Buildings/Out of every 100 buildings/Clay and other materials,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 buildings/Clay and other materials/Towns under 20,000 inhabitants",Buildings/Out of every 100 buildings/Clay and other materials,True
+4,Rural areas,Buildings/Out of every 100 buildings/Fireproof roofing/Rural areas,Buildings/Out of every 100 buildings/Fireproof roofing,True
+4,Total,Buildings/Out of every 100 buildings/Fireproof roofing/Total,Buildings/Out of every 100 buildings/Fireproof roofing,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 buildings/Fireproof roofing/Towns over 20,000 inhabitants",Buildings/Out of every 100 buildings/Fireproof roofing,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 buildings/Fireproof roofing/Towns under 20,000 inhabitants",Buildings/Out of every 100 buildings/Fireproof roofing,True
+4,Rural areas,Buildings/Out of every 100 buildings/Masonry/Rural areas,Buildings/Out of every 100 buildings/Masonry,True
+4,Total,Buildings/Out of every 100 buildings/Masonry/Total,Buildings/Out of every 100 buildings/Masonry,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 buildings/Masonry/Towns over 20,000 inhabitants",Buildings/Out of every 100 buildings/Masonry,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 buildings/Masonry/Towns under 20,000 inhabitants",Buildings/Out of every 100 buildings/Masonry,True
+4,Rural areas,Buildings/Out of every 100 buildings/Roofing unknown/Rural areas,Buildings/Out of every 100 buildings/Roofing unknown,True
+4,Total,Buildings/Out of every 100 buildings/Roofing unknown/Total,Buildings/Out of every 100 buildings/Roofing unknown,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 buildings/Roofing unknown/Towns over 20,000 inhabitants",Buildings/Out of every 100 buildings/Roofing unknown,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 buildings/Roofing unknown/Towns under 20,000 inhabitants",Buildings/Out of every 100 buildings/Roofing unknown,True
+4,Rural areas,Buildings/Out of every 100 buildings/Straw roofing/Rural areas,Buildings/Out of every 100 buildings/Straw roofing,True
+4,Total,Buildings/Out of every 100 buildings/Straw roofing/Total,Buildings/Out of every 100 buildings/Straw roofing,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 buildings/Straw roofing/Towns over 20,000 inhabitants",Buildings/Out of every 100 buildings/Straw roofing,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 buildings/Straw roofing/Towns under 20,000 inhabitants",Buildings/Out of every 100 buildings/Straw roofing,True
+4,Rural areas,Buildings/Out of every 100 buildings/Unknown material/Rural areas,Buildings/Out of every 100 buildings/Unknown material,True
+4,Total,Buildings/Out of every 100 buildings/Unknown material/Total,Buildings/Out of every 100 buildings/Unknown material,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 buildings/Unknown material/Towns over 20,000 inhabitants",Buildings/Out of every 100 buildings/Unknown material,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 buildings/Unknown material/Towns under 20,000 inhabitants",Buildings/Out of every 100 buildings/Unknown material,True
+4,Rural areas,Buildings/Out of every 100 buildings/Wood roofing/Rural areas,Buildings/Out of every 100 buildings/Wood roofing,True
+4,Total,Buildings/Out of every 100 buildings/Wood roofing/Total,Buildings/Out of every 100 buildings/Wood roofing,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 buildings/Wood roofing/Towns over 20,000 inhabitants",Buildings/Out of every 100 buildings/Wood roofing,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 buildings/Wood roofing/Towns under 20,000 inhabitants",Buildings/Out of every 100 buildings/Wood roofing,True
+4,Rural areas,Buildings/Out of every 100 buildings/Wooden/Rural areas,Buildings/Out of every 100 buildings/Wooden,True
+4,Total,Buildings/Out of every 100 buildings/Wooden/Total,Buildings/Out of every 100 buildings/Wooden,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 buildings/Wooden/Towns over 20,000 inhabitants",Buildings/Out of every 100 buildings/Wooden,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 buildings/Wooden/Towns under 20,000 inhabitants",Buildings/Out of every 100 buildings/Wooden,True
+4,Rural Areas,Buildings/Out of every 100 inhabited buildings/Residential By Intended Use/Rural Areas,Buildings/Out of every 100 inhabited buildings/Residential By Intended Use,True
+4,Total,Buildings/Out of every 100 inhabited buildings/Residential By Intended Use/Total,Buildings/Out of every 100 inhabited buildings/Residential By Intended Use,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 inhabited buildings/Residential By Intended Use/Towns over 20,000 inhabitants",Buildings/Out of every 100 inhabited buildings/Residential By Intended Use,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 inhabited buildings/Residential By Intended Use/Towns under 20,000 inhabitants",Buildings/Out of every 100 inhabited buildings/Residential By Intended Use,True
+4,Rural Areas,Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes/Rural Areas,Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes,True
+4,Total,Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes/Total,Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes,True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes/Towns over 20,000 inhabitants",Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes,True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes/Towns under 20,000 inhabitants",Buildings/Out of every 100 inhabited buildings/Used mainly for other purposes,True
+4,Rural Areas,"Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings/Rural Areas","Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings",True
+4,Total,"Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings/Total","Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings",True
+4,"Towns over 20,000 inhabitants","Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings/Towns over 20,000 inhabitants","Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings",True
+4,"Towns under 20,000 inhabitants","Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings/Towns under 20,000 inhabitants","Buildings/Out of every 100 inhabited buildings/Utility, Temporary and Movable Buildings",True
 4,PR,Business Permissions/Industrial Occupations/Registration Permits/PR,Business Permissions/Industrial Occupations/Registration Permits,True
 4,R,Business Permissions/Industrial Occupations/Registration Permits/R,Business Permissions/Industrial Occupations/Registration Permits,True
 4,PR,Business Permissions/Industrial Occupations/Together/PR,Business Permissions/Industrial Occupations/Together,True
@@ -1120,6 +1455,33 @@
 4,Category VaR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category VaR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
 4,Category VbR,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Category VbR,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
 4,Total,Business Permissions/Trade/c. Professional purchasing (plant and animal products)/Total,Business Permissions/Trade/c. Professional purchasing (plant and animal products),True
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown,False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown,False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown,False
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education,False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education,False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education,False
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Home Education,False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Home Education,False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total,Census 1921/Educational attainment of the population aged 10 years and over/Home Education,False
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over,False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over,False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over,False
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education,False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education,False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education,False
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown,False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown,False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown,False
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education,False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education,False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education,False
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read,False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read,False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read,False
+4,Cities,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower),False
+4,Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower),False
+4,Total,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower),False
 4,Barley,Crops/Area/Mixtures for Grain/Barley,Crops/Area/Mixtures for Grain,True
 4,Other mixtures,Crops/Area/Mixtures for Grain/Other mixtures,Crops/Area/Mixtures for Grain,True
 4,Fiber,Crops/Size/Flax/Fiber,Crops/Size/Flax,True
@@ -1282,3 +1644,84 @@
 5,R,Business Permissions/Industrial Occupations/Trade at Fairs/Retail/R,Business Permissions/Industrial Occupations/Trade at Fairs/Retail,True
 5,PR,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale/PR,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale,True
 5,R,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale/R,Business Permissions/Industrial Occupations/Trade at Fairs/Wholesale,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Education Unknown/Total,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Higher Education/Total,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Home Education/Total,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Number of people aged 10 years and over/Total,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Primary Education/Total,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Reading ability unknown/Total,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Secondary Education/Total,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Unable to read/Total,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities/k,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities/m,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities/r,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Cities,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas/k,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas/m,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas/r,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Rural Areas,True
+5,k,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total/k,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total,True
+5,m,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total/m,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total,True
+5,r,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total/r,Census 1921/Educational attainment of the population aged 10 years and over/Vocational Education (Secondary and Lower)/Total,True

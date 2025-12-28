@@ -21,8 +21,8 @@
         "unit": "",
         "data_type": "int",
         "category": {
-          "eng": "Buildings/Census 1921/Buildings/Total Number",
-          "pol": "Budynki/Spis Powszechny 1921/Budynki/Całkowita liczba nieruchomości"
+          "eng": "Buildings/Total Number of Buildings",
+          "pol": "Budynki/Całkowita liczba nieruchomości"
         }
       }
     }
