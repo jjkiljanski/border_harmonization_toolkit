@@ -382,7 +382,7 @@ def create_dist_area_dataset(adm_history_processor: AdministrativeHistoryProcess
     dist_gdf = dist_gdf[dist_gdf["name_id"].isin(homeland_dist_names)]
 
     # Project to a metric CRS (e.g., EPSG:3857 or any equal-area projection)
-    dist_gdf_proj = dist_gdf.to_crs(epsg=3857)
+    dist_gdf_proj = dist_gdf.to_crs(epsg=3035)
 
     # Calculate area in square meters, then convert to hectares
     dist_gdf_proj["Area"] = dist_gdf_proj["geometry"].area / 10_000  # m² → ha
