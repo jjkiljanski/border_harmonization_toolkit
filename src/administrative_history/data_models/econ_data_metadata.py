@@ -4,6 +4,7 @@ from pydantic import BaseModel, model_validator
 from typing import Union, Optional, Literal, List, Dict, Any, Tuple
 from pydantic.type_adapter import TypeAdapter
 from datetime import datetime
+from collections import defaultdict
 from pathlib import Path
 import json
 
@@ -121,6 +122,53 @@ class MetadataRegistry(BaseModel):
     """
     items: List[DataTableMetadata] = []
 
+    @model_validator(mode="after")
+    def validate_bilingual_categories(self) -> "MetadataRegistry":
+        """
+        Ensures that:
+        - All identical category['pol'] map to the same category['eng'].
+        - All identical category['eng'] map to the same category['pol'].
+
+        Enforces a 1-to-1 bilingual mapping across all columns.
+        """
+
+        pol_to_eng = defaultdict(set)
+        eng_to_pol = defaultdict(set)
+
+        # Gather mappings
+        for table in self.items:
+            for col_name, col in (table.columns or {}).items():
+                cat = col.category or {}
+                pol = cat.get("pol")
+                eng = cat.get("eng")
+                if pol and eng:
+                    pol_to_eng[pol].add(eng)
+                    eng_to_pol[eng].add(pol)
+
+        errors = []
+
+        # Check: pol → eng must map to one unique eng
+        for pol, eng_values in pol_to_eng.items():
+            if len(eng_values) > 1:
+                errors.append(
+                    f"POL '{pol}' maps to multiple ENG categories: {sorted(eng_values)}"
+                )
+
+        # Check: eng → pol must map to one unique pol
+        for eng, pol_values in eng_to_pol.items():
+            if len(pol_values) > 1:
+                errors.append(
+                    f"ENG '{eng}' maps to multiple POL categories: {sorted(pol_values)}"
+                )
+
+        if errors:
+            raise ValueError(
+                "Inconsistent bilingual category mappings:\n" +
+                "\n".join(errors)
+            )
+
+        return self
+    
     # ------------------------ Loaders -----------------------
 
     @classmethod

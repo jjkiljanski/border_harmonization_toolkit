@@ -999,24 +999,49 @@ class AdministrativeHistoryProcessor():
             print(f"📂 GeoJSON with {len(gdf)} city points written to: {geojson_path}")
 
         # ✅ Step 7: Apply custom grouping if provided
-            if custom_grouping:
-                grouped = grouped.copy()
-                grouped['__group__'] = grouped.index.map(custom_grouping)
+        if custom_grouping:
+            grouped = grouped.copy()
 
-                if grouped['__group__'].isnull().any():
-                    missing_keys = grouped.index[grouped['__group__'].isnull()].tolist()
-                    raise ValueError(f"Missing entries in custom_grouping for: {missing_keys}")
+            # Map current index (district) to custom group name
+            grouped["__group__"] = grouped.index.map(custom_grouping)
 
-                grouped = grouped.groupby('__group__')
+            # Check for missing mapping keys
+            if grouped["__group__"].isnull().any():
+                missing = grouped.index[grouped["__group__"].isnull()].unique().tolist()
+                raise ValueError(f"Missing entries in custom_grouping for: {missing}")
 
-                if custom_grouping_method == 'sum':
-                    grouped = grouped.sum()
-                elif custom_grouping_method == 'average':
-                    grouped = grouped.mean()
-                else:
-                    raise ValueError("custom_grouping_method must be either 'sum' or 'average'.")
+            # Numeric columns to aggregate
+            num_cols = grouped.select_dtypes(include="number").columns.tolist()
 
-                grouped.index.name = "City"  # restore the expected index name
+            # Define aggregation method for numeric columns
+            if custom_grouping_method == "sum":
+                num_aggs = {c: "sum" for c in num_cols}
+            elif custom_grouping_method == "average":
+                num_aggs = {c: "mean" for c in num_cols}
+            else:
+                raise ValueError("custom_grouping_method must be either 'sum' or 'average'.")
+
+            # Helper to merge city lists into one
+            def _concat_city_lists(series):
+                out = []
+                for v in series:
+                    if isinstance(v, list):
+                        out.extend(v)
+                return out
+
+            agg_spec = num_aggs.copy()
+            if "Cities in district" in grouped.columns:
+                agg_spec["Cities in district"] = _concat_city_lists
+
+            # Perform the aggregation by custom group
+            grouped = grouped.groupby("__group__").agg(agg_spec)
+
+            # Set final index name (your group names)
+            grouped.index.name = "District"
+
+            # Clean up
+            if "__group__" in grouped.columns:
+                grouped = grouped.drop(columns="__group__")
 
         return grouped
 
