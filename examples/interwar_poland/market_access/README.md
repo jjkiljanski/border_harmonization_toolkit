@@ -17,7 +17,7 @@ The inputs used in this repository were generated elsewhere:
 
 - **Travel-time (distance) matrices**  
   Routable travel-time matrices between district and city centroids were generated in a separate repository:  
-  https://github.com/jjkiljanski/railway_history_pl_1842_1939 (commit `4ca8a15`)
+  https://github.com/jjkiljanski/railway_history_pl_1842_1939 (commit `7711c96`)
 
   All assumptions regarding railway networks, timetables, and routing are documented in that repository’s README.
 
