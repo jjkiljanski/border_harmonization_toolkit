@@ -21,7 +21,7 @@ This toolkit allows for the creation of an administrative history of an area on 
 
 The toolkit was written for the purpose of the creation of the **biggest existent quantitative database on the history of Poland** summarizing district-level economic and social data from the interwar period (1921-1939). The `data` folder stores:
 1. Inputs allowing to reconstruct the full administrative history of Poland between 1921 and 1939 in the `data/adm_histories/interwar_poland` folder;
-2. Standardized district-level datasets from interwar Poland (over 300,000 data points describing different dimensions of Poland's interwar society and economy) together with the datasets' metadata in the `data/datasets/interwar_poland_database` folder;
+2. Standardized district-level datasets from interwar Poland (over 450,000 data points describing different dimensions of Poland's interwar society and economy) together with the datasets' metadata in the `data/datasets/interwar_poland_database` folder;
 3.  Config allowing to harmonize all the raw data files digitized from original sources to chosen borders in the `data/datasets/interwar_poland_database/processing_config.json` file.
 
 The file `examples/interwar_poland_gdp/gdp_computation.ipynb` uses the collected data for the **computation of historic district-level 1924-1938 GDP series for Poland**. The estimates constitute **one of the earliest district-level GDP estimates for the early 20th century**.
