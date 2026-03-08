@@ -1,33 +1,115 @@
-# Market access in Interwar Poland — example application
+﻿# Market Access in Interwar Poland
 
-This repository is an **example application** showing how pre-computed historical transport networks can be used to estimate **district-level market access** and its changes over time.
+This folder contains the current market-access workflow used for annual district estimates in Interwar Poland (1924-1938), including baseline and fixed14 scenarios.
 
-The core contribution of this project is **not the construction of the transport network itself**, but the use of an existing database of travel-time matrices together with population data to implement a gravity-style market access framework.
+The focus is application and reproducibility. Transport networks/distances are treated as precomputed inputs.
 
-## Data sources
+## Main Economic Setup
 
-The inputs used in this repository were generated elsewhere:
+For district `i` in year `t`:
 
-- **Administrative boundaries**  
-  `districts_1934_10_1.geojson` — district map of Interwar Poland generated using this repository at commit `3b2ccce`.
+`MA_{i,t} = MA_{i,t}^{domestic} + MA_{i,t}^{foreign}`
 
-- **Population data**  
-  - `rural_population.csv` — rural population computed using `gdp_computation.ipynb` (commit `3b2ccce`)  
-  - `city_population.csv` — city population computed using `gdp_computation.ipynb` (commit `3b2ccce`)
+Domestic component:
 
-- **Travel-time (distance) matrices**  
-  Routable travel-time matrices between district and city centroids were generated in a separate repository:  
-  https://github.com/jjkiljanski/railway_history_pl_1842_1939 (commit `7711c96`)
+`MA_{i,t}^{domestic} = sum_{j != i} Mass_{j,t} * exp(beta_dom * ln(d_{ij,t}) + gamma_t * PartBorder_{ij}) + Mass_{i,t} * exp(beta_dom * ln(d_{ii,t}))`
 
-  All assumptions regarding railway networks, timetables, and routing are documented in that repository’s README.
+Foreign component:
 
-## What this repository does
+`MA_{i,t}^{foreign} = sum_{r in ForeignRegions} GDP_{r,t} * exp(beta_for * ln(D_{ir,t}))`
 
-Using the above inputs, this project:
+Parameters currently used:
 
-- combines city- and district-level population data,
-- collapses point-to-point travel times into population-weighted **district-to-district** travel times,
-- computes **gravity-style market access measures** for districts in 1913, 1924, and 1939,
-- and evaluates changes in market access over time.
+- `beta_dom = -2.6705` (domestic distance coefficient)
+- `beta_for = -0.5684` (foreign distance coefficient)
+- `gamma_t`: year-specific partition-border coefficient from `partition_coefficients.csv`
 
-The notebook is intended as a **transparent, reproducible example** of the combination of the border-harmonization-toolkit with the railway-history database for the historic transport accessibility analysis.
+Mass terms:
+
+- Domestic destinations `Mass_{j,t}`: district GDP from `district_gdp.csv`
+- Foreign destinations: region GDP from `foreign_region_gdp.csv`
+
+### Partition-border assumption
+
+`PartBorder_{ij} = 1` if origin and destination districts belonged to different historical partitions (German/Russian/Austro-Hungarian), else `0`.
+
+Only partition difference matters, not the number of border crossings along a route.
+
+### Self-term (`j = i`) assumption
+
+Self-distance is area-based using district geometry:
+
+`d_{ii} = (2/3) * sqrt(A_i / pi)`
+
+where `A_i` is district area (km^2) computed from `districts_1934_10_1.geojson` after projection to EPSG:3035.
+
+This self-term is included in `MA^{domestic}`.
+
+## Distance Construction and Scenarios
+
+### Point-to-district aggregation
+
+Distance matrices are provided at point level (district centroids, city points, border crossings).
+District-to-district and district-to-border distances are population-weighted over district point composition (district centroid + cities).
+
+### Scenarios
+
+- `baseline`: distance from `horse_km + rail_km` matrices
+- `fixed14`: distance from precomputed `time_min` matrices
+
+### Units
+
+Notebook flag: `COMPUTE_IN_MILES` (default `True`).
+
+- If `True`, km-based baseline distances are converted to miles before MA computation.
+- `fixed14` matrices are in minutes.
+
+## Foreign Link Assumption
+
+Foreign accessibility is computed via:
+
+1. district -> border-crossing distance (from matrix, population-weighted),
+2. border-crossing -> foreign city/province connector (`length_km`) from `border_crossing_IIRP_connections.csv`.
+
+`D_{ir,t}` is built as the sum of these two parts (with unit-consistent conversion by scenario).
+
+When multiple border crossings can map to the same foreign target, the shortest route is used.
+
+## Key Inputs
+
+In `data/`:
+
+- `districts_1934_10_1.geojson`
+- `district_gdp.csv`
+- `foreign_region_gdp.csv`
+- `partition_dummies.csv`
+- `partition_coefficients.csv`
+- `border_crossing_IIRP_connections.csv`
+- `city_population.csv`, `rural_population.csv` (used for distance weighting at point level)
+
+In `data/distances/`:
+
+- `distance_matrix_horse_km_long_{year}_baseline.csv`
+- `distance_matrix_rail_km_long_{year}_baseline.csv`
+- `distance_matrix_long_{year}_fixed14.csv`
+
+for years 1924-1938.
+
+## Outputs
+
+Main outputs are written to:
+
+- `outputs/market_access/` (tables, including annual MA and diagnostics)
+- `outputs/market_access/distance_matrices/` (exported district-to-district matrices used in MA)
+- `plots/new_formula/` (annual maps and 1938 vs 1924 changes, by scenario and MA variant)
+
+Additional checks include:
+
+- selected district-pair distance diagnostics,
+- selected Warsaw-foreign route diagnostics,
+- nearest-3 domestic contributor diagnostics.
+
+## Implementation Notes
+
+- Core economic functions are in the notebook `market_access_interwar_poland.ipynb`.
+- IO/parsing/export/plot helper logic is in `market_access_helpers.py`.

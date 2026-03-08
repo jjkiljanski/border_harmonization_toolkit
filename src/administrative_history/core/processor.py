@@ -904,8 +904,15 @@ class AdministrativeHistoryProcessor():
         if "parquet" in format:
             self.processed_data_metadata.to_parquet(self.processed_data_metadata_output_folder)
         
-    def map_city_data_to_dists(self, df: pd.DataFrame, date, geojson_path: str = None, custom_grouping: Dict[str, str] = None,
-                        custom_grouping_method: Union[Literal['sum'], Literal['average']] = 'average'):
+    def map_city_data_to_dists(
+        self,
+        df: pd.DataFrame,
+        date,
+        geojson_path: str = None,
+        custom_grouping: Dict[str, str] = None,
+        custom_grouping_method: Union[Literal["sum"], Literal["average"]] = "average",
+        include_nan_rows_in_geojson: bool = False,  # ✅ NEW
+    ):
         """
         Maps a city-indexed dataframe to districts and regions.
 
@@ -918,42 +925,56 @@ class AdministrativeHistoryProcessor():
         geojson_path : str, optional
             If provided, writes a GeoJSON file with point geometries of all recognized
             cities and their mapped attributes to this path.
+        include_nan_rows_in_geojson : bool, default False
+            If True, the dumped GeoJSON will ALSO include recognized-city rows that
+            had NaNs (even though they are excluded from aggregation).
 
         Returns
         -------
         pd.DataFrame
-            Aggregated dataframe with columns ['Region', 'District', 'Cities in district'] 
-            and numeric columns summed per district.
+            Aggregated dataframe with columns ['Region', 'District', 'Cities in district']
+            and numeric columns summed per district (computed from non-NaN rows only).
         """
 
         if self.adm_history.cities_df is None:
-            raise ValueError("self.adm_history.cities_df is not loaded. Please run self.adm_history.load_cities() first.")
+            raise ValueError(
+                "self.adm_history.cities_df is not loaded. Please run self.adm_history.load_cities() first."
+            )
 
         # ✅ Step 1: Drop unrecognized cities
         valid_city_names = set(self.adm_history.cities_df["City"])
-        df_valid = df[df.index.isin(valid_city_names)].copy()
+        df_valid_all = df[df.index.isin(valid_city_names)].copy()  # recognized cities, may include NaNs
         df_dropped = df[~df.index.isin(valid_city_names)]
 
         if not df_dropped.empty:
             dropped_list = df_dropped.index.unique().tolist()
             print(f"⚠️ Dropped {len(dropped_list)} cities due to name mismatch: {dropped_list}")
 
-        # ✅ Step 2: Drop rows with NaNs
-        df_nans = df_valid[df_valid.isna().any(axis=1)]
+        # ✅ Step 2: Identify NaN rows; build non-NaN df for aggregation (as before)
+        nan_mask = df_valid_all.isna().any(axis=1)
+        df_nans = df_valid_all[nan_mask]
         if not df_nans.empty:
             dropped_nans_list = df_nans.index.tolist()
             print(f"⚠️ Dropped {len(dropped_nans_list)} rows due to NaN values: {dropped_nans_list}")
-            df_valid = df_valid.dropna()
 
-        if df_valid.empty:
+        df_valid_nonan = df_valid_all[~nan_mask].copy()
+
+        if df_valid_nonan.empty:
             print("❌ No valid cities remain after filtering. Returning empty DataFrame.")
             return pd.DataFrame(columns=["Region", "District", "Cities in district"])
 
+        # ✅ Decide which rows feed GeoJSON export (aggregation still uses df_valid_nonan)
+        df_for_geojson = df_valid_all if include_nan_rows_in_geojson else df_valid_nonan
+
         # ✅ Step 3: Map each city to a district
-        district_records = []
-        geo_records = []
-        for city_name, row in df_valid.iterrows():
-            city_geom = self.adm_history.cities_df.loc[self.adm_history.cities_df["City"] == city_name, "geometry"].iloc[0]
+        district_records = []  # for aggregation (non-NaN only)
+        geo_records = []       # for optional geojson export (depends on flag)
+
+        # --- aggregation records (non-NaN only)
+        for city_name, row in df_valid_nonan.iterrows():
+            city_geom = self.adm_history.cities_df.loc[
+                self.adm_history.cities_df["City"] == city_name, "geometry"
+            ].iloc[0]
             lat, lon = city_geom.y, city_geom.x  # Point(y=lat, x=lon)
 
             try:
@@ -962,22 +983,39 @@ class AdministrativeHistoryProcessor():
                     "Region": region,
                     "District": district,
                     "City": city_name,
-                    **row.to_dict()
+                    **row.to_dict(),
                 }
                 district_records.append(record)
-
-                # For optional GeoJSON export
-                geo_records.append({
-                    **record,
-                    "geometry": Point(lon, lat)  # GeoJSON expects (lon, lat)
-                })
-
             except Exception as e:
                 print(f"⚠️ Could not map city '{city_name}' to district: {e}")
 
         if not district_records:
             print("❌ No cities could be mapped to districts.")
             return pd.DataFrame(columns=["Region", "District", "Cities in district"])
+
+        # --- geojson records (either non-NaN only, or include NaN rows too)
+        if geojson_path is not None:
+            for city_name, row in df_for_geojson.iterrows():
+                city_geom = self.adm_history.cities_df.loc[
+                    self.adm_history.cities_df["City"] == city_name, "geometry"
+                ].iloc[0]
+                lat, lon = city_geom.y, city_geom.x
+
+                try:
+                    country, region, district = self.adm_history.coords_to_dist_address(lat, lon, date)
+                    had_nan = bool(row.isna().any())
+                    geo_records.append(
+                        {
+                            "Region": region,
+                            "District": district,
+                            "City": city_name,
+                            "__had_nan__": had_nan,  # ✅ helpful flag in the GeoJSON
+                            **row.to_dict(),
+                            "geometry": Point(lon, lat),  # GeoJSON expects (lon, lat)
+                        }
+                    )
+                except Exception as e:
+                    print(f"⚠️ Could not map city '{city_name}' to district (geojson): {e}")
 
         mapped_df = pd.DataFrame(district_records)
 
@@ -988,7 +1026,7 @@ class AdministrativeHistoryProcessor():
         # ✅ Step 5: Collect city names
         city_groups = mapped_df.groupby(["Region", "District"])["City"].apply(list).reset_index()
         grouped = grouped.merge(city_groups, on=["Region", "District"], how="left")
-        
+
         grouped = grouped.set_index("District")
         grouped = grouped.rename(columns={"City": "Cities in district"})
 
@@ -996,24 +1034,23 @@ class AdministrativeHistoryProcessor():
         if geojson_path is not None:
             gdf = gpd.GeoDataFrame(geo_records, geometry="geometry", crs="EPSG:4326")
             gdf.to_file(geojson_path, driver="GeoJSON")
-            print(f"📂 GeoJSON with {len(gdf)} city points written to: {geojson_path}")
+            print(
+                f"📂 GeoJSON with {len(gdf)} city points written to: {geojson_path} "
+                f"(include_nan_rows_in_geojson={include_nan_rows_in_geojson})"
+            )
 
         # ✅ Step 7: Apply custom grouping if provided
         if custom_grouping:
             grouped = grouped.copy()
 
-            # Map current index (district) to custom group name
             grouped["__group__"] = grouped.index.map(custom_grouping)
 
-            # Check for missing mapping keys
             if grouped["__group__"].isnull().any():
                 missing = grouped.index[grouped["__group__"].isnull()].unique().tolist()
                 raise ValueError(f"Missing entries in custom_grouping for: {missing}")
 
-            # Numeric columns to aggregate
             num_cols = grouped.select_dtypes(include="number").columns.tolist()
 
-            # Define aggregation method for numeric columns
             if custom_grouping_method == "sum":
                 num_aggs = {c: "sum" for c in num_cols}
             elif custom_grouping_method == "average":
@@ -1021,7 +1058,6 @@ class AdministrativeHistoryProcessor():
             else:
                 raise ValueError("custom_grouping_method must be either 'sum' or 'average'.")
 
-            # Helper to merge city lists into one
             def _concat_city_lists(series):
                 out = []
                 for v in series:
@@ -1033,13 +1069,9 @@ class AdministrativeHistoryProcessor():
             if "Cities in district" in grouped.columns:
                 agg_spec["Cities in district"] = _concat_city_lists
 
-            # Perform the aggregation by custom group
             grouped = grouped.groupby("__group__").agg(agg_spec)
-
-            # Set final index name (your group names)
             grouped.index.name = "District"
 
-            # Clean up
             if "__group__" in grouped.columns:
                 grouped = grouped.drop(columns="__group__")
 

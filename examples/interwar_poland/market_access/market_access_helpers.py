@@ -245,8 +245,110 @@ def build_foreign_gdp_long(path: Path, years_target: list[int]) -> pd.DataFrame:
     return gg
 
 
+def build_district_gdp_long(path: Path, years_target: list[int]) -> pd.DataFrame:
+    df = pd.read_csv(path, sep=";")
+    if "District" not in df.columns:
+        raise RuntimeError("district_gdp.csv missing 'District' column")
+    year_cols = [c for c in df.columns if c.isdigit() and int(c) in years_target]
+    if not year_cols:
+        raise RuntimeError("district_gdp.csv has no target year columns")
+
+    out = df.melt(id_vars=["District"], value_vars=year_cols, var_name="year", value_name="district_gdp")
+    out["year"] = pd.to_numeric(out["year"], errors="coerce").astype("Int64")
+    out["district_gdp"] = parse_decimal_series(out["district_gdp"])
+    out = out.dropna(subset=["year", "district_gdp"]).copy()
+    out["year"] = out["year"].astype(int)
+    return out[["District", "year", "district_gdp"]].copy()
+
+
 def border_id_norm(border_id: str) -> str:
     return normalize_text(str(border_id).replace("Border_Crossing:", ""))
+
+
+def match_border_connections_to_matrix_borders(
+    district_to_border: pd.DataFrame,
+    border_connections: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Match rows from border_connections to border IDs available in district_to_border.
+
+    Matching strategy:
+    1) exact normalized name match,
+    2) containment heuristic (e.g. 'zbaszyn' -> 'zbaszynzbaszynek'),
+    3) Gdansk route fallback: map to any of Kozliny/Kolibki/Sulmin if present.
+    """
+    if district_to_border.empty or border_connections.empty:
+        return pd.DataFrame(
+            columns=[
+                "border_crossing",
+                "where_to",
+                "country_or_province",
+                "length_km",
+                "border_crossing_norm",
+                "matched_border_norm",
+            ]
+        )
+
+    avail = (
+        district_to_border["dest_id"]
+        .dropna()
+        .astype(str)
+        .loc[lambda s: s.str.startswith("Border_Crossing:")]
+        .map(border_id_norm)
+        .dropna()
+        .unique()
+        .tolist()
+    )
+    avail_set = set(avail)
+
+    conn = border_connections.copy()
+    conn["border_crossing_norm"] = conn["border_crossing"].map(normalize_text)
+    conn["where_to_norm"] = conn["where_to"].map(normalize_text)
+
+    rows = []
+    gdansk_gate = {"kozliny", "kolibki", "sulmin"}
+
+    for r in conn.itertuples(index=False):
+        bc_norm = r.border_crossing_norm
+        matches: list[str] = []
+
+        # 1) Exact match.
+        if bc_norm in avail_set:
+            matches = [bc_norm]
+        else:
+            # 2) Containment heuristic.
+            heur = [a for a in avail if (bc_norm and (bc_norm in a or a in bc_norm))]
+            if heur:
+                # Keep deterministic order.
+                matches = sorted(set(heur), key=lambda x: (len(x), x))
+            # 3) Gdansk gate fallback.
+            elif r.where_to_norm == "gdansk":
+                matches = sorted(list(gdansk_gate & avail_set))
+
+        for m in matches:
+            rows.append(
+                {
+                    "border_crossing": r.border_crossing,
+                    "where_to": r.where_to,
+                    "country_or_province": r.country_or_province,
+                    "length_km": r.length_km,
+                    "border_crossing_norm": bc_norm,
+                    "matched_border_norm": m,
+                }
+            )
+
+    if not rows:
+        return pd.DataFrame(
+            columns=[
+                "border_crossing",
+                "where_to",
+                "country_or_province",
+                "length_km",
+                "border_crossing_norm",
+                "matched_border_norm",
+            ]
+        )
+    return pd.DataFrame(rows)
 
 
 def robust_bounds(values: pd.Series, qmin: float = 0.02, qmax: float = 0.98) -> tuple[float, float]:
@@ -459,32 +561,29 @@ def collect_foreign_city_route_distances(
       and converted to both units.
     - fixed14: district->border is time (minutes), so km/miles are not reported.
     """
+    out_cols = [
+        "scenario",
+        "year",
+        "origin_district",
+        "foreign_city",
+        "border_crossing",
+        "district_to_border_km",
+        "district_to_border_miles",
+        "border_to_city_km",
+        "border_to_city_miles",
+        "total_km",
+        "total_miles",
+    ]
+
     if ma_all.empty or district_to_border_all.empty:
-        return pd.DataFrame(
-            columns=[
-                "scenario",
-                "year",
-                "origin_district",
-                "foreign_city",
-                "border_crossing",
-                "district_to_border_km",
-                "district_to_border_miles",
-                "border_to_city_km",
-                "border_to_city_miles",
-                "total_km",
-                "total_miles",
-            ]
-        )
+        return pd.DataFrame(columns=out_cols)
 
     conn = border_connections.copy()
     conn["where_to_norm"] = conn["where_to"].map(normalize_text)
     conn_city = conn[conn["where_to_norm"].isin([normalize_text(c) for c in foreign_cities])].copy()
 
     if conn_city.empty:
-        return pd.DataFrame()
-
-    # Build normalized border ID key compatible with matrix IDs.
-    conn_city["border_norm"] = conn_city["border_crossing_norm"]
+        return pd.DataFrame(columns=out_cols)
 
     scope = ma_all[["scenario", "year"]].drop_duplicates().sort_values(["scenario", "year"])
     rows = []
@@ -502,9 +601,38 @@ def collect_foreign_city_route_distances(
             continue
 
         dd["border_norm"] = dd["dest_id"].map(border_id_norm)
-        merged = dd.merge(conn_city, on="border_norm", how="inner")
+        conn_match = match_border_connections_to_matrix_borders(dd, conn_city)
+        if conn_match.empty:
+            continue
+        merged = dd.merge(conn_match, left_on="border_norm", right_on="matched_border_norm", how="inner")
         if merged.empty:
             continue
+
+        # Compute comparable route metric for selecting one "relevant" crossing
+        # per foreign city (shortest route).
+        if scenario == "baseline":
+            if compute_in_miles:
+                d_border_miles_sel = pd.to_numeric(merged["distance_to_border"], errors="coerce")
+                d_border_km_sel = d_border_miles_sel / 0.621371
+            else:
+                d_border_km_sel = pd.to_numeric(merged["distance_to_border"], errors="coerce")
+                d_border_miles_sel = d_border_km_sel * 0.621371
+            connector_km_sel = pd.to_numeric(merged["length_km"], errors="coerce")
+            merged["route_selector"] = d_border_km_sel + connector_km_sel
+        else:
+            # fixed14: distance_to_border is minutes, connector is in km.
+            # Convert connector to minutes with fixed14 speed so we can pick shortest route.
+            d_border_min_sel = pd.to_numeric(merged["distance_to_border"], errors="coerce")
+            connector_km_sel = pd.to_numeric(merged["length_km"], errors="coerce")
+            merged["route_selector"] = d_border_min_sel + connector_km_sel * (60.0 / 14.0)
+
+        # Keep one relevant crossing (minimum route) per foreign city.
+        merged = (
+            merged.sort_values(["where_to", "route_selector"])
+            .groupby(["where_to"], as_index=False, sort=False)
+            .head(1)
+            .copy()
+        )
 
         for r in merged.itertuples(index=False):
             if scenario == "baseline":
@@ -544,4 +672,6 @@ def collect_foreign_city_route_distances(
                 }
             )
 
-    return pd.DataFrame(rows)
+    if not rows:
+        return pd.DataFrame(columns=out_cols)
+    return pd.DataFrame(rows, columns=out_cols)
