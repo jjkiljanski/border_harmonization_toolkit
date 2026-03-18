@@ -261,6 +261,36 @@ def build_district_gdp_long(path: Path, years_target: list[int]) -> pd.DataFrame
     return out[["District", "year", "district_gdp"]].copy()
 
 
+def compute_district_to_selected_points_distance(
+    dm: pd.DataFrame,
+    point_pop: pd.DataFrame,
+    target_point_map: dict[str, str],
+) -> pd.DataFrame:
+    # For each district and selected point, compute weighted mean distance from district points.
+    if dm.empty or point_pop.empty or not target_point_map:
+        return pd.DataFrame(columns=["origin_district", "dest_id", "target_label", "distance_value"])
+
+    pp = point_pop[["point_id", "District", "pop"]].copy()
+
+    x = dm.merge(pp, left_on="origin_id", right_on="point_id", how="left")
+    x = x.rename(columns={"District": "origin_district", "pop": "origin_pop"})
+    x = x[x["dest_id"].isin(list(target_point_map.keys()))].copy()
+    x = x.dropna(subset=["origin_district"]).copy()
+
+    x["distance_value"] = pd.to_numeric(x["distance_value"], errors="coerce")
+    x["origin_pop"] = pd.to_numeric(x["origin_pop"], errors="coerce").fillna(0.0)
+    x = x[x["distance_value"].notna() & (x["origin_pop"] > 0)].copy()
+    x["wd"] = x["origin_pop"] * x["distance_value"]
+
+    g = x.groupby(["origin_district", "dest_id"], as_index=False).agg(
+        w_sum=("origin_pop", "sum"),
+        wd_sum=("wd", "sum"),
+    )
+    g["distance_value"] = g["wd_sum"] / g["w_sum"]
+    g["target_label"] = g["dest_id"].map(target_point_map)
+    return g[["origin_district", "dest_id", "target_label", "distance_value"]].copy()
+
+
 def border_id_norm(border_id: str) -> str:
     return normalize_text(str(border_id).replace("Border_Crossing:", ""))
 
@@ -383,10 +413,14 @@ def save_tables(df: pd.DataFrame, out_dir: Path, scenario: str) -> None:
             d_within = d[["District", "year", "scenario", "ma_domestic"]].rename(
                 columns={"ma_domestic": "ma_within_country"}
             )
+            d_within_no_self = d[["District", "year", "scenario", "ma_domestic_no_self"]].rename(
+                columns={"ma_domestic_no_self": "ma_within_country_no_self"}
+            )
             d_foreign = d[["District", "year", "scenario", "ma_foreign"]].rename(
                 columns={"ma_foreign": "ma_foreign_only"}
             )
             d_within.to_excel(writer, index=False, sheet_name="within_country_only")
+            d_within_no_self.to_excel(writer, index=False, sheet_name="within_country_no_self")
             d_foreign.to_excel(writer, index=False, sheet_name="foreign_only")
         print("Wrote:", xlsx_path)
     except Exception as exc:
@@ -463,6 +497,55 @@ def save_change_map_1938_vs_1924(
         legend_max=q,
         cmap=cmap,
         custom_grouping=custom_grouping
+    )
+    plt.close(fig)
+
+
+def save_proportional_change_map_between_years(
+    df: pd.DataFrame,
+    scenario: str,
+    value_col: str,
+    year_start: int,
+    year_end: int,
+    cmap: str,
+    plots_dir: Path,
+    adm_history_plotter,
+    adm_state_date,
+    custom_grouping,
+    output_subdir: str | None = None,
+) -> None:
+    d = df[df["scenario"] == scenario].copy()
+    years = set(d["year"].unique())
+    if year_start not in years or year_end not in years:
+        print(f"Scenario {scenario}: cannot build {year_end} vs {year_start} proportional change for {value_col} (missing year).")
+        return
+
+    a = d[d["year"] == year_start][["District", value_col]].rename(columns={value_col: "v_start"})
+    b = d[d["year"] == year_end][["District", value_col]].rename(columns={value_col: "v_end"})
+    m = a.merge(b, on="District", how="inner")
+    m["proportional_change"] = (m["v_end"] - m["v_start"]) / m["v_start"]
+    m.loc[~np.isfinite(pd.to_numeric(m["proportional_change"], errors="coerce")), "proportional_change"] = np.nan
+
+    subdir = output_subdir if output_subdir is not None else f"{value_col}_prop_change_{year_end}_vs_{year_start}"
+    out_dir = plots_dir / scenario / subdir
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    vm = pd.to_numeric(m["proportional_change"], errors="coerce")
+    q = float(np.nanquantile(np.abs(vm), 0.98)) if vm.notna().any() else 1.0
+    if not np.isfinite(q) or q <= 0:
+        q = 1.0
+
+    fig = adm_history_plotter.plot_dataset(
+        df=m[["District", "proportional_change"]].set_index("District"),
+        col_name="proportional_change",
+        adm_level="District",
+        adm_state_date=adm_state_date,
+        title=f"{value_col} proportional change {year_end} vs {year_start} | {scenario}",
+        save_to_path=str(out_dir / f"{value_col}_prop_change_{year_end}_vs_{year_start}_{scenario}.png"),
+        legend_min=-q,
+        legend_max=q,
+        cmap=cmap,
+        custom_grouping=custom_grouping,
     )
     plt.close(fig)
 
