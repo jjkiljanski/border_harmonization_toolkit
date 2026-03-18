@@ -758,3 +758,133 @@ def collect_foreign_city_route_distances(
     if not rows:
         return pd.DataFrame(columns=out_cols)
     return pd.DataFrame(rows, columns=out_cols)
+
+
+def build_foreign_route_coverage_audit(
+    district_to_border_all: pd.DataFrame,
+    border_connections: pd.DataFrame,
+    foreign_gdp_long: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Audit whether each foreign region in the GDP table is reachable through
+    at least one border crossing that is matched to the matrix for a given
+    scenario-year.
+    """
+    out_cols = [
+        "scenario",
+        "year",
+        "foreign_region",
+        "region_norm",
+        "declared_border_crossings",
+        "matched_border_crossings",
+        "matched_connection_rows",
+        "reachable_route_rows",
+        "is_border_matched",
+        "is_region_reachable",
+    ]
+
+    if district_to_border_all.empty or border_connections.empty or foreign_gdp_long.empty:
+        return pd.DataFrame(columns=out_cols)
+
+    conn = border_connections.copy()
+    conn["region_norm"] = conn["country_or_province"].map(normalize_text)
+
+    scope = (
+        district_to_border_all[["scenario", "year"]]
+        .drop_duplicates()
+        .sort_values(["scenario", "year"])
+    )
+
+    rows = []
+    for row in scope.itertuples(index=False):
+        scenario = row.scenario
+        year = int(row.year)
+
+        dd = district_to_border_all[
+            (district_to_border_all["scenario"] == scenario)
+            & (district_to_border_all["year"] == year)
+        ].copy()
+        if dd.empty:
+            continue
+
+        dd["border_norm"] = dd["dest_id"].map(border_id_norm)
+        conn_match = match_border_connections_to_matrix_borders(dd, conn)
+
+        gdp_y = (
+            foreign_gdp_long[foreign_gdp_long["year"] == year][["Foreign region", "region_norm"]]
+            .drop_duplicates()
+            .rename(columns={"Foreign region": "foreign_region"})
+        )
+        if gdp_y.empty:
+            continue
+
+        declared = (
+            conn.groupby("region_norm", as_index=False)
+            .agg(
+                declared_region_name=("country_or_province", "first"),
+                declared_border_crossings=("border_crossing", lambda s: " | ".join(sorted(set(map(str, s))))),
+            )
+        )
+
+        if conn_match.empty:
+            matched = pd.DataFrame(
+                columns=["region_norm", "matched_border_crossings", "matched_connection_rows", "is_border_matched"]
+            )
+            reachable = pd.DataFrame(columns=["region_norm", "reachable_route_rows", "is_region_reachable"])
+        else:
+            matched = (
+                conn_match.assign(region_norm=conn_match["country_or_province"].map(normalize_text))
+                .groupby("region_norm", as_index=False)
+                .agg(
+                    matched_border_crossings=("border_crossing", lambda s: " | ".join(sorted(set(map(str, s))))),
+                    matched_connection_rows=("border_crossing", "size"),
+                )
+            )
+            matched["is_border_matched"] = True
+
+            reachable = (
+                dd.merge(conn_match, left_on="border_norm", right_on="matched_border_norm", how="inner")
+                .assign(region_norm=lambda x: x["country_or_province"].map(normalize_text))
+                .groupby("region_norm", as_index=False)
+                .agg(reachable_route_rows=("origin_district", "size"))
+            )
+            reachable["is_region_reachable"] = reachable["reachable_route_rows"] > 0
+
+        audit = gdp_y.merge(declared, on="region_norm", how="left")
+        audit = audit.merge(matched, on="region_norm", how="left")
+        audit = audit.merge(reachable, on="region_norm", how="left")
+        audit["scenario"] = scenario
+        audit["year"] = year
+        audit["declared_border_crossings"] = audit["declared_border_crossings"].fillna("")
+        audit["matched_border_crossings"] = audit["matched_border_crossings"].fillna("")
+        audit["matched_connection_rows"] = pd.to_numeric(audit["matched_connection_rows"], errors="coerce").fillna(0).astype(int)
+        audit["reachable_route_rows"] = pd.to_numeric(audit["reachable_route_rows"], errors="coerce").fillna(0).astype(int)
+        audit["is_border_matched"] = audit["is_border_matched"].fillna(False).astype(bool)
+        audit["is_region_reachable"] = audit["is_region_reachable"].fillna(False).astype(bool)
+        audit["foreign_region"] = audit["foreign_region"].fillna(audit["declared_region_name"])
+
+        rows.append(audit[out_cols])
+
+    if not rows:
+        return pd.DataFrame(columns=out_cols)
+    return pd.concat(rows, ignore_index=True)
+
+
+def assert_full_foreign_route_coverage(audit: pd.DataFrame) -> None:
+    """
+    Raise if any foreign region expected from the GDP table is not reachable
+    through the matched border-crossing routes.
+    """
+    if audit.empty:
+        raise RuntimeError("Foreign route coverage audit is empty.")
+
+    missing = audit.loc[~audit["is_region_reachable"]].copy()
+    if missing.empty:
+        return
+
+    preview = missing[["scenario", "year", "foreign_region", "declared_border_crossings", "matched_border_crossings"]]
+    preview_text = preview.head(20).to_string(index=False)
+    raise RuntimeError(
+        "Some foreign regions are omitted from MA because no reachable matched border route exists.\n"
+        + preview_text
+    )
