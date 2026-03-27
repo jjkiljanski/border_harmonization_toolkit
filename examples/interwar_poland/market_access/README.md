@@ -92,8 +92,11 @@ In `data/distances/`:
 - `distance_matrix_horse_km_long_{year}_baseline.csv`
 - `distance_matrix_rail_km_long_{year}_baseline.csv`
 - `distance_matrix_long_{year}_fixed14.csv`
+- `point_22.058_51.721_to_all_{year}_baseline.csv`
 
 for years 1924-1938.
+
+The center-point files `point_22.058_51.721_to_all_{year}_baseline.csv` were generated using the repository `jjkiljanski/railway_history_pl_1842_1939` at commit `7e28e6d`.
 
 ## Outputs
 
